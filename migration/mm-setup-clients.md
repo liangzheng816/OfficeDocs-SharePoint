@@ -73,8 +73,9 @@ To calculate the minimum required number of agents to use for your migration:
 3. Under "For file shares", select **Get started**.
 4. Select the **Agents** tab, and then select **Add**.
 1. Select **Download agent setup file**. (To get the latest bug fixes, feature improvements or new features, please find the latest public preview download link in '[What’s New](/sharepointmigration/mm-whats-new)')
-6. Open the setup file. On the Welcome page, select **Next**.
-7. Enter the SharePoint admin username and password of the environment where you are migrating your content. Select **Next**.
+1. Open the setup file. On the Welcome page, select the authentication method, select **Next**.
+1. If you select "User Credential Authentication", enter the SharePoint admin username and password of the environment where you are migrating your content. Select **Next**. If you select "Certificate Authentication", upload the certificate auth config file. Select **Next.**
+
 8. Enter the password of the Windows account that provides access to **all** the file shares that contain the content you want to migrate. Select **Install**.
 9. Test agent access (optional) or select **Close**.  After the setup is completed, the new agent will be added to the available agents that can be assigned tasks.
 
@@ -127,7 +128,7 @@ To install an agent to a different Geo location:
 
 4. The settings screen displays if and to what tenant you are connected.  Select **unlink tenant** if you wish to sign in to a different tenant.
 
-5. Microsoft 365 automatically renews authorization to access your tenant as long as the migration agent is active.  If the agent has been inactive for longer than seven days, you might need to sign in again.
+1. Microsoft 365 automatically renews authorization to access your tenant as long as the migration agent is active.  If the agent has been inactive for longer than seven days, you might need to sign in again.
 
 ## Agent task assignment
 
