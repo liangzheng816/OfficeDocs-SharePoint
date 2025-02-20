@@ -79,6 +79,8 @@ The OneDrive GPOs work by setting registry keys on the computers in your domain.
 
 - (BlockExternalSync) [Prevent users from syncing libraries and folders shared from other organizations](use-group-policy.md#prevent-users-from-syncing-libraries-and-folders-shared-from-other-organizations)
 
+- (BlockKnownFolderMove) [Prevent users from moving their Windows known folders to OneDrive](use-group-policy.md#prevent-users-from-moving-their-windows-known-folders-to-onedrive)
+
 - (BlockTenantList) [Block syncing OneDrive accounts for specific organizations](use-group-policy.md#block-syncing-onedrive-accounts-for-specific-organizations)
 
 - (DefaultRootDir) [Set the default location for the OneDrive folder](use-group-policy.md#set-the-default-location-for-the-onedrive-folder)
@@ -92,6 +94,8 @@ The OneDrive GPOs work by setting registry keys on the computers in your domain.
 - (DisableFirstDeleteDialog) [Hide the "Deleted files are removed everywhere" reminder](use-group-policy.md#hide-the-deleted-files-are-removed-everywhere-reminder)
 
 - (DisableFREAnimation) [Disable animation that appears during OneDrive Setup](use-group-policy.md#disable-animation-that-appears-during-onedrive-setup)
+
+- (DisableFRETutorial) [Disable the tutorial that appears at the end of OneDrive Setup](use-group-policy.md#disable-the-tutorial-that-appears-at-the-end-of-onedrive-setup)
 
 - (DisableNewAccountDetection) [Hide the messages to sync Consumer OneDrive files](use-group-policy.md#hide-the-messages-to-sync-consumer-onedrive-files)
 
@@ -109,8 +113,6 @@ The OneDrive GPOs work by setting registry keys on the computers in your domain.
 
 - (DisablePersonalSync) [Prevent users from syncing personal OneDrive accounts](use-group-policy.md#prevent-users-from-syncing-personal-onedrive-accounts)
 
-- (DisableTutorial) [Disable the tutorial that appears at the end of OneDrive Setup](use-group-policy.md#disable-the-tutorial-that-appears-at-the-end-of-onedrive-setup)
-
 - (DiskSpaceCheckThresholdMB) [Set the maximum size of a user's OneDrive that can download automatically](use-group-policy.md#set-the-maximum-size-of-a-users-onedrive-that-can-download-automatically)
 
 - (DownloadBandwidthLimit) [Limit the sync app download speed to a fixed rate](use-group-policy.md#limit-the-sync-app-download-speed-to-a-fixed-rate)
@@ -120,6 +122,8 @@ The OneDrive GPOs work by setting registry keys on the computers in your domain.
 - (EnableAutomaticUploadBandwidthManagement) [Enable automatic upload bandwidth management for OneDrive](use-group-policy.md#enable-automatic-upload-bandwidth-management-for-onedrive)
 
 - (EnableAutoStart) [Start OneDrive automatically when signing in to Windows](use-group-policy.md#always-start-onedrive-automatically-when-signing-in-to-windows)
+
+- (EnableFeedbackAndSupport) [Allow users to contact Microsoft for feedback and support](use-group-policy.md#allow-users-to-contact-microsoft-for-feedback-and-support)
 
 - (EnableHoldTheFile) [Allow users to choose how to handle Office file sync conflicts](use-group-policy.md#allow-users-to-choose-how-to-handle-office-file-sync-conflicts)
 
@@ -133,13 +137,11 @@ The OneDrive GPOs work by setting registry keys on the computers in your domain.
 
 - (GPOSetUpdateRing) [Set the sync app update ring](use-group-policy.md#set-the-sync-app-update-ring)
 
-- (KFMBlockOptIn) [Prevent users from moving their Windows known folders to OneDrive](use-group-policy.md#prevent-users-from-moving-their-windows-known-folders-to-onedrive)
-
 - (KFMBlockOptOut) [Prevent users from redirecting their Windows known folders to their PC](use-group-policy.md#prevent-users-from-redirecting-their-windows-known-folders-to-their-pc)
 
-- (KFMOptInWithWizard) [Prompt users to move Windows known folders to OneDrive](use-group-policy.md#prompt-users-to-move-windows-known-folders-to-onedrive)
+- (KFMOptInNoWizard) [Silently move Windows known folders to OneDrive](use-group-policy.md#silently-move-windows-known-folders-to-onedrive)
 
-- (KFMSilentOptIn) [Silently move Windows known folders to OneDrive](use-group-policy.md#silently-move-windows-known-folders-to-onedrive)
+- (KFMOptInWithWizard) [Prompt users to move Windows known folders to OneDrive](use-group-policy.md#prompt-users-to-move-windows-known-folders-to-onedrive)
 
 - (LocalMassDeleteFileDeleteThreshold) [Prompt users when they delete multiple OneDrive files on their local computer](use-group-policy.md#prompt-users-when-they-delete-multiple-onedrive-files-on-their-local-computer)
 
@@ -216,6 +218,13 @@ This policy sets the following registry key:
 where "1111-2222-3333-4444" is the [tenant ID](find-your-office-365-tenant-id.md).
   
 This setting takes priority over [Block syncing OneDrive accounts for specific organizations](use-group-policy.md#block-syncing-onedrive-accounts-for-specific-organizations). Don't enable both settings at the same time.
+
+### Allow users to contact Microsoft for feedback and support
+This setting specifies whether users can contact Microsoft through user experiences in the app.
+
+If you enable or do not configure this setting, users can use the experiences in the OneDrive app to contact Microsoft directly for feedback and support.
+
+If you disable this setting, users will be unable to contact Microsoft for support, feedback, or suggestions within the app. Users will still have access to help content and self-help tools.
 
 ### Block file downloads when users are low on disk space
 
@@ -346,15 +355,13 @@ Enabling this policy sets the following registry key value to 1:
 
 ### Hide the messages to sync Consumer OneDrive files
 
-This setting determines whether a user will be prompted to sync their Consumer files using a detected known Microsoft Account (MSA).
+This setting determines whether a user will be prompted to sync their Consumer files when a Microsoft Account (MSA) is detected on the device.
 
-**Enable**: Enable this setting if you want to suppress the messages from being displayed to your users; yet, allow them to manually configure their Consumer accounts to sync with their OneDrive Consumer files.
-
-Enabling this policy sets the following registry key value to 1:
+If you enable this setting, users will not be prompted to sign in with their MSA and sync their Consumer files. Users can still manually configure their Consumer accounts to sync their OneDrive Consumer files. Enabling this policy sets the following registry key value to 1:
 
 `[HKLM\SOFTWARE\Policies\Microsoft\OneDrive]"DisableNewAccountDetection"=dword:00000001`
 
-**Disable**: Disable this setting or don't configure it, to allow your users to be prompted to sync their Consumer files.
+If you disable this setting or do not configure it, users will be prompted to sign in with their MSA and sync their Consumer files.
 
 ### Limit the sync app upload rate to a percentage of throughput
 
@@ -758,9 +765,7 @@ This setting lets you prevent the tutorial from showing at the end of OneDrive S
 
 If you enable this setting, users don't see the tutorial after they complete OneDrive Setup.
   
-Enabling this policy sets the following registry key value to 1:
-  
-`[HKCU\SOFTWARE\Policies\Microsoft\OneDrive] "DisableTutorial"=dword:00000001`
+If you disable or do not configure this setting, the tutorial will appear at the end of OneDrive Setup.
 
 ### Limit the sync app download speed to a fixed rate
 

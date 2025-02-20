@@ -29,7 +29,7 @@ Use data lifecycle management capabilities in Microsoft Purview to govern your O
 
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|:----------------------------|
-|[Retention policies and retention labels](/microsoft-365/compliance/retention)<br /><br />[Learn about retention for SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint) | Retain or delete content with policy management for SharePoint and OneDrive documents | [Create and configure retention policies](/microsoft-365/compliance/create-retention-policies) <br /><br /> [Create retention labels for exceptions to your retention policies](/microsoft-365/compliance/create-retention-labels-information-governance)|
+|[Retention policies and retention labels](/purview/retention)<br /><br />[Learn about retention for SharePoint and OneDrive](/purview/retention-policies-sharepoint) | Retain or delete content with policy management for SharePoint and OneDrive documents | [Create and configure retention policies](/purview/create-retention-policies) <br /><br /> [Create retention labels for exceptions to your retention policies](/purview/create-retention-labels-data-lifecycle-management)|
 
 ### Deleted users' data
 
@@ -45,10 +45,10 @@ Microsoft Purview Information Protection capabilities help you discover, classif
 
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|:--------------------|
-|[Sensitive information types](/microsoft-365/compliance/sensitive-information-type-learn-about)| Identifies sensitive data by using built-in or custom regular expressions or a function. Corroborative evidence includes keywords, confidence levels, and proximity.| [Customize a built-in sensitive information type](/microsoft-365/compliance/customize-a-built-in-sensitive-information-type)|
-|[Trainable classifiers](/microsoft-365/compliance/classifier-learn-about)| Identifies sensitive data by using examples of the data you're interested in rather than identifying elements in the item (pattern matching). You can use built-in classifiers or train a classifier with your own content.| [Get started with trainable classifiers](/microsoft-365/compliance/classifier-get-started-with) |
-|[Sensitivity labels](/microsoft-365/compliance/sensitivity-labels)| A single solution across apps, services, and devices to label and protect your data as it travels inside and outside your organization. <br /><br /> Sensitivity labels can be used to protect files themselves or individual SharePoint sites and teams.|[Enable sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files) <br /><br /> [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 Groups, and SharePoint sites](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
-|[Data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)| Helps prevent unintentional sharing of sensitive items. | [Get started with the default DLP policy](/microsoft-365/compliance/get-started-with-the-default-dlp-policy)|
+|[Sensitive information types](/purview/sit-sensitive-information-type-learn-about)| Identifies sensitive data by using built-in or custom regular expressions or a function. Corroborative evidence includes keywords, confidence levels, and proximity.| [Customize a built-in sensitive information type](/purview/sit-customize-a-built-in-sensitive-information-type)|
+|[Trainable classifiers](/purview/trainable-classifiers-learn-about)| Identifies sensitive data by using examples of the data you're interested in rather than identifying elements in the item (pattern matching). You can use built-in classifiers or train a classifier with your own content.| [Get started with trainable classifiers](/purview/trainable-classifiers-get-started-with) |
+|[Sensitivity labels](/purview/sensitivity-labels)| A single solution across apps, services, and devices to label and protect your data as it travels inside and outside your organization. <br /><br /> Sensitivity labels can be used to protect files themselves or individual SharePoint sites and teams.|[Enable sensitivity labels for Office files in SharePoint and OneDrive](/purview/sensitivity-labels-sharepoint-onedrive-files) <br /><br /> [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 Groups, and SharePoint sites](/purview/sensitivity-labels-teams-groups-sites)|
+|[Data loss prevention](/purview/dlp-learn-about-dlp)| Helps prevent unintentional sharing of sensitive items. | [Get started with the default DLP policy](/purview/get-started-with-the-default-dlp-policy)|
 
 ## File sync
 
@@ -76,7 +76,7 @@ Microsoft Purview Information Barriers is a compliance solution that allows you 
 
 When information barrier policies are in place, users who shouldn't communicate or share files with other specific users won't be able to find, select, chat, or call those users. Information barrier policies automatically put checks in place to detect and prevent unauthorized communication and collaboration among defined groups and users.
 
-If your business requires information barriers, see [Learn about information barriers](/microsoft-365/compliance/information-barriers) and [Use information barriers with SharePoint](/sharepoint/information-barriers) to get started.
+If your business requires information barriers, see [Learn about information barriers](/purview/information-barriers) and [Use information barriers with SharePoint](/sharepoint/information-barriers) to get started.
 
 ## Next steps
 
@@ -94,4 +94,3 @@ If your business requires information barriers, see [Learn about information bar
 [Protect your enterprise data using Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
 
 [Control OneDrive and SharePoint access based on network authentication or app](/onedrive/control-access-based-on-network-location-or-app)
-

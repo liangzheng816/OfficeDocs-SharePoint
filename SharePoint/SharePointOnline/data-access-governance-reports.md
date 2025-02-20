@@ -87,7 +87,7 @@ When a report is ready, select the name of the report to view the data. Each sha
 You can also download the reporting as a CSV file for up to 10,000 sites.
 
 > [!IMPORTANT]
-> You can download reporting for up to 1 million sites if you have a SharePoint SharePoint Premium - SharePoint Advanced Management license and your tenant is a non-government cloud environment.
+> You can download reporting for up to 1 million sites if you have a SharePoint Premium - SharePoint Advanced Management license and your tenant is a non-government cloud environment.
 
 ## Sensitivity labels for files reports
 
@@ -215,9 +215,16 @@ The output for the report has the following data:
 |ExternalSharing |  Specifies whether content can be shared with external guests. Yes or No.    |
 |Site Privacy |   Applicable in Microsoft 365 connected team sites. Specifies the privacy setting of the group. Has values Public or Private   |
 |Site Sensitivity |   Specifies the sensitivity label applied to the site   |
-|Number of users having access |  Unique number of users having access to site content at any level/scope. Min value is 100.|
+|Number of users having access |  Unique number of users having access to site content at any level/scope  |
+|Guest user permissions |  Count of permissions to guest users at any level/scope. These users are marked with #EXT# in their Entra identities |
+|External participant permissions |  Count of permissions to external users who can directly use their own credentials to login and collaborate, such as in Shared channels |
+|Entra group count |  Number of Entra cloud only groups at all scopes |
+|File count |  Approximate number of all files in the site |
+|Items with unique permissions count  |  Extent of broken inheritance. Count of all items where inheritance was broken and unique permissions were assigned |
 |People In Your Org link count |   Number of existing PeopleInYourOrg links across all the files in the site   |
 |Anyone link count |   Number of existing Anyone links across all the files in the site   |
+|EEEU permission count |   Number of permissions with 'Everyone except external users' as the recipient at any level/scope  |
+|Everyone permission count |   Number of permissions with 'Everyone' as the recipient at any level/scope  |
 |Report Date |  Time of generation of report. It might take up to 48 hours to reflect any changes in the report    |
 
 #### Number of users having access

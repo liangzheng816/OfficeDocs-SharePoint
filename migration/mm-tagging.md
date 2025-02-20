@@ -24,14 +24,14 @@ description: "Importing tags with Migration Manager"
 
 Use tags to better organize, plan, and schedule your content migrations in Migration Manager. Tags let you filter tasks and easily navigate through a large quantity of sources and users to find what you need. 
 
-If you have a large migration project, you will likely migrate the content in phases or need to identify them by groupings. Apply tags to indicate department, region, wave, or any other collection relevant to your organization. With tags, you can filter, group, and keep organized.
+If you have a large migration project, you likely migrate the content in phases or need to identify them by groupings. Apply tags to indicate department, region, wave, or any other collection relevant to your organization. With tags, you can filter, group, and keep organized.
  
 Tags can be updated anytime during your project. If you scan a group of sources and they are ready to migrate, you can apply new tags to identify their status quickly. Or if a group of tasks need to be run again, you may tag them with "Incremental run" to make that group stand out.
 
 ## Using and managing tags
 While you can create as many tags as you wish, we strongly recommend limiting the number of tags you use to simplify your projects. Making them reusable, like using "Ready for migration" or "Incremental run" is one way of limiting the number of tags you use. 
 
-You can enter one or more tags per source, separating them with a semi-colon in the .csv file. Keep in mind that tags are case-sensitive and will filter on an exact string match. Tags are part of the metadata associated with the content and are preserved even after you copy tasks to the migration tab. The Summary reports and scans will also include tags.
+You can enter one or more tags per source, separating them with a semi-colon in the .csv file. Keep in mind that tags are case-sensitive and filter on an exact string match. Tags are part of the metadata associated with the content and are preserved even after you copy tasks to the migration tab. The Summary reports and scans also include tags.
 
 ### Examples of tags
 
@@ -57,7 +57,7 @@ As you plan your overall migration project, plan your tag strategy to align with
 
 ![Import tags option on the menu bar](media/mm-tagging.png)
 
-3. Select **Download current source paths**. The download .csv file will contain the Task ID, Source Name, Source Path, and Tags. If no tags were associated with the source, the value will be blank.
+3. Select **Download current source paths**. The download .csv file contains the Task ID, Source Name, Source Path, and Tags. If no tags were associated with the source, the value is blank.
 
 3. Enter the name of the tag associated with each source. If you want to apply more than one tag to a single source, separate the values using a semi-colon. Save the revised file.
 4. Browse for the updated CSV file and then select **Apply**.
@@ -71,3 +71,6 @@ As you plan your overall migration project, plan your tag strategy to align with
 
 
 ![Results from import tags](media/mm-import-tag-results.png)
+> [!NOTE]
+> For file share migration, the import tag limit is set at 1,000 tasks. If you need to apply tags to more than 1,000 tasks, you must divide them into multiple CSV files, each containing fewer than 1,000 tasks. Proceed to apply these files sequentially.
+

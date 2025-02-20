@@ -1,5 +1,5 @@
 ---
-ms.date: 05/20/2024
+ms.date: 01/30/2025
 title: "Restrict OneDrive access by security group"
 ms.reviewer: nibandyo
 ms.author: mactra
@@ -31,11 +31,11 @@ description: "Learn how to allow only users in specified security groups to acce
 
 [!INCLUDE[Advanced Management](includes/advanced-management.md)]
 
-You can restrict access and sharing of OneDrive content to users in specified Microsoft Entra ID security groups. Even if other users outside of these security groups are licensed for OneDrive, they won’t have access to their own OneDrive or any shared OneDrive content when this policy is in effect. OneDrive access restriction at tenant level is applied when a user attempts to open a OneDrive or a file. 
+You can restrict access and sharing of OneDrive content to users in specified Microsoft Entra ID security groups. Even if other users outside of these security groups are licensed for OneDrive, they won’t have access to their own OneDrive or any shared OneDrive content when this policy is in effect. OneDrive access restriction at tenant level is applied when a user attempts to open a OneDrive or a file.
 
-You can use this to prevent new users from accessing any OneDrive content. For example, you can restrict OneDrive access and sharing to your new users, guest or frontline users. 
+You can use this to prevent new users from accessing any OneDrive content. For example, you can restrict OneDrive access and sharing to your new users, guest or frontline users.
 
-Note that users who are not members of the specified security group can still see files in organization-wide search and Copilot experiences if they have existing permissions to the file prior to the policy configuration. However they will not be able to open the file or OneDrive if they are not part of the specified security group. 
+Users who aren't members of the specified security group can still see files in organization-wide search and Copilot experiences if they have existing permissions to the file prior to the policy configuration. However they won't be able to open the file or OneDrive if they aren't part of the specified security group.
 
 Note - If you want to prevent oversharing of OneDrive content also for users with existing permissions, we recommend you to enforce OneDrive site access restriction to an individual user's OneDrive. For more information, see [Restrict access to a user's OneDrive content to people in a security group](onedrive-site-access-restriction.md).
 
@@ -51,7 +51,7 @@ To access and use this feature, your organization must have one of the following
 
 To enable this feature:
 
-1. Go to <a href="https://go.microsoft.com/fwlink/?linkid=2185071" target="_blank">Access control in the SharePoint admin center</a>, and sign in with an account that has [admin permissions](sharepoint-admin-role.md) for your organization.
+1. Go to [Access control in the SharePoint admin center](https://go.microsoft.com/fwlink/?linkid=2185071), and sign in with an account that has [admin permissions](sharepoint-admin-role.md) for your organization.
 
 2. Select **Restrict OneDrive access**.
 
@@ -64,7 +64,30 @@ To enable this feature:
 5. Select **Save**.
 
 > [!IMPORTANT]
-> Users who aren't members of the specified security groups will lose access to their own OneDrive and any shared OneDrive content. Sharing of content will be allowed only with the specified security group or members of the specified security group.
+> Users who aren't members of the specified security groups lose access to their own OneDrive and any shared OneDrive content. Sharing of content is allowed only for the specified security group or members of the specified security group.
+
+## Configure learn more link for access denial error page
+
+Configure your learn more link to inform users who were denied access to a OneDrive site due to the OneDrive access restriction policy. With this customizable error link, you can provide more information and guidance to your users.
+
+> [!NOTE]
+> The learn more link is a tenant-level setting that applies to all OneDrive sites.
+
+To configure the link, run the following command in SharePoint PowerShell:
+
+```powershell
+Set-SPOTenant -RestrictedAccessControlForOneDriveErrorHelpLink“<Learn more URL>” 
+```
+
+To fetch the value of the link, run the following command:
+
+```powershell
+Get-SPOTenant | select RestrictedAccessControlForOneDriveErrorHelpLink 
+```
+
+The configured learn more link is launched when the user selects the **Know more about your organization’s policies here** link.
+
+![Screenshot that shows learn more link for restricted access control](media/rac-spac/2-rac-learn-more-link.png)
 
 ## Audit events
 

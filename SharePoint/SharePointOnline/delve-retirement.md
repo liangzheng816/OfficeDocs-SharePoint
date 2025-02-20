@@ -41,21 +41,25 @@ Starting December 2024, properties currently surfaced in Delve, including custom
 
 ## Direct links to profile cards
 
-The modern search experiences on Microsoft365.com, Office.com, and in SharePoint include profile pages built on the same data as profile cards. They have a unique link and can be used in documentation, email signatures, etc. Starting December 16, we'll handle redirects from Delve profiles to these profile pages on Microsoft365.com. Although there are three places and URLs that offer the same experience, we suggest you refer to Microsoft365.com.
+The modern search experiences on Microsoft365.com, Office.com, and in SharePoint include profile pages built on the same data as profile cards. They have a unique link and can be used in documentation, email signatures, and other related resources. Starting December 16, we'll handle redirects from Delve profiles to these profile pages on Microsoft365.com. Although there are three URLs that offer the same experience and will continue to work for some time, we suggest you start using the new domain, m365.cloud.microsoft.
 
 ### Example links
 
-- For Microsoft365.com:
+For m365.cloud.microsoft:
+`https://m365.cloud.microsoft/search/overview?pp=<User.aadObjectId@TenantId>|UPN`  
+`https://m365.cloud.microsoft/search/overview?pp=11111111-1111-4a21-acea-db38b244ac46%4022222222-2222-49c2-99e6-c5c0f6f8ead1%7CAdeleV%40M365x14029536.OnMicrosoft.com`
 
-  :::image type="content" source="media/delve-retirement-microsoft365-links.png" alt-text="Screenshot showing an example link syntax for Microsoft 365.":::
+For Microsoft365.com:  
+`https://www.microsoft365.com/search/overview?pp=<User.aadObjectId@TenantId>|UPN`  
+`https://www.microsoft365.com/search/overview?pp=11111111-1111-4a21-acea-db38b244ac46%4022222222-2222-49c2-99e6-c5c0f6f8ead1%7CAdeleV%40M365x14029536.OnMicrosoft.com`
 
-- For Office.com:
+For Office.com:  
+`https://www.office.com/search/overview? pp=<User.aadObjectId@TenantId>|UPN`  
+`https://www.office.com/search/overview?pp=11111111-1111-4a21-acea-db38b244ac46%4022222222-2222-49c2-99e6-c5c0f6f8ead1%7CAdeleV%40M365x14029536.OnMicrosoft.com`
 
-  :::image type="content" source="media/delve-retirement-office-links.png" alt-text="Screenshot showing an example link syntax for Office.com.":::
-
-- For SharePoint:
-
-  :::image type="content" source="media/delve-retirement-sharepoint-links2.png" alt-text="Screenshot showing an example link syntax for SharePoint.":::
+For SharePoint:  
+`https://<tenant>.sharepoint.com/_layouts/15/search.aspx/overview? pp=<User.aadObjectId@TenantId>|UPN`  
+`https://<tenantname>.sharepoint.com/_layouts/15/search.aspx/overview?pp=11111111-1111-4a21-acea-db38b244ac46%4022222222-2222-49c2-99e6-c5c0f6f8ead1%7CAdeleV%40M365x14029536.OnMicrosoft.com`
 
 ## What happens to existing URLs pointing to Delve or SharePoint profiles?
 
@@ -150,3 +154,5 @@ Delve will be retired on December 16, 2024. The extended profile card experience
 [Profile cards in Microsoft 365](https://support.microsoft.com/en-us/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501)
 
 [User profile synchronization](user-profile-sync.md)
+
+[Unified cloud.microsoft domain for Microsoft 365 apps](/microsoft-365/enterprise/cloud-microsoft-domain)

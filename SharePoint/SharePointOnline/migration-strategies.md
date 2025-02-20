@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kyrachurney
 author: kyracatwork
 manager: roygles
-ms.date: 5/16/2014
+ms.date: 01/29/2025
 audience: Admin
 ms.topic: overview
 ms.service: sharepoint-online
@@ -26,17 +26,17 @@ description: "This article explains how to plan your migration, understand the m
 
 # Migration strategies for moving to Microsoft Purview risk and compliance solutions from older information management and records management for SharePoint for Microsoft 365 
 
-Before you begin, it's important to plan your migration. You might need to interact with multiple stakeholders within your organization depending on the use case. It's important for you to carefully design your migration strategy. We've provided a few examples to help guide your next steps. 
+Before you begin, it's important to plan your migration. You might need to interact with multiple stakeholders within your organization depending on the use case. It's important for you to carefully design your migration strategy. We've provided a few examples to help guide your next steps.
 
-## Prepare for using Purview risk and compliance solutions 
+## Prepare for using Purview risk and compliance solutions
 
 1. Review your existing older policies and decide which ones you need to recreate in the modern features. Confirm your goals for compliance and which of the features you’re using today to meet those needs. For example, you might have a business requirement to keep your content in some SharePoint sites for one year and are using information management policies today to accomplish this requirement. This review can also be an opportunity to audit your retention schedule and identify if there are any duplicate, outdated, or conflicting policies that you might not want to recreate. 
 
 1. Use this guide to understand what you need to do, identify the older feature and behavior you’re migrating from, and decide which modern feature to use. It's also recommended to confirm that you have the applicable licenses for the modern features. Learn more about [licensing for Purview Data Lifecycle Management and Purview Records Management.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management)
 
-    You might be eligible for a free trial of Microsoft Purview risk and compliance solutions, including premium Purview Data Lifecycle Management and Purview Records Management features. See [free trial.](/purview/compliance-easy-trials) 
+    You might be eligible for a free trial of Microsoft Purview risk and compliance solutions, including premium Purview Data Lifecycle Management and Purview Records Management features. See [free trial.](/purview/purview-trial)
 
-1. Configure your modern features. Implement the strategies defined in your plan and set up the modern features that meet your requirements. 
+1. Configure your modern features. Implement the strategies defined in your plan and set up the modern features that meet your requirements.
 
 1. Verify that your new features are working as expected: 
 

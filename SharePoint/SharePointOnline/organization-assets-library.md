@@ -1,5 +1,5 @@
 ---
-ms.date: 03/28/2024
+ms.date: 02/04/2025
 title: "Create an organization assets library"
 ms.reviewer: cathed
 ms.author: ruihu
@@ -49,6 +49,7 @@ If your organization needs to store and manage files for all your users to use, 
     >   - **Word**: .dotx. [Learn how to save a Word document in this format](https://support.microsoft.com/topic/create-a-template-86a1d089-5ae2-4d53-9042-1191bce57deb).
     >   - **PowerPoint**: .potx. [Learn how to save a PowerPoint file in this format](https://support.microsoft.com/office/ee4429ad-2a74-4100-82f7-50f8169c8aca).
     > - Users need at least read permissions on the root site for your organization for the organization assets library to appear in the desktop apps.
+    > - The **OnlineStorage** RegistryKey will block access to the organization assets library for the Word, Excel, or PowerPoint desktop app. To learn more about the **OnlineStorage** RegistryKey, check [here](/microsoft-365/troubleshoot/group-policy/block-onedrive-use-from-office#modify-the-registry).
 
     Organization fonts are supported on PowerPoint for the web. [Learn more about support for your organization fonts here.](support-for-organization-fonts-in-PowerPoint-for-the-web.md)
 

@@ -54,6 +54,10 @@ For the best performance, reliability, and user experience, follow these "ideal 
 
 - **Silently configure user accounts on PCs**. When you enable the silent account configuration policy, users are signed in automatically; so, they don't need to open OneDrive or enter their password. For more information, see [Use silent account configuration](use-silent-account-configuration.md).
 
+## Application start-up
+
+- **Always start OneDrive automatically when signing in to Windows**. When you enable the auto-start configuration policy, OneDrive will automatically start every time users sign in to Windows. For more information, see [Start OneDrive automatically when signing in to Windows](use-group-policy.md#always-start-onedrive-automatically-when-signing-in-to-windows).
+
 ## Known Folder Move
 
 Windows users are familiar and comfortable with saving files to their Desktop, Documents, and Pictures folders from years of developing it as a habit. When you redirect and move these folders to OneDrive, users can continue saving files to these locations, and they're backed up and available from any device. For more information, see [Redirect known folders](redirect-known-folders.md).

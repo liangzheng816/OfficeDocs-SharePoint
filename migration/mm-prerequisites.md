@@ -41,8 +41,6 @@ This article is a resource where you can find prerequisites and endpoint informa
 |SMB 2.0|For file share migration, the server hosting the source data must support SMB 2.0 or higher
 
 
-<br/><br/>
-
 ## Required endpoints
 
 Migration Manager agent sends requests to and receives responses from these endpoints.  They can never call Migration Manager.
@@ -54,17 +52,16 @@ Two endpoints, https://production.odyssey.ops.mover.io and https://production-wu
 |:-----|:-----|
 |`https://secure.aadcdn.microsoftonline-p.com`|Authentication|
 |`https://graph.windows.net`|Microsoft 365 APIs for content move and validation.|
-|`https://spmtreleasescus.blob.core.windows.net`|Installation|
 |`https://*.queue.core.windows.net`|Migration API Azure requirement|
 |`https://*.blob.core.windows.net`|Migration API Azure requirement|
 |`https://*.pipe.aria.microsoft.com`|Telemetry/update|
 |`https://*.sharepoint.com`|Destination for migration|
 |`https://*.blob.core.usgovcloudapi.net`|Migration API Azure Government requirement|
 |`https://*.queue.core.usgovcloudapi.net`|Migration API Azure Government requirement|
-|`https://*.login.microsoftonline.com`|Sign into the MMA agent for SPO access|
-|`https://*.login.windows.net`|Sign into the MMA agent for SPO access|
-|`https://*.msauth.net`|Sign into the MMA agent for SPO access|
-|`https://spmt.sharepointonline.com`|SPMT Installation link.
+|`https://*.login.microsoftonline.com`|Sign into the Migration Manager agent for SPO access|
+|`https://*.login.windows.net`|Sign into the Migration Manager agent for SPO access|
+|`https://*.msauth.net`|Sign into the Migration Manager agent for SPO access|
+|`https://spmt.sharepointonline.com`|Migration Manager agent installation and auto-upgrading link|
 |`https://api.mover.io`|Scan feature for Migration Manager requirement.|
 |`https://production.odyssey.ops.mover.io`|Migration Manager scan feature requirement.|
 |`https://production-wus2-signalr.service.signalr.net`|Migration Manager scan feature requirement. Used to communicate with the server.|

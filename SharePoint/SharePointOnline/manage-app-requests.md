@@ -1,5 +1,5 @@
 ---
-ms.date: 07/11/2018
+ms.date: 01/21/2025
 title: "Manage app requests"
 ms.reviewer: 
 ms.author: ruihu
@@ -35,12 +35,11 @@ To manage app requests
 
 1. Select **Configure store settings**.
 
-1. Expand **App Requests**, and then select **Pending**.
+1. Select **Click here to view app requests**. Then select **Active requests**.
 
-   ![Screenshot of the left navigation showing the Pending page selected.](media/apps-pending-app-requests.png)
 
 To approve an app    
-1. In the **App Requests** list, select a request.
+1. In the **Active Requests** list, select a request.
     
 1. On the app request form, add any comments in the **Comments** field.
     
