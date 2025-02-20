@@ -94,7 +94,7 @@ Deploying SharePoint Server with an Azure SQL MI lets you move your SQL Server o
 
 ## Update SQL password
 
-1. Create a second admin account in the SQL Managed Instance Portal.
+1. Create a second admin account in the SQL MI Portal.
 1. Change the username and password for the second admin account by executing the following SharePoint PowerShell:
 
 ```powershell
@@ -119,7 +119,7 @@ foreach ($DB in $SPDBs)
 
 ```
 
-3. Modify the original account password in the SQL Managed Instance Portal.
+3. Modify the original account password in the SQL MI Portal.
 4.	Change the username and password to original account with new password in SharePoint PowerShell from scripts in Step 2.
 5. Set the second admin account as **Inactive** or delete the second admin account.
 
