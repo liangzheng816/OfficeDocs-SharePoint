@@ -66,5 +66,8 @@ The procedures in [Make an External List from a SQL Azure table with Business Co
 <a name="sectionhybrid"> </a>
 
 The procedures in [Deploy a Business Connectivity Services hybrid solution in SharePoint](../hybrid/deploy-a-business-connectivity-services-hybrid-solution.md) shows you how to publish on-premises data to an external list or app for SharePoint in Microsoft 365. 
+
+> [!NOTE]
+> Business Connectivity Services (BCS) has retired in Microsoft 365. Its features are no longer available and can't be enabled. This applies to all environments including Government Clouds and Department of Defense. For more information, see [BCS retirement in Microsoft 365](../../SharePointOnline/business-connectivity-services-retirement.md).
   
 ## See also
