@@ -24,7 +24,10 @@ description: "Learn how to configure hybrid Business Connectivity Services betwe
 
 # Configure hybrid Business Connectivity Services - roadmap
 
-[!INCLUDE[appliesto-2013-2016-2019-SUB-SPO-md](../includes/appliesto-2013-2016-2019-SUB-SPO-md.md)] 
+[!INCLUDE[appliesto-2013-2016-2019-SUB-SPO-md](../includes/appliesto-2013-2016-2019-SUB-SPO-md.md)]
+
+> [!NOTE]
+> Business Connectivity Services (BCS) has retired in Microsoft 365. Its features are no longer available and can't be enabled. This applies to all environments including Government Clouds and Department of Defense. For more information, see [BCS retirement in Microsoft 365](../../SharePointOnline/business-connectivity-services-retirement.md). 
   
 This article provides the roadmap for configuring hybrid Microsoft Business Connectivity Services between SharePoint in Microsoft 365 for enterprises and SharePoint Server.
   
