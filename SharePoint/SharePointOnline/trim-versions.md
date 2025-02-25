@@ -89,6 +89,9 @@ To queue the trim job, you need to determine the scope for version deletion and 
 
 Once you're ready to commit to the trim, you can queue the job to asynchronously delete versions matching the trim mode criteria. You'll be able to monitor the progress of committed trim jobs to keep track of the deletion progress. 
 
+> [!NOTE]
+> To learn more about how version trimming works on versions that are subject to a retention policy or an eDiscovery Hold, please read the [FAQs](/sharepoint/faqs-for-versions).
+
 ## Trim existing versions using PowerShell
 
 Follow these steps to trim existing versions using PowerShell.
