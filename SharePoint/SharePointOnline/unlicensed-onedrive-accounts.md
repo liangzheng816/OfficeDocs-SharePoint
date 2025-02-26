@@ -232,8 +232,8 @@ For more information on deleting users, see [Delete a user from your organizatio
 
 **Answer:** Archived OneDrive accounts fully honor retention policies, settings, and litigation holds. For example, if your company has a five-year retention policy, it remains unchanged whether the OneDrive account is active or archived. Archiving doesn't reset the timeline of the retention policy or holds.
 
->[!Note]
-> If a OneDrive account is retained due to a Retention Policy, Retention Setting, or Litigation Hold and has been archived due to being unlicensed for 93 days or longer, then you will still pay for the monthly archive storage costs.
+> [!Note]
+> If a OneDrive account is retained due to a Retention Policy, Retention Setting, or Litigation Hold and has been archived due to being unlicensed for 93 days or longer, then you will still pay for the monthly archive storage costs when billing is enabled.
 
 **7. Can I delete an unlicensed account without Archive reactivation?**
 
@@ -263,6 +263,10 @@ As an example, if the billing is put down to reactivate one particular unlicense
 **13. If a change is made to retention policies, will that change sync down to the archived sites?**
 
 **Answer:** Yes. As an example, if the company retention policy is shortened from five years to three years, this change is synced with all archived accounts, and the recycle bin process begins for accounts that completed the retention policy.
+
+**14. Why are there two different report pages with different numbers about unlicensed accounts?**
+
+**Answer:** The [top-level report page](http://spo.ms/admin#/oneDriveAccounts) shows you insights and lets you download the list of accounts which are at least 93 days unlicensed.  This page directly indicates the amount of storage that will be billed if you have enabled billing.  The [detailed report page](http://spo.ms/admin#/oneDriveAccounts/management) is linked from the top-level report page, and indicates all accounts that are currently unlicensed, even if they have been unlicensed for fewer than 93 days.  
 
 ## Related topics
 
