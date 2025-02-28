@@ -36,6 +36,12 @@ Versions that exceed count limits are gradually trimmed when the file is updated
 
 When a site is on hold or a document with versions is subject to retention settings, the configured retention setting determines the retention of versions. In other words, the retention setting always wins, whether it's a deletion or hold policy. [Learn about retention for SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint?view=o365-worldwide#how-retention-works-with-document-versions&preserve-view=true).
 
+When a trim job encounters a version under a retention policy or an eDiscovery hold, it will stamp an expiration date on the version instead of deleting it. Once the expiration date is reached:
+
+- if the retention policy or eDiscovery hold is still in effect for the version, the expiration date is extended;
+
+- if the retention policy or eDiscovery hold has been lifted for the version, the version is deleted. 
+
 ## What happens when organization level or library level version settings are updated?
 
 When **organization-level version settings are updated**, the new settings are applied to all new libraries created since the change was made. The new settings don't apply to existing libraries or versions already created.
