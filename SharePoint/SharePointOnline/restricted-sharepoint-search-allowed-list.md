@@ -1,5 +1,5 @@
 ---
-ms.date: 04/12/2024
+ms.date: 2/28/2025
 title: "Curate the allowed list for Restricted SharePoint Search"
 ms.reviewer: 
 ms.author: ruihu

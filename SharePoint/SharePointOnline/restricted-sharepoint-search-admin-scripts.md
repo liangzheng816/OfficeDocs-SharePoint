@@ -1,5 +1,5 @@
 ---
-ms.date: 4/14/2024
+ms.date: 2/28/2025
 title: "Restricted SharePoint Search Admin PowerShell Scripts"
 ms.reviewer: 
 ms.author: ruihu
