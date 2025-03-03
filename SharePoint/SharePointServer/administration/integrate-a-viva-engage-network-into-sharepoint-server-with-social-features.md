@@ -71,8 +71,9 @@ After you disable the default SharePoint Server social features, [use the Viva E
 [Integrate Viva Engage with on-premises SharePoint Server environments](integrate-viva-engage-with-on-premises-sharepoint-server-environments.md)
   
 [Social scenarios with Viva Engage and SharePoint Server](social-scenarios-with-viva-engage-and-sharepoint-server.md)
+
 #### Other Resources
 
 [Integrate Viva Engage with other applications](/viva/engage/integrate-viva-engage-with-other-apps/integrate-with-other-applications)
 
-[Viva Engage - Admin Help](/viva/engage/viva-engage-landing-page)
+[Viva Engage - Admin Help](/viva/engage/overview)

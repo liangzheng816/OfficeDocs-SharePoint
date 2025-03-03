@@ -53,12 +53,12 @@ To ensure consistent behavior and performance, configure the following options a
 - Do not enable auto-create statistics on SharePoint content databases. Enabling auto-create statistics is not supported for SharePoint Server. SharePoint Server configures the required settings during provisioning and upgrade. Manually enabling auto-create statistics on a SharePoint database can significantly change the execution plan of a query. The SharePoint databases either use a stored procedure that maintains the statistics (proc_UpdateStatistics) or rely on SQL Server to do this.
 
 - For SharePoint Server 2013, Maintenance Plans are managed by SharePoint:
-  - SQL statistics are managed by the health rule "Databases used by SharePoint have outdated index statistics" that calls proc_updatestatics
-  - Content databases have the Auto Update Statistics property set to **False**
+  - SQL statistics are managed by the health rule "Databases used by SharePoint have outdated index statistics" that calls proc_updatestatics.
+  - Content databases have the Auto Update Statistics property set to **False**.
 
 - For SharePoint Servers 2016 and 2019, SQL administrator must create [Maintenance Plans](/sql/relational-databases/maintenance-plans/maintenance-plans?view=sql-server-2017&preserve-view=true) for SharePoint content databases:
   - SQL statistics are not managed by the health rule "Databases used by SharePoint have outdated index statistics"
-  - Content databases have the Auto Update Statistics property set to **True** `
+  - Content databases have the Auto Update Statistics property set to **True**.
 
 - Set max degree of parallelism (MAXDOP) to 1 for instances of SQL Server that host SharePoint databases to make sure that a single SQL Server process serves each request.
 
@@ -176,7 +176,7 @@ Following are recommendations to proactively manage the growth of data and log f
 
 We recommend that you continuously monitor SQL Server storage and performance to make sure that each production database server is adequately handling the load put on it. Additionally, continuous monitoring enables you to establish benchmarks that you can use for resource planning.
 
-Take a comprehensive view of resource monitoring. Do not limit monitoring to resources that are specific to SQL Server. It is equally important to track the following resources on computers that are running SQL Server: CPU, memory, cache/hit ratio, and the I/O subsystem.
+Take a comprehensive view of resource monitoring. Don't limit monitoring to resources that are specific to SQL Server. It is equally important to track the following resources on computers that are running SQL Server: CPU, memory, cache/hit ratio, and the I/O subsystem.
 
 When one or more of the server resources seems slow or overburdened, consider the following performance guidelines based on the current and projected workload.
 

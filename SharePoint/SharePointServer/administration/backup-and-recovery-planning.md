@@ -297,6 +297,7 @@ For detailed recommendations about how to optimize SQL Server backup and restore
 Carefully consider whether to use redundant array of independent disks (RAID) on your disk backup device. For example, RAID 5 has low write performance, approximately the same speed as for a single disk. (This is because RAID 5 maintains parity information.) Using RAID 10 for a backup device may provide faster backups. For more information about how to use RAID with backups, see [Configure RAID for maximum SQL Server I/O throughput](https://go.microsoft.com/fwlink/p/?LinkId=126632).
   
 ## See also
+
 <a name="PlanEnhancedPerformance"> </a>
 
 #### Concepts
