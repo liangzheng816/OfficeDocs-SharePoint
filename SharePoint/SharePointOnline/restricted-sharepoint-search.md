@@ -1,5 +1,5 @@
 ---
-ms.date: 4/12/2024
+ms.date: 2/28/2025
 title: "Restricted SharePoint Search"
 ms.reviewer: 
 ms.author: ruihu
