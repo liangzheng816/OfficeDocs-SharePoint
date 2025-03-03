@@ -124,12 +124,12 @@ For more information, see [Announcement: Protect your Server 2016 workloads with
   
 (7) Fully-trusted solution packages are stored in the configuration database, and sandboxed solutions are stored in content databases. They can be recovered as part of farm or content database recovery.
   
-(8) Configuration settings can be recovered from farm-level backups. For more information, see [Restore farms in SharePoint Server](restore-a-farm.md). 
+(8) Configuration settings can be recovered from farm-level backups. For more information, see [Restore farms in SharePoint Server](restore-a-farm.md).
   
 (9) The Central Administration content database and the configuration database for a SharePoint 2013 farm can be recovered but only as part of a full-farm recovery to the same farm, with the same computers. 
   
 > [!NOTE]
-> You can register SharePoint 2013 with Windows Server Backup by using the stsadm.exe **-o -registerwsswriter** operation to configure the Volume Shadow Copy Service (VSS) writer for SharePoint 2013. Windows Server Backup then includes SharePoint 2013 in server-wide backups. When you restore from a Windows Server backup, you can select SharePoint Foundation (regardless of which version of SharePoint 2013 is installed), and all components reported by the VSS writer for SharePoint 2013 on that server at the time of the backup will be restored. > Windows Server Backup is recommended only for use with for single-server deployments. 
+> You can register SharePoint 2013 with Windows Server Backup by using the stsadm.exe **-o -registerwsswriter** operation to configure the Volume Shadow Copy Service (VSS) writer for SharePoint 2013. Windows Server Backup then includes SharePoint 2013 in server-wide backups. When you restore from a Windows Server backup, you can select SharePoint Foundation (regardless of which version of SharePoint 2013 is installed), and all components reported by the VSS writer for SharePoint 2013 on that server at the time of the backup will be restored. Windows Server Backup is recommended only for use with for single-server deployments.
   
 ### Choose what to recover from within SharePoint content databases
 <a name="section2"> </a>
@@ -270,11 +270,11 @@ Follow the general recommendations for configuring SQL Server and storage for a 
   
 ### Minimize latency between SQL Server and the backup location
 
-In general, use a local disk instead of a network drive for backups. If you are backing up multiple servers, you may want to have a directly connected computer that both servers can write to. Network drives that have 1 millisecond or less latency between them and the computers that are running SQL Server will perform well. If your farm has multiple servers in it (including the computer that is running SQL Server, you must use UNC network paths for the SharePoint farm backup location.
+In general, use a local disk instead of a network drive for backups. If you are backing up multiple servers, you may want to have a directly connected computer that both servers can write to. Network drives that have 1 millisecond or less latency between them and the computers that are running SQL Server will perform well. If your farm has multiple servers in it (including the computer that is running SQL Server), you must use UNC network paths for the SharePoint farm backup location.
   
 ### Avoid processing conflicts
 
-Do not run backup jobs during times in which users must have access to the system. 
+Don't run backup jobs during times in which users must have access to the system. 
   
 To avoid I/O bottlenecks, perform the main backup to a separate disk, and only then copy to tape.
   

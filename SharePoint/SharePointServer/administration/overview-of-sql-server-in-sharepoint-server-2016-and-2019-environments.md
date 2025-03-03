@@ -39,9 +39,9 @@ The minimum requirements for a database server in SharePoint Servers 2016 and 20
 - Microsoft SQL Server 2017 RTM
 
 > [!NOTE]
-> SQL Server Express is not supported with SharePoint Servers 2016 and 2019.  <br/>
+> SQL Server Express isn't supported with SharePoint Servers 2016 and 2019.  <br/>
   <br/>
-> SQL Server 2017 on Linux is not supported with SharePoint Servers 2016 and 2019.
+> SQL Server 2017 on Linux isn't supported with SharePoint Servers 2016 and 2019.
   
 Depending on the installed version, you can use specific features of SQL Server, such as reporting and business intelligence (BI) with SharePoint Server 2016. For more information, see [Hardware and software requirements for SharePoint Server 2016](../install/hardware-and-software-requirements.md).
   
@@ -60,10 +60,10 @@ SharePoint Server 2019 supports the following:
 > [!NOTE]
 > SQL Server Reporting Services integration with SharePoint Server 2019 is no longer supported. For more information, see [Reporting Services Report Server (SharePoint Mode)](/sql/reporting-services/report-server-sharepoint/reporting-services-report-server-sharepoint-mode?view=sql-server-2016&viewFallbackFrom=sql-server-2017&preserve-view=true) and [Supported combinations of SharePoint and Reporting Services server](/sql/reporting-services/install-windows/supported-combinations-of-sharepoint-and-reporting-services-server?view=sql-server-2016&preserve-view=true).
 
-You can use the Report Viewer web part that has much of the same functionality as integrated mode. for more information, see [Add the Report Viewer web part to a web page](/sql/reporting-services/report-server-sharepoint/add-the-report-viewer-web-part-to-a-web-page?view=sql-server-2017&preserve-view=true) and [Report Viewer web part on a SharePoint site - Reporting Services](/sql/reporting-services/report-server-sharepoint/report-viewer-web-part-sharepoint-site?view=sql-server-2017&preserve-view=true)
+You can use the Report Viewer web part that has much of the same functionality as integrated mode. For more information, see [Add the Report Viewer web part to a web page](/sql/reporting-services/report-server-sharepoint/add-the-report-viewer-web-part-to-a-web-page?view=sql-server-2017&preserve-view=true) and [Report Viewer web part on a SharePoint site - Reporting Services](/sql/reporting-services/report-server-sharepoint/report-viewer-web-part-sharepoint-site?view=sql-server-2017&preserve-view=true).
     
 > [!NOTE]
-> If you want to use Microsoft SQL Server Power Pivot for SharePoint or Microsoft Power View for SharePoint for BI solutions you must install the Power Pivot or Power View add-ins for SQL Server 2016 RTM. The SQL Server 2014 (SP1) Power Pivot for SharePoint and Power View for SharePoint BI solutions do not work with SharePoint Server 2016. 
+> If you want to use Microsoft SQL Server Power Pivot for SharePoint or Microsoft Power View for SharePoint for BI solutions you must install the Power Pivot or Power View add-ins for SQL Server 2016 RTM. The SQL Server 2014 (SP1) Power Pivot for SharePoint and Power View for SharePoint BI solutions don't work with SharePoint Server 2016. 
   
     
 ## SharePoint Servers 2016 and 2019 and the SQL Server database engine
@@ -74,7 +74,7 @@ The SharePoint Server 2016 application is built on the SQL Server database engin
 |**Database type**|**Description**|
 |:-----|:-----|
 |Configuration  <br/> |The Configuration database and Central Administration content database are called configuration databases. They contain data about farm settings such as the databases that are used, Internet Information Services (IIS) web sites or web applications, solutions, Web Part packages, site templates, default quota, and blocked file types. A farm can only have one set of configuration databases.  <br/> |
-|Content  <br/> | Content databases store all site content:  <br/>  Site documents, such as files in document libraries  <br/>  List data  <br/>  Web Part properties  <br/>  Data for apps for SharePoint  <br/>  Data and objects for Project Server 2016  <br/>  User names and permissions  <br/>  Each web application can contain many content databases. Each site collection can be associated with only one content database, although a content database can be associated with many site collections.  <br/> |
+|Content  <br/> | Content databases store all site content:  <br/>  Site documents, such as files in document libraries  <br/>  List data  <br/>  Web Part properties  <br/> Data for apps for SharePoint  <br/>  Data and objects for Project Server 2016 <br/>  User names and permissions  <br/>  Each web application can contain many content databases. Each site collection can be associated with only one content database, although a content database can be associated with many site collections.  <br/> |
 |Service application  <br/> |Databases for service applications store the data that service applications use.  <br/> |
    
 For a full list of all of the databases that support SharePoint Servers 2016 and 2019, see [Database types and descriptions in SharePoint Server](../technical-reference/database-types-and-descriptions.md). The **Quick reference guide: SharePoint Servers 2016 and 2019 Databases**, is available to download as either a [PDF](https://download.microsoft.com/download/7/9/7/79700E8E-9896-4657-B9E6-4940B295B71A/DBrefguideSPS2019_tabloid.pdf) or [Visio](https://download.microsoft.com/download/7/9/7/79700E8E-9896-4657-B9E6-4940B295B71A/DBrefguideSPS2019_tabloid.vsdx) file. 
@@ -86,11 +86,11 @@ The databases that support SharePoint Server 2016 are either created automatical
   
 Microsoft does not support directly querying or modifying the databases that support SharePoint Servers 2016 and 2019. In SharePoint Servers 2016 and 2019 the Usage and Health Data Collection database does support schema modifications.
 
-SharePoint Server 2019 does not support multi-tenancy so service application databases in partitioned mode can’t be attached. Additionally, service applications databases in partitioned mode can’t be created from Central Administration.
+SharePoint Server 2019 does not support multi-tenancy so service application databases in partitioned mode can't be attached. Additionally, service applications databases in partitioned mode can’t be created from Central Administration.
   
 The SQL Server databases that support SharePoint Server 2016 are subject to sizing limitations and to configuration recommendations that are not standard for SQL Server. For more information, see [Storage and SQL Server capacity planning and configuration (SharePoint Server)](storage-and-sql-server-capacity-planning-and-configuration.md).
   
-## SharePoint Server 2016 and   SQL Server 2014 with Service Pack 1 (SP1)
+## SharePoint Server 2016 and SQL Server 2014 with Service Pack 1 (SP1)
 <a name="sec4"> </a>
 
 SQL Server 2014 (SP1) provides greater performance, availability, and manageability with SharePoint Server 2016 than SQL Server 2014. While you can't use SQL Server Power Pivot for SharePoint or Power View for SharePoint with SQL Server 2014 (SP1), you can use some business intelligence solutions with SharePoint Server 2016. For example, you can install Office Online Server to use Excel Online.
