@@ -164,7 +164,7 @@ This section guides you how to onboard your cloud SSA and Microsoft 365 organiza
 - **Configuring server-to-server authentication** - Server-to-server authentication allows servers to access and request resources from one another on behalf of users. 
 
 > [!NOTE]
-> The Search Content Service (SCS) feature will be retired starting June 30, 2025. We have introduced a new onboarding script and updates. These will be available in the SharePoint Server Subscription Edition Version 25H1 feature update. This feature is currently available only in the *Early release* feature release ring. For more information, see [Feature release rings](../administration/feature-release-rings.md). To use this feature, run the script `Onboard-CloudHybridSearch-SPOONS.ps1` instead of `Onboard-CloudHybridSearch.ps1` for onboarding. 
+> The Search Content Service (SCS) feature will be retired starting June 30, 2025. We have introduced a new onboarding script and updates. These will be available in the SharePoint Server Subscription Edition Version 25H1 feature update. This feature is currently available only in the  *Early release*  feature release ring. For more information, see [Feature release rings](../administration/feature-release-rings.md). To use this feature, run the script `Onboard-CloudHybridSearch-SPOONS.ps1` instead of `Onboard-CloudHybridSearch.ps1` for onboarding. 
     
 On the application server that hosts the SharePoint Server Central Administration website, follow these steps:
   
@@ -204,7 +204,7 @@ When transitioning to the new Hybrid Search, use the `Onboard-CloudHybridSearch-
 Onboard-CloudHybridSearch-SPOONS.ps1 -PortalUrl <SPOTenantPortalUrl> -CloudSsaId <CloudSSANameCreated>
 ``` 
 
-1.When prompted, sign in to your Office 365 tenant as an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator) or [above](/entra/identity/role-based-access-control/permissions-reference#all-roles). 
+1. When prompted, sign in to your Office 365 tenant as an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator) or [above](/entra/identity/role-based-access-control/permissions-reference#all-roles). 
 
 1. Accept the requested permissions. 
 
