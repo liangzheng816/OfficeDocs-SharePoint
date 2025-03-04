@@ -102,3 +102,7 @@ Use the following cmdlet to enable feedback for current farm:
   ```
   Enable-SPCustomerFeedbackForFarm
   ```
+
+## Dynamic Survey feature
+
+SharePoint Server has introduced "Dynamic Survey" feature to enhance the flexibility and effectiveness of the OCV feature. This feature allows the dynamic configuration and display surveys to more effectively gather administrator feedback based on current needs.
