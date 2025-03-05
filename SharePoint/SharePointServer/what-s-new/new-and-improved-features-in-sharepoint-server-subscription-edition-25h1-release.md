@@ -76,13 +76,13 @@ Now, new Office document creation can be initiated in the browser and completed 
 > [!NOTE]
 > If OOS is unavailable and the client machine doesn't have the Office installed, then selecting an Office file type from the "New" drop-down creates an empty file in the library. This mirrors the old behavior but the file will have the correct extension.
 
-:::image type="content" source="../media/create-new-office-file-spse.png" alt-text="Screenshot diplaying the New button with file extensions in the browser of ShapePoint library.":::
+:::image type="content" source="../media/create-new-office-file-spse.png" alt-text="Screenshot displaying the New button with file extensions in the browser of SharePoint library.":::
 
 ### Support for request body scan in AMSI
 
 The Antimalware Scanning Interface (AMSI) feature now has the ability to scan the body of web requests. The AMSI Body Scan feature enhances the existing anti-malware scan capabilities in SharePoint Server Subscription Edition by extending its reach to include the bodies of HTTP requests.
 
-This is useful for detecting and mitigating threats that may be embedded in request payloads, providing a more comprehensive security solution. Users can also choose from the available modes such as Balanced and Full mode for scanning request body.
+This is useful for detecting and mitigating threats that might be embedded in request payloads, providing a more comprehensive security solution. Users can also choose from the available modes such as Balanced and Full mode for scanning request body.
 
 For more information, see [Configure AMSI integration with SharePoint Server](../security-for-sharepoint-server/configure-amsi-integration.md).
 
@@ -96,7 +96,7 @@ For more information on upgrading an existing Cloud SSA, see [Configure cloud hy
 
 ### New database connectivity layer with TLS 1.3 and TDS 8.0 support
 
-The SharePoint Server Subscription Edition Version 25H1 build introduces a new database connectivity layer called [Microsoft.Data.SqlClient version 5.1.4](/sql/connect/ado-net/overview-sqlclient-driver?view=sql-server-ver16&preserve-view=true) for .NET-based applications. This new database connectivity layer supports advanced security capabilities such as TLS 1.3 that couldn’t be supported in our previous database connectivity layer, that is [System.Data.SqlClient](/dotnet/framework/data/adonet/sql/) library. It also enables SharePoint Server to take advantage of other new SQL capabilities, such as SQL Server and Azure SQL features.
+The SharePoint Server Subscription Edition Version 25H1 build introduces a new database connectivity layer called [Microsoft.Data.SqlClient version 5.1.4](/sql/connect/ado-net/overview-sqlclient-driver?view=sql-server-ver16&preserve-view=true) for .NET-based applications. This new database connectivity layer supports advanced security capabilities such as TLS 1.3 that couldn’t be supported in our previous database connectivity layer, that is, [System.Data.SqlClient](/dotnet/framework/data/adonet/sql/) library. It also enables SharePoint Server to take advantage of other new SQL capabilities, such as SQL Server and Azure SQL features.
 
 The following are the capabilities of the new Microsoft.Data.SqlClient library:
 
