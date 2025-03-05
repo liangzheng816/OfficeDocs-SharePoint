@@ -31,6 +31,7 @@ Permissions are migrated only in the first migration run. To correctly migrate p
   + File permissions: File permissions migration can be enabled in the Project settings. Once enabled, the destination file permissions will be the same as they are in the source. This ensures that migrated files are shared with the same users as before migration.
 
 After migration, the permission roles in Microsoft 365:
+
 |**Cloud source**|**Permission role in the source**|**Permission role in OneDrive/SharePoint**|
 |:-----|:-----|:-----|
 |Google Personal Drive	|Owner	|Owner|
