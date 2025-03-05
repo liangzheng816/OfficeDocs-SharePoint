@@ -200,7 +200,7 @@ On the application server that hosts the SharePoint Server Central Administratio
     
 1. For Office 365 US Government Communication environments, the new onboard script isn't supported. Use Onboard-CloudHybridSearch.ps1.
   
-1. When prompted, sign in your Office 365 tenant as an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator) or [above](/entra/identity/role-based-access-control/permissions-reference#all-roles).
+1. When prompted, sign in your Office 365 tenant as an [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) or [above](/entra/identity/role-based-access-control/permissions-reference#all-roles).
 
 When transitioning to the new Hybrid Search, use the `Onboard-CloudHybridSearch-SPOONS.ps1` script. This is essential when replacing the old Hybrid Search with the new version. To proceed, run the following PowerShell command: 
 
