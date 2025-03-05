@@ -17,6 +17,7 @@ ms.collection:
 - Strat_OD_admin
 - M365-collaboration
 - essentials-overview
+- essentials-get-started
 ms.custom:
 - admindeeplinkSPO
 - onedrive-toc
