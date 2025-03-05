@@ -201,7 +201,6 @@ An education tenant is any tenant with more than 50% education licenses. Any ten
 **License Removal:**
 
 - Go to the Microsoft 365 admin center.
-
 - Expand Billing and select **Your Products**.
 - Select the subscription and select **Remove licenses**.
 
