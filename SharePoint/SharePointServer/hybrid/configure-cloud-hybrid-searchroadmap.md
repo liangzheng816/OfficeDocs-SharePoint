@@ -170,7 +170,11 @@ On the application server that hosts the SharePoint Server Central Administratio
   
 1. Ensure that the date and time of the server is synchronized with the other servers in the SharePoint Server farm.
     
-1. Download and install the latest version of the [Microsoft Graph PowerShell module](/powershell/microsoftgraph/installation) from the PowerShell Gallery. 
+1. Download and install version 2.25.0  of the [Microsoft Graph PowerShell module](/powershell/microsoftgraph/installation) from the PowerShell Gallery. This step is not required if you are using Onboard-CloudHybridSearch-SPOONS.ps1.
+   
+   ```powershell
+   Install-Module Microsoft.Graph -RequiredVersion 2.25.0 
+   ```
     
 1. Download the [Onboard-CloudHybridSearch.ps1](https://go.microsoft.com/fwlink/?LinkId=717902) or Onboard-CloudHybridSearch-SPOONS.ps1 PowerShell script from the Microsoft Download Center.
     
@@ -189,7 +193,7 @@ On the application server that hosts the SharePoint Server Central Administratio
    ```
     
    ```powershell 
-   .\ Onboard-CloudHybridSearch-SPOONS.ps1 -PortalUrl <SPOTenantPortalUrl> -CloudSsaId <CloudSSANameCreated> 
+   .\Onboard-CloudHybridSearch-SPOONS.ps1 -PortalUrl <SPOTenantPortalUrl> -CloudSsaId <CloudSSANameCreated> 
    ```  
 
     **SPOTenantPortalUrl** is the URL of your company's or organization's SharePoint portal, and CloudSsaId is the name of the cloud SSA that you created earlier. 
@@ -201,10 +205,10 @@ On the application server that hosts the SharePoint Server Central Administratio
 When transitioning to the new Hybrid Search, use the `Onboard-CloudHybridSearch-SPOONS.ps1` script. This is essential when replacing the old Hybrid Search with the new version. To proceed, run the following PowerShell command: 
 
 ```powershell 
-Onboard-CloudHybridSearch-SPOONS.ps1 -PortalUrl <SPOTenantPortalUrl> -CloudSsaId <CloudSSANameCreated>
+.\Onboard-CloudHybridSearch-SPOONS.ps1 -PortalUrl <SPOTenantPortalUrl> -CloudSsaId <CloudSSANameCreated>
 ``` 
 
-1. When prompted, sign in to your Office 365 tenant as an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator) or [above](/entra/identity/role-based-access-control/permissions-reference#all-roles). 
+1. When prompted, sign in to your Office 365 tenant as an [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) or [above](/entra/identity/role-based-access-control/permissions-reference#all-roles). 
 
 1. Accept the requested permissions. 
 
