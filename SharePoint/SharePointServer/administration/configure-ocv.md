@@ -54,7 +54,7 @@ The Dynamic Survey feature's significance is the changes in the "pop-up" frequen
 - **Survey-level cooldown: configurable**—This is the waiting period after triggering a survey during which a user cannot see the same survey.
 - A survey won't appear again for users who have already submitted.
 
-YOu can also disable the survey feature (pre-24H1 feature) for the farm administrators or specific users. For information on how to disable this feature, see:
+You can also disable the survey feature (pre-24H1 feature) for the farm administrators or specific users. For information on how to disable this feature, see:
 
 - [To disable feedback for current Farm Administrator](#to-disable-feedback-for-current-farm-administrator)
 - [To disable feedback for current Farm](#to-disable-feedback-for-current-farm)
