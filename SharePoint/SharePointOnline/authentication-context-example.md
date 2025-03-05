@@ -161,7 +161,7 @@ Once the label has been updated, guests accessing a SharePoint site (or the **Fi
 If authentication context is set on a site, admins can choose to prevent background apps from accessing that site for the apps assigned with that authentication context in a conditional access policy. You can configure a conditional access policy such that a specific authentication context can be assigned to chosen application principles (non-Microsoft applications). You need to explicitly turn on this feature via the following cmdlet. You should have at least one conditional access policy with an application principle configured.
 
 ```PowerShell
-Set-SPOTenant -BlockAPPAccessToSitesWithAuthenticationContext $false/$true (default false)
+Set-SPOTenant -BlockAppAccessWithAuthenticationContext $false/$true (default false)
 ```
 
 ## Third party app integration

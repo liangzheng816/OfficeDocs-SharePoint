@@ -64,7 +64,7 @@ You can also bulk assign licenses using either of the following methods:
 - [Assign licenses to user accounts in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users)
 - [Assign licenses to user accounts with PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell)
 
-**After the unlicensed OneDrive account archival** - The account must be reactivated from the archived state before a license can be assigned. If the archived account has an associated user, the IT admin can give the user a valid license and the account is automatically reactivated within 24 hours. If the archived account doesn't have an associated user (for example, if the identity was deleted), then we recommend admins move any actively needed content to a SharePoint site or an active and licensed OneDrive account. For more information on licensing and active users in Microsoft 365, see [Assign or unassign licenses for users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
+**After the unlicensed OneDrive account archival** - If the archived account has an associated user as the owner (also known as the *primary site collection administrator*), the IT admin can give the user a valid license and the account is automatically reactivated within 24 hours. If the archived account doesn't have an associated user (for example, if the identity was deleted), then we recommend admins move any actively needed content to a SharePoint site or an active and licensed OneDrive account.  If the account is already archived and doesn't have an associated user, then the account needs to be reactivated before that data can be moved. For more information on licensing and active users in Microsoft 365, see [Assign or unassign licenses for users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ### Delete unlicensed OneDrive account
 
@@ -201,7 +201,6 @@ An education tenant is any tenant with more than 50% education licenses. Any ten
 **License Removal:**
 
 - Go to the Microsoft 365 admin center.
-
 - Expand Billing and select **Your Products**.
 - Select the subscription and select **Remove licenses**.
 
