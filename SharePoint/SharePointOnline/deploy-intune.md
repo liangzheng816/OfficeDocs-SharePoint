@@ -58,7 +58,7 @@ There are two options for deploying the OneDrive app on Android:
 There are two options for deploying the OneDrive app using Intune:
 - **Microsoft 365 Apps.** You can deploy Microsoft 365 apps including OneDrive with Intune. For more information, see [Assign Microsoft 365 to macOS devices with Microsoft Intune](/mem/intune/apps/apps-add-office365-macos).
 - **Deploy a standalone PKG**
-    1. Downlaod the [app package (.pkg)](deploy-and-configure-on-macos.md)
+    1. Download the [app package (.pkg)](deploy-and-configure-on-macos.md)
     1. Deploy using [Add an unmanaged macOS PKG app to Microsoft Intune](/mem/intune/apps/macos-unmanaged-pkg)
   
 For more information about OneDrive on macOS, see [Deploy and Configure OneDrive on macOS](deploy-and-configure-on-macos.md).
