@@ -44,7 +44,7 @@ The following table provides a summary of the new features introduced in the Sha
 This section provides detailed descriptions of the new and updated features in SharePoint Server Subscription Edition Version 25H1.
 
 > [!NOTE]
-> Features previously introduced in the Version 24H2 feature update won't be described here. For more information on Version 24H1, see [New and improved features in SharePoint Server Subscription Edition Version 24H2](new-and-improved-features-in-sharepoint-server-subscription-edition-24h2-release.md). 
+> Features previously introduced in the Version 24H2 feature update won't be described here. For more information on Version 24H2, see [New and improved features in SharePoint Server Subscription Edition Version 24H2](new-and-improved-features-in-sharepoint-server-subscription-edition-24h2-release.md). 
 
 ### Support for Automatic Machine Key rotation
 
@@ -69,12 +69,12 @@ For more information, see [Configure feedback for SharePoint Server](../administ
 
 This feature enhances the user experience by allowing the creation of new Office documents in an SPSE farm, even when [Office Online Server (OOS)](/officeonlineserver/office-online-server), also known as Web Access Components (WAC) or Office Web Apps, isn't configured or unavailable.
 
-Previously, if OOS was unavailable, new Office documents couldn't be created from the document library in the browser. Additionally, even if Content Types were enabled for the library without OOS/WAC, a new file would be created without a file extension and couldn't be opened in a browser or client app.
+Previously, if OOS was unavailable, new Office documents couldn't be created from the document library in the browser. Additionally, even if Content Types were enabled for the library without OOS/WAC, a new file would be created without a file extension but couldn't be opened in a browser or client app.
 
 Now, new Office document creation can be initiated in the browser and completed in the client-side application. The "New" button in the library toolbar launches the new document within the client-side Office application. Also, if Content Types are enabled for the library without OOS/WAC, they're shown in the "New" drop-down. Selecting one creates a new file of that type and opens it in the appropriate client application. For example, selecting "Word document" under the "New" menu creates a new docx file in the library and opens it in the Word client application.
 
 > [!NOTE]
-> If OOS is unavailable and the client machine doesn't have Office, selecting an Office file type from the "New" drop-down creates an empty file in the library. This mirrors the old behavior but the file will have the correct extension.
+> If OOS is unavailable and the client machine doesn't have the Office installed, then selecting an Office file type from the "New" drop-down creates an empty file in the library. This mirrors the old behavior but the file will have the correct extension.
 
 :::image type="content" source="../media/create-new-office-file-spse.png" alt-text="Screenshot diplaying the New button with file extensions in the browser of ShapePoint library.":::
 
@@ -96,19 +96,11 @@ For more information on upgrading an existing Cloud SSA, see [Configure cloud hy
 
 ### New database connectivity layer with TLS 1.3 and TDS 8.0 support
 
-Starting with SPSE Version 25H1 build, SharePoint Server Subscription Edition uses [Microsoft.Data.SqlClient version 5.1.4](https://github.com/dotnet/SqlClient/tree/main/release-notes/5.1) for its database connectivity layer. This change enables advanced security capabilities such as TLS 1.3 that couldn’t be supported in our previous database connectivity layer, that is System.Data.SqlClient library. It also enables SharePoint Server to take advantage of other new SQL capabilities such as SQL Server and Azure SQL features.
+The SPSE Version 25H1 build introduces a new database connectivity layer called [Microsoft.Data.SqlClient version 5.1.4](/sql/connect/ado-net/overview-sqlclient-driver?view=sql-server-ver16&preserve-view=true) for .NET-based applications. This new database connectivity layer supports advanced security capabilities such as TLS 1.3 that couldn’t be supported in our previous database connectivity layer, that is System.Data.SqlClient library. It also enables SharePoint Server to take advantage of other new SQL capabilities, such as SQL Server and Azure SQL features.
 
-The following new functionalities are enabled by switching from the previous System.Data.SqlClient library to the new Microsoft.Data.SqlClient library:
+The following are the capabilities of the new Microsoft.Data.SqlClient library:
 
 - **Support for Tabular Data Stream (TDS) Version 8.0**: The new TDS version 8.0 is secure by default, requiring encrypted connections and supporting newer encryption protocols like TLS 1.3. This also ensures compatibility with older TLS versions while enhancing security.
 - **Support for Transport Layer Security (TLS) Version 1.3**: This new build update provides support for connecting to SQL databases using TLS 1.3 connection encryption, addressing design concerns of previous versions. This enables better database connections, ensuring even backward compatibility with older SQL Server versions.
-
-#### When upgrading a farm with existing databases
-
-Databases that were part of a SharePoint farm when this update was installed will be configured to use "Optional" encryption by default. This ensures compatibility with the existing SQL Servers in the farm if they don’t support TDS 8.0 and TLS 1.3 protocols. As a result, SharePoint continues to use TDS 7.4 for database connections.
-
-#### When adding a database to a farm
-
-New SharePoint farms that are created after this update is installed will be configured to use "Strict" encryption by default for all its database.
 
 For more information, see [Transport Layer Security (TLS) 1.3 Support](../security-for-sharepoint-server/tls-support-1.3.md).
