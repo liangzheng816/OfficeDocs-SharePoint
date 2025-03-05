@@ -420,7 +420,7 @@ The script must be run on a server where SharePoint On-Premises is installed (20
     Get-Help .\Update-FederatedHybridSearchForM365.ps1
     ```
 
-3. When prompted, log in using Microsoft 365 Global Administrator account.
+3. When prompted, log in using Microsoft 365 Application Administrator account.
 
 4. Wait for script execution to complete; in case there are any issues, contact Microsoft Support.
 
