@@ -30,15 +30,15 @@ TLS 1.3 is the latest version of the TLS encryption protocol. SharePoint Server 
 >
 > TLS 1.3 isn't available and isn't supported when SharePoint Server Subscription Edition is deployed with earlier versions of Windows Server. Microsoft recommends deploying SharePoint Server Subscription Edition with Windows Server 2022 or higher.
 
-SharePoint Server Subscription Edition uses [Microsoft.Data.SqlClient](/sql/connect/ado-net/overview-sqlclient-driver) for its database connectivity layer.<br>
+Starting from Version 25H1, SharePoint Server Subscription Edition uses [Microsoft.Data.SqlClient](/sql/connect/ado-net/overview-sqlclient-driver) for its database connectivity layer.<br>
 The Microsoft.Data.SqlClient database connectivity layer supports advanced security capabilities like Tabular Data Stream (TDS) Version 8.0 and TLS Version 1.3.
 
-## Support for Tabular Data Stream (TDS) Version 8.0
+## Support for TDS 8.0
 SharePoint Server Subscription Edition supports TDS 8.0 while also remaining backward compatible with previous versions of SQL Server that don't support TDS 8.0. TDS 8.0 is currently supported by SQL Server 2022, Azure SQL Database, and Azure SQL Managed Instance.
  
 TDS 8.0 supports newer encryption protocols such as TLS 1.3 that older versions of TDS can't support, while maintaining compatibility with older versions of TLS. 
 
-## Support for TLS Version 1.3
+## Support for TLS 1.3
 SharePoint Server Subscription Edition adds support for connecting to SQL databases using TLS 1.3 connection encryption, while also remaining backward compatible with previous versions of SQL Server that don't support TLS 1.3 connection encryption. TLS 1.3 is currently supported by SQL Server 2022. SQL Server 2022 and Windows-based applications connecting to it must be running on Windows 11 or Windows Server 2022 (or higher) to be able to use TLS 1.3. 
 
 ## Database settings 
