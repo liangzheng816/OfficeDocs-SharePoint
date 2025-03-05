@@ -23,7 +23,7 @@ description: "This article describes the supported and unsupported components on
 
 [!INCLUDE[appliesto-xxx-xxx-xxx-SUB-xxx-md](../includes/appliesto-xxx-xxx-xxx-SUB-xxx-md.md)]
 
-SharePoint Server 2019 supports TLS protocol version 1.3 by default. However, to enable end-to-end support for TLS protocol version 1.3 in your SharePoint 2019 environment, you may need to install updates or change configuration settings in the following locations:
+SharePoint Server 2019 supports TLS protocol version 1.3 by default. However, to enable end-to-end support for TLS protocol version 1.3 in your SharePoint 2019 environment, you might need to install updates or change configuration settings in the following locations:
   
 1. SharePoint servers in your SharePoint farm
     
@@ -34,9 +34,9 @@ SharePoint Server 2019 supports TLS protocol version 1.3 by default. However, to
 TLS 1.3 is the latest version of the TLS encryption protocol. SharePoint Server Subscription Edition by default supports TLS 1.3 when deployed with Windows Server 2022 and 2021-06 Cumulative Update for .NET Framework 3.5, and 4.8 for Microsoft server operating system x64 (KB5003529).
 
 > [!NOTE]
-> TLS 1.3 does not require any additional configuration and may not support all softwares and systems. Microsoft recommends you to contact your software and hardware administrator to check compatibility of TLS 1.3.
+> TLS 1.3 doesn't require any additional configuration and might not support all softwares and systems. Microsoft recommends you to contact your software and hardware administrator to check compatibility of TLS 1.3.
 >
-> TLS 1.3 is not available and is not supported when SharePoint Server Subscription Edition is deployed with earlier versions of Windows Server. Microsoft recommends deploying SharePoint Server Subscription Edition with Windows Server 2022 or higher.
+> TLS 1.3 isn't available and isn't supported when SharePoint Server Subscription Edition is deployed with earlier versions of Windows Server. Microsoft recommends deploying SharePoint Server Subscription Edition with Windows Server 2022 or higher.
 
 SharePoint Server Subscription Edition adds support for connecting to SQL databases using TLS 1.3 connection encryption, while also remaining backward compatible with previous versions of SQL Server that don't support TLS 1.3 connection encryption. TLS 1.3 is currently supported by SQL Server 2022. SQL Server 2022 and Windows-based applications connecting to it must be running on Windows 11 or Windows Server 2022 (or higher) to be able to use TLS 1.3. 
 
@@ -46,12 +46,12 @@ SharePoint Server Subscription Edition uses [Microsoft.Data.SqlClient version 5.
 
 SharePoint Server Subscription Edition supports TDS 8.0 while also remaining backward compatible with previous versions of SQL Server that don't support TDS 8.0. TDS 8.0 is currently supported by SQL Server 2022, Azure SQL Database, and Azure SQL Managed Instance.
  
-TDS 8.0 supports newer encryption protocols such as TLS 1.3 that older versions of TDS cannot support, while maintaining compatibility with older versions of TLS. 
+TDS 8.0 supports newer encryption protocols such as TLS 1.3 that older versions of TDS can't support, while maintaining compatibility with older versions of TLS. 
 
 ## Database settings
 
 The database connectivity layer has the following properties for each SharePoint database (Microsoft.SharePoint.Administration.SPDatabase). 
-1. Encrypt ([Microsoft.Data.SqlClient.SqlConnectionEncryptOption](/dotnet/api/microsoft.data.sqlclient.sqlconnectionencryptoption?view=sqlclient-dotnet-5.1)) 
+1. Encrypt ([Microsoft.Data.SqlClient.SqlConnectionEncryptOption](/dotnet/api/microsoft.data.sqlclient.sqlconnectionencryptoption)) 
 
     1. Optional: Connection encryption can be used if required by the SQL Server. However, if encryption isn't required by the SQL Server, then no connection encryption is used. The connection is limited to using TDS 7.4. 
 
@@ -59,7 +59,7 @@ The database connectivity layer has the following properties for each SharePoint
 
     3. Strict: Connection encryption must be established with the SQL Server and the connection must use TDS 8.0 or higher. If connection encryption using TDS 8.0 or higher can't be established, then the connection is blocked. 
 
-1. HostnameInCert (String): Specifies the hostname in the SSL/TLS server certificate of the SQL Server. SharePoint farm administrators should specify this property if the hostname in the certificate doesn't match the hostname that SharePoint will connect to. 
+1. HostnameInCert (String): Specifies the hostname in the SSL/TLS server certificate of the SQL Server. SharePoint farm administrators should specify this property if the hostname in the certificate doesn't match the hostname that SharePoint connects to. 
 
 ## Behaviors when upgrading a farm with existing databases
 
@@ -67,7 +67,7 @@ Databases that were part of a SharePoint farm will be configured to use **Option
 
 ## Behaviors when adding a database to a farm 
 
-Databases added to a farm are configured to use **Strict** encryption by default. This is to ensure that SharePoint is in a *secure by default* configuration going forward. This means that SharePoint will only use TDS 8.0 when connecting to these databases. The SQL Servers hosting these databases must support TDS 8.0 and must support connection encryption (including having an appropriate SSL/TLS server certificate configured on the SQL Server). If both the SharePoint server and SQL server support TLS 1.3, then it is used for that connection. Otherwise, a previous TLS version is used. 
+Databases added to a farm are configured to use **Strict** encryption by default. This is to ensure that SharePoint is in a *secure by default* configuration going forward. This means that SharePoint will only use TDS 8.0 when connecting to these databases. The SQL Servers hosting these databases must support TDS 8.0 and must support connection encryption (including having an appropriate SSL/TLS server certificate configured on the SQL Server). If both the SharePoint server and SQL server support TLS 1.3, then it's used for that connection. Otherwise, a previous TLS version is used. 
 
 New SharePoint farms that are created are configured to use **Strict** encryption by default for all their databases, including the configuration database and Central Administration content database. The same requirements described above apply for these databases. 
 
