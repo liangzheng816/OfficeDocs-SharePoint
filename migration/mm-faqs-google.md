@@ -78,3 +78,9 @@ Answer:  Files with the same name will be renamed with suffixes (1), (2), etc.
 **Question: Does Migration Manager support migrating two Google Drives with the same name?** </br>
 Answer:  No, it doesn't. Only the first discovered Drive will be migrated.
 
+
+**Question: Can I migrate Drives with "/" in their names?** </br>
+Answer:  No, Google Drive with "/" in its name is not supported. The **Source location** field in either the scan list or migration list should not include "/", even if you have configured invalid charracter replacement in the Project settings.
+
+
+
