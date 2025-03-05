@@ -25,12 +25,6 @@ Microsoft aspires to bring the best possible experiences for users around the wo
 
 The SharePoint Server asks farm administrators to provide feedback through a feedback pop-up dialog when each admin launches the Central Administration page either locally or remotely through a browser. Your feedback goes directly to our engineers and helps us shape the future of SharePoint Server and services for our users.
 
-Till date, this survey has been a two-question survey, which automatically shows up based on the following rules:
-
-- The first survey pops up every two weeks after a farm administrator visits the Central Administration site for the first time after the update is installed. The admin sees the following survey dialog:
-- The survey shows up again after six months, if the administrator completes the survey.
-- The survey pops up every two weeks until it's completed by the administrator.
-
 > [!Note]
 > By default, this feature is enabled.
 
@@ -38,9 +32,9 @@ An example of the "Survey" feature that prevailed during the 24H1 sprint is depi
 
 :::image type="content" source="../media/feedback-microsoft-ocv.png" alt-text="Screenshot that shows the feedback to Microsoft survey.":::
 
-In this sprint, SharePoint Server has introduced a new feature that overwrites the feature introduced in 24H1, namely the Dynamic Survey feature. This feature allows the dynamic configuration and display of surveys to gather administrator feedback in a more effective manner based on current needs.
+Starting from Version 25H1, SharePoint Server has introduced an enhancement that overwrites the feature introduced in 24H1. This enhancement allows the dynamic configuration and display of surveys to gather administrator feedback in a more effective manner based on current needs.
 
-The Dynamic Survey feature provides scope for making the following types of surveys as configurable and customizable:
+This Version 25H1-enhancement provides scope for making the following types of surveys as configurable and customizable:
 
 1. Survey type
 1. Rating question
@@ -48,13 +42,13 @@ The Dynamic Survey feature provides scope for making the following types of surv
 1. Comment Question
 1. Whether to collect user email
 
-The Dynamic Survey feature's significance is the changes in the "pop-up" frequency that follows the following rules:
+The enhancement's significance is the changes in the "pop-up" frequency that follows the following rules:
 
 - **User-level cooldown: 14 days**—This is the waiting period after triggering a survey during which a user cannot see another survey. Unlike the earlier feature in which the survey form used to appear 2 weeks after the farm administrator signed in to the Central Administration portal, the Dynamic Survey features displays the survey immediately on the farm administrator signing in to the Central Administration portal and provides a cooldown period of 14 days to the user to fill the survey form, during which the farm administrator cannot see any other survey form.
 - **Survey-level cooldown: configurable**—This is the waiting period after triggering a survey during which a user cannot see the same survey.
 - A survey won't appear again for users who have already submitted.
 
-You can also disable the survey feature (pre-24H1 feature) for the farm administrators or specific users. For information on how to disable this feature, see:
+You can also disable the survey feature (introduced in the 24H1 phase) for the farm administrators or specific users. For information on how to disable the survey feature, see:
 
 - [To disable feedback for current Farm Administrator](#to-disable-feedback-for-current-farm-administrator)
 - [To disable feedback for current Farm](#to-disable-feedback-for-current-farm)
