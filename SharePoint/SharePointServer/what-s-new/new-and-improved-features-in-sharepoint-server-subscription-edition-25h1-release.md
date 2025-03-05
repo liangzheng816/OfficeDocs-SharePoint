@@ -31,7 +31,7 @@ The following table provides a summary of the new features introduced in the Sha
 
 |**Feature**|**Release ring**|**More information**|
 |:-----|:-----|:-----|
-| **Support RSA public key in OIDC authentication configuration**   |Standard release   |For more information, see [Set up OIDC authentication in SharePoint Server using RSA public keys](new-and-improved-features-in-sharepoint-server-subscription-edition-24h2-release.md#support-rsa-public-key-in-oidc-authentication-configuration).<p> This was part of Early release in the Version 24H2 feature update.|
+| **Support for RSA public key in OIDC authentication configuration**   |Standard release   |For more information, see [Support for RSA public key in OIDC authentication configuration](new-and-improved-features-in-sharepoint-server-subscription-edition-24h2-release.md#support-for-rsa-public-key-in-oidc-authentication-configuration).<p> This was part of Early release in the Version 24H2 feature update.|
 |  **Support for Automatic Machine Key rotation**  |  Early release   | For more information, see [Support for Automatic Machine Key rotation](#support-for-automatic-machine-key-rotation).|
 |  **Dynamic customer survey by One Customer Voice**  | Early release  | For more information, see [Dynamic customer survey by One Customer Voice](#dynamic-customer-survey-by-one-customer-voice). |
 | **Create new Office files in client apps**   |Early release   |For more information, see [Create new Office files in client apps](#create-new-office-files-in-client-apps).|
@@ -48,35 +48,43 @@ This section provides detailed descriptions of the new and updated features in S
 
 ### Support for Automatic Machine Key rotation
 
-The objective of Automatic machine key rotation is to enhance security by regularly updating machine keys without manual intervention, thus reducing the risk of key compromise. This feature ensures seamless and automatic rotation of machine keys while maintaining high availability and reliability of SharePoint services during key rotation.
+The objective of Automatic Machine Key rotation is to enhance security by regularly updating machine keys without manual intervention, thus reducing the risk of key compromise. This feature ensures seamless and automatic rotation of machine keys while maintaining high availability and reliability of SharePoint services during key rotation.
 
-The feature incorporates a Key Management Service that handles storage, retrieval, and distribution of machine keys using a timer job called Machine Key Rotation Job.
+The feature incorporates a Key Management Service that handles storage, retrieval, and distribution of machine keys using a timer job called Machine Key Rotation Job. The timer job is configured to run automatically on the last Sunday of every month by default.
+
+For more information, see [Improved ASP.NET view state security and key management](../security-for-sharepoint-server/improved-asp-net-view-state-security-key-management.md).
 
 ### Dynamic customer survey by One Customer Voice
 
-One Customer Voice (OCV) was introduced in Version 24H1 of SharePoint Server introduced for gathering feedback from farm administrators. When enabled, it prompts administrators with an NPS survey via a dialog box on the Central Administration page, collecting data like NPS score, reason for the score, contact email, farm ID, and SharePoint Server version. The initial prompt appears two weeks after the administrator first opens Central Administration and every six months. If dismissed, the dialog box reappears after two weeks. Administrators can disable or enable this feature via PowerShell.
+[One Customer Voice (OCV)](new-and-improved-features-in-sharepoint-server-subscription-edition-24h1-release.md#customer-feedback-experience-in-central-administration) was introduced in SharePoint Server Version 24H1 for gathering feedback from farm administrators. When enabled, it prompts administrators with a Net Promoter Score (NPS) survey via a dialog box on the Central Administration page, collecting data like NPS score, reason for the score (optional), contact email (optional), farm ID, and SharePoint Server version. The initial prompt appears two weeks after the administrator first opens Central Administration page and every six months. If dismissed, the dialog box reappears after two weeks and administrators can disable or enable this feature via PowerShell.
 
-To further enhance the flexibility and effectiveness of the OCV feature, SharePoint Server now introduces the new Dynamic Survey functionality. This feature allows us to configure and display surveys dynamically to gather administrator feedback based on current needs. It offers the flexibility to configure the survey type, rating questions, survey rating scale and options, comment question, and whether to collect user emails. Additionally, the frequency of survey prompts can be configured at both the user and survey levels.
+To further enhance the flexibility and effectiveness of the OCV feature, the SharePoint Server now introduces the new Dynamic Survey functionality. This feature allows users to configure and display surveys dynamically to gather administrator feedback based on current needs. It offers flexibility to configure the survey type, rating questions, survey rating scale and options, comment question, and whether to collect user emails. Additionally, the frequency of survey prompts can be configured at both the user and survey levels.
 
-Note: This feature overwrites the OCV feature released in 24H1, Thereby, the popup rule from the first iteration of this feature will no longer be triggered.
+> [!NOTE]
+> This feature overwrites the OCV feature released in 24H1. Therefore, the popup rule from the first iteration of this feature will no longer be triggered.
 
-For more information, see.
+For more information, see [Configure feedback for SharePoint Server](../administration/configure-ocv.md).
 
 ### Create new Office files in client apps
 
-This feature enhances the user experience by allowing the creation of new Office documents in an SPSE farm, even when Office Online Server (OOS), also known as Web Access Components (WAC) or Office Web Apps, isn't configured or unavailable.
+This feature enhances the user experience by allowing the creation of new Office documents in an SPSE farm, even when [Office Online Server (OOS)](/officeonlineserver/office-online-server), also known as Web Access Components (WAC) or Office Web Apps, isn't configured or unavailable.
 
-Previously, if OOS wasn't available, new Office documents couldn't be created from the document library in the browser. Now, new Office document creation can be initiated in the browser and completed in the client-side application. The "New" button launches the new document within the client-side office application. For example, selecting "Word document" under the "New" menu creates a new docx file in the library and opens it in the Word client application.
+Previously, if OOS was unavailable, new Office documents couldn't be created from the document library in the browser. Additionally, even if Content Types were enabled for the library without OOS/WAC, a new file would be created without a file extension and couldn't be opened in a browser or client app.
 
-For more information, see.
+Now, new Office document creation can be initiated in the browser and completed in the client-side application. The "New" button in the library toolbar launches the new document within the client-side Office application. Also, if Content Types are enabled for the library without OOS/WAC, they're shown in the "New" drop-down. Selecting one creates a new file of that type and opens it in the appropriate client application. For example, selecting "Word document" under the "New" menu creates a new docx file in the library and opens it in the Word client application.
+
+> [!NOTE]
+> If OOS is unavailable and the client machine doesn't have Office, selecting an Office file type from the "New" drop-down creates an empty file in the library. This mirrors the old behavior but the file will have the correct extension.
+
+:::image type="content" source="../media/create-new-office-file-spse.png" alt-text="Screenshot diplaying the New button with file extensions in the browser of ShapePoint library.":::
 
 ### Support for request body scan in AMSI
 
-The Antimalware Scanning Interface (AMSI) feature now has the ability to scan the body of web requests. The AMSI Body Scan feature is an expansion of the existing anti-malware scan capabilities in SharePoint Server Subscription Edition (SPSE), extending its reach to include the bodies of HTTP requests.
+The Antimalware Scanning Interface (AMSI) feature now has the ability to scan the body of web requests. The AMSI Body Scan feature enhances the existing anti-malware scan capabilities in SharePoint Server Subscription Edition (SPSE) by extending its reach to include the bodies of HTTP requests.
 
-The new AMSI Body Scan feature enhances the existing AMSI functionality in SPSE by scanning the bodies of HTTP requests. This is useful for detecting and mitigating threats that may be embedded in request payloads, providing a more comprehensive security solution. Users can also choose from the available modes such as Balanced and Full mode for scanning request body. 
+This is useful for detecting and mitigating threats that may be embedded in request payloads, providing a more comprehensive security solution. Users can also choose from the available modes such as Balanced and Full mode for scanning request body.
 
-For more information, see.
+For more information, see [Configure AMSI integration with SharePoint Server](../security-for-sharepoint-server/configure-amsi-integration.md).
 
 ### Cloud Hybrid Search upgrade
 
@@ -84,13 +92,23 @@ Search Content Service (SCS), an internal component of Cloud Hybrid Search in Sh
 
 This update requires patching for SharePoint Server and reonboarding the Hybrid Search Service Application (Cloud SSA) in the on-premises farm using a PowerShell script. 
 
-For more information on upgrading an existing Cloud SSA, see.
+For more information on upgrading an existing Cloud SSA, see [Configure cloud hybrid search - roadmap](../hybrid/configure-cloud-hybrid-searchroadmap.md).
 
 ### New database connectivity layer with TLS 1.3 and TDS 8.0 support
 
-Starting with SPSE Version 25H1 build, SharePoint Server Subscription Edition uses [Microsoft.Data.SqlClient version 5.1.4](https://github.com/dotnet/SqlClient/tree/main/release-notes/5.1) for its database connectivity layer. This change enables advanced security capabilities such as TLS 1.3 that couldn’t be supported in our previous database connectivity layer, while positioning SharePoint Server to take advantage of other new SQL capabilities. This update addresses the limitation of previous library, that is, System.Data.SqlClient library by supporting all new SQL Server and Azure SQL features.
+Starting with SPSE Version 25H1 build, SharePoint Server Subscription Edition uses [Microsoft.Data.SqlClient version 5.1.4](https://github.com/dotnet/SqlClient/tree/main/release-notes/5.1) for its database connectivity layer. This change enables advanced security capabilities such as TLS 1.3 that couldn’t be supported in our previous database connectivity layer, that is System.Data.SqlClient library. It also enables SharePoint Server to take advantage of other new SQL capabilities such as SQL Server and Azure SQL features.
 
-The following functionalities can be enabled by switching from the System.Data.SqlClient library to the Microsoft.Data.SqlClient library:
+The following new functionalities are enabled by switching from the previous System.Data.SqlClient library to the new Microsoft.Data.SqlClient library:
 
-- **Support for Tabular Data Stream (TDS) Version 8.0**: The new TDS version 8.0 is secure by default, requiring encrypted connections and supporting newer encryption protocols like TLS 1.3. This ensures compatibility with older TLS versions while enhancing security.
-- **Support for Transport Layer Security (TLS) Version 1.3**: SharePoint Server Subscription Edition adds support for connecting to SQL databases using TLS 1.3 connection encryption, addressing design concerns of previous versions. This enables better database connections, ensuring backward compatibility with older SQL Server versions.
+- **Support for Tabular Data Stream (TDS) Version 8.0**: The new TDS version 8.0 is secure by default, requiring encrypted connections and supporting newer encryption protocols like TLS 1.3. This also ensures compatibility with older TLS versions while enhancing security.
+- **Support for Transport Layer Security (TLS) Version 1.3**: This new build update provides support for connecting to SQL databases using TLS 1.3 connection encryption, addressing design concerns of previous versions. This enables better database connections, ensuring even backward compatibility with older SQL Server versions.
+
+#### When upgrading a farm with existing databases
+
+Databases that were part of a SharePoint farm when this update was installed will be configured to use "Optional" encryption by default. This ensures compatibility with the existing SQL Servers in the farm if they don’t support TDS 8.0 and TLS 1.3 protocols. As a result, SharePoint continues to use TDS 7.4 for database connections.
+
+#### When adding a database to a farm
+
+New SharePoint farms that are created after this update is installed will be configured to use "Strict" encryption by default for all its database.
+
+For more information, see [Transport Layer Security (TLS) 1.3 Support](../security-for-sharepoint-server/tls-support-1.3.md).
