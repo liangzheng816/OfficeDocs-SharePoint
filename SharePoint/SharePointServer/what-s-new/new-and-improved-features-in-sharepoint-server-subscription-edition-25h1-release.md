@@ -31,13 +31,13 @@ The following table provides a summary of the new features introduced in the Sha
 
 |**Feature**|**Release ring**|**More information**|
 |:-----|:-----|:-----|
-| **Support RSA public key in OIDC authentication configuration**   |Standard release   |For more information, see [Set up OIDC authentication in SharePoint Server using RSA public keys](../security-for-sharepoint-server/set-up-oidc-auth-in-sharepoint-server-using-rsa.md).<p> This was part of Early release in the Version 24H2 feature update.|
-|  **Support for automatic machine key rotation**  |  Early release   | For more information, see xxx.|
-|  **Dynamic customer survey by One Customer Voice**  | Early release  | For more information, see xxx |
-| **Create new Office files in client apps**   |Early release   |For more information, see xxx.|
-| **Support for request body scan in AMSI**   |Early release   |For more information, see xxx.|
-| **Cloud Hybrid Search upgrade**   |Early release   |For more information, see xxx.|
-| **New database connectivity layer with TLS 1.3 and TDS 8.0 support**   |Standard release   |For more information, see xxx.|
+| **Support RSA public key in OIDC authentication configuration**   |Standard release   |For more information, see [Set up OIDC authentication in SharePoint Server using RSA public keys](new-and-improved-features-in-sharepoint-server-subscription-edition-24h2-release.md#support-rsa-public-key-in-oidc-authentication-configuration).<p> This was part of Early release in the Version 24H2 feature update.|
+|  **Support for Automatic Machine Key rotation**  |  Early release   | For more information, see [Support for Automatic Machine Key rotation](#support-for-automatic-machine-key-rotation).|
+|  **Dynamic customer survey by One Customer Voice**  | Early release  | For more information, see [Dynamic customer survey by One Customer Voice](#dynamic-customer-survey-by-one-customer-voice). |
+| **Create new Office files in client apps**   |Early release   |For more information, see [Create new Office files in client apps](#create-new-office-files-in-client-apps).|
+| **Support for request body scan in AMSI**   |Early release   |For more information, see [Support for request body scan in AMSI](#support-for-request-body-scan-in-amsi).|
+| **Cloud Hybrid Search upgrade**   |Early release   |For more information, see [Cloud Hybrid Search upgrade](#cloud-hybrid-search-upgrade).|
+| **New database connectivity layer with TLS 1.3 and TDS 8.0 support**   |Standard release   |For more information, see [New database connectivity layer with TLS 1.3 and TDS 8.0 support](#new-database-connectivity-layer-with-tls-13-and-tds-80-support).|
 
 ## Detailed description of features
 
@@ -46,15 +46,7 @@ This section provides detailed descriptions of the new and updated features in S
 > [!NOTE]
 > Features previously introduced in the Version 24H2 feature update won't be described here. For more information on Version 24H1, see [New and improved features in SharePoint Server Subscription Edition Version 24H2](new-and-improved-features-in-sharepoint-server-subscription-edition-24h2-release.md). 
 
-### Support RSA public key in OIDC authentication configuration
-
-OIDC is an authentication protocol that uses JSON Web Tokens (JWTs) to verify the identity of users, and grant them access to protected resources. JWTs are digitally signed using either symmetric keys (shared between the issuer and the consumer) or asymmetric keys (public/private key pairs).
-
-Some OIDC providers use RSA public keys that are directly represented with RSA modulus and RSA public exponent. To support these providers, SharePoint Server Subscription Edition Version 24H2 now gives the ability to parse and validate RSA public keys in JWTs. 
-
-For more information, see [Set up OIDC authentication in SharePoint Server using RSA public keys](../security-for-sharepoint-server/set-up-oidc-auth-in-sharepoint-server-using-rsa.md) .
-
-### Support for automatic machine key rotation
+### Support for Automatic Machine Key rotation
 
 The objective of Automatic machine key rotation is to enhance security by regularly updating machine keys without manual intervention, thus reducing the risk of key compromise. This feature ensures seamless and automatic rotation of machine keys while maintaining high availability and reliability of SharePoint services during key rotation.
 
