@@ -58,6 +58,7 @@ File version migration can significantly increase the load on the source API quo
 Each file corresponds to a row in the **Migration detailed report**. If version migration is enabled, a file is marked as successful only when all its versions are successfully migrated.
 
 If versions are not migrated, refer to the **ResultCode** in the detailed report.
+
 |**ResultCode**|**Cause**|**Suggested action**|
 |:-----|:-----|:-----|
 |MVERSIONDISABLE|Version feature is disabled in the destination library.|Enable versioning in the destination library.|
