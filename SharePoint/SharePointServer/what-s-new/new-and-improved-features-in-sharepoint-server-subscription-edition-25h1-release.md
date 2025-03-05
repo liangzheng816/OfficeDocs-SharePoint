@@ -32,8 +32,8 @@ The following table provides a summary of the new features introduced in the Sha
 |**Feature**|**Release ring**|**More information**|
 |:-----|:-----|:-----|
 | **Support for RSA public key in OIDC authentication configuration**   |Standard release   |For more information, see [Support for RSA public key in OIDC authentication configuration](new-and-improved-features-in-sharepoint-server-subscription-edition-24h2-release.md#support-for-rsa-public-key-in-oidc-authentication-configuration).<p> This was part of Early release in the Version 24H2 feature update.|
-|  **Support for Automatic Machine Key rotation**  |  Early release   | For more information, see [Support for Automatic Machine Key rotation](#support-for-automatic-machine-key-rotation).|
-|  **Dynamic customer survey by One Customer Voice**  | Early release  | For more information, see [Dynamic customer survey by One Customer Voice](#dynamic-customer-survey-by-one-customer-voice). |
+| **Support for automatic machine key rotation**  |  Early release   | For more information, see [Support for automatic machine key rotation](#support-for-automatic-machine-key-rotation).|
+| **Dynamic customer survey by One Customer Voice**  | Early release  | For more information, see [Dynamic customer survey by One Customer Voice](#dynamic-customer-survey-by-one-customer-voice). |
 | **Create new Office files in client apps**   |Early release   |For more information, see [Create new Office files in client apps](#create-new-office-files-in-client-apps).|
 | **Support for request body scan in AMSI**   |Early release   |For more information, see [Support for request body scan in AMSI](#support-for-request-body-scan-in-amsi).|
 | **Cloud Hybrid Search upgrade**   |Early release   |For more information, see [Cloud Hybrid Search upgrade](#cloud-hybrid-search-upgrade).|
@@ -46,9 +46,9 @@ This section provides detailed descriptions of the new and updated features in S
 > [!NOTE]
 > Features previously introduced in the Version 24H2 feature update won't be described here. For more information on Version 24H2, see [New and improved features in SharePoint Server Subscription Edition Version 24H2](new-and-improved-features-in-sharepoint-server-subscription-edition-24h2-release.md). 
 
-### Support for Automatic Machine Key rotation
+### Support for automatic machine key rotation
 
-The objective of Automatic Machine Key rotation is to enhance security by regularly updating machine keys without manual intervention, thus reducing the risk of key compromise. This feature ensures seamless and automatic rotation of machine keys while maintaining high availability and reliability of SharePoint services during key rotation.
+The objective of automatic machine key rotation is to enhance security by regularly updating machine keys without manual intervention, thus reducing the risk of key compromise. This feature ensures seamless and automatic rotation of machine keys while maintaining high availability and reliability of SharePoint services during key rotation.
 
 The feature incorporates a Key Management Service that handles storage, retrieval, and distribution of machine keys using a timer job called Machine Key Rotation Job. The timer job is configured to run automatically on the last Sunday of every month by default.
 
@@ -58,7 +58,7 @@ For more information, see [Improved ASP.NET view state security and key manageme
 
 [One Customer Voice (OCV)](new-and-improved-features-in-sharepoint-server-subscription-edition-24h1-release.md#customer-feedback-experience-in-central-administration) was introduced in SharePoint Server Version 24H1 for gathering feedback from farm administrators. When enabled, it prompts administrators with a Net Promoter Score (NPS) survey via a dialog box on the Central Administration page, collecting data like NPS score, reason for the score (optional), contact email (optional), farm ID, and SharePoint Server version. The initial prompt appears two weeks after the administrator first opens Central Administration page and every six months. If dismissed, the dialog box reappears after two weeks and administrators can disable or enable this feature via PowerShell.
 
-To further enhance the flexibility and effectiveness of the OCV feature, the SharePoint Server now introduces the new Dynamic Survey functionality. This feature allows users to configure and display surveys dynamically to gather administrator feedback based on current needs. It offers flexibility to configure the survey type, rating questions, survey rating scale and options, comment question, and whether to collect user emails. Additionally, the frequency of survey prompts can be configured at both the user and survey levels.
+To further enhance the flexibility and effectiveness of the OCV feature, the SharePoint Server now introduces the new Dynamic Survey functionality. This feature allows us to configure and display surveys dynamically to gather administrator feedback based on current needs. It offers flexibility to configure the survey type, rating questions, survey rating scale and options, comment question, and whether to collect user emails. Additionally, the frequency of survey prompts can be configured at both the user and survey levels.
 
 > [!NOTE]
 > This feature overwrites the OCV feature released in 24H1. Therefore, the popup rule from the first iteration of this feature will no longer be triggered.
@@ -67,7 +67,7 @@ For more information, see [Configure feedback for SharePoint Server](../administ
 
 ### Create new Office files in client apps
 
-This feature enhances the user experience by allowing the creation of new Office documents in an SPSE farm, even when [Office Online Server (OOS)](/officeonlineserver/office-online-server), also known as Web Access Components (WAC) or Office Web Apps, isn't configured or unavailable.
+This feature enhances the user experience by allowing the creation of new Office documents in a SharePoint Server farm, even when [Office Online Server (OOS)](/officeonlineserver/office-online-server), also known as Web Access Components (WAC) or Office Web Apps, isn't configured or unavailable.
 
 Previously, if OOS was unavailable, new Office documents couldn't be created from the document library in the browser. Additionally, even if Content Types were enabled for the library without OOS/WAC, a new file would be created without a file extension but couldn't be opened in a browser or client app.
 
@@ -80,7 +80,7 @@ Now, new Office document creation can be initiated in the browser and completed 
 
 ### Support for request body scan in AMSI
 
-The Antimalware Scanning Interface (AMSI) feature now has the ability to scan the body of web requests. The AMSI Body Scan feature enhances the existing anti-malware scan capabilities in SharePoint Server Subscription Edition (SPSE) by extending its reach to include the bodies of HTTP requests.
+The Antimalware Scanning Interface (AMSI) feature now has the ability to scan the body of web requests. The AMSI Body Scan feature enhances the existing anti-malware scan capabilities in SharePoint Server Subscription Edition by extending its reach to include the bodies of HTTP requests.
 
 This is useful for detecting and mitigating threats that may be embedded in request payloads, providing a more comprehensive security solution. Users can also choose from the available modes such as Balanced and Full mode for scanning request body.
 
@@ -88,7 +88,7 @@ For more information, see [Configure AMSI integration with SharePoint Server](..
 
 ### Cloud Hybrid Search upgrade
 
-Search Content Service (SCS), an internal component of Cloud Hybrid Search in SharePoint in Microsoft 365 will be retired starting June 30, 2025. To continue using Cloud Hybrid Search, it's necessary to upgrade your SharePoint Server farm to SharePoint Server Subscription Edition (SPSE) Version 25H1 for improved security. Without this upgrade, previous versions of SharePoint Server can only search on-premises and Microsoft 365 content separately using Hybrid Federated Search. 
+Search Content Service (SCS), an internal component of Cloud Hybrid Search in SharePoint in Microsoft 365 will be retired starting June 30, 2025. To continue using Cloud Hybrid Search, it's necessary to upgrade your SharePoint Server farm to SharePoint Server Subscription Edition Version 25H1 for improved scalability and security. Without this upgrade, previous versions of SharePoint Server can only search on-premises and Microsoft 365 content separately using Hybrid Federated Search. 
 
 This update requires patching for SharePoint Server and reonboarding the Hybrid Search Service Application (Cloud SSA) in the on-premises farm using a PowerShell script. 
 
@@ -96,7 +96,7 @@ For more information on upgrading an existing Cloud SSA, see [Configure cloud hy
 
 ### New database connectivity layer with TLS 1.3 and TDS 8.0 support
 
-The SPSE Version 25H1 build introduces a new database connectivity layer called [Microsoft.Data.SqlClient version 5.1.4](/sql/connect/ado-net/overview-sqlclient-driver?view=sql-server-ver16&preserve-view=true) for .NET-based applications. This new database connectivity layer supports advanced security capabilities such as TLS 1.3 that couldn’t be supported in our previous database connectivity layer, that is System.Data.SqlClient library. It also enables SharePoint Server to take advantage of other new SQL capabilities, such as SQL Server and Azure SQL features.
+The SharePoint Server Subscription Edition Version 25H1 build introduces a new database connectivity layer called [Microsoft.Data.SqlClient version 5.1.4](/sql/connect/ado-net/overview-sqlclient-driver?view=sql-server-ver16&preserve-view=true) for .NET-based applications. This new database connectivity layer supports advanced security capabilities such as TLS 1.3 that couldn’t be supported in our previous database connectivity layer, that is [System.Data.SqlClient](/dotnet/framework/data/adonet/sql/) library. It also enables SharePoint Server to take advantage of other new SQL capabilities, such as SQL Server and Azure SQL features.
 
 The following are the capabilities of the new Microsoft.Data.SqlClient library:
 
