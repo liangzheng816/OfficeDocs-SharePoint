@@ -27,7 +27,7 @@ The MinRole feature in SharePoint Servers 2016, 2019 and Subscription Edition le
 This article describes the services associated with each server role. These services are listed in **Central Administration** > **System settings** > **Manage services in this farm**, or by running the Get-SPService cmdlet. The service instances for some services are hidden because they are internal to the operation of SharePoint and not meant to be directly controlled. To retrieve a list of services instances on a server, including hidden services, use this syntax,  `(Get-SPServer <server_name>).ServiceInstances`.
   
 > [!NOTE]
-> The services listed is the list of what will be running on each server role if all of the services are enabled. Services associated with service applications will only be enabled if the farm administrator provisions that service application. Services that aren't associated with service applications will only be running if Auto Provision is enabled on that service. 
+> The services listed are the list of what will be running on each server role if all of the services are enabled. Services associated with service applications will only be enabled if the farm administrator provisions that service application. Services that aren't associated with service applications will only be running if Auto Provision is enabled on that service. 
   
 For more information about the MinRole feature, see [Overview of MinRole Server Roles in SharePoint Servers 2016, 2019 and Subscription Edition](../install/overview-of-minrole-server-roles-in-sharepoint-server.md).
   
