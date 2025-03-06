@@ -31,7 +31,7 @@ To help customers secure their environments and respond to associated threats fr
 
 The AMSI integration functionality is designed to prevent malicious web requests from reaching SharePoint endpoints. For example, to exploit a security vulnerability in a SharePoint endpoint before the official fix for the security vulnerability has been installed.
 
-Starting with SharePoint Server Subscription Edition Version 25H1 update, the AMSI extends its scanning capabilities to include the bodies of HTTP requests. This AMSI Body Scan feature is particularly useful for detecting and mitigating threats that may be embedded in request payloads, providing a more comprehensive security solution.
+Starting with SharePoint Server Subscription Edition Version 25H1, the AMSI extends its scanning capabilities to include the bodies of HTTP requests. This AMSI Body Scan feature is useful for detecting and mitigating threats that may be embedded in request payloads, providing a more comprehensive security solution.
 
 > [!NOTE]
 > The new AMSI Body Scan feature is available for SharePoint Server Subscription Edition users only.
@@ -59,7 +59,7 @@ Starting with the September 2023 security updates for SharePoint Server 2016/201
 To initiate the September 2023 security updates, customers only need to install the update and run the SharePoint Products Configuration Wizard.
 
 > [!NOTE]
-> If customers skip installing the September 2023 public update, this change will be activated upon their installation of the subsequent public update that includes the September 2023 security updates for SharePoint Server 2016/2019 or the Version 23H2 feature update for SharePoint Server Subscription Edition.
+> If customers skip installing the September 2023 public update, this change is activated upon their installation of the subsequent public update that includes the September 2023 security updates for SharePoint Server 2016/2019 or the Version 23H2 feature update for SharePoint Server Subscription Edition.
 
 If customers prefer not to have AMSI integration enabled automatically within their SharePoint Server farms, they can follow these steps:
 
@@ -69,6 +69,8 @@ If customers prefer not to have AMSI integration enabled automatically within th
 
 If you follow these steps, SharePoint won't attempt to re-enable the feature while installing future public updates.
 
+### Activate/Deactivate AMSI manually
+
 If you're using SharePoint Server 2016/2019 or earlier versions of SharePoint Server Subscription Edition Version 25H1, follow these steps to manually deactivate or activate the AMSI integration for each web application:
 
 1. Open **SharePoint Central Administration**, and select **Application Management**.
@@ -76,7 +78,7 @@ If you're using SharePoint Server 2016/2019 or earlier versions of SharePoint Se
 3. Select the web application for which you want to enable the AMSI integration, and select **Manage Features** in the toolbar.
 4. On the **SharePoint Server Antimalware Scanning** screen, select **Deactivate** to switch off AMSI integration, or select **Activate** to switch on AMSI integration.
 
-If you are using the SharePoint Server Subscription Edition Version 25H1, follow these steps to navigate to the AMSI Configuration Panel:
+If you installed the SharePoint Server Subscription Edition Version 25H1 feature update, follow these steps to configure AMSI Body Scan settings:
 
 1. Open **Central Administration**.
 
@@ -86,33 +88,32 @@ If you are using the SharePoint Server Subscription Edition Version 25H1, follow
 
 4. On the AMSI Scan Configuration page, select the desired web application.
 
-5. Next, specify whether to turn on **AMSI Scan Feature**. To enable the AMSI Scan, select the **Enable AMSI scan feature** radio button. This will ensure all HTTP request headers are scanned. If you wish to disable, then select the **Disable AMSI scan feature fully** button. 
+5. Next, specify whether to turn on the AMSI Scan feature. To enable the AMSI Scan, select the **Enable AMSI scan feature** button. This ensures all HTTP request headers are scanned.
 
-6. Once enabled, select the **Request Body Scan** mode by choosing one from the available modes for scanning the request body:
+     If you wish to disable, then select the **Disable AMSI scan feature fully** button.
 
-    - **Off**: This option will disable body scanning. This will not affect the existing header scanning feature.
-    - **Balanced Mode**: This will scan request bodies sent to system-predefined sensitive endpoints and additional endpoints you have specified to be included in the body scan.
-    - **Full Mode**: This will scan request bodies sent to all endpoints except those explicitly excluded, to improve performance while maintaining fair security assurance.
+6. After enabling, select the Request Body Scan mode by choosing one of the following available options for scanning the request body:
 
-    To specify endpoints that are excluded from the body scan, follow these guidelines:
+    - **Off**: Disables body scanning. This won't affect the existing header scanning feature.
+    - **Balanced Mode**: Scans request bodies that are sent to system-predefined sensitive endpoints and other endpoints that are specified to be included in the body scan.
+    - **Full Mode**: Scans request bodies that are sent to all endpoints except those explicitly excluded, to improve performance while maintaining fair security assurance.
 
-     - Endpoints should contain the whole request URI path, for example, `/SitePages/Home.aspx`, so it can scan URLs like `http://test.contoso.com/SitePages/Home.aspx`, and `http://test.contoso.com/sites/marketing/SitePages/Home.aspx`.
-     - Refer to [Uniform Resource Identifier - Wikipedia](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) to understand the syntax structure of URI.
-     - If you add a duplicate endpoint to the list, clicking OK to save will result the "An item with the same key has already been added" error.
-     - The Balanced Mode and Full Mode endpoint lists are separate lists. They are persisted when toggling between the Body Scan options, so if you have 10 items in your Balanced Mode list, you won't lose them if you switch to Full Mode and then switch back.
-     - Wildcards are not supported in the specified endpoint list at this time. However, it uses a "contains" sub-string comparison for matching. So, for example, if you wanted to scan all requests to a certain site collection, adding an endpoint like "/sites/Finance" would ensure all requests to that site would undergo a body scan.
+    To specify the endpoints that are excluded from the body scan, ensure that the endpoints contain the whole request URI path. For example, `/SitePages/Home.aspx`, so it can scan URLs like `http://test.contoso.com/SitePages/Home.aspx`, and `http://test.contoso.com/sites/marketing/SitePages/Home.aspx`. To understand the syntax structure of URI, refer to [Uniform Resource Identifier - Wikipedia](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier).
+
+:::image type="content" source="../media/amsi-configuration-body-scan-page.png" alt-text="Screenshot of the AMSI Scan Configuration page with different modes.":::
 
 > [!NOTE]
+> The following are to be considered when configuring AMSI:
 >
 > - Each web application must be configured for AMSI independently, and the specified endpoints list applies only to that web application.
 >
 > - If AMSI has been disabled for a web application, it will remain disabled after upgrading to a build with the new Body Scan feature.
 >
-> - Body scanning cannot be enabled without also enabling header scanning.
+> - Body scanning can't be enabled without also enabling header scanning.
 >
-> - The default configuration for Body Scan is "Balanced Mode". After upgrading, any web application that had AMSI enabled will also have Body Scanning enabled in "Balanced Mode".
+> - The default configuration for Body Scan is "Balanced Mode." After upgrading, any web application that had AMSI enabled will also have Body Scanning enabled in "Balanced Mode."
 
-### Activate/Deactivate AMSI via PowerShell
+### Activate/Deactivate AMSI using PowerShell
 
 Alternatively, you can activate/deactivate AMSI integration for a web application using PowerShell commands.
 
@@ -195,7 +196,7 @@ $webApp.Update()
 
 ## Test and verify AMSI integration with SharePoint Server
 
-You can test the Antimalware Scan Interface (AMSI) feature to verify that it's working correctly. This involves sending a request to SharePoint Server with a special test string that Microsoft Defender recognizes is for testing purposes. This test string isn't dangerous, but Microsoft Defender treats it as if it is malicious so you can confirm how it behaves when it encounters malicious requests.
+You can test the Antimalware Scan Interface (AMSI) feature to verify that it's working correctly. This involves sending a request to SharePoint Server with a special test string that Microsoft Defender recognizes is for testing purposes. This test string isn't dangerous, but Microsoft Defender treats it as if it's malicious so you can confirm how it behaves when it encounters malicious requests.
 
 If AMSI integration is enabled in SharePoint Server and is using Microsoft Defender as its malware detection engine, the presence of this test string results in the request being blocked by AMSI instead of being processed by SharePoint.
 
@@ -242,7 +243,7 @@ Exploit:Script/SharePointEicar.A
 
 ### Performance effects of using Microsoft Defender as the primary AMSI solution
 
-By default, [Microsoft Defender Antivirus](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963) (MDAV), an AMSI-capable solution, is automatically enabled and installed on endpoints and devices that are running Windows 10, Windows Server 2016, and later. If you haven't installed an antivirus/anti-malware application, SharePoint Server AMSI integration will work with MDAV. If you install and enable another antivirus/anti-malware application, MDAV will automatically turn off. If you uninstall the other app, MDAV will automatically turn back on, and the SharePoint Server integration will work with MDAV.
+By default, [Microsoft Defender Antivirus](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963) (MDAV), an AMSI-capable solution, is automatically enabled and installed on endpoints and devices that are running Windows 10, Windows Server 2016, and later. If you haven't installed an antivirus/anti-malware application, SharePoint Server AMSI integration works with MDAV. If you install and enable another antivirus/anti-malware application, MDAV will automatically turn off. If you uninstall the other app, MDAV will automatically turn back on, and the SharePoint Server integration will work with MDAV.
 
 The benefits of using MDAV on SharePoint Server include:
 
@@ -251,7 +252,7 @@ The benefits of using MDAV on SharePoint Server include:
 - Using the expertise of Microsoft's malware research team for adding signatures.
 - Using best practices that MDAV already applies for adding other signatures.
 
-There may be a performance impact on the web application because AMSI scanning uses CPU resources. There's no distinct performance impact observed from AMSI scanning when tested with MDAV and no changes to be made to the existing documented SharePoint Server antivirus exclusions. Each antivirus provider develops their own definitions that utilize AMSI technology. Therefore, your level of protection remains dependent on how quickly your specific solution can be updated to detect the latest threats.
+There might be a performance impact on the web application because AMSI scanning uses CPU resources. There's no distinct performance impact observed from AMSI scanning when tested with MDAV and no changes to be made to the existing documented SharePoint Server antivirus exclusions. Each antivirus provider develops their own definitions that utilize AMSI technology. Therefore, your level of protection remains dependent on how quickly your specific solution can be updated to detect the latest threats.
 
 ### Microsoft Defender version via the command line
 
