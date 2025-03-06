@@ -60,26 +60,10 @@ Databases that are part of a SharePoint farm will be configured to use **Optiona
 
 ### Behaviors when adding a database to a farm 
 
-Databases added to a farm are configured to use **Strict** encryption by default. This is to ensure that SharePoint is in a *secure by default* configuration going forward. This means that SharePoint will only use TDS 8.0 when connecting to these databases. The SQL Servers hosting these databases must support TDS 8.0 and must support connection encryption (including having an appropriate SSL/TLS server certificate configured on the SQL Server). If both the SharePoint server and SQL server support TLS 1.3, then it's used for that connection. Otherwise, a previous TLS version is used. 
+The settings for all databases are based on the configuration database's settings.
+Newly created databases that are added to a farm are configured to use the same encryption settings with farm configuration database. For instance, if configuration database uses Mandatory encryption, then all databases use Mandatory encryption as well.
 
-New SharePoint farms that are created are configured to use **Strict** encryption by default for all their databases, including the configuration database and Central Administration content database. The same requirements described above apply for these databases. 
-
-### Specifying non-default settings when adding a new database
-
-SharePoint farm administrators have the option to override the default settings when creating a new configuration database. These settings can be specified in both our command line and GUI tools.
-
-#### Creating a new configuration database with non-default settings 
-
-- In PowerShell, add the following optional parameters to the `New-SPConfigurationDatabase` cmdlet: 
-    ``` 
-    -DatabaseConnectionEncryption {Mandatory | Optional | Strict} 
-    -DatabaseServerCertificateHostName <String> 
-    ```
-    For example: 
-
-    ```powershell 
-    New-SPConfigurationDatabase -DatabaseName "SharePointConfigDB1" -DatabaseServer "SQL-01" -DatabaseConnectionEncryption "Mandatory" -DatabaseServerCertificateHostName "SQL-01.internal.contoso.com" -Passphrase (ConvertTo-SecureString "MyPassword" -AsPlainText -force) -FarmCredentials (Get-Credential) -LocalServerRole "Application" 
-    ``` 
+### Specify encryption settings during PSConfig
 
 - In PSConfig.exe, add the following optional parameters to the configdb operation: 
 
@@ -95,3 +79,27 @@ SharePoint farm administrators have the option to override the default settings 
 
 - In the SharePoint Products Configuration Wizard (PSConfigUI.exe), specify the settings in the **Database connection encryption** and **Database server certificate host name** fields in the configuration database form.
 :::image type="content" source="media/config-db-settings.png" alt-text="Screenshot of Configuration Wizard.":::
+
+#### Creating a new farm
+To create a new farm, in PowerShell, add the following optional parameters to the `New-SPConfigurationDatabase` cmdlet: 
+    ``` 
+    -DatabaseConnectionEncryption {Mandatory | Optional | Strict} 
+    -DatabaseServerCertificateHostName <String> 
+    ```
+    For example: 
+
+    ```powershell 
+    New-SPConfigurationDatabase -DatabaseName "SharePointConfigDB1" -DatabaseServer "SQL-01" -DatabaseConnectionEncryption "Mandatory" -DatabaseServerCertificateHostName "SQL-01.internal.contoso.com" -Passphrase (ConvertTo-SecureString "MyPassword" -AsPlainText -force) -FarmCredentials (Get-Credential) -LocalServerRole "Application" 
+    ``` 
+#### Joining the existing farm
+To join the existing farm, you need to specify the encryption settings that the existing farm is using as follows.
+
+1. Select **Database connection encryption** as **Mandatory**.
+1. Enter the **Database server certificate hostname** and click **Retrieve Database Names**.
+1. Then you can select the farm that you want the second server to join.
+:::image type="content" source="media/join-farm.png" alt-text="Screenshot of settings for joining existing farm.":::
+
+Also, run the following PowerShell command to join the farm:
+```powershell
+Connect-SPConfigurationDatabase -DatabaseServer "SQL-01" -DatabaseName "SharePointConfigDB1" – DatabaseConnectionEncryption Mandatory -DatabaseServerCertificateHostName "SQL-01.internal.contoso.com" -Passphrase (ConvertTo-SecureString "****" -AsPlainText -Force) -LocalServerRole "Application"
+```
