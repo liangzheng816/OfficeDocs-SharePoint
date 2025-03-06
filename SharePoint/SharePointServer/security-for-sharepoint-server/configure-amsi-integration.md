@@ -78,7 +78,7 @@ If you're using SharePoint Server 2016/2019 or earlier versions of SharePoint Se
 3. Select the web application for which you want to enable the AMSI integration, and select **Manage Features** in the toolbar.
 4. On the **SharePoint Server Antimalware Scanning** screen, select **Deactivate** to switch off AMSI integration, or select **Activate** to switch on AMSI integration.
 
-If you installed the SharePoint Server Subscription Edition Version 25H1 feature update, follow these steps to configure AMSI Body Scan settings:
+If you installed the SharePoint Server Subscription Edition Version 25H1 feature update, follow these steps to configure AMSI Body Scan feature settings:
 
 1. Open **Central Administration**.
 
@@ -105,9 +105,9 @@ If you installed the SharePoint Server Subscription Edition Version 25H1 feature
 > [!NOTE]
 >
 > - Each web application must be configured for AMSI independently, and the specified endpoints list applies only to that web application.
-> - If AMSI has been disabled for a web application, it will remain disabled after upgrading to a build with the new Body Scan feature.
+> - If AMSI has been disabled for a web application, it will remain disabled after upgrading to a build with the new body scan feature.
 > - Body scanning can't be enabled without also enabling header scanning.
-> - The default configuration for Body Scan is the Balanced Mode. After upgrading, any web application that had AMSI enabled will also have Body Scanning enabled in the Balanced Mode.
+> - The default configuration for body ccan is the Balanced Mode. After upgrading, any web application that had AMSI enabled will also have body scanning enabled in the Balanced Mode.
 
 ### Activate/Deactivate AMSI using PowerShell
 
@@ -125,7 +125,7 @@ To activate, run the following PowerShell command:
 Enable-SPFeature -Identity 4cf046f3-38c7-495f-a7da-a1292d32e8e9 -Url <web application URL> 
 ```
 
-After upgrading to SPSE Version 25H1 build, users can configure AMSI Body Scan settings using PowerShell. To set the Body Scan mode, run the following command:
+After upgrading to SharePoint Server Subscription Edition Version 25H1 build, users can configure body scan settings using PowerShell. To set the body scan mode, run the following command:
 
 ```powershell
 
@@ -140,7 +140,7 @@ $webApp.Update() # To save changes
 # Iisreset # restarting the IIS service or recycling the app pool may be required when switching modes
 ```
 
-To set the Body Scan mode to Balanced Mode with targeted endpoints, run the following command:
+To set the body scan mode to Balanced Mode with targeted endpoints, run the following command:
 
 ```powershell
 # Get current list of targeted endpoints
@@ -164,7 +164,7 @@ $webApp.RemoveAMSITargetedEndpoints('/test/page123')
 $webApp.Update()
 ```
 
-To set the Body Scan mode to Full Mode with excluded endpoints, run the following command:
+To set the body scan mode to Full Mode with excluded endpoints, run the following command:
 
 ```powershell
 # Get current list of excluded endpoints
