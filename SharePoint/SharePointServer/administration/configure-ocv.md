@@ -36,16 +36,16 @@ Starting from Version 25H1, SharePoint Server has introduced an enhancement that
 
 This Version 25H1-enhancement provides scope for making the following types of surveys as configurable and customizable:
 
-1. Survey type
-1. Rating question
-1. Survey rating scale and options
-1. Comment Question
-1. Whether to collect user email
+- Survey type
+- Rating question
+- Survey rating scale and options
+- Comment Question
+- Whether to collect user email
 
 The enhancement's significance is the changes in the "pop-up" frequency that follows the following rules:
 
-- **User-level cooldown: 14 days**—This is the waiting period after triggering a survey during which a user cannot see another survey. Unlike the earlier feature in which the survey form used to appear 2 weeks after the farm administrator signed in to the Central Administration portal, the Dynamic Survey features displays the survey immediately on the farm administrator signing in to the Central Administration portal and provides a cooldown period of 14 days to the user to fill the survey form, during which the farm administrator cannot see any other survey form.
-- **Survey-level cooldown: configurable**—This is the waiting period after triggering a survey during which a user cannot see the same survey.
+- **User-level cooldown: 14 days** - This is the waiting period after triggering a survey during which a user can't see another survey. Unlike the earlier feature in which the survey form used to appear 2 weeks after the farm administrator signed in to the Central Administration portal, the Dynamic Survey features displays the survey immediately on the farm administrator signing in to the Central Administration portal and provides a cooldown period of 14 days to the user to fill the survey form, during which the farm administrator can't see any other survey form.
+- **Survey-level cooldown: configurable** - This is the waiting period after triggering a survey during which a user can't see the same survey.
 - A survey won't appear again for users who have already submitted.
 
 You can also disable the survey feature for the farm administrators or specific users. For information on how to disable the survey feature, see:
@@ -75,7 +75,7 @@ You can disable or enable the feedback function using one of the following optio
      Disable-SPCustomerFeedbackForUser -UserSid $user.Sid 
      ```
 
-This `$user` is obtained from Step 1.
+    This `$user` is obtained from Step 1.
   
 ## To enable feedback for current Farm Administrator
 
@@ -96,7 +96,8 @@ This `$user` is obtained from Step 1.
       ```
       Enable-SPCustomerFeedbackForUser -UserSid $user.Sid
       ```
-This `$user` is obtained from Step 1. 
+    
+    This `$user` is obtained from Step 1. 
   
 ## To disable feedback for current Farm 
 
