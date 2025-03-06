@@ -1,5 +1,5 @@
 ---
-ms.date: 09/15/2021
+ms.date: 03/11/2025
 title: Improved ASP.NET view state security and key management
 ms.reviewer: 
 ms.author: serdars
@@ -23,7 +23,13 @@ description: "Learn how to set up improved ASP.NET view state security and key m
 > [!NOTE]
 > SharePoint Server Subscription Edition encrypts the `machineKey` section of its `web.config` files by default. This prevents attackers from reading your ASP.NET view state encryption and validation keys, even if they gain access to those `web.config` files.
 
-Starting from 25H1, you would be able to automatically update machine keys without manual intervention using the automatic machine key rotation feature. This feature enhances security and reduces the risk of key compromise. In addition, it ensures seamless and automatic rotation of machine keys while maintaining high availability and reliability of SharePoint services during key rotation.
+If you are running SharePoint Server Subscription Edition or SharePoint Server 2016/2019 editions, the platform secures your sensitive data by regularly updating the machine encryption keys. This process is done manually using PowerShell cmdlets, which updates the decryption and validation keys within a web application. This security practice helps to mitigate potential vulnerabilities if a key is compromised. For more information, see [PowerShell cmdlets](#powershell-cmdlets).
+
+Starting from SharePoint Server Subscription Edition Version 25H1, you would be able to automatically update machine keys without manual intervention. For more information, see [Automatic machine key rotation in SharePoint Server](#automatic-machine-key-rotation-in-sharepoint-server).
+
+## Automatic machine key rotation in SharePoint Server
+
+Automatic machine key rotation feature aims to improve security by automating the periodic updating of machine keys, thereby minimizing the risk of key compromize. This feature ensures seamless and automatic rotation of machine keys while maintaining high availability and reliability of SharePoint services during key rotation.
 
 The feature incorporates a Key Management Service that handles storage, retrieval and distribution of machine keys using a timer job called **Machine Key Rotation Job**. The timer job is configured to run automatically on the last Sunday of every month by default.
 
