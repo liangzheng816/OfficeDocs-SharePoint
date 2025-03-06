@@ -28,11 +28,11 @@ The SharePoint Server asks farm administrators to provide feedback through a fee
 > [!Note]
 > By default, this feature is enabled.
 
-An example of the "Survey" feature that prevailed during the 24H1 sprint is depicted in the following screenshot:
+An example of the "Survey" feature that prevailed during Version 24H1 is depicted in the following screenshot:
 
 :::image type="content" source="../media/feedback-microsoft-ocv.png" alt-text="Screenshot that shows the feedback to Microsoft survey.":::
 
-Starting from Version 25H1, SharePoint Server has introduced an enhancement that overwrites the feature introduced in 24H1. This enhancement allows the dynamic configuration and display of surveys to gather administrator feedback in a more effective manner based on current needs.
+Starting from Version 25H1, SharePoint Server has introduced an enhancement that overwrites the feature introduced in Version 24H1. This enhancement allows the dynamic configuration and display of surveys to gather administrator feedback in a more effective manner based on current needs.
 
 This Version 25H1-enhancement provides scope for making the following types of surveys as configurable and customizable:
 
@@ -48,7 +48,7 @@ The enhancement's significance is the changes in the "pop-up" frequency that fol
 - **Survey-level cooldown: configurable**—This is the waiting period after triggering a survey during which a user cannot see the same survey.
 - A survey won't appear again for users who have already submitted.
 
-You can also disable the survey feature (introduced in the 24H1 phase) for the farm administrators or specific users. For information on how to disable the survey feature, see:
+You can also disable the survey feature for the farm administrators or specific users. For information on how to disable the survey feature, see:
 
 - [To disable feedback for current Farm Administrator](#to-disable-feedback-for-current-farm-administrator)
 - [To disable feedback for current Farm](#to-disable-feedback-for-current-farm)
