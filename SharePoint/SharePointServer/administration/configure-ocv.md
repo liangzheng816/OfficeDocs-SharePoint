@@ -28,7 +28,7 @@ The SharePoint Server asks farm administrators to provide feedback through a fee
 > [!Note]
 > By default, this feature is enabled.
 
-An example of the "Survey" feature that prevailed during Version 24H1 is depicted in the following screenshot:
+An example of the "Survey" feature that was introduced in Version 24H1 is depicted in the following screenshot:
 
 :::image type="content" source="../media/feedback-microsoft-ocv.png" alt-text="Screenshot that shows the feedback to Microsoft survey.":::
 
