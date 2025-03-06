@@ -75,7 +75,7 @@ You can disable or enable the feedback function using one of the following optio
      Disable-SPCustomerFeedbackForUser -UserSid $user.Sid 
      ```
 
-    This `$user` is obtained from Step 1.
+  This `$user` is obtained from Step 1.
   
 ## To enable feedback for current Farm Administrator
 
@@ -97,7 +97,7 @@ You can disable or enable the feedback function using one of the following optio
       Enable-SPCustomerFeedbackForUser -UserSid $user.Sid
       ```
     
-    This `$user` is obtained from Step 1. 
+  This `$user` is obtained from Step 1. 
   
 ## To disable feedback for current Farm 
 
