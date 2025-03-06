@@ -125,9 +125,7 @@ To activate, run the following PowerShell command:
 Enable-SPFeature -Identity 4cf046f3-38c7-495f-a7da-a1292d32e8e9 -Url <web application URL> 
 ```
 
-Users with SPSE Version 25H1 build, can extend the configuration to AMSI Body Scan settings using the following PowerShell examples. 
-
-To set the Body Scan mode, run the following command:
+Users with SPSE Version 25H1 build, can extend the configuration to AMSI Body Scan settings using PowerShell. To set the Body Scan mode, run the following command:
 
 ```powershell
 
@@ -142,7 +140,7 @@ $webApp.Update() # To save changes
 # Iisreset # restarting the IIS service or recycling the app pool may be required when switching modes
 ```
 
-To set the body can mode to Balanced Mode with targeted endpoints, run the following command:
+To set the Body Scan mode to Balanced Mode with targeted endpoints, run the following command:
 
 ```powershell
 # Get current list of targeted endpoints
@@ -166,7 +164,7 @@ $webApp.RemoveAMSITargetedEndpoints('/test/page123')
 $webApp.Update()
 ```
 
-To set the body can mode to Full Mode with excluded endpoints, run the following command:
+To set the Body Scan mode to Full Mode with excluded endpoints, run the following command:
 
 ```powershell
 # Get current list of excluded endpoints
