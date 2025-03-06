@@ -4,7 +4,7 @@ ms.reviewer:
 ms.author: v-jmathew
 author: jitinmathew
 manager: serdars
-ms.date: 08/31/2023
+ms.date: 06/03/2025
 audience: ITPro
 f1.keywords:
 - NOCSH
@@ -40,7 +40,7 @@ Starting with SharePoint Server Subscription Edition Version 25H1, the AMSI exte
 
 When an AMSI-capable antivirus or anti-malware solution is integrated with SharePoint Server, it can examine `HTTP` and `HTTPS` requests made to the server and prevent SharePoint Server from processing dangerous requests. Any AMSI-capable antivirus or anti-malware program that is installed on the server performs the scan as soon as the server starts to process the request.
 
-The purpose of AMSI integration isn't to replace existing antivirus/anti-malware defenses already installed on the server; it's to provide an additional layer of protection from malicious web requests made to SharePoint endpoints. Customers should still deploy SharePoint-compatible antivirus solutions on their servers to prevent their users from uploading or downloading files with viruses.
+The purpose of AMSI integration isn't to replace existing antivirus/anti-malware defenses already installed on the server; it's to provide an extra layer of protection from malicious web requests made to SharePoint endpoints. Customers should still deploy SharePoint-compatible antivirus solutions on their servers to prevent their users from uploading or downloading files with viruses.
 
 ## Prerequisites
 
