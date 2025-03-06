@@ -107,7 +107,7 @@ If you installed the SharePoint Server Subscription Edition Version 25H1 feature
 > - Each web application must be configured for AMSI independently, and the specified endpoints list applies only to that web application.
 > - If AMSI has been disabled for a web application, it will remain disabled after upgrading to a build with the new body scan feature.
 > - Body scanning can't be enabled without also enabling header scanning.
-> - The default configuration for body ccan is the Balanced Mode. After upgrading, any web application that had AMSI enabled will also have body scanning enabled in the Balanced Mode.
+> - The default configuration for body scan is the Balanced Mode. After upgrading, any web application that had AMSI enabled will also have body scanning enabled in the Balanced Mode.
 
 ### Activate/Deactivate AMSI using PowerShell
 
@@ -125,7 +125,7 @@ To activate, run the following PowerShell command:
 Enable-SPFeature -Identity 4cf046f3-38c7-495f-a7da-a1292d32e8e9 -Url <web application URL> 
 ```
 
-After upgrading to SharePoint Server Subscription Edition Version 25H1 build, users can configure body scan settings using PowerShell. To set the body scan mode, run the following command:
+After upgrading to SharePoint Server Subscription Edition Version 25H1 build, you can configure body scan settings using PowerShell. To set the body scan mode, run the following command:
 
 ```powershell
 
