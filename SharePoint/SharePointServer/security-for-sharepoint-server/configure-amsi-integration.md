@@ -31,10 +31,10 @@ To help customers secure their environments and respond to associated threats fr
 
 The AMSI integration functionality is designed to prevent malicious web requests from reaching SharePoint endpoints. For example, to exploit a security vulnerability in a SharePoint endpoint before the official fix for the security vulnerability has been installed.
 
-Starting with SharePoint Server Subscription Edition Version 25H1 update, the AMSI Body Scan feature extends its scanning capabilities to include the bodies of HTTP requests. This is particularly useful for detecting and mitigating threats that may be embedded in request payloads, providing a more comprehensive security solution.
+Starting with SharePoint Server Subscription Edition Version 25H1 update, the AMSI extends its scanning capabilities to include the bodies of HTTP requests. This AMSI Body Scan feature is particularly useful for detecting and mitigating threats that may be embedded in request payloads, providing a more comprehensive security solution.
 
 > [!NOTE]
-> The new AMSI Body Scan feature, which can scan bodies of HTTP requests, is available for SharePoint Server Subscription Edition users only.
+> The new AMSI Body Scan feature is available for SharePoint Server Subscription Edition users only.
 
 ## AMSI integration with SharePoint Server
 
@@ -69,7 +69,7 @@ If customers prefer not to have AMSI integration enabled automatically within th
 
 If you follow these steps, SharePoint won't attempt to re-enable the feature while installing future public updates.
 
-If you are using SharePoint Server 2016/2019 or earlier versions of SharePoint Server Subscription Edition Version 25H1, follow these steps to manually deactivate or activate the AMSI integration for each web application:
+If you're using SharePoint Server 2016/2019 or earlier versions of SharePoint Server Subscription Edition Version 25H1, follow these steps to manually deactivate or activate the AMSI integration for each web application:
 
 1. Open **SharePoint Central Administration**, and select **Application Management**.
 2. Under **Web Applications**, select **Manage web applications**.
@@ -128,7 +128,70 @@ To activate, run the following PowerShell command:
 Enable-SPFeature -Identity 4cf046f3-38c7-495f-a7da-a1292d32e8e9 -Url <web application URL> 
 ```
 
+Users with SPSE Version 25H1 build, can extend the configuration to AMSI Body Scan settings using the following PowerShell examples. 
 
+To set the Body Scan mode, run the following command:
+
+```powershell
+
+$webAppUrl = "http://spwfe"
+
+$webApp = Get-SPWebApplication -Identity $webAppUrl
+
+$webApp.AMSIBodyScanMode = 1 # 0 = Off, 1 = Balanced, 2 = Full
+
+$webApp.Update() # To save changes
+
+# Iisreset # restarting the IIS service or recycling the app pool may be required when switching modes
+```
+
+To set the body can mode to Balanced Mode with targeted endpoints, run the following command:
+
+```powershell
+# Get current list of targeted endpoints
+
+$webApp.AMSITargetedEndpoints
+
+# Add a targeted endpoint
+
+$webApp.AddAMSITargetedEndpoints('/test/page123', 1)
+
+# Get a certain targeted endpoint
+
+$webApp.GetAMSITargetedEndpoint('/test/page123')
+
+# Remove a targeted endpoint
+
+$webApp.RemoveAMSITargetedEndpoints('/test/page123')
+
+# Update the web app object to save changes
+
+$webApp.Update()
+```
+
+To set the body can mode to Full Mode with excluded endpoints, run the following command:
+
+```powershell
+# Get current list of excluded endpoints
+
+$webApp.AMSIExcludedEndpoints
+
+# Add an excluded endpoint
+
+$webApp.AddAMSIExcludedEndpoints('/test/page123', 1)
+
+# Get a certain excluded endpoint
+
+$webApp.GetAMSIExcludedEndpoint('/test/page123')
+
+# Remove an excluded endpoint
+
+$webApp.RemoveAMSIExcludedEndpoints('test123456')
+
+# Update the web app object to save changes
+
+$webApp.Update()
+```
 
 ## Test and verify AMSI integration with SharePoint Server
 
@@ -173,7 +236,7 @@ Exploit:Script/SharePointEicar.A
 ```
 
 > [!NOTE]
-> If you are using a malware detection engine other than Microsoft Defender, then you should check with your malware detection engine vendor to determine the best way to test its integration with the AMSI feature in SharePoint Server.
+> If you're using a malware detection engine other than Microsoft Defender, then you should check with your malware detection engine vendor to determine the best way to test its integration with the AMSI feature in SharePoint Server.
 
 ## Other references
 
@@ -193,7 +256,7 @@ There may be a performance impact on the web application because AMSI scanning u
 ### Microsoft Defender version via the command line
 
 > [!NOTE]
-> If you are using Microsoft Defender, you can use the command line and ensure to update the signatures with the latest version.
+> If you're using Microsoft Defender, you can use the command line and ensure to update the signatures with the latest version.
 
 1. Launch `Command Prompt` as an Administrator.
 2. Navigate to `%ProgramData%\Microsoft\Windows Defender\Platform\<antimalware platform version>`.
