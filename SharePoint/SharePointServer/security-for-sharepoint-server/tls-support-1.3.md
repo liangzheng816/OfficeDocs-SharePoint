@@ -82,15 +82,15 @@ Newly created databases that are added to a farm are configured to use the same 
 
 #### Creating a new farm
 To create a new farm, in PowerShell, add the following optional parameters to the `New-SPConfigurationDatabase` cmdlet: 
-    ``` 
-    -DatabaseConnectionEncryption {Mandatory | Optional | Strict} 
-    -DatabaseServerCertificateHostName <String> 
-    ```
-    For example: 
+``` 
+-DatabaseConnectionEncryption {Mandatory | Optional | Strict} 
+ -DatabaseServerCertificateHostName <String> 
+```
+For example: 
+```powershell 
+New-SPConfigurationDatabase -DatabaseName "SharePointConfigDB1" -DatabaseServer "SQL-01" -DatabaseConnectionEncryption "Mandatory" -DatabaseServerCertificateHostName "SQL-01.internal.contoso.com" -Passphrase (ConvertTo-SecureString "MyPassword" -AsPlainText -force) -FarmCredentials (Get-Credential) -LocalServerRole "Application" 
+``` 
 
-    ```powershell 
-    New-SPConfigurationDatabase -DatabaseName "SharePointConfigDB1" -DatabaseServer "SQL-01" -DatabaseConnectionEncryption "Mandatory" -DatabaseServerCertificateHostName "SQL-01.internal.contoso.com" -Passphrase (ConvertTo-SecureString "MyPassword" -AsPlainText -force) -FarmCredentials (Get-Credential) -LocalServerRole "Application" 
-    ``` 
 #### Joining the existing farm
 To join the existing farm, you need to specify the encryption settings that the existing farm is using as follows.
 
