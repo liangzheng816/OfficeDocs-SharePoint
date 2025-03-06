@@ -99,15 +99,15 @@ If you installed the SharePoint Server Subscription Edition Version 25H1 feature
     - **Full Mode**: Scans request bodies that are sent to all endpoints except those explicitly excluded, to improve performance while maintaining fair security assurance.
 
     To specify the endpoints that are excluded from the body scan, ensure that the endpoints contain the whole request URI path. For example, `/SitePages/Home.aspx`, so it can scan URLs like `http://test.contoso.com/SitePages/Home.aspx`, and `http://test.contoso.com/sites/marketing/SitePages/Home.aspx`. To understand the syntax structure of URI, refer to [Uniform Resource Identifier - Wikipedia](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier).
-
-:::image type="content" source="../media/amsi-configuration-body-scan-page.png" alt-text="Screenshot of the AMSI Scan Configuration page with different modes." lightbox="../media/amsi-configuration-body-scan-page.png":::
+   
+    :::image type="content" source="../media/amsi-configuration-body-scan-page.png" alt-text="Screenshot of the AMSI Scan Configuration page with different modes." lightbox="../media/amsi-configuration-body-scan-page.png":::
 
 > [!NOTE]
 >
 > - Each web application must be configured for AMSI independently, and the specified endpoints list applies only to that web application.
 > - If AMSI has been disabled for a web application, it will remain disabled after upgrading to a build with the new Body Scan feature.
 > - Body scanning can't be enabled without also enabling header scanning.
-> - The default configuration for Body Scan is "Balanced Mode." After upgrading, any web application that had AMSI enabled will also have Body Scanning enabled in "Balanced Mode."
+> - The default configuration for Body Scan is the Balanced Mode. After upgrading, any web application that had AMSI enabled will also have Body Scanning enabled in the Balanced Mode.
 
 ### Activate/Deactivate AMSI using PowerShell
 
