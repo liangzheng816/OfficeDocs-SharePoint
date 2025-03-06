@@ -125,7 +125,7 @@ To activate, run the following PowerShell command:
 Enable-SPFeature -Identity 4cf046f3-38c7-495f-a7da-a1292d32e8e9 -Url <web application URL> 
 ```
 
-Users with SPSE Version 25H1 build, can extend the configuration to AMSI Body Scan settings using PowerShell. To set the Body Scan mode, run the following command:
+Users when upgraded to SPSE Version 25H1 build, can extend the configuration to AMSI Body Scan settings using PowerShell. To set the Body Scan mode, run the following command:
 
 ```powershell
 
