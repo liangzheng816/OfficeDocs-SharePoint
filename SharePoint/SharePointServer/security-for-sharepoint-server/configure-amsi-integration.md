@@ -98,8 +98,8 @@ If you installed the SharePoint Server Subscription Edition Version 25H1 feature
     - **Balanced Mode**: Scans request bodies that are sent to system-predefined sensitive endpoints and other endpoints that are specified to be included in the body scan.
     - **Full Mode**: Scans request bodies that are sent to all endpoints except those explicitly excluded, to improve performance while maintaining fair security assurance.
 
-    To specify the endpoints that are excluded from the body scan, ensure that the endpoints contain the whole request URI path. For example, `/SitePages/Home.aspx`, so it can scan URLs like `http://test.contoso.com/SitePages/Home.aspx`, and `http://test.contoso.com/sites/marketing/SitePages/Home.aspx`. To understand the syntax structure of URI, refer to [Uniform Resource Identifier - Wikipedia](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier).
-   
+7. Specify the endpoints that will be excluded from the body scan. Ensure that the endpoints contain the whole request URI path. For example, `/SitePages/Home.aspx`, so it can scan URLs like `http://test.contoso.com/SitePages/Home.aspx`, and `http://test.contoso.com/sites/marketing/SitePages/Home.aspx`. To understand the syntax structure of URI, refer to [Uniform Resource Identifier - Wikipedia](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier).
+
     :::image type="content" source="../media/amsi-configuration-body-scan-page.png" alt-text="Screenshot of the AMSI Scan Configuration page with different modes." lightbox="../media/amsi-configuration-body-scan-page.png":::
 
 > [!NOTE]
