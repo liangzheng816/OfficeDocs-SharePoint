@@ -31,10 +31,10 @@ To help customers secure their environments and respond to associated threats fr
 
 The AMSI integration functionality is designed to prevent malicious web requests from reaching SharePoint endpoints. For example, to exploit a security vulnerability in a SharePoint endpoint before the official fix for the security vulnerability has been installed.
 
-Starting with SharePoint Server Subscription Edition (SPSE) Version 25H1, the AMSI extends its scanning capabilities to include the bodies of HTTP requests. This AMSI body scan feature is useful for detecting and mitigating threats that may be embedded in request payloads, providing a more comprehensive security solution.
+Starting with SharePoint Server Subscription Edition (SPSE) Version 25H1, the AMSI extends its scanning capabilities to include the bodies of HTTP requests. This request body scan feature is useful for detecting and mitigating threats that may be embedded in request payloads, providing a more comprehensive security solution.
 
 > [!NOTE]
-> The new AMSI body scan feature is available for SharePoint Server Subscription Edition users only.
+> The new request body scan feature is available for SharePoint Server Subscription Edition users only.
 
 ## AMSI integration with SharePoint Server
 
@@ -78,7 +78,7 @@ If you're using SharePoint Server 2016/2019 or earlier versions of SharePoint Se
 3. Select the web application for which you want to enable the AMSI integration, and select **Manage Features** in the toolbar.
 4. On the **SharePoint Server Antimalware Scanning** screen, select **Deactivate** to switch off AMSI integration, or select **Activate** to switch on AMSI integration.
 
-If you installed the SharePoint Server Subscription Edition Version 25H1 feature update, follow these steps to activate or deactivate and configure AMSI body scan feature settings:
+If you installed the SharePoint Server Subscription Edition Version 25H1 feature update, follow these steps to activate or deactivate and configure the request body scan feature settings:
 
 1. Open **SharePoint Central Administration**.
 
@@ -99,11 +99,13 @@ If you installed the SharePoint Server Subscription Edition Version 25H1 feature
     - **Balanced Mode**: Scans request bodies that are sent to system-predefined sensitive endpoints and other endpoints that are specified to be included in the body scan.
     - **Full Mode**: Scans request bodies that are sent to all endpoints except those explicitly excluded, to improve performance while maintaining fair security assurance.
 
-7. Specify the endpoints that will be excluded from the body scan. Ensure that the endpoints contain the whole request URI path. For example, include `/SitePages/Home.aspx`, so it can scan URLs like `http://test.contoso.com/SitePages/Home.aspx`, and `http://test.contoso.com/sites/marketing/SitePages/Home.aspx`. To understand the syntax structure of URI, refer to [Uniform Resource Identifier - Wikipedia](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier).
+7. Specify the endpoints that should be excluded from the body scan and select **Add**.
+
+    Ensure that the endpoints contain the whole request URI path. For example, include `/SitePages/Home.aspx`, so it can scan URLs like `http://test.contoso.com/SitePages/Home.aspx`, and `http://test.contoso.com/sites/marketing/SitePages/Home.aspx`. To understand the syntax structure of URI, refer to [Uniform Resource Identifier - Wikipedia](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier).
 
     :::image type="content" source="../media/amsi-configuration-body-scan-page.png" alt-text="Screenshot of the AMSI Scan Configuration page with different modes." lightbox="../media/amsi-configuration-body-scan-page.png":::
 
-8. After making the necessary changes, click **OK** to apply them effectively.
+8. After making the necessary changes, select **OK** to apply them effectively.
 
 > [!NOTE]
 >
