@@ -31,7 +31,7 @@ To help customers secure their environments and respond to associated threats fr
 
 The AMSI integration functionality is designed to prevent malicious web requests from reaching SharePoint endpoints. For example, to exploit a security vulnerability in a SharePoint endpoint before the official fix for the security vulnerability has been installed.
 
-Starting with SharePoint Server Subscription Edition Version 25H1, the AMSI extends its scanning capabilities to include the bodies of HTTP requests. This AMSI Body Scan feature is useful for detecting and mitigating threats that may be embedded in request payloads, providing a more comprehensive security solution.
+Starting with SharePoint Server Subscription Edition (SPSE) Version 25H1, the AMSI extends its scanning capabilities to include the bodies of HTTP requests. This AMSI Body Scan feature is useful for detecting and mitigating threats that may be embedded in request payloads, providing a more comprehensive security solution.
 
 > [!NOTE]
 > The new AMSI Body Scan feature is available for SharePoint Server Subscription Edition users only.
@@ -78,7 +78,7 @@ If you're using SharePoint Server 2016/2019 or earlier versions of SharePoint Se
 3. Select the web application for which you want to enable the AMSI integration, and select **Manage Features** in the toolbar.
 4. On the **SharePoint Server Antimalware Scanning** screen, select **Deactivate** to switch off AMSI integration, or select **Activate** to switch on AMSI integration.
 
-If you installed the SharePoint Server Subscription Edition Version 25H1 feature update, follow these steps to configure AMSI Body Scan feature settings:
+If you installed the SharePoint Server Subscription Edition Version 25H1 feature update, follow these steps to activate or deactivate and configure AMSI Body Scan feature settings:
 
 1. Open **Central Administration**.
 
@@ -88,11 +88,12 @@ If you installed the SharePoint Server Subscription Edition Version 25H1 feature
 
 4. On the AMSI Scan Configuration page, select the desired web application.
 
-5. Next, specify whether to turn on the AMSI Scan feature. To enable the AMSI Scan, select the **Enable AMSI scan feature** button. This ensures all HTTP request headers are scanned.
+5. Next, you can choose to enable or disable the AMSI scan feature by selecting the appropriate option.
 
-     If you wish to disable, then select the **Disable AMSI scan feature fully** button.
+    - To enable the AMSI scan, select the **Enable AMSI scan feature** button. This ensures all HTTP request headers are scanned.
+    - To disable the scan, select the **Disable AMSI scan feature fully** button.
 
-6. After enabling, select the Request Body Scan mode by choosing one of the following available options for scanning the request body:
+6. After enabling, select the Request Body Scan mode for scanning the request body according to your specific requirements from the following available options:
 
     - **Off**: Disables body scanning. This won't affect the existing header scanning feature.
     - **Balanced Mode**: Scans request bodies that are sent to system-predefined sensitive endpoints and other endpoints that are specified to be included in the body scan.
@@ -102,12 +103,14 @@ If you installed the SharePoint Server Subscription Edition Version 25H1 feature
 
     :::image type="content" source="../media/amsi-configuration-body-scan-page.png" alt-text="Screenshot of the AMSI Scan Configuration page with different modes." lightbox="../media/amsi-configuration-body-scan-page.png":::
 
+8. Once you have made the necessary changes, click **OK** to apply them effectively.
+
 > [!NOTE]
 >
 > - Each web application must be configured for AMSI independently, and the specified endpoints list applies only to that web application.
-> - If AMSI has been disabled for a web application, it will remain disabled after upgrading to a build with the new body scan feature.
+> - The new body scan feature will remain disabled after the upgrade if the AMSI is disabled for a web application.
 > - Body scanning can't be enabled without also enabling header scanning.
-> - The default configuration for body scan is the Balanced Mode. After upgrading, any web application that had AMSI enabled will also have body scanning enabled in the Balanced Mode.
+> - The default configuration for body scan is the Balanced Mode. After upgrading to SPSE Version 25H1, any web application that had AMSI enabled will also have body scanning enabled in the Balanced Mode.
 
 ### Activate/Deactivate AMSI using PowerShell
 
@@ -125,7 +128,7 @@ To activate, run the following PowerShell command:
 Enable-SPFeature -Identity 4cf046f3-38c7-495f-a7da-a1292d32e8e9 -Url <web application URL> 
 ```
 
-After upgrading to SharePoint Server Subscription Edition Version 25H1 build, you can configure body scan settings using PowerShell. To set the body scan mode, run the following command:
+After upgrading to SharePoint Server Subscription Edition Version 25H1 build, you can also configure the body scan settings using PowerShell. To set the body scan mode, run the following command:
 
 ```powershell
 
@@ -237,7 +240,7 @@ Exploit:Script/SharePointEicar.A
 
 ### Performance effects of using Microsoft Defender as the primary AMSI solution
 
-By default, [Microsoft Defender Antivirus](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963) (MDAV), an AMSI-capable solution, is automatically enabled and installed on endpoints and devices that are running Windows 10, Windows Server 2016, and later. If you haven't installed an antivirus/anti-malware application, SharePoint Server AMSI integration works with MDAV. If you install and enable another antivirus/anti-malware application, MDAV will automatically turn off. If you uninstall the other app, MDAV will automatically turn back on, and the SharePoint Server integration will work with MDAV.
+By default, [Microsoft Defender Antivirus](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963) (MDAV), an AMSI-capable solution, is automatically enabled and installed on endpoints and devices that are running Windows 10, Windows Server 2016, and later. If you haven't installed an antivirus/anti-malware application, SharePoint Server AMSI integration works with MDAV. If you install and enable another antivirus/anti-malware application, MDAV automatically turns off. If you uninstall the other app, MDAV automatically turns back on, and the SharePoint Server integration will work with MDAV.
 
 The benefits of using MDAV on SharePoint Server include:
 
