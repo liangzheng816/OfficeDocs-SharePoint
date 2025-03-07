@@ -132,9 +132,9 @@ If you want to use Microsoft SQL Server Power Pivot for SharePoint or Microsoft 
     
 - Power View reports (standalone or embedded in Excel workbooks)
     
-- Power View Subscriptions and Report Alerting 
-    
-    Power Pivot Management Dashboard
+- Power View Subscriptions and Report Alerting
+
+- Power Pivot Management Dashboard
     
 - BISM Link support
     
