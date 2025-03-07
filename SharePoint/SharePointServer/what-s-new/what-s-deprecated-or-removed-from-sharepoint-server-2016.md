@@ -28,7 +28,7 @@ Deprecated features are included in SharePoint Server 2016 for compatibility wit
   
 ## Features deprecated in SharePoint Server 2016
 
-The following features and functionality are deprecated or removed in SharePoint Server.
+The following features and functionality are deprecated in SharePoint Server.
   
 ### Duet Enterprise for Microsoft SharePoint
 
@@ -80,32 +80,6 @@ The following Excel Services functionality requires Excel Online in Office Onlin
     
 - Programmability features such as JavaScript OM, User Defined Function Assemblies, SOAP and REST protocol support
 
-## Removed features in SharePoint Server 2016
-
-The following feature and functionality is removed in SharePoint Server 2016. 
-
-### Legacy Cloud Hybrid Search
-
-Search Content Service (SCS), an internal component of Cloud Hybrid Search in SharePoint in Microsoft 365 will be retired starting June 30, 2025. To continue using Cloud Hybrid Search by then, upgrade your SharePoint Server farm to [SharePoint Server Subscription Edition (SPSE) Version 25H1](/SharePoint/what-s-new/new-and-improved-features-in-sharepoint-server-subscription-edition-25h1-release.md#cloud-hybrid-search-upgrade) or later versions. Without this upgrade, all versions of SharePoint Server 2019/2016 and previous versions of SPSE can only search for on-premises and Microsoft 365 content separately through Hybrid Federated Search after this retirement.
-    
-## SharePoint BI capabilities
-
-If you want to use Microsoft SQL Server Power Pivot for SharePoint or Microsoft Power View for SharePoint for BI solutions with SharePoint Server 2016, you must install the Power Pivot or Power View add-ins for SQL Server 2016 RTM. The SQL Server 2014 (SP1) Power Pivot for SharePoint and Power View for SharePoint add-ins can't be deployed or used with SharePoint Server 2016. To deploy these add-ins, you need to upgrade to SQL Server 2016 RTM. For more information, see [New and improved features in SharePoint Server 2016](new-and-improved-features-in-sharepoint-server-2016.md). The following business intelligence features are available with SharePoint Server 2016 when you download SQL Server 2016 RTM:
-  
-- Power Pivot Gallery
-    
-- Scheduled Data Refresh
-    
-- Using another workbook's Data Model as a data source
-    
-- Power View reports (standalone or embedded in Excel workbooks)
-    
-- Power View Subscriptions and Report Alerting 
-    
-    Power Pivot Management Dashboard
-    
-- BISM Link support
-    
 ## Tags and Notes
 
 The Tags and Notes feature is deprecated in SharePoint Server 2016. This means that users can still create new tags and notes and access any existing ones. However, we don't recommend using this feature because it will be removed in the next release.
@@ -129,11 +103,41 @@ Where:
 -  `<http://site.contoso.com>` is the URL to an existing SharePoint root site where you want to export the tags and notes from. 
     
 -  `<tagsandnotes.zip>` is the name you give to the .zip file that you want to export. 
-    
-## Work Management Service Application
 
-The Work Management Service Application is removed from SharePoint Server 2016. The My Tasks and associated Exchange Task Sync features are also removed from SharePoint Server 2016. Both of these features required the Work Management Service Application.
-  
 ## Stsadm.exe
 
 We recommend that you use Microsoft PowerShell when you perform command-line administrative tasks. The Stsadm command-line tool is deprecated, but it's included to support compatibility with previous product versions. 
+
+## Removed features in SharePoint Server 2016
+
+The following feature and functionality is removed in SharePoint Server 2016. 
+
+## Work Management Service Application
+
+The Work Management Service Application is removed from SharePoint Server 2016. The My Tasks and associated Exchange Task Sync features are also removed from SharePoint Server 2016. Both of these features required the Work Management Service Application.
+
+### Legacy Cloud Hybrid Search
+
+Search Content Service (SCS), an internal component of Cloud Hybrid Search in SharePoint in Microsoft 365 will be retired starting June 30, 2025. To continue using Cloud Hybrid Search by then, upgrade your SharePoint Server farm to [SharePoint Server Subscription Edition (SPSE) Version 25H1](/SharePoint/what-s-new/new-and-improved-features-in-sharepoint-server-subscription-edition-25h1-release.md#cloud-hybrid-search-upgrade) or later versions. Without this upgrade, all versions of SharePoint Server 2016 can only search for on-premises and Microsoft 365 content separately through Hybrid Federated Search after this retirement.
+    
+## SharePoint BI capabilities
+
+If you want to use Microsoft SQL Server Power Pivot for SharePoint or Microsoft Power View for SharePoint for BI solutions with SharePoint Server 2016, you must install the Power Pivot or Power View add-ins for SQL Server 2016 RTM. The SQL Server 2014 (SP1) Power Pivot for SharePoint and Power View for SharePoint add-ins can't be deployed or used with SharePoint Server 2016. To deploy these add-ins, you need to upgrade to SQL Server 2016 RTM. For more information, see [New and improved features in SharePoint Server 2016](new-and-improved-features-in-sharepoint-server-2016.md). The following business intelligence features are available with SharePoint Server 2016 when you download SQL Server 2016 RTM:
+  
+- Power Pivot Gallery
+    
+- Scheduled Data Refresh
+    
+- Using another workbook's Data Model as a data source
+    
+- Power View reports (standalone or embedded in Excel workbooks)
+    
+- Power View Subscriptions and Report Alerting 
+    
+    Power Pivot Management Dashboard
+    
+- BISM Link support
+    
+
+  
+
