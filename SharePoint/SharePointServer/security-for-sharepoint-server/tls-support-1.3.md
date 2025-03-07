@@ -101,5 +101,5 @@ To join the existing farm, you need to specify the encryption settings that the 
 
 Also, run the following PowerShell command to join the farm:
 ```powershell
-Connect-SPConfigurationDatabase -DatabaseServer "SQL-01" -DatabaseName "SharePointConfigDB1" – DatabaseConnectionEncryption Mandatory -DatabaseServerCertificateHostName "SQL-01.internal.contoso.com" -Passphrase (ConvertTo-SecureString "****" -AsPlainText -Force) -LocalServerRole "Application"
+Connect-SPConfigurationDatabase -DatabaseServer "SQL-01" -DatabaseName "SharePointConfigDB1" -DatabaseConnectionEncryption Mandatory -DatabaseServerCertificateHostName "SQL-01.internal.contoso.com" -Passphrase (ConvertTo-SecureString "****" -AsPlainText -Force) -LocalServerRole "Application"
 ```
