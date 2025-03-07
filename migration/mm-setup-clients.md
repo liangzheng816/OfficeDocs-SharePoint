@@ -23,7 +23,7 @@ description: Set up multiple Migration Manager agents
 
 # Step 1: Set up Migration Manager agents
 
-When migrating file shares with Migration Manager, you first need to set up one or more migration agents. This is done by running a setup file on each computer or VM you choose to configure. You can also group agents by assigning particular migrations to a specific set of agents or separating out agents in groups based on geographical location to optimize performance.
+When migrating file shares with Migration Manager, you first need to set up one or more migration agents. You can run the agent setup file on each computer or VM (virtual machine) you choose to configure. You can also group agents by assigning particular migrations to a specific set of agents or separating out agents in groups based on geographical location to optimize performance.
 
 When you run the setup file, you are prompted for two sets of credentials. You need SharePoint Administrator credentials, depending on your destination, and Windows credentials with read access to the source. These Windows credentials must have read access to all file shares you plan to migrate. This pair of credentials creates a trust with Migration Manager. Migration Manager now sees it as an available "agent" to which it can automatically distribute migration tasks.
 
@@ -42,12 +42,12 @@ After an agent is configured, anyone with permission to access the [SharePoint a
 |Virtual machines or computers to use:|Determine how many VMs or computers you plan on using for your migration project. List the computers or VMs before you start.|
 |[Verify prerequisites](mm-prerequisites.md)|Make sure your computer meets the requirements.|
 |[Check required endpoints](mm-prerequisites.md)|Verify that you have the required endpoints configured.|
-|[Multi-geo tenant](#multi-geo-agent-setup)|If you have a multi-geo tenant, be sure to understand where the agent will be installed.|
+|[Multi-geo tenant](#multi-geo-agent-setup)|If you have a multi-geo tenant, be sure to understand where the agent is installed.|
 |[Pre-provision OneDrive accounts](/onedrive/pre-provision-accounts)|If you are migrating to OneDrive accounts, make sure the accounts are pre-provisioned before you migrate. Pre-provisioning can be done by using a script as described here: [Pre-provision OneDrive for users in your organization](/onedrive/pre-provision-accounts).|
 |[Government Cloud](mm-gov-cloud.md)|If your tenant resides in a government cloud, you might have extra steps to perform before using Migration Manager.|
 
 > [!TIP]
-> Create a service account with administrative rights for your agent to run on the server or VM. This account should have read access to the sources you plan to migrate, as well as SharePoint or OneDrive administrator access to the destination specifically for your migration project. Log into each VM or computer with this account before running the setup file to ensure that the agent installs as a service.
+> Create a service account with administrative rights for your agent to run on the server or VM. This account should have read access to the sources you plan to migrate, and SharePoint or OneDrive administrator access to the destination specifically for your migration project. Log into each VM or computer with this account before running the setup file to ensure that the agent installs as a service.
 
 > [!NOTE]
 > Third-party multi-factor authentication is not supported at this time.
@@ -64,7 +64,7 @@ To calculate the minimum required number of agents to use for your migration:
 
 1. Run a test migration with 20 to 30 tasks using one agent to test the throughput per agent. Record the time.
 2. Estimate the number of tasks for your entire migration. Take the length of time it took one test agent to process, and calculate the number of agents for the migration. Factor in the overall length of time you have to complete your migration project.
-3. If you have already created more agents than you need, they can be disabled by selecting the agent within Migration Manager.
+3. If you created more agents than you need, they can be disabled by selecting the agent within Migration Manager.
 
 ## Set up an agent
 
@@ -72,9 +72,9 @@ To calculate the minimum required number of agents to use for your migration:
 2. From the SharePoint admin center, select <strong><a href="https://go.microsoft.com/fwlink/?linkid=2185075" target="_blank">Migration center</a></strong>. You need to sign in with an account that has [SharePoint Administrator permissions](/sharepoint/sharepoint-admin-role) for your organization.
 3. Under "For file shares", select **Get started**.
 4. Select the **Agents** tab, and then select **Add**.
-1. Select **Download agent setup file**. (To get the latest bug fixes, feature improvements or new features, please find the latest public preview download link in '[What’s New](/sharepointmigration/mm-whats-new)')
+1. Select **Download agent setup file**. (To get the latest bug fixes, feature improvements or new features, find the latest public preview download link in '[What’s New](/sharepointmigration/mm-whats-new)')
 1. Open the setup file. On the Welcome page, select the authentication method, select **Next**.
-1. If you select "User Credential Authentication", enter the SharePoint admin username and password of the environment where you are migrating your content. Select **Next**. If you select "Certificate Authentication", upload the certificate auth config file. Select **Next.**
+1. If you select **User Credential Authentication**, enter the SharePoint admin username and password of the environment where you are migrating your content. Select **Next**. If you select **Certificate Authentication**, upload the certificate auth config file. Select **Next.**
 
 8. Enter the password of the Windows account that provides access to **all** the file shares that contain the content you want to migrate. Select **Install**.
 9. Test agent access (optional) or select **Close**.  After the setup is completed, the new agent will be added to the available agents that can be assigned tasks.
@@ -108,14 +108,14 @@ To install an agent to a different Geo location:
    The country or regional GEO code can be found here [Microsoft 365 Multi-Geo availability](/microsoft-365/enterprise/microsoft-365-multi-geo).
 
 > [!IMPORTANT]
-> Migration to Teams: If you are migrating to Teams, the destination Teams site must be in the same GEO as your tenant admin.  If they are different, the Teams channel won't load when you select destination.  
+> Migration to Teams: If you are migrating to Teams, the destination Teams site must be in the same GEO as your tenant admin.  If they are different, the Teams channel doesn't load when you select destination.
 
 ## Installing the agent as an app
 
  If the system detects you aren't joined to a domain when installing the agent, you can install the agent as a Windows app.  If you still wish to install it as a service, exit and sign in with a domain-joined account.
 
 > [!IMPORTANT]
-> If you install the agent as an app, it will not run if the computer is asleep, effectively pausing your migration.
+> If you install the agent as an app, it doesn't run if the computer is asleep, effectively pausing your migration.
 
 1. Select **Install as an app**.
 
@@ -128,7 +128,7 @@ To install an agent to a different Geo location:
    
 1. The settings screen displays if and to what tenant you are connected.  Select **unlink tenant** if you wish to sign in to a different tenant.
 
-1. Microsoft 365 automatically renews authorization to access your tenant as long as the migration agent is active.  If the agent has been inactive for longer than seven days, you might need to sign in again.
+1. Microsoft 365 automatically renews authorization to access your tenant as long as the migration agent is active.  If the agent is inactive for longer than seven days, you might need to sign in again.
 
 ## Agent task assignment
 
