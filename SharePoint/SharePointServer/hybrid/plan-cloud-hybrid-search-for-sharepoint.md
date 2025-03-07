@@ -213,7 +213,7 @@ Plan for a custom result source that limits your Search Centers in Office 365 to
     
 2. Microsoft 365 content. During crawl, metadata from this content is added to the Microsoft 365 search index.
     
-3. Default (or existing) Microsoft 365 Search Center. You create a custom result source for this Search Center, which limits search results to show only Microsoft 365 content. .
+3. Default (or existing) Microsoft 365 Search Center. You create a custom result source for this Search Center, which limits search results to show only Microsoft 365 content.
     
 4. New Microsoft 365 Search Center, where you validate and tune how hybrid search results are shown. This Search Center uses the default result source and shows search results from both on-premises and Microsoft 365 content. You set up access so only testers and administrators have access to this site.
     
@@ -223,7 +223,7 @@ Plan for a custom result source that limits your Search Centers in Office 365 to
 ## Related Topics
 <a name="BKMK_Plan_validation"> </a>
 
-[Learn about cloud hybrid search for SharePoint in Microsoft 365](learn-about-cloud-hybrid-search-for-SharePoint in Microsoft 365.md)
+[Learn about cloud hybrid search for SharePoint in Microsoft 365](learn-about-cloud-hybrid-search-for-sharepoint.md)
   
 [Configure cloud hybrid search - roadmap](configure-cloud-hybrid-searchroadmap.md)
   
