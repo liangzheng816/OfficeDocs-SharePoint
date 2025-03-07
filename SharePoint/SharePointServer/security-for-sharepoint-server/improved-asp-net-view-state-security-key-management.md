@@ -29,7 +29,7 @@ Starting from SharePoint Server Subscription Edition Version 25H1, you would be 
 
 ## Automatic machine key rotation
 
-Automatic machine key rotation feature aims to improve security by automating the periodic updating of machine keys, thereby minimizing the risk of key compromize. This feature ensures seamless and automatic rotation of machine keys while maintaining high availability and reliability of SharePoint services during key rotation.
+Automatic machine key rotation feature aims to improve security by automating the periodic updating of machine keys, thereby minimizing the risk of key compromise. This feature ensures seamless and automatic rotation of machine keys while maintaining high availability and reliability of SharePoint services during key rotation.
 
 The feature incorporates a Key Management Service that handles storage, retrieval and distribution of machine keys using a timer job called **Machine Key Rotation Job**. The timer job is configured to run automatically on the last Sunday of every month by default.
 
