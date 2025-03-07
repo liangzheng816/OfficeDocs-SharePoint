@@ -73,6 +73,8 @@ Newly created databases that are added to a farm are configured to use the same 
   -DatabaseConnectionEncryption {Mandatory | Optional | Strict} 
   -DatabaseServerCertificateHostName <String> 
   ```
+  > [!NOTE]
+  > DatabaseConnectionEncryption is **Mandatory** by default incase you don't specify it.
 
   For example: 
   ```powershell 
@@ -81,10 +83,13 @@ Newly created databases that are added to a farm are configured to use the same 
 
 - In PSConfig.exe, add the following optional parameters to the configdb operation: 
 
-    ``` 
-    -dbencryption {Mandatory | Optional | Strict} 
-    -dbcerthostname <String> 
-    ``` 
+  ``` 
+  -dbencryption {Mandatory | Optional | Strict} 
+  -dbcerthostname <String> 
+  ``` 
+
+  > [!NOTE]
+  > dbencryption is **Mandatory** by default incase you don't specify it. 
 
     For example: 
     ```powershell 
