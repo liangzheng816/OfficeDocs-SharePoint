@@ -69,7 +69,7 @@ If customers prefer not to have AMSI integration enabled automatically within th
 
 If you follow these steps, SharePoint won't attempt to re-enable the feature while installing future public updates.
 
-### Activate/Deactivate AMSI manually
+## Configure AMSI via user interface
 
 If you're using SharePoint Server 2016/2019 or earlier versions of SharePoint Server Subscription Edition Version 25H1, follow these steps to manually deactivate or activate the AMSI integration for each web application:
 
@@ -114,7 +114,7 @@ If you installed the SharePoint Server Subscription Edition Version 25H1 feature
 > - Body scanning can't be enabled without enabling header scanning.
 > - The default configuration for body scan is the Balanced Mode. After upgrading to SPSE Version 25H1, any web application that had AMSI enabled will also have body scanning enabled in the Balanced Mode.
 
-### Activate/Deactivate AMSI using PowerShell
+## Configure AMSI using PowerShell
 
 Alternatively, you can activate/deactivate AMSI integration for a web application using PowerShell commands.
 
