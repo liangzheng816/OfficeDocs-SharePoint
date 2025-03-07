@@ -78,7 +78,7 @@ If you're using SharePoint Server 2016/2019 or earlier versions of SharePoint Se
 3. Select the web application for which you want to enable the AMSI integration, and select **Manage Features** in the toolbar.
 4. On the **SharePoint Server Antimalware Scanning** screen, select **Deactivate** to switch off AMSI integration, or select **Activate** to switch on AMSI integration.
 
-If you installed the SharePoint Server Subscription Edition Version 25H1 feature update, follow these steps to activate or deactivate and configure the request body scan feature settings:
+If you installed the SharePoint Server Subscription Edition Version 25H1 feature update, follow these steps to activate or deactivate and configure the AMSI integration settings:
 
 1. Open **SharePoint Central Administration**.
 
@@ -99,7 +99,7 @@ If you installed the SharePoint Server Subscription Edition Version 25H1 feature
     - **Balanced Mode**: Scans request bodies that are sent to system-predefined sensitive endpoints and other endpoints that are specified to be included in the body scan.
     - **Full Mode**: Scans request bodies that are sent to all endpoints except those explicitly excluded, to improve performance while maintaining fair security assurance.
 
-7. Specify the endpoints that should be excluded from the body scan and select **Add**.
+7. Specify the endpoints that should be included or excluded from the body scan as per the mode you selected and click **Add**.
 
     Ensure that the endpoints contain the whole request URI path. For example, include `/SitePages/Home.aspx`, so it can scan URLs like `http://test.contoso.com/SitePages/Home.aspx`, and `http://test.contoso.com/sites/marketing/SitePages/Home.aspx`. To understand the syntax structure of URI, refer to [Uniform Resource Identifier - Wikipedia](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier).
 
