@@ -37,7 +37,7 @@ The following table provides a summary of the new features introduced in the Sha
 | **Create new Office files in client apps**   |Early release   |For more information, see [Create new Office files in client apps](#create-new-office-files-in-client-apps).|
 | **Support for request body scan in AMSI**   |Early release   |For more information, see [Support for request body scan in AMSI](#support-for-request-body-scan-in-amsi).|
 | **Cloud Hybrid Search upgrade**   |Early release   |For more information, see [Cloud Hybrid Search upgrade](#cloud-hybrid-search-upgrade).|
-| **New database connectivity layer with TLS 1.3 and TDS 8.0 support**   |Standard release   |For more information, see [New database connectivity layer with TLS 1.3 and TDS 8.0 support](#new-database-connectivity-layer-with-tls-13-and-tds-80-support).|
+| **New database connectivity layer with TLS 1.3 and TDS 8.0 support**   |Standard release   |For more information, see [New database connectivity layer with TDS 8.0 and TLS 1.3 support](#new-database-connectivity-layer-with-tls-13-and-tds-80-support).|
 
 ## Detailed description of features
 
@@ -61,7 +61,7 @@ For more information, see [Improved ASP.NET view state security and key manageme
 To further enhance the flexibility and effectiveness of the OCV feature, the SharePoint Server now introduces the new Dynamic Survey functionality. This feature allows us to configure and display surveys dynamically to gather administrator feedback based on current needs. It offers flexibility to configure the survey type, rating questions, survey rating scale and options, comment question, and whether to collect user emails. Additionally, the frequency of survey prompts can be configured at both the user and survey levels.
 
 > [!NOTE]
-> This feature overwrites the OCV feature released in 24H1. Therefore, the popup rule from the first iteration of this feature will no longer be triggered.
+> This feature overwrites the OCV feature released in Version 24H1. Therefore, the popup rule from the first iteration of this feature will no longer be triggered.
 
 For more information, see [Configure feedback for SharePoint Server](../administration/configure-ocv.md).
 
@@ -92,9 +92,9 @@ Search Content Service (SCS), an internal component of Cloud Hybrid Search in Sh
 
 This update requires patching for SharePoint Server and reonboarding the Hybrid Search Service Application (Cloud SSA) in the on-premises farm using a PowerShell script. 
 
-For more information on upgrading an existing Cloud SSA, see [Configure cloud hybrid search - roadmap](../hybrid/configure-cloud-hybrid-searchroadmap.md).
+For more information on upgrading an existing Cloud SSA, see [Configure cloud hybrid search - roadmap](../hybrid/configure-cloud-hybrid-searchroadmap.md#connect-your-cloud-search-service-application-to-your-microsoft-365-organization).
 
-### New database connectivity layer with TLS 1.3 and TDS 8.0 support
+### New database connectivity layer with TDS 8.0 and TLS 1.3 support
 
 The SharePoint Server Subscription Edition Version 25H1 build introduces a new database connectivity layer called [Microsoft.Data.SqlClient](/sql/connect/ado-net/overview-sqlclient-driver?view=sql-server-ver16&preserve-view=true) for .NET-based applications. This new database connectivity layer supports advanced security capabilities such as TLS 1.3 that couldn’t be supported in our previous database connectivity layer, that is, [System.Data.SqlClient](/dotnet/framework/data/adonet/sql/) library. It also enables SharePoint Server to take advantage of other new SQL capabilities, such as SQL Server and Azure SQL features.
 
