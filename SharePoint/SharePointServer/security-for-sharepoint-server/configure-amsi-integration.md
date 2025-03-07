@@ -103,7 +103,7 @@ If you installed the SharePoint Server Subscription Edition Version 25H1 feature
 
     :::image type="content" source="../media/amsi-configuration-body-scan-page.png" alt-text="Screenshot of the AMSI Scan Configuration page with different modes." lightbox="../media/amsi-configuration-body-scan-page.png":::
 
-8. Once you have made the necessary changes, click **OK** to apply them effectively.
+8. After making the necessary changes, click **OK** to apply them effectively.
 
 > [!NOTE]
 >
