@@ -28,13 +28,13 @@ Deprecated features are included in SharePoint Server 2016 for compatibility wit
   
 ## Features deprecated in SharePoint Server 2016
 
-The following features and functionality have been deprecated or removed in SharePoint Server.
+The following features and functionality are deprecated or removed in SharePoint Server.
   
 ### Duet Enterprise for Microsoft SharePoint
 
-Duet Enterprise for Microsoft SharePoint and SAP cannot be deployed with SharePoint Server 2016. SharePoint Server 2016 doesn't have any Duet components, so it will not install.
+Duet Enterprise for Microsoft SharePoint and SAP can't be deployed with SharePoint Server 2016. SharePoint Server 2016 doesn't have any Duet components, so it will not install.
   
-If you want to deploy Duet Enterprise for Microsoft SharePoint you must use SharePoint Server 2013 Enterprise Edition.
+If you want to deploy Duet Enterprise for Microsoft SharePoint, you must use SharePoint Server 2013 Enterprise Edition.
   
 ### SharePoint Foundation
 
@@ -44,7 +44,7 @@ Previous releases of SharePoint Server included SharePoint Foundation, a free ed
   
 ### Standalone Install mode
 
-SharePoint Server 2016 doesn't support the standalone install option, so it is no longer available in the setup program. Use the MinRole feature during installation and choose one of the available install options. The Single Server Farm option where everything is installed on the same computer is supported for dev/test/demo purposes. When you use this option, you must install SQL Server yourself and then run the SharePoint Server 2016 farm configuration wizard.. For more information, see "MinRole farm topology" in [New and improved features in SharePoint Server 2016](new-and-improved-features-in-sharepoint-server-2016.md).
+SharePoint Server 2016 doesn't support the standalone install option, so it's no longer available in the setup program. Use the MinRole feature during installation and choose one of the available install options. The Single Server Farm option where everything is installed on the same computer is supported for dev/test/demo purposes. When you use this option, you must install SQL Server yourself and then run the SharePoint Server 2016 farm configuration wizard. For more information, see "MinRole farm topology" in [New and improved features in SharePoint Server 2016](new-and-improved-features-in-sharepoint-server-2016.md).
   
 ### ForeFront Identity Manager client (FIM)
 
@@ -54,9 +54,9 @@ Earlier versions of SharePoint used ForeFront Identity Manager client (FIM) to s
 
 Excel Services and its associated business intelligence capabilities are no longer hosted on SharePoint Server. Excel Services functionality is now part of Excel Online in Office Online Server (this is the next version of Office Web Apps Server), and SharePoint users can use the services from there. For more information, see [Office Online Server now available](https://blogs.office.com/2016/05/04/office-online-server-now-available/), [Office Online Server](/webappsserver/office-web-apps-server), and [Configure Excel Online administrative settings](../administration/configure-excel-services.md).
   
-If you currently use Excel Services in SharePoint 2013 and upgrade to SharePoint Server 2016 you must also deploy Office Online Server with Excel Online to ensure Excel Services functionality remains available.
+If you currently use Excel Services in SharePoint 2013 and upgrade to SharePoint Server 2016, you must also deploy Office Online Server with Excel Online to ensure Excel Services functionality remains available.
   
-The following Excel Services functionality has been deprecated:
+The following Excel Services functionality is deprecated:
   
 - Trusted data providers
     
@@ -90,7 +90,7 @@ Search Content Service (SCS), an internal component of Cloud Hybrid Search in Sh
     
 ## SharePoint BI capabilities
 
-If you want to use Microsoft SQL Server Power Pivot for SharePoint or Microsoft Power View for SharePoint for BI solutions with SharePoint Server 2016 you must install the Power Pivot or Power View add-ins for SQL Server 2016 RTM. The SQL Server 2014 (SP1) Power Pivot for SharePoint and Power View for SharePoint add-ins cannot be deployed or used with SharePoint Server 2016. To deploy these add-ins you need to upgrade to SQL Server 2016 RTM. For more information, see [New and improved features in SharePoint Server 2016](new-and-improved-features-in-sharepoint-server-2016.md). The following business intelligence features are available with SharePoint Server 2016 when you download SQL Server 2016 RTM:
+If you want to use Microsoft SQL Server Power Pivot for SharePoint or Microsoft Power View for SharePoint for BI solutions with SharePoint Server 2016, you must install the Power Pivot or Power View add-ins for SQL Server 2016 RTM. The SQL Server 2014 (SP1) Power Pivot for SharePoint and Power View for SharePoint add-ins can't be deployed or used with SharePoint Server 2016. To deploy these add-ins, you need to upgrade to SQL Server 2016 RTM. For more information, see [New and improved features in SharePoint Server 2016](new-and-improved-features-in-sharepoint-server-2016.md). The following business intelligence features are available with SharePoint Server 2016 when you download SQL Server 2016 RTM:
   
 - Power Pivot Gallery
     
@@ -118,13 +118,13 @@ Verify that you meet all of the following minimum requirements.
     
 -  You must have membership in the **db_owner** fixed database role on all databases that are to be updated. 
     
--  You must be a member of the Administrators group on the server on which you are running the Microsoft PowerShell cmdlet. 
+-  You must be a member of the Administrators group on the server on which you're running the Microsoft PowerShell cmdlet. 
     
 ```
 Export-SPTagsAndNotesData -Site <http://site.contoso.com> -FilePath <tagsandnotes.zip>
 ```
 
-Where :
+Where:
   
 -  `<http://site.contoso.com>` is the URL to an existing SharePoint root site where you want to export the tags and notes from. 
     
@@ -132,8 +132,8 @@ Where :
     
 ## Work Management Service Application
 
-The Work Management Service Application has been removed from SharePoint Server 2016. The My Tasks and associated Exchange Task Sync features have also been removed from SharePoint Server 2016. Both of these features required the Work Management Service Application.
+The Work Management Service Application is removed from SharePoint Server 2016. The My Tasks and associated Exchange Task Sync features are also removed from SharePoint Server 2016. Both of these features required the Work Management Service Application.
   
 ## Stsadm.exe
 
-We recommend that you use Microsoft PowerShell when you perform command-line administrative tasks. The Stsadm command-line tool has been deprecated, but it is included to support compatibility with previous product versions. 
+We recommend that you use Microsoft PowerShell when you perform command-line administrative tasks. The Stsadm command-line tool is deprecated, but it's included to support compatibility with previous product versions. 
