@@ -94,7 +94,7 @@ New-SPConfigurationDatabase -DatabaseName "SharePointConfigDB1" -DatabaseServer 
 #### Joining the existing farm
 To join the existing farm, you need to specify the encryption settings that the existing farm is using as follows.
 
-1. Select **Database connection encryption** as **Mandatory**.
+1. Select **Database connection encryption** as **Mandatory** if your configuration database is Mandatory encrypt.
 1. Enter the **Database server certificate hostname** and click **Retrieve Database Names**.
 1. Then you can select the farm that you want the second server to join.
 :::image type="content" source="media/join-farm.png" alt-text="Screenshot of settings for joining existing farm.":::
