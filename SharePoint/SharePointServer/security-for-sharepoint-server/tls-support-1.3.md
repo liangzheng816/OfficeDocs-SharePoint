@@ -26,7 +26,7 @@ description: "This article describes the supported and unsupported components on
 TLS 1.3 is the latest version of the TLS encryption protocol. SharePoint Server Subscription Edition by default supports TLS 1.3 when deployed with Windows Server 2022 and 2021-06 Cumulative Update for .NET Framework 3.5, and 4.8 for Microsoft server operating system x64 (KB5003529).
 
 > [!NOTE]
-> TLS 1.3 doesn't require any additional configuration and might not support all softwares and systems. Microsoft recommends you to contact your software and hardware administrator to check compatibility of TLS 1.3.
+> TLS 1.3 doesn't require any additional configuration and might not support all software and systems. Microsoft recommends you to contact your software and hardware administrator to check compatibility of TLS 1.3.
 >
 > TLS 1.3 isn't available and isn't supported when SharePoint Server Subscription Edition is deployed with earlier versions of Windows Server. Microsoft recommends deploying SharePoint Server Subscription Edition with Windows Server 2022 or higher.
 
@@ -69,12 +69,11 @@ Newly created databases that are added to a farm are configured to use the same 
 
 - To create a new farm, in PowerShell, add the following optional parameters to the `New-SPConfigurationDatabase` cmdlet: 
 
-  ``` 
-  -DatabaseConnectionEncryption {Mandatory | Optional | Strict} 
-  -DatabaseServerCertificateHostName <String> 
-  ```
+  `-DatabaseConnectionEncryption {Mandatory | Optional | Strict} 
+  -DatabaseServerCertificateHostName <String>`
+
   > [!NOTE]
-  > DatabaseConnectionEncryption is **Mandatory** by default incase you don't specify it.
+  > DatabaseConnectionEncryption is **Mandatory** by default in case you don't specify it.
 
   For example: 
   ```powershell 
@@ -83,13 +82,11 @@ Newly created databases that are added to a farm are configured to use the same 
 
 - In PSConfig.exe, add the following optional parameters to the configdb operation: 
 
-  ``` 
-  -dbencryption {Mandatory | Optional | Strict} 
-  -dbcerthostname <String> 
-  ``` 
+  `-dbencryption {Mandatory | Optional | Strict} 
+  -dbcerthostname <String>` 
 
   > [!NOTE]
-  > dbencryption is **Mandatory** by default incase you don't specify it. 
+  > dbencryption is **Mandatory** by default in case you don't specify it. 
 
     For example: 
     ```powershell 
