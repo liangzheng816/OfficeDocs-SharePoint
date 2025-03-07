@@ -65,6 +65,20 @@ Newly created databases that are added to a farm are configured to use the same 
 
 ### Specify encryption settings during PSConfig
 
+#### Creating a new farm
+
+- To create a new farm, in PowerShell, add the following optional parameters to the `New-SPConfigurationDatabase` cmdlet: 
+
+  ``` 
+  -DatabaseConnectionEncryption {Mandatory | Optional | Strict} 
+  -DatabaseServerCertificateHostName <String> 
+  ```
+
+  For example: 
+  ```powershell 
+  New-SPConfigurationDatabase -DatabaseName "SharePointConfigDB1" -DatabaseServer "SQL-01" -DatabaseConnectionEncryption "Mandatory" -DatabaseServerCertificateHostName "SQL-01.internal.contoso.com" -Passphrase (ConvertTo-SecureString "MyPassword" -AsPlainText -force) -FarmCredentials (Get-Credential) -LocalServerRole "Application" 
+  ``` 
+
 - In PSConfig.exe, add the following optional parameters to the configdb operation: 
 
     ``` 
@@ -78,18 +92,8 @@ Newly created databases that are added to a farm are configured to use the same 
     ```
 
 - In the SharePoint Products Configuration Wizard (PSConfigUI.exe), specify the settings in the **Database connection encryption** and **Database server certificate host name** fields in the configuration database form.
-:::image type="content" source="media/config-db-settings.png" alt-text="Screenshot of Configuration Wizard.":::
 
-#### Creating a new farm
-To create a new farm, in PowerShell, add the following optional parameters to the `New-SPConfigurationDatabase` cmdlet: 
-``` 
--DatabaseConnectionEncryption {Mandatory | Optional | Strict} 
- -DatabaseServerCertificateHostName <String> 
-```
-For example: 
-```powershell 
-New-SPConfigurationDatabase -DatabaseName "SharePointConfigDB1" -DatabaseServer "SQL-01" -DatabaseConnectionEncryption "Mandatory" -DatabaseServerCertificateHostName "SQL-01.internal.contoso.com" -Passphrase (ConvertTo-SecureString "MyPassword" -AsPlainText -force) -FarmCredentials (Get-Credential) -LocalServerRole "Application" 
-``` 
+    :::image type="content" source="media/config-db-settings.png" alt-text="Screenshot of Configuration Wizard.":::
 
 #### Joining the existing farm
 To join the existing farm, you need to specify the encryption settings that the existing farm is using as follows.
@@ -97,7 +101,8 @@ To join the existing farm, you need to specify the encryption settings that the 
 1. Select **Database connection encryption** as **Mandatory** if your configuration database is Mandatory encrypt.
 1. Enter the **Database server certificate hostname** and click **Retrieve Database Names**.
 1. Then you can select the farm that you want the second server to join.
-:::image type="content" source="media/join-farm.png" alt-text="Screenshot of settings for joining existing farm.":::
+
+    :::image type="content" source="media/join-farm.png" alt-text="Screenshot of settings for joining existing farm.":::
 
 Also, run the following PowerShell command to join the farm:
 ```powershell
