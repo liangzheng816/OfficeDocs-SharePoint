@@ -1,5 +1,5 @@
 ---
-ms.date: 4/14/2024
+ms.date: 2/28/2025
 title: "Restricted SharePoint Search Admin PowerShell Scripts"
 ms.reviewer: 
 ms.author: ruihu
@@ -15,7 +15,7 @@ ms.collection:
 - M365-collaboration
 - m365copilot
 - magic-ai-copilot
-description: "Learn how to use PowerShell scripts as a SharePoint Administrator or above in Microsoft 365 to get current mode of Restricted SharePoint Search, enable/disable Restricted SharePoint search, add to or remove from the allowed list, and get the list of current sites in the allowed list."
+description: "Learn how to use PowerShell scripts as a SharePoint Administrator or higher in Microsoft 365 to get current mode of Restricted SharePoint Search, enable/disable Restricted SharePoint search, add to or remove from the allowed list, and get the list of current sites in the allowed list."
 ---
 
 # Use PowerShell Scripts for Restricted SharePoint Search
@@ -33,21 +33,21 @@ By default, **Restricted SharePoint Search** isn't enabled. To enable and set up
 
 - Remove sites from the allowed list by providing URL
 
-- Get the existing list of URLs that are added in allow list
+- Get the existing list of URLs that are added in allowlist
 
  This article covers how to use admin scripts in PowerShell for these actions.
 
 ## Before you start
 
-You must be a [SharePoint Administrator](/sharepoint/sharepoint-admin-role) or [above](/microsoft-365/admin/add-users/about-admin-roles) in Microsoft 365 to run the following admin scripts.
-Before you use the PowerShell scripts in this article, you need to do the following:
+You must be a [SharePoint Administrator](/sharepoint/sharepoint-admin-role) or [higher](/microsoft-365/admin/add-users/about-admin-roles) in Microsoft 365 to run the following admin scripts.
+Before you use the PowerShell scripts in this article, you need to do the following steps:
 
 1. If you haven’t, [download the latest SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
    > [!NOTE]
    > If you installed a previous version of the SharePoint Online Management Shell, go to Add or remove programs and uninstall "SharePoint Online Management Shell."
 
-1. Connect to SharePoint as a [SharePoint Administrator](/sharepoint/sharepoint-admin-role) or [above](/microsoft-365/admin/add-users/about-admin-roles) in Microsoft 365 in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+1. Connect to SharePoint as a [SharePoint Administrator](/sharepoint/sharepoint-admin-role) or [higher](/microsoft-365/admin/add-users/about-admin-roles) in Microsoft 365 in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 ## Get the current mode that is set for Restricted Search
 
@@ -75,7 +75,7 @@ This example lets the admin get the existing allowed list in the tenant. Result 
 
 ## Enable or disable the Restricted Search setting
 
-Enable or disabled the Restricted Search setting with the default being disabled. The first time when the setting is enabled the allow list is empty. To enable or disable the Restricted SharePoint Search, you can run:
+Enable or disabled the Restricted Search setting with the default being disabled. The first time when the setting is enabled the allowlist is empty. To enable or disable the Restricted SharePoint Search, you can run:
 
 **Set-SPOTenantRestrictedSearchMode**
 
@@ -184,7 +184,7 @@ File that has list of sites URLs that can be added to an allowed list when the t
 | Accept Pipeline input:       | False    |
 | Accept wildcard characters:  | False    |
 
-## Remove sites from the allow list
+## Remove sites from the allowlist
 
 You can remove sites from the allowed list by providing the Site URL in string or csv file using PowerShell script:
 

@@ -61,6 +61,7 @@ The following apps and scenarios don't work with authentication contexts:
 - Outlook on Windows, Mac, Android, and iOS don't support communication with SharePoint sites protected by an Authentication Context.
 - The multiple-file download feature currently doesn't function when both the authentication context and 'Use Conditional Access App Control' in session control are enabled in the conditional access policy.
 - The file copy and move feature between different regions (cross-geo) currently doesn’t function when an authentication context is applied to the destination site.
+- Exporting to Excel as an Excel Web Query (IQY) doesn't currently support authentication context.
 
 ## Setting up an authentication context
 
@@ -160,7 +161,7 @@ Once the label has been updated, guests accessing a SharePoint site (or the **Fi
 If authentication context is set on a site, admins can choose to prevent background apps from accessing that site for the apps assigned with that authentication context in a conditional access policy. You can configure a conditional access policy such that a specific authentication context can be assigned to chosen application principles (non-Microsoft applications). You need to explicitly turn on this feature via the following cmdlet. You should have at least one conditional access policy with an application principle configured.
 
 ```PowerShell
-Set-SPOTenant -BlockAPPAccessToSitesWithAuthenticationContext $false/$true (default false)
+Set-SPOTenant -BlockAppAccessWithAuthenticationContext $false/$true (default false)
 ```
 
 ## Third party app integration

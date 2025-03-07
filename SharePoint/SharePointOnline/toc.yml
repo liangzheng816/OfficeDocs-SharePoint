@@ -51,6 +51,8 @@ items:
         href: deploy-file-collaboration.md
       - name: Permissions and sharing
         href: modern-experience-sharing-permissions.md
+      - name: Manage permission scopes
+        href: manage-permission-scope.md
     - name: Choose collaboration options
       href: collaboration-options.md
     - name: Roll out OneDrive and SharePoint

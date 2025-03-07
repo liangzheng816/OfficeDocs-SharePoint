@@ -25,10 +25,6 @@ description: Migration Manager Google FAQs
 **Question:**   **Are there any other tools available to migrate my Google accounts?**</br>
 Answer. Currently, Migration Manager is the tool to use to for migrating Google content.
 
-**Question:**  **Is this available for GCC, GCCHigh, DoD tenants?**</br>
-Answer.  No, Migration Manager Google isn't available for any of the Government clouds.
-</br>
-
 **Question:**   **What gets transferred?**</br>
 Answer: Only owned folders and the root files for each user are copied. If a user isn't the owner of data they can access, we don't copy it. Content may be automatically reshared after it's migrated so that each user has access to their content exactly as before.
 </br>
@@ -59,20 +55,26 @@ Answer:  We don't recreate external sharing links. After migration, these have t
 Answer:  We don't share content with external collaborators. This policy is in place to protect your organization, and industry best practice is to never automatically share sensitive internal data with external users.</br>
 
 **Question:**   **Does Migration Manager preserve file versions?**</br>
-Answer:  No. During a migration, only the most recent version of a file is transferred.</br>
+Answer: File version migration for Google is partially available and is on its way to GA </br>
 
 **Question:**   **Does Migration Manager automatically notify users?**</br>
 Answer:  No.  We automatically suppress all emails to users so they aren't bombarded with excessive notifications about the data they now have access to.</br>
 
-**Question:** Does Migration Manager transfer permissions for shared drives? </br>
+**Question: Does Migration Manager transfer permissions for shared drives?** </br>
 Answer: No. During a migration, we only transfer permissions for user drives. Permissions for shared drives aren't migrated. [Learn how to migrate Google Shared Drives](/sharepointmigration/mm-google-overview#google-shared-drives)
 
-**Question:**  What can't Migration Manager migrate from Google?</br>
-Answer: Google does not allow us to export drawings, sites, and maps from Google Drive. [Learn more about what isn't migrated](/sharepointmigration/mm-google-overview#what-isnt-migrated)
+**Question: What can't Migration Manager migrate from Google?** </br>
+Answer: Google does not allow us to export sites and maps from Google Drive. [Learn more about what isn't migrated](/sharepointmigration/mm-unsupported-files)
 
-**Question:**  Does Migration Manager migrate Google Forms?</br>
-Answer:  Yes. Migration Manager now will migrate Google Forms.
+**Question: Does Migration Manager migrate Google Forms?** </br>
+Answer:  Yes. Migration Manager now will migrate Google Forms. Forms destinations are required to make it work. [Learn more about Forms destination editing](/sharepointmigration/mm-google-step4-review-destinations)
 
-**Question:**  Does Google calculate the size of their proprietary files?</br>
+**Question: Does Google calculate the size of their proprietary files?** </br>
 Answer:  Google only started calculating the size of its proprietary files, including Google Docs, Sheets, Forms, and Slides, on May 2, 2022. Any Google proprietary files created and modified **before** May 2, 2022 don't include file size in the metadata info we get from the API calls. As a result, all Google proprietary files created before May 2, 2022 default to a scanned size of 1 byte and are reported as such in our *ScanSummary report*.
+
+**Question: What happens to the files with the same name in the same folder after they are migrated to Microsoft 365?** </br>
+Answer:  Files with the same name will be renamed with suffixes (1), (2), etc.
+
+**Question: Does Migration Manager support migrating two Google Drives with the same name?** </br>
+Answer:  No, it doesn't. Only the first discovered Drive will be migrated.
 

@@ -1,5 +1,5 @@
 ---
-ms.date: 04/12/2024
+ms.date: 2/28/2025
 title: "Curate the allowed list for Restricted SharePoint Search"
 ms.reviewer: 
 ms.author: ruihu
@@ -105,7 +105,8 @@ Your exported CSV file looks similar to the following CSV file:
 
 The SPAC DAG report (Data access governance reports for SharePoint sites) is part of [SharePoint admin center](https://go.microsoft.com/fwlink/?linkid=2185219). Admins with Microsoft 365 E5 licensing or Microsoft - SharePoint Advanced Management can access this report. This report helps you identify potential sites that are active and shared in the last 28 days.   
 
-**Step 1:** In the left pane, select **Reports** > **Data access governance**. Select the **Sharing links** report.
+**Step #1:** In the left pane, select **Reports** > **Data access governance**. Select the **Sharing links** report.
+
 ![Screenshot of where to find SPAC DAG report.](media/rss-spac-dag-1.png)
 
 **Step #2:** In the right pane **Sharing Links** page, select on the **Anyone links** report.

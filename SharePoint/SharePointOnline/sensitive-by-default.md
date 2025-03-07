@@ -1,5 +1,5 @@
 ---
-ms.date: 01/17/2020
+ms.date: 02/24/2025
 title: "Prevent guest access to files while DLP rules are applied"
 ms.reviewer: samust
 ms.author: ruihu
@@ -25,6 +25,9 @@ description: "Learn how to block external sharing of newly added SharePoint and 
 
 # Prevent guest access to files while DLP rules are applied
 
+> [!NOTE]
+> Any user whose usertype is member are considered internal and users with member type Guest are only considered external.
+
 When new files are added to SharePoint or OneDrive in Microsoft 365, it takes a while for [Microsoft Purview Data Loss Prevention (DLP) policy](/microsoft-365/compliance/dlp-learn-about-dlp) to scan the content and apply rules to help protect sensitive content. If external sharing is turned on, sensitive content could be shared and accessed by guests before the DLP rule finishes processing.
 
 Instead of turning off external sharing entirely, you can mark the files in your organization as sensitive by default. This blocks guest access to new content until it's scanned for sensitive content and DLP policies that include content-based conditions are applied. Guests are notified that the file is being scanned if they attempt to access it during this time.
@@ -44,7 +47,7 @@ When this feature is enabled, any content that isn't explicitly checked in a DLP
 
 If you want to operate under the principle that only locations explicitly checked by DLP can be shared externally, no further action is necessary. 
 
-If you want to enable external sharing in locations not currently covered by DLP policies, you can create a DLP rule that includes all SharePoint and OneDrive locations that contain at least one rule with the “content contains” condition (for any content), and that doesn't perform any action (such as limiting or blocking the content), trigger any alerts, or generates any notifications or reports. This policy must be moved to the top of the list and not have the *stop processing more rules* option set, so it's only effective for content that doesn't match any other DLP rule. As a result of such a rule, any file in any location that doesn’t match other DLP rules will be allowed for external sharing.
+If you want to enable external sharing in locations not currently covered by DLP policies, you can create a DLP rule that includes all SharePoint and OneDrive locations that contain at least one rule with the "content contains" condition (for any content), and that doesn't perform any action (such as limiting or blocking the content), trigger any alerts, or generates any notifications or reports. This policy must be moved to the top of the list and not have the *stop processing more rules* option set, so it's only effective for content that doesn't match any other DLP rule. As a result of such a rule, any file in any location that doesn’t match other DLP rules will be allowed for external sharing.
 
 For information about how to create a DLP rule, see [Learn how to create and turn on a DLP policy](/microsoft-365/compliance/create-test-tune-dlp-policy).
 
@@ -55,7 +58,7 @@ This feature is configured using PowerShell.
 1. [Download the latest SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
     > [!NOTE]
-    > If you installed a previous version of the SharePoint Online Management Shell, go to Add or remove programs and uninstall "SharePoint Online Management Shell."
+    > If you installed a previous version of the SharePoint Online Management Shell, go to **Add or remove programs** and uninstall "SharePoint Online Management Shell."
 
 1. Connect to SharePoint as a [SharePoint Administrator](/sharepoint/sharepoint-admin-role) or [above](/microsoft-365/admin/add-users/about-admin-roles) in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
@@ -67,7 +70,7 @@ This feature is configured using PowerShell.
 
     To disable this feature, run the following command:
 
-    ```powershell
+    ```PowerShell
     Set-SPOTenant -MarkNewFilesSensitiveByDefault AllowExternalSharing
     ```
 

@@ -1,5 +1,5 @@
 ---
-ms.date: 08/21/2020
+ms.date: 01/21/2025
 title: Guided walkthrough - Creating a Team site
 ms.reviewer: 
 ms.author: ruihu
@@ -61,7 +61,7 @@ Once you've created your site and know how to edit pages, you can use the follow
 
 Sections make up your page, and are where you place one or more web parts. When you edit the page, each section shows controls to edit the layout, move, or delete the sections.
 
-Start editing by clicking **Edit** on the top right of the page.
+Start editing by selecting **Edit** on the top right of the page.
 
 ![Image of the edit button at the top of the page](media/gw-leadership/gw-9.png)
 
@@ -75,7 +75,7 @@ To add web parts to sections, select the plus symbol ![image of a plus symbol](m
 
 ![Image of featured web parts](media/gw-leadership/gw-11.png)
 
-Web parts may be edited, moved, or deleted within sections. The **Edit web part** icon opens detailed controls unique to each web part type.
+Web parts may be edited, moved, or deleted within sections. The **Edit properties** icon opens detailed controls unique to each web part type.
 
 [Back to top](#example-team-site)
 

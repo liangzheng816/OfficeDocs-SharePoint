@@ -26,16 +26,15 @@ description: "Learn how to deploy SharePoint Servers 2016, 2019, and Subscriptio
 SharePoint Server 2016, SharePoint Server 2019, and SharePoint Server Subscription Edition support Azure SQL Managed Instance (MI). SQL MI is a deployment option of Azure SQL Database and is compatible with the current version of SQL Server (on-premises), Enterprise Edition Database Engine. 
 
 > [!IMPORTANT]
-> SharePoint Server farms must be hosted in Microsoft Azure to support Azure SQL Managed Instance. The SharePoint Server farm and the managed instance must be hosted in the same Azure region. SharePoint Server farms don't support managed instances when hosted in customer data centers.
+> SharePoint Server farms must be hosted in Microsoft Azure to support Azure SQL MI. The SharePoint Server farm and the managed instance must be hosted in the same Azure region. SharePoint Server farms don't support managed instances when hosted in customer datacenters.
 
-Deploying SharePoint Server with an Azure SQL Managed Instance lets you move your SQL Server on-premises application to the cloud with little or no application and database changes. The following procedure shows how to deploy SharePoint Servers 2016, 2019, or Subscription Edition with an Azure SQL Managed Instance.  
-
+Deploying SharePoint Server with an Azure SQL MI lets you move your SQL Server on-premises application to the cloud with little or no application and database changes. The following procedure shows how to deploy SharePoint Server 2016, 2019, or Subscription Edition with an Azure SQL MI.  
 
 ## Environment
 
 1. Create a resource group with a vNet and then create two subnets. You can use the [SQL Managed Instance Virtual Network Environment](https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.sql/sql-managed-instance-azure-environment) template to create an Azure Virtual Network with two subnets.
  
-2. Create subnet 1 (Default) and then create two VMs. First, set up VM 1 as an Active Directory Directory Services domain controller and configure your domain. For more information, see [Step-By-Step: Setting up Active Directory in Windows Server 2016](/archive/blogs/canitpro/step-by-step-setting-up-active-directory-in-windows-server-2016).  
+2. Create subnet 1 (Default) and then create two Virtual Machines (VMs). First, set up VM 1 as an Active Directory Directory Services domain controller and configure your domain. For more information, see [Step-By-Step: Setting up Active Directory in Windows Server 2016](/archive/blogs/canitpro/step-by-step-setting-up-active-directory-in-windows-server-2016).  
 
 3. Install SharePoint Server 2016 or SharePoint Server 2019 or SharePoint Server Subscription Edition in VM 2:
        
@@ -45,20 +44,20 @@ Deploying SharePoint Server with an Azure SQL Managed Instance lets you move you
          
    3. If you're using SharePoint Server 2016 or SharePoint Server 2019, install the May 2019 (or newer) sts core patch for SharePoint Server 2016 ([KB 4464549](https://support.microsoft.com/help/4464549)) or for SharePoint Server 2019 ([KB 4464556](https://support.microsoft.com/help/4464556)).
          
-   4. If you're using SharePoint Server 2016 or SharePoint Server 2019, Install the April 2019 (or newer) wssloc MUI/language pack patch for SharePoint Server 2016 ([KB 4461507](https://support.microsoft.com/help/4461507)) or for SharePoint Server 2019 ([KB 4462221](https://support.microsoft.com/help/4462221)).
+   4. If you're using SharePoint Server 2016 or SharePoint Server 2019, install the April 2019 (or newer) wssloc MUI/language pack patch for SharePoint Server 2016 ([KB 4461507](https://support.microsoft.com/help/4461507)) or for SharePoint Server 2019 ([KB 4462221](https://support.microsoft.com/help/4462221)).
 
    > [!NOTE]
    > You can join other VMs to Active Directory in subnet 1.
-   >
+   > 
    > No updates need to be installed for SharePoint Server Subscription Edition.
 
-3. Create an Azure SQL Managed Instance in subnet 2, within this resource group (ManagedInstance).
+3. Create an Azure SQL MI in subnet 2 within this resource group (ManagedInstance).
 
    > [!IMPORTANT]
    > No other resources can reside in subnet 2 except for SQL MI.
    
 
-4. Create or join the SharePoint farm, hosting the databases on SQL MI with SQL authentication.
+4. Create or join the SharePoint farm, hosting the databases on SQL MI, with SQL authentication.
 
    1. To create the SharePoint farm, open the **SharePoint Management Shell** and run the following Windows PowerShell commands:
 
@@ -79,19 +78,50 @@ Deploying SharePoint Server with an Azure SQL Managed Instance lets you move you
          Connect-SPConfigurationDatabase -DatabaseServer <DBServer> -DatabaseName <ConfigDB> -DatabaseCredentials $DBCredential -Passphrase $FarmPassphrase -LocalServerRole <ServerRole> 
       ```
 
-   Where:
-   
-   - _\<DBServer\>_ is the name you gave the Azure SQL Managed Instance in step 4.
-   - _\<ConfigDB\>_ is the name of the SharePoint configuration database to be created.
-   - _\<ServerRole\>_ is the SharePoint MinRole server role for this server in the SharePoint farm.
+      Where:
+      
+      - _\<DBServer\>_ is the name you gave the Azure SQL MI in Step 4.
+      - _\<ConfigDB\>_ is the name of the SharePoint configuration database to be created.
+      - _\<ServerRole\>_ is the SharePoint MinRole server role for this server in the SharePoint farm.
 
-5. Run the **SharePoint Products Configuration Wizard** to complete the configuration. Next open Central Administration to complete the **Farm Configuration Wizard**.
-
-> [!NOTE]
-> SharePoint Server doesn't support connecting to databases hosted in Azure SQL Managed Instance using Windows authentication.
+5. Run the **SharePoint Products Configuration Wizard** to complete the configuration. Next, open Central Administration to complete the **Farm Configuration Wizard**.
 
 > [!NOTE]
-> Access Services isn't supported with Azure SQL Managed Instance.
+> SharePoint Server doesn't support connecting to databases hosted in Azure SQL MI using Windows authentication.
+
+> [!NOTE]
+> Access Services isn't supported with Azure SQL MI.
+
+## Update SQL password
+
+1. Create a second admin account in the SQL MI Portal.
+1. Run the following commands in SharePoint PowerShell to change the username and password for the second admin account:
+
+   ```powershell
+   $servers = Get-SPServer
+   foreach ($server in $servers) {
+      $instance = $server.ServiceInstances | Where-Object {$_.TypeName -eq "Microsoft SharePoint Foundation Database"}
+      if ($null -ne $instance) {
+         break;
+      }
+   }
+   $instance.SecureDBCredential.Username = "<username>"
+   $instance.SecureDBCredential.Password = "<password>"
+   $instance.SecureDBCredential.Update()
+   $instance.Update()
+   $SPDBs = Get-SPDatabase
+   foreach ($DB in $SPDBs)
+   {
+      $DB.Username = "<username>"
+      $DB.Password = "<password>"
+      $DB.Update()
+   }
+
+   ```
+
+3. Modify the original account password in the SQL MI Portal.
+4.	Using the above script in SharePoint PowerShell, change the username and password to original account with new password.
+5. Set the second admin account as **Inactive** or delete the second admin account.
 
 
 ## See also
