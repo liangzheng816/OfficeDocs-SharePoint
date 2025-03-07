@@ -31,10 +31,10 @@ To help customers secure their environments and respond to associated threats fr
 
 The AMSI integration functionality is designed to prevent malicious web requests from reaching SharePoint endpoints. For example, to exploit a security vulnerability in a SharePoint endpoint before the official fix for the security vulnerability has been installed.
 
-Starting with SharePoint Server Subscription Edition (SPSE) Version 25H1, the AMSI extends its scanning capabilities to include the bodies of HTTP requests. This AMSI Body Scan feature is useful for detecting and mitigating threats that may be embedded in request payloads, providing a more comprehensive security solution.
+Starting with SharePoint Server Subscription Edition (SPSE) Version 25H1, the AMSI extends its scanning capabilities to include the bodies of HTTP requests. This AMSI body scan feature is useful for detecting and mitigating threats that may be embedded in request payloads, providing a more comprehensive security solution.
 
 > [!NOTE]
-> The new AMSI Body Scan feature is available for SharePoint Server Subscription Edition users only.
+> The new AMSI body scan feature is available for SharePoint Server Subscription Edition users only.
 
 ## AMSI integration with SharePoint Server
 
@@ -78,7 +78,7 @@ If you're using SharePoint Server 2016/2019 or earlier versions of SharePoint Se
 3. Select the web application for which you want to enable the AMSI integration, and select **Manage Features** in the toolbar.
 4. On the **SharePoint Server Antimalware Scanning** screen, select **Deactivate** to switch off AMSI integration, or select **Activate** to switch on AMSI integration.
 
-If you installed the SharePoint Server Subscription Edition Version 25H1 feature update, follow these steps to activate or deactivate and configure AMSI Body Scan feature settings:
+If you installed the SharePoint Server Subscription Edition Version 25H1 feature update, follow these steps to activate or deactivate and configure AMSI body scan feature settings:
 
 1. Open **SharePoint Central Administration**.
 
