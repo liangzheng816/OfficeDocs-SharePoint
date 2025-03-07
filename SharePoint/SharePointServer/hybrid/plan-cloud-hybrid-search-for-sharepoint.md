@@ -28,7 +28,7 @@ description: Setting up cloud hybrid search for SharePoint in Microsoft 365 requ
 [!INCLUDE[appliesto-2013-2016-2019-SUB-SPO-md](../includes/appliesto-2013-2016-2019-SUB-SPO-md.md)]
 
 > [!IMPORTANT]
-> Search Content Service (SCS), an internal component of Cloud Hybrid Search in SharePoint in Microsoft 365 will be retired starting June 30, 2025. To continue using Cloud Hybrid Search by then, upgrade your SharePoint Server farm to SharePoint Server Subscription Edition (SPSE) Version 25H1 available in March 2025 or later versions. Without this upgrade, all versions of SharePoint Server 2016/2019 and previous versions of SPSE can only search for on-premises and Microsoft 365 content separately through Hybrid Federated Search after this retirement.
+> Search Content Service (SCS), an internal component of Cloud Hybrid Search in SharePoint in Microsoft 365 will be retired starting June 30, 2025. To continue using Cloud Hybrid Search by then, upgrade your SharePoint Server farm to [SharePoint Server Subscription Edition (SPSE) Version 25H1](/SharePoint/what-s-new/new-and-improved-features-in-sharepoint-server-subscription-edition-25h1-release.md#cloud-hybrid-search-upgrade) or later versions. Without this upgrade, all versions of SharePoint Server SPSE/2019/2016 and previous versions of SPSE can only search for on-premises and Microsoft 365 content separately through Hybrid Federated Search after this retirement.
 
 Setting up [cloud hybrid search](learn-about-cloud-hybrid-search-for-sharepoint.md) for SharePoint in Microsoft 365 requires careful planning. This article helps you design a highly reliable, secure and scalable cloud hybrid search solution. 
   

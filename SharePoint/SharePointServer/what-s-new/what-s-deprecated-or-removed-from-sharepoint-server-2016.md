@@ -79,6 +79,14 @@ The following Excel Services functionality requires Excel Online in Office Onlin
 - ODC file support (no longer requires Data Connection Libraries)
     
 - Programmability features such as JavaScript OM, User Defined Function Assemblies, SOAP and REST protocol support
+
+## Removed features in SharePoint Server 2016
+
+The following feature and functionality is removed in SharePoint Server 2016. 
+
+### Legacy Cloud Hybrid Search
+
+Search Content Service (SCS), an internal component of Cloud Hybrid Search in SharePoint in Microsoft 365 will be retired starting June 30, 2025. To continue using Cloud Hybrid Search by then, upgrade your SharePoint Server farm to [SharePoint Server Subscription Edition (SPSE) Version 25H1](/SharePoint/what-s-new/new-and-improved-features-in-sharepoint-server-subscription-edition-25h1-release.md#cloud-hybrid-search-upgrade) or later versions. Without this upgrade, all versions of SharePoint Server SPSE/2019/2016 and previous versions of SPSE can only search for on-premises and Microsoft 365 content separately through Hybrid Federated Search after this retirement.
     
 ## SharePoint BI capabilities
 
