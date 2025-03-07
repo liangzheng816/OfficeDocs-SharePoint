@@ -80,7 +80,7 @@ Now, new Office document creation can be initiated in the browser and completed 
 
 ### Support for request body scan in AMSI
 
-The Antimalware Scanning Interface (AMSI) feature now has the ability to scan the body of web requests. The AMSI Body Scan feature enhances the existing anti-malware scan capabilities in SharePoint Server Subscription Edition by extending its reach to include the bodies of HTTP requests.
+The Antimalware Scanning Interface (AMSI) feature now has the ability to scan the body of web requests. The request body scan feature enhances the existing anti-malware scan capabilities in SharePoint Server Subscription Edition by extending its reach to include the bodies of HTTP requests.
 
 This is useful for detecting and mitigating threats that might be embedded in request payloads, providing a more comprehensive security solution. Users can also choose from the available modes such as Balanced and Full mode for scanning request body.
 
