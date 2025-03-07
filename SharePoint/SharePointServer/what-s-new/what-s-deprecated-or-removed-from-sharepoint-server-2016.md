@@ -80,7 +80,7 @@ The following Excel Services functionality requires Excel Online in Office Onlin
     
 - Programmability features such as JavaScript OM, User Defined Function Assemblies, SOAP and REST protocol support
 
-## Tags and Notes
+### Tags and Notes
 
 The Tags and Notes feature is deprecated in SharePoint Server 2016. This means that users can still create new tags and notes and access any existing ones. However, we don't recommend using this feature because it will be removed in the next release.
   
@@ -104,7 +104,7 @@ Where:
     
 -  `<tagsandnotes.zip>` is the name you give to the .zip file that you want to export. 
 
-## Stsadm.exe
+### Stsadm.exe
 
 We recommend that you use Microsoft PowerShell when you perform command-line administrative tasks. The Stsadm command-line tool is deprecated, but it's included to support compatibility with previous product versions. 
 
@@ -112,7 +112,7 @@ We recommend that you use Microsoft PowerShell when you perform command-line adm
 
 The following feature and functionality is removed in SharePoint Server 2016. 
 
-## Work Management Service Application
+### Work Management Service Application
 
 The Work Management Service Application is removed from SharePoint Server 2016. The My Tasks and associated Exchange Task Sync features are also removed from SharePoint Server 2016. Both of these features required the Work Management Service Application.
 
