@@ -64,7 +64,7 @@ To complete the configuration steps, you'll need these items:
     
 - If you use the [Hybrid Configuration Wizard in the SharePoint admin center](hybrid-configuration-wizard-in-the-sharepoint-online-admin-center.md#hybrid-configuration-wizard-in-the-sharepoint-admin-center) to help you configure, ensure that the application farm that hosts the SharePoint Server Central Administration website has [.NET 4.6.2 or higher](https://dotnet.microsoft.com/download/dotnet-framework/net462) installed.
     
-- If you use the **CreateCloudSSA.ps1** and **Onboard-CloudHybridSearch.ps1** or **Onboard-CloudHybridSearch-SPOONS.ps1** Microsoft PowerShell scripts to help you configure, find them in the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=717902). You also need the[Microsoft Graph Powershell module](/powershell/microsoftgraph/installation).
+- If you use the **CreateCloudSSA.ps1** and **Onboard-CloudHybridSearch.ps1** or **Onboard-CloudHybridSearch-SPOONS.ps1** Microsoft PowerShell scripts to help you configure, find them in the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=717902). You'll also need the [Microsoft Graph Powershell module](/powershell/microsoftgraph/installation).
     
 ## Follow these steps:
 
