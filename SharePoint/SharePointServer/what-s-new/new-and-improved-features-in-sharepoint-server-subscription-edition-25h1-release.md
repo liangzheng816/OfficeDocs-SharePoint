@@ -37,7 +37,7 @@ The following table provides a summary of the new features introduced in the Sha
 | **Create new Office files in client apps**   |Early release   |For more information, see [Create new Office files in client apps](#create-new-office-files-in-client-apps).|
 | **Support for request body scan in AMSI**   |Early release   |For more information, see [Support for request body scan in AMSI](#support-for-request-body-scan-in-amsi).|
 | **Cloud Hybrid Search upgrade**   |Early release   |For more information, see [Cloud Hybrid Search upgrade](#cloud-hybrid-search-upgrade).|
-| **New database connectivity layer with TLS 1.3 and TDS 8.0 support**   |Standard release   |For more information, see [New database connectivity layer with TDS 8.0 and TLS 1.3 support](#new-database-connectivity-layer-with-tls-13-and-tds-80-support).|
+| **New database connectivity layer with TLS 1.3 and TDS 8.0 support**   |Standard release   |For more information, see [New database connectivity layer with TDS 8.0 and TLS 1.3 support](#new-database-connectivity-layer-with-tds-80-and-tls-13-support).|
 
 ## Detailed description of features
 
