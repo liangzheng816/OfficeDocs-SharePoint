@@ -71,10 +71,10 @@ This feature enhances the user experience by allowing the creation of new Office
 
 Previously, if OOS was unavailable, new Office documents couldn't be created from the document library in the browser. Additionally, even if Content Types were enabled for the library without OOS/WAC, a new file would be created without a file extension but couldn't be opened in a browser or client app.
 
-Now, new Office document creation can be initiated in the browser and completed in the client-side application. The "New" button in the library toolbar launches the new document within the client-side Office application. Also, if Content Types are enabled for the library without OOS/WAC, they're shown in the "New" drop-down. Selecting one creates a new file of that type and opens it in the appropriate client application. For example, selecting "Word document" under the "New" menu creates a new docx file in the library and opens it in the Word client application.
+Now, new Office document creation can be initiated in the browser and completed in the client-side application. The **New** button in the library toolbar launches the new document within the client-side Office application. Also, if Content Types are enabled for the library without OOS/WAC, they're shown in the **New** drop-down. Selecting one creates a new file of that type and opens it in the appropriate client application. For example, selecting **Word document** under the **New** menu creates a new docx file in the library and opens it in the Word client application.
 
 > [!NOTE]
-> If OOS is unavailable and the client machine doesn't have the Office installed, then selecting an Office file type from the "New" drop-down creates an empty file in the library. This mirrors the old behavior but the file will have the correct extension.
+> If OOS is unavailable and the client machine doesn't have the Office installed, then selecting an Office file type from the **New** drop-down creates an empty file in the library. This mirrors the old behavior but the file will have the correct extension.
 
 :::image type="content" source="../media/create-new-office-file-spse.png" alt-text="Screenshot displaying the New button with file extensions in the browser of SharePoint library.":::
 
@@ -96,7 +96,7 @@ For more information on upgrading an existing Cloud SSA, see [Configure cloud hy
 
 ### New database connectivity layer with TDS 8.0 and TLS 1.3 support
 
-The SharePoint Server Subscription Edition Version 25H1 build introduces a new database connectivity layer called [Microsoft.Data.SqlClient](/sql/connect/ado-net/overview-sqlclient-driver?view=sql-server-ver16&preserve-view=true) for .NET-based applications. This new database connectivity layer supports advanced security capabilities such as TLS 1.3 that couldn’t be supported in our previous database connectivity layer, that is, [System.Data.SqlClient](/dotnet/framework/data/adonet/sql/) library. It also enables SharePoint Server to take advantage of other new SQL capabilities, such as SQL Server and Azure SQL features.
+The SharePoint Server Subscription Edition Version 25H1 build introduces a new database connectivity layer called [Microsoft.Data.SqlClient](/sql/connect/ado-net/overview-sqlclient-driver?view=sql-server-ver16&preserve-view=true) for .NET-based applications. This new database connectivity layer supports advanced security capabilities such as TLS 1.3 that couldn't be supported in our previous database connectivity layer, that is, [System.Data.SqlClient](/dotnet/framework/data/adonet/sql/) library. It also enables SharePoint Server to take advantage of other new SQL capabilities, such as SQL Server and Azure SQL features.
 
 The following are the capabilities of the new Microsoft.Data.SqlClient library:
 
