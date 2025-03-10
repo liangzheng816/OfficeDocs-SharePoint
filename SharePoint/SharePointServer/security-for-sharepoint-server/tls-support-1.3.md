@@ -68,9 +68,11 @@ Newly created databases that are added to a farm are configured to use the same 
 #### Creating a new farm
 
 - To create a new farm, in PowerShell, add the following optional parameters to the `New-SPConfigurationDatabase` cmdlet: 
-
-  `-DatabaseConnectionEncryption {Mandatory | Optional | Strict} 
-  -DatabaseServerCertificateHostName <String>`
+  
+  ```powershell
+  DatabaseConnectionEncryption {Mandatory | Optional | Strict} 
+  -DatabaseServerCertificateHostName <String>
+  ```
 
   > [!NOTE]
   > DatabaseConnectionEncryption is **Mandatory** by default in case you don't specify it.
@@ -82,20 +84,22 @@ Newly created databases that are added to a farm are configured to use the same 
 
 - In PSConfig.exe, add the following optional parameters to the configdb operation: 
 
-  `-dbencryption {Mandatory | Optional | Strict} 
-  -dbcerthostname <String>` 
+  ```powershell 
+  -dbencryption {Mandatory | Optional | Strict} 
+  -dbcerthostname <String>
+  ```
 
   > [!NOTE]
   > dbencryption is **Mandatory** by default in case you don't specify it. 
 
-    For example: 
-    ```powershell 
-    psconfig.exe -cmd configdb -create -database "SharePointConfigDB1" -server "SQL-01" -dbencryption "Mandatory" -dbcerthostname "SQL01.internal.contoso.com" -passphrase "the_passphrase" -user "DOMAIN\username" -password "the_password" -localserverrole "Application" 
-    ```
+  For example: 
+  ```powershell 
+  psconfig.exe -cmd configdb -create -database "SharePointConfigDB1" -server "SQL-01" -dbencryption "Mandatory" -dbcerthostname "SQL01.internal.contoso.com" -passphrase "the_passphrase" -user "DOMAIN\username" -password "the_password" -localserverrole "Application" 
+  ```
 
 - In the SharePoint Products Configuration Wizard (PSConfigUI.exe), specify the settings in the **Database connection encryption** and **Database server certificate host name** fields in the configuration database form.
 
-    :::image type="content" source="media/config-db-settings.png" alt-text="Screenshot of Configuration Wizard.":::
+  :::image type="content" source="media/config-db-settings.png" alt-text="Screenshot of Configuration Wizard.":::
 
 #### Joining the existing farm
 To join the existing farm, you need to specify the encryption settings that the existing farm is using as follows.
