@@ -64,7 +64,7 @@ You can also bulk assign licenses using either of the following methods:
 - [Assign licenses to user accounts in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users)
 - [Assign licenses to user accounts with PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell)
 
-**After the unlicensed OneDrive account archival** - The account must be reactivated from the archived state before a license can be assigned. If the archived account has an associated user, the IT admin can give the user a valid license and the account is automatically reactivated within 24 hours. If the archived account doesn't have an associated user (for example, if the identity was deleted), then we recommend admins move any actively needed content to a SharePoint site or an active and licensed OneDrive account. For more information on licensing and active users in Microsoft 365, see [Assign or unassign licenses for users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
+**After the unlicensed OneDrive account archival** - If the archived account has an associated user as the owner (also known as the *primary site collection administrator*), the IT admin can give the user a valid license and the account is automatically reactivated within 24 hours. If the archived account doesn't have an associated user (for example, if the identity was deleted), then we recommend admins move any actively needed content to a SharePoint site or an active and licensed OneDrive account.  If the account is already archived and doesn't have an associated user, then the account needs to be reactivated before that data can be moved. For more information on licensing and active users in Microsoft 365, see [Assign or unassign licenses for users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ### Delete unlicensed OneDrive account
 
@@ -201,7 +201,6 @@ An education tenant is any tenant with more than 50% education licenses. Any ten
 **License Removal:**
 
 - Go to the Microsoft 365 admin center.
-
 - Expand Billing and select **Your Products**.
 - Select the subscription and select **Remove licenses**.
 
@@ -267,6 +266,10 @@ As an example, if the billing is put down to reactivate one particular unlicense
 **14. Why are there two different report pages with different numbers about unlicensed accounts?**
 
 **Answer:** The [top-level report page](http://spo.ms/admin#/oneDriveAccounts) shows you insights and lets you download the list of accounts which are at least 93 days unlicensed.  This page directly indicates the amount of storage that will be billed if you have enabled billing.  The [detailed report page](http://spo.ms/admin#/oneDriveAccounts/management) is linked from the top-level report page, and indicates all accounts that are currently unlicensed, even if they have been unlicensed for fewer than 93 days.  
+
+**15. Why is the '*deletion scheduled on*' column empty in my CSV export of unlicensed accounts?**
+
+**Answer:** "_Deletion scheduled on_" refers to when the system will try to delete the account next.  It takes into account the retention period of the unlicensed OneDrive account. This property may be empty if there is a hold or retention policy applied to the account.  Additionally, the column will be empty for users who are still active in Entra ID until the 'deletion' part of the enforcement rollout is complete.  If you delete the active user from Entra ID, and there's no retention policy or hold applied, then the "_Deletion scheduled on_" column will be populated within 7 days.
 
 ## Related topics
 
