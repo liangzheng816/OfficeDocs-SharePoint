@@ -70,7 +70,7 @@ Newly created databases that are added to a farm are configured to use the same 
 - To create a new farm, in PowerShell, add the following optional parameters to the `New-SPConfigurationDatabase` cmdlet: 
   
   ```powershell
-  DatabaseConnectionEncryption {Mandatory | Optional | Strict} 
+  -DatabaseConnectionEncryption {Mandatory | Optional | Strict} 
   -DatabaseServerCertificateHostName <String>
   ```
 
