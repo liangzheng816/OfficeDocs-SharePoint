@@ -1,6 +1,6 @@
 ---
 title: "Permission settings in Migration Manager"
-ms.date: 11/15/2023
+ms.date: 03/11/2025
 ms.reviewer: 
 ms.author: heidip
 author: MicrosoftHeidi
@@ -25,7 +25,7 @@ Review your settings to ensure that the same users with access to files, folders
 
 ## Migrate permissions
 Permissions are migrated only in the first migration run. To correctly migrate permissions, please ensure:
-- [Identity mapping](#map-identities) is completed before any migration
+- [Identity mapping](#map-identities) is completed before any migration.
 - Permission settings are configured as needed:
   + Folder permissions: By default, Migration Manager migrates folders permissions. File permissions aren't migrated, and destination files inherit parent folder permissions.
   + File permissions: File permissions migration can be enabled in the Project settings. Once enabled, the destination file permissions will be the same as they are in the source. This ensures that migrated files are shared with the same users as before migration.
@@ -49,12 +49,10 @@ After migration, the permission roles in Microsoft 365:
 |Egnyte	|Full/Editor	|Can edit|
 |Egnyte	|Viewer	|Can view|
 
-
 > [!Note]
 > - Migrating file permissions may slow down your migration process.
 > - When migrating to the document library in a SharePoint site, if you choose the library as the destination, the root folder permissions in the source will not be migrated. To avoid this, please create a folder in the library and assign it as the destination.
 > - Currently, group mapping of Egnyte is not supported, so group permissions in Egnyte are not migrated.
-
 
 ## Map identities
 
