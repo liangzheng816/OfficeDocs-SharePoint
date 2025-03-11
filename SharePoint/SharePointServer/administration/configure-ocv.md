@@ -25,19 +25,30 @@ Microsoft aspires to bring the best possible experiences for users around the wo
 
 The SharePoint Server asks farm administrators to provide feedback through a feedback pop-up dialog when each admin launches the Central Administration page either locally or remotely through a browser. Your feedback goes directly to our engineers and helps us shape the future of SharePoint Server and services for our users.
 
-As of now, this survey is a two question survey, which automatically shows up based on the following rules:
-
-- The first survey pops up every two weeks after a farm administrator visits the Central Administration site for the first time after the update is installed. The admin sees the following survey dialog:
-
-  :::image type="content" source="../media/feedback-microsoft-ocv.png" alt-text="Screenshot that shows the feedback to Microsoft survey.":::
-
-- The survey shows up again after six months, if the administrator completes the survey.
-- The survey pops up every two weeks until it's completed by the administrator.
-
 > [!Note]
 > By default, this feature is enabled.
 
-For more information on how to disable this feature for the farm administrators or specific users, see:
+An example of the "Survey" feature that was introduced in Version 24H1 is depicted in the following screenshot:
+
+:::image type="content" source="../media/feedback-microsoft-ocv.png" alt-text="Screenshot that shows the feedback to Microsoft survey." lightbox="../media/feedback-microsoft-ocv.png":::
+
+Starting from Version 25H1, SharePoint Server has introduced an enhancement that overwrites the feature introduced in Version 24H1. This enhancement allows the dynamic configuration and display of surveys to gather administrator feedback in a more effective manner based on current needs.
+
+This Version 25H1-enhancement provides scope for making the following types of surveys as configurable and customizable:
+
+- Survey type
+- Rating question
+- Survey rating scale and options
+- Comment Question
+- Whether to collect user email
+
+The enhancement's significance is the changes in the "pop-up" frequency that follows the following rules:
+
+- **User-level cooldown: 14 days** - This is the waiting period after triggering a survey during which a user can't see another survey. Unlike the earlier feature in which the survey form used to appear 2 weeks after the farm administrator signed in to the Central Administration portal, the Dynamic Survey features displays the survey immediately on the farm administrator signing in to the Central Administration portal and provides a cooldown period of 14 days to the user to fill the survey form, during which the farm administrator can't see any other survey form.
+- **Survey-level cooldown: configurable** - This is the waiting period after triggering a survey during which a user can't see the same survey.
+- A survey won't appear again for users who have already submitted.
+
+You can also disable the survey feature for the farm administrators or specific users. For information on how to disable the survey feature, see:
 
 - [To disable feedback for current Farm Administrator](#to-disable-feedback-for-current-farm-administrator)
 - [To disable feedback for current Farm](#to-disable-feedback-for-current-farm)
@@ -64,7 +75,7 @@ You can disable or enable the feedback function using one of the following optio
      Disable-SPCustomerFeedbackForUser -UserSid $user.Sid 
      ```
 
-This `$user` is obtained from Step 1.
+  This `$user` is obtained from Step 1.
   
 ## To enable feedback for current Farm Administrator
 
@@ -85,7 +96,8 @@ This `$user` is obtained from Step 1.
       ```
       Enable-SPCustomerFeedbackForUser -UserSid $user.Sid
       ```
-This `$user` is obtained from Step 1. 
+    
+  This `$user` is obtained from Step 1. 
   
 ## To disable feedback for current Farm 
 
