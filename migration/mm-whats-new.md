@@ -1,5 +1,5 @@
 ---
-ms.date: 09/17/2024
+ms.date: 03/10/2025
 title: "What's new in Migration Manager"
 ms.reviewer: 
 ms.author: heidip
@@ -32,6 +32,9 @@ Help us improve Migration Manager by sending your suggestions and reporting bugs
 ## Coming soon
 - **File version migration.** Support for migrating file version histories in cloud scenarios.
 
+## March 2025
+
+- **Certificate Based Authentication**. Migration Manager allows users to use Azure App Registrations with certificate authentication as the identity model to migrate File Share. [Learn more](/sharepointmigration/mm-with-cba).
 ## December 2024
 - **Large file support for cloud migrations**. All migration scenarios now support migrating files up to 250 GB.
 - **Migration Manager Lite Private Preview**. Migration Manager Lite is a simplified version of Migration Manager designed to help SMB customers easily migrate their content from Google Drive to Microsoft 365. [Sign up for the preview](https://forms.office.com/r/rkBiy8a4Rr).
@@ -50,7 +53,7 @@ Help us improve Migration Manager by sending your suggestions and reporting bugs
 
 ## May 2024
 - **Identity mapping flow refinement.** First selection of the "Migrate" button triggers the identity mapping setting that is a key prerequisite to a successful migration.
-- **Identity mapping capacity.** The entry limit for identity mapping is increasing from 50K to 500K to better support large migrations. Additionally, single entry addition, identity exporting, and identity clearing features are enabled to help you better organize identity mapping.
+- **Identity mapping capacity.** The entry limit for identity mapping is increasing from 50 thousand to 500 thousand to better support large migrations. Additionally, single entry addition, identity exporting, and identity clearing features are enabled to help you better organize identity mapping.
 
 ## April 2024
 
@@ -58,7 +61,7 @@ Help us improve Migration Manager by sending your suggestions and reporting bugs
 
 ## March 2024
 
-- **Skip scan.** You can now skip scan process in Box migration scenario. Once the users (tasks) are added to the Scan list, they can be send to Migrations tab instantly for migration operations.
+- **Skip scan.** You can now skip scan process in Box migration scenario. Once the users (tasks) are added to the Scan list, they can be sent to the **Migrations** tab instantly for migration operations.
 
 ## February 2024
 - **Download limit increase.** Now download up to 5,000 tasks for summary reports and 500 tasks for detailed reports. [Learn more about report types and download limits](mm-cloud-reports.md).
@@ -79,7 +82,6 @@ Help us improve Migration Manager by sending your suggestions and reporting bugs
 - **Migration time estimator.** Get an estimated migration time before connecting to a migration source. The migration time estimator is located at the top right corner of the project page.
 - **Report improvements.** Report fields and failure reasons are polished to provide a more readable and consistent reporting experience. 
 
-
 ## September 2023
 
 - **New. File Level Permission for Dropbox and Box.** Support for File Level Permission (FLP) migration for Dropbox and Box. *This feature is already available for **Google Drive** (as of June 8, 2023.)*
@@ -87,16 +89,13 @@ Help us improve Migration Manager by sending your suggestions and reporting bugs
 - **Fixed. 'Share with me' support.** Some issues related to the migration of "Share with me" event are resolved.
 - **Fixed. Task deletion.** Task deletion triggered in the UX is now consistently reflected in the backend, reducing deletion failures.
 
-
 ## August 2023
 
 - **New. Box Notes conversion.** Migration Manager now supports converting Box notes to .docx format. Note: Certain elements such as File Preview, Table of Contents, and Annotations are omitted during the conversion process.
 
-
 ## July 2023
 
-- **New. Multi-project support.** You can now create up to 5 separate projects per cloud source. For instance, you can create and simultaneously migrate up to 5 separate Box tenants. Multi-project feature makes acquisitions and mergers easier to consolidate into one M365 tenant.
-
+- **New. Multi-project support.** You can now create up to five separate projects per cloud source. For instance, you can create and simultaneously migrate up to five separate Box tenants. Multi-project feature makes acquisitions and mergers easier to consolidate into one M365 tenant.
 
 ## June 2023
 
@@ -107,7 +106,7 @@ Help us improve Migration Manager by sending your suggestions and reporting bugs
 
 - **New. Overview page.** A new guided tour can be accessed from the overview page, to walk you through key migration steps and present general overviews of each core migration step. Links to relevant documentation are available at each stage.
 - **New. Migration filter setting.**  You can now use factors such as dates, file types, and invalid characters to filter content for migration. Select filters from the migration setting panel that displays when scanned tasks are "copied to migration."
-- **Change. Summary report limit increase.** When bulk-downloading a scan or migration summary report for selected tasks, you can select up to 1000 tasks. The previous limit was 100.
+- **Change. Summary report limit increase.** When bulk-downloading a scan or migration summary report for selected tasks, you can select up to 1,000 tasks. The previous limit was 100.
 
 
 ## April 2023
@@ -118,23 +117,22 @@ Help us improve Migration Manager by sending your suggestions and reporting bugs
 
 - **Change. Report downloads in the action menu bar.** Downloading your reports is consolidated in the action menu bar. The View logs link is removed to improve resource consumption and align with how Scan logs are downloaded. [Learn more about downloading summary and detailed reports](mm-cloud-reports.md)
 
-- **Fixed. Dropbox migrated permissions**. Customers were experiencing some Dropbox file and folder permissions not being migrated. This issue has been fixed.
+- **Fixed. Dropbox migrated permissions**. Customers were experiencing some Dropbox file and folder permissions not being migrated. This issue is fixed.
 
 ## February 2023
 
-- **Fixed. Summary report timeout.** Large reports would occasionally exceed database memory, leading to report download timeout. This has been fixed.
+- **Fixed. Summary report timeout.** Large reports would occasionally exceed database memory, leading to report download timeout. This issue is fixed.
 - **Display of the estimated time**. There's now display of the estimated time it takes for your Google Drive migration to complete.
 
 ## January 2023
 
-- **Fixed:  Report aggregator script**. The Report aggregator script was incorrectly converting bytes to gigabytes. This has now been fixed. [Learn more: Download detailed task reports.](/sharepointmigration/mm-reports#download-detailed-task-level-reports-via-powershell) 
-
+- **Fixed:  Report aggregator script**. The Report aggregator script was incorrectly converting bytes to gigabytes. This issue is fixed. [Learn more: Download detailed task reports.](/sharepointmigration/mm-reports#download-detailed-task-level-reports-via-powershell) 
 
 ## Released in 2022
 
 ### December 2022
 
-- **Fixed: Upload failures logs**. Items that failed in SPO (SharePoint Online) upload process weren't listed in the migration log, and was inconsistent with the final migration result. This has been fixed. 
+- **Fixed: Upload failures logs**. Items that failed in SPO (SharePoint Online) upload process weren't listed in the migration log, and was inconsistent with the final migration result. This issue is fixed. 
 
 - **Report fields refined**. The fields of downloaded reports are improved for clarity and readability.
 
@@ -144,12 +142,12 @@ Help us improve Migration Manager by sending your suggestions and reporting bugs
 
 ### June 2022
 
-- **Fix: Google proprietary file formats failed to migrate**. Some Google files (mainly  Google slides) failed to migrate showing the error code, "MFILESIZEINCORRECT". This has been fixed. Rerun any failed tasks to migrate these files.
+- **Fix: Google proprietary file formats failed to migrate**. Some Google files (mainly  Google slides) failed to migrate showing the error code, "MFILESIZEINCORRECT". This issue is fixed. Rerun any failed tasks to migrate these files.
 - **Tag support for File share migrations**. The tags feature File Share migrations lets you sort, organize, and navigate through a large quantity of sources and users.
 
 ### May 2022
 
-- **Fixed: Box connection**. A recent change from Box makes the Microsoft 365 Migration app  a server auth app that later fails to authorize the user's account and connect. This has been fixed.
+- **Fixed: Box connection**. A recent change from Box makes the Microsoft 365 Migration app  a server auth app that later fails to authorize the user's account and connect. This issue is fixed.
 
 ### April 2022
 
@@ -174,17 +172,16 @@ Help us improve Migration Manager by sending your suggestions and reporting bugs
 ### November 2021
 
 - **Bulk upload Google drives.**  You can now bulk upload your Google drives using a comma-separated (CSV) file. 
-- **Report creation failure fixed.** Mover API failed to create reports on scans and migrations involving more than 40,000 records. This has been fixed. 
+- **Report creation failure fixed.** Mover API failed to create reports on scans and migrations involving more than 40,000 records. This issue is fixed.
 
 ### September 2021
-
 
 - **Support for files up to 100 GB.** File share migration now supports migrating individual files of up to 100 GB.
 - **Improved agent installation messages.**  The error messages during agent installation are improved.
 
-- **Reinstall recommended message.** A "Reinstall recommended" message displays detailed information as to why it is needed. 
+- **Reinstall recommended message.** A "Reinstall recommended" message displays detailed information as to why it's needed. 
 
-- **Cross-geo site fix.**  If the destination cross-geo site didn't exist, the migration would fail. This has been fixed.
+- **Cross-geo site fix.**  If the destination cross-geo site didn't exist, the migration would fail. This issue is fixed.
 - **Agent service and Agent app on same computer upgrader issue fix.**  When the agent app and agent service were both installed on the same computer, the upgrader would always start the agent app after the agent service was updated. Fixed.
 - **Agent service and Agent app on same computer file share fix.** When the agent service and the agent app were installed on the same computer, file share migration tasks would fail. Fixed.
 - **Selected task reports deprecated.** Several task reports are deprecated, including the *performance recommendation.csv* report, as they contained inaccurate or unnecessary information. Users should use the customer-facing dashboard in Migration Manager for performance analysis and improvement recommendations.
@@ -208,7 +205,7 @@ Help us improve Migration Manager by sending your suggestions and reporting bugs
 
 ### May 2021
 
-- **Auto site provisioning.** When migrating to SharePoint sites, if the site doesn't exist, it is automatically provisioned before the migration starts.
+- **Auto site provisioning.** When migrating to SharePoint sites, if the site doesn't exist, it's automatically provisioned before the migration starts.
 
 - **Performance dashboard for file shares.** View your performance history, and if needed, be provided prescriptive guidance on how to improve in impacted areas. *Requires latest version of agent.*
 
@@ -223,7 +220,7 @@ Help us improve Migration Manager by sending your suggestions and reporting bugs
 ### March 2021
 
 - **Agent groups and agent targeting.** You can now create an "agent group" and assign one or more agents to it. A group may represent a particular geographical location or other targeted purpose. After creating an agent group, you can target only that group of agents to run your tasks. To learn more, see: [Agent groups in Migration Manager](mm-agent-targeting.md).
-- **Summary report enhancements.** *TaskID*, *Task failure reason*, and *Agent group* is added to the task summary report.
+- **Summary report enhancements.** *TaskID*, *Task failure reason*, and *Agent group* are added to the task summary report.
 
 - **Date completed column**. A date completed column has been added so customers know the exact date when the task completed processing.
 
@@ -232,23 +229,21 @@ Help us improve Migration Manager by sending your suggestions and reporting bugs
 - **Support replacing invalid characters**. To help migrate files with invalid characters in the file name, users can now specify predefined characters to replace invalid characters. *Requires latest version of agent.*
 - **Configure working folder for agents**. Through the Migration Manager UI, you can configure the physical location of the folder where logs and reports are stored on the agent's machine. You can also see the available disk space so you can choose a drive that has enough storage before starting your migration. *Requires latest version of agent.*
 - **Filters for report aggregator script**. You can now apply rich filters when downloading the detailed task level reports via the PowerShell cmdlet. To learn more, see: [Download detailed task reports](mm-reports.md#download-detailed-task-level-reports-via-powershell).
--  **Fix for zero durations in Summary Reports.** We recently introduced an issue where the duration field was showing zero values in the *SummaryReport.csv*. This has been fixed. *Requires latest version of agent.*
+-  **Fix for zero durations in Summary Reports.** We recently introduced an issue where the duration field was showing zero values in the *SummaryReport.csv*. This issue is fixed. *Requires latest version of agent.*
 - **Fix for large file upload.**  Report files larger than 250 MB can now be uploaded. *Requires latest version of agent.*
 - **Fix for non-English sites.**  Fixed the issue where Documents1 library was getting created for non-English sites. *Requires latest version of agent.*
-
 
 ## Earlier releases
 
 ### December 2020
 
 - **Process multiple tasks per agent.** Each agent can now process 5-10 migration tasks, simultaneously so that you can finish your migrations faster. *Requires latest version of agent.*
-- **Select a team as a destination.** Users are able to select a Teams team and the channel as the migration destination. This is in addition to the existing ability to specify a Teams location by the URL.
-- **Select a OneDrive email as a destination.** Users are able to input a OneDrive email address as the migration destination. This is in addition to the existing ability to specify a OneDrive location by the URL.
-
+- **Select a team as a destination.** Users are able to select a Teams team and the channel as the migration destination. This option is in addition to the existing ability to specify a Teams location by the URL.
+- **Select a OneDrive email as a destination.** Users are able to input a OneDrive email address as the migration destination. This option is in addition to the existing ability to specify a OneDrive location by the URL.
 
 ### October 2020 
 
-- **Increased bulk task upload limits**. Users can create up to 50,000 separate migration tasks. This is an increase from the previous limit of 5,000 tasks in the bulk file.
+- **Increased bulk task upload limits**. Users can create up to 50,000 separate migration tasks. This change is an increase from the previous limit of 5,000 tasks in the bulk file.
 - **Task management**. Users can filter, sort, and perform searches on their migration tasks.
 - **Bulk task validation**. When using a CSV for bulk task creation, Migration Manager validates the first destination site URL to help users identify any potential issues.
 - **Government cloud**. Migration Manager supports GCCHigh/DoD tenants.
@@ -256,4 +251,3 @@ Help us improve Migration Manager by sending your suggestions and reporting bugs
 - **Installation issues**. Fixed issues that caused common agent installation failure.
 - **Report aggregator**.  Detailed task level reports can be generated via a PowerShell cmdlet.  See [Download detailed task reports](mm-reports.md#download-detailed-task-level-reports-via-powershell).
 - **General improvements**. Overall fit and finish to improve your experience.
-
