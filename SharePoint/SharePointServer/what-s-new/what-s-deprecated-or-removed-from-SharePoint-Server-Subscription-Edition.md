@@ -73,6 +73,8 @@ Different customers may have different interpretations of terms such as "depreca
 
  - Claims to Windows Token Service (C2WTS)
  
+ - Legacy Cloud Hybrid Search
+ 
 ## Detailed description of features deprecated or removed in SharePoint Server Subscription Edition
 
 The following features and functionality have been deprecated or removed in SharePoint Server Subscription Edition.
@@ -82,7 +84,7 @@ The following features and functionality have been deprecated or removed in Shar
 InfoPath Forms Services is deprecated but will remain supported for the SharePoint Server Subscription Edition release until July 14, 2026. After that date, InfoPath Forms Services will no longer be supported. Microsoft recommends exploring Power Apps as a potential alternative to InfoPath forms.
 
 ### Microsoft Workflow Manager
-Microsoft has released SharePoint Workflow Manager as the new workflow engine to power the SharePoint 2013 Workflow platform for SharePoint Server and replace Microsoft Workflow Manager. We recommend that all customers using SharePoint 2013 workflows upgrade to SharePoint Workflow Manager as soon as they’re able to. Microsoft will focus all future investments and maintenance on SharePoint Workflow Manger rather than Microsoft Workflow Manager, including providing support beyond the year 2026. For more information, see [Install and configure workflow for SharePoint Server](/sharepoint/governance/install-and-configure-workflow-for-sharepoint-server).
+Microsoft has released SharePoint Workflow Manager as the new workflow engine to power the SharePoint 2013 Workflow platform for SharePoint Server and replace Microsoft Workflow Manager. We recommend that all customers using SharePoint 2013 workflows upgrade to SharePoint Workflow Manager as soon as they're able to. Microsoft will focus all future investments and maintenance on SharePoint Workflow Manger rather than Microsoft Workflow Manager, including providing support beyond the year 2026. For more information, see [Install and configure workflow for SharePoint Server](/sharepoint/governance/install-and-configure-workflow-for-sharepoint-server).
 
 ### SharePoint 2010 workflows
 
@@ -141,5 +143,7 @@ As SharePoint PowerShell cmdlets were converted from snap-ins to modules in Shar
 The Claims to Windows Token Service (C2WTS) was removed from SharePoint Server Subscription Edition. The service still appears in the Central Administration site, but the backing Windows service isn't installed, so the SharePoint service won't start. Trying to start the service in Central Administration results in error: **SPWindowsTokenServiceInstance: could not find c2wtshost.exe.config. Please edit the configuration manually.**  
 SharePoint Server Subscription Edition replaced Windows Identity Foundation (WIF) 3.5 with WIF 4.5, in which the Claims to Windows Token Service and its associated classes are removed. If you have a custom solution that depends on the C2WTS, you may need to adjust it to work with WIF 4.5. See [Guidelines for Migrating an Application Built Using WIF 3.5 to WIF 4.5](https://github.com/mirsaeedi/docs-1/blob/master/docs/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md) for more information. 
 
+### Legacy Cloud Hybrid Search
 
+Search Content Service (SCS), an internal component of Cloud Hybrid Search in SharePoint in Microsoft 365 will be retired starting June 30, 2025. To continue using Cloud Hybrid Search by then, upgrade your SharePoint Server farm to [SharePoint Server Subscription Edition (SPSE) Version 25H1](/SharePoint/what-s-new/new-and-improved-features-in-sharepoint-server-subscription-edition-25h1-release#cloud-hybrid-search-upgrade) or later versions. Without this upgrade, previous versions of SPSE can only search for on-premises and Microsoft 365 content separately through Hybrid Federated Search after this retirement.
 
