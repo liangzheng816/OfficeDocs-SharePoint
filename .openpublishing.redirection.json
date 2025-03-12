@@ -1245,5 +1245,10 @@
       "redirect_url": "/sharepoint/advanced-management",
       "redirect_document_id": false
     }
+    {
+      "source_path": "migration/new-migration-transition.md",
+      "redirect_url": "/sharepointmigration/migrate-to-sharepoint-online",
+      "redirect_document_id": false
+    },
   ]
 }
