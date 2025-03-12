@@ -82,5 +82,11 @@ Answer:  No, it doesn't. Only the first discovered Drive is migrated.
 **Question: Can I migrate Drives with "/" in their names?** </br>
 Answer:  No, Google Drive with "/" in its name isn't supported. The **Source location** field in either the scan list or migration list shouldn't include "/", even if you configured invalid character replacement in the Project settings.
 
-
+**Question:**   **Why I can’t see some of my SharePoint sites while assigning destinations on the UI?**</br>
+Answer: If SP or Teams sites in your tenant aren't visible on the UI while assigning destinations, there could be a few reasons:
+- SP admins only see sites where they are at least a member, as sites are searched using a user-scoped delegated token.
+- Admins might not see sites for a multi-geo tenant due to limitations in the graph API.
+- Recently created sites might take a couple of hours to sync and appear on the UI.
+- For some corner cases (e.g., special characters in the destination path), SP site search on the UI might not work.
+</br>
 
