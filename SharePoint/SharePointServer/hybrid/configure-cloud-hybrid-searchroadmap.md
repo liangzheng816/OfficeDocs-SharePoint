@@ -176,7 +176,7 @@ On the application server that hosts the SharePoint Server Central Administratio
    Install-Module Microsoft.Graph -RequiredVersion 2.25.0 
    ```
     
-1. Download the [Onboard-CloudHybridSearch.ps1](https://go.microsoft.com/fwlink/?LinkId=717902) or Onboard-CloudHybridSearch-SPOONS.ps1 PowerShell script from the Microsoft Download Center.
+1. Download the [Onboard-CloudHybridSearch.ps1](https://go.microsoft.com/fwlink/?LinkId=717902) or [Onboard-CloudHybridSearch-SPOONS.ps1](https://download.microsoft.com/download/0b131072-7ee6-41ea-b33a-b3410865f3a0/Onboard-CloudHybridSearch-SPOONS.ps1) PowerShell script from the Microsoft Download Center.
     
 1. If your environment is Microsoft 365 Apps for business, Office 365 Enterprise, Office 365 Education, Office 365 operated by 21Vianet, or Office 365 US Government Defense, open an elevated PowerShell prompt, and run the **Onboard-CloudHybridSearch.ps1** or  **Onboard-CloudHybridSearch-SPOONS.ps1** PowerShell script as follows: 
     
