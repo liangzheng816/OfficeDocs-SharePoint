@@ -87,11 +87,15 @@ In this step, you need to modify the SharePoint Server farm properties based on 
 - For more information on configuring SharePoint farm properties for SharePoint Server Subscription Edition Version 24H1, see [Configure SPSE Version 24H1 or higher version](#configure-sharepoint-server-subscription-edition-version-24h1-or-higher-versions-with-early-release-feature-preference).
 - For more information on configuring SharePoint farm properties for SharePoint Server Subscription Edition Version preceding 24H1, see [Configure SPSE prior to Version 24H1](#configure-sharepoint-server-subscription-edition-prior-to-version-24h1).
 
-#### Configure SharePoint Server Subscription Edition Version 24H1 or higher versions with Early Release feature preference 
+#### Configure SharePoint Server Subscription Edition Version 24H1 or higher versions
 
-Starting with SharePoint Server Subscription Edition Version 24H1 (March 2024), if the SharePoint farm is configured for [Early Release feature preference](/sharepoint/administration/feature-release-rings#early-release), you can configure SharePoint Server farm properties by employing SharePoint Certificate Management to manage the nonce cookie certificate. The nonce cookie certificate is part of the infrastructure to ensure OIDC authentication tokens are secure. Run the following PowerShell script to configure:
+Starting with SharePoint Server Subscription Edition Version 24H1 (March 2024), if the SharePoint farm is configured for [Early Release feature preference](/sharepoint/administration/feature-release-rings#early-release), you can configure SharePoint Server farm properties by employing SharePoint Certificate Management to manage the nonce cookie certificate. This is part of the "OpenID Connect (OIDC) integration with SharePoint certificate management" feature described in [New and improved features in SharePoint Server Subscription Edition Version 24H1](/sharepoint/what-s-new/new-and-improved-features-in-sharepoint-server-subscription-edition-24h1-release). 
+
+If the SharePoint Server farm is at the 24H2 (September 2024) build or higher, the "OpenID Connect (OIDC) integration with SharePoint certificate management" feature has been moved to the Standard Release ring, in which case the feature is enabled no matter which Feature Release Preference the farm is set to.  See [New and improved features in SharePoint Server Subscription Edition Version 24H2](/sharepoint/what-s-new/new-and-improved-features-in-sharepoint-server-subscription-edition-24h2-release) for more information.
+
+The nonce cookie certificate is part of the infrastructure to ensure OIDC authentication tokens are secure. Run the following PowerShell script to configure:
 > [!IMPORTANT] 
-> To use this script, the SharePoint farm must be set to Early Release, as noted above.  If it is not, the script will complete without error, but the call to $farm.UpdateNonceCertificate() will not do anything.  If you do not want to configure your farm for Early Release, then you must use the [Configure SPSE prior to Version 24H1](#configure-sharepoint-server-subscription-edition-prior-to-version-24h1) steps instead.
+> To use this script, the SharePoint Server farm must be at the 24H2 build, or 24H1 and set to Early Release, as noted above.  If it is not, the script will complete without error, but the call to $farm.UpdateNonceCertificate() will not do anything.  If your farm does not meet this criteria, then you must use the [Configure SPSE prior to Version 24H1](#configure-sharepoint-server-subscription-edition-prior-to-version-24h1) steps below instead.
 
 > [!Note]
 > Start the SharePoint Management Shell as a farm administrator to run the following script. Read the instructions mentioned in the following PowerShell script carefully. You will need to enter your own environment-specific values in certain places.
@@ -111,6 +115,8 @@ $nonceCert = Import-SPCertificate -Path $certPath -Password $certPassword -Store
 $farm = Get-SPFarm 
 $farm.UpdateNonceCertificate($nonceCert,$true)
 ```
+> [!Note]
+> If you had previously configured OIDC authentication in your SharePoint Server farm prior to the 24H1 build and then later upgraded the farm to 24H2 or 24H1 with Early Release, you can utilize the [OpenID Connect (OIDC) integration with SharePoint certificate management](/sharepoint/what-s-new/new-and-improved-features-in-sharepoint-server-subscription-edition-24h1-release#openid-connect-oidc-integration-with-sharepoint-certificate-management) feature by running through just the "Import certificate to Certificate Management" and "Update farm property" steps in the above PowerShell script.
 
 #### Configure SharePoint Server Subscription Edition prior to Version 24H1
 
