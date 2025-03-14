@@ -192,7 +192,7 @@ This can simplify the configuration of the OIDC token issuer.
 With the following PowerShell example, we can use metadata endpoint from Microsoft Entra ID to configure SharePoint to trust Microsoft Entra OIDC.
 
 > [!NOTE]
-> Read the instructions mentioned in the following PowerShell script carefully. You need to enter your own environment-specific values in certain places.  For example, replace <tenantid> with your own Directory (tenant) ID.
+> Read the instructions mentioned in the following PowerShell script carefully. You need to enter your own environment-specific values in certain places.  For example, replace `<tenantid>` with your own Directory (tenant) ID.
 
 ```powershell
 # Define claim types
@@ -228,7 +228,7 @@ In Microsoft Entra ID, there are two versions of OIDC authentication endpoints. 
 - V1.0: `https://login.microsoftonline.com/<TenantID>/.well-known/openid-configuration`
 - V2.0: `https://login.microsoftonline.com/<TenantID>/v2.0/.well-known/openid-configuration`
 
-Replace TenantID with the **Directory (tenant) ID** saved in [Step 1: Setup identity provider](#step-1-setup-identity-provider) and connect to the endpoint through your browser. Then, save the following information:
+Replace `<tenantid>` with the **Directory (tenant) ID** saved in [Step 1: Setup identity provider](#step-1-setup-identity-provider) and connect to the endpoint through your browser. Then, save the following information:
 
 | Value | Link |
 |---------|---------|
@@ -244,7 +244,7 @@ Open jwks_uri (`https://login.microsoftonline.com/common/discovery/keys`) and sa
 Start the SharePoint Management Shell as a farm administrator, and after entering the values you obtained above, run the following script to create the Trusted identity Token Issuer:
 
 > [!NOTE]
-> Read the instructions mentioned in the following PowerShell script carefully. You need to enter your own environment-specific values in certain places.  For example, replace <tenantid> with your own Directory (tenant) ID.
+> Read the instructions mentioned in the following PowerShell script carefully. You need to enter your own environment-specific values in certain places.  For example, replace `<tenantid>` with your own Directory (tenant) ID.
 
 ```powershell
 # Define claim types
