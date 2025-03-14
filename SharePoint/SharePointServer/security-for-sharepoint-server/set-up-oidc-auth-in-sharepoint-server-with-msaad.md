@@ -89,13 +89,13 @@ In this step, you need to modify the SharePoint Server farm properties based on 
 
 #### Configure SharePoint Server Subscription Edition Version 24H1 or higher versions
 
-Starting with SharePoint Server Subscription Edition Version 24H1 (March 2024), if the SharePoint farm is configured for [Early Release feature preference](/sharepoint/administration/feature-release-rings#early-release), you can configure SharePoint Server farm properties by employing SharePoint Certificate Management to manage the nonce cookie certificate. This is part of the "OpenID Connect (OIDC) integration with SharePoint certificate management" feature described in [New and improved features in SharePoint Server Subscription Edition Version 24H1](/sharepoint/what-s-new/new-and-improved-features-in-sharepoint-server-subscription-edition-24h1-release). 
+Starting with SharePoint Server Subscription Edition Version 24H1 (March 2024), if the SharePoint farm is set to [Early Release feature preference](/sharepoint/administration/feature-release-rings#early-release), you can configure SharePoint Server farm properties by employing SharePoint Certificate Management to manage the nonce certificate. This functionality is part of the "OpenID Connect (OIDC) integration with SharePoint certificate management" feature described in [New and improved features in SharePoint Server Subscription Edition Version 24H1](/sharepoint/what-s-new/new-and-improved-features-in-sharepoint-server-subscription-edition-24h1-release). 
 
-If the SharePoint Server farm is at the 24H2 (September 2024) build or higher, the "OpenID Connect (OIDC) integration with SharePoint certificate management" feature has been moved to the Standard Release ring, in which case the feature is enabled no matter which Feature Release Preference the farm is set to.  See [New and improved features in SharePoint Server Subscription Edition Version 24H2](/sharepoint/what-s-new/new-and-improved-features-in-sharepoint-server-subscription-edition-24h2-release) for more information.
+If the SharePoint Server farm is at the 24H2 (September 2024) build or higher, the "OpenID Connect (OIDC) integration with SharePoint certificate management" feature was moved to the Standard Release ring. In that case, the feature is enabled no matter which Feature Release Preference the farm is set to.  See [New and improved features in SharePoint Server Subscription Edition Version 24H2](/sharepoint/what-s-new/new-and-improved-features-in-sharepoint-server-subscription-edition-24h2-release) for more information.
 
 The nonce cookie certificate is part of the infrastructure to ensure OIDC authentication tokens are secure. Run the following PowerShell script to configure:
-> [!IMPORTANT] 
-> To use this script, the SharePoint Server farm must be at the 24H2 build, or 24H1 and set to Early Release, as noted above.  If it is not, the script will complete without error, but the call to $farm.UpdateNonceCertificate() will not do anything.  If your farm does not meet this criteria, then you must use the [Configure SPSE prior to Version 24H1](#configure-sharepoint-server-subscription-edition-prior-to-version-24h1) steps below instead.
+> [!IMPORTANT]
+> To use this script, the SharePoint Server farm must be at the 24H2 build, or 24H1 and set to Early Release, as noted above.  If it is not, the script will complete without error, but the call to $farm.UpdateNonceCertificate() does nothing.  If your farm does not meet this criteria, then you must use the [Configure SPSE prior to Version 24H1](#configure-sharepoint-server-subscription-edition-prior-to-version-24h1) steps instead.
 
 > [!Note]
 > Start the SharePoint Management Shell as a farm administrator to run the following script. Read the instructions mentioned in the following PowerShell script carefully. You will need to enter your own environment-specific values in certain places.
@@ -149,7 +149,7 @@ $farm.Properties['SP-NonceCookieHMACSecretKey']='seed'
 $farm.Update()
 ```
 > [!IMPORTANT]
-> The nonce cookie certificate, with private key, must be installed on all SharePoint servers in the farm.  Also, permission to the private key must be given to the web application pool service account on each server.  Failure to complete this step will result OIDC authentication failures. 
+> The nonce cookie certificate, with private key, must be installed on all SharePoint servers in the farm.  Also, permission to the private key must be given to the web application pool service account on each server.  Failure to complete this step results in OIDC authentication failures. 
 > It's recommended to use the PowerShell example above to set permission on the private key file to ensure it's done correctly.
 
 ## Step 3: Configure SharePoint to trust the identity provider
