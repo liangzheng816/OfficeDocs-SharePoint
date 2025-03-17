@@ -9,7 +9,7 @@ recommendations: true
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: release-notes
 ms.service: microsoft-365-migration
 mscollection: 
 - SPMigration
