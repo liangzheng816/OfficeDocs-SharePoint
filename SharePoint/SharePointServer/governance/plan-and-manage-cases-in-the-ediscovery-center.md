@@ -9,7 +9,7 @@ manager: laurawi
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: office-online-server
 ms.localizationpriority: medium
 ms.collection:
