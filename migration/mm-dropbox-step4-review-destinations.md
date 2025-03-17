@@ -39,7 +39,7 @@ If a destination is missing on a single user, highlight the row and update the v
 
 3. Select **Save path**.
 >[!Note]
-> If the desired destination doesn’t appear in the dropdown list, please upload it using a CSV file as described below.
+> Destinations might not be visible on the UI due to admin access limitations, multi-geo tenant issues, recent site creation delays, or special characters in the destination path. If this occurs, please upload the data using a CSV file as described in the section below.
 
 
 ## Upload destinations using a CSV file

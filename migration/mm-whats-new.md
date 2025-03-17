@@ -45,7 +45,6 @@ Help us improve Migration Manager by sending your suggestions and reporting bugs
 - **Migration Manager Lite Private Preview**. Migration Manager Lite is a simplified version of Migration Manager designed to help SMB customers easily migrate their content from Google Drive to Microsoft 365. [Sign up for the preview](https://forms.office.com/r/rkBiy8a4Rr).
 
 ## September 2024
-- **New Migration transition.** Migration Manager is undergoing a transition to provide a more scalable migration service. Tenants with ongoing migration projects will experience transition UI elements. [Learn more about the transition](new-migration-transition.md).
 - **Improved connection wizard.** Customers now have access to quick migration settings immediately upon connecting to cloud sources.
 
 ## August 2024
