@@ -10,7 +10,7 @@ audience: Admin
 ROBOTS: NOINDEX
 f1.keywords:
 - CSH
-ms.topic: article
+ms.topic: reference
 ms.service: sharepoint-online
 ms.localizationpriority: medium
 ms.custom: admindeeplinkSPO
