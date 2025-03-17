@@ -9,7 +9,7 @@ ms.date: 10/07/2024
 audience: Admin
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.service: sharepoint-online
 ms.collection: M365-collaboration
 ms.localizationpriority: medium

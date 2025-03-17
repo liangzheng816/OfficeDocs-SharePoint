@@ -8,7 +8,7 @@ ms.date: 05/17/2023
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.service: sharepoint-server-itpro
 ms.localizationpriority: medium
 description: "Learn how to upgrade from Workflow Manager to SharePoint Workflow Manager when upgrading older SharePoint Server farms."
