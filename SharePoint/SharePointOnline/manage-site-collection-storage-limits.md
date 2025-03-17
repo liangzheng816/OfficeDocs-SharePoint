@@ -1,5 +1,5 @@
 ---
-ms.date: 04/23/2024
+ms.date: 03/17/2025
 title: Manage site storage limits in SharePoint in Microsoft 365
 ms.reviewer: trgreen
 ms.author: ruihu
@@ -67,7 +67,7 @@ If you prefer to fine-tune the storage space allocated to each site, you can set
 ## Manage individual site storage limits
 <a name="__toc365547981"> </a>
 
-Follow these steps to specify individual site storage limits *when your storage management option is set to "manual."* We recommend that you also set an email alert so that you and other site admins can be notified when sites are nearing the storage limit. To learn how to set the default storage limit for new sites, see [Manage site creation](manage-site-creation.md). 
+Follow these steps to specify individual site storage limits *when your storage management option is set to "manual."* We recommend that you also set an email alert so that you and the site owners can be notified when sites are nearing the storage limit. To learn how to set the default storage limit for new sites, see [Manage site creation](manage-site-creation.md). 
   
 1. Go to <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites** in the SharePoint admin center</a>, and sign in with an account that has [admin permissions](./sharepoint-admin-role.md) for your organization.
 
@@ -82,7 +82,7 @@ Follow these steps to specify individual site storage limits *when your storage 
     > [!NOTE]
     > The maximum value you can enter is 25600 GB, although this may be more space than your organization has. To learn how your total storage is calculated, see [SharePoint Limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits).
     
-5. Make sure **Notifications** is turned on to send an email to site admins when the site approaches the storage limit. Then, enter a value as a percent for how full you want the storage to be when the email is sent. 
+5. Make sure **Notifications** is turned on to send an email to site owners when the site approaches the storage limit. Then, enter a value as a percent for how full you want the storage to be when the email is sent. 
  
 6. Select **Save**.
 
