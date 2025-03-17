@@ -8,7 +8,7 @@ manager: jtremper
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.service: microsoft-365-migration
 ms.localizationpriority: medium
 ms.collection: 

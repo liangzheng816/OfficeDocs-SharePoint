@@ -9,7 +9,7 @@ recommendations: true
 audience: ITPro
 f1.keywords:
 - CSH
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.service: microsoft-365-migration
 ms.localizationpriority: Low
 search.appverid: MET150
