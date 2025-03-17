@@ -15,7 +15,7 @@ ms.collection:
 - SPMigration
 - highpri
 - m365initiative-migratetom365
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 search.appverid: MET150
 
 ---

@@ -8,7 +8,7 @@ description: How to use Certificate Based Authentication in migration
 author:      zacsun-ms # GitHub alias
 ms.author: zhaosu
 ms.service: microsoft-365-admin
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date:     01/25/2025
 manager: dapodean
 ---
