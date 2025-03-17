@@ -24,19 +24,19 @@ Integrating social media within your organization can help you reach your organi
 
 ## Social media integration
 
-Integration with social media has become hype in the last several years. Many organizations want social networks to be integrated with their public-facing website without a good understanding of what such integration means, and how it should support the organization's goals. This article is not about helping you form a vision for using social networks within your organization. Instead it presents several different integration scenarios, and shows how you can benefit from them. Eventually you must make an educated choice about which of these integration techniques will work for your scenario, and how the integration should look.
+Integration with social media has become hype in the last several years. Many organizations want social networks to be integrated with their public-facing website without a good understanding of what such integration means, and how it should support the organization's goals. This article is not about helping you form a vision for using social networks within your organization. Instead it presents several different integration scenarios, and shows how you can benefit from them. Eventually you must make an educated choice about which of these integration techniques works for your scenario, and how the integration should look.
 
 From the communication perspective you can integrate with social media in two ways:
 
-- Publish information from your website to social networks, which can be as easy as adding a Facebook Like button. This action will allow you to expand the reach of the content on your website beyond its boundaries and reach your visitors' friends and colleagues.
+- Publish information from your website to social networks, which can be as easy as adding a Facebook Like button. This action allows you to expand the reach of the content on your website beyond its boundaries and reach your visitors' friends and colleagues.
 
-- Use the current visitor's information from social networks to control which content on your website would be the most relevant. Using this approach will help your visitors discover new content on your website. This action can help you expand your reach and increase conversion on your website.
+- Use the current visitor's information from social networks to control which content on your website would be the most relevant. Using this approach helps your visitors discover new content on your website. This action can help you expand your reach and increase conversion on your website.
 
 This article describes the first option.
 
 ## The basics of social media integration in SharePoint 2013
 
-Integrating with social media is all about reaching as many people as possible. When visitors discover the content of your website, the can share it with their friends, who again might share it with their friends. Before you know it, your content will reach people who otherwise might not have even known about your website. But, for this action to occur, you need to verify your content appears exactly the way you want it to look on social networks.
+Integrating with social media is all about reaching as many people as possible. When visitors discover the content of your website, the can share it with their friends, who again might share it with their friends. Before you know it, your content reaches people who otherwise might not have even known about your website. But, for this action to occur, you need to verify your content appears exactly the way you want it to look on social networks.
 
 Just as you can optimize your web content for Internet search engines, you can provide meta information about your content to social networks. Many social networks (for example, Facebook or Viva Engage) use [the Open Graph protocol](https://go.microsoft.com/fwlink/p/?LinkId=400785) to retrieve information about your content. To control how your content is displayed when it's shared on social networks, you need to integrate Open Graph metadata into your website. The metadata should describe the essence of your content so that anyone who sees your content on a social network will want to click on it.
 
@@ -54,7 +54,7 @@ There are also differences in how content is published. SharePoint Server 2016 o
 
 These publishing models have two ways of publishing content. Plan for publishing the information according to your content publishing model.
 
-Open Graph information is published using HTML meta tags. Those tags must be located in the head section of your website. To support publishing different Open Graph information, you should define a Content Place Holder in your Master Page. This action will allow you to fill that placeholder with the appropriate metadata from the different Page Layouts. The following code example shows a Content Place Holder added to the standard seattle.master Master Page to support publishing Open Graph information:
+Open Graph information is published using HTML meta tags. Those tags must be located in the head section of your website. To support publishing different Open Graph information, you should define a Content Place Holder in your Master Page. This action allows you to fill that placeholder with the appropriate metadata from the different Page Layouts. The following code example shows a Content Place Holder added to the standard seattle.master Master Page to support publishing Open Graph information:
 
 ```HTML
 <head>
@@ -123,7 +123,7 @@ This approach assumes that you want the title of your page to be published on so
 - Replace the contents of the title property with a suitable alternative.
 - Remove it, and then have it filled from the *OpenGraphPlaceHolder* content placeholder.
 
-The great benefit of using the standard SharePoint Server 2016 Search Engine Optimization controls is they work for the classic and search-driven content publishing models. They will automatically retrieve the necessary content by using the necessary approach.
+The great benefit of using the standard SharePoint Server 2016 Search Engine Optimization controls is they work for the classic and search-driven content publishing models. They automatically retrieve the necessary content by using the necessary approach.
 
 The next step is to provide the page-type specific information according to the Open Graph protocol. For pages using the classic publishing model, you can use Publishing controls to retrieve the content. For example:
 
@@ -218,7 +218,7 @@ Facebook offers several standard plugins that you can use to integrate with Face
 
 ### Before you start: Insights
 
-When integrating with Facebook, you can add one or more widgets to your website. Although this will allow your visitors to interact with your website using Facebook plugins, it will give you very little feedback about how your visitors use the social media capabilities that you have provided them with. The great news is that if you want to learn more information about the usage of Facebook social plugins on your website, you can benefit from the Insights capability that Facebook offers you. After registering your website as a Facebook application and including the application ID in your website, you'll be able to access analytics information about the usage of Facebook on your website from all the widgets.
+When integrating with Facebook, you can add one or more widgets to your website. Although this allows your visitors to interact with your website using Facebook plugins, it gives you very little feedback about how your visitors use the social media capabilities that you have provided them with. The great news is that if you want to learn more information about the usage of Facebook social plugins on your website, you can benefit from the Insights capability that Facebook offers you. After registering your website as a Facebook application and including the application ID in your website, you'll be able to access analytics information about the usage of Facebook on your website from all the widgets.
 
 More information, see [Facebook Insights](https://www.facebook.com/business/news/audience-insights).
 
@@ -360,7 +360,7 @@ When integrating the Recommendations Bar on your website, you should consider in
 <div class="fb-recommendations-bar" data-href="http://contoso.com/articles/my-article/"></div>
 ```
 
-Because you want recommendations to be visible on every page, you should add it to the Page Layouts used by your detail pages. The following is the markup that you should add to your Page Layouts to to make sure that that the Recommendations Bar will work for every page. Notice how the contents of the *data-href* attribute are being set dynamically by using the SeoCanonicalLink control we discussed previously:
+Because you want recommendations to be visible on every page, you should add it to the Page Layouts used by your detail pages. The following is the markup that you should add to your Page Layouts to to make sure that that the Recommendations Bar works for every page. Notice how the contents of the *data-href* attribute are being set dynamically by using the SeoCanonicalLink control we discussed previously:
 
 ```HTML
 <!--SPM:<%@Register Tagprefix="Contoso" Namespace="Contoso.SharePoint.Seo.Controls" Assembly="Contoso.SharePoint.Seo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a285ef6967f781d3"%>-->
@@ -374,7 +374,7 @@ Because you want recommendations to be visible on every page, you should add it 
 <!--ME:</Contoso:HyperlinkControlWrapper>-->
 ```
 
-Like all other content, the recommendations that are displayed by the Recommendations Bar are controlled by the activity on your website, and recorded by Facebook. Although the Recommendations Bar will display personalized content suggestions, it doesn't offer you any control about what content will be displayed where. Although the differences in which items are suggested as recommendations might be subtle, they could decide whether your visitors will remain on your website.
+Like all other content, the recommendations that are displayed by the Recommendations Bar are controlled by the activity on your website, and recorded by Facebook. Although the Recommendations Bar displays personalized content suggestions, it doesn't offer you any control about what content is displayed where. Although the differences in which items are suggested as recommendations might be subtle, they could decide whether your visitors will remain on your website.
 
 An alternative to integrating the Facebook Recommendations Bar that's worth considering is using the content recommendations capability that was provided with SharePoint Server 2016. Although it would require some customizations to achieve similar user experience as the one that Facebook Recommendations Bar has, the great advantage is that you can control which content is displayed as recommendations. Because content recommendations are based on SharePoint Server 2016 Search, you can use all its capabilities to to make sure that that the most relevant recommendations are displayed to your visitors.
 
