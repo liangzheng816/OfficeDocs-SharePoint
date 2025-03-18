@@ -31,18 +31,18 @@ description: Learn how to configure cloud hybrid search for SharePoint Server by
 [!INCLUDE[appliesto-2013-2016-2019-SUB-SPO-md](../includes/appliesto-2013-2016-2019-SUB-SPO-md.md)]
 
 > [!IMPORTANT]
-> Search Content Service (SCS), an internal component of Cloud Hybrid Search in SharePoint in Microsoft 365 will be retired starting June 30, 2025. To continue using Cloud Hybrid Search by then, upgrade your SharePoint Server farm to SharePoint Server Subscription Edition (SPSE) Version 25H1 available in March 2025 or later versions. Without this upgrade, all versions of SharePoint Server 2016/2019 and previous versions of SPSE can only search for on-premises and Microsoft 365 content separately through Hybrid Federated Search after this retirement.
+> Search Content Service (SCS), an internal component of Cloud Hybrid Search in SharePoint in Microsoft 365 will be retired starting June 30, 2025. To continue using Cloud Hybrid Search by then, upgrade your SharePoint Server farm to [SharePoint Server Subscription Edition (SPSE) Version 25H1](/SharePoint/what-s-new/new-and-improved-features-in-sharepoint-server-subscription-edition-25h1-release#cloud-hybrid-search-upgrade) or later versions. Without this upgrade, all versions of SharePoint Server 2019/2016 and previous versions of SPSE can only search for on-premises and Microsoft 365 content separately through Hybrid Federated Search after this retirement.
 
 Learn how to configure [cloud hybrid search](./learn-about-cloud-hybrid-search-for-sharepoint.md) for SharePoint Server by setting up a cloud Search service application in your SharePoint Server environment and connecting it to your search index in Office 365. 
   
 This article describes how you set up cloud hybrid search in an environment with SharePoint Server and SharePoint in Microsoft 365 for enterprises. With the cloud hybrid search solution, you add crawled metadata from all your content, including on-premises content, to your search index in Office 365. When users search in Microsoft 365, they get search results from both on-premises and from Microsoft 365 content.
   
 > [!NOTE]
-> If you are a Microsoft 365 Dedicated customer, setting up cloud hybrid search requires engagement of SharePoint Service Engineering staff. For assistance, contact your Microsoft Service Delivery Manager. If you aren't sure what type of customer you are, you can safely disregard this note. 
+> If you're a Microsoft 365 Dedicated customer, setting up cloud hybrid search requires engagement of SharePoint Service Engineering staff. For assistance, contact your Microsoft Service Delivery Manager. If you aren't sure what type of customer you are, you can safely disregard this note. 
   
 ## Before you start
 
-To complete the configuration steps you'll need these items:
+To complete the configuration steps, you'll need these items:
   
 - The [hardware and software](./hardware-and-software-requirements-for-sharepoint-hybrid.md) that's needed in a SharePoint Server hybrid environment. 
     
@@ -62,9 +62,9 @@ To complete the configuration steps you'll need these items:
     
 - The search architecture plan you made for cloud hybrid search.
     
-- If you'll use the [Hybrid Configuration Wizard in the SharePoint admin center](hybrid-configuration-wizard-in-the-sharepoint-online-admin-center.md#hybrid-configuration-wizard-in-the-sharepoint-admin-center) to help you configure, ensure that the application farm that hosts the SharePoint Server Central Administration website has [.NET 4.6.2 or higher](https://dotnet.microsoft.com/download/dotnet-framework/net462) installed.
+- If you use the [Hybrid Configuration Wizard in the SharePoint admin center](hybrid-configuration-wizard-in-the-sharepoint-online-admin-center.md#hybrid-configuration-wizard-in-the-sharepoint-admin-center) to help you configure, ensure that the application farm that hosts the SharePoint Server Central Administration website has [.NET 4.6.2 or higher](https://dotnet.microsoft.com/download/dotnet-framework/net462) installed.
     
-- If you'll use the **CreateCloudSSA.ps1** and **Onboard-CloudHybridSearch.ps1** Microsoft PowerShell scripts to help you configure, find them in the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=717902). You'll also need the [Microsoft Online Services Sign-In Assistant for IT Professionals RTW](https://go.microsoft.com/fwlink/?LinkID=286152) and the [Microsoft Graph Powershell module](/powershell/microsoftgraph/installation).
+- If you use the **CreateCloudSSA.ps1** and **Onboard-CloudHybridSearch.ps1** or **Onboard-CloudHybridSearch-SPOONS.ps1** Microsoft PowerShell scripts to help you configure, find them in the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=717902). You'll also need the [Microsoft Graph Powershell module](/powershell/microsoftgraph/installation).
     
 ## Follow these steps:
 
@@ -74,7 +74,7 @@ If you already completed step 1 when you configured a different hybrid solution,
 |:-----|:-----|
 |**1. [Configure Microsoft 365 for SharePoint hybrid](./configure-office-365-for-sharepoint-hybrid.md)** <br/> |Configure your Microsoft 365 organization for a hybrid environment, including registering your domain, configuring UPN suffixes, and synchronizing your on-premises user accounts with Microsoft 365.  <br/> |
 |**2. [Create a cloud Search service application in SharePoint Server](configure-cloud-hybrid-searchroadmap.md#BKMK_CreateCloudSSA)** <br/> |Run the Hybrid Configuration Wizard on the application farm that hosts the SharePoint Server Central Administration website.  <br/> Alternatively, run the **CreateCloudSSA.ps1** PowerShell script.  <br/> |
-|**3. [Connect your cloud Search service application to your Microsoft 365 organization](configure-cloud-hybrid-searchroadmap.md#BKMK_ConnectCloudSSAToO365)** <br/> |If you used the Hybrid Configuration Wizard to create a cloud Search service application, skip this step. The Hybrid Configuration Wizard automatically connected your environments.  <br/> Otherwise, run the **Onboard-CloudHybridSearch.ps1** PowerShell script to onboard your cloud SSA and Microsoft 365 organization to cloud hybrid search. The script sets up the cloud SSA to interact with the Microsoft 365 organization and also sets up server-to-server authentication.  <br/> |
+|**3. [Connect your cloud Search service application to your Microsoft 365 organization](configure-cloud-hybrid-searchroadmap.md#BKMK_ConnectCloudSSAToO365)** <br/> |If you used the Hybrid Configuration Wizard to create a cloud Search service application, skip this step. The Hybrid Configuration Wizard automatically connected your environments.  <br/> Otherwise, run the **Onboard-CloudHybridSearch.ps1** or **Onboard-CloudHybridSearch-SPOONS.ps1** PowerShell script to onboard your cloud SSA and Microsoft 365 organization to cloud hybrid search. The script sets up the cloud SSA to interact with the Microsoft 365 organization and also sets up server-to-server authentication.  <br/> |
 |**4. [Set up search architecture in SharePoint Server for cloud hybrid search](configure-cloud-hybrid-searchroadmap.md#BKMK_SetupSearchArch)** <br/> |This step is optional. If you planned a search architecture that's different from the default one, set up the planned search architecture.  <br/> |
 |**5. [Create a content source for cloud hybrid search to crawl](configure-cloud-hybrid-searchroadmap.md#BKMK_CreateOnPremContentSource)** <br/> |We recommend adding a small file share first, you can add more on-premises content later.  <br/> |
 |**6. [Set up a separate Search Center in Office 365 to validate hybrid search results](configure-cloud-hybrid-searchroadmap.md#BKMK_SetupValidationSearchCenter)** <br/> |Keep the existing search experience unchanged by setting up a separate Search Center in Office 365 so you can validate and tune the new search experience there.  <br/> |
@@ -112,7 +112,7 @@ The Hybrid Configuration Wizard saves you time because it also connects the clou
 
 You can also create the cloud SSA as follows:
   
-- You can download the **CreateCloudSSA.ps1** Powershell script from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=717902) and run it. The script lets you choose between a cloud SSA with the default search architecture on the application server that hosts the SharePoint Server Central Administration website, or a cloud SSA with a search architecture on two application servers (supports [high availability](../search/plan-enterprise-search-architecture.md#BKMK_HiAvail)).
+- You can download the **CreateCloudSSA.ps1** PowerShell script from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=717902) and run it. The script lets you choose between a cloud SSA with the default search architecture on the application server that hosts the SharePoint Server Central Administration website, or a cloud SSA with a search architecture on two application servers (supports [high availability](../search/plan-enterprise-search-architecture.md#BKMK_HiAvail)).
     
 - You can [use the SharePoint Central Administration website](../search/create-and-configure-a-search-service-application.md), just like you would for an SSA. With this method you get a cloud SSA and the default search architecture installed on the application server that hosts the SharePoint Server Central Administration website.
     
@@ -123,7 +123,7 @@ To create a cloud SSA by running the **CreateCloudSSA.ps1** PowerShell script, f
   
 On the application server that hosts the SharePoint Server Central Administration website, follow these steps:
   
-1. Make sure you're using the same user account as when you installed SharePoint Server. This account is granted the appropriate permissions to run Window Powershell cmdlets.
+1. Make sure you're using the same user account as when you installed SharePoint Server. This account is granted the appropriate permissions to run Window PowerShell cmdlets.
     
 2. Start the Windows PowerShell console with administrator privileges: Select **Start**, enter **PowerShell**, and then right-click **Windows PowerShell**, and select **Run as administrator.**
     
@@ -159,21 +159,26 @@ If you want to make your own PowerShell script for creating a cloud SSA, first s
   
 This section guides you how to onboard your cloud SSA and Microsoft 365 organization to cloud hybrid search and covers:
   
-- **Connecting your cloud SSA and your Microsoft 365 organization** - When your cloud SSA and your Microsoft 365 organization are correctly connected, the cloud hybrid search solution is ready to add crawled metadata from on-premises content to the search index in Office 365. When you've onboarded your cloud SSA, check to see that your cloud SSA has the value 1 for the property **IsHybrid**. You check by running this PowerShell command: $ssa.GetProperty("CloudIndex"). 
+- **Connecting your cloud SSA and your Microsoft 365 organization** - When your cloud SSA and your Microsoft 365 organization are correctly connected, the cloud hybrid search solution is ready to add crawled metadata from on-premises content to the search index in Office 365. When you onboard your cloud SSA, check to see that your cloud SSA has the value 1 for the property **IsHybrid**. You can check by running this PowerShell command: $ssa.GetProperty("CloudIndex"). 
     
 - **Configuring server-to-server authentication** - Server-to-server authentication allows servers to access and request resources from one another on behalf of users. 
+
+> [!NOTE]
+> The Search Content Service (SCS) feature will be retired starting June 30, 2025. We have introduced a new onboarding script and updates. These will be available in the SharePoint Server Subscription Edition Version 25H1 feature update. This feature is currently available only in the  *Early release*  feature release ring. For more information, see [Feature release rings](../administration/feature-release-rings.md). To use this feature, run the script `Onboard-CloudHybridSearch-SPOONS.ps1` instead of `Onboard-CloudHybridSearch.ps1` for onboarding. 
     
 On the application server that hosts the SharePoint Server Central Administration website, follow these steps:
   
 1. Ensure that the date and time of the server is synchronized with the other servers in the SharePoint Server farm.
     
-2. Download and install the [Microsoft Online Services Sign-In Assistant for IT Professionals RTW](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_64bit.msi) from the Microsoft Download Center. 
+1. Download and install version 2.25.0  of the [Microsoft Graph PowerShell module](/powershell/microsoftgraph/installation) from the PowerShell Gallery. This step is not required if you are using Onboard-CloudHybridSearch-SPOONS.ps1.
+   
+   ```powershell
+   Install-Module Microsoft.Graph -RequiredVersion 2.25.0 
+   ```
     
-3. Download and install the latest version of the [Microsoft Graph PowerShell module](/powershell/microsoftgraph/installation) from the PowerShell Gallery. 
+1. Download the [Onboard-CloudHybridSearch.ps1](https://go.microsoft.com/fwlink/?LinkId=717902) or [Onboard-CloudHybridSearch-SPOONS.ps1](https://download.microsoft.com/download/0b131072-7ee6-41ea-b33a-b3410865f3a0/Onboard-CloudHybridSearch-SPOONS.ps1) PowerShell script from the Microsoft Download Center.
     
-4. Download the [OnBoard-CloudHybridSearch.ps1](https://go.microsoft.com/fwlink/?LinkId=717902) PowerShell script from the Microsoft Download Center.
-    
-5. If your environment is Microsoft 365 Apps for business, Office 365 Enterprise, Office 365 Education, Office 365 operated by 21Vianet, or Office 365 US Government Defense, open an elevated PowerShell prompt, and run the **OnBoard-CloudHybridSearch.ps1** PowerShell script as follows: 
+1. If your environment is Microsoft 365 Apps for business, Office 365 Enterprise, Office 365 Education, Office 365 operated by 21Vianet, or Office 365 US Government Defense, open an elevated PowerShell prompt, and run the **Onboard-CloudHybridSearch.ps1** or  **Onboard-CloudHybridSearch-SPOONS.ps1** PowerShell script as follows: 
     
    ```powershell
    #For service principals
@@ -184,25 +189,30 @@ On the application server that hosts the SharePoint Server Central Administratio
    ```
 
    ```powershell
-   .\OnBoard-CloudHybridSearch.ps1 -PortalUrl <SPOTenantPortalUrl> -CloudSsaId <CloudSSANameCreatd>
+   .\Onboard-CloudHybridSearch.ps1 -PortalUrl <SPOTenantPortalUrl> -CloudSsaId <CloudSSANameCreated> 
    ```
-
-    **SPOTenantPortalUrl** is the URL of your company's or organization's SharePoint portal, and **CloudSsaID** is the name of the cloud SSA that you created earlier. 
     
-6. If your environment is Office 365 US Government Communication, open an elevated PowerShell prompt, and run the **OnBoard-CloudHybridSearch.ps1** PowerShell script as follows: 
-     
-   ```powershell
-   Import-Module Microsoft.Graph.Applications
-   Import-Module Microsoft.Graph.Identity.DirectoryManagement
-   ```
+   ```powershell 
+   .\Onboard-CloudHybridSearch-SPOONS.ps1 -PortalUrl <SPOTenantPortalUrl> -CloudSsaId <CloudSSANameCreated> 
+   ```  
 
-   ```powershell
-   .\OnBoard-CloudHybridSearch.ps1 -PortalUrl <SPOTenantPortalUrl> -CloudSsaId <CloudSSANameCreatd> -IsPortalForUSGovernment $true
-   ```
-
-   **SPOTenantPortalUrl** is the URL of your company's or organization's SharePoint portal, and **CloudSsaID** is the name of the cloud SSA that you created earlier. 
+    **SPOTenantPortalUrl** is the URL of your company's or organization's SharePoint portal, and CloudSsaId is the name of the cloud SSA that you created earlier. 
     
-7. When prompted, sign in your Office 365 tenant as an [Application Administrator](/entra/identity/role-based-access-control/permissions-reference#application-administrator) or [above](/entra/identity/role-based-access-control/permissions-reference#all-roles).
+1. For Office 365 US Government Communication environments, the new onboard script isn't supported. Use Onboard-CloudHybridSearch.ps1.
+  
+1. When prompted, sign in your Office 365 tenant as an [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) or [above](/entra/identity/role-based-access-control/permissions-reference#all-roles).
+
+When transitioning to the new Hybrid Search, use the `Onboard-CloudHybridSearch-SPOONS.ps1` script. This is essential when replacing the old Hybrid Search with the new version. To proceed, run the following PowerShell command: 
+
+```powershell 
+.\Onboard-CloudHybridSearch-SPOONS.ps1 -PortalUrl <SPOTenantPortalUrl> -CloudSsaId <CloudSSANameCreated>
+``` 
+
+1. When prompted, sign in to your Office 365 tenant as an [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) or [above](/entra/identity/role-based-access-control/permissions-reference#all-roles). 
+
+1. Accept the requested permissions. 
+
+1. A new window appears asking you to sign in again. Select **Work or School Account** and use the same account you used in step1. 
     
 ## Set up search architecture in SharePoint Server for cloud hybrid search
 <a name="BKMK_SetupSearchArch"> </a>

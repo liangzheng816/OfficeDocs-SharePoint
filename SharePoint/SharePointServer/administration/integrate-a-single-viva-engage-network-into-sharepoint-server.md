@@ -8,7 +8,7 @@ ms.date: 6/11/2018
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: integration
 ms.service: sharepoint-server-itpro
 ms.localizationpriority: medium
 ms.assetid: 58901f1a-dbc9-46ca-8b51-e683ea5f2ce3
