@@ -1,5 +1,5 @@
 ---
-ms.date: 04/24/2024
+ms.date: 03/10/2025
 title: "Delve for admins"
 ms.reviewer: 
 ms.author: ruihu
@@ -27,7 +27,7 @@ description: "The more you and your colleagues use Microsoft 365 to work togethe
 # Delve for admins
 
 > [!IMPORTANT]
-> Delve will be retired in December 2024. For more information, see [Guidance for retiring Delve in your organization](delve-retirement.md).
+> Delve was retired in December 2024. For more information, see [Guidance for retiring Delve in your organization](delve-retirement.md).
 
 The more you and your colleagues use Microsoft 365 to work together, by viewing, editing, and sharing each other's documents, the more useful [Delve](https://support.microsoft.com/office/what-is-delve-1315665a-c6af-4409-a28d-49f8916878ca) is for all of you. Learn more about how you as an admin can help users get the most out of Delve.
   
