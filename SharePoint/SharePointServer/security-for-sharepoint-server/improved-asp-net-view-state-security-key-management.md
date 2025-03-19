@@ -1,5 +1,5 @@
 ---
-ms.date: 09/15/2021
+ms.date: 03/11/2025
 title: Improved ASP.NET view state security and key management
 ms.reviewer: 
 ms.author: serdars
@@ -22,6 +22,24 @@ description: "Learn how to set up improved ASP.NET view state security and key m
 
 > [!NOTE]
 > SharePoint Server Subscription Edition encrypts the `machineKey` section of its `web.config` files by default. This prevents attackers from reading your ASP.NET view state encryption and validation keys, even if they gain access to those `web.config` files.
+
+If you are running SharePoint Server Subscription Edition or SharePoint Server 2016/2019 editions, the platform secures your sensitive data by regularly updating the machine encryption keys. This process is done manually using PowerShell cmdlets, which updates the decryption and validation keys within a web application. This security practice helps to mitigate potential vulnerabilities if a key is compromised. For more information, see [PowerShell cmdlets](#powershell-cmdlets).
+
+Starting from SharePoint Server Subscription Edition Version 25H1, you would be able to automatically update machine keys without manual intervention. For more information, see [Automatic machine key rotation](#automatic-machine-key-rotation).
+
+## Automatic machine key rotation
+
+Automatic machine key rotation feature aims to improve security by automating the periodic updating of machine keys, thereby minimizing the risk of key compromise. This feature ensures seamless and automatic rotation of machine keys while maintaining high availability and reliability of SharePoint services during key rotation.
+
+The feature incorporates a Key Management Service that handles storage, retrieval and distribution of machine keys using a timer job called **Machine Key Rotation Job**. The timer job is configured to run automatically on the last Sunday of every month by default.
+
+If you need to update the machine keys manually, you can trigger the Machine Key Rotation timer job by performing the following steps:
+
+1. Navigate to the **Central Administration** site.
+1. Go to **Monitoring** -> **Review job definition**.
+1. Search for **Machine Key Rotation Job** and select **Run Now**.
+
+When the job is completed, there should be no noticeable change to the administrators of the farm.
 
 Using the following new PowerShell cmdlets, you can change the ASP.NET view state decryption and validation keys of a SharePoint web application, thus allowing you to rotate those keys in your farm.
 
