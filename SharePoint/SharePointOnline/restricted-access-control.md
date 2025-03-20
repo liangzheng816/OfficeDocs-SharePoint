@@ -73,7 +73,7 @@ To manage site access restriction for a group-connected site in the SharePoint a
 1. Select the **Restrict SharePoint site access to only users in specified groups** check box.
 1. Add or remove the security groups or Microsoft 365 groups and select **Save**.
 
-    :::image type="content" source="media/rac-spac/6-rac-enable-specified-groups.png" alt-text="screenshot of site access restriction for specified groups in sharepoint admin center dashboard." lightbox="media/rac-spac/6-rac-enable-specified-groups.png":::
+    :::image type="content" source="media/rac-spac/6-rac-enable-specified-groups.png" alt-text="Screenshot of site access restriction for specified groups in sharepoint admin center dashboard." lightbox="media/rac-spac/6-rac-enable-specified-groups.png":::
 
 To manage site access restriction for group-connected sites using PowerShell, use the following commands:
 
