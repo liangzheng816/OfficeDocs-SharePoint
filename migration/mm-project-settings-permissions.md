@@ -24,7 +24,9 @@ description: Learn about configuring project permissions in Migration Manager.
 Review your settings to ensure that the same users with access to files, folders, and metadata will continue to have access after migration.
 
 ## Migrate permissions
-Permissions are migrated only in the first migration run. To correctly migrate permissions, please ensure:
+Permissions are migrated along with the files. During the initial migration, all permissions are migrated. In the delta sync (incremental migration), permissions are only migrated when the corresponding files are transferred. Learn more about [delta sync and permission update](mm-delta-sync.md).
+
+To correctly migrate permissions, please ensure:
 - [Identity mapping](#map-identities) is completed before any migration.
 - Permission settings are configured as needed:
   + Folder permissions: By default, Migration Manager migrates folders permissions. File permissions aren't migrated, and destination files inherit parent folder permissions.
