@@ -21,7 +21,9 @@ description: "Configure file transfer behaviors for delta sync"
 ---
 # Delta Sync
 
-When a migration task is conducted for the first time, it is referred to as an **initial migration** or new migration. After the initial migration, the destination cannot be changed. If the task is migrated again, it is known as **delta sync**, also called incremental sync or incremental migration. Migration Manager supports configuring file transfer behaviors for delta sync. The settings can be found under **Project settings – Advanced**. 
+When a migration task is conducted for the first time, it's referred to as an **initial migration** or new migration. After the initial migration, the destination can't be changed. If the task is migrated again, it's known as **delta sync**, also called incremental sync or incremental migration. 
+
+Migration Manager supports configuring file transfer behaviors for delta sync. The settings can be found under **Project settings – Advanced**. 
 
 ## Skip files already migrated and transfer only updated or new ones
 
@@ -30,14 +32,16 @@ This default mode skips migrated files, transferring only updated files or newly
 - The last modified time in the destination is newer than in the source 
 
 >[!NOTE]
-> If a file is updated both in the source and in the destination with the destination's last modified time being newer, the file will not be migrated. 
+> If a file is updated in both the source and the destination, and the destination's last modified time is newer, the file isn't migrated.
 
 ## Migrate all files and overwrite any existing ones at the destination
 
-In this mode, all files in the source will be migrated to the destination again, overwriting those from previous migrations. This process takes longer than the default mode. Even if the files in the destination are updated, they will still be overwritten. 
+In this mode, all files in the source are migrated to the destination again, overwriting those files from previous migrations. Even if the files in the destination are updated, they are still overwritten. 
+
+This process takes longer than the default mode. 
 
 ## Delta sync and permission update 
 
-Permissions are migrated along with the files and are updated only when the corresponding files are migrated in the delta sync. If permissions of a file are updated but the last modified time of the file remains unchanged, the permission update will not be migrated to the destination in the delta sync as the file itself is not migrated by default.  
+Permissions are migrated along with the files and are updated only when the corresponding files are migrated in the delta sync. If a file's permissions are updated but its last modified time remains unchanged, the permission update isn't migrated in the delta sync because the file itself isn't migrated by default.  
 
-To ensure that permission updates are migrated even when file content remains unchanged, you can select “Migrate all files and overwrite any existing ones at the destination” as the file transfer setting for delta sync. 
+To ensure that permission updates are migrated even when file content remains unchanged, select the option to 'Migrate all files and overwrite any existing ones at the destination' as the file transfer setting for delta sync.
