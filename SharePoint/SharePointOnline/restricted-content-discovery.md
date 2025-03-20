@@ -121,7 +121,8 @@ Get-SPOTenant | Select-Object DelegateRestrictedContentDiscoverabilityManagement
 
 ### Allow site admins to edit restricted content discovery
 
-Note: Once the restricted content discovery policy is enabled for a site and the delegation control is configured, the site admin can view this setting in the **Site information** panel.
+> [!NOTE]
+> Once the restricted content discovery policy is enabled for a site and the delegation control is configured, the site admin can view this setting in the **Site information** panel.
 
 :::image type="content" source="./media/restricted-content-discovery/0-rcd-site-info-panel.png" alt-text="Screenshot of site information panel showing site owners and site admins the ability to restrict a site from being discovered in Microsoft 365 Copilot." lightbox="./media/restricted-content-discovery/0-rcd-site-info-panel.png":::
 
