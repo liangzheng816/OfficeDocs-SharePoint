@@ -138,7 +138,6 @@ Use the following keys to preconfigure or change settings for your users. The ke
 - [DefaultFolderLocation](deploy-and-configure-on-macos.md#defaultfolderlocation)
 - [DisableAutoConfig](deploy-and-configure-on-macos.md#disableautoconfig)
 - [DisableFirstDeleteDialog](deploy-and-configure-on-macos.md#disablefirstdeletedialog)
-- [DisableFirstDeleteDialog](deploy-and-configure-on-macos.md#disablefirstdeletedialog)
 - [DisableFREAnimation](deploy-and-configure-on-macos.md#disablefreanimation)
 - [DisableOfflineMode](#disableofflinemode)
 - [DisableOfflineModeForExternalLibraries](#disableofflinemodeforexternallibraries)
@@ -321,7 +320,7 @@ The example for this setting in the .plist file is:
 
 ```xml
 <key>DisableFREAnimation</key>
-<integer>1</integer
+<integer>1</integer>
 ```
 
 ### DisableOfflineMode
@@ -629,7 +628,6 @@ This setting enables you to specify the name of the folder created for syncing t
 
 If this setting is enabled, you can specify a TenantName that is the name the folder uses in the following convention:
    OneDrive – TenantName (specified by you)
-   TenantName (specified by you)
 
 If you don't specify any TenantName, the folder uses the first segment of the FrontDoorURL as its name. For example, https://</span>Contoso.SharePoint.com uses Contoso as the Tenant Name in the following convention: OneDrive – Contoso
 
