@@ -39,12 +39,12 @@ If you're currently using the Enterprise Search Center, you can easily replace (
 
 3. Run the [Invoke-SPOSiteSwap](/powershell/module/sharepoint-online/invoke-spositeswap) cmdlet.
 
-  ```PowerShell  
+    ```PowerShell  
     Invoke-SPOSiteSwap  
       -SourceUrl <string>
       -TargetUrl <string>
       -ArchiveUrl <string>
-  ```
+    ```
 
   | Parameter   | Description                                   |
   |-------------|-----------------------------------------------|
