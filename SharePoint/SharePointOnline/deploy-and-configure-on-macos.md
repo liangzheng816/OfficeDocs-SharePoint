@@ -1,5 +1,5 @@
 ---
-ms.date: 10/01/2024
+ms.date: 03/21/2025
 title: "Deploy and configure the OneDrive sync app for Mac"
 ms.reviewer: cagreen
 ms.author: mactra
@@ -415,7 +415,7 @@ The example for this setting in the .plist file is:
 
 ### EnableODIgnore
 
-This setting lets you enter keywords to prevent the OneDrive sync app from uploading certain files to OneDrive or SharePoint. You can enter complete names, such as "setup.exe" or use the asterisk (*) as a wildcard character to represent a series of characters, such as*.pst. Keywords aren't case-sensitive.
+This setting lets you enter keywords to prevent the OneDrive sync app from uploading certain files to OneDrive or SharePoint. You can enter complete names, such as "setup.exe" or use the asterisk `*` as a wildcard character to represent a series of characters, such as `*.pst`. Keywords aren't case-sensitive.
 
 If you enable this setting, the sync app doesn't upload new files that match the keywords you specified. No errors appear for the skipped files, and the files remain in the local OneDrive folder. In Finder, the files appear with an "Excluded from sync" icon.
 
