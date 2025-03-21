@@ -185,7 +185,7 @@ To keep the previous DB connection strings working, you must also create a SQL a
 
 1. Check to see if you have the "Web Server (IIS)" server role installed on your new SPWFM server. Install it if it isn't on the server.
 
-If you're installing SPWFM on a non-SharePoint server, it may not already have it installed. Unfortunately, there's nothing forcing you to install it, so if you don't, the Workflow Configuration Wizard fails with the error, "*Could not load file or assembly 'Microsoft.Web.Administration*".
+   If you're installing SPWFM on a non-SharePoint server, it may not already have it installed. Unfortunately, there's nothing forcing you to install it, so if you don't, the Workflow Configuration Wizard fails with the error, "*Could not load file or assembly 'Microsoft.Web.Administration*".
 
 ### Install Azure Service Fabric
 
@@ -316,15 +316,15 @@ b. Browse to the FQDN of the SPWFM endpoint.
 
 2. **Test a new workflow**. 
 
-a. Sign in to a client computer, and then open **SharePoint Designer**.  
-b. Open one of your sites and go to Workflows.   
-c. Create a new workflow and make sure you can see the “SharePoint Workflow 2013” in the list of platforms to choose from.  
-d. Create a basic "log to history" 2013-platform workflow and test to make sure it's successful.  
+   a. Sign in to a client computer, and then open **SharePoint Designer**.  
+   b. Open one of your sites and go to Workflows.   
+   c. Create a new workflow and make sure you can see the “SharePoint Workflow 2013” in the list of platforms to choose from.  
+   d. Create a basic "log to history" 2013-platform workflow and test to make sure it's successful.  
 
 3. **Test an old workflow**.
 
-a. Find a list that had a workflow assigned to it in the "old" farm.  
-b. Launch a new instance of that workflow and verify that it works. If you included the App Management service app database during the migration, and ran the **Register-SPWorkflowService** using the correct "scope" name, workflows from the old farm should continue to work.  
+   a. Find a list that had a workflow assigned to it in the "old" farm.  
+   b. Launch a new instance of that workflow and verify that it works. If you included the App Management service app database during the migration, and ran the **Register-SPWorkflowService** using the correct "scope" name, workflows from the old farm should continue to work.  
 
 
 
