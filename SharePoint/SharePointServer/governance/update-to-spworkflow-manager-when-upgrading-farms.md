@@ -223,14 +223,14 @@ To verify the Azure Service Fabric is installed, you should be able to find it i
 1. On the SharePoint server (if you haven't already) set up the **App Management** service using the upgraded App Management database from the old farm. See the “Move the App Management Database” step above.
 2. Create a new Subscription Settings service. 
 
-```powershell
-$sa = New-SPSubscriptionSettingsServiceApplication -ApplicationPool 'SharePoint Web Services Default' -Name 'Subscriptions Settings Service Application' -DatabaseName 'Subscription'
-New-SPSubscriptionSettingsServiceApplicationProxy -ServiceApplication $sa
-```
+    ```powershell
+    $sa = New-SPSubscriptionSettingsServiceApplication -ApplicationPool 'SharePoint Web Services Default' -Name 'Subscriptions Settings Service Application' -DatabaseName 'Subscription'
+    New-SPSubscriptionSettingsServiceApplicationProxy -ServiceApplication $sa
+    ```
 
 3. Check the App Management and Subscription service apps. They should be in "Started" state.
 
-:::image type="content" source="../media/sp-app-management-start-state.png" alt-text="confirm app management is in the start state":::
+   :::image type="content" source="../media/sp-app-management-start-state.png" alt-text="confirm app management is in the start state":::
 
 ## Step 4: Rejoin the Workflow Farm and Upgrade
 
@@ -238,11 +238,11 @@ New-SPSubscriptionSettingsServiceApplicationProxy -ServiceApplication $sa
 2. On the SPWFM server, open “Workflow Manager Configuration” and select **Join an existing Workflow Manager farm**.
 3. Enter the SQL Server and database details that the previous WFM 'classic' install was using, and then run through the setup.
 
-:::image type="content" source="../media/sp-workflow-management-wizard.png" alt-text="workflow manager configuration wizard":::
+   :::image type="content" source="../media/sp-workflow-management-wizard.png" alt-text="workflow manager configuration wizard":::
 
 4. Enter the password for the service account and the Certificate Generation Key. 
 
-:::image type="content" source="../media/sp-workflow-management-wizard2.png" alt-text="Workflow wizard with data":::
+   :::image type="content" source="../media/sp-workflow-management-wizard2.png" alt-text="Workflow wizard with data":::
 
 5. On the SPWFM server, open “Workflow Manager Configuration” again and select **Upgrade Workflow Manager Farm**, and let it run until finished.
 
@@ -255,7 +255,7 @@ Since SharePoint must contact the SPWFM service endpoint, the SharePoint servers
 
 1. On the SPWFM server, open **IIS Manager**. Right-click on the **Workflow Management Site** and choose **Edit Bindings**. Select the HTTPS binding on port 12290 and choose Edit. Select the "View" button next to SSL certificate.
 
-:::image type="content" source="../media/sp-workflow-iis-manager.png" alt-text="select iis manager":::
+   :::image type="content" source="../media/sp-workflow-iis-manager.png" alt-text="select iis manager":::
 
 2. Select the Details tab and choose “Copy to File…”
 3. Run through the Certificate Export Wizard to export the certificate without the private key as a**DER encoded binary X.509 (.CER)** certificate.
@@ -273,7 +273,7 @@ Since SharePoint must contact the SPWFM service endpoint, the SharePoint servers
 1. On the Central Admin server, right-click on the **SPWFM certificate .cer** file and choose **Install Certificate**.
 2. Using the Certificate Import Wizard, choose **Local Machine > Place all certificates in the following store > Browse > Trusted Root Certification Authorities**.
  
-:::image type="content" source="../media/sp-workflow-certificate-store.png" alt-text="certificate store":::
+   :::image type="content" source="../media/sp-workflow-certificate-store.png" alt-text="certificate store":::
  
 >[!Important]
 >You must repeat this certificate import step on all the SharePoint servers in the farm.
@@ -286,7 +286,7 @@ a.  Select **Workflow Management Site**. In the right-hand pane, choose **Browse
 b.  A browser opens; navigate to https://localhost:12290. If you allowed connections over HTTP during setup, you'll have an HTTP endpoint on port 12291 and an HTTPS endpoint on port 12290. 
 c. Test both the http and https endpoints.  
 
-2. **Check from your SharePoint servers**. Ultimately it's your SharePoint servers that must connect to the SPWFM endpoint, so you must make confirm there's  connectivity from there as well.  
+2. **Check from your SharePoint servers**. Ultimately it's your SharePoint servers that must connect to the SPWFM endpoint, so you must make confirm there's connectivity from there as well.  
 a. Sign in to one of your SharePoint Servers with either the **SPWFM RunAs** account, or as a user that is a member of AdminGroup. See “Check the service account and admin group” step above.  
 b. Browse to the FQDN of the SPWFM endpoint.  
 
