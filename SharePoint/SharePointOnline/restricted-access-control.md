@@ -1,5 +1,5 @@
 ---
-ms.date: 03/21/2025
+ms.date: 03/24/2025
 title: "Restrict SharePoint site access with Microsoft 365 groups and Microsoft Entra security groups"
 ms.reviewer: nibandyo
 manager: jtremper
@@ -63,7 +63,7 @@ It might take up to one hour for command to take effect
 
 ## Restrict access to group-connected sites (Microsoft 365 Groups and Teams)
 
-You can restrict site access to group-connected sites by specifying the Microsoft Entra security groups or Microsoft 365 groups which contain the users who have access to the site. You can configure up to 10 Microsoft Entra security groups or Microsoft 365 groups. Once the policy is applied, users in the specified group with site access permissions can now access to the site and its content. You can use dynamic security groups if you want to base group membership on user properties.
+You can restrict site access to group-connected sites by specifying the Microsoft Entra security groups or Microsoft 365 groups which contain the users who can access to the site. You can configure up to 10 Microsoft Entra security groups or Microsoft 365 groups. Once the policy is applied, users in the specified group with site access permissions can now access to the site and its content. You can use dynamic security groups if you want to base group membership on user properties.
 
 To manage site access restriction for a group-connected site in the SharePoint admin center
 
@@ -130,7 +130,7 @@ Shared and private channel sites [are separate from the Microsoft 365 group-conn
 For shared channel sites, only internal users in the resource tenant are subject to site access restriction. External channel participants are excluded from site access restriction policy and only evaluated per the site's existing site permissions.
 
 > [!IMPORTANT]
-> Adding people to the security group or Microsoft 365 group doesn't give users access to the channel in Teams. We recommend adding or removing the same users of the teams channel in Teams and the security group or Microsoft 365 group so users have access to both Teams and SharePoint.
+> Adding people to the security group or Microsoft 365 group doesn't give users access to the channel in Teams. We recommend adding or removing the same users of the teams channel in Teams and the security group or Microsoft 365 group so users have access to both Teams and SharePoint sites.
 
 ## Sharing of sites with Restricted site access policy
 
