@@ -37,14 +37,14 @@ After an agent is configured, anyone with permission to access the [SharePoint a
 
 |Category|Guidance|
 |:-----|:-----|
-|Determine how many agents you need|[How many agents to create](#agents-and-performance-considerations)|
-|Have the right credentials to use|SharePoint or OneDrive admin for migration destination and an on-premises account for source that has access to ALL network file shares you plan to migrate. Confirm that you have SharePoint or OneDrive Admin credentials to access the "destination" of where you are migrating your content. Verify the on-premises credentials you plan on using to configure the agent has access to all the network file shares you plan to migrate.  |
-|Virtual machines or computers to use:|Determine how many VMs or computers you plan on using for your migration project. List the computers or VMs before you start.|
-|[Verify prerequisites](mm-prerequisites.md)|Make sure your computer meets the requirements.|
-|[Check required endpoints](mm-prerequisites.md)|Verify that you have the required endpoints configured.|
-|[Multi-geo tenant](#multi-geo-agent-setup)|If you have a multi-geo tenant, be sure to understand where the agent is installed.|
-|[Pre-provision OneDrive accounts](/onedrive/pre-provision-accounts)|If you are migrating to OneDrive accounts, make sure the accounts are pre-provisioned before you migrate. Pre-provisioning can be done by using a script as described here: [Pre-provision OneDrive for users in your organization](/onedrive/pre-provision-accounts).|
-|[Government Cloud](mm-gov-cloud.md)|If your tenant resides in a government cloud, you might have extra steps to perform before using Migration Manager.|
+|Determine how many agents you need. |[How many agents to create](#agents-and-performance-considerations). |
+|Have the right credentials to use|SharePoint or OneDrive admin for migration destination and an on-premises account for source that has access to ALL network file shares you plan to migrate. Confirm that you have SharePoint or OneDrive Admin credentials to access the "destination" of where you are migrating your content. Verify the on-premises credentials you plan on using to configure the agent has access to all the network file shares you plan to migrate. ||
+|Virtual machines or computers to use. |Determine how many VMs or computers you plan on using for your migration project. List the computers or VMs before you start. |
+|Make sure your computer meets the requirements. |[Verify prerequisites](mm-prerequisites.md) |
+|Verify that you have the required endpoints configured. |[Check required endpoints](mm-prerequisites.md) |
+|Multi-geo tenant. |If you have a multi-geo tenant, be sure to understand where the agent is installed. [Multi-geo tenant](#multi-geo-agent-setup). |
+|[Pre-provision OneDrive accounts](/onedrive/pre-provision-accounts) |If you are migrating to OneDrive accounts, make sure the accounts are pre-provisioned before you migrate. Pre-provisioning can be done by using a script as described here: [Pre-provision OneDrive for users in your organization](/onedrive/pre-provision-accounts). |
+|[Government Cloud](mm-gov-cloud.md) |If your tenant resides in a government cloud, you might have extra steps to perform before using Migration Manager.|
 
 > [!TIP]
 > Create a service account with administrative rights for your agent to run on the server or VM. This account should have read access to the sources you plan to migrate, and SharePoint or OneDrive administrator access to the destination specifically for your migration project. Log into each VM or computer with this account before running the setup file to ensure that the agent installs as a service.
@@ -72,17 +72,16 @@ To calculate the minimum required number of agents to use for your migration:
 2. From the SharePoint admin center, select <strong><a href="https://go.microsoft.com/fwlink/?linkid=2185075" target="_blank">Migration center</a></strong>. You need to sign in with an account that has [SharePoint Administrator permissions](/sharepoint/sharepoint-admin-role) for your organization.
 3. Under "For file shares", select **Get started**.
 4. Select the **Agents** tab, and then select **Add**.
-1. Select **Download agent setup file**. (To get the latest bug fixes, feature improvements or new features, find the latest public preview download link in '[What’s New](/sharepointmigration/mm-whats-new)')
-1. Open the setup file. On the Welcome page, select the authentication method, select **Next**.
-1. If you select **User Credential Authentication**, enter the SharePoint admin username and password of the environment where you are migrating your content. Select **Next**. If you select **Certificate Authentication**, upload the certificate auth config file. Select **Next.**
-
+5. Select **Download agent setup file**. (To get the latest bug fixes, feature improvements or new features, find the latest public preview download link in '[What’s New](/sharepointmigration/mm-whats-new)')
+6. Open the setup file. On the Welcome page, select the authentication method, select **Next**.
+7. If you select **User Credential Authentication**, enter the SharePoint admin username and password of the environment where you are migrating your content. Select **Next**. If you select **Certificate Authentication**, upload the certificate auth config file. Select **Next.**
 8. Enter the password of the Windows account that provides access to **all** the file shares that contain the content you want to migrate. Select **Install**.
 9. Test agent access (optional) or select **Close**.  After the setup is completed, the new agent will be added to the available agents that can be assigned tasks.
 
 > [!NOTE]
 > Multiple agents: If you have a large migration project and need to set up multiple agents, we recommend that you download the agent setup file to a shared location. That way, you can easily download the setup file on each computer or VM. Multiple agents allow you to batch certain migration jobs to particular groups depending on your needs. For example, you can group agents by datacenter to achieve better performance based on geographical location.
 
-Example: You are migrating 10,000 users from on-premises shares in two datacenters to OneDrive. 2,000 users have data stored in a California datacenter, and 8,000 users have data stored in a Vermont datacenter. You installed two agents at the California datacenter and six agents at the Vermont datacenter. By grouping the agents geographically, you could batch migrations where the source data is in California to the California agent group and for Vermont data to the Vermont agent group. Geographical grouping provides performance benefits. Without geographical grouping, all datacenters would be in a default group, and you wouldn't have control over which agents are used. This could cause the California agents to migrate Vermont data and Vermont agents to migrate California data. While this technically migrates files, performance could be affected.
+Example: You're migrating 10,000 users from on-premises shares in two datacenters to OneDrive. 2,000 users have data stored in a California datacenter, and 8,000 users have data stored in a Vermont datacenter. You installed two agents at the California datacenter and six agents at the Vermont datacenter. By grouping the agents geographically, you could batch migrations where the source data is in California to the California agent group and for Vermont data to the Vermont agent group. Geographical grouping provides performance benefits. Without geographical grouping, all datacenters would be in a default group, and you wouldn't have control over which agents are used. This could cause the California agents to migrate Vermont data and Vermont agents to migrate California data. While this technically migrates files, performance could be affected.
 
 ### Working folder
 
