@@ -25,9 +25,9 @@ description: "Step 5:  Map Box identities with Migration Manager."
 
 # Step 5: Map identities of Box accounts to Microsoft 365 accounts
 
-Identity Mapping is when you match the user and group identities that have access to your source environment (in this case Box) and map those identities to Microsoft 365 user and group identities. This process is important to migration. If identities aren't properly set up prior to migration, it can result in users losing access to content. It can also result in information being incorrect at the destination.
+Identity Mapping is when you match the user and group identities that have access to your source environment (in this case Box) and map those identities to Microsoft 365 user and group identities. This process is important to migration. If identities aren't properly set up before migration, it can result in users losing access to content. It can also result in information being incorrect at the destination.
 
-Map your groups and users in Box to those in Microsoft 365 to migrate your Box sharing settings.
+Map your groups and users in Box to groups and users in Microsoft 365 to migrate your Box sharing settings.
 
 1. Select the **User migrations** tab.
 2. Select **Map identities** on the menu bar.
