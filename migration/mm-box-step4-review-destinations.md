@@ -30,7 +30,7 @@ In this step, review the destination paths of the accounts you moved to the user
 
 If a destination is missing on a single user, highlight the row and update the value.
 
-1. Highlight the row. Under **Destination**, select **Edit.**
+1. Highlight the row. Under **Destination**, select **Edit**.
 2. You can choose a OneDrive, SharePoint, or Teams path as a destination.
 
     - For OneDrive, enter the OneDrive URL or email address and the location/folder name
@@ -55,7 +55,7 @@ If there are many destinations to edit, you can choose to upload a bulk destinat
   >[!Note]
   >The validation process may take a while and can be skipped. However, we strongly recommend you complete the validation. You can always open another browser tab to continue Migration Manager operations.</br>
 
-4. A validation report is generated if issues are found. Download the report to fix the issues based on the error message provided. Then re-upload the fixed destinations to pass the validation.
+4. A validation report is generated if issues are found. Download the report to fix the issues based on the error message provided. Then reupload the fixed destinations to pass the validation.
 5. Select **Save**.  
 
 >[!Important]
