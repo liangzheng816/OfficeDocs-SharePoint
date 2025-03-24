@@ -240,7 +240,7 @@ The following features were added in this release:
 
 |**Feature**|**Description**|
 |:-----|:-----|
-|Added selection feature |When migrating fileshares, users can choose to indicate the root folder as part of their source selection. |
+|Added selection feature |When users migrate fileshares, they can choose to indicate the root folder as part of their source selection. |
 
 **Improvements**
 
