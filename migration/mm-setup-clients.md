@@ -91,7 +91,7 @@ A working folder named `%appdata%\Microsoft\SPMigration` is created for each age
 
 If you have a Multi-Geo SharePoint tenant, the agent is installed in <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank">Geo locations</a> set in the SharePoint admin center. Before installing the agent, make sure the desired geo-location is the one set in the admin center. To change an agent's geo-location, delete and reinstall the agent.
 
-Learn more: [Multi-Geo Capabilities in OneDrive and M365](/microsoft-365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365)
+Learn more: [Multi-Geo Capabilities in OneDrive and Microsoft 365](/microsoft-365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365)
 
 To install an agent to a different Geo location:
 
