@@ -1,5 +1,5 @@
 ---
-ms.date: 10/11/2023
+ms.date: 03/24/2025
 title: "Setup Migration Manager agents"
 ms.reviewer: jhendr
 ms.author: heidip
@@ -38,13 +38,13 @@ After an agent is configured, anyone with permission to access the [SharePoint a
 |Category|Guidance|
 |:-----|:-----|
 |Determine how many agents you need. |[How many agents to create](#agents-and-performance-considerations). |
-|Have the right credentials to use|SharePoint or OneDrive admin for migration destination and an on-premises account for source that has access to ALL network file shares you plan to migrate. Confirm that you have SharePoint or OneDrive Admin credentials to access the "destination" of where you are migrating your content. Verify the on-premises credentials you plan on using to configure the agent has access to all the network file shares you plan to migrate. ||
+|Have the right credentials to use |SharePoint or OneDrive admin for migration destination and an on-premises account for source that has access to ALL network file shares you plan to migrate. Confirm that you have SharePoint or OneDrive Admin credentials to access the "destination" of where you are migrating your content. Verify the on-premises credentials you plan on using to configure the agent has access to all the network file shares you plan to migrate. ||
 |Virtual machines or computers to use. |Determine how many VMs or computers you plan on using for your migration project. List the computers or VMs before you start. |
-|Make sure your computer meets the requirements. |[Verify prerequisites](mm-prerequisites.md) |
-|Verify that you have the required endpoints configured. |[Check required endpoints](mm-prerequisites.md) |
+|System requirements. |Make sure your computer meets the requirements. [Verify prerequisites](mm-prerequisites.md) |
+|Endpoints. |Make sure you have the required endpoints configured. [Check required endpoints](mm-prerequisites.md) |
 |Multi-geo tenant. |If you have a multi-geo tenant, be sure to understand where the agent is installed. [Multi-geo tenant](#multi-geo-agent-setup). |
-|[Pre-provision OneDrive accounts](/onedrive/pre-provision-accounts) |If you are migrating to OneDrive accounts, make sure the accounts are pre-provisioned before you migrate. Pre-provisioning can be done by using a script as described here: [Pre-provision OneDrive for users in your organization](/onedrive/pre-provision-accounts). |
-|[Government Cloud](mm-gov-cloud.md) |If your tenant resides in a government cloud, you might have extra steps to perform before using Migration Manager.|
+|[Pre-provision OneDrive accounts](/onedrive/pre-provision-accounts) |If you're migrating to OneDrive accounts, make sure the accounts are pre-provisioned before you migrate. Pre-provisioning can be done by using a script as described here: [Pre-provision OneDrive for users in your organization](/onedrive/pre-provision-accounts). |
+|[Government Cloud](mm-gov-cloud.md) |If your tenant resides in a government cloud, you may have extra steps to perform before using Migration Manager. |
 
 > [!TIP]
 > Create a service account with administrative rights for your agent to run on the server or VM. This account should have read access to the sources you plan to migrate, and SharePoint or OneDrive administrator access to the destination specifically for your migration project. Log into each VM or computer with this account before running the setup file to ensure that the agent installs as a service.
@@ -76,7 +76,7 @@ To calculate the minimum required number of agents to use for your migration:
 6. Open the setup file. On the Welcome page, select the authentication method, select **Next**.
 7. If you select **User Credential Authentication**, enter the SharePoint admin username and password of the environment where you are migrating your content. Select **Next**. If you select **Certificate Authentication**, upload the certificate auth config file. Select **Next.**
 8. Enter the password of the Windows account that provides access to **all** the file shares that contain the content you want to migrate. Select **Install**.
-9. Test agent access (optional) or select **Close**.  After the setup is completed, the new agent will be added to the available agents that can be assigned tasks.
+9. Test agent access (optional) or select **Close**.  After the setup is completed, the new agent is added to the available agents that can be assigned tasks.
 
 > [!NOTE]
 > Multiple agents: If you have a large migration project and need to set up multiple agents, we recommend that you download the agent setup file to a shared location. That way, you can easily download the setup file on each computer or VM. Multiple agents allow you to batch certain migration jobs to particular groups depending on your needs. For example, you can group agents by datacenter to achieve better performance based on geographical location.
@@ -135,4 +135,4 @@ Pausing a task doesn't release the agent to another task. An agent remains unava
 
 The connection between the agent (as a service) and Migration Manager stays active as long as the computer is still running and the SharePoint admin credentials that were used to sign into the agent are still valid.
 
-If the agent does becomes disconnected, it still holds the token to the Migration Manager for up to seven days. After that time, the agent will need to be reinstalled.
+If the agent does becomes disconnected, it still holds the token to the Migration Manager for up to seven days. After that time, the agent needs to be reinstalled.
