@@ -25,7 +25,7 @@ description: "Learn how to copy to migrations for file share migration."
 
 # Step 3: Copy to migrations for file share migration
 
-After a file share has been scanned and determined ready, add it to your migration list.
+After a file share is scanned and determined to be ready, add it to your migration list.
 
 1. Highlight one or rows from the scanned list. From the menu bar, select **Copy to migrations**.
 
@@ -54,20 +54,20 @@ After a file share has been scanned and determined ready, add it to your migrati
 
 ## Incremental migration
 
-After a migration task has completed, you can rerun it at a later date, allowing you to copy only those new or updated files in the source location.
+After a migration task is completed, you can rerun it at a later date, allowing you to copy only those new or updated files in the source location.
 
 An incremental check of your SharePoint destination environment is performed. Files are evaluated as follows (regardless of an initial or incremental migration):
   
 | Status | Result |
 |:-----|:-----|
-|The modified time of the source file is earlier than the modified time of the target file. |File won't be migrated. |
-|A file is removed from the source location. |Already migrated files will remain in the target location. |
-|Files or lists exist in the SharePoint target location. |Migration will skip those existing objects during scan. |
+|The modified time of the source file is earlier than the modified time of the target file. |File isn't migrated. |
+|A file is removed from the source location. |Already migrated files remain in the target location. |
+|Files or lists exist in the SharePoint target location. |Migration skips those existing objects during scan. |
 |The time stamp on files or objects in the source location is newer than in the source. |The newer files are migrated. |
-|The source is a file share. |Validation for migration will be based on the file/folder path. |
-|The source is an on-premises SharePoint server. |Validation for migration will be based on list item GUID. Use the folder path as a fallback. |
-|An already migrated file is renamed or path is changed but still in the same document library. |Incremental migration will use the corresponding source file and overwrite the file. |
-|The migrated file is changed in the destination location, but the file name remains the same. |Incremental migration won't overwrite the changed file. |
+|The source is a file share. |Validation for migration is based on the file/folder path. |
+|The source is an on-premises SharePoint server. |Validation for migration is based on list item GUID. Use the folder path as a fallback. |
+|An already migrated file is renamed or path is changed but still in the same document library. |Incremental migration uses the corresponding source file and overwrite the file. |
+|The migrated file is changed in the destination location, but the file name remains the same. |Incremental migration doesn't overwrite the changed file. |
 
 >[!Important]
 >We strongly recommend that you don't rename or move migrated files before the final migration is completed. Doing so results in files being overwritten.
