@@ -43,7 +43,7 @@ A table summary appears at the top of the page to give you an at-a-glance overvi
 
 2. Review the scanned file shares. Search for specific text, or select a filter to review the list more easily.
 
-1. Select **Add source path** if you want to scan additional file shares.
+1. Select **Add source path** if you want to scan more file shares.
 
     :::image type="content" alt-text="Fileshare scan list." source="media/mm-fileshare-scan-list.png":::
 
