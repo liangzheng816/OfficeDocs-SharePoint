@@ -4,7 +4,6 @@ title: "Review the destination paths for your Box migration with Migration Manag
 ms.reviewer: 
 ms.author: heidip
 author: MicrosoftHeidi
-ms.date: 02/27/2025
 manager: jtremper
 audience: ITPro
 f1.keywords:
