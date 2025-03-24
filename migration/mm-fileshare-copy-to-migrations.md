@@ -31,9 +31,9 @@ After a file share is scanned and determined to be ready, add it to your migrati
 
     :::image type="content" alt-text="File share scan list." source="media/mm-fileshare-scan-list.png" lightbox="media/mm-fileshare-scan-list.png":::
 
-2. Add a destination -- OneDrive, SharePoint or Teams. Select **Next**.
+2. Add a destination: OneDrive, SharePoint, or Teams. Select **Next**.
 
-3. Select a SharePoint site destination.  Enter the site path and the location within the site from the dropdown list. Select **Next**.
+3. Select a SharePoint site destination. Enter the site path and the location within the site from the dropdown list. Select **Next**.
 
    :::image type="content" alt-text="Select a destination for your file share." source="media/mm-fileshare-copy-migrations-destinations.png":::
 
@@ -66,7 +66,7 @@ An incremental check of your SharePoint destination environment is performed. Fi
 |The time stamp on files or objects in the source location is newer than in the source. |The newer files are migrated. |
 |The source is a file share. |Validation for migration is based on the file/folder path. |
 |The source is an on-premises SharePoint server. |Validation for migration is based on list item GUID. Use the folder path as a fallback. |
-|An already migrated file is renamed or path is changed but still in the same document library. |Incremental migration uses the corresponding source file and overwrite the file. |
+|An already migrated file is renamed or path is changed but still in the same document library. |Incremental migration uses the corresponding source file and overwrites the file. |
 |The migrated file is changed in the destination location, but the file name remains the same. |Incremental migration doesn't overwrite the changed file. |
 
 >[!Important]
