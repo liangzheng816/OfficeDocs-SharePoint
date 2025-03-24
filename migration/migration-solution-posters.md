@@ -1,5 +1,5 @@
 ---
-ms.date: 04/29/2021
+ms.date: 03/24/2025
 title: "Content Migration solutions posters"
 ms.reviewer: 
 ms.author: heidip
@@ -16,7 +16,6 @@ ms.collection:
 - m365solution-scenario
 - M365-collaboration
 - SPMigration
-- highpri
 - m365initiative-migratetom365
 search.appverid: MET150
 description: Series of illustrations and posters showing the Content Migration solutions into Microsoft 365.
