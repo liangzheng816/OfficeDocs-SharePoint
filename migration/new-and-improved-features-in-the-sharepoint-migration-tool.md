@@ -24,7 +24,7 @@ description: "Learn about the new features and updates to existing features in S
 
 Learn about the new features and updates to existing features in SharePoint Migration Tool.
   
-## Current and pre-release versions
+## Current and prerelease versions
 
 Download and install SPMT using one of the links listed in the table.
 
@@ -38,7 +38,7 @@ Download and install SPMT using one of the links listed in the table.
 
 |Feature| Description |
 | -------- | -------- |
-|Certificate Based Authentication |SPMT allows users to use Azure App Registrations with certificate authentication as the identity model to migrate on-premises content, including network file share and SharePoint Server content, to SharePoint Online and OneDrive. [Learn more](/sharepointmigration/migration-with-cba). |
+|Certificate Based Authentication |SPMT allows users to use Azure App Registrations with certificate authentication as the identity model to migrate on-premises content, including network file share and SharePoint Server content, to M365 and OneDrive. [Learn more](/sharepointmigration/migration-with-cba). |
 
 ## SPMT 4.1
 
@@ -46,11 +46,11 @@ SPMT 4.1 includes two major new features; the support of SharePoint Server 2019 
 
 **What's new in this release**
 
-- **SharePoint Server 2019**. We now support the migration of SharePoint Server 2019 to Microsoft 365.  You can now migrate: 
+- **SharePoint Server 2019**. We now support the migration of SharePoint Server 2019 to Microsoft 365. You can now migrate: 
     - Modern team sites & Communication sites.
-    - Modern site pages and news posts along with the site structure. If a page is checked out, the previously checked-in version is migrated. Comments are not migrated. 
+    - Modern site pages and news posts along with the site structure. If a page is checked out, the previously checked-in version is migrated. Comments aren't migrated. 
     - Files or folders with "#" or "%" in their name can be migrated. These special characters are retained in migration.
-- **SharePoint Designer 2010 and 2013 workflows**. SharePoint Designer workflows can now be migrated to Power Automate. 
+- **SharePoint Designer 2010 and 2013 workflows**. SharePoint Designer workflows can now be migrated to Power Automate.
 
 ## SPMT 4.0
 
@@ -73,7 +73,7 @@ The new SPMT landing page presents you with straightforward entry points to thre
 
 The number of currently running tasks for each scenario can give you a quick glance at the migration status.
 
-The "add new migration" flow guides you to enter different sub-migration scenarios with clear context and user interactions. This change lets you focus on one scenario to get the configuration done faster.
+The "add new migration" flow guides you to enter different submigration scenarios with clear context and user interactions. This change lets you focus on one scenario to get the configuration done faster.
 
 #### Easier to manage your migration tasks
 
@@ -86,7 +86,7 @@ SPMT 4.0 comes with a new page navigation design that makes it easier for you to
 
 When you start a migration, SPMT launches a migration progress page where you can watch the status changes. Unlike previous releases, you don’t have to wait for the migration to be completed. You can just dismiss the page by clicking "Back to list" and work on other tasks in the tool.
 
-Once the migration is completed or failed, you receive a toast message showing the status. The "See details" link brings you back to the progress page where includes details of the migration.
+Once the migration is completed or failed, you receive a toast message showing the status. The "See details" link brings you back to the progress page, which includes details of the migration.
  
 #### Assess your SharePoint Server sites directly in SPMT
 
@@ -96,7 +96,7 @@ As with the migration experience, you can add a new scan by following the wizard
 
 Selecting the source URL link on the scan list page prompts you to the scan result dashboard. The dashboard presents the overview information of site inventory and potential migration risks.
 
-Scroll down below inventory numbers, you can see breakdown by content types and risk types.  An excel report can be downloaded for you to do deeper analysis.
+Scroll down to inventory numbers and you can see a breakdown by content types and risk types. An excel report can be downloaded for you to do deeper analysis.
 
 - [Scan and assess a SharePoint Server site with SPMT](/sharepointmigration/spmt-scan)
 - [SharePoint Migration Tool (SPMT) scan assessment error codes](/sharepointmigration/spmt-scan-risk-codes)
@@ -150,7 +150,7 @@ Scroll down below inventory numbers, you can see breakdown by content types and 
 
 |Feature|Description|
 |:-----|:-----|
-|Support migration of files with size up to 100 GB |We now support the migration of individual files up to 100 GB, which is file size limit for SharePoint online. |
+|Support migration of files with size up to 100 GB |We now support the migration of individual files up to 100 GB, which is file size limit for M365. |
 |Display time elapsed and time remaining for each migration |On the migration progress page, the *time elapsed* and *time remaining* values are displayed for each migration task. *Time remaining* is estimated based on the migration history and displays when there's enough historical data available to run the estimation. The *time remaining" value adjusts according to the history data. After the migration completes, a performance recommendation based on the analysis of the data displays below the top progress bar. </br>Learn more: [How to improve migration performance](./spmt-performance-guidance.md). |
 
 ### SPMT 3.4.121.2
@@ -160,7 +160,7 @@ Scroll down below inventory numbers, you can see breakdown by content types and 
 |Feature|Description|
 |:-----|:-----|
 |Government Cloud configuration |The configuration value of DoD is changed from 2 to 3. DoD customers must change the value of *SPOEnvironmentType* to 3. The value for GCC (Government on Community Cloud) high is still 2. |
-|OneNote setting deprecated |The setting *Migrate OneNote folder as OneNote notebook* is deprecated. SPMT now always migrates OneNote folders to the destination as OneNote Notebooks. Discontinue the use of *MigrateOneNoteFolderAsOneNoteNoteBook* in PowerShell. |
+|OneNote setting deprecated |The setting **Migrate OneNote folder as OneNote notebook** is deprecated. SPMT now always migrates OneNote folders to the destination as OneNote Notebooks. Discontinue the use of **MigrateOneNoteFolderAsOneNoteNoteBook** in PowerShell. |
 
 ### SPMT 3.4.121.0
 
@@ -177,7 +177,7 @@ The following improvements were added to this release:
 
 |Issue|Fix|
 |:-----|:-----|
-|User interface |Warning messages display in the tool when migration is throttled by SharePoint. |
+|User interface |Warning messages display in the tool when SharePoint throttles migration. |
 
 ### SPMT 3.4.120.2
 
@@ -219,7 +219,7 @@ The following features were added in this release:
 
 |Feature|Description|
 |:----|:-----|
-|New/updated setting |The setting, **Migrate site settings**, is now an options setting, giving the user more control over what is migrated.  The user can select one of the following options: *Preserve all settings*, *Skip title and logo*, *Only title and logo*, or *Skip all settings*. |
+|New/updated setting |The setting, **Migrate site settings**, is now an options setting, giving the user more control over what's migrated. The user can select one of the following options: *Preserve all settings*, *Skip title and logo*, *Only title and logo*, or *Skip all settings*. |
 |New parameter |A new parameter, **-MigrateWithoutRootFolder**, is added to the cmdlet, Register-SPMTMigration. In file share migrations, use this parameter to migrate only the root folder's contents to the target. |
 
 ### SPMT 3.4.119.5
@@ -256,7 +256,7 @@ The following features were added in this release:
 
 |**Feature**|**Description**|
 |:-----|:-----|
-|SharePoint Server 2016 |Ability to migrate SharePoint Server 2016 sites to SharePoint online. |
+|SharePoint Server 2016 |Ability to migrate SharePoint Server 2016 sites to M365. |
 
 **Improvements**
 
@@ -288,10 +288,10 @@ The following features were added to the SharePoint Migration Tool in this relea
 |:-----|:-----|
 |User feedback|Users can now provide feedback directly from the tool.|
 |Site creation for file shares|Site structure creation is now supported for file share migration.|
-|Records management|Support for SharePoint Server migration of Record libraries with limitations. Library record declaration settings are supported for SharePoint Server 2013 and 2016 only. Files declared as records can be migrated directly. Site collection record declarations settings aren't supported for SharePoint Online group sites and communication sites.|
+|Records management|Support for SharePoint Server migration of Record libraries with limitations. Library record declaration settings are supported for SharePoint Server 2013 and 2016 only. Files declared as records can be migrated directly. Site collection record declarations settings aren't supported for M365 group sites and communication sites.|
 |Enable publishing|Users can now choose to skip enabling publishing feature on SharePoint communication site| 
 |Setting|New setting allows you to not migrate the site and list general settings in a single list migration.| 
-|Setting|New SharePoint setting, "Migrate site settings". Choose if you want to migrate site logo, title, description and other general settings). Default value is on. If it's turned off, the setting is skipped when migrating to existing destination site in site migration.| 
+|Setting|New SharePoint setting, "Migrate site settings". Choose if you want to migrate site logo, title, description, and other general settings. The default value is on. If turned off, the setting is skipped when migrating to existing destination site in site migration.| 
 |Taxonomy migration|By default, managed metadata migration is turned off, and taxonomy is updated in incremental round.|
 
 **Improvements**
@@ -313,7 +313,7 @@ The following features were added to the SharePoint Migration Tool in this relea
 |:-----|:-----|
 |Document set support |SPMT attempts to enable the document set feature on site. If enabling fails, the items in the document set is skipped, and all the files under the documents are skipped. |
 |Document Template |You can define a document template and choose to have it applied when adding new files. SPMT now supports customized document templates.|
-|Web part templates |If your web part document template isn't available in SharePoint Online, SPMT can migrate the template from your source environment. |
+|Web part templates |If your web part document template isn't available in M365, SPMT can migrate the template from your source environment. |
 
 **Improvements**
 
@@ -336,7 +336,7 @@ The following features were added to the SharePoint Migration Tool in this relea
 |Subfolder section |Support for SharePoint Server subfolder selection. |
 |SharePoint 2010 sites |Support for SharePoint Server 2010 site migration. |
 |Government cloud |Support for Government cloud (U.S.). |
-|List templates |Support for the following list templates are added:</br></br>- Promoted Link list (ListTemplateType. Value = 170).</br>- Categories List (ListTemplateType. Value = 500).</br>- Asset Library (ListTemplateType. Value = 851).</br></br> For a complete list of supported list templates see: [SharePoint list templates supported by SPMT](sharepoint-migration-supported-list-templates.md). |
+|List templates |Support for the following list templates is added:</br></br>- Promoted Link list (ListTemplateType. Value = 170).</br>- Categories List (ListTemplateType. Value = 500).</br>- Asset Library (ListTemplateType. Value = 851).</br></br> For a complete list of supported list templates see: [SharePoint list templates supported by SPMT](sharepoint-migration-supported-list-templates.md). |
 
 ### SPMT V3.1.110.1
 
@@ -429,7 +429,7 @@ In addition to many minor fixes, here are the primary improvements made in this 
 |:-----|:-----|
 |Stability  <br/> |General improvements are made to remove some errors in tool.  <br/> |
 |Permissions settings<br/> |Separate settings are now available to set file share permissions and the SharePoint on-premises permissions. <br/> |
-|Changes to migrating multiple versions <br/> |Checked-in versions of a file is migrated but the checked-out version isn't. <br/> |
+|Changes to migrating multiple versions <br/> |Checked-in versions of a file are migrated but the checked-out version isn't. <br/> |
 
 ### SPMT V1.1.90.1
 
