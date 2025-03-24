@@ -38,7 +38,7 @@ If a destination is missing on a migration task (equals a Drive in Google), high
 3. Select **Save path**.
 >[!Note]
 > - If the task contains Google Forms, the "Edit destination" panel will prompt you to update an additional value called "Forms destination". Enter the email address of the destination user in Microsoft 365 where you want to store the Forms files.
-> - If the desired destination doesn’t appear in the dropdown list, please upload it using a CSV file as described below.
+> - Destinations might not be visible on the UI due to admin access limitations, multi-geo tenant issues, recent site creation delays, or special characters in the destination path. If this occurs, please upload the data using a CSV file as described in the section below.
 
 ## Upload destinations using a CSV file
 

@@ -1,6 +1,6 @@
 ---
 title: "Permission settings in Migration Manager"
-ms.date: 11/15/2023
+ms.date: 03/11/2025
 ms.reviewer: 
 ms.author: heidip
 author: MicrosoftHeidi
@@ -24,17 +24,38 @@ description: Learn about configuring project permissions in Migration Manager.
 Review your settings to ensure that the same users with access to files, folders, and metadata will continue to have access after migration.
 
 ## Migrate permissions
-By default, Migration Manager migrates folders permissions.  File permissions aren't migrated, and destination files inherit parent folder permissions.
+Permissions are migrated along with the files. During the initial migration, all permissions are migrated. In the delta sync (incremental migration), permissions are only migrated when the corresponding files are transferred. Learn more about [delta sync and permission update](mm-delta-sync.md).
 
-File permissions migration can be enabled by Project settings:
- 
-:::image type="content" source="media/mm-project-settings-toolbar.png" alt-text="project settings":::
+To correctly migrate permissions, please ensure:
+- [Identity mapping](#map-identities) is completed before any migration.
+- Permission settings are configured as needed:
+  + Folder permissions: By default, Migration Manager migrates folders permissions. File permissions aren't migrated, and destination files inherit parent folder permissions.
+  + File permissions: File permissions migration can be enabled in the Project settings. Once enabled, the destination file permissions will be the same as they are in the source. This ensures that migrated files are shared with the same users as before migration.
 
-Once enabled, the destination file permissions will be the same as they are in source.  This ensures that migrated files are shared with the same users as before migration.  
+After migration, the permission roles in Microsoft 365:
+
+|**Cloud source**|**Permission role in the source**|**Permission role in OneDrive/SharePoint**|
+|:-----|:-----|:-----|
+|Google Personal Drive	|Owner	|Owner|
+|Google Personal Drive	|Editor	|Can edit|
+|Google Personal Drive	|Commenter/Viewer	|Can view|
+|Google Shared Drive	|Manager/Content Manager/Contributor	|Can edit|
+|Google Shared Drive	|Commenter/Viewer	|Can view|
+|Box	|Owner	|Owner|
+|Box	|Co-owner/Viewer Uploader/Previewer Uploader/Uploader/Editor	|Can edit|
+|Box	|Previewer/Viewer	|Can view|
+|Dropbox	|Owner	|Owner|
+|Dropbox	|Editor	|Can edit|
+|Dropbox	|Viewer	|Can view|
+|Egnyte	|Owner	|Owner|
+|Egnyte	|Full/Editor	|Can edit|
+|Egnyte	|Viewer	|Can view|
 
 > [!Note]
 > - Migrating file permissions may slow down your migration process.
-> - While permissions are migrated, 'Share With Me' information in OneDrive can't be surfaced for now. 
+> - When migrating to the document library in a SharePoint site, if you choose the library as the destination, the root folder permissions in the source will not be migrated. To avoid this, please create a folder in the library and assign it as the destination.
+> - Currently, group mapping of Egnyte is not supported, so group permissions in Egnyte are not migrated.
+
 ## Map identities
 
 Identity Mapping is when you match the user and group identities that have access to your source environment and map those identities to Microsoft 365 user and group identities. This process is important to migration. If identities aren't properly set up prior to migration, it can result in users losing access to content. It can also result in information being incorrect at the destination.

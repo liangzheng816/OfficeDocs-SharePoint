@@ -67,13 +67,6 @@ Learn how to plan your communication strategy by reviewing common communication 
 
 This poster illustrates how Relecloud keeps employees informed and engaged across popular communication scenarios. Relecloud uses various Microsoft 365 apps, including a new offering, Viva Connections.
 
-[ ![Image of the corporate communication planning poster.](media/corporate-communication-relecloud.png)](media/corporate-communication-relecloud.png#lightbox)
-
-
-[Download the PDF version of this poster](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/relecloud-corporate-communication-poster.pdf) or [download this poster as a Visio file](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/relecloud-corporate-communication-poster.vsdx) to make custom edits for your organization.
-<br>
-<br>
-
 
 | Icon                 | Scenario             | Solution details|
 | :------------------: | :------------------- |:----------------|
@@ -131,7 +124,3 @@ Give end users a head start by helping them use and engage using popular Microso
 <br>
 
 **Step 4:** [Get started planning for your scenario](choose-communication-method.md)
-
-<br>
-<br>
-
