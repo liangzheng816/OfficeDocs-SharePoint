@@ -68,7 +68,7 @@ To calculate the minimum required number of agents to use for your migration:
 
 ## Set up an agent
 
-1. Sign in to the computer or VM you choose to set up an agent with credentials that have read access to all file shares you plan to migrate.
+1. Sign in to the computer or VM you choose to set up an agent with credentials that have **Read** access to all file shares you plan to migrate.
 2. From the SharePoint admin center, select <strong><a href="https://go.microsoft.com/fwlink/?linkid=2185075" target="_blank">Migration center</a></strong>. You need to sign in with an account that has [SharePoint Administrator permissions](/sharepoint/sharepoint-admin-role) for your organization.
 3. Under "For file shares", select **Get started**.
 4. Select the **Agents** tab, and then select **Add**.
