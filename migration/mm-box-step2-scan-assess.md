@@ -26,10 +26,13 @@ description: "Step 2:  Scan and assess Box users using Migration Manager."
 # Step 2: Scan and assess Box users
 
 > [!NOTE]
-> "Step 2: Scan and access Box users" can now be skipped to alleviate Box throttling. Once the users (tasks) are added to the Scan list, they can be copied to the Migrations tab instantly for migration operations. Note that Migration Manager doesn't discover any possible errors and warnings before migration if the scan process is skipped.
+> "Step 2: Scan and access Box users" can now be skipped to alleviate Box throttling. Once the users (tasks) are added to the Scan list, they can be copied to the Migrations tab instantly for migration operations.
+
+> [!NOTE]
+> Migration Manager doesn't discover any possible errors and warnings before migration if the scan process is skipped.
 
 After you connect, scan and assess your Box user accounts.
-1. Select **Add users** from the menu bar to choose how to add users:</br> - **All new users** to auto-discover all new users in Box</br>- **Single user** for only one account,  or </br>- **Multiple specific users** to bulk upload users by entering them into a CSV file to upload.
+1. Select **Add users** from the menu bar to choose how to add users:</br> - **All new users** to autodiscover all new users in Box</br>- **Single user** for only one account,  or </br>- **Multiple specific users** to bulk upload users by entering them into a CSV file to upload.
 2. Choose to **Automatically start scanning now** or choose to scan later.
 3. Select **Add**.
 4. Highlight any or all of the accounts and then select **Scan** if you chose not to auto scan earlier.
@@ -47,14 +50,14 @@ Summary and detailed scan reports are available to assist you in troubleshooting
 1. Once the scan is complete, select **Download reports** from the menu bar for *summary* reports.
 
    ![add source paths manually in Box](media/mm-add-source-path.png)
-   
+
 2. Highlight a selected Box user, and select **Download scan log**  to download a *detailed* scan report of that user account. </br>
 
 ## Managing users who own large amounts of data
 
 Upon completing your scan, download the Scan reports and review/address any large source data owners.
 
-A migration task (Box user) should not exceed 100,000 items or 1 TB of data. To enable faster transfers, users with large data sets should be divided into smaller migration tasks based on their root folders.
+A migration task (Box user) shouldn't exceed 100,000 items or 1 TB of data. To enable faster transfers, users with large data sets should be divided into smaller migration tasks based on their root folders.
 
 To split a user into multiple migration tasks, follow these steps:
 
