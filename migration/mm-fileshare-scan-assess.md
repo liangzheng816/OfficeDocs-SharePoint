@@ -1,5 +1,5 @@
 ---
-ms.date: 01/21/2021
+ms.date: 03/24/2025
 title: "Step 2: Scan and assess file shares using Migration Manager"
 ms.reviewer: 
 ms.author: heidip
