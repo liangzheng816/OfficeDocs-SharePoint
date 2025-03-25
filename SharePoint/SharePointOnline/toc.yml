@@ -706,3 +706,5 @@ items:
       href: /Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365
     - name: SharePoint Embedded
       href: /sharepoint/dev/embedded/overview
+    - name: SharePoint App Prioritization
+      href: SharePoint-Prioritization
