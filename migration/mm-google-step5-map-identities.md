@@ -27,9 +27,9 @@ description: "Step 5:  Map Google identities with Migration Manager."
 
 Map identities of your Google Drives to Microsoft 365 accounts while using Migration Manager.
 
-Identity Mapping is when you match the user and group identities that have access to your source environment (in this case Google) and map those identities to Microsoft 365 user and group identities. This process is important to migration. If identities aren't properly set up prior to migration, it can result in users losing access to content. It can also result in information being incorrect at the destination.
+Identity Mapping is when you match the user and group identities that have access to your source environment (in this case Google) and map those identities to Microsoft 365 user and group identities. This process is important to migration. If identities aren't properly set up before migration, it can result in users losing access to content. It can also result in information being incorrect at the destination.
 
-Map your groups and users in Google to those in Microsoft 365 to migrate your Google sharing settings.
+Map your groups and users in Google to those groups and users in Microsoft 365 to migrate your Google sharing settings.
 
 1. Select the Migrations tab.
 2. Select **Map identities** from the menu bar.
@@ -57,7 +57,7 @@ If you have many mappings to edit, you can choose to upload a CSV file containin
 
 ### Migrating Google Shared Drives
 
-Google Shared drives are now migrated by default. Google Shared Drive permissions are migrated according to what you have set in Project settings, under [general permission setting](/sharepointmigration/mm-project-settings-permissions#migrate-permissions).
+Google Shared drives are now migrated by default. Google Shared Drive permissions are migrated according to what's set in Project settings, under [general permission setting](/sharepointmigration/mm-project-settings-permissions#migrate-permissions).
 
 Folder permissions are migrated by default. File permissions are migrated on demand.
 
