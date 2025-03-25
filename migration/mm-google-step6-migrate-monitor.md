@@ -32,7 +32,7 @@ Once you've reviewed the drives, confirmed the destinations, and correctly mappe
 
 1. Select the drives to migrate.
 2. Select **Migrate**.
-3. A confirmation step displays.  Select **Migrate**.
+3. A confirmation step displays. Select **Migrate**.
 4. Once the migration begins, monitor the migration status, and the table summary at the top. Depending on how large your migration, this step may take hours or days.
 
 >[!Note]
@@ -47,7 +47,7 @@ The estimated time is based from the time a task starts running to when the comp
 >[!Important]
 >If a user modifies the source folder, it must re-scanned and then re-copied to migrations. The estimated time is recalculated based on this new scan.
 
-For incremental tasks, the estimated time to migrate is harder to predict. It can either be faster or slower than first run, depending on how many files the user has modified in the source. The actual time of incremental runs may vary considerably from the estimate shown.
+For incremental tasks, the estimated time to migrate is harder to predict. It can either be faster or slower than first run, depending on how many files are modified in the source. The actual time of incremental runs may vary considerably from the estimate shown.
 
 Ongoing development continues to improve the accuracy of these values.
 
