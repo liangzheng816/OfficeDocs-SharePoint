@@ -86,7 +86,7 @@ If you're onboarding your classic on-premises SharePoint Server pages to Microso
 
 - **Microsoft FastTrack**. Microsoft FastTrack services can help you get started with your migration to the cloud.|When you need assistance to help you get started on your migration project.
 
-- **Azure Data Box**. Want to remove the dependency on your WAN link to transfer data? The Microsoft Azure Data Box is a service that lets you order a device from the Microsoft Azure portal. You can then copy terrabytes of data from your servers to the device, ship it back to Microsoft, and your data is copied into Azure. Once your data's in Azure, use SPMT to migrate content to SharePoint. To learn more, see [Migrate using the Azure Data Box](how-to-migrate-file-share-content-to-SPO-using-AzureDataBox.md).
+- **Azure Data Box**. Want to remove the dependency on your WAN link to transfer data? The Microsoft Azure Data Box is a service that lets you order a device from the Microsoft Azure portal. You can then copy terabytes of data from your servers to the device, ship it back to Microsoft, and your data is copied into Azure. Once your data's in Azure, use SPMT to migrate content to SharePoint. To learn more, see [Migrate using the Azure Data Box](how-to-migrate-file-share-content-to-SPO-using-AzureDataBox.md).
 
 - **OneDrive sync app** To migrate users' Windows known folders (Desktop, Documents, Pictures, Screenshots, and Camera Roll) to OneDrive, you can use [Known Folder Move](/onedrive/redirect-known-folders). If users want to move other files from their local computer or a network file share to OneDrive or SharePoint, it's often easiest for them to use the OneDrive sync app. Users drag their files or folders to a folder they're syncing.
 
