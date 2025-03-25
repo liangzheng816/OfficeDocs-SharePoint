@@ -50,16 +50,16 @@ To support prioritization, SharePoint app prioritization operates on a metered A
 
 ### 1. Onboard on Microsoft Graph Metered APIs
 
-Follow the instructions at [Microsoft Graph metered APIs](https://learn.microsoft.com/graph/metered-api) to onboard your app.
+Follow the instructions at [Microsoft Graph metered APIs](../graph/metered-api.md) to onboard your app.
 
 ### 2. Onboard and Manage SharePoint App Prioritization Using PowerShell
 
-Administrators can manage SharePoint app prioritization policies using the [SharePoint Online PowerShell module](https://learn.microsoft.com/powershell/module/sharepoint-online/?view=sharepoint-ps). Below are some key cmdlets:
+Administrators can manage SharePoint app prioritization policies using the [SharePoint Online PowerShell module](../powershell/module/sharepoint-online/index.md). Below are some key cmdlets:
 
-- **[Add-SPOAppPrioritizationPolicy](https://learn.microsoft.com/powershell/module/sharepoint-online/add-spoappprioritizationpolicy)**: Adds a new SharePoint app prioritization policy to your tenancy. Requires details such as App ID, Azure Subscription ID, and Quota Multiplier. The Quota Multiplier is the maximum range you want to allow the app to scale compared to [normal thresholds](https://aka.ms/spo429).
-- **[Get-SPOAppPrioritizationPolicies](https://learn.microsoft.com/powershell/module/sharepoint-online/get-spoappprioritizationpolicies)**: Retrieves all existing SharePoint app prioritization policies in the tenancy.
-- **[Set-SPOAppPrioritizationPolicy](https://learn.microsoft.com/powershell/module/sharepoint-online/set-spoappprioritizationpolicy)**: Edits an existing SharePoint app prioritization policy by enabling/disabling it or modifying the Quota Multiplier.
-- **[Remove-SPOAppPrioritizationPolicy](https://learn.microsoft.com/powershell/module/sharepoint-online/remove-spoappprioritizationpolicy)**: Deletes an existing SharePoint app prioritization policy.
+- **[Add-SPOAppPrioritizationPolicy](../powershell/module/sharepoint-online/add-spoappprioritizationpolicy.md)**: Adds a new SharePoint app prioritization policy to your tenancy. Requires details such as App ID, Azure Subscription ID, and Quota Multiplier. The Quota Multiplier is the maximum range you want to allow the app to scale compared to [normal thresholds](https://aka.ms/spo429).
+- **[Get-SPOAppPrioritizationPolicies](../powershell/module/sharepoint-online/get-spoappprioritizationpolicies.md)**: Retrieves all existing SharePoint app prioritization policies in the tenancy.
+- **[Set-SPOAppPrioritizationPolicy](../powershell/module/sharepoint-online/set-spoappprioritizationpolicy.md)**: Edits an existing SharePoint app prioritization policy by enabling/disabling it or modifying the Quota Multiplier.
+- **[Remove-SPOAppPrioritizationPolicy](../powershell/module/sharepoint-online/remove-spoappprioritizationpolicy.md)**: Deletes an existing SharePoint app prioritization policy.
 
 ### 3. Best Practices and Considerations
 
@@ -69,8 +69,8 @@ Administrators can manage SharePoint app prioritization policies using the [Shar
 
 ## Related Topics
 
-- [Microsoft Graph Metered APIs](https://learn.microsoft.com/graph/metered-api)
-- [Azure Cost Management Documentation](https://learn.microsoft.com/azure/cost-management/)
+- [Microsoft Graph Metered APIs](../graph/metered-api.md)
+- [Azure Cost Management Documentation](../azure/cost-management/index.md)
 - [Understanding SharePoint Throttling Limits](https://aka.ms/spo429)
-- [Add-SPOAppPrioritizationPolicy PowerShell Cmdlet](https://learn.microsoft.com/powershell/module/sharepoint-online/add-spoappprioritizationpolicy?view=sharepoint-ps)
+- [Add-SPOAppPrioritizationPolicy PowerShell Cmdlet](../powershell/module/sharepoint-online/add-spoappprioritizationpolicy.md)
 
