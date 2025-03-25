@@ -62,9 +62,9 @@ To get started, navigate to [Microsoft 365 Admin Center Home - Setup - Migration
 
 ## Google Shared Drives and permissions
 
-Google Shared drives can now be discovered and migrated normally. Google Shared Drive permissions are migrated according to what you have set in Project settings, under [general permission setting](/sharepointmigration/mm-project-settings-permissions#migrate-permissions). 
+Google Shared drives can now be discovered and migrated normally. Google Shared Drive permissions are migrated according to what's set in Project settings, under [general permission setting](/sharepointmigration/mm-project-settings-permissions#migrate-permissions).
 
-Folder permissions are migrated by default. File permissions are migrated on demand. 
+Folder permissions are migrated by default. File permissions are migrated on demand.
 
 We recommend the following steps when migrating permissions in your shared drive:
 
@@ -73,7 +73,7 @@ We recommend the following steps when migrating permissions in your shared drive
 
 ## What isn't migrated
 
-Google Sites and Google Maps migration aren't supported, while Google Docs/Sheets/Slides/Forms are migrated as equivalent file types in Microsoft 365. [Learn more about the unsupported files](/sharepointmigration/mm-unsupported-files). 
+Google Sites and Google Maps migration aren't supported, while Google Docs/Sheets/Slides/Forms are migrated as equivalent file types in Microsoft 365. [Learn more about the unsupported files](/sharepointmigration/mm-unsupported-files).
 
 ### File size of Google proprietary files
 
@@ -82,8 +82,11 @@ Google only started calculating the size of its proprietary files, including Goo
 ### Files marked as restricted
 
 Google Workspace/Drive allows owners to control the ability for users to copy, download, or print files on a per-file basis. By default, this feature is enabled for each file. To ensure a successful migration, this setting must remain enabled. Disabling it may result in the following error when migrating a file owned by another user:
+
 `Permissions issue: File marked as restricted or not copyable`
+
 To enable this setting:
+
 1. Navigate to the **Share** panel for the file.
 1. Click on the **Settings Icon** located at the top right corner.
 1. Select the checkbox for the setting "**Viewers and commenters can see the option to download, print, and copy**."
