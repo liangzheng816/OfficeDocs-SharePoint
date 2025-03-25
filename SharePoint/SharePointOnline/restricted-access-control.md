@@ -1,5 +1,5 @@
 ---
-ms.date: 03/24/2025
+ms.date: 03/25/2025
 title: "Restrict SharePoint site access with Microsoft 365 groups and Microsoft Entra security groups"
 ms.reviewer: nibandyo
 manager: jtremper
@@ -63,17 +63,14 @@ It might take up to one hour for command to take effect
 
 ## Restrict access to group-connected sites (Microsoft 365 Groups and Teams)
 
-You can restrict site access to group-connected sites by specifying the Microsoft Entra security groups or Microsoft 365 groups which contain the users who can access to the site. You can configure up to 10 Microsoft Entra security groups or Microsoft 365 groups. Once the policy is applied, users in the specified group with site access permissions can now access to the site and its content. You can use dynamic security groups if you want to base group membership on user properties.
+Site access restriction policy for group-connected sites restricts SharePoint site access to members of the Microsoft 365 group or team associated with the site.
 
 To manage site access restriction for a group-connected site in the SharePoint admin center
 
 1. In SharePoint admin center, expand **Sites** and select **Active sites**.
 1. Select the site you want to manage and the site details panel appears.
 1. In the **Settings** tab, select **Edit** in the **Restricted site access** section.
-1. Select the **Restrict SharePoint site access to only users in specified groups** check box.
-1. Add or remove the security groups or Microsoft 365 groups and select **Save**.
-
-    :::image type="content" source="media/rac-spac/6-rac-enable-specified-groups.png" alt-text="Screenshot of site access restriction for specified groups in sharepoint admin center dashboard." lightbox="media/rac-spac/6-rac-enable-specified-groups.png":::
+1. Select the **Restrict access to this site** box and select **Save**.
 
 To manage site access restriction for group-connected sites using PowerShell, use the following commands:
 
