@@ -707,4 +707,4 @@ items:
     - name: SharePoint Embedded
       href: /sharepoint/dev/embedded/overview
     - name: SharePoint App Prioritization
-      href: SharePoint-Prioritization
+      href: SharePoint-Prioritization.md
