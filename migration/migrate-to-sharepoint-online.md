@@ -38,9 +38,9 @@ Learn more:  [**Migration Admin role**](mm-migration-admin-role.md).
 
 ## What's new
 
-- What's new and coming soon to [Migration Manager](mm-whats-new.md).
+- See what's new and coming soon to [Migration Manager](mm-whats-new.md).
 
-- What's new and coming soon to [SharePoint Migration Tool (SPMT)](new-and-improved-features-in-the-sharepoint-migration-tool.md).
+- See what's new and coming soon to the [SharePoint Migration Tool (SPMT)](new-and-improved-features-in-the-sharepoint-migration-tool.md).
 
 #### Mover retirement
 
