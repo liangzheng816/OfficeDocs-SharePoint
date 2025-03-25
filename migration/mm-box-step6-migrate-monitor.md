@@ -28,7 +28,7 @@ description: "Step 6: Migrate and monitor Box migration"
 Once you review the accounts, confirm the destinations, and correctly map identities, you're ready to migrate.
 
 >[!Important]
->We strongly recommend that you don't rename or move migrated files before the final migration has been completed.  Doing so will result in files being overwritten.
+>We strongly recommend that you don't rename or move migrated files before the final migration has been completed. Doing so results in files being overwritten.
 
 1. Select the accounts to migrate.
 
@@ -44,8 +44,6 @@ Once you review the accounts, confirm the destinations, and correctly map identi
 
 ## How many task rows can I run at once?
 
-At a maximum, only 50 task rows can run simultaneously. This total includes both scanning and migrating.
+At a maximum, only 50 task rows can run simultaneously. This total includes both scanning and migrating. If you select more than that total combined number and start scanning or migrating, only 50 randomly chosen rows are going to run. The rest are going to be queued.
 
-If you select more than that total combined number and start scanning or migrating, only 50 randomly chosen rows will run. The rest will be queued.
-
-As a task row completes, another from the queue will start migrating or scanning automatically. While 50 task rows is the maximum allowed, if a migration experiences any slowdowns or back-off requests, it may drop lower than this number to keep the migration stable.
+As a task row completes, another from the queue starts migrating or scanning automatically. While the maximum number of task rows allowed is set at 50, if a migration experiences any slowdowns or back-off requests, it may drop lower than this number to keep the migration stable.
