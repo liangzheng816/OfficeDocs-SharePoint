@@ -69,7 +69,7 @@ Folder permissions are migrated by default. File permissions are migrated on dem
 We recommend the following steps when migrating permissions in your shared drive:
 
 - Recreate a Microsoft 365 group with the same memberships as the Google Drive group. You can either create a new group or edit the group linked to the Team site designated as the migration destination for the Google Shared Drive.
-- In the 'Map Identities' setting, map the original Google Drive group of the shared drive to the Microsoft 365 group.
+- Go to the 'Map Identities' setting and map the original Google Drive group of the shared drive to the Microsoft 365 group.
 
 ## What isn't migrated
 
