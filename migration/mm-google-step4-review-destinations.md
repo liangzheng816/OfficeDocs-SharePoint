@@ -44,7 +44,7 @@ If a destination is missing on a migration task (equals a Drive in Google), high
 
 If you have many destinations to edit, you can choose to upload a bulk destinations CSV file. Download the *MigrationDestinations.csv* file template to your computer and enter your destinations. The template lists all migration tasks that have never been run, and you can add to or modify the "destination path" column. Then save your file as a .csv file using any name you wish.
 
-![upload destinations for Google accounts bulk](media/mm-google-bulk-upload-destination-panel.png)
+![upload destinations for Google accounts bulk.](media/mm-google-bulk-upload-destination-panel.png)
 
 1. From the Migrations tab, select **Upload destinations** from the menu bar.
 2. Select the file to upload with your destinations.
