@@ -57,7 +57,7 @@ If you have many mappings to edit, you can choose to upload a CSV file containin
 
 ### Migrating Google Shared Drives
 
-Google Shared drives are now migrated by default. Google Shared Drive permissions are migrated according to what's set in Project settings, under [general permission setting](/sharepointmigration/mm-project-settings-permissions#migrate-permissions).
+Google Shared drives are now migrated by default. Google Shared Drive permissions are migrated according to the project settings, under [general permission setting](/sharepointmigration/mm-project-settings-permissions#migrate-permissions).
 
 Folder permissions are migrated by default. File permissions are migrated on demand.
 
