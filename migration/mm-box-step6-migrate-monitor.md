@@ -44,6 +44,6 @@ Once you review the accounts, confirm the destinations, and correctly map identi
 
 ## How many task rows can I run at once?
 
-At a maximum, only 50 task rows can run simultaneously. This total includes both scanning and migrating. If you select more than that total combined number and start scanning or migrating, only 50 randomly chosen rows are going to run. The remainder are going to be queued.
+At a maximum, only 50 task rows can run simultaneously. This total includes both scanning and migrating. If you select more than that total combined number and start scanning or migrating, only 50 randomly chosen rows are going to run. The rest of the tasks are going to be queued.
 
 As a task row completes, another from the queue starts migrating or scanning automatically. While the maximum number of task rows allowed is set to 50, if a migration experiences any slowdowns or back-off requests, it may drop lower than this number to keep the migration stable.
