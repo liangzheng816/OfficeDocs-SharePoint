@@ -32,7 +32,7 @@ Collaborate all in one place by migrating your Google Workspace files, metadata,
 - **Step 1:** [Connect to Google](mm-google-step1-connect.md). Sign in to your Google account and install Microsoft 365 migration app in Google Workspace Marketplace. 
 
 - **Step 2:** [Scan and assess](mm-google-step2-scan-assess.md). Add Google Drives for scanning. Once the scans are complete, download [Scan reports](/sharepointmigration/mm-cloud-reports) to investigate any possible issues that might block your migration.
-- **Step 3:** [Copy to Migrations list](mm-google-step3-copy-to-migrations.md). After a Google Drive is scanned as "Ready to migrate" you can add them to your migration list.
+- **Step 3:** [Copy to Migrations list](mm-google-step3-copy-to-migrations.md). After a Google Drive is scanned as "Ready to migrate", you can add them to your migration list.
 
 - **Step 4:** [Review destination paths](mm-google-step4-review-destinations.md). We automatically map source paths to any exactly matching destination paths. Ensure content is being copied to the right place by reviewing and modifying as needed for each destination path.
 
@@ -62,7 +62,7 @@ To get started, navigate to [Microsoft 365 Admin Center Home - Setup - Migration
 
 ## Google Shared Drives and permissions
 
-Google Shared drives can now be discovered and migrated normally. Google Shared Drive permissions are migrated according to what's set in Project settings, under [general permission setting](/sharepointmigration/mm-project-settings-permissions#migrate-permissions).
+Google Shared drives can now be discovered and migrated normally. Google Shared Drive permissions are migrated according to the Project settings, under [general permission setting](/sharepointmigration/mm-project-settings-permissions#migrate-permissions).
 
 Folder permissions are migrated by default. File permissions are migrated on demand.
 
