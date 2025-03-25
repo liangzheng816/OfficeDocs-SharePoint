@@ -52,7 +52,7 @@ Summary and detailed scan reports are available to assist you in troubleshooting
 
 Upon completing your scan, download the scan reports and review/address any large source data owners.
 
-A migration task (Google Drive) should not exceed 100,000 items or 1 TB of data. To enable faster transfers, Google Drives with large data sets should be divided into smaller migration tasks based on their root folders.
+A migration task (Google Drive) shouldn't exceed 100,000 items or 1 TB of data. To enable faster transfers, Google Drives with large data sets should be divided into smaller migration tasks based on their root folders.
 
 To split a Drive into multiple migration tasks, follow these steps:
 
