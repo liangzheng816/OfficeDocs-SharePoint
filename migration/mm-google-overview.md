@@ -43,12 +43,9 @@ Collaborate all in one place by migrating your Google Workspace files, metadata,
 >[!Tip]
 >Watch this video to help get started:  [Migrate Google files to Microsoft 365 with Migration Manager](https://youtu.be/GZ4kTX31U-A).
 
-
 ## Get started
 
-To get started:
-
-Navigate to [Microsoft 365 Admin Center Home - Setup - Migration and imports](https://admin.microsoft.com/#/featureexplorer/collections/Migrations), select **Google Drive** or **Google Workspace** to create a migration project. Make sure that you have:
+To get started, navigate to [Microsoft 365 Admin Center Home - Setup - Migration and imports](https://admin.microsoft.com/#/featureexplorer/collections/Migrations) and select **Google Drive** or **Google Workspace** to create a migration project. Make sure that you have:
 
 - **Access to the destination**: You must be one of the following roles in the Microsoft 365 tenant where you want to migrate your content: 
 
@@ -74,10 +71,9 @@ We recommend the following steps when migrating permissions in your shared drive
 - Recreate a Microsoft 365 group with the same memberships as the Google Drive group. You can either create a new group or edit the group linked to the Team site designated as the migration destination for the Google Shared Drive.
 - In the 'Map Identities' setting, map the original Google Drive group of the shared drive to the Microsoft 365 group.
 
-
 ## What isn't migrated
 
-Google Sites and Google Maps migration are not supported, while Google Docs/Sheets/Slides/Forms are migrated as equivalent file types in Microsoft 365. [Learn more about the unsupported files](/sharepointmigration/mm-unsupported-files). 
+Google Sites and Google Maps migration aren't supported, while Google Docs/Sheets/Slides/Forms are migrated as equivalent file types in Microsoft 365. [Learn more about the unsupported files](/sharepointmigration/mm-unsupported-files). 
 
 ### File size of Google proprietary files
 
@@ -90,7 +86,4 @@ Google Workspace/Drive allows owners to control the ability for users to copy, d
 To enable this setting:
 1. Navigate to the **Share** panel for the file.
 1. Click on the **Settings Icon** located at the top right corner.
-1. Select the checkbox for the setting "**Viewers and commenters can see the option to download, print, and copy.**"
-
-
-
+1. Select the checkbox for the setting "**Viewers and commenters can see the option to download, print, and copy**."
