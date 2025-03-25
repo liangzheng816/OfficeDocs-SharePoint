@@ -66,7 +66,7 @@ A cross tenant migration solution for SharePoint is currently in private preview
 
 ### Transform your classic SharePoint Server pages
 
-If you're onboarding your classic on-premises SharePoint Server pages to Microsoft 365 we have assistance available. Learn more at: [**Transform classic pages to modern pages**](/sharepoint/dev/transform/modernize-userinterface-site-pages).
+If you're onboarding your classic on-premises SharePoint Server pages to Microsoft 365, we have assistance available. Learn more at: [**Transform classic pages to modern pages**](/sharepoint/dev/transform/modernize-userinterface-site-pages).
 
 ##  Where are you migrating from?
 
