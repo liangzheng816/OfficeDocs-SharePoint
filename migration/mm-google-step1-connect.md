@@ -30,7 +30,7 @@ Sign in to your Google account and add the Microsoft 365 migration app to your G
 1. In the SharePoint admin center, select <a href="https://go.microsoft.com/fwlink/?linkid=2185075" target="_blank">**Migration center**</a>.
 2. Under **Google Workspace**, select **Get started**.
 3. Select **Connect to Google Workspace**.
-4. On the *Install the migration app* page, select **Install and authorize** if you the Microsoft 365 migration app isn't already installed in the Google Workspace Marketplace.
+4. On the *Install the migration app* page, select **Install and authorize** if the Microsoft 365 migration app isn't already installed in the Google Workspace Marketplace.
 5. Sign in to the Google Workspace Marketplace with a super admin, groups admin, user management admin, or help desk admin account.
 6. Select **Domain Install**.
 7. On the Domain-wide install screen, select **Continue**.
@@ -52,7 +52,7 @@ To ensure your Google forms are migrated, you must first grant access in the Goo
 
   :::image type="content" source="media/mm-google-form-only-access.png" alt-text="google permissions granting for gsheet":::
 
-3. If it's not granted, select **Grant access** at the top of the page to grant access.
+3. If not granted, select **Grant access** at the top of the page to grant access.
 
 >[!Important]
 >For security reasons, you have 10 minutes to complete the steps to connect to Google. After 10 minutes of inactivity, the session will expire.
