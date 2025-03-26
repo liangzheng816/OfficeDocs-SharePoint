@@ -8,7 +8,7 @@ manager: serdars
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: faq
 ms.service: sharepoint-server-itpro
 ms.collection: SPO_Content
 ms.localizationpriority: medium

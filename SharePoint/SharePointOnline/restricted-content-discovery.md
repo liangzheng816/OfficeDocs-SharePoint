@@ -1,5 +1,5 @@
 ---
-ms.date: 11/14/2024
+ms.date: 03/24/2025
 title: "Restrict discovery of SharePoint sites and content"
 ms.reviewer: nibandyo
 manager: jtremper
@@ -33,7 +33,7 @@ For organizations onboarding to Microsoft 365 Copilot, maintaining strong data g
 With Restricted Content Discovery, organizations can limit the ability of end users to search for files from specific SharePoint sites. Enabling Restricted Content Discovery for each site prevents the sites from surfacing in organization-wide search and Microsoft 365 Copilot Business Chat, unless a user had a recent interaction.  
 
 > [!NOTE]
-> Restricted Content Discovery does not impact existing permissions on sites. Users with access can still open files on sites with Restricted Content Discovery toggled on.
+> Restricted Content Discovery doesn't affect existing permissions on sites. Users with access can still open files on sites with Restricted Content Discovery toggled on.
 
 While child content is hidden by default, users in your organization can still discover files they own or recently interacted with. End users can still find relevant content they need for their day-to-day tasks, even if Restricted Content Discovery is applied to the parent site.
 
@@ -55,7 +55,7 @@ Restricted Content Discovery is a site-level setting that needs to be propagated
 
 ## Prerequisites
 
-The Restricted Content Discover policy requires the following prerequisites:
+The Restricted Content Discovery policy requires the following prerequisites:
 
 - Have a [Microsoft SharePoint Premium - SharePoint Advanced Management subscription](advanced-management.md).
 - Download and install the latest version of SharePoint Online Management Shell.
@@ -67,17 +67,29 @@ By default, Restricted Content Discovery is off for all sites. As an IT administ
 
 ### Enable Restricted Content Discovery for a site
 
-Complete the following steps to apply Restricted Content Discovery on a site:
+You can enable Restricted Content Discovery from the SharePoint admin center or via PowerShell.
 
-To apply Restricted Content Discovery on a SharePoint site, run the following command:
+To enable Restricted Content Discovery for a site using SharePoint admin center:
+
+1. In SharePoint admin center, expand **Sites** and select **Active sites**.
+2. Select the site you want to restrict the content discovery, and the site details panel appears.
+3. In the **Settings** tab, toggle on or off in the **Restrict content from Microsoft 365 Copilot** section.
+4. Select **Save**.
+
+:::image type="content" source="./media/restricted-content-discovery/1-rcd-enable-spac.png" alt-text="Screenshot of site details panel showing ability to restrict a site from being discovered in Microsoft 365 Copilot." lightbox="./media/restricted-content-discovery/1-rcd-enable-spac.png":::
+
+> [!NOTE]
+> Changes can take time to be effective.
+
+To enable Restricted Content Discovery for a site using PowerShell, run the following command:
 
 ```powershell
 Set-SPOSite –identity <site-url> -RestrictContentOrgWideSearch $true
 ```
 
-### Check the state of Restricted Content Discovery
+### Check status of Restricted Content Discovery
 
-Check for the state of Restricted Content Discovery with the following command:
+To check the status of Restricted Content Discovery, run the following command:
 
 ```powershell
 Get-SPOSite –identity <site-url> | Select RestrictContentOrgWideSearch
@@ -90,6 +102,36 @@ To remove Restricted Content Discovery on a SharePoint site, run the following c
 ```powershell
 Set-SPOSite –identity <site-url> -RestrictContentOrgWideSearch $false
 ```
+
+## Restricted Content Discovery policy insights
+
+You can view the following reports to gain insights on the SharePoint sites protected with Restricted Content Discovery:
+
+### Generate insights report
+
+To generate a list of sites with Restricted Content Discovery enabled, run the following command:
+
+```powershell
+Start-SPORestrictedContentDiscoverabilityReport
+```
+
+### View insights report
+
+To view a report displaying the Report GUID, created DateTime stamp, and status of the report generation, run the following command:
+
+```powershell
+Get-SPORestrictedContentDiscoverabilityReport
+```
+
+### Download insights report
+
+To download a Restricted Content Discovery insights report, you must run the following command as an administrator:
+
+```powershell
+Get-SPORestrictedContentDiscoverabilityReport –Action Download –ReportId <Report GUID>
+```
+
+The downloaded report is located on the path where the command was run.
 
 ## Next steps
 

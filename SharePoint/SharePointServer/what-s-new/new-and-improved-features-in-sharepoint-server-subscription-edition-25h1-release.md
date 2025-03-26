@@ -31,13 +31,14 @@ The following table provides a summary of the new features introduced in the Sha
 
 |**Feature**|**Release ring**|**More information**|
 |:-----|:-----|:-----|
-| **Support for RSA public key in OIDC authentication configuration**   |Standard release   |For more information, see [Support for RSA public key in OIDC authentication configuration](new-and-improved-features-in-sharepoint-server-subscription-edition-24h2-release.md#support-for-rsa-public-key-in-oidc-authentication-configuration).<p> This was part of Early release in the Version 24H2 feature update.|
+| **Support for RSA public key in OIDC authentication configuration**   |Standard release   |For more information, see [Support for RSA public key in OIDC authentication configuration](new-and-improved-features-in-sharepoint-server-subscription-edition-24h2-release.md#support-for-rsa-public-key-in-oidc-authentication-configuration).<p> This was part of Early release in the Version 24H2 feature update.<p>**Note:** This feature is still in Early ring for technical issues, and will roll out to Standard ring after resolution.|
 | **Support for automatic machine key rotation**  |  Early release   | For more information, see [Support for automatic machine key rotation](#support-for-automatic-machine-key-rotation).|
 | **Dynamic customer survey by One Customer Voice**  | Early release  | For more information, see [Dynamic customer survey by One Customer Voice](#dynamic-customer-survey-by-one-customer-voice). |
 | **Create new Office files in client apps**   |Early release   |For more information, see [Create new Office files in client apps](#create-new-office-files-in-client-apps).|
 | **Support for request body scan in AMSI**   |Early release   |For more information, see [Support for request body scan in AMSI](#support-for-request-body-scan-in-amsi).|
 | **Cloud Hybrid Search upgrade**   |Early release   |For more information, see [Cloud Hybrid Search upgrade](#cloud-hybrid-search-upgrade).|
 | **New database connectivity layer with TDS 8.0 and TLS 1.3 support**   |Standard release   |For more information, see [New database connectivity layer with TDS 8.0 and TLS 1.3 support](#new-database-connectivity-layer-with-tds-80-and-tls-13-support).|
+| **Support for Microsoft Graph connector**   |Standard release   |For more information, see [Support for Microsoft Graph connector](#support-for-microsoft-graph-connector).|
 
 ## Detailed description of features
 
@@ -104,3 +105,8 @@ The following are the capabilities of the new Microsoft.Data.SqlClient library:
 - **Support for Transport Layer Security (TLS) Version 1.3**: This new build update provides support for connecting to SQL databases using TLS 1.3 connection encryption, addressing design concerns of previous versions. This enables better database connections, ensuring even backward compatibility with older SQL Server versions.
 
 For more information, see [Transport Layer Security (TLS) 1.3 Support](../security-for-sharepoint-server/tls-support-1.3.md).
+
+### Support for Microsoft Graph connector: 
+
+Starting from Version [16.0.17928.20238](https://support.microsoft.com/topic/description-of-the-security-update-for-sharepoint-server-subscription-edition-november-12-2024-kb5002651-0e3d5086-13f2-4bc2-b42b-88d45a9377c3) released in November 2024, SharePoint Server Subscription Edition supports Microsoft Graph connector. With [Microsoft Graph connectors](/microsoftsearch/connectors-overview), Microsoft Search or Microsoft 365 Copilot in your organizations can index and leverage data stored in SharePoint Server. Microsoft Graph connector respects the source permissions configured in SharePoint Server, ensuring users access only authorized content.<p>
+For more information, see [SharePoint Server Microsoft Graph connector](/microsoftsearch/sharepoint-server-connector).
