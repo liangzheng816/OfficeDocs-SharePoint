@@ -27,7 +27,7 @@ description: "Step 5:  Map Dropbox identities with Migration Manager."
 
 Map identities of your Dropbox to Microsoft 365 accounts while using Migration Manager.
 
-Identity Mapping is when you match the user and group identities that have access to your source environment (in this case Dropbox) and map those identities to Microsoft 365 user and group identities. This process is important to migration. If identities are not properly set up prior to migration, it can result in users losing access to content. It can also result in information being incorrect at the destination.
+Identity Mapping is when you match the user and group identities that have access to your source environment (in this case Dropbox) and map those identities to Microsoft 365 user and group identities. This process is important to migration. If identities aren't properly set up before migration, it can result in users losing access to content. It can also result in information being incorrect at the destination.
 
 #### Migrating permissions from Dropbox to SharePoint
 
@@ -42,17 +42,17 @@ Permissions in Dropbox convert to the following in SharePoint:
 
 The migration admin can create a Microsoft 365 group or AD security group to map the group identities.
 
-Mapped users and groups will not be added into *Site Visitors* or *Site Members*.  Permissions are granted to folders not sites.
+Mapped users and groups aren't added into *Site Visitors* or *Site Members*. Permissions are granted to folders not sites.
 
 #### Broken permissions
 
-Migration Manager will migrate broken permission inheritance.
+Migration Manager does migrate broken permission inheritance.
 
 Authentication between Migration Manager and DropBox should be with Application Auth. If you received the error *Unable to access DropBox*, it's most likely not related to breaking permission inheritance in a subfolder.
 
 ## Map identities
 
-Map your groups and users in Dropbox to those in Microsoft 365 to migrate your Dropbox sharing settings.
+Map your groups and users in Dropbox to groups and users in Microsoft 365 to migrate your Dropbox sharing settings.
 
 1. Select the Migrations tab.
 2. Select **Map identities** on the menu bar.
