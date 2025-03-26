@@ -1,5 +1,5 @@
 ---
-ms.date: 11/20/2024
+ms.date: 03/26/2025
 title: "Microsoft SharePoint Premium - SharePoint Advanced Management overview"
 ms.reviewer: daminasy
 ms.author: mactra
@@ -154,6 +154,58 @@ SharePoint Advanced Management is available for Commercial, WW Commercial Public
 SharePoint Advanced Management is $3 per user per month for commercial customers. For more details on licensing, please contact your account manager.
 
 Licensing details for each feature listed above are included in those articles.
+
+### SharePoint Advanced Management features in Microsoft 365 Copilot licenses
+
+Customers with access to the following Copilot SKUs will have access to these SharePoint Advanced Management (SAM) capabilities:
+
+The following SharePoint Advanced Management features are included in Microsoft 365 Copilot licenses:
+
+- **Site Lifecycle Policy**
+  - Inactive SharePoint sites policy
+  - Site Ownership Policy
+- **Data Access Governance (DAG) Insights**
+  - "Everyone Except External Users" (EEEU) insights
+  - Sharing Links and Sensitivity Labels
+  - PowerShell: Permission state report for Sites, OneDrives, and Files
+- **Site Access Review**
+- **PowerShell: Restricted Content Discovery (RCD)**
+- **Restricted Access Control (RAC)**
+  - Applies to SharePoint and OneDrive sites
+- **Recent Admin Actions**
+- **Change History**
+- **Block Download Policy**
+  - SharePoint and OneDrive sites
+  - Teams recordings
+
+The SharePoint Advanced Management features listed earlier apply to the following Microsoft 365 Copilot licenses:
+
+- Microsoft 365 Copilot for Finance (Education Faculty)
+- Microsoft 365 Copilot for Finance (Education Student 18+)
+- Microsoft 365 Copilot for Sales (Education Faculty)
+- Microsoft 365 Copilot for Sales (Education Student 18+)
+- Microsoft 365 Copilot for Service (Education Faculty)
+- Microsoft 365 Copilot for Service (Education Student 18+)
+- Microsoft 365 Copilot (Education Student 18+)
+- Microsoft 365 Copilot (Education Faculty)
+- Microsoft Sales Copilot for Faculty
+- Microsoft Sales Copilot for Students
+- Microsoft 365 Copilot for Finance (limited time)
+- Microsoft 365 Copilot for Sales (limited time)
+- Microsoft 365 Copilot for Service (limited time)
+- Microsoft 365 Copilot for Finance (for Department)
+- Microsoft 365 Copilot for Finance (Preview)
+- Microsoft 365 Copilot for Sales
+- Microsoft 365 Copilot for Sales (for Department)
+- Microsoft 365 Copilot for Service
+- Microsoft 365 Copilot for Service (for Department)
+- Microsoft 365 Copilot for Finance
+- Microsoft Sales Copilot
+- Microsoft 365 Copilot Developer
+- Microsoft 365 Copilot GCC
+- Microsoft Copilot for Microsoft 365
+- Microsoft 365 Copilot
+- Microsoft 365 Copilot (for Department)
 
 ## Related topics
 
