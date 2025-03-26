@@ -159,7 +159,7 @@ You can view details on all unlicensed OneDrive accounts, even ones that aren’
    - Reactivate accounts
 
 > [!NOTE]
-> Admins can reactivate accounts from the detailed report.  Accounts selected in the detailed report will display a 'Reactivate' button if the account is archived and billing for Unlicensed OneDrive accounts has been enabled.
+> Admins can reactivate accounts from the detailed report.  Accounts selected in the detailed report will display a 'Reactivate' button if the account is archived and billing for Unlicensed OneDrive accounts has been enabled. Alternatively, admins can use PowerShell to reactivate accounts with the *Set-SPOSiteArchiveState* cmdlet. 
 
 ## Charges from archived accounts
 
@@ -270,6 +270,10 @@ As an example, if the billing is put down to reactivate one particular unlicense
 **15. Why is the '*deletion scheduled on*' column empty in my CSV export of unlicensed accounts?**
 
 **Answer:** "_Deletion scheduled on_" refers to when the system will try to delete the account next.  It takes into account the retention period of the unlicensed OneDrive account. This property may be empty if there is a hold or retention policy applied to the account.  Additionally, the column will be empty for users who are still active in Entra ID until the 'deletion' part of the enforcement rollout is complete.  If you delete the active user from Entra ID, and there's no retention policy or hold applied, then the "_Deletion scheduled on_" column will be populated within 7 days.
+
+**16. Will the unlicensed account enforcement override existing read-only or NoAccess settings which are already applied to my OneDrive accounts?**
+
+**Answer:** No.  When enforcing unlicensed OneDrive accounts, the system will not override existing read-only or NoAccess modes.  When the system tries to put an account into read-only mode, it will skip the account if the account is already in read-only or NoAccess mode.  When the account gets Archived, it will retain any read-only and NoAccess settings which the admin applied, which will take effect if the account is reactivated.  
 
 ## Related topics
 
