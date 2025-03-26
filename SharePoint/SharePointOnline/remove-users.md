@@ -9,7 +9,7 @@ recommendations: true
 audience: Admin
 f1.keywords:
 - CSH
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.custom:
 - 'ViewUserProfiles'
 - 'SPOTAMgUserProfiles'

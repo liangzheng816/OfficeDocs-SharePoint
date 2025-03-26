@@ -8,7 +8,7 @@ ms.date: 03/06/2025
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: integration
 ms.service: sharepoint-server-itpro
 ms.localizationpriority: medium
 ms.collection:
