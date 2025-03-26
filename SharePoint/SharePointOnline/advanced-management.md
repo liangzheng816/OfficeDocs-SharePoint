@@ -168,6 +168,7 @@ The following SharePoint Advanced Management features are included in Microsoft 
   - "Everyone Except External Users" (EEEU) insights
   - Sharing Links and Sensitivity Labels
   - PowerShell: Permission state report for Sites, OneDrives, and Files
+  - Sharing links report
 - **Site Access Review**
 - **PowerShell: Restricted Content Discovery (RCD)**
 - **Restricted Access Control (RAC)**
