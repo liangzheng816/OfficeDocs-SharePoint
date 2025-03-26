@@ -24,7 +24,7 @@ description: "Step 6: Migrate and monitor Dropbox migration"
 ---
 # Step 6:  Migrate and monitor your Dropbox migration
 
-Once you've reviewed the accounts, confirmed the destinations, and correctly mapped identities, you're ready to migrate.
+Once you review the accounts, confirm the destinations, and correctly map identities, you're ready to migrate.
 
 >[!Important]
 >We strongly recommend that you don't rename or move migrated files before the final migration has been completed. Doing so results in files being overwritten.
