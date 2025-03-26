@@ -20,9 +20,13 @@ ms.assetid:
 description: "What is SharePoint app prioritization and How to Leverage It"
 ---
 
+
 # SharePoint App Prioritization: A Guide to Enhancing Business-Critical Applications in SharePoint
 
 SharePoint app prioritization, is a powerful service designed to prioritize apps within your SharePoint Online tenants, particularly those considered business-critical. By leveraging app prioritization, organizations can ensure optimal performance, scalability, and reliability for key applications without requiring code modifications. Below, we explore what SharePoint App prioritization entails and how to effectively leverage it within your organization.
+
+> [!NOTE]
+> This functionnality is still roll out and might not be fully enabled on your tenant yet. 
 
 ## What is SharePoint App Prioritization?
 
