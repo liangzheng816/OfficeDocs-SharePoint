@@ -79,6 +79,8 @@ You also need to grant the application **Read** permissions for **SharePoint Adm
 
 ## Install agent
 
+On the agent workstation, install your X.509 certificate, issued by the Enterprise Public Key Infrastructure (PKI), at Windows certificate management store 'Current User' path. You can launch the certificate management application by typing the command `certmgr.msc`.
+
 Prepare a configuration Json file with following content:
 
 

@@ -1,5 +1,5 @@
 ---
-ms.date: 08/03/2023
+ms.date: 03/24/2025
 title: "Step 5: Map Box identities with Migration Manager"
 ms.reviewer: 
 ms.author: heidip
@@ -25,23 +25,22 @@ description: "Step 5:  Map Box identities with Migration Manager."
 
 # Step 5: Map identities of Box accounts to Microsoft 365 accounts
 
-Identity Mapping is when you match the user and group identities that have access to your source environment (in this case Box) and map those identities to Microsoft 365 user and group identities. This process is important to migration. If identities aren't properly set up prior to migration, it can result in users losing access to content. It can also result in information being incorrect at the destination.
+Identity Mapping is when you match the user and group identities that have access to your source environment (in this case Box) and map those identities to Microsoft 365 user and group identities. This process is important to migration. If identities aren't properly set up before migration, it can result in users losing access to content. It can also result in information being incorrect at the destination.
 
-Map your groups and users in Box to those in Microsoft 365 to migrate your Box sharing settings.
+Map your groups and users in Box to groups and users in Microsoft 365 to migrate your Box sharing settings.
 
 1. Select the **User migrations** tab.
 2. Select **Map identities** on the menu bar.
 3. Select **Auto-map** to have Migration Manager map the identities for you or select **Import users and groups** to upload the values using a CSV file.
 
-
 ## Mapping individual identities
 
-1. To edit a single mapping, highlight the row. Enter the mapping Microsoft 365 user account. 
+1. To edit a single mapping, highlight the row. Enter the mapping Microsoft 365 user account.
 2. Select **Save**.
 
 ## Import users and groups
 
-If you have many mappings to edit, you can choose to upload a CSV file containing your users and groups mappings. Download the  file template to your computer and enter your destinations. Save your file as a .csv file using any name you wish. 
+If you have many mappings to edit, you can choose to upload a .csv file containing your users and groups mappings. Download the file template to your computer and enter your destinations. Save your file as a .csv file using any name you wish.
 
 Upload your own users and groups mappings using the M.
 1. Select **Import users and groups**.
@@ -50,10 +49,7 @@ Upload your own users and groups mappings using the M.
 4. Select **Save**.
 5. Select **Close**.
 
-
 > [!Important]
-> Make sure to verify your mappings before uploading the file.  The file will not be validated, and once migration starts, it cannot be changed.
-
+> Make sure to verify your mappings before uploading the file. The file isn't validated, and once migration starts, it can't be changed.
 
 ## [**Step 6: Migrate and monitor**](mm-box-step6-migrate-monitor.md)
-

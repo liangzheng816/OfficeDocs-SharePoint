@@ -1,5 +1,5 @@
 ---
-ms.date: 10/01/2024
+ms.date: 03/21/2025
 title: "Deploy and configure the OneDrive sync app for Mac"
 ms.reviewer: cagreen
 ms.author: mactra
@@ -137,7 +137,6 @@ Use the following keys to preconfigure or change settings for your users. The ke
 - [BlockTenantList](deploy-and-configure-on-macos.md#blocktenantlist)
 - [DefaultFolderLocation](deploy-and-configure-on-macos.md#defaultfolderlocation)
 - [DisableAutoConfig](deploy-and-configure-on-macos.md#disableautoconfig)
-- [DisableFirstDeleteDialog](deploy-and-configure-on-macos.md#disablefirstdeletedialog)
 - [DisableFirstDeleteDialog](deploy-and-configure-on-macos.md#disablefirstdeletedialog)
 - [DisableFREAnimation](deploy-and-configure-on-macos.md#disablefreanimation)
 - [DisableOfflineMode](#disableofflinemode)
@@ -321,7 +320,7 @@ The example for this setting in the .plist file is:
 
 ```xml
 <key>DisableFREAnimation</key>
-<integer>1</integer
+<integer>1</integer>
 ```
 
 ### DisableOfflineMode
@@ -415,7 +414,7 @@ The example for this setting in the .plist file is:
 
 ### EnableODIgnore
 
-This setting lets you enter keywords to prevent the OneDrive sync app from uploading certain files to OneDrive or SharePoint. You can enter complete names, such as "setup.exe" or use the asterisk (*) as a wildcard character to represent a series of characters, such as*.pst. Keywords aren't case-sensitive.
+This setting lets you enter keywords to prevent the OneDrive sync app from uploading certain files to OneDrive or SharePoint. You can enter complete names, such as "setup.exe" or use the asterisk `*` as a wildcard character to represent a series of characters, such as `*.pst`. Keywords aren't case-sensitive.
 
 If you enable this setting, the sync app doesn't upload new files that match the keywords you specified. No errors appear for the skipped files, and the files remain in the local OneDrive folder. In Finder, the files appear with an "Excluded from sync" icon.
 
@@ -629,7 +628,6 @@ This setting enables you to specify the name of the folder created for syncing t
 
 If this setting is enabled, you can specify a TenantName that is the name the folder uses in the following convention:
    OneDrive – TenantName (specified by you)
-   TenantName (specified by you)
 
 If you don't specify any TenantName, the folder uses the first segment of the FrontDoorURL as its name. For example, https://</span>Contoso.SharePoint.com uses Contoso as the Tenant Name in the following convention: OneDrive – Contoso
 
