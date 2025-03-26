@@ -129,6 +129,8 @@ Items:
         href: mm-google-sheet-scan.md
       - name: File versions
         href: file-versions.md
+      - name: Delta sync
+        href: mm-delta-sync.md
       - name: Email notification
         href: mail-notification.md
     - name: Migration time estimator

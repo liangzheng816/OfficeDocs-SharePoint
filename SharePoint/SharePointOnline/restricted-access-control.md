@@ -1,5 +1,5 @@
 ---
-ms.date: 01/30/2025
+ms.date: 03/25/2025
 title: "Restrict SharePoint site access with Microsoft 365 groups and Microsoft Entra security groups"
 ms.reviewer: nibandyo
 manager: jtremper
@@ -65,7 +65,7 @@ It might take up to one hour for command to take effect
 
 Site access restriction policy for group-connected sites restricts SharePoint site access to members of the Microsoft 365 group or team associated with the site.
 
-To manage site access restriction for a group-connected site in SharePoint admin center
+To manage site access restriction for a group-connected site in the SharePoint admin center
 
 1. In SharePoint admin center, expand **Sites** and select **Active sites**.
 1. Select the site you want to manage and the site details panel appears.
@@ -116,7 +116,7 @@ To manage site access restriction for nongroup connected sites using PowerShell,
 |Remove group     |`Set-SPOSite -Identity <siteurl> -RemoveRestrictedAccessControlGroups <comma separated group GUIDS>`         |  
 |Reset site access restriction  |`Set-SPOSite -Identity <siteurl> -ClearRestrictedAccessControl`         |
 
-After enabling the policy for communication sites, the policy status and all configured control groups are displayed for site owners on the **Site access** panel in addition to the **Site Information** and **Permissions** panels.
+After you enable the policy for communication sites, the policy status and all configured control groups are displayed for site owners on the **Site access** panel in addition to the **Site Information** and **Permissions** panels.
 
 :::image type="content" source="media/rac-spac/5-rac-site-access-page.png" alt-text="screenshot of site access panel for restricted access control.":::
 
@@ -127,7 +127,7 @@ Shared and private channel sites [are separate from the Microsoft 365 group-conn
 For shared channel sites, only internal users in the resource tenant are subject to site access restriction. External channel participants are excluded from site access restriction policy and only evaluated per the site's existing site permissions.
 
 > [!IMPORTANT]
-> Adding people to the security group or Microsoft 365 group won't give users access to the channel in Teams. It's recommended to add or remove the same users of the teams channel in Teams and the security group or Microsoft 365 group so users have access to both Teams and SharePoint.
+> Adding people to the security group or Microsoft 365 group doesn't give users access to the channel in Teams. We recommend adding or removing the same users of the teams channel in Teams and the security group or Microsoft 365 group so users have access to both Teams and SharePoint sites.
 
 ## Sharing of sites with Restricted site access policy
 
@@ -141,25 +141,25 @@ Set-SPOTenant -AllowSharingOutsideRestrictedAccessControlGroups $false
 
 ### Sharing with users
 
-Sharing is only allowed with users who are part of restricted access control groups. Sharing will be blocked with anyone outside of the restricted access control groups as shown below:
+Sharing is only allowed with users who are part of restricted access control groups. Sharing is blocked for anyone outside of the restricted access control groups.
 
 ![The screenshot of sharing with users.](media/rac-spac/rac-share-with-users.png)
 
 ### Sharing with groups
 
-Sharing is allowed with Microsoft Entra Security or Microsoft 365 groups which are part of the restricted access control groups list. Thus, sharing with all other groups including Everyone except external users or SharePoint groups won’t be allowed.
+Sharing is allowed with Microsoft Entra Security or Microsoft 365 groups which are part of the restricted access control groups list. Thus, sharing with all other groups including Everyone except external users or SharePoint groups aren't allowed.
 
 ![The screenshot of sharing with groups.](media/rac-spac/rac-share-with-groups.png)
 
 > [!NOTE]
-> At present, sharing of a site and its content won't be allowed for the nested security groups that are part of the restricted access control groups. This support will be added in the next release iteration.
+> Sharing of a site and its content isn't allowed for the nested security groups that are part of the restricted access control groups. This support will be added in the next release iteration.
 
 ## Configure learn more link for access denial error page
 
-Configure your learn more link to inform users who were denied access to a SharePoint site due to the restricted site access control policy. With this customizable error link, you can provide more information and guidance to your users.
+Configure the learn more link to inform users who were denied access to a SharePoint site due to the restricted site access control policy. With this customizable error link, you can provide more information and guidance to your users.
 
 > [!NOTE]
-> The learn more link is a tenant-level setting that applies to all sites that have restricted access control policy enabled.  
+> The learn more link is a tenant-level setting that applies to all sites with restricted access control policy enabled.  
 
 To configure the link, run the following command in SharePoint PowerShell:
 
