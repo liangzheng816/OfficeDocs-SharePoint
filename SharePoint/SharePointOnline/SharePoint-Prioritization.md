@@ -50,6 +50,9 @@ To support prioritization, SharePoint app prioritization operates on a metered A
 - **Graph API Requests**: Most Graph APIs are charged at $0.50 per 1,000 requests.
 - **Other API Requests**: SharePoint APIs such as CSOM and REST are charged at $1.00 per 1,000 requests.
 
+> [!NOTE]
+> As stated above while this is part of the Microsoft Graph Metered API platform all API calls to SharePoint and OneDrive will be included. Price will vary based on the API used per pricing above.
+
 ## How to Leverage SharePoint App Prioritization
 
 ### 1. Onboard on Microsoft Graph Metered APIs
