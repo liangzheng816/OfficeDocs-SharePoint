@@ -29,12 +29,12 @@ Collaborate all in one place by migrating your Dropbox documents, data, and user
 
 ## How does it work?
 
-- **Step 1:** [Connect to Dropbox](mm-Dropbox-step1-connect.md).  Sign in to your Dropbox administrator account to connect to your Microsoft 365 migration.
-- **Step 2:** [Scan and assess](mm-Dropbox-step2-scan-assess.md) Dropbox accounts are scanned automatically for you. Once the scans are complete, download the generated reports and logs to investigate any possible issues that might block your migration.
-- **Step 3:** [Copy to Migrations list](mm-Dropbox-step3-copy-to-migrations.md) After Dropbox has been scanned and determined ready, add them to your migration list.
-- **Step 4:** [Review destination paths](mm-Dropbox-step4-review-destinations.md)  We automatically map source paths to any exactly matching destination paths. Ensure content is being copied to the right place by reviewing and modifying as needed for each destination path.
-- **Step 5:** [Map identities](mm-Dropbox-step5-map-identities.md)   Map your groups and users in Dropbox to an account in Microsoft 365 to migrate your Dropbox sharing settings.
-- **Step 6:** [Migrate and Monitor](mm-Dropbox-step6-migrate-monitor.md) After reviewing your migration setup, migrate your Dropbox accounts and monitor the progress.
+- **Step 1:** [Connect to Dropbox](mm-Dropbox-step1-connect.md). Sign in to your Dropbox administrator account to connect to your Microsoft 365 migration.
+- **Step 2:** [Scan and assess](mm-Dropbox-step2-scan-assess.md). Dropbox accounts are scanned automatically for you. Once the scans are complete, download the generated reports and logs to investigate any possible issues that might block your migration.
+- **Step 3:** [Copy to Migrations list](mm-Dropbox-step3-copy-to-migrations.md). After Dropbox has been scanned and determined ready, add them to your migration list.
+- **Step 4:** [Review destination paths](mm-Dropbox-step4-review-destinations.md). We automatically map source paths to any exactly matching destination paths. Ensure content is being copied to the right place by reviewing and modifying as needed for each destination path.
+- **Step 5:** [Map identities](mm-Dropbox-step5-map-identities.md). Map your groups and users in Dropbox to an account in Microsoft 365 to migrate your Dropbox sharing settings.
+- **Step 6:** [Migrate and Monitor](mm-Dropbox-step6-migrate-monitor.md). After reviewing your migration setup, migrate your Dropbox accounts and monitor the progress.
 
 ## Get started
 
