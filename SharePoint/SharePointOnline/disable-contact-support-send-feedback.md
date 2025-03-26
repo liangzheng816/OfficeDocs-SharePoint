@@ -1,5 +1,5 @@
 ---
-ms.date: 4/12/2024
+ms.date: 03/26/2025
 title: "Prevent users from contacting Microsoft directly"
 ms.reviewer: pramod.balasu
 ms.author: mactra
@@ -20,12 +20,12 @@ description: "This article describes how SharePoint Administrators in Microsoft 
 
 > [!NOTE]
 >
-> - The ability of OneDrive users to contact Microsoft directly in the form of support requests will be disabled before end of calendar year 2022. </br>
-    Only an administrator will be able to open a support request with Microsoft.</br>
+> - The ability of OneDrive users to contact Microsoft directly in the form of support requests is disabled before end of calendar year 2022. </br>
+    Only an administrator is able to open a support request with Microsoft.</br>
 > - Users can still send feedback as usual on the OneDrive app on Windows, Mac, iOS, and Android devices. </br>
-> - For **Windows and Mac**: 'Contact support' will be disabled in future updates and for existing or old versions it will not work to create a service request. </br>
-> - For **Android**: 'Report a Problem' will create a feedback item instead of a service request.</br>
-> - For **iOS**: 'Ask for help' will be disabled in future updates and for existing or old versions it will not work to create a service request. 'Report a Problem' will create a feedback item instead of a service request.
+> - For **Windows and Mac**: 'Contact support' is disabled in future updates and for existing or old versions, it doesn't  let you create a service request. </br>
+> - For **Android**: 'Report a Problem' creates a feedback item instead of a service request.</br>
+> - For **iOS**: 'Ask for help' will be disabled in future updates and for existing or old versions, you're unable to create a service request. 'Report a Problem' creates a feedback item instead of a service request.
 
 The OneDrive sync app (OneDrive.exe) allows users to contact Microsoft directly from within the app. Users can:
 
@@ -34,9 +34,9 @@ The OneDrive sync app (OneDrive.exe) allows users to contact Microsoft directly 
 
 ![The Get help and Send feedback commands](media/Img1-4717638.png)
 
-As a SharePoint Administrator, you can disable these support features to prevent people in your organization from contacting Microsoft directly.
+As a SharePoint Administrator, you can disable the support features to prevent people in your organization from contacting Microsoft directly.
 
-If you disable these features, users can still select Get help to view help articles, but the Contact support link will no longer appear.
+If you disable these features, users can still select **Get help** and view help articles, but the **Contact support** link no longer appears.
 
 The following screenshots show the changes after you disable the support features.
 
@@ -80,7 +80,7 @@ Follow these steps to disable the features on a PC by editing the registry.
 
 2. Right-click **OneDrive**, select **New**, and then select **DWORD (32-bit) Value**.
 
-3. Enter **DisableReportProblemDialog** for the name.
+3. Enter `DisableReportProblemDialog` for the name.
 
 4. Right-click the new registry key, enter **1** for **Value data**, and then select **OK**.
 
@@ -89,8 +89,8 @@ Follow these steps to disable the features on a PC by editing the registry.
 To disable the features in the OneDrive sync app for Mac, add a preference to defaults.
 
 For the standalone Mac sync app:
-**defaults write com.microsoft.OneDrive DisableReportProblemDialog 1**
+`defaults write com.microsoft.OneDrive DisableReportProblemDialog 1`
 
 For the Mac sync app installed through the Mac App Store:
 
-**defaults write com.microsoft.OneDrive-mac DisableReportProblemDialog 1**
+`defaults write com.microsoft.OneDrive-mac DisableReportProblemDialog 1`
