@@ -90,7 +90,7 @@ For newly unlicensed OneDrive accounts, it will be after 93 days of the license 
   
   1. Ensure you have Global admin or SharePoint admin permissions.
   
-  1. [Enable Microsoft 365 Archive ](/microsoft-365/archive/archive-setup?view=o365-worldwide&preserve-view=true)Unlicensed Account billing (available starting December 2024).
+  1. [Enable Microsoft 365 Archive](/microsoft-365/archive/archive-setup?view=o365-worldwide&preserve-view=true)Unlicensed Account billing (available starting December 2024).
   
        After completing the setup and triggering reactivation, it may take up to 24 hours for the account to become accessible. Once reactivated, the account remains active for 30 days before being automatically archived again.
 
