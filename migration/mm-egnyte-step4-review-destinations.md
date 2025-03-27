@@ -28,7 +28,7 @@ description: Review your destination paths for your Egnyte migration while using
 
 In this step, review the destination paths of the accounts you moved to the migrations list, making sure they're correct. An account can't be migrated without a destination indicated. Once you start migrating content to a destination, it can't be modified.
 
-## Single destination edit
+## Editing for a single destination
 
 If a destination is missing on a single user, highlight the row and update the value.
 
