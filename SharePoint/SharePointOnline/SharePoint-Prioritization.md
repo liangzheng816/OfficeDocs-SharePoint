@@ -36,7 +36,7 @@ SharePoint app prioritization allows businesses to assign higher priority to cri
 - **Scalable Resources**: Apps can exceed [normal thresholds](https://aka.ms/spo429) by up to 10x when resources are available.
 - **Dedicated Resources**: Prioritized apps use isolated resources, avoiding conflicts with general tenant operations. The app utilization no longer counts against user and tenant limits.
 - **Financially-Backed SLAs**: The service follows Azure’s financially-backed Service Level Agreements for reliability.
-- **No Code Changes**: Apps can be prioritized without development changes if they are registered on Microsoft Graph metered APIs.
+- **No Code Changes**: Apps can be prioritized without development changes if they are registered on [Microsoft Graph metered APIs](/graph/metered-api-overview).
 - **Reduced Throttling**: Critical apps are prioritized during resource contention, ensuring uninterrupted functionality.
 - **Pay-As-You-Go**: Organizations only pay for the resources they use.
 
@@ -54,7 +54,7 @@ SharePoint app prioritization integrates with Azure's cost management tools, all
 
 ### 1. Onboard to Microsoft Graph Metered APIs
 
-Follow the instructions at [Microsoft Graph metered APIs](/graph/metered-api) to onboard your app.
+Follow the instructions at [Microsoft Graph metered APIs](/graph/metered-api-setup) to onboard your app.
 
 ### 2. Manage SharePoint App Prioritization with PowerShell
 
@@ -80,7 +80,7 @@ The cost depends on the API usage. Graph API requests cost $0.50 per 1,000 reque
 Yes, apps can be prioritized without development changes if they are registered on Microsoft Graph metered APIs.
 
 ### How do I monitor the cost of prioritized apps?
-You can use Azure's cost management tools to monitor and control expenses related to SharePoint App Prioritization.
+You can use [Azure's cost management tools](/azure/cost-management-billing/understand/download-azure-invoice) to monitor and control expenses related to SharePoint App Prioritization.
 
 ### What happens if my app exceeds the allocated quota?
 Depending on the quota multiplier property assigned (2 to 10), when the set limit is reached, the app will see normal throttling responses.
@@ -90,7 +90,7 @@ Based on the limits defined at [Aka.ms/SPO429](https://aka.ms/spo429), the follo
 
 ## Related Topics
 
-- [Microsoft Graph Metered APIs](/graph/metered-api)
+- [Microsoft Graph Metered APIs](/graph/metered-api-overview)
 - [Azure Cost Management Documentation](/azure/cost-management/index)
 - [Understanding SharePoint Throttling Limits](https://aka.ms/spo429)
 - [Add-SPOAppPrioritizationPolicy PowerShell Cmdlet](/powershell/module/sharepoint-online/add-spoappprioritizationpolicy)
