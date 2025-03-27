@@ -25,7 +25,7 @@ description: "Step 6: Migrate and monitor Egnyte migration"
 ---
 # Step 6:  Migrate and monitor your Egnyte migration
 
-Once you've reviewed the accounts, confirmed the destinations, correctly mapped identities, you're ready to migrate.
+Once you review the accounts, confirm the destinations, and correctly map identities, you're ready to migrate.
 
 >[!Important]
 >We strongly recommend you don't rename or move migrated files before the final migration has been completed. Doing so results in files being overwritten.
@@ -46,6 +46,6 @@ Once you've reviewed the accounts, confirmed the destinations, correctly mapped 
 
 At a maximum, only 50 task rows can run simultaneously. This total includes both scanning and migrating.
 
-If you select more than that total combined number and start scanning or migrating, only 50 randomly chosen rows run. The rest are queued.
+If you select more than that total combined number and start scanning or migrating, only 50 randomly chosen rows run. The remaining rows are queued.
 
 As a task row completes, another from the queue starts migrating or scanning automatically. The maximum allowed is 50 task rows. However, if a migration experiences any slowdowns or back-off requests, it can drop lower than this number to keep the migration stable.
