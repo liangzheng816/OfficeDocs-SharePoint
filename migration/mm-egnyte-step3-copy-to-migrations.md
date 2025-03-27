@@ -26,7 +26,7 @@ description: "Learn what the third step in using Migration Manager to migrate Eg
 
 # Step 3: Copy to migrations
 
-After your Egnyte folders have been scanned and marked as ready, add them to your migration list.
+After your Egnyte folders are scanned and marked as ready, add them to your migration list.
 
 1. In the **Folders** tab, select the tasks (folders) with a scan status of "Ready to migrate".
 1. Select **Copy to Folder migrations** from the action bar to activate the "Copy to migrations" setting panel.
