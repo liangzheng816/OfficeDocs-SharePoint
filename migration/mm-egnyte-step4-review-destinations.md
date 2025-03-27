@@ -42,11 +42,11 @@ If a destination is missing on a single user, highlight the row and update the v
 3. Select **Save path**.
 
 >[!Note]
-> Destinations might not be visible on the UI due to admin access limitations, multi-geo tenant issues, recent site creation delays, or special characters in the destination path. If this occurs, please upload the data using a CSV file as described in the section below.
+> Destinations might not be visible on the UI due to admin access limitations, multi-geo tenant issues, recent site creation delays, or special characters in the destination path. If this occurs, please upload the data using a CSV file as described in the next section.
 
 ## Upload destinations using a CSV file
 
-If there are many destinations to edit, you can choose to upload a bulk destinations CSV file.  Download the *MigrationDestinations.csv* file template to your computer and enter your destinations. The template lists all migration tasks that have never been run, and you can add to or modify the “destination path” column. Then save your file as a .csv file using any name you wish.
+If there are many destinations to edit, you can choose to upload a bulk destinations CSV file. Download the *MigrationDestinations.csv* file template to your computer and enter your destinations. The template lists all migration tasks that have never been run, and you can add to or modify the "destination path" column. Then save your file as a .csv file using any name you wish.
 
 ![upload destinations for Google accounts bulk.](media/mm-google-bulk-upload-destination-panel.png)
 
