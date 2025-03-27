@@ -53,7 +53,7 @@ Under **Select which Web APIs you will use**, select:
 - Issue a new key for Egnyte Connect API 
 - Issue a new key for Egnyte protect
 
-Egnyte automativally generates the keys. You need these keys to connect Migration Manager.
+Egnyte automatically generates the keys. You need these keys to connect Migration Manager.
 
 >[!Tip]
 > If you need assistance creating your application, contact [Egnyte support](https://developers.egnyte.com/contact).
