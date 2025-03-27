@@ -253,7 +253,7 @@ As an example, if the billing is put down to reactivate one particular unlicense
 **Answer:** It takes up to 24 hours for the account to be accessible. Once the account is reactivated, it remains active for a total of 30 days before it gets automatically archived again.
 
 **11. Is there any charge to use the eDiscovery Hold feature?**
-**Answer:** We honor eDiscovery hold and charge accordingly. eDiscovery Hold works the same way as retention policy and legal hold.
+**Answer:** We honor eDiscovery holds to their full extent and aren't introducing any new charges for eDiscovery searches or exports. eDiscovery Hold works the same way as retention policy and legal hold.  If billing is enabled for unlicensed OneDrive accounts, then you'll be charged for the monthly storage of archived unlicensed accounts, but there will be no additional charges for eDiscovery actions. 
 
 **12. What's the process to relicense an account once it's archived?**
 
