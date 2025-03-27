@@ -28,9 +28,9 @@ description: "Step 5:  Map Egnyte identities with Migration Manager."
 
 Map identities of your Egnyte to Microsoft 365 accounts while using Migration Manager.
 
-Identity Mapping is when you match the user and group identities that have access to your source environment (in this case Egnyte) and map those identities to Microsoft 365 user and group identities. This process is important to migration. If identities are not properly set up prior to migration, it can result in users losing access to content. It can also result in information being incorrect at the destination.
+Identity Mapping is when you match the user and group identities that have access to your source environment (in this case Egnyte) and map those identities to Microsoft 365 user and group identities. This process is important to migration. If identities aren't properly set up before migration, it can result in users losing access to content. It can also result in information being incorrect at the destination.
 
-Map your groups and users in Egnyte to those in Microsoft 365 to migrate your Egnyte sharing settings.
+Map your groups and users in Egnyte to those groups and users in Microsoft 365 to migrate your Egnyte sharing settings.
 
 1. Select the Migrations tab.
 2. Select **Map identities** on the menu bar.
