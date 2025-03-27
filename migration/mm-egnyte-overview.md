@@ -54,7 +54,7 @@ Navigate to [Microsoft 365 Admin Center Home - Setup - Migration and imports](ht
 
 - **Access to the source**: Have Egnyte account credentials that have **Read** access to any Egnyte user account you plan to migrate.
 - **Prerequisites installed:** Make sure you have the necessary prerequisites installed.
-- **Request a rate increase from Egynte**.  Your new Egnyte application lets you connect to your Egnyte account. However, it's likely that it won't allow you to migrate content to Microsoft 365 due to the limits Egnyte imposes on new applications. Sign into your Egynte developer account to determine your existing rate limit. Then contact Egynte support to submit your request.
+- **Request a rate increase from Egynte**. Your new Egnyte application lets you connect to your Egnyte account. However, it's likely that it won't allow you to migrate content to Microsoft 365 due to the limits Egnyte imposes on new applications. Sign into your Egynte developer account to determine your existing rate limit. Then contact Egynte support to submit your request.
 
 **Sample request email:**
 
