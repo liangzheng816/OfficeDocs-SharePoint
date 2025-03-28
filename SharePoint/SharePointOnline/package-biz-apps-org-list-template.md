@@ -35,7 +35,7 @@ Once you have your source SharePoint list set up and are ready to work on integr
 
 1. Add a new flow or customize existing flows to this solution by referring to [Create a cloud flow in a solution](/power-automate/create-flow-solution).  
 1. Ensure that your flows use connection references for each trigger and action that you use. For more information on how to use a connection reference, see [Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference).
-1. Once you are satisfied with the contents of your solution (including any connection references or environment variables you wish to set up), [export and download](/power-automate/export-flow-solution) it to a disk.
+1. Once you're satisfied with the contents of your solution (including any connection references or environment variables you wish to set up), [export and download](/power-automate/export-flow-solution) it to a disk.
 1. Extract all files from the zip file into a separate folder.
 1. Browse into the folder's **Workflows** subfolder.
 1. Open each flow-related .json file and then search and replace all instances of the following elements:
@@ -88,7 +88,7 @@ Once you have your source SharePoint list set up and are ready to work on integr
 
    `[Get-SPOSiteScriptFromList](/powershell/module/sharepoint-online/get-spositescriptfromlist)  -ListUrl <full URL of the target list> | Out-File manifest.json`
 
-5.	Open the *manifest.json* file in your favorite text (or code) editor and manually add an action with the verb "importBusinessApps", the relative path of your solution file inside the overall template package and the target listName (in this case, the title of the listName binding). This value should be the same as the *listName* property of the "CreateSPList" action.
+5.	Open the *manifest.json* file in your favorite text (or code) editor and manually add an action with the verb "importBusinessApps," the relative path of your solution file inside the overall template package and the target listName (in this case, the title of the listName binding). This value should be the same as the *listName* property of the "CreateSPList" action.
 
    For example:
 
@@ -115,7 +115,7 @@ Once you have your source SharePoint list set up and are ready to work on integr
    The output should contain an *Id* property which is needed in the following step(s).
 
    > [!NOTE]
-   > (Optional) Run `Get-SPOListDesign` to ensure you're not adding a duplicate with the same title/description, or to simply inspect what's already there.
+   > (Optional) Run `Get-SPOListDesign` to ensure you're not adding a duplicate with the same title/description, or to inspect what's already there.
 
 3. Run the following command: 
 
