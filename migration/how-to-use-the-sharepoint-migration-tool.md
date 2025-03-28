@@ -48,4 +48,4 @@ Before you begin using SPMT, review the required permissions, prerequisites, and
 ## [**Step 2: Scan and assess a SharePoint site (site migration only)**](spmt-scan.md)
 
 > [!NOTE]
-> Currently, the **SharePoint Migration Tool** is not available for users of Office 365 operated by 21Vianet in China.
+> Currently, the **SharePoint Migration Tool** isn't available for users of Office 365 operated by 21Vianet in China.
