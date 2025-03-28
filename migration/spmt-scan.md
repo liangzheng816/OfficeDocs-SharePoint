@@ -38,9 +38,9 @@ You can add a new scan by following the prompts and manage all your scan tasks i
 
 2. Select a method. In this example, select a single site.
 
-   :::image type="content" source="media/spmt-4-scan-select-method.png" alt-text="Select a scan method, single or bulk.":::
+   :::image type="content" source="media/spmt-4-scan-select-method.png" alt-text="Select a scan method: single or bulk.":::
 
-3. Enter the URL location of the site you want to scan and then select **Start**.  Alternatively, you can choose to save this scan and run it at a later time.
+3. Enter the URL location of the site you want to scan and then select **Start**. Alternatively, you can choose to save this scan and run it at a later time.
 
     :::image type="content" source="media/spmt-scan-single-site-url.png" alt-text="Enter the url location of the site you want to scan.":::
 
@@ -48,7 +48,7 @@ You can add a new scan by following the prompts and manage all your scan tasks i
 
     :::image type="content" source="media/spmt-4-scans-list.png" alt-text="View the list of scans.":::
 
-5. The dashboard screen gives you a summary of the site content inventory and potential migration risks. Review the inventory and risk breakdown by scrolling down to the bottom of the dashboard.  Select **Download report** to view the full details.
+5. The dashboard screen gives you a summary of the site content inventory and potential migration risks. Review the inventory and risk breakdown by scrolling down to the bottom of the dashboard. Select **Download report** to view the full details.
 
     :::image type="content" source="media/spmt-4-scan-dashboard-results.png" alt-text="Review the scan results on the dashboard.":::
 
