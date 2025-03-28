@@ -1,5 +1,5 @@
 ---
-ms.date: 03/28/2024
+ms.date: 03/28/2025
 title: "Step 2 - Scan and assess a SharePoint Server site using SPMT"
 ms.reviewer: 
 ms.author: heidip
