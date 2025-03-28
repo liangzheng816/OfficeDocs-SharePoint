@@ -38,7 +38,7 @@ When creating a migration task, you can choose to migrate your sites, just your 
 
 - **Username and password**. When you first open SPMT, you're prompted for your Microsoft 365 username and password. The credentials you provide must be to the migration *destination*.
 - **Proxy connections are not supported.** Using Proxy connections yields errors such as "SharePoint login fail" or "can't load document library".
-- If you've already signed in to the destination site while using SPMT, you won't be prompted again for the same site credentials.
+- If you're already signed in to the destination site while using SPMT, you aren't prompted again for the same site credentials.
 
 ## Site migration
 
@@ -74,7 +74,7 @@ When creating a migration task, you can choose to migrate your sites, just your 
 
    ![Select a site structure hub association.](media/spmt-select-hub-association.png)
 
-11. If you choose to associate with a hub, select the associate destiation registration option if you want to register your destination as a hub or associate the sites with an existing hub.
+11. If you choose to associate with a hub, select the associate destination registration option if you want to register your destination as a hub or associate the sites with an existing hub.
 
     ![SPMT site structure for associating the destination to register as a hub or associate the sits with an existing hub.](media/spmt-site-structure-associate-destination-as-hub.png)
 
@@ -91,7 +91,7 @@ When creating a migration task, you can choose to migrate your sites, just your 
 1. Start SPMT, and then enter your Microsoft 365 username and password.
 2. Select **Add new migration**.
 3. Under **Select a method**, choose **List or document library migration**.
-4. Enter the URL of the list or library you want to migrate. Select a list or library from the dropdown list.  Select **Next**.
+4. Enter the URL of the list or library you want to migrate. Select a list or library from the dropdown list. Select **Next**.
 5. Select a destination: **Microsoft Teams**, **SharePoint**, or **OneDrive**. Enter the URL, email address, or Team name where you want to migrate. Select **Next**.
 6. Enter the list destination. Select **Next**.
 7.Select **Next** to review settings. Select **Start** to begin migration.
@@ -104,7 +104,7 @@ For a complete overview and step by step solution on migrating SharePoint Server
 
 ## Bulk migration
 
-If you have many sources to migrate, you can use either a JSON or CSV file to do a bulk migration. To learn more on how to create a JSON or CSV file for data content migration, see [How to format your JSON or CSV file for data content migration](how-to-format-your-csv-file-for-data-content-migration.md).
+If you have many sources to migrate, you can use either a JSON or CSV file to do a bulk migration. You can learn more on how to create a JSON or CSV file for data content migration. See [How to format your JSON or CSV file for data content migration](how-to-format-your-csv-file-for-data-content-migration.md).
 
 1. Start SPMT, and then enter your Microsoft 365 username and password.
 2. Select **Add a new migration**.
@@ -114,14 +114,14 @@ If you have many sources to migrate, you can use either a JSON or CSV file to do
    > [!NOTE]
    > If you're migrating files from an on-premises SharePoint Server, you're prompted for your username and password for that site unless you provided those credentials in a previous step.
    >
-   > If any errors appear in your file, it's detected on a line-by-line basis. The error indicates which line or lines contain(s) the errors. You can't proceed until you correct the errors in your file.
+   > If any errors appear in your file, they're detected on a line-by-line basis. The error indicates which line or lines contain the errors. You can't proceed until you correct the errors in your file.
 
 5. If you want to select another set of data files to migrate, select **Add another migration**. If not, select **Next**. Or choose if you want to save this task for later.
 6. Review your settings, and then select **Start**.
 
 ## Incremental migration
 
-After a migration task has completed, you can save it to be rerun at a later date, allowing you to copy only those new or updated files in the source location.
+After a migration task completes, you can save it to be rerun at a later date, allowing you to copy only those new or updated files in the source location.
 
 > [!NOTE]
 > If you wish to make changes to this setting, do so before your initial migration job is submitted. This setting is global; it applies to all subsequent tasks you submit.
@@ -130,7 +130,7 @@ When this setting is on, an incremental check of the SharePoint target environme
 
 |Status |Result |
 |-------|-------|
-|Modified time of the source file is earlier than the modified time of the target file. |File won't be migrated. |
+|Modified time of the source file is earlier than the modified time of the target file. |File isn't migrated. |
 |Files or lists exist in the SharePoint target location. |Migration skips those existing objects during scan. |
 |Time stamp on files or object in the source location is newer in the source. |The newer files are migrated. |
 |Source is a file share. |Validation for migration is based on the file/folder path. |
