@@ -1,5 +1,5 @@
 ---
-ms.date: 10/30/2024
+ms.date: 03/328/2025
 title: "Step 1 - Install the SharePoint Migration Tool (SPMT)"
 ms.reviewer: 
 ms.author: heidip
