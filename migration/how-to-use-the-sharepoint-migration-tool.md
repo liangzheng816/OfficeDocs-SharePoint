@@ -29,7 +29,7 @@ description: The SharePoint Migration Tool copies your files from SharePoint on-
 
 ## Download and install
 
-Download and install SPMT using one of the links listed below.
+Download and install SPMT using one of the links listed in the following table:
 
 | Public preview | First release | General Availability |
 |:-----|:-----|:-----|
