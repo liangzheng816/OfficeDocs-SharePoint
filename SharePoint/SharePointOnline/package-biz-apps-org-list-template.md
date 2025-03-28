@@ -84,11 +84,11 @@ Once you have your source SharePoint list set up and are ready to work on integr
 
    `[Connect-SPOService](/powershell/module/sharepoint-online/connect-sposervice)  -Url <Link to SPO admin portal> -Credential <full username of the admin user>`
 
-4.	Run the following command to extract a site script file from the target list:
+1.	Run the following command to extract a site script file from the target list:
 
    `[Get-SPOSiteScriptFromList](/powershell/module/sharepoint-online/get-spositescriptfromlist)  -ListUrl <full URL of the target list> | Out-File manifest.json`
 
-5.	Open the *manifest.json* file in your favorite text (or code) editor and manually add an action with the verb "importBusinessApps," the relative path of your solution file inside the overall template package and the target listName (in this case, the title of the listName binding). This value should be the same as the *listName* property of the "CreateSPList" action.
+1.	Open the *manifest.json* file in your favorite text (or code) editor and manually add an action with the verb "importBusinessApps," the relative path of your solution file inside the overall template package and the target listName (in this case, the title of the listName binding). This value should be the same as the *listName* property of the "CreateSPList" action.
 
    For example:
 
