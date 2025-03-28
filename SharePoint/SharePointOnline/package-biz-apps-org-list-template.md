@@ -76,7 +76,7 @@ Once you have your source SharePoint list set up and are ready to work on integr
 ## Obtaining the site script action file (manifest.json)
 
 > [!IMPORTANT]
-> Prior to performing the steps in this section, ensure that you've tested your prototype list and flow(s) to your satisfaction.
+> Prior to performing the steps in this section, ensure that you've tested your prototype list and flows to your satisfaction.
 
 1. Ensure you've installed SharePoint Online Management Shell on your computer.
 1. Launch SharePoint Online Management Shell.
@@ -112,7 +112,7 @@ Once you have your source SharePoint list set up and are ready to work on integr
 
    `"$pkg"`
 
-   The output should contain an *Id* property which is needed in the following step(s).
+   The output should contain an *Id* property which is needed in the following steps.
 
    > [!NOTE]
    > (Optional) Run `Get-SPOListDesign` to ensure you're not adding a duplicate with the same title/description, or to inspect what's already there.
