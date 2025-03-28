@@ -37,7 +37,7 @@ When creating a migration task, you can choose to migrate your sites, just your 
 ## Before you begin
 
 - **Username and password**. When you first open SPMT, you're prompted for your Microsoft 365 username and password. The credentials you provide must be to the migration *destination*.
-- **Proxy connections are not supported.** Using Proxy connections yields errors such as "SharePoint login fail" or "can't load document library".
+- **Proxy connections are not supported.** Using Proxy connections yields errors such as "SharePoint login fail" or "Can't load document library".
 - If you're already signed in to the destination site while using SPMT, you aren't prompted again for the same site credentials.
 
 ## Site migration
