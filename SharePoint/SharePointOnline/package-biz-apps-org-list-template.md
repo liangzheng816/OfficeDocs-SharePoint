@@ -28,7 +28,7 @@ Once you have your source SharePoint list set up and are ready to work on integr
 
 ## Obtaining solution zip file
 
-1. Sign in to Power Automate portal by launching https://flow.microsoft.com/(or choose **Integrate > Power Automate > See your flows**" in the SharePoint Portal).
+1. Sign in to Power Automate portal by launching https://flow.microsoft.com/ (or choose **Integrate > Power Automate > See your flows**" in the SharePoint Portal).
 1. Create a new Dataverse solution by referring to [Overview of solution-aware flows](/power-automate/overview-solution-flows).
 
    For an introduction to Dataverse solutions, see [Solution concepts](/power-platform/alm/solution-concepts-alm).
@@ -42,32 +42,32 @@ Once you have your source SharePoint list set up and are ready to work on integr
     1. **The URL of the SharePoint site that the original list resided in**: Replace with **{ContextSharePointSiteUrl}**.
     1. **The ID of the original SharePoint list**: Replace with **{ContextSharePointListId}**.
 
-    **For example**:
+   **For example**:
 
-    **[Before replacements]**
+   **[Before replacements]**
 
 
-```powershell-interactive
-"parameters": {
-    "dataset": "https://microsoft.sharepoint-df.com/teams/AlinTest ",
-    "table": "d6ac2804-7a1c-4cd4-98c8-56b85a9294b7"
-              }
-```
+      ```powershell-interactive
+      "parameters": {
+         "dataset": "https://microsoft.sharepoint-df.com/teams/AlinTest ",
+         "table": "d6ac2804-7a1c-4cd4-98c8-56b85a9294b7"
+                  }
+      ```
 
    **For example**:
 
    **[After replacements]**
 
     
-```powershell-interactive
-"parameters": {
-    "dataset": "{ContextSharePointSiteUrl}",
-    "table": "{ContextSharePointListId}"
-              }
-```
+      ```powershell-interactive
+      "parameters": {
+         "dataset": "{ContextSharePointSiteUrl}",
+         "table": "{ContextSharePointListId}"
+                  }
+      ```
 
-10.	Save the changes and close all file editors that you've opened for these files.
-11.	Go back to the root folder of the solution; select all files (solution.xml, customizations.xml, and so on) and folders; right-click and choose **Compress to ZIP file** from the context menu.
+1.	Save the changes and close all file editors that you've opened for these files.
+1.	Go back to the root folder of the solution; select all files (solution.xml, customizations.xml, and so on) and folders; right-click and choose **Compress to ZIP file** from the context menu.
 
     :::image type="content" source="media/select-all-files-compress-to-zip-file.png" alt-text="Selecting all the files and compressing them to a zip." lightbox="media/select-all-files-compress-to-zip-file.png":::
 
@@ -86,13 +86,13 @@ Once you have your source SharePoint list set up and are ready to work on integr
 
 4.	Run the following command to extract a site script file from the target list:
 
-    `[Get-SPOSiteScriptFromList](/powershell/module/sharepoint-online/get-spositescriptfromlist)  -ListUrl <full URL of the target list> | Out-File manifest.json`
+   `[Get-SPOSiteScriptFromList](/powershell/module/sharepoint-online/get-spositescriptfromlist)  -ListUrl <full URL of the target list> | Out-File manifest.json`
 
 5.	Open the *manifest.json* file in your favorite text (or code) editor and manually add an action with the verb "importBusinessApps", the relative path of your solution file inside the overall template package and the target listName (in this case, the title of the listName binding). This value should be the same as the *listName* property of the "CreateSPList" action.
 
-    For example:
+   For example:
 
-    :::image type="content" source="media/adding-verb-json-file.png" alt-text="Adding a verb in the .json file." lightbox="media/adding-verb-json-file.png":::
+   :::image type="content" source="media/adding-verb-json-file.png" alt-text="Adding a verb in the .json file." lightbox="media/adding-verb-json-file.png":::
 
 ## Assembling the final SharePoint package zip file
 
