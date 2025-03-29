@@ -156,7 +156,7 @@ The **ItemSummary.csv** report is a summary report at the task level.
 
 ### Item Failure Report
 
-The **ItemFailureReport.csv**, is only generated if an error resulting in a file being unable to migrate or failing to migrate.
+The **ItemFailureReport.csv** report is only generated if an error resulting in a file being unable to migrate or failing to migrate.
 
 |**Column** |**Description** |
 |:-----|:-----|
