@@ -1,5 +1,5 @@
 ---
-ms.date: 02/08/2023
+ms.date: 03/31/2025
 title: "Migrate SharePoint Designer workflows with SPMT"
 ms.reviewer:
 ms.author: heidip
@@ -72,9 +72,9 @@ The SharePoint Migration Tool (SPMT) 4.1 now supports the migration of SharePoin
 |Condition|The file type is a specific type|2010|If/else|
 
 >[!Note]
->"*" There is no direct matching action in Power Automate for workflow actions like “Log to History List” and “Set Workflow Status”, “Compose” action is used as a placeholder action in migrated flow.
+>"*" There is no direct matching action in Power Automate for workflow actions like "Log to History List" and "Set Workflow Status", "Compose" action is used as a placeholder action in migrated flow.
 >
->"**" A workflow with multiple stage forms a directed graph. A general directed graph cannot be supported in Power Automate. The migration tool will only convert workflow with stage format of Directed Rooted Tree (or Arborescence), and report error otherwise.
+>"**" A workflow with multiple stage forms a directed graph. A general directed graph can't be supported in Power Automate. The migration tool only converts workflow with a stage format of Directed Rooted Tree (or Arborescence), and reports an error otherwise.
 
 ## Designer workflow actions not migrated
 
@@ -110,16 +110,16 @@ The SharePoint Migration Tool (SPMT) 4.1 now supports the migration of SharePoin
 |Document Set|Set content approval status for doc set|2010|
 |Document Set|Start document set approval process|2010|
 
-By default, the migration tool stops workflow migration and reports errors if there are one or more unsupported actions in the source workflow. You can let the tool continue the migration process by selecting “Convert to Compose action” option in the migration settings, “Handle Unsupported Action”.
+By default, the migration tool stops workflow migration and reports errors if there are one or more unsupported actions in the source workflow. You can let the tool continue the migration process by selecting "Convert to Compose action" option in the migration settings, "Handle Unsupported Action".
 
 ## Lookups
 
-Lookups are used in many workflow actions. Lookup types include
+Lookups are used in many workflow actions. Lookup types include:
 
-- Lookup for string. It's used in text field, such as email “body” field, task “request” field.
-- Lookup for user. It's used in user field, such as email “to” field, task “participant” field.
+- Lookup for string. It's used in text field, such as email "body" field, task "request" field.
+- Lookup for user. It's used in user field, such as email "to" field, task "participant" field.
 
-In Power Automate, “Dynamic content” is used to provide dynamic value, similar with lookup in workflow.
+In Power Automate, "Dynamic content" is used to provide dynamic value, similar with lookup in workflow.
 
 ### Lookup for string
 
@@ -141,7 +141,7 @@ Unsupported lookups for string include:
 
 Supported lookups for user include:
 
-- User name. An Active Directory (AD) user in the workflow will be mapped to a Microsoft Entra user in migration Power Automate flow.
+- User name. An Active Directory (AD) user in the workflow are mapped to a Microsoft Entra user in migration Power Automate flow.
 
 Unsupported lookups for user include:
 
