@@ -201,33 +201,6 @@ items:
       href: set-up-global-intranet.md
     - name: Intranet governance
       href: intranet-governance.md
-  - name: Organizational communication
-    items:
-    - name: Corporate communications overview
-      href: corporate-communications-overview.md
-      items:
-      - name: Step 1—Plan your communications strategy
-        href: plan-communication-strategy.md
-      - name: Step 2—Review communication tools
-        href: review-communication-apps.md
-      - name: Step 3—Scope and define your audience
-        href: audience-profile.md
-      - name: Step 4—Choose a communication solution
-        href: choose-communication-method.md
-    - name: Set up Viva Connections
-      href: guide-to-setting-up-viva-connections.md
-    - name: Get a home site for your intranet
-      href: home-site-plan.md
-    - name: Distribute organizational news
-      href: distribute-corporate-news-to-your-organization.md
-    - name: Connect leaders and your organization
-      href: leadership-connection.md
-    - name: Onboard new employees
-      href: onboard-employees.md
-    - name: Hold a town hall using Viva Engage
-      href: hold-town-hall-using-viva-engage.md
-    - name: Build learning and training experiences
-      href: build-learning-and-training-experiences-for-employees.md
   - name: Navigation
     items:
     - name: Introduction
