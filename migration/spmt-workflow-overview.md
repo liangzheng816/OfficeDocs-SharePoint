@@ -66,4 +66,4 @@ Make sure you have:
 - **Migrate workflow**
   Review your scan and determine if you're ready to migrate your SharePoint Server workflows. Choose to either use SPMT to step through the process or use the PowerShell method.
 - **Re-run migration**
-  SPMT skips a workflow if it's successfully migrated. If you want to run a new migration to override the migrated flow, delete it from the destination before starting the migration.
+  SPMT skips a workflow if it's been migrated successfully. If you want to run a new migration to override the migrated flow, delete it from the destination before starting the migration.
