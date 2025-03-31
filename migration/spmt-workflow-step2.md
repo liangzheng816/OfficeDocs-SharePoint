@@ -43,7 +43,7 @@ After configuring the required endpoints and configuring Power Automate, you're 
 
 5. Enter the SharePoint Server site URL where your content is located. 
 6. Enter your username and password to the SharePoint Server site; it can be UserID or user email. Select **Sign in**.
-7. Select which workflows to include in the migration. If you select the option for a specific list, you're be prompted for the list name.
+7. Select which workflows to include in the migration. If you select the option for a specific list, you're prompted for the list name.
 
    ![SPMT workflow source.](media/spmt-workflow-select-source.png)
 
