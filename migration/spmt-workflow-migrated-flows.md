@@ -18,7 +18,7 @@ ms.collection:
 - m365initiative-migratetom365
 ms.custom:
 ms.assetid:
-description: "Learn about how workflows will be structured when migrating from SharePoint Server to Power Automate using SPMT."
+description: "Learn about how workflows are structured when migrating from SharePoint Server to Power Automate using SPMT."
 ---
 
 # Migrated flow structure for SharePoint 2010 out of the box (OOTB) workflows
@@ -30,7 +30,7 @@ SPMT generates one or two Power Automate flows for one SharePoint workflow depen
 - If a workflow can be manually started, a list flow is generated with manual trigger.
 - If a workflow can be auto started on create or update, a list flow is generated with auto-trigger.
 
-The chart below shows the first action in a flow migrated from an **out-of-the-box (OOTB)** approval workflow (manual start) and the UI form when a user starts the flow. It lists the mapping of five user inputs between original workflow and converted flow.
+The following chart shows the first action in a flow migrated from an **out-of-the-box (OOTB)** approval workflow (manual start) and the UI form when a user starts the flow. It lists the mapping of five user inputs between original workflow and converted flow.
 
 ![out of the box workflows.](media/spmt-workflow-ootb-options.png)
 
