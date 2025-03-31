@@ -9,7 +9,7 @@ ms.date: 01/13/2025
 audience: Admin
 f1.keywords:
 - NOCSH
-ms.topic: conceptual
+ms.topic: article
 ms.service: sharepoint-online
 ms.localizationpriority: medium
 ms.collection:  
