@@ -62,7 +62,7 @@ After configuring the required endpoints and configuring Power Automate, you're 
 
 ## Migrate workflows using PowerShell
 
-Alternatively, you can migrate your workflows to Power Automate using PowerShell. Before you proceed, make sure you've completed the steps in this article: [Step 1 - Configure endpoints and Power Automate](spmt-workflow-step1.md).
+Alternatively, you can migrate your workflows to Power Automate using PowerShell. Before you proceed, make sure you complete the steps in this article: [Step 1 - Configure endpoints and Power Automate](spmt-workflow-step1.md).
 
 ### Scan workflows
 
@@ -87,7 +87,7 @@ This command:
 
 **MigrationType**
 
-When the MigrationType is **WORKFLOW**, if the structure hasn't been migrated yet, the command migrates site or list structure (not content), then migrates its workflows.
+When the MigrationType is **WORKFLOW**, if the structure isn't migrated yet, the command migrates the site or list structure (not the content), then migrates its workflows.
 
 **DefaultFlowOwnerEmail**
 
