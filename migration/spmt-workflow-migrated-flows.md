@@ -57,8 +57,8 @@ For an auto or manually triggered Power Automate flow, the following workflow co
 
 |Type|Options|
 |---|---|
-|Manual approval PA flow|Three user inputs are supported in the migrated flow. They are: </br><br>- Reviewers. Emails<br>- Request. Text<br>- CC. Emails|
-| Auto triggered PA flow|The following configurations in workflow are migrated to destination flow. They are: </br><br>- Reviewers. Emails<br>- Request. Text<br>- CC. Emails|
+|Manual approval PA flow |Three user inputs are supported in the migrated flow. They are: </br><br>- Reviewers. Emails<br>- Request. Text<br>- CC. Emails |
+| Auto triggered PA flow |The following configurations in workflow are migrated to destination flow. They are: </br><br>- Reviewers. Emails<br>- Request. Text<br>- CC. Emails |
 
 ## Migrated collect signature workflow
 
@@ -70,8 +70,8 @@ For an auto or manually triggered Power Automate flow, the following workflow co
 
 |Type|Options|
 |:-----|:-----|
-|Manually triggered collect feedback| Before starting a workflow, three user inputs are supported in the migrated flow. They are:</br>- Signer order maps to Signer type. Options: First to respond, Wait until all approve</br>-Signers maps to Signers. Emails</br>-Request maps to Message. Text</br>- CC maps to CC. Emails|
-|Auto triggered collect feedback|Signer order maps to Signer type. “Everyone must approve” is used in migrated flow.</br>- Signers maps to Signers. Emails</br>- Request maps to Message. Text</br>- CC maps to CC. Emails|
+|Manually triggered collect feedback |Before you start a workflow, three user inputs are supported in the migrated flow. They are:</br>- Signer order maps to Signer type. Options: First to respond, Wait until all approve</br>-Signers maps to Signers. Emails</br>-Request maps to Message. Text</br>- CC maps to CC. Emails |
+|Auto triggered collect feedback |Signer order maps to Signer type. "Everyone must approve" is used in migrated flow.</br>- Signers maps to Signers. Emails</br>- Request maps to Message. Text</br>- CC maps to CC. Emails |
 
 ## Migrated three-state workflow
 
@@ -79,7 +79,7 @@ The three state workflow is migrated with this structure:
 
 :::image type="content" source="media/spmt-three-state-workflow-steps.png" alt-text="Three state workflow structure.":::
 
-For auto or manual triggered three state Power Automate flow, the following configurations in workflow are migrated to destination flow.  The workflow states are:
+For auto or manual triggered three state Power Automate flow, the following configurations in workflow are migrated to destination flow. The workflow states are:
 
 - StatusField (Status field name)
 - InitialState (Initial state value)
