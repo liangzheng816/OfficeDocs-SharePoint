@@ -49,7 +49,7 @@ If you haven't used Power Automate with this tenant before, you must configure i
    ![Add powerautomate database](media/spmt-add-powerautomate-db.png)
 
 3. Wait for "State" status to change to **Ready**.
-4. To sync a Microsoft Entra user to CDS, sign in to the **Microsoft Power Automate | Microsoft Power Platform** with the account you'd like to set as the default flow owner.
+4. To sync a Microsoft Entra user to Common Data Service (CDS), sign in to the **Microsoft Power Automate | Microsoft Power Platform** with the account you'd like to set as the default flow owner.
 
 > [!Important]
 > The user account you use to migrate must be a OneDrive/SharePoint admin or SharePoint site admin on the Microsoft 365 tenant, and be a Power Automate admin who can manage the solution.
