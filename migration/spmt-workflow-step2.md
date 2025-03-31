@@ -58,7 +58,7 @@ After configuring the required endpoints and configuring Power Automate, you're 
     ![Set your workflow settings.](media/spmt-workflow-settings.png)
 
 12. Select **View all settings**, and choose your option under **Handle Unsupported Action**. If you select **Stop workflow migration and report error**, SPMT will report an error on a workflow if it contains unsupported actions. Otherwise the unsupported actions are converted to Compose actions during migration.
-13. Select **Scan** to start scanning if “Only perform scanning” is selected; or select **Migrate** to start the migration.
+13. Select **Scan** to start scanning if "Only perform scanning" is selected; or select **Migrate** to start the migration.
 
 ## Migrate workflows using PowerShell
 
