@@ -9,7 +9,7 @@ recommendations: true
 audience: Admin
 f1.keywords:
 - CSH
-ms.topic: article
+ms.topic: concept-article
 ms.custom:
 - 'quickshare'
 - 'o365p_enablespextluser'
