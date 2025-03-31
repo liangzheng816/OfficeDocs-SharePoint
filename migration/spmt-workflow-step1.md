@@ -30,7 +30,7 @@ Before you begin your workflow migration, configure the required endpoints.
 
 ## Configure endpoints
 
-The following endpoints are required by workflow migration.
+Workflow migration requires the following endpoints:
 
 |Endpoint                            |
 |------------------------------------|
