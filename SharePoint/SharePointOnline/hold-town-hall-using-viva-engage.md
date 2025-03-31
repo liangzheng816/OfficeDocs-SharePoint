@@ -22,6 +22,7 @@ search.appverid:
 - SPO160
 - MET150
 description: "Learn how to hold a town hall using Viva Engage"
+Robots: NOINDEX, NOFOLLOW
 ---
 
 # Hold a town hall in Viva Engage and keep the conversation going
