@@ -47,11 +47,11 @@ After configuring the required endpoints and configuring Power Automate, you're 
 
    ![SPMT workflow source.](media/spmt-workflow-select-source.png)
 
-8. Enter your destination; the SharePoint site and list where you want to migrate your workflow.  Select the workflow environment. If the site or the list doesn't currently exist, they'll be created for you. Select **Next**.
+8. Enter your destination; the SharePoint site and list where you want to migrate your workflow. Select the workflow environment. If the site or the list doesn't currently exist, they'll be created for you. Select **Next**.
 
    ![Select your destination and environment.](media/spmt-workflow-select-environment.png)
 
-9. This task is added to the list of migration tasks.  If you want to select another set of data files to migrate, select **Add a source**.  Otherwise, select **Next** to go to the next step.
+9. This task is added to the list of migration tasks. If you want to select another set of data files to migrate, select **Add a source**. Otherwise, select **Next** to go to the next step.
 10. On the settings page, turn on **Only perform scanning** to run workflow scanning.
 11. In the **Power Automate flow owner** box, enter the email address of the new flow owner.
 
@@ -70,7 +70,7 @@ This command scans workflows of a given site or list and generates a scan report
 
 ```powershell
 
-Register-SPMTMigration -ScanOnly $true -SPOCredential $targetCredential -UserMappingFile $userMappingFile -MigrationType WORKFLOW -DefaultFlowOwnerEmail  $defaultOwnerName -Force
+Register-SPMTMigration -ScanOnly $true -SPOCredential $targetCredential -UserMappingFile $userMappingFile -MigrationType WORKFLOW -DefaultFlowOwnerEmail $defaultOwnerName -Force
 ...
 Start-SPMTMigration
 
@@ -148,4 +148,4 @@ The migration task generates a report titled *WorkflowMigrationReport.csv* for m
 >[!Note]
 >[Learn more about the workflow reports and error codes](spmt-workflow-report-and-error-codes.md).
 
-## Step 3:  [Activate workflows](spmt-workflow-step3.md)
+## Step 3: [Activate workflows](spmt-workflow-step3.md)
