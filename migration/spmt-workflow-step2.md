@@ -29,7 +29,7 @@ description: Overview - Migrate your SharePoint Server workflows to Microsoft 36
 After configuring the required endpoints and configuring Power Automate, you're ready to start migrating your SharePoint Server workflows. You can choose to use either SPMT or PowerShell.
 
 >[!Note]
->SPMT will skip a workflow if it's already migrated successfully. If you want to run a new migration to override the migrated flow, delete it from the destination before starting the migration.
+>SPMT skips a workflow if it's already migrated successfully. If you want to run a new migration to override the migrated flow, delete it from the destination before starting the migration.
 
 ## Migrate workflows using SPMT
 
@@ -57,7 +57,7 @@ After configuring the required endpoints and configuring Power Automate, you're 
 
     ![Set your workflow settings.](media/spmt-workflow-settings.png)
 
-12. Select **View all settings**, and choose your option under **Handle Unsupported Action**. If you select **Stop workflow migration and report error**, SPMT will report an error on a workflow if it contains unsupported actions. Otherwise the unsupported actions are converted to Compose actions during migration.
+12. Select **View all settings**, and choose your option under **Handle Unsupported Action**. If you select **Stop workflow migration and report error**, SPMT reports an error on a workflow if it contains unsupported actions. Otherwise the unsupported actions are converted to Compose actions during migration.
 13. Select **Scan** to start scanning if "Only perform scanning" is selected; or select **Migrate** to start the migration.
 
 ## Migrate workflows using PowerShell
@@ -91,7 +91,7 @@ When the MigrationType is **WORKFLOW**, if the structure hasn't been migrated ye
 
 **DefaultFlowOwnerEmail**
 
-The default flow owner is required for an OOTB (out of the box) Approval workflow because there isn’t an owner in the workflow definition. After migration, only flow owner and Power Automate admins can access the migrated flows. If the given owner email isn't a valid user at the destination, migration will fail. The flow owner also needs to have permission to access the destination SPO list.
+The default flow owner is required for an OOTB (out of the box) Approval workflow because there isn’t an owner in the workflow definition. After migration, only flow owner and Power Automate admins can access the migrated flows. If the given owner email isn't a valid user at the destination, migration fails. The flow owner also needs to have permission to access the destination SPO list.
 
 ```powershell
 
