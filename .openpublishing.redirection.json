@@ -6,7 +6,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "Sharepoint/SharepointOnline/build-learning-and-training-experiences.md",
+      "source_path": "Sharepoint/SharepointOnline/build-learning-and-training-experiences-for-employees.md",
       "redirect_url": "/viva/microsoft-viva-overview",
       "redirect_document_id": false
     },
@@ -48,7 +48,7 @@
     {
       "source_path": "Sharepoint/SharepointOnline/corporate-communications-overview.md",
       "redirect_url": "/viva/microsoft-viva-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "Sharepoint/SharepointOnline/fluid-framework-access.md",
