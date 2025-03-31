@@ -18,11 +18,12 @@ ms.collection:
 - m365initiative-migratetom365
 ms.custom:
 ms.assetid:
-description: Overview Migrate your SharePoint Designer 2010 & 2013 created workflows to Microsoft 365 using the SharePoint Migration Tool (SPMT)"
+description: Migrate your SharePoint Designer 2010 and 2013 created workflows to Microsoft 365 using the SharePoint Migration Tool (SPMT)"
 ---
-# SharePoint Designer 2010 & 2013 workflow migrations to Power Automate
 
-The SharePoint Migration Tool (SPMT) 4.1 now supports the migration of SharePoint Designer (SPD) 2010 & 2013 workflows.
+# SharePoint Designer 2010 and 2013 workflow migrations to Power Automate
+
+The SharePoint Migration Tool (SPMT) 4.1 now supports the migration of SharePoint Designer (SPD) 2010 and 2013 workflows.
 
 **Actions** are the main elements that form a workflow definition. The current release of SPMT can migrate some commonly used actions, but not all are currently supported. Future releases of SPMT will support more SPD actions.
 
@@ -141,7 +142,7 @@ Unsupported lookups for string include:
 
 Supported lookups for user include:
 
-- User name. An Active Directory (AD) user in the workflow are mapped to a Microsoft Entra user in migration Power Automate flow.
+- User name. An Active Directory (AD) user in the workflow is mapped to a Microsoft Entra user in migration Power Automate flow.
 
 Unsupported lookups for user include:
 
