@@ -18,7 +18,7 @@ ms.collection:
 - m365initiative-migratetom365
 ms.custom:
 ms.assetid:
-description: "The third step in migrating SharePoint Server workflows to Microsoft 365, activating the migrating flows."
+description: "The third step in migrating SharePoint Server workflows to Microsoft 365, activating the migrating flows, using the SharePoint Migration Tool (SPMT)."
 ---
 
 # Step 3 - Activate migrated workflows Power Automate
@@ -26,7 +26,7 @@ description: "The third step in migrating SharePoint Server workflows to Microso
 > [!NOTE]
 > This feature is currently in public preview, and subject to change.
 
-After the migration has completed, the flow owner must sign in to Power Automate to turn on the migrated flows.
+After the migration is complete, the flow owner must sign in to Power Automate to turn on the migrated flows.
 
 1. Sign in to Power Automate.
 2. Navigate to **Solutions**, choose the latest one matching "Solution" in migration report.
@@ -57,13 +57,13 @@ For full details on what SharePoint Server 2010 out-of-the-box (OOTB) workflows 
 
 ###  SharePoint Designer 2010 & 2013 workflows
 
-For full details on what workflow actions and lookups are supported, and what is not, see:
+For full details on what workflow actions and lookups are supported, and what isn't, see:
 
-- [SharePoint Designer 2010 & 2013 Workflow migrations](spmt-workflow-migration-spd.md).
+- [SharePoint Designer 2010 and 2013 Workflow migrations](spmt-workflow-migration-spd.md).
 
 ## What to check after migration
 
-**Review your nesting levels.** </br>Power Automate allows a maximum of eight "nesting levels". If your migrated workflow exceeds that level, an error message will display when you select **Save** on the flow edit page. Review the migrated flow and modify them as needed. Learn more about [Limits and configuration - Power Automate](/power-automate/limits-and-config#flow-definition-limits).
+**Review your nesting levels.** </br>Power Automate allows a maximum of eight "nesting levels". If your migrated workflow exceeds that level, an error message displays when you select **Save** on the flow edit page. Review the migrated flow and modify them as needed. Learn more about [Limits and configuration - Power Automate](/power-automate/limits-and-config#flow-definition-limits).
 
 - *Error message example*. "The power flow's logic app flow template was invalid. The template actions action_name are nested at level '9' which exceeds the maximum nesting limit of '8'.
 
