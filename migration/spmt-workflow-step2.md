@@ -43,11 +43,11 @@ After configuring the required endpoints and configuring Power Automate, you're 
 
 5. Enter the SharePoint Server site URL where your content is located. 
 6. Enter your username and password to the SharePoint Server site; it can be UserID or user email. Select **Sign in**.
-7. Select which workflows to include in the migration. If you select the option for a specific list, you'll be prompted for the list name.
+7. Select which workflows to include in the migration. If you select the option for a specific list, you're be prompted for the list name.
 
    ![SPMT workflow source.](media/spmt-workflow-select-source.png)
 
-8. Enter your destination; the SharePoint site and list where you want to migrate your workflow. Select the workflow environment. If the site or the list doesn't currently exist, they'll be created for you. Select **Next**.
+8. Enter your destination; the SharePoint site and list where you want to migrate your workflow. Select the workflow environment. If the site or the list doesn't currently exist, they're created for you. Select **Next**.
 
    ![Select your destination and environment.](media/spmt-workflow-select-environment.png)
 
@@ -91,7 +91,7 @@ When the MigrationType is **WORKFLOW**, if the structure hasn't been migrated ye
 
 **DefaultFlowOwnerEmail**
 
-The default flow owner is required for an OOTB (out of the box) Approval workflow because there isn’t an owner in the workflow definition. After migration, only flow owner and Power Automate admins can access the migrated flows. If the given owner email isn't a valid user at the destination, migration fails. The flow owner also needs to have permission to access the destination SPO list.
+The default flow owner is required for an OOTB (out of the box) Approval workflow because there isn’t an owner in the workflow definition. After migration, only flow owner and Power Automate admins can access the migrated flows. If the given owner email isn't a valid user at the destination, migration fails. The flow owner also needs to have permission to access the destination SharePoint list.
 
 ```powershell
 
