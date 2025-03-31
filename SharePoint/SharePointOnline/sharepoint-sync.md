@@ -9,7 +9,7 @@ recommendations: true
 audience: Admin
 f1.keywords:
 - NOCSH
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: sharepoint-online
 ms.collection: 
 - M365-collaboration

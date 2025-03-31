@@ -8,7 +8,7 @@ ms.date: 12/5/2017
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: sharepoint-server-itpro
 ms.collection:
 - Ent_O365_Hybrid

@@ -9,7 +9,7 @@ recommendations: true
 audience: Admin
 f1.keywords:
 - CSH
-ms.topic: article
+ms.topic: how-to
 ms.custom:
 - 'WSSEndUser_SPMobileAndroid_LinksTabEmptyState_FL827915'
 ms.service: sharepoint-online

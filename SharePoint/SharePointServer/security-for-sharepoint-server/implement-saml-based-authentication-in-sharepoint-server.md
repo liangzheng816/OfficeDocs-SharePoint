@@ -7,7 +7,7 @@ ms.date: 9/25/2020
 ms.audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: sharepoint-server-itpro
 ms.localizationpriority: medium
 ms.collection:
