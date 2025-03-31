@@ -18,7 +18,7 @@ ms.collection:
 - m365initiative-migratetom365
 ms.custom:
 ms.assetid:
-description: Overview Migrate your SharePoint Server workflows to Microsoft 365 using the SharePoint Migration Tool (SPMT).
+description: Overview - Migrate your SharePoint Server workflows to Microsoft 365 using the SharePoint Migration Tool (SPMT).
 ---
 
 # Step 2 Migrate workflows to Power Automate
