@@ -9,7 +9,7 @@ ms.date: 12/6/2017
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.service: microsoft-365-migration
 ms.localizationpriority: medium
 ms.assetid: de809b30-8e4d-4223-b47e-81912d617dd1

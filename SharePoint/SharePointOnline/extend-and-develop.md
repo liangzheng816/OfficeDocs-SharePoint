@@ -9,7 +9,7 @@ recommendations: true
 audience: Admin
 f1.keywords:
 - CSH
-ms.topic: conceptual
+ms.topic: article
 ms.service: sharepoint-online
 ms.collection: M365-collaboration
 ms.localizationpriority: medium

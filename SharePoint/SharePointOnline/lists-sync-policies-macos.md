@@ -6,7 +6,7 @@ author: maggierui
 manager: jtremper
 audience: Admin
 f1.keywords:
-ms.topic: article
+ms.topic: how-to
 ms.service: sharepoint-online
 ms.localizationpriority: high
 search.appverid:
