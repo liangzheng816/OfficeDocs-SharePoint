@@ -21,7 +21,7 @@ ms.assetid:
 description: "Learn about how workflows will be structured when migrating from SharePoint Server to Power Automate using SPMT."
 ---
 
-# Migrated flow structure for SharePoint 2010 OOTB workflows
+# Migrated flow structure for SharePoint 2010 out of the box (OOTB) workflows
 
 When the Sharepoint Migration Tool (SPMT) migrates a workflow to Power Automate, it finds the Power Automate built-in actions that best match the functions in the original SharePoint workflow. Because of the feature gaps between SharePoint workflow and Power Automate, a converted flow may not carry the exact same behavior as the original one.
 
