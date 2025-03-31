@@ -32,7 +32,7 @@ Using the SharePoint Migration Tool (SPMT), you can now migrate:
 
 - **SharePoint Server 2010 out-of-the-box (OOTB) workflows** to Power Automate, including: Approval, Collect Feedback, Collect Signature, and Three-state workflows.
 - **SharePoint Server 2010 and 2013 Designer (SPD) workflows** to Power Automate.
-- List, library workflows and content-type workflows (not site workflows).
+- List, library workflows, and content-type workflows (not site workflows).
 - Workflow definitions and associations (not workflow history data).
 
 >[!Note]
@@ -52,8 +52,11 @@ Go to the [Migration Center](https://microsoft-admin.sharepoint-df.com/?page=mig
 
 Make sure you have:
 
-- **Access to the destination**: The user account you use to migrate must be a OneDrive or SharePoint admin, or a SharePoint site admin on the Microsoft 365 tenant, and be a Power Automate admin who can manage the solution. As this user account will be set as the owner of migrated flow, it must also be assigned the *Environment Maker* role. [Learn more about Environment Maker role](/power-platform/admin/database-security).
-- **Access to the source**: Your SharePoint Server account credentials must have read access to any workflow you plan to migrate.
+- **Access to the destination**: The user account you use to migrate must:
+  - Be a OneDrive or SharePoint admin, or a SharePoint site admin on the Microsoft 365 tenant.
+  - Be a Power Automate admin who can manage the solution.
+  - Be assigned the *Environment Maker* role, as this user account is set as the owner of migrated flow. [Learn more about Environment Maker role](/power-platform/admin/database-security).
+- **Access to the source**: Your SharePoint Server account credentials must have **Read** access to any workflow you plan to migrate.
 - **Prerequisites installed:** Make sure you have the necessary prerequisites installed.
 
 ## General process
@@ -63,4 +66,4 @@ Make sure you have:
 - **Migrate workflow**
   Review your scan and determine if you're ready to migrate your SharePoint Server workflows. Choose to either use SPMT to step through the process or use the PowerShell method.
 - **Re-run migration**
-  SPMT skips a workflow if it's been successfully migrated. If you want to run a new migration to override the migrated flow, delete it from the destination before starting the migration.
+  SPMT skips a workflow if it's successfully migrated. If you want to run a new migration to override the migrated flow, delete it from the destination before starting the migration.
