@@ -32,7 +32,10 @@ This default mode skips migrated files, transferring only updated files or newly
 - The last modified time in the destination is newer than in the source.
 
 >[!NOTE]
-> If a file is updated in both the source and the destination, and the destination's last modified time is newer, the file isn't migrated.
+> A file isn't migrated if:
+>
+> - The file is updated in both the source and destination and,
+> - The destination file's last modified time is newer.
 
 ## Migrate all files and overwrite any existing ones at the destination
 
