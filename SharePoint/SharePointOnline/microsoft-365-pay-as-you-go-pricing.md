@@ -31,6 +31,5 @@ The following table describes the service, its pricing, and how it measures usag
 
 | Service              | What’s Counted?                                                                 | What’s billed? (USD)       |
 |----------------------|---------------------------------------------------------------------------------|----------------------------|
-| Agents in SharePoint| The number of messages used.  | $0.01/message              |
-> [!NOTE]
-> Each interaction with a SharePoint agent includes a question and an answer. A successful interaction uses 32 messages. Effective April 1st 2025, each interaction will use 12 messages, reducing the billing rate to $0.12 per interaction for SharePoint agent consumption-based usage.
+| Agents in SharePoint| [The number of messages used](/sharepoint/sharepoint-agents-azure-billing#set-up-pay-as-you-go-billing-for-sharepoint-agents).  | $0.01/message              |
+
