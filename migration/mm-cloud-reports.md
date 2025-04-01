@@ -413,7 +413,7 @@ Failure codes represent file-level errors during both the scan and migration pro
 |MUSERCOUNT                     |Unexpected failure to get user count. |Try again. |
 |MUSERFORBIDDEN                 |The current user doesn't have permission to access the file or folder. |Check permissions and Try again... |
 |MUSERINFONOTFOUND              |User account info not found. |Check user info and Try again... |
-|MUSERNOTFOUND                  |User isn't found; either it's disabled or deleted. |Check user and correct as necessary. Try again. |
+|MUSERNOTFOUND                  |User isn't found; User is either disabled or deleted. |Check user and correct as necessary. Try again. |
 |MUSERQUOTAREACHED              |User quota limit reached. |Learn more: [Microsoft Graph error responses and resource types](/graph/errors). |
 |MZEROBYTEFILESIZEIMPORT        |You can't import a 0-byte file to a connector. |Check file and try again. |
 |PFAIL                          |Failed to set permission |Check permissions and Try again... |
