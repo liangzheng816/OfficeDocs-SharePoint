@@ -104,4 +104,4 @@ When a scan or migration fails with either a *SCAN FAILURE* or *FLOW CREATE FAIL
 |Unable to create user in Power Platform's default environment. |0x02810073 |You can create the flow owner user manually in the power platform admin center. Assign Basic User and Environment Maker security roles to this user. Then migrate the workflow again. |
 |Unable to get the publisher. |0x02810074 |Retry migration. |
 |Unable to publish solution. |0x02810075 |Retry migration. |
-Workflow migration failed possibly because flow owner missing environment maker role. |0x02810076 |The flow owner didn't meet the role prerequisites, make sure the flow owner has Basic User and Environment Maker roles. |
+Workflow migration failed possibly because flow owner missing environment maker role. |0x02810076 |The flow owner didn't meet the role prerequisites. Make sure the flow owner has Basic User and Environment Maker roles. |
