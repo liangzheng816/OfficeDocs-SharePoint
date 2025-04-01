@@ -47,4 +47,4 @@ This process takes longer than the default mode.
 
 Permissions are migrated along with the files and are updated only when the corresponding files are migrated in the delta sync. If a file's permissions are updated but its last modified time remains unchanged, the permission update isn't migrated in the delta sync because the file itself isn't migrated by default.
 
-you can make sure permission updates are migrated even when file content remains unchanged. Select the option to **Migrate all files and overwrite any existing ones at the destination** as the file transfer setting for the delta sync.
+You can ensure permission updates are migrated even when file content remains unchanged. Select the option to **Migrate all files and overwrite any existing ones at the destination** as the file transfer setting for the delta sync.
