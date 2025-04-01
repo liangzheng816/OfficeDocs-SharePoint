@@ -88,7 +88,7 @@ When a scan or migration fails with either a *SCAN FAILURE* or *FLOW CREATE FAIL
 |Workflow migration failed. |0x02810051 ||
 |Workflow migration failed because flow owner isn't found. |0x02810052 |To make sure the workflow owner can be mapped to an AAD user, check the user mapping file or AAD lookup. |
 |Workflow migration failed because flow approvers aren't found. |0x02810053 |To make sure the workflow owner can be mapped to an AAD user, check the user mapping file or AAD lookup. |
-|Workflow migration failed because association data is missing. |0x02810054 |Check your workflow and associate it with a list or library and check OOTB workflow includes necessary data. |
+|Workflow migration failed because association data is missing. |0x02810054 |Check your workflow and associate it with a list or library and check that the out of the box (OOTB) workflow includes necessary data. |
 |SharePoint workflow is skipped because it has been migrated before. |0x02810055 ||
 |Unable to create flow. |0x02810061 ||
 |Can't find the Flow owner in CDS |0x02810062 |Make sure the flow owner existed in Power Platform. |
