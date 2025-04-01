@@ -118,9 +118,9 @@ The **ItemSummary.csv** report is a summary report at the task level.
 |Read |The total number of files read. |
 |Packaged |The total number of files packaged and ready to upload to the destination. |
 |Uploaded |The total number of files that attempted to upload. |
-|ReUploaded |The total number of files re-uploaded. |
+|ReUploaded |The total number of files reuploaded. |
 |Submitted |The total number of files submitted. |
-|ReSubmitted |The total number of files resubmitted. |
+|Resubmitted |The total number of files resubmitted. |
 |Migrated |The total number of files migrated. |
 |Failed reading |The umber of files that encountered an error or failure while being read. |
 |Failed packing |The number of files that encountered an error or failure while being packaged. |
@@ -183,7 +183,7 @@ The **ScanSummary.csv** report provides the total stats for the scan. This proce
 |Column|Description|
 |------|-----------|
 |Incremental round |The round number added to the end of the report name (RO, R1, and so on). Indicates if the scan or job was rerun. |
-|Total scanned items |Total number of folders, list items and files scanned. |
+|Total scanned items |Total number of folders, list items, and files scanned. |
 |Total scanned folders |Total number of folders scanned. |
 |Total scanned list items |Total number of list items scanned. |
 |Total scanned files |Total number of files scanned. |
