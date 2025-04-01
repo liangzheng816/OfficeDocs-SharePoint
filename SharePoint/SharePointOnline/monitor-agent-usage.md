@@ -44,12 +44,13 @@ There are multiple tools to understand how SharePoint agents are impacting your 
 
 ### Check individual agent file’s usage with File Statistics
 
-Since every SharePoint agent is a *.agent* file saved in the location where it's created, users with view permission to the file can check the *.agent* file’s usage with File Statistics. File Statistics is one of the [file insights](https://support.microsoft.com/office/see-file-insights-before-you-open-a-file-87a23bbc-a516-42e2-a7b6-0ecb8259e026) available from the file card or details/info pane.
-To check the .agent file's file statistics, select the *.agent* file, then **Details** to see the number of views and unique viewers.
+Since every SharePoint agent is a *.agent* file saved in the location where it's created, users with view permission to the file can check the *.agent* file's usage with File Statistics. File Statistics is one of the [file insights](https://support.microsoft.com/office/see-file-insights-before-you-open-a-file-87a23bbc-a516-42e2-a7b6-0ecb8259e026) available from the file card or details/info pane.
+To check the .agent file's file statistics, select the *.agent* file, and then select **Details** to see the number of views and unique viewers.
 
 ![Agent Detail Pane](media/agents-sharepoint/agent-detail-pane.png)
 
 In the Details pane, select the view count to review comprehensive information about the usage of the *.agent* file.
+
 ![Agent file insights](media/agents-sharepoint/agent-file-insights.png)
 
 You can check the agent's file's usage by weekly **Viewers** or **Views**:
