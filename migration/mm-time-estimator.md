@@ -28,7 +28,7 @@ The Migration Time Estimator acts as a rapid estimation tool to gauge the antici
 This tool can be used before or after you connect to the source. A connection to the source isn't required to run the estimator.
 
 1. Select **Migration** in the SharePoint admin center, choose your source location, and then **Get started**.
-2. If you're **not** connected to the source, select the Migration time estimator from the overview page. If you are connected to the source, select the Migration Time Estimator from the tool bar on the top right of the screen.
+2. If you're **not** connected to the source, select the Migration time estimator from the overview page. If you're connected to the source, select the Migration Time Estimator from the tool bar on the top right of the screen.
 
 :::image type="content" source="media/mm-time-estimator.png" alt-text="A screenshot of the time estimator.":::
 
