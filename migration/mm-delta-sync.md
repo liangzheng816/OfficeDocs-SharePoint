@@ -21,7 +21,7 @@ description: "Configure file transfer behaviors for delta sync"
 ---
 # Delta Sync
 
-When a migration task is conducted for the first time, it's referred to as an **initial migration** or new migration. After the initial migration, the destination can't be changed. If the task is migrated again, it's known as **delta sync**, also called incremental sync or incremental migration.
+When a migration task is conducted for the first time, we call it an **initial migration** or new migration. After the initial migration, the destination can't be changed. If the task is migrated again, we call it a **delta sync**. We may also call it an incremental sync, or incremental migration.
 
 Migration Manager supports configuring file transfer behaviors for delta sync. The settings can be found under **Project settings – Advanced**.
 
@@ -36,7 +36,7 @@ This default mode skips migrated files, transferring only updated files or newly
 
 ## Migrate all files and overwrite any existing ones at the destination
 
-In this mode, all files in the source are migrated to the destination again, overwriting those files from previous migrations. Even if the files in the destination are updated, they are still overwritten.
+In this mode, all files in the source are migrated to the destination again, overwriting those files from previous migrations. Even if the files in the destination are updated, they're still overwritten.
 
 This process takes longer than the default mode.
 
