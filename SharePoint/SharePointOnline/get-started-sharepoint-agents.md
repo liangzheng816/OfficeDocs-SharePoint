@@ -57,3 +57,7 @@ What does the user get with pay-as-you-go billing, a Copilot license and the tri
 | No                                      | Yes                   | Yes                         | All unlicensed users can create and use agents up to 10,000 queries per month and then pay-as-you-go kicks in once the user exceeds the 10,000 queries limit for the month; or once the six-month promotion is over. |
 | Yes                                     | Yes                   | Yes                         | - Licensed users can create and use agents without using the trial promotion or pay-as-you-go billing. <br>- Unlicensed users can create and use agents up to 10,000 queries per month and then pay-as-you-go kicks in once the user exceeds the 10,000 queries limit for the month; or once the six-month promotion is over. |
 | Yes                                     | No                    | No                          | - Licensed users can create and use agents. <br>- Unlicensed users can't create or use agents. |
+
+## Monitor agent usage
+
+Users with at least site visitor's permissions can check the agent's file statistics, use search to find all agents for bulk actions, and see site usage. SharePoint admins can use the SharePoint Online Management Shell, Microsoft Purview audit log, Microsoft Cost Management, and SharePoint Advanced Management to monitor agent usage at the organization level. For more information, see [Monitor SharePoint agent usage](/sharepoint/sharepoint-online/monitor-agent-usage).
