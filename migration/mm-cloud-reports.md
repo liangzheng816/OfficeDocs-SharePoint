@@ -179,7 +179,7 @@ The LongPath.csv report details all items with path lengths larger than 300 and 
 
 #### Scan ProjectError.csv 
 
-The ProjectError.csv report details all item level scan errors that have occurred. 
+The ProjectError.csv report details all item level scan errors.
 
 |Column|Description
 |:-----|:-----| 
