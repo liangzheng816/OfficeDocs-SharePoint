@@ -19,28 +19,28 @@ ms.collection:
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-description: "Learn how to monitor SharePoint agent usage as a site member, or as SharePoint admin. Monitor individual agent files with file statistics, Search function, and site usage. Monitor agent usage at the organization level with SharePoint Online Management Shell, SharePoint Advanced Management, Purview agent audit log, and Azure Cost Management."
+description: "Learn how to monitor SharePoint agent usage as a site member, or as SharePoint admin. Monitor individual agent files with file statistics, Search function, and site usage. Monitor agent usage at the organization level with SharePoint Online Management Shell, SharePoint Advanced Management, Purview agent audit log, and Microsoft Cost Management."
 ---
 
 # Monitor SharePoint Agent Usage
 
-There are multiple tools to understand how SharePoint agents are impacting your organization. This article introduces all the analytics and usage that we currently provide for our administrators, site owners, site members to monitor the agents’ usage.
+There are multiple tools to understand how SharePoint agents are impacting your organization. This article introduces all the analytics and usage that we currently provide for our administrators, site owners, site members, and site visitors to monitor the agents’ usage.
 
 > [!NOTE]
 > To ensure that security and privacy settings are always honored, some of these tools are only available to specific user roles.
 
-- For **Users with at least site members permissions** (site admins, site owners, and site members): 
-    - **File statistics**: Site members can select an individual *.agent* file and use the Details pane to view its file statistics.
-    - **Search**: Users with at least site members permissions can use **Search** to find all agents on a site for bulk actions.
-    - **Site usage**: Users with at least site members permissions can use **Site usage** to see the most popular files and agents on their sites.
+- For **Users with at least site visitor's permissions** (site admins, site owners, site members and site visitors): 
+    - **File statistics**: Users with at least site visitor's permissions can select an individual *.agent* file and use the Details pane to view its file statistics.
+    - **Search**: Users with at least site visitor's permissions can use **Search** to find all agents on a site for bulk actions.
+    - **Site usage**: Users with at least site visitor's permissions can use **Site usage** to see the most popular files and agents on their sites.
 
 - for **SharePoint Admins**: 
     - **SharePoint Online Management Shell**: SharePoint admins can get an inventory of the agents created across sites at the organization level in a specified time period using SharePoint Online Management Shell.
     - **Microsoft Purview audit log**: SharePoint admins can also use the [Microsoft Purview audit log](/microsoft-365/compliance/audit-log-search) to monitor agent creation and usage details across the organization.
-    - **Azure Cost Management**: SharePoint admins can use [Azure Cost Management](/azure/cost-management-billing/cost-management-billing-overview) to monitor the cost of agent usage at the organization level.
+    - **Microsoft Cost Management**: SharePoint admins can use [Microsoft Cost Management](/azure/cost-management-billing/cost-management-billing-overview) to monitor the cost of agent usage at the organization level.
     - **SharePoint Advanced Management**: Coming soon, SharePoint admins can use [SharePoint Advanced Management](/sharepoint/advanced-management) to obtain detailed insights on agent usage across sites. The report will list the number of agents that are created, along with details on policies such as Restricted Content Discovery and Restricted Access Control associated with a particular site.
 
-## For users with at least site member permissions
+## For users with at least site visitor's permissions
 
 ### Check individual agent file’s usage with File Statistics
 
@@ -51,7 +51,9 @@ To check the .agent file's file statistics, select the *.agent* file, then **Det
 
 In the Details pane, select the view count to review comprehensive information about the usage of the *.agent* file.
 ![Agent file insights](media/agents-sharepoint/agent-file-insights.png)
+
 You can check the agent's file's usage by weekly **Viewers** or **Views**:
+
 ![Agent file statistics](media/agents-sharepoint/file-statistics.png)
 
 ### Use Search to find all agents for bulk actions
@@ -84,11 +86,11 @@ Users with at least Compliance admin permissions with access to Purview can trac
 
 We're prioritizing delivering even richer analytics across Copilot Analytics dashboard, Microsoft 365 Admin Center, SharePoint Advanced Management, and SharePoint Online in the coming months. 
 
-### Use Azure Cost Management to monitor the cost of agent usage
+### Use Microsoft Cost Management to monitor the cost of agent usage
 
-SharePoint admins can use [Azure Cost Management](/sharepoint/sharepoint-agents-azure-billing#monitor-consumption-in-azure-cost-management ) to monitor the cost of agent usage at the organization level. To monitor your organization’s consumption of agents with the pay-as-you-go, you can create a budget in Azure Cost Management with [Bicep](/azure/cost-management-billing/costs/quick-create-budget-bicep) and [ARM template](/azure/cost-management-billing/costs/quick-create-budget-template). Budget helps you inform others about their spending to proactively manage costs and monitor how spending progresses over time. You can also set up various types of cost alerts to monitor the consumption. Furthermore, you can view your organization’s consumption by:
+SharePoint admins can use [Microsoft Cost Management](/sharepoint/sharepoint-agents-azure-billing#monitor-consumption-in-azure-cost-management ) to monitor the cost of agent usage at the organization level. To monitor your organization’s consumption of agents with the pay-as-you-go, you can create a budget in Microsoft Cost Management with [Bicep](/azure/cost-management-billing/costs/quick-create-budget-bicep) and [ARM template](/azure/cost-management-billing/costs/quick-create-budget-template). Budget helps you inform others about their spending to proactively manage costs and monitor how spending progresses over time. You can also set up various types of cost alerts to monitor the consumption. Furthermore, you can view your organization’s consumption by:
 
-1. Going to [Azure Cost Management](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/%7E/overview/openedBy/AzurePortal).
+1. Going to [Microsoft Cost Management](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/%7E/overview/openedBy/AzurePortal).
 1. If needed, changing the scope to select the subscription that is being used for agents in SharePoint.
 
 ### Use SharePoint Advanced Management to obtain detailed insights across sites
