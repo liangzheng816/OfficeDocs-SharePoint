@@ -97,7 +97,7 @@ For info about using the OneDrive policies, see [Use Group Policy to control One
 
 ## Transition from the Windows Folder Redirection Group Policy objects
 
-The OneDrive Known Folder Move Group Policy objects doesn't work if you previously used [Windows Folder Redirection Group Policy objects](/windows-server/storage/folder-redirection/deploy-folder-redirection) to redirect the Documents, Pictures, or Desktop folders to a location other than OneDrive. The OneDrive Group Policy objects doesn't affect the Music and Videos folders, so you can keep them redirected with the Windows Group Policy objects. Follow these steps to switch to using the Known Folder Move Group Policy objects.
+The OneDrive Known Folder Move Group Policy objects doesn't work if you previously used [Windows Folder Redirection Group Policy objects](/windows-server/storage/folder-redirection/deploy-folder-redirection) to redirect the Documents, Pictures, or Desktop folders to a location other than OneDrive. The OneDrive Group Policy objects don't affect the Music and Videos folders, so you can keep them redirected with the Windows Group Policy objects. Follow these steps to switch to using the Known Folder Move Group Policy objects.
 
 > [!NOTE]
 > Extending the scope of folders synced by OneDrive using Windows Folder Redirection Group Policy isn't supported.
