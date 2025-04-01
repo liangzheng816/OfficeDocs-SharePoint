@@ -27,7 +27,7 @@ When migrating SharePoint Server workflows to Microsoft 365 using the SharePoint
 
 ## Workflow migration reports
 
-The work migration task generates two reports, one for scans and the other for the migration.  These reports will saved to the  *WF_xxx/Report/TaskReport_xxx/*  folder.
+The work migration task generates two reports, one for scans and the other for the migration. These reports are saved to the *WF_xxx/Report/TaskReport_xxx/* folder.
 
 - Workflow scans: **WorkflowScanReport.csv**
 - Workflow migrations: **WorkflowMigrationReport.csv**
@@ -83,7 +83,7 @@ When a scan or migration fails with either a *SCAN FAILURE* or *FLOW CREATE FAIL
 |SharePoint workflow is filtered out because its association list or content type is out of migration scope. |0x02210031 |If you migrate workflows of a single list, try to perform workflow migration of its site. If the workflow is associated to a content type, manually create the content type on SPO list or library and try workflow migration again. |
 |SharePoint workflow is filtered out because no new instances are allowed. |0x02210032 |Confirm the workflow is still in use. If you want to continue the migration, reactivate the workflow. |
 |SharePoint workflow is filtered out because no SharePoint object is associated. |0x02210033 |Check your workflow and associate it with a list or library. |
-|SharePoint workflow is filtered out because no triggers are configured. |0x02210034 |Confirm the workflow is still in use. If you want to continue the migration, please reactivate the workflow. |
+|SharePoint workflow is filtered out because no triggers are configured. |0x02210034 |Confirm the workflow is still in use. If you want to continue the migration, reactivate the workflow. |
 |SharePoint workflow is filtered out because it is a draft, please publish it and try to migrate it again. |0x02210035 |Publish your workflow and try migration again. |
 |Workflow migration failed. |0x02810051 ||
 |Workflow migration failed because flow owner isn't found. |0x02810052 |Check the user mapping file or AAD lookup to make workflow owner can be mapped to a AAD user. |
@@ -91,17 +91,17 @@ When a scan or migration fails with either a *SCAN FAILURE* or *FLOW CREATE FAIL
 |Workflow migration failed because association data is missing. |0x02810054 |Check your workflow and associate it with a list or library and check OOTB workflow includes necessary data. |
 |SharePoint workflow is skipped because it has been migrated before. |0x02810055 ||
 |Unable to create flow. |0x02810061 ||
-|Can't find the Flow owner in CDS |0x02810062 |Make sure flow owner existed in Power Platform. |
+|Can't find the Flow owner in CDS |0x02810062 |Make sure the flow owner existed in Power Platform. |
 |Invalid parameters to create flows. Contact with Microsoft for details. |0x02810063 ||
 |No flow is going to be created. Contact with Microsoft for details. |0x02810064 ||
 |Fails to detect the endpoints of the BAP environment. |0x02810065 |Make sure your custom endpoint file is valid. |
-|Can't access BAP environment. |0x02810066 |Make migrator user can access Business Applications Platform. |
-|Unable to get Power Platform's default environment. |0x02810067 |Check if tenant has power automate license and if database is created. |
-|Can't access CDS. |0x02810068 |Make sure the migration user can access Common Data Service. |
-|Unable to create CDS user because can't fetch the business unit in CDS. |0x02810070 |You can create flow owner user manually in power platform admin center. Assign Basic User and Environment Maker security role to this user. Then migrate the workflow again. |
-|Unable to create CDS user because can't detect the built-in roles in CDS. |0x02810071 |Retry migration. |
+|Can't access BAP environment. |0x02810066 |Make sure the migrator user can access Business Applications Platform. |
+|Unable to get Power Platform's default environment. |0x02810067 |Check if the tenant has a Power Automate license and if the database is created. |
+|Can't access CDS. |0x02810068 |Make sure the migration user can access the Common Data Service. |
+|Unable to create CDS user because we can't fetch the business unit in CDS. |0x02810070 |You can create the flow owner user manually in the power platform admin center. Assign Basic User and Environment Maker security roles to this user. Then migrate the workflow again. |
+|Unable to create CDS user because we can't detect the built-in roles in CDS. |0x02810071 |Retry migration. |
 |Unable to fetch existing flows from the environment. |0x02810072 |You can create flow owner user manually in power platform admin center. Assign Basic User and Environment Maker security role to this user. Then migrate the workflow again. |
-|Unable to create user in Power Platform's default environment. |0x02810073 |You can create flow owner user manually in power platform admin center. Assign Basic User and Environment Maker security role to this user. Then migrate the workflow again. |
+|Unable to create user in Power Platform's default environment. |0x02810073 |You can create the flow owner user manually in the power platform admin center. Assign Basic User and Environment Maker security roles to this user. Then migrate the workflow again. |
 |Unable to get the publisher. |0x02810074 |Retry migration. |
 |Unable to publish solution. |0x02810075 |Retry migration. |
-Workflow migration failed possibly because flow owner missing environment maker role. |0x02810076 |Flow owner didn't meet the role prerequisite, please make sure flow owner have Basic User and Environment Make role. |
+Workflow migration failed possibly because flow owner missing environment maker role. |0x02810076 |The flow owner didn't meet the role prerequisites, make sure the flow owner has Basic User and Environment Maker roles. |
