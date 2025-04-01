@@ -420,7 +420,7 @@ Failure codes represent file-level errors during both the scan and migration pro
 |PFAILUNSUP                     |Unsupported file permissions not set. |Check permissions and try again. |
 |PSUCCESS                       |Set permission successfully. | |
 |PUNSUP                         |Unable to set permissions. |Check permission settings and try again. |
-|MJOBNOTCOMPLETED               |Migration job (upload package) isn't submitted or hasn't finished uploading yet. |Try again. |
+|MJOBNOTCOMPLETED               |Migration job (upload package) isn't submitted or uploading isn't finished yet. |Try again. |
 |MJOBERROR                      |Item level failure when processing the migration job (upload package). |Check file name and content. Try again. |
 |MJOBFATALERROR                 |Failed to process the migration job (upload package). All items in the package are marked as failed. |Try again. |
 |MNOTSUPPORTED                  |Forms migration under Google shared drives isn't supported. | |
