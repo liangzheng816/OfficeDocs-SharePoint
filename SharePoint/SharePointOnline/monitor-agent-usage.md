@@ -96,7 +96,7 @@ SharePoint admins can use [Microsoft Cost Management](/sharepoint/sharepoint-age
 
 ### Use SharePoint Advanced Management to obtain detailed insights across sites
 
-A new agent report is coming soon on the SharePoint admin center. This report provides detailed insights agent usage across sites. The report lists the number of agents created, along with details on policies such as Restricted Content Discovery and Restricted Access Control associated with a particular site. The report can also be downloaded for further analysis. Similar to the PowerShell cmdlets, regular site owners wouldn't be able to access these reports unless explicit roles are granted.
+A new agent report is coming soon on the SharePoint admin center. This report provides detailed insights on agent usage across sites. The report lists the number of agents created, along with details on policies such as Restricted Content Discovery and Restricted Access Control associated with a particular site. The report can also be downloaded for further analysis. Similar to the PowerShell cmdlets, regular site owners wouldn't be able to access these reports unless explicit roles are granted.
 
 ![SharePoint Advanced Management](media/agents-sharepoint/sharepoint-advanced-management.png)
 
