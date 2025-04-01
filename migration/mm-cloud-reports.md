@@ -17,7 +17,7 @@ mscollection:
 - M365-collaboration
 - m365initiative-migratetom365
 search.appverid: MET150
-description: "Learn about reports, errors, and status codes for cloud to cloud migrations using Migration Manager in Microsoft 365."
+description: Learn about reports, errors, and status codes for cloud to cloud migrations using Migration Manager in Microsoft 365.
 ---
 
 # Reports and codes for cloud migrations
@@ -77,7 +77,7 @@ There are limits on the number of tasks can be selected for bulk download for ea
 
    :::image type="content" source="media/mm-cloud-reports-download-dropdown.png" alt-text="Dropdown menu for downloading either detailed or summary reports.":::
 
-3. You can access reports you've requested by selecting **Recent actions** icon from the menu bar at the top right of the screen. Reports generated can be accessed for up to seve days.
+3. You can access reports you've requested by selecting **Recent actions** icon from the menu bar at the top right of the screen. Reports generated can be accessed for up to seven days.
 
 ### Download Migration reports
 
@@ -108,9 +108,9 @@ The TransactionItem.csv report details the last scan for all items. Each row in 
 |Name                 |Display name of the source account. |
 |SourcePath           |Source path of the selected source account. |
 |OperationStep        |Operation step of the item. |
-|Status               |Final scan status of the item. "Skipped" indicates the scan is complete and the item is ready to be migrated. |
-|ResultCode           |Failure code of the item. A value of "None" shows in this column when the item status is "Success". For a listing of all result codes, see [Failure codes](#failure-codes). |
-|FailureReason        |Description of the failed item. This column is blank if the item status has a value of "Success". For a listing of all result codes, see [Failure codes](#failure-codes). |
+|Status               |Final scan status of the item. **Skipped** indicates the scan is complete and the item is ready to be migrated. |
+|ResultCode           |Failure code of the item. A value of **None** shows in this column when the item status is **Success**. For a listing of all result codes, see [Failure codes](#failure-codes). |
+|FailureReason        |Description of the failed item. This column is blank if the item status has a value of **Success**. For a listing of all result codes, see [Failure codes](#failure-codes). |
 |FullPath             |Full path of the item in the source. |
 |SourcePathDepth      |Path depth of the item in the source. |
 |SourceBasename       |Base name of the item in the source. If the item is a root folder, this column is blank. |
@@ -188,7 +188,7 @@ The ProjectError.csv report details all item level scan errors that have occurre
 |SourcePath|Source path of the selected task. 
 |FullPath|Full path of the item in the source. 
 |Action|Operation step of the item that goes wrong during the scan process. 
-|ResultCode|Failure code of the item. It shows "null" when item status is "Success". To learn more, see [Failure codes](#failure-codes). |
+|ResultCode|Failure code of the item. It shows **Null** when item status is **Success**. To learn more, see [Failure codes](#failure-codes). |
 |FailureReason|Primary reason for the task failing the scan.|
 
 
@@ -238,8 +238,8 @@ The TransactionItem.csv report details the final migration status for all items 
 |SourcePath           |Source path of the selected source account. |
 |OperationStep        |Operation step of the item. |
 |Status               |Final migration status of the item. |
-|ResultCode           |Failure code of the item. It shows "none" when item status is "Success". To learn more, see [Failure codes](#failure-codes).  |
-|FailureReason        |Failure description of the failed item. If the item status value is "Success", this column is left blank. To learn more, see [Failure codes](#failure-codes). |
+|ResultCode           |Failure code of the item. It shows **None** when item status is **Success**. To learn more, see [Failure codes](#failure-codes).  |
+|FailureReason        |Failure description of the failed item. If the item status value is **Success**, this column is left blank. To learn more, see [Failure codes](#failure-codes). |
 |FullPath             |Full path of the item in the source. |
 |SourcePathDepth      |Path depth of the item in the source.  |
 |SourceBasename       |Base name of the item in the source. If the item is a root folder, this column is blank. |
@@ -277,9 +277,8 @@ The Projecterror.csv report details all item level errors that ever occurred dur
 |SourcePath    |Source path of the selected task. |
 |FullPath      |Full path of the item in the source. |
 |Action        |Operation step of the item that goes wrong during the migration process. |
-|ResultCode    |Failure code of the item. It shows "null" when item status is "Success". To learn more, see [Failure codes](#failure-codes). |
-|FailureReason |Failure description of the failed item. If the item status is "Success", this column is blank. To learn more, see [Failure codes](#failure-codes). |
-
+|ResultCode    |Failure code of the item. It shows **Null** when item status is **Success**. To learn more, see [Failure codes](#failure-codes). |
+|FailureReason |Failure description of the failed item. If the item status is **Success**, this column is blank. To learn more, see [Failure codes](#failure-codes). |
 
 #### Migration Summary.csv 
 
@@ -307,7 +306,6 @@ The Migration Summary.csv report is a task level summary of all migration tasks.
 |DataFiltered       |Data size (in bytes) not migrated due to migration filter setting. |
 |DataFailed         |Data size (in bytes) that failed in the migrating process.|
 |FilePermissions     File-level permission migration is set to be on or off. The default setting is **Off**. |
-
 
 ## Status codes
 
