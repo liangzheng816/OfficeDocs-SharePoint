@@ -34,9 +34,9 @@ There are multiple tools to understand how SharePoint agents are impacting your 
     - **Search**: Users with at least site visitor's permissions can use **Search** to find all agents on a site for bulk actions.
     - **Site usage**: Users with at least site visitor's permissions can use **Site usage** to see the most popular files and agents on their sites.
 
-- for **SharePoint Admins**: 
+- for **SharePoint Admins**:
     - **SharePoint Online Management Shell**: SharePoint admins can get an inventory of the agents created across sites at the organization level in a specified time period using SharePoint Online Management Shell.
-    - **Microsoft Purview audit log**: SharePoint admins can also use the [Microsoft Purview audit log](/microsoft-365/compliance/audit-log-search) to monitor agent creation and usage details across the organization.
+    - **Microsoft Purview audit log**: SharePoint admins with Compliance admin permissions can use the [Microsoft Purview audit log](/microsoft-365/compliance/audit-log-search) to monitor agent creation and usage details across the organization.
     - **Microsoft Cost Management**: SharePoint admins can use [Microsoft Cost Management](/azure/cost-management-billing/cost-management-billing-overview) to monitor the cost of agent usage at the organization level.
     - **SharePoint Advanced Management**: Coming soon, SharePoint admins can use [SharePoint Advanced Management](/sharepoint/advanced-management) to obtain detailed insights on agent usage across sites. The report will list the number of agents that are created, along with details on policies such as Restricted Content Discovery and Restricted Access Control associated with a particular site.
 
