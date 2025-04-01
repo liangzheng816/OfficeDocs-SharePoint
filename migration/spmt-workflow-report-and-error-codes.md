@@ -86,8 +86,8 @@ When a scan or migration fails with either a *SCAN FAILURE* or *FLOW CREATE FAIL
 |SharePoint workflow is filtered out because no triggers are configured. |0x02210034 |Confirm the workflow is still in use. If you want to continue the migration, reactivate the workflow. |
 |SharePoint workflow is filtered out because it is a draft, please publish it and try to migrate it again. |0x02210035 |Publish your workflow and try migration again. |
 |Workflow migration failed. |0x02810051 ||
-|Workflow migration failed because flow owner isn't found. |0x02810052 |Check the user mapping file or AAD lookup to make workflow owner can be mapped to a AAD user. |
-|Workflow migration failed because flow approvers aren't found. |0x02810053 |Check the user mapping file or AAD lookup to make sure the approver in Workflow can be mapped to a AAD user. |
+|Workflow migration failed because flow owner isn't found. |0x02810052 |To make sure the workflow owner can be mapped to an AAD user, check the user mapping file or AAD lookup. |
+|Workflow migration failed because flow approvers aren't found. |0x02810053 |To make sure the workflow owner can be mapped to an AAD user, check the user mapping file or AAD lookup. |
 |Workflow migration failed because association data is missing. |0x02810054 |Check your workflow and associate it with a list or library and check OOTB workflow includes necessary data. |
 |SharePoint workflow is skipped because it has been migrated before. |0x02810055 ||
 |Unable to create flow. |0x02810061 ||
