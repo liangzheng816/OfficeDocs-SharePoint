@@ -7,7 +7,7 @@ manager: jtremper
 ms.date: 12/2/2024
 audience: ITPro
 f1.keywords: NOCSH
-ms.topic: conceptual
+ms.topic: article
 ms.service: sharepoint-server-itpro
 ms.localizationpriority: high
 ms.collection:

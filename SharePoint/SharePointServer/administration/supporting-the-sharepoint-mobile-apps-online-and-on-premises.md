@@ -8,7 +8,7 @@ ms.date: 10/31/2017
 audience: ITPro
 f1.keywords:
 - CSH
-ms.topic: conceptual
+ms.topic: article
 ms.service: sharepoint-server-itpro
 ms.localizationpriority: medium
 ms.collection: 
