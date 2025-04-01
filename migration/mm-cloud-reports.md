@@ -391,7 +391,7 @@ Failure codes represent file-level errors during both the scan and migration pro
 |MLARGEFILESIZEIMPORT           |File exceeds maximum allowed size for import into destination. |Check file size. |
 |MLISTGROUP                     |API request to list groups for connector failed. |This request may be caused by an invalid or throttling. Try again. |
 |MLISTING                       |Folder listing failed. |Try again. |
-|MLISTUSER                      |Failure to get user listing. This may be caused by an invalid requestor throttling. |Try again. |
+|MLISTUSER                      |Failure to get user listing. May be caused by an invalid requestor throttling. |Try again. |
 |MLOCKACQ                       |Failed to acquire lock within time-out period and obtain new access token. |Try again. |
 |MNONDESTRUCTIVEOPTIONENABLED   |Unable to delete file or folder. |Try again. |
 |MNOPARENT                      |Item doesn't have a parent item. |Check file and Try again... |
