@@ -43,7 +43,7 @@ To configure file versions setting in a cloud migration project:
 
 ## Performance impact 
 
-File version migration can significantly increase the load on the source API quota, transmission network, and destination storage. To ensure optimal performance, it's recommended to choose **Migrate a specific number of file versions** and set the number to **no more than 10**.
+File version migration can significantly increase the load on the source API quota, transmission network, and destination storage. To ensure optimal performance, we recommend you choose **Migrate a specific number of file versions** and set the number to **no more than 10**.
 
 >[!NOTE]
 > Laboratory testing indicates that native Google format files may experience throttling when migrating more than 10 versions. This performance restriction doesn't apply to other file types.
@@ -58,5 +58,5 @@ If versions aren't migrated, refer to the **ResultCode** in the detailed report.
 |:--------------------------------|:-------------------------------------------------------|:--------------------|
 |MVERSIONDISABLE                  |Version feature is disabled in the destination library. |Enable versioning in the destination library.|
 |MVERSIONMETA                     |Request failed while listing file versions.             |Check file version setting in the source.|
-|MVERSIONDOWNLOAD                 |Error occurred while downloading file versions.         |1. Revision not found due to version merging or expiration - expected behavior. <Br/>2. The download failure may be caused by throttling - try again later. |
+|MVERSIONDOWNLOAD                 |Error occurred while downloading file versions.         |1. Revision not found due to version merging or expiration - expected behavior. <Br/>2. Throttling could cause the download failure - try again later. |
 |MVERSIONNOTFOUND/MVERSIONENCRYPT |Version processing error.                               |Try again.           |
