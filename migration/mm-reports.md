@@ -210,7 +210,7 @@ Structure report at the task level.
 |Destination structure URL |Displays the destination URL. The URL is listed for site collections, sites, and lists. Fields, content types, and views display its container's URL. |
 |Source structure ID       |ID when available. |
 |Destination structure ID  |ID when available. |
-|Time stamp                |The time at which the action occurred. |
+|Time stamp                |The time the action occurred. |
 
 ### Structure failure report
 
@@ -227,7 +227,7 @@ This report lists the failures at the task level. This report is only generated 
 |Destination structure URL |Displays the destination URL. The URL is listed for site collections, sites, and lists. Fields, content types, and views display its container's URL. |
 |Source structure ID       |ID when available. |
 |Destination structure ID  |ID when available. |
-|Time stamp                |The time at which the action occurred. |
+|Time stamp                |The time the action occurred. |
 
 ### Structure failure summary
 
@@ -244,4 +244,4 @@ This is an aggregate of all the task failure reports. This ia only generated if 
 |Destination structure URL |Display the destination URL. The URL is listed for site collections, sites, and lists. Fields, content types, and views display its container's URL. |
 |Source structure ID       |ID when available. |
 |Destination structure ID  |ID when available. |
-|Time stamp                |The time at which the action occurred. |
+|Time stamp                |The time the action occurred. |
