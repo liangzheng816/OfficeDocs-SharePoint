@@ -155,6 +155,53 @@ SharePoint Advanced Management is $3 per user per month for commercial customer
 
 Licensing details for each feature listed above are included in those articles.
 
+### Copilot only SharePoint Advanced Management capabilities
+
+Customers with access to the following Copilot SKUs have access to the following SharePoint Advanced Management capabilities:
+
+- Microsoft 365 Copilot for Finance (Education Faculty)
+- Microsoft 365 Copilot for Finance (Education Student 18+)
+- Microsoft 365 Copilot for Sales (Education Faculty)
+- Microsoft 365 Copilot for Sales (Education Student 18+)
+- Microsoft 365 Copilot for Service (Education Faculty)
+- Microsoft 365 Copilot for Service (Education Student 18+)
+- Microsoft 365 Copilot (Education Student 18+)
+- Microsoft 365 Copilot (Education Faculty)
+- Microsoft Sales Copilot for Faculty
+- Microsoft Sales Copilot for Students
+- Microsoft 365 Copilot for Finance (limited time)
+- Microsoft 365 Copilot for Sales (limited time)
+- Microsoft 365 Copilot for Service (limited time)
+- Microsoft 365 Copilot for Finance (for Department)
+- Microsoft 365 Copilot for Finance (Preview)
+- Microsoft 365 Copilot for Sales
+- Microsoft 365 Copilot for Sales (for Department)
+- Microsoft 365 Copilot for Service
+- Microsoft 365 Copilot for Service (for Department)
+- Microsoft 365 Copilot for Finance
+- Microsoft Sales Copilot
+- Microsoft 365 Copilot Developer
+- Microsoft 365 Copilot GCC
+- Microsoft Copilot for Microsoft 365
+- Microsoft 365 Copilot
+- Microsoft 365 Copilot (for Department)
+
+These features include:
+
+- Inactive SharePoint sites policy
+- PowerShell: Permission state report for Sites, OneDrives and Files
+- PowerShell: Restricted Content Discovery (RCD)
+- Restricted access control (RAC) for SharePoint or OneDrive sites
+- Site Access Review
+- Site Ownership Policy
+- Recent admin actions
+- Block download policy for SharePoint and OneDrive sites
+- Block the download of Teams meeting recording files from SharePoint or OneDrive
+- Change history
+- Data access governance (DAG) insights – Everyone Except External Users (EEEU) insights
+- Data access governance (DAG) insights – Sharing Links and Sensitivity Labels
+
+
 ## Related topics
 
 [Microsoft Syntex documentation](/microsoft-365/syntex)
