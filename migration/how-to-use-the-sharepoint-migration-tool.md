@@ -1,5 +1,5 @@
 ---
-ms.date: 10/30/2024
+ms.date: 03/28/2025
 title: "Step 1 - Install the SharePoint Migration Tool (SPMT)"
 ms.reviewer: 
 ms.author: heidip
@@ -9,7 +9,7 @@ recommendations: true
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection: 
@@ -27,28 +27,25 @@ description: The SharePoint Migration Tool copies your files from SharePoint on-
 
 # Step 1:  Install the SharePoint Migration Tool (SPMT)
 
-
 ## Download and install
 
-Download and install SPMT using one of the links listed below.  
-
+Download and install SPMT using one of the links listed in the following table:
 
 | Public preview | First release | General Availability |
 |:-----|:-----|:-----|
-|[Install here](https://spmt.sharepointonline.com/betainstall/default.htm) |[Install here](https://aka.ms/spmt-ga-page)|[Install here](https://aka.ms/spmt-ga-page)|
-
+|[Install here](https://spmt.sharepointonline.com/betainstall/default.htm) |[Install here](https://aka.ms/spmt-ga-page) |[Install here](https://aka.ms/spmt-ga-page) |
 
 ### Before you begin
 
 Before you begin using SPMT, review the required permissions, prerequisites, and endpoints.
 
-|What|Description|
+|What |Description |
 |:-----|:-----|
-|Permissions required| **Global or SharePoint Admin.** To migrate at the organization-level, you must sign in as a Global or SharePoint admin in Microsoft 365.<br/>**Site Admin**. To migrate at the site collection level, you must be a site admin for that site collection.  Learn more: [Understanding permissions when using the SharePoint Migration Tool](understanding-permissions-when-migrating.md)<br/>|
-|Prerequisites and Endpoints| Review the [SPMT system prerequisites and endpoints](spmt-prerequisites.md)|
-|SPMT Settings|Review [SPMT settings](spmt-settings.md) to understand how settings can impact your migration|
+|Permissions required | **Global or SharePoint Admin.** To migrate at the organization-level, you must sign in as a Global or SharePoint admin in Microsoft 365.<br/>**Site Admin**. To migrate at the site collection level, you must be a site admin for that site collection. Learn more: [Understanding permissions when using the SharePoint Migration Tool](understanding-permissions-when-migrating.md)<br/> |
+|Prerequisites and Endpoints | Review the [SPMT system prerequisites and endpoints](spmt-prerequisites.md) |
+|SPMT Settings |Review [SPMT settings](spmt-settings.md) to understand how settings can impact your migration |
 
-## [**Step 2: Scan and assess a SharePoint site (site migration only)**](spmt-scan.md) 
+## [**Step 2: Scan and assess a SharePoint site (site migration only)**](spmt-scan.md)
+
 > [!NOTE]
-> Currently, the **SharePoint Migration Tool** is not available for users of Office 365 operated by 21Vianet in China.
-
+> Currently, the **SharePoint Migration Tool** isn't available for users of Office 365 operated by 21Vianet in China.

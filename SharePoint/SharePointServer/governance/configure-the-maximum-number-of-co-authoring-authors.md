@@ -8,7 +8,7 @@ ms.date: 7/20/2017
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: how-to
 ms.service: sharepoint-server-itpro
 ms.localizationpriority: medium
 ms.assetid: dca8b241-85f9-486c-97eb-ed9ef23622b8
