@@ -97,12 +97,12 @@ When assessing your migration jobs, we recommend that you first look at these su
 When you need to do a more in-depth investigation or a thorough verification of your migration task, the task level reports help you drill down into the specific details. We recommend using these reports to help you accomplish this.
 
 - **ItemSummary.csv:** A report similar to the overall summary report, except that it aggregates the data just for a single task.
-- **ItemFailureReport.csv:** A failure report at the item level. This is a filtered version of the files report, showing only failures.
+- **ItemFailureReport.csv:** A failure report at the item level. This report is a filtered version of the files report, showing only failures.
 - **ItemReport.csv:** A list of all the items this task attempted to do.
 - **ScanSummary.csv:** A report that gives statistical totals.
 - **StructureReport.csv:** A structure report at the task level.
 - **StructureFailureReport.csv:** A structure failure report at the task level.
-- **StructureFailureSummary.csv:** An aggregate of all the structural task failure reports. This is only generated if there are failures.
+- **StructureFailureSummary.csv:** An aggregate of all the structural task failure reports. This report is only generated if there are failures.
 
 ### Item Summary
 
@@ -231,7 +231,7 @@ This report lists the failures at the task level. This report is only generated 
 
 ### Structure failure summary
 
-This is an aggregate of all the task failure reports. This ia only generated if there are failures.
+An aggregate of all the task failure reports. This summary is only generated if there are failures.
 
 |Column                    |Description |
 |--------------------------|------------|
