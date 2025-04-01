@@ -285,7 +285,7 @@ Here, `New-SPTrustedIdentityTokenIssuer` PowerShell cmdlet is extended to suppor
 | RegisteredIssuerName | Specifies the issuer identifier, which issues the `id_token`. It's used to validate the `id_token`. |
 | AuthorizationEndPointUrl | Specifies the authorization endpoint of the OIDC identity provider. |
 | SignoutUrl | Specifies the sign out endpoint of the OIDC identity provider. |
-| DefaultClientIdentifier | Specifies the `client_id` of SharePoint server, whichthe OIDC identity provider assigns. This is validated against "aud" claim in `id_token`. |
+| DefaultClientIdentifier | Specifies the `client_id` of SharePoint server, which the OIDC identity provider assigns. This is validated against "aud" claim in `id_token`. |
 | ResponseTypesSupported | Specifies the response type of IDP, which is accepted by this token issuer. It can accept two strings: `id_token` and `code id_token`. If this parameter isn't provided, it uses `code id_token` as default. |
 
 ## Step 4: Configure the SharePoint web application
