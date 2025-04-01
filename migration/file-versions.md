@@ -1,5 +1,5 @@
 ---
-ms.date: 10/11/2024
+ms.date: 04/01/2025
 title: File Versions
 ms.reviewer: heidip
 ms.author: kbchen
@@ -32,15 +32,10 @@ Migration Manager now supports migrating version histories along with each of th
 To configure file versions setting in a cloud migration project:
 
 1. Select **Project Settings** in the top-right toolbar.
-
 2. Select the **Advanced** tab.
-
 3. Configure the **File versions** settings as listed.
-
     - **Do not migrate file version** (default setting): Migrate only the most recent version of each file.
-
     - **Migrate a specific number of file versions**: Specify a fixed number of versions to migrate for each file.
-
     - **Migrate all existing file versions**: Migrate all available versions (up to 50,000) of each file.
 
 >[!NOTE]
@@ -59,12 +54,9 @@ Each file corresponds to a row in the **Migration detailed report**. If version 
 
 If versions are not migrated, refer to the **ResultCode** in the detailed report.
 
-|**ResultCode**|**Cause**|**Suggested action**|
-|:-----|:-----|:-----|
-|MVERSIONDISABLE|Version feature is disabled in the destination library.|Enable versioning in the destination library.|
-|MVERSIONMETA|Request failed while listing file versions.|Check file version setting in the source.|
-|MVERSIONDOWNLOAD|Error occured while downloading file versions.| 1. Revision not found due to version merging or expiration - this is expected. <Br/>2. Throttling may have caused the download failure - try again later.|
-|MVERSIONNOTFOUND/MVERSIONENCRYPT|Version processing error.|Please try again.|
-
-
-
+|**ResultCode**                   |**Cause**                                               |**Suggested action** |
+|:--------------------------------|:-------------------------------------------------------|:--------------------|
+|MVERSIONDISABLE                  |Version feature is disabled in the destination library. |Enable versioning in the destination library.|
+|MVERSIONMETA                     |Request failed while listing file versions.             |Check file version setting in the source.|
+|MVERSIONDOWNLOAD                 |Error occured while downloading file versions.          |1. Revision not found due to version merging or expiration - this is expected. <Br/>2. Throttling may have caused the download failure - try again later. |
+|MVERSIONNOTFOUND/MVERSIONENCRYPT |Version processing error.                               |Please try again. |
