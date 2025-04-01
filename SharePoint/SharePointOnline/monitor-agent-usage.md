@@ -37,8 +37,8 @@ There are multiple tools to understand how SharePoint agents are impacting your 
 - for **SharePoint Admins**: 
     - **SharePoint Online Management Shell**: SharePoint admins can get an inventory of the agents created across sites at the organization level in a specified time period using SharePoint Online Management Shell.
     - **Microsoft Purview audit log**: SharePoint admins can also use the [Microsoft Purview audit log](/microsoft-365/compliance/audit-log-search) to monitor agent creation and usage details across the organization.
-    - **Azure Cost Management**: SharePoint admins can use [Azure Cost Management](https://learn.microsoft.com/en-us/azure/cost-management-billing/cost-management-billing-overview) to monitor the cost of agent usage at the organization level.
-    - **SharePoint Advanced Management**: Coming soon, SharePoint admins can use [SharePoint Advanced Management](/sharepoint/sharepoint-advanced-management) to obtain detailed insights on agent usage across sites. The report will list the number of agents that are created, along with details on policies such as Restricted Content Discovery and Restricted Access Control associated with a particular site.
+    - **Azure Cost Management**: SharePoint admins can use [Azure Cost Management](/azure/cost-management-billing/cost-management-billing-overview) to monitor the cost of agent usage at the organization level.
+    - **SharePoint Advanced Management**: Coming soon, SharePoint admins can use [SharePoint Advanced Management](/sharepoint/advanced-management) to obtain detailed insights on agent usage across sites. The report will list the number of agents that are created, along with details on policies such as Restricted Content Discovery and Restricted Access Control associated with a particular site.
 
 ## For users with at least site member permissions
 
@@ -56,7 +56,7 @@ You can check the agent's file's usage by weekly **Viewers** or **Views**:
 
 ### Use Search to find all agents for bulk actions
 
-SharePoint users can locate all agents in a specific container, like a document library, site, or even across the entire organization, by searching for files with the .agent extension. Simply searching for "*.agent", you will find all agent files within the selected scope. The results only include agent files that the user has permission to access. For site owners and members, this method is a convenient way to find agents and take bulk actions as needed.
+SharePoint users can locate all agents in a specific container, like a document library, site, or even across the entire organization, by searching for files with the .agent extension. Simply searching for "*.agent," you find all agent files within the selected scope. The results only include agent files that the user has permission to access. For site owners and members, this method is a convenient way to find agents and take bulk actions as needed.
 
 ![Agent Search](media/agents-sharepoint/agent-search.png)
 
