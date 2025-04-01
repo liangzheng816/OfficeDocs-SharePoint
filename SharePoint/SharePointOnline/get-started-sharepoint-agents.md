@@ -60,4 +60,4 @@ What does the user get with pay-as-you-go billing, a Copilot license and the tri
 
 ## Monitor agent usage
 
-Users with at least site visitor's permissions can check the agent's file statistics, use search to find all agents for bulk actions, and see site usage. SharePoint admins can use the SharePoint Online Management Shell, Microsoft Purview audit log, Microsoft Cost Management, and SharePoint Advanced Management to monitor agent usage at the organization level. For more information, see [Monitor SharePoint agent usage](/sharepoint/sharepoint-online/monitor-agent-usage).
+Users with at least site visitor's permissions can check the agent's file statistics, use search to find all agents for bulk actions, and see site usage. SharePoint admins can use the SharePoint Online Management Shell, Microsoft Purview audit log, Microsoft Cost Management, and SharePoint Advanced Management to monitor agent usage at the organization level. For more information, see [Monitor SharePoint agent usage](/sharepoint/monitor-agent-usage).
