@@ -111,6 +111,8 @@ items:
           href: manage-trial-agents-sharepoint-powershell.md
         - name: Use agents with pay-as-you-go billing
           href: sharepoint-agents-azure-billing.md
+        - name: Monitor agent usage
+          href: monitor-agent-usage.md
   - name: Classic to modern
     items:
     - name: Publishing
@@ -679,3 +681,5 @@ items:
       href: /Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365
     - name: SharePoint Embedded
       href: /sharepoint/dev/embedded/overview
+    - name: SharePoint app prioritization
+      href: sharePoint-prioritization.md
