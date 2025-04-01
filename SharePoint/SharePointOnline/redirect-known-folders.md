@@ -1,7 +1,7 @@
 ---
-ms.date: 3/14/2024
+ms.date: 03/27/2025
 title: "Redirect and move Windows known folders to OneDrive"
-ms.reviewer: cagreen
+ms.reviewer: gacarini
 ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
@@ -24,7 +24,7 @@ search.appverid:
 - GOB160
 - MET150
 ms.assetid: e1b3963c-7c6c-4694-9f2f-fb8005d9ef12
-description: In this article, you'll learn how to redirect users' Documents folders or other known folders to OneDrive.
+description: In this article, you learn how to redirect users' Documents folders or other known folders to OneDrive.
 ---
 
 # Redirect and move Windows known folders to OneDrive
@@ -37,7 +37,7 @@ There are two primary advantages of moving or redirecting Windows known folders 
 
 - Saving files to OneDrive backs up your users' data in the cloud and gives them access to their files from any device.
 
-For these reasons, we recommend moving (redirecting) known folders to OneDrive if you're an enterprise or large organization. [See all our recommendations for configuring the sync app](ideal-state-configuration.md). Small or medium businesses may also find this useful, but keep in mind you'll need some experience configuring policies. For info about the end-user experience, see [Protect your files by saving them to OneDrive](https://support.office.com/article/d61a7930-a6fb-4b95-b28a-6552e77c3057).
+For these reasons, we recommend moving (redirecting) known folders to OneDrive if you're an enterprise or large organization. [See all our recommendations for configuring the sync app](ideal-state-configuration.md). Small or medium businesses might also find this process useful, but keep in mind you need some experience configuring policies. For info about the end-user experience, see [Protect your files by saving them to OneDrive](https://support.office.com/article/d61a7930-a6fb-4b95-b28a-6552e77c3057).
 
 ## Prepare to move known folders on existing devices
 
@@ -46,11 +46,11 @@ We recommend that you upgrade to the latest available build before you deploy.
 For information on issues that can prevent folders from being moved, see [Fix problems with folder protection](https://support.office.com/article/d61a7930-a6fb-4b95-b28a-6552e77c3057#BKMK_FixProblems). Known Folder Move doesn't work for users syncing OneDrive files in SharePoint Server.
 
 > [!IMPORTANT]
-> If your organization is large and your users have a lot of files in their known folders, make sure you roll out the configuration slowly to minimize the network impact of uploading files. For users who have a lot of files in their known folders, consider using the policy [Limit the sync app upload rate to a percentage of throughput](use-group-policy.md#limit-the-sync-app-upload-rate-to-a-percentage-of-throughput) temporarily to minimize the network impact and then disable the policy once uploads are complete.
+> If your organization is large and your users have many files in their known folders, make sure you roll out the configuration slowly to minimize the network impact of uploading files. For users who have many files in their known folders, consider using the policy [Limit the sync app upload rate to a percentage of throughput](use-group-policy.md#limit-the-sync-app-upload-rate-to-a-percentage-of-throughput) temporarily to minimize the network impact and then disable the policy once uploads are complete.
 
 ### Folders redirected to other organizations
 
-If a user's Documents, Pictures, or Desktop folders are currently redirected to OneDrive in a different organization, redirecting to your organization’s OneDrive will create new Documents, Pictures, or Desktop folders and the user will see an empty desktop. The user has to manually migrate files from the other organization’s OneDrive to OneDrive in your organization. We recommend that you disable the redirect to the other organization before redirecting to your organization if possible.
+If a user's Documents, Pictures, or Desktop folders are currently redirected to OneDrive in a different organization, redirecting to your organization’s OneDrive creates new Documents, Pictures, or Desktop folders and the user then sees an empty desktop. The user has to manually migrate files from the other organization’s OneDrive to OneDrive in your organization. We recommend that you disable the redirect to the other organization before redirecting to your organization if possible.
 
 ## About the Known Folder Move policies
 
@@ -64,7 +64,7 @@ The following policies control the Known Folder Move feature:
 
     :::image type="content" source="media/kfm-prompt-windows-1.png" alt-text="Screenshot of the dialog that prompts users to back up their important folders.":::
 
-    If users dismiss the prompt, a reminder notification appears in the activity center until they move all known folders or an error occurs with the move, in which case the reminder notification will be dismissed.
+    If users dismiss the prompt, a reminder notification appears in the activity center until they move all known folders or an error occurs with the move, in which case the reminder notification can be dismissed.
 
     :::image type="content" source="media/redirect-windows-kfm.png" alt-text="Screenshot of the notification that reminds users to protect their important folders.":::
 
@@ -97,10 +97,10 @@ For info about using the OneDrive policies, see [Use Group Policy to control One
 
 ## Transition from the Windows Folder Redirection Group Policy objects
 
-The OneDrive Known Folder Move Group Policy objects won't work if you previously used [Windows Folder Redirection Group Policy objects](/windows-server/storage/folder-redirection/deploy-folder-redirection) to redirect the Documents, Pictures, or Desktop folders to a location other than OneDrive. The OneDrive Group Policy objects won't affect the Music and Videos folders, so you can keep them redirected with the Windows Group Policy objects. Follow these steps to switch to using the Known Folder Move Group Policy objects.
+The OneDrive Known Folder Move Group Policy objects doesn't work if you previously used [Windows Folder Redirection Group Policy objects](/windows-server/storage/folder-redirection/deploy-folder-redirection) to redirect the Documents, Pictures, or Desktop folders to a location other than OneDrive. The OneDrive Group Policy objects don't affect the Music and Videos folders, so you can keep them redirected with the Windows Group Policy objects. Follow these steps to switch to using the Known Folder Move Group Policy objects.
 
 > [!NOTE]
-> Extending the scope of folders that are synced by One Drive using Windows Folder Redirection Group Policy is not supported.
+> Extending the scope of folders synced by OneDrive using Windows Folder Redirection Group Policy isn't supported.
 
 - If folders have been redirected to OneDrive using Windows Folder Redirection Group Policy:
 
@@ -117,7 +117,7 @@ The OneDrive Known Folder Move Group Policy objects won't work if you previously
   1. [Use Migration Manager](/sharepointmigration/mm-get-started) to copy contents in the network file share location to a user's OneDrive, making sure that all contents go into the existing Documents, Pictures, or Desktop folders.
 
      > [!NOTE]
-     > If Migration Manager will create the Documents, Pictures, or Desktop folders, ensure that **Preserve file share permissions** is not selected when performing the migration.
+     > If Migration Manager creates the Documents, Pictures, or Desktop folders, ensure that **Preserve file share permissions** isn't selected when performing the migration.
 
   2. Disable the Window Folder Redirection Group Policy and make sure to leave the folder and contents on the network file share.
   3. Enable Known Folder Move Group Policy. Known folders move to OneDrive and will merge with the existing Desktop, Documents, and Pictures folders, which contain all the file share content that you moved in the first step.
