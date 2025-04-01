@@ -8,7 +8,7 @@ ms.date: 03/10/2023
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: concept-article
 ms.service: sharepoint-online
 ms.localizationpriority: medium
 description: "Learn about the default managed properties for SharePoint Online, their settings, and the default mapping between crawled and managed properties."

@@ -8,7 +8,7 @@ ms.date: 3/8/2018
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: conceptual
+ms.topic: get-started
 ms.service: sharepoint-server-itpro
 ms.localizationpriority: medium
 ms.collection:

@@ -8,7 +8,7 @@ ms.date: 08/29/2023
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: how-to
 ms.service: sharepoint-server-itpro
 ms.localizationpriority: medium
 description: "Learn how to configure the People Picker web control in SharePoint Server."

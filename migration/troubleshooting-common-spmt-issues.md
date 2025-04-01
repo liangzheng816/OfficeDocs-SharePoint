@@ -9,7 +9,7 @@ recommendations: true
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: troubleshooting-general
 ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection: 

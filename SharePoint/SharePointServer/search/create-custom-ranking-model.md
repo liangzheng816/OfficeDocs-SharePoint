@@ -8,7 +8,7 @@ ms.date: 6/29/2018
 audience: End User
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: how-to
 ms.service: sharepoint-online
 ms.localizationpriority: medium
 search.appverid:

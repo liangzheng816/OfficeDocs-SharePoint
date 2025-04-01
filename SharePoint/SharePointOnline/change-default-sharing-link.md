@@ -8,7 +8,7 @@ manager: pamgreen
 audience: Admin
 f1.keywords:
 - CSH
-ms.topic: article
+ms.topic: how-to
 ms.custom:
 - 'WSSCentralAdmin_SharingLinkTypeLearnMore'
 - 'SharingLinkTypeLearnMore'
