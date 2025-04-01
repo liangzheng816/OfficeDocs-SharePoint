@@ -33,7 +33,7 @@ A scan/migration task presents as a row in the Migration Manager scan/migration 
 
 ## Reports
 
-There are 4 types of reports to help manage, audit, and troubleshoot your migration process.
+There are four types of reports to help manage, audit, and troubleshoot your migration process.
 
 - [Scan summary report](#scan-summary-report)
 - [Scan detailed report](#scan-detailed-report)
@@ -77,13 +77,13 @@ There are limits on the number of tasks can be selected for bulk download for ea
 
    :::image type="content" source="media/mm-cloud-reports-download-dropdown.png" alt-text="Dropdown menu for downloading either detailed or summary reports.":::
 
-3. You can access reports you've requested by selecting **Recent actions** icon from the menu bar at the top right of the screen. Reports generated can be accessed for up to 7 days.
+3. You can access reports you've requested by selecting **Recent actions** icon from the menu bar at the top right of the screen. Reports generated can be accessed for up to seve days.
 
 ### Download Migration reports
 
 1. On the **Migration** tab, select one or more rows from the list of migration tasks. Each row in the table represents a migration task.
 2. From the action bar, select **Download reports**. Then select either **Detailed** or **Summary** depending on the type of report you need.
-3. You can access reports you've requested by selecting **Recent actions** icon from the menu bar at the top right of the screen. Reports generated can be accessed for up to 7 days.
+3. You can access reports you've requested by selecting **Recent actions** icon from the menu bar at the top right of the screen. Reports generated can be accessed for up to seven days.
 
 ## Scan reports
 
@@ -108,7 +108,7 @@ The TransactionItem.csv report details the last scan for all items. Each row in 
 |Name                 |Display name of the source account. |
 |SourcePath           |Source path of the selected source account. |
 |OperationStep        |Operation step of the item. |
-|Status               |Final scan status of the item. “Skipped” indicates the scan has completed and the item is ready to be migrated. |
+|Status               |Final scan status of the item. "Skipped" indicates the scan is complete and the item is ready to be migrated. |
 |ResultCode           |Failure code of the item. A value of "None" shows in this column when the item status is "Success". For a listing of all result codes, see [Failure codes](#failure-codes). |
 |FailureReason        |Description of the failed item. This column is blank if the item status has a value of "Success". For a listing of all result codes, see [Failure codes](#failure-codes). |
 |FullPath             |Full path of the item in the source. |
@@ -376,7 +376,7 @@ Failure codes represent file-level errors during both the scan and migration pro
 |MEXPORTFILERESTRICTED          |This file is restricted, and can’t be migrated from the source. |Check to see if this file has legal restrictions such as copyright claims. |
 |MEXPORTFILEUNSUPPORTED         |Unsupported file type. |You can't migrate this file from the source. |
 |MEXPORTFILEUNSUPPORTEDMIMETYPE |Unsupported file type. |You can't migrate this file from the source. Check file at source. |
-|MFAILEDGETROOTITEM             |Failed to get root folder listing. This is set in both Google and Office 365 connector. |Try again. |
+|MFAILEDGETROOTITEM             |Failed to get root folder listing. Set in both Google and Office 365 connector. |Try again. |
 |MFILEIMPORT                    |This file type isn't supported in the destination location. |Check source file. |
 |MFILELOCKED                    |File is locked, and can't download or get metadata. |Unlock file. Try again. |
 |MFILENAMELENGTH                |Filename exceeds maximum allowable length. |Rename file and Try again... |
