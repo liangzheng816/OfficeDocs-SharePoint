@@ -8,7 +8,7 @@ manager: jtremper
 audience: Admin
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: one-drive
 ms.localizationpriority: medium
 search.appverid:

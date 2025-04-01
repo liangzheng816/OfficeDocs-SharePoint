@@ -8,7 +8,7 @@ ms.date: 05/17/2023
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.service: sharepoint-server-itpro
 ms.localizationpriority: medium
 description: "Learn how to upgrade from Workflow Manager to SharePoint Workflow Manager when upgrading older SharePoint Server farms."
@@ -42,14 +42,14 @@ You need to re-register the *SPWorkflowService* using the same scope name that w
 
 1. To check the scope name, run the following PowerShell on one of the SharePoint servers in the “old” farm:
 
-```powershell
+   ```powershell
 
-Add-PSSnapin *sharepoint*
-$site = (Get-SPWebapplication -IncludeCentralAdministration | ?{$_.IsAdministrationWebApplication}).Sites[0]
-$wfmProxy = Get-SPServiceApplicationProxy | ?{$_.TypeName -eq "Workflow Service Application Proxy"}
-$wfmProxy.GetWorkflowServiceAddress($site)
+   Add-PSSnapin *sharepoint*
+   $site = (Get-SPWebapplication -IncludeCentralAdministration | ?{$_.IsAdministrationWebApplication}).Sites[0]
+   $wfmProxy = Get-SPServiceApplicationProxy | ?{$_.TypeName -eq "Workflow Service Application Proxy"}
+   $wfmProxy.GetWorkflowServiceAddress($site)
 
-```
+   ```
 2. An address displays similar to this:
 *https://<span><span>apps.<span><span>contoso.<span><span>local:12290/SharePoint2013* 
 
@@ -61,15 +61,15 @@ The part after the port number is the **scope name**. In this example, it's "Sha
 1. On the WFM server in the "old" farm, open PowerShell.
 2. Run 
 
- ```powershell 
+   ```powershell 
 
-GET-wffarm | select runasaccount, admingroup 
+   GET-wffarm | select runasaccount, admingroup 
 
-```
+   ```
 
-Example:
+   Example:
 
-:::image type="content" source="../media/sp-get-wffarm.png" alt-text="display after running get-wffarm command":::
+   :::image type="content" source="../media/sp-get-wffarm.png" alt-text="display after running get-wffarm command":::
 
 
 Take note of the account and the group. When you rejoin the workflow farm in the new environment, you must supply the password for the *RunAsAccount*. Only users who are members of the AdminGroup are able to browse the workflow endpoint URI and run the *Register-SPWorkflowService* command.
@@ -89,7 +89,7 @@ Take note of the account and the group. When you rejoin the workflow farm in the
 
 >[!Note]
 >SharePoint Workflow Manager will be installed on your new hardware on the new farm. There is no need to uninstall Workflow Manager and the Service Bus components from your old servers. 
->
+> 
 >If you want your "old" WFM farm to remain functional during the migration, backup the Workflow and Service Bus databases as described below, then rerun the wizard to rejoin the farm. To prevent moving any node info to the new farm, ensure all nodes are disjoined at the time of the database backup.
 
 ## Step 2: Move the Databases
@@ -122,7 +122,7 @@ Since workflows get their permission to SharePoint content through app principal
 #### These are the basic steps:
 
 - **Backup the App Management database** in the old farm using SQL Server backup.
-- **Restore the App Management database** to the new SQL server.
+- **Restore the App Management database** to the new SQL Server.
 - **Create a new App Management Service** In Central Administration in the new farm, go to Manage Service Applications and create a new App Management Service. In the Database section, enter the SQL server name and database name of the App Management database that you restored from the old farm. Basically, we're creating a new service app by reusing the old database. That should upgrade the database to the current SharePoint version.
 - **Confirm the service is in the default proxy group**. Make sure that this new App Management Service is in the default proxy group, and that your web applications are using it.
 
@@ -131,9 +131,9 @@ Since workflows get their permission to SharePoint content through app principal
 
 ### Move the WFM and Service Bus databases
 
-If the upgrade/migration includes moving databases to a new SQL server, you need to move all the WFM and Service Bus databases.
+If the upgrade/migration includes moving databases to a new SQL Server, you need to move all the WFM and Service Bus databases.
 
-1. Back up the databases on the old SQL server:
+1. Back up the databases on the old SQL Server:
 -  SbGatewayDatabase
 -  SbManagementDB
 -  SBMessageContainer01
@@ -141,35 +141,34 @@ If the upgrade/migration includes moving databases to a new SQL server, you need
 -  WFManagementDB
 -  WFResourceManagementDB
 
-2. Restore the databases on the new SQL server.
+2. Restore the databases on the new SQL Server.
 
 
 #### Restore the databases on the new SQL server
 
 >[!Important]
->You must restore the 6 databases to the new SQL server using **the same database names** that were used previously.  If you change the database names, the workflow configuration wizard will time out when trying to start the Service Bus services.  
+>You must restore the 6 databases to the new SQL server using **the same database names** that were used previously. If you change the database names, the workflow configuration wizard will time out when trying to start the Service Bus services.  
 
 #### Create a SQL alias 
 
-The workflow manager configuration wizard only prompts you to enter connection information for 2 of the six databases.  The connection strings for the other four databases are stored within the two databases that you specify.  This is why it's important to restore the databases with the same names that were used previously.  
+The workflow manager configuration wizard only prompts you to enter connection information for 2 of the six databases.  The connection strings for the other four databases are stored within the two databases that you specify. This is why it's important to restore the databases with the same names that were used previously.  
 To keep the previous DB connection strings working, you must also create a SQL alias on the new SPWFM server(s).
 - Find the name of the "old" SQL server by running this SQL query against the "SbManagementDB" database:
 
-```sql
-select Name, Value as "SQLServerName" from store.serviceconfig where name = 'SBGatewayDatabaseServer'
+   ```sql
+   select Name, Value as "SQLServerName" from store.serviceconfig where name = 'SBGatewayDatabaseServer'
 
-```  
+   ```  
 
-Example:  
+   Example:  
 
+   :::image type="content" source="../media/sp-workflow-gatewaydatabaseserver.png" alt-text="example 1 in creating a sql alias":::
 
-:::image type="content" source="../media/sp-workflow-gatewaydatabaseserver.png" alt-text="example 1 in creating a sql alias":::
+- On the SPWFM server, go to Start | Run and type in "cliconfg".  
 
-- On the SPWFM server, go to Start | Run and type in "cliconfg"  
+   :::image type="content" source="../media/sp-worflow-createalias.png" alt-text="Example on creating a sql alias":::
 
-:::image type="content" source="../media/sp-worflow-createalias.png" alt-text="Example on creating a sql alias":::
-
-- On the Alias tab, select Add.
+- On the **Alias** tab, select **Add**.
 - Choose TCP/IP for the Network library.
 - In the "Server Alias" box, type in the name of the "old" SQL server. Example: "SQL"
 - In the "Server name" box, type in the name of the "new" SQL server (Example: "New_SQL"), and select ok.
@@ -186,7 +185,7 @@ Example:
 
 1. Check to see if you have the "Web Server (IIS)" server role installed on your new SPWFM server. Install it if it isn't on the server.
 
-If you're installing SPWFM on a non-SharePoint server, it may not already have it installed. Unfortunately, there's nothing forcing you to install it, so if you don't, the Workflow Configuration Wizard fails with the error, "*Could not load file or assembly 'Microsoft.Web.Administration*".
+   If you're installing SPWFM on a non-SharePoint server, it may not already have it installed. Unfortunately, there's nothing forcing you to install it, so if you don't, the Workflow Configuration Wizard fails with the error, "*Could not load file or assembly 'Microsoft.Web.Administration*".
 
 ### Install Azure Service Fabric
 
@@ -223,14 +222,14 @@ To verify the Azure Service Fabric is installed, you should be able to find it i
 1. On the SharePoint server (if you haven't already) set up the **App Management** service using the upgraded App Management database from the old farm. See the “Move the App Management Database” step above.
 2. Create a new Subscription Settings service. 
 
-```powershell
-$sa = New-SPSubscriptionSettingsServiceApplication -ApplicationPool 'SharePoint Web Services Default' -Name 'Subscriptions Settings Service Application' -DatabaseName 'Subscription'
-New-SPSubscriptionSettingsServiceApplicationProxy -ServiceApplication $sa
-```
+    ```powershell
+    $sa = New-SPSubscriptionSettingsServiceApplication -ApplicationPool 'SharePoint Web Services Default' -Name 'Subscriptions Settings Service Application' -DatabaseName 'Subscription'
+    New-SPSubscriptionSettingsServiceApplicationProxy -ServiceApplication $sa
+    ```
 
 3. Check the App Management and Subscription service apps. They should be in "Started" state.
 
-:::image type="content" source="../media/sp-app-management-start-state.png" alt-text="confirm app management is in the start state":::
+   :::image type="content" source="../media/sp-app-management-start-state.png" alt-text="confirm app management is in the start state":::
 
 ## Step 4: Rejoin the Workflow Farm and Upgrade
 
@@ -238,11 +237,11 @@ New-SPSubscriptionSettingsServiceApplicationProxy -ServiceApplication $sa
 2. On the SPWFM server, open “Workflow Manager Configuration” and select **Join an existing Workflow Manager farm**.
 3. Enter the SQL Server and database details that the previous WFM 'classic' install was using, and then run through the setup.
 
-:::image type="content" source="../media/sp-workflow-management-wizard.png" alt-text="workflow manager configuration wizard":::
+   :::image type="content" source="../media/sp-workflow-management-wizard.png" alt-text="workflow manager configuration wizard":::
 
 4. Enter the password for the service account and the Certificate Generation Key. 
 
-:::image type="content" source="../media/sp-workflow-management-wizard2.png" alt-text="Workflow wizard with data":::
+   :::image type="content" source="../media/sp-workflow-management-wizard2.png" alt-text="Workflow wizard with data":::
 
 5. On the SPWFM server, open “Workflow Manager Configuration” again and select **Upgrade Workflow Manager Farm**, and let it run until finished.
 
@@ -255,7 +254,7 @@ Since SharePoint must contact the SPWFM service endpoint, the SharePoint servers
 
 1. On the SPWFM server, open **IIS Manager**. Right-click on the **Workflow Management Site** and choose **Edit Bindings**. Select the HTTPS binding on port 12290 and choose Edit. Select the "View" button next to SSL certificate.
 
-:::image type="content" source="../media/sp-workflow-iis-manager.png" alt-text="select iis manager":::
+   :::image type="content" source="../media/sp-workflow-iis-manager.png" alt-text="select iis manager":::
 
 2. Select the Details tab and choose “Copy to File…”
 3. Run through the Certificate Export Wizard to export the certificate without the private key as a**DER encoded binary X.509 (.CER)** certificate.
@@ -273,7 +272,7 @@ Since SharePoint must contact the SPWFM service endpoint, the SharePoint servers
 1. On the Central Admin server, right-click on the **SPWFM certificate .cer** file and choose **Install Certificate**.
 2. Using the Certificate Import Wizard, choose **Local Machine > Place all certificates in the following store > Browse > Trusted Root Certification Authorities**.
  
-:::image type="content" source="../media/sp-workflow-certificate-store.png" alt-text="certificate store":::
+   :::image type="content" source="../media/sp-workflow-certificate-store.png" alt-text="certificate store":::
  
 >[!Important]
 >You must repeat this certificate import step on all the SharePoint servers in the farm.
@@ -286,44 +285,46 @@ a.  Select **Workflow Management Site**. In the right-hand pane, choose **Browse
 b.  A browser opens; navigate to https://localhost:12290. If you allowed connections over HTTP during setup, you'll have an HTTP endpoint on port 12291 and an HTTPS endpoint on port 12290. 
 c. Test both the http and https endpoints.  
 
-2. **Check from your SharePoint servers**. Ultimately it's your SharePoint servers that must connect to the SPWFM endpoint, so you must make confirm there's  connectivity from there as well.  
+2. **Check from your SharePoint servers**. Ultimately it's your SharePoint servers that must connect to the SPWFM endpoint, so you must make confirm there's connectivity from there as well.  
 a. Sign in to one of your SharePoint Servers with either the **SPWFM RunAs** account, or as a user that is a member of AdminGroup. See “Check the service account and admin group” step above.  
 b. Browse to the FQDN of the SPWFM endpoint.  
 
-For example:
+   For example:
 
-**https://<span>apps<span>.contoso<span><span>.local<span>:12290/**. The result should look like this:
+   **https://<span>apps<span>.contoso<span><span>.local<span>:12290/**. The result should look like this:
 
-:::image type="content" source="../media/sp-workflow-check-connectivity.png" alt-text="check connectivity":::
+   :::image type="content" source="../media/sp-workflow-check-connectivity.png" alt-text="check connectivity":::
   
 ### Register the Service
 
-1. Sign in to any SharePoint server as either the SPWFM RunAs account, or a user that is a member of AdminGroup. See “Check the service account and admin group” step above.
+1. Sign in to any SharePoint server as either the SPWFM RunAs account, or a user that is a member of AdminGroup. See "Check the service account and admin group" step above.
 2. Run the **Register-SPWorkflowService** command to register the workflow service within SharePoint. You need the SPWFM endpoint URI, the name of the Scope you gathered in the “Check the scope” step above, and will need to include the -Force parameter. 
 
-Example:
+   Example:
 
-```powershell
-Register-SPWorkflowService -SPSite http://www.contoso.local -WorkflowHostUri https://spwfm.contoso.local:12290 -ScopeName SharePoint2013 -Force
-```
+   ```powershell
+   Register-SPWorkflowService -SPSite http://www.contoso.local -WorkflowHostUri https://spwfm.contoso.local:12290 -ScopeName SharePoint2013 -Force
+   ```
 
 ### Validate the Configuration
 
 1. Check the Workflow Service Application proxy in the **Central Administration > Manage Service Applications**. Select the link for **Workflow Service Application Proxy**. It should show as connected. 
 
-Example:
+   Example:
 
-:::image type="content" source="../media/sp-workflow-status.png" alt-text="workflow status":::
+   :::image type="content" source="../media/sp-workflow-status.png" alt-text="workflow status":::
 
-2. **Test a new workflow**  
-a. Sign in to a client computer, and then open **SharePoint Designer**.  
-b. Open one of your sites and go to Workflows.   
-c. Create a new workflow and make sure you can see the “SharePoint Workflow 2013” in the list of platforms to choose from.  
-d. Create a basic "log to history" 2013-platform workflow and test to make sure it’s successful.  
+2. **Test a new workflow**. 
 
-3. **Test an old workflow**  
-a. Find a list that had a workflow assigned to it in the "old" farm.  
-b. Launch a new instance of that workflow and verify that it works. If you included the App Management service app database during the migration, and ran the **Register-SPWorkflowService** using the correct "scope" name, workflows from the old farm should continue to work.  
+   a. Sign in to a client computer, and then open **SharePoint Designer**.  
+   b. Open one of your sites and go to Workflows.   
+   c. Create a new workflow and make sure you can see the “SharePoint Workflow 2013” in the list of platforms to choose from.  
+   d. Create a basic "log to history" 2013-platform workflow and test to make sure it's successful.  
+
+3. **Test an old workflow**.
+
+   a. Find a list that had a workflow assigned to it in the "old" farm.  
+   b. Launch a new instance of that workflow and verify that it works. If you included the App Management service app database during the migration, and ran the **Register-SPWorkflowService** using the correct "scope" name, workflows from the old farm should continue to work.  
 
 
 

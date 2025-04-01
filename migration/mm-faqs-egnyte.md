@@ -9,7 +9,7 @@ recommendations: true
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: faq
 ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection: 
@@ -60,4 +60,12 @@ Answer:  No. During a migration, only the most recent version of a file is trans
 
 **Question:**   **Does Migration Manager automatically notify users?**</br>
 Answer:  No.  We automatically suppress all emails to users so they aren't bombarded with excessive notifications about the data they now have access to.</br>
+
+**Question:**   **Why I can’t see some of my SharePoint sites while assigning destinations on the UI?**</br>
+Answer: If SP or Teams sites in your tenant aren't visible on the UI while assigning destinations, there could be a few reasons:
+- SP admins only see sites where they are at least a member, as sites are searched using a user-scoped delegated token.
+- Admins might not see sites for a multi-geo tenant due to limitations in the graph API.
+- Recently created sites might take a couple of hours to sync and appear on the UI.
+- For some corner cases (e.g., special characters in the destination path), SP site search on the UI might not work.
+</br>
 

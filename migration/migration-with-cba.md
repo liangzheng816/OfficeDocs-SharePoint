@@ -15,7 +15,7 @@ ms.collection:
 - SPMigration
 - highpri
 - m365initiative-migratetom365
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 search.appverid: MET150
 
 ---
@@ -95,6 +95,8 @@ You can use either the Microsoft Graph API or PowerShell PnP to grant these perm
 - PowerShell PnP: Use “Grant-PnPAzureADAppSitePermission” command to set the **FullControl** permission. Detailed instructions are available on the [Grant-PnPAzureADAppSitePermission page](https://pnp.github.io/powershell/cmdlets/Grant-PnPAzureADAppSitePermission.html).
 
 ## Using CBA with SPMT
+
+On the workstation that SPMT is installed, install your X.509 certificate at Windows certificate management store 'Current User' path. You can launch the certificate management application by typing the command `certmgr.msc`.
 
 Prepare a configuration file named **CertificateConfig.json** with following content:
 

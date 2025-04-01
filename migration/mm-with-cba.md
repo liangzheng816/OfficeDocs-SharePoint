@@ -8,7 +8,7 @@ description: How to use Certificate Based Authentication in migration
 author:      zacsun-ms # GitHub alias
 ms.author: zhaosu
 ms.service: microsoft-365-admin
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date:     01/25/2025
 manager: dapodean
 ---
@@ -78,6 +78,8 @@ You also need to grant the application **Read** permissions for **SharePoint Adm
 
 
 ## Install agent
+
+On the agent workstation, install your X.509 certificate, issued by the Enterprise Public Key Infrastructure (PKI), at Windows certificate management store 'Current User' path. You can launch the certificate management application by typing the command `certmgr.msc`.
 
 Prepare a configuration Json file with following content:
 

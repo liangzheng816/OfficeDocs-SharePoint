@@ -9,7 +9,7 @@ recommendations: true
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: faq
 ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection: 
@@ -28,22 +28,17 @@ Answer.  No. Migration Manager Dropbox isn't available for any of the Government
 </br>
 
 **Question:**   **What gets transferred?**</br>
-Answer: Only owned folders and the root files for each user are copied. If a user isn't the owner of data they can access, we don't copy it. Content may be automatically reshared after it's migrated so that each user has access to their content exactly as before.
+Answer: Only owned folders and the root files for each user are copied. If a user isn't the owner of data they can access, we don't copy it. Content may be automatically reshared after migration, ensuring that each user retains access to their content exactly as before.
 </br>
 
-**Question:**   **Does Migration Manager Dropbox sync files?**</br>
-Answer: There's a source-to-destination delta; when you run a transfer, we compare the destination directory to the source, and only transfer new or modified files over. We call this our incremental feature. We compare the timestamps of the files in both the source and destination and transfer the newest versions only. The incremental feature is always on.  Here are a few examples of how we deal with changes to files and folders.
+**Question:**   **Does Migration Manager sync files from Dropbox after first migration?**</br>
+Answer: After completing a migration task for the first time, triggering the **Migrate** button again will initiate a delta sync (incremental migration run). During this process, the destination directory is compared to the source, and only new or modified files are transferred. Here are a few examples of how we deal with changes to files and folders.
 
-- **Content changes**: If a document is edited in your source or you have added a few new files, we copy them to your destination on the next incremental run, overwriting the previously existing file(s) in the destination.
+- **Content changes**: If a document is edited in the source, it will be copied to the destination during the next incremental run, replacing the previous versions. If new files are added in the source, they'll also be migrated in the next incremental run.
 
-- **Name changes**: If the name of a file or folder changes in Office 365, we treat it as a brand new object. This can lead to duplicate files being migrated to Office 365, or worse in that entire folders worth of data would be duplicated from the changed folder downwards.
+- **Name changes**: If the name of a file or folder changes in Office 365, we treat it as a brand new object. This change can lead to duplicate files being migrated to Office 365, or worse in that entire folders worth of data would be duplicated from the changed folder downwards.
 
 - **Example**: Changing the path `/Sales/Clients` to `/Global Sales/Clients` results in two copies of your `Sales` folder after the `Global Sales` folder is also copied during an incremental pass.
-</br>
-
-**Question:**   **Does Migration Manager delete my files?**</br>
-Answer: No. We never delete your data from any source. We simply take your data from one place and copy it to another; akin to *copy and paste* rather than *cut and paste.* We also don't retain any of your cloud storage data for any reasons. 
-
 </br>
 
 **Question:**   **Can I rearrange content during a migration?**</br>
@@ -62,3 +57,10 @@ Answer:  No. During a migration, only the most recent version of a file is trans
 **Question:**   **Does Migration Manager automatically notify users?**</br>
 Answer:  No.  We automatically suppress all emails to users so they aren't bombarded with excessive notifications about the data they now have access to.</br>
 
+**Question:**   **Why I can’t see some of my SharePoint sites while assigning destinations on the UI?**</br>
+Answer: If SharePoint or Teams sites in your tenant aren't visible on the UI while assigning destinations, there could be a few reasons:
+- SharePoint admins only see sites where they are at least a member, as sites are searched using a user-scoped delegated token.
+- Admins might not see sites for a multi-geo tenant due to limitations in the graph API.
+- Recently created sites might take a couple of hours to sync and appear on the UI.
+- For some corner cases (e.g., special characters in the destination path), SharePoint site search on the UI might not work.
+</br>
