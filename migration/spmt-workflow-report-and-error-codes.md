@@ -79,15 +79,15 @@ When a scan or migration fails with either a *SCAN FAILURE* or *FLOW CREATE FAIL
 |SharePoint Workflow definition contains unsupported actions. |0x02110026 |You can select "Convert to compose action" in settings, and try migration again to convert unsupported action to compose. |
 |Not all dependencies used in SharePoint workflow are resolved. |0x02110041 |Resolve dependencies (user or list), then retry migration. |
 |Lookup list used in SharePoint workflow can't be mapped to target list. |0x02110042 |Migrate the lookup list to SPO, then retry migration. |
-|Can't get flow owner's AAD ID. |0x02110044 |Map flow owner to a valid AAD user, then retry migration. |
+|Can't get flow owner's AAD ID. |0x02110044 |Map the flow owner to a valid Entra ID user, then retry the migration. |
 |SharePoint workflow is filtered out because its association list or content type is out of migration scope. |0x02210031 |If you migrate workflows of a single list, try to perform workflow migration of its site. If the workflow is associated to a content type, manually create the content type on SPO list or library and try workflow migration again. |
 |SharePoint workflow is filtered out because no new instances are allowed. |0x02210032 |Confirm the workflow is still in use. If you want to continue the migration, reactivate the workflow. |
 |SharePoint workflow is filtered out because no SharePoint object is associated. |0x02210033 |Check your workflow and associate it with a list or library. |
 |SharePoint workflow is filtered out because no triggers are configured. |0x02210034 |Confirm the workflow is still in use. If you want to continue the migration, reactivate the workflow. |
 |SharePoint workflow is filtered out because it is a draft, please publish it and try to migrate it again. |0x02210035 |Publish your workflow and try migration again. |
 |Workflow migration failed. |0x02810051 ||
-|Workflow migration failed because flow owner isn't found. |0x02810052 |To make sure the workflow owner can be mapped to an AAD user, check the user mapping file or AAD lookup. |
-|Workflow migration failed because flow approvers aren't found. |0x02810053 |To make sure the workflow owner can be mapped to an AAD user, check the user mapping file or AAD lookup. |
+|Workflow migration failed because flow owner isn't found. |0x02810052 |To make sure the workflow owner can be mapped to an Entra ID user, check the user mapping file or Entra ID lookup. |
+|Workflow migration failed because flow approvers aren't found. |0x02810053 |To make sure the workflow owner can be mapped to an Entra ID user, check the user mapping file or Entra lookup. |
 |Workflow migration failed because association data is missing. |0x02810054 |Check your workflow and associate it with a list or library and check that the out of the box (OOTB) workflow includes necessary data. |
 |SharePoint workflow is skipped because it has been migrated before. |0x02810055 ||
 |Unable to create flow. |0x02810061 ||
