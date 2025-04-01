@@ -43,7 +43,7 @@ To configure file versions setting in a cloud migration project:
 
 ## Performance impact 
 
-File version migration can significantly increase the load on the source API quota, transmission network, and destination storage. To ensure optimal performance, it's strongly recommended to choose **Migrate a specific number of file versions** and set the number to **no more than 10**.
+File version migration can significantly increase the load on the source API quota, transmission network, and destination storage. To ensure optimal performance, it's recommended to choose **Migrate a specific number of file versions** and set the number to **no more than 10**.
 
 >[!NOTE]
 > Laboratory testing indicates that native Google format files may experience throttling when migrating more than 10 versions. This performance restriction doesn't apply to other file types.
@@ -52,11 +52,11 @@ File version migration can significantly increase the load on the source API quo
 
 Each file corresponds to a row in the **Migration detailed report**. If version migration is enabled, a file is marked as successful only when all its versions are successfully migrated.
 
-If versions are not migrated, refer to the **ResultCode** in the detailed report.
+If versions aren't migrated, refer to the **ResultCode** in the detailed report.
 
 |**ResultCode**                   |**Cause**                                               |**Suggested action** |
 |:--------------------------------|:-------------------------------------------------------|:--------------------|
 |MVERSIONDISABLE                  |Version feature is disabled in the destination library. |Enable versioning in the destination library.|
 |MVERSIONMETA                     |Request failed while listing file versions.             |Check file version setting in the source.|
-|MVERSIONDOWNLOAD                 |Error occured while downloading file versions.          |1. Revision not found due to version merging or expiration - this is expected. <Br/>2. Throttling may have caused the download failure - try again later. |
-|MVERSIONNOTFOUND/MVERSIONENCRYPT |Version processing error.                               |Please try again. |
+|MVERSIONDOWNLOAD                 |Error occurred while downloading file versions.         |1. Revision not found due to version merging or expiration - expected behavior. <Br/>2. The download failure may be caused by throttling - try again later. |
+|MVERSIONNOTFOUND/MVERSIONENCRYPT |Version processing error.                               |Try again.           |
