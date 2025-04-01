@@ -155,6 +155,7 @@ SharePoint Advanced Management is $3 per user per month for commercial customer
 
 Licensing details for each feature listed above are included in those articles.
 
+
 ### SharePoint Advanced Management features in Microsoft 365 Copilot licenses
 
 Customers with access to the following Copilot SKUs have access to these SharePoint Advanced Management (SAM) capabilities:
@@ -197,6 +198,7 @@ The SharePoint Advanced Management features listed earlier apply to the followin
 • Microsoft 365 Copilot for Sales (Education Student 18+)
 • Microsoft 365 Copilot for Service (Education Faculty)
 • Microsoft 365 Copilot for Service (Education Student 18+)
+
 
 ## Related topics
 
