@@ -55,9 +55,9 @@ Two endpoints, https://production.odyssey.ops.mover.io and https://production-wu
 |`https://*.sharepoint.com`                             |Destination for migration|
 |`https://*.blob.core.usgovcloudapi.net`                |Migration API Azure Government requirement|
 |`https://*.queue.core.usgovcloudapi.net`               |Migration API Azure Government requirement|
-|`https://*.login.microsoftonline.com`                  |Sign into the Migration Manager agent for SPO access|
-|`https://*.login.windows.net`                          |Sign into the Migration Manager agent for SPO access|
-|`https://*.msauth.net`                                 |Sign into the Migration Manager agent for SPO access|
+|`https://*.login.microsoftonline.com`                  |Sign into the Migration Manager agent for SharePoint access|
+|`https://*.login.windows.net`                          |Sign into the Migration Manager agent for SharePoint access|
+|`https://*.msauth.net`                                 |Sign into the Migration Manager agent for SharePoint access|
 |`https://spmt.sharepointonline.com`                    |Migration Manager agent installation and auto-upgrading link|
 |`https://api.mover.io`                                 |Scan feature for Migration Manager requirement.|
 |`https://production.odyssey.ops.mover.io`              |Migration Manager scan feature requirement.|
