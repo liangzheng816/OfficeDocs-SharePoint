@@ -43,7 +43,7 @@ This article lists the prerequisites and endpoint information when using the <a 
 
 Migration Manager agent sends requests to and receives responses from these endpoints.  They can never call Migration Manager.
 
-Two endpoints, https://production.odyssey.ops.mover.io and https://production-wus2-signalr.service.signalr.net, are used for SignalR connections. Migration Manager agent won’t open a port to accept remote connections.
+Two endpoints, https://production.odyssey.ops.mover.io and https://production-wus2-signalr.service.signalr.net, are used for SignalR connections. Migration Manager agent doesn't open a port to accept remote connections.
 
 |Required endpoints                                     |For |
 |:------------------------------------------------------|:---|
