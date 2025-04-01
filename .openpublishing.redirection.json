@@ -1294,6 +1294,11 @@
       "source_path": "migration/new-migration-transition.md",
       "redirect_url": "/sharepointmigration/migrate-to-sharepoint-online",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "SharePoint/SharePointOnline/SharePoint-Prioritization.md",
+      "redirect_url": "/SharePoint/sharepoint-app-prioritization",
+      "redirect_document_id": false
     }
   ]
 }
