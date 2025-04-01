@@ -41,7 +41,7 @@ This article lists the prerequisites and endpoint information when using the <a 
 
 ## Required endpoints
 
-Migration Manager agent sends requests to and receives responses from these endpoints.  They can never call Migration Manager.
+Migration Manager agent sends requests to and receives responses from these endpoints. They can never call Migration Manager.
 
 Two endpoints, https://production.odyssey.ops.mover.io and https://production-wus2-signalr.service.signalr.net, are used for SignalR connections. Migration Manager agent doesn't open a port to accept remote connections.
 
@@ -58,7 +58,7 @@ Two endpoints, https://production.odyssey.ops.mover.io and https://production-wu
 |`https://*.login.microsoftonline.com`                  |Sign into the Migration Manager agent for SharePoint access|
 |`https://*.login.windows.net`                          |Sign into the Migration Manager agent for SharePoint access|
 |`https://*.msauth.net`                                 |Sign into the Migration Manager agent for SharePoint access|
-|`https://spmt.sharepointonline.com`                    |Migration Manager agent installation and auto-upgrading link|
+|`https://spmt.sharepointonline.com`                    |Migration Manager agent installation and autoupgrading link|
 |`https://api.mover.io`                                 |Scan feature for Migration Manager requirement.|
 |`https://production.odyssey.ops.mover.io`              |Migration Manager scan feature requirement.|
 |`https://production-wus2-signalr.service.signalr.net`  |Migration Manager scan feature requirement. Used to communicate with the server.|
