@@ -49,7 +49,7 @@ There are 4 types of reports to help manage, audit, and troubleshoot your migrat
 
 Your reports may reference a status or failure code to provide specific details as to the nature of the issue.
 
-- [Status codes](#status-codes): Provide the final status of the scan and migration tasks. Status codes can be located in scan/migration summary reports.How to download reports.
+- [Status codes](#status-codes): Provide the final status of the scan and migration tasks. Status codes can be located in scan/migration summary reports.
 - [Failure codes](#failure-codes): Represent file-level errors during both the scan and migration process. Failure codes can be located in *ResultCode* column of scan/migration detailed reports.
 
 ## How to download reports
@@ -278,7 +278,7 @@ The Projecterror.csv report details all item level errors that ever occurred dur
 |FullPath      |Full path of the item in the source. |
 |Action        |Operation step of the item that goes wrong during the migration process. |
 |ResultCode    |Failure code of the item. It shows "null" when item status is "Success". To learn more, see [Failure codes](#failure-codes). |
-|FailureReason |Failure description of the failed item. If the item status is "Success", this column is blank.To learn more, see [Failure codes](#failure-codes). |
+|FailureReason |Failure description of the failed item. If the item status is "Success", this column is blank. To learn more, see [Failure codes](#failure-codes). |
 
 
 #### Migration Summary.csv 
@@ -346,7 +346,7 @@ Status codes provide the final status of the scan and migration tasks. Status co
 |500 |Failed      |Unknown, contact support. |
 |600 |Queued      |Queued to start. |
 |601 |Queued      |Queued to start. |
-|620 |In progress |Running pre-checks. |
+|620 |In progress |Running prechecks. |
 
 ## Failure codes
 
@@ -385,7 +385,7 @@ Failure codes represent file-level errors during both the scan and migration pro
 |MHTTPCONNECTION                |Connection failure. |Check your network and Try again... |
 |MINVALIDEMAIL                  |Invalid user email; unable to find user with that email. |Check user name and Try again... |
 |MINVALIDPAGESIZE               |The page size for connector pagination must be greater than zero. |Try again. |
-|MINVALIDPARENTID               |Item has no parent ID. Id-based connectors require the item to have a parent ID. |Check file and Try again... |
+|MINVALIDPARENTID               |Item has no parent ID. ID-based connectors require the item to have a parent ID. |Check file and Try again... |
 |MINVALIDPATH                   |Path is invalid. |Check path and Try again... |
 |MINVALIDRESPONSE               |Invalid response from API call. |Try again. |
 |MITEMPATHLENGTH                |Item path exceeds length restrictions. |Check file path for length and Try again... |
@@ -394,7 +394,7 @@ Failure codes represent file-level errors during both the scan and migration pro
 |MLISTGROUP                     |API request to list groups for connector failed. |This request may be caused by an invalid or throttling. Try again. |
 |MLISTING                       |Folder listing failed. |Try again. |
 |MLISTUSER                      |Failure to get user listing. This may be caused by an invalid requestor throttling. |Try again. |
-|MLOCKACQ                       |Failed to acquire lock within timeout period and obtain new access token. |Try again. |
+|MLOCKACQ                       |Failed to acquire lock within time-out period and obtain new access token. |Try again. |
 |MNONDESTRUCTIVEOPTIONENABLED   |Unable to delete file or folder. |Try again. |
 |MNOPARENT                      |Item doesn't have a parent item. |Check file and Try again... |
 |MNOTAFILE                      |The path refers to something that isn't a file. |Check the path and correct as necessary. Try again. |
@@ -425,7 +425,7 @@ Failure codes represent file-level errors during both the scan and migration pro
 |MJOBNOTCOMPLETED               |Migration job (upload package) isn't submitted or hasn't finished uploading yet. |Try again. |
 |MJOBERROR                      |Item level failure when processing the migration job (upload package). |Check file name and content. Try again. |
 |MJOBFATALERROR                 |Failed to process the migration job (upload package). All items in the package are marked as failed. |Try again. |
-|MNOTSUPPORTED                  |Forms migration under Google shared drives is not supported. | |
+|MNOTSUPPORTED                  |Forms migration under Google shared drives isn't supported. | |
 |MEMPTYUSERMAPPPING             |User identity mapping is empty. |Update mapping and try again. |
 |MEXCEEDFORMSQUOTA              |Failed to create new forms, due to the maximum number of forms reached. |Reduce the number of forms to migrate, and try again. |
 |MNOUSERINFO                    |Failed to get Microsoft user info. | |
