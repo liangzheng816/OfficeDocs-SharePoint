@@ -7,7 +7,7 @@ manager: serdars
 ms.date: 4/18/2023
 audience: ITPro
 f1.keywords:
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: sharepoint-server-itpro
 ms.localizationpriority: medium
 description: "Learn how to generate key for SharePoint Workflow Manger."

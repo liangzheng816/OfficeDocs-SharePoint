@@ -6,7 +6,7 @@ manager: jtremper
 ms.reviewer: karlha
 ms.date: 01/23/2025
 audience: admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: one-drive
 search.appverid: 
 ms.collection: 

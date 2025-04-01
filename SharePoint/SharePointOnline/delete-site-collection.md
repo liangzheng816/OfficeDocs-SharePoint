@@ -9,7 +9,7 @@ author: maggierui
 audience: Admin
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: how-to
 ms.service: sharepoint-online
 ms.collection:  
 - Strat_SP_admin

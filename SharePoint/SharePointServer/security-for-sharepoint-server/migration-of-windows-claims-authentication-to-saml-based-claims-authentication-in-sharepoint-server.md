@@ -7,7 +7,7 @@ ms.date: 6/21/2019
 ms.audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.service: sharepoint-server-itpro
 ms.localizationpriority: medium
 ms.collection:

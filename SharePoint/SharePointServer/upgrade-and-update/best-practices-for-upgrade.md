@@ -8,7 +8,7 @@ ms.date: 9/17/2016
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: best-practice
 ms.service: sharepoint-server-itpro
 ms.localizationpriority: medium
 ms.collection:

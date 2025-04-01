@@ -9,7 +9,7 @@ ms.date: 04/30/2024
 audience: Admin
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: how-to
 ms.service: sharepoint
 ms.localizationpriority: medium
 search.appverid:

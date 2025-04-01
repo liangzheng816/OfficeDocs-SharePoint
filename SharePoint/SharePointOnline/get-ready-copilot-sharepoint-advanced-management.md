@@ -100,7 +100,7 @@ When you use Microsoft Copilot, the results come from content in Microsoft Graph
 
 - Initiate a [Site Access Review](/sharepoint/site-access-review) for site owners to confirm overshared content and take remediation steps.
 - Use the [Restricted Access Control Policy](/sharepoint/restricted-access-control) to restrict access to a site with overshared content.
-- Use the [Restricted Access Control Policy](/sharepoint/restricted-access-control) to further control accidental content discovery.
+- Use the [Restricted Content Discovery policy](/sharepoint/restricted-content-discovery) to further control accidental content discovery.
 
 #### Site access reviews by site owners
 
