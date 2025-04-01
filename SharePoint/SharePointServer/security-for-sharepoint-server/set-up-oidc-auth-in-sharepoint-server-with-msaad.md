@@ -26,7 +26,7 @@ When you configure OpenID Connect (OIDC) with Microsoft Entra ID, you need the f
 
 1. A SharePoint Server Subscription Edition (SPSE) farm
 
-2. Microsoft Entra Global Administrator role of the M365 tenant
+1. Microsoft Entra Global Administrator role of the Microsoft 365 tenant
 
 This article uses the following example values for Microsoft Entra OIDC setup:
 
@@ -84,17 +84,22 @@ Perform the following steps to set up OIDC with Microsoft Entra ID:
 
 In this step, you need to modify the SharePoint Server farm properties based on the version of your SharePoint Server farm.
 
-- For more information on configuring SharePoint farm properties for SharePoint Server Subscription Edition Version 24H1, see [Configure SPSE Version 24H1 or higher version](#configure-sharepoint-server-subscription-edition-version-24h1-or-higher-versions-with-early-release-feature-preference).
+- For more information on configuring SharePoint farm properties for SharePoint Server Subscription Edition Version 24H1, see [Configure SPSE Version 24H1 or higher version](#configure-sharepoint-server-subscription-edition-version-24h1-or-higher-versions).
 - For more information on configuring SharePoint farm properties for SharePoint Server Subscription Edition Version preceding 24H1, see [Configure SPSE prior to Version 24H1](#configure-sharepoint-server-subscription-edition-prior-to-version-24h1).
 
-#### Configure SharePoint Server Subscription Edition Version 24H1 or higher versions with Early Release feature preference 
+#### Configure SharePoint Server Subscription Edition Version 24H1 or higher versions
 
-Starting with SharePoint Server Subscription Edition Version 24H1 (March 2024), if the SharePoint farm is configured for [Early Release feature preference](/sharepoint/administration/feature-release-rings#early-release), you can configure SharePoint Server farm properties by employing SharePoint Certificate Management to manage the nonce cookie certificate. The nonce cookie certificate is part of the infrastructure to ensure OIDC authentication tokens are secure. Run the following PowerShell script to configure:
-> [!IMPORTANT] 
-> To use this script, the SharePoint farm must be set to Early Release, as noted above.  If it is not, the script will complete without error, but the call to $farm.UpdateNonceCertificate() will not do anything.  If you do not want to configure your farm for Early Release, then you must use the [Configure SPSE prior to Version 24H1](#configure-sharepoint-server-subscription-edition-prior-to-version-24h1) steps instead.
+Starting with SharePoint Server Subscription Edition Version 24H1 (March 2024), if the SharePoint farm is set to [Early Release feature preference](/sharepoint/administration/feature-release-rings#early-release), you can configure SharePoint Server farm properties by employing SharePoint Certificate Management to manage the nonce certificate. This functionality is part of the "OpenID Connect (OIDC) integration with SharePoint certificate management" feature described in [New and improved features in SharePoint Server Subscription Edition Version 24H1](/sharepoint/what-s-new/new-and-improved-features-in-sharepoint-server-subscription-edition-24h1-release). 
+
+If the SharePoint Server farm is at the 24H2 (September 2024) build or higher, the "OpenID Connect (OIDC) integration with SharePoint certificate management" feature was moved to the Standard Release ring. In that case, the feature is enabled no matter which Feature Release Preference the farm is set to.  See [New and improved features in SharePoint Server Subscription Edition Version 24H2](/sharepoint/what-s-new/new-and-improved-features-in-sharepoint-server-subscription-edition-24h2-release) for more information.
+
+The nonce cookie certificate is part of the infrastructure to ensure OIDC authentication tokens are secure. Run the following PowerShell script to configure:
+> [!IMPORTANT]
+> To use this script, the SharePoint Server farm must be at the 24H2 build, or 24H1 and set to Early Release.  If it isn't, the script completes without error, but the call to $farm.UpdateNonceCertificate() does nothing.  If your farm doesn't meet this criteria, then you must use the [Configure SPSE prior to Version 24H1](#configure-sharepoint-server-subscription-edition-prior-to-version-24h1) steps instead.
 
 > [!Note]
-> Start the SharePoint Management Shell as a farm administrator to run the following script. Read the instructions mentioned in the following PowerShell script carefully. You will need to enter your own environment-specific values in certain places.
+> Start the SharePoint Management Shell as a farm administrator to run the following script. Read the instructions mentioned in the following PowerShell script carefully. You need to enter your own environment-specific values in certain places.
+
 ```powershell
 # Set up farm properties to work with OIDC
 
@@ -111,13 +116,16 @@ $nonceCert = Import-SPCertificate -Path $certPath -Password $certPassword -Store
 $farm = Get-SPFarm 
 $farm.UpdateNonceCertificate($nonceCert,$true)
 ```
+> [!Note]
+> If you had previously configured OIDC authentication in your SharePoint Server farm prior to the 24H1 build and then later upgraded the farm to 24H2 or 24H1 with Early Release, you can utilize the [OpenID Connect (OIDC) integration with SharePoint certificate management](/sharepoint/what-s-new/new-and-improved-features-in-sharepoint-server-subscription-edition-24h1-release#openid-connect-oidc-integration-with-sharepoint-certificate-management) feature by running through just the "Import certificate to Certificate Management" and "Update farm property" steps in the above PowerShell script.
 
 #### Configure SharePoint Server Subscription Edition prior to Version 24H1
 
 Prior to the 24H1 (March 2024) update, the nonce cookie certificate must be managed manually.  This includes manually installing it on each server in the farm and setting permissions on the private key.  The following PowerShell script can be used to accomplish that.
 
 > [!Note]
-> Start the SharePoint Management Shell as a farm administrator to run the following script. Read the instructions mentioned in the following PowerShell script carefully. You will need to enter your own environment-specific values in certain places.
+> Start the SharePoint Management Shell as a farm administrator to run the following script. Read the instructions mentioned in the following PowerShell script carefully. You need to enter your own environment-specific values in certain places.
+
 ```powershell
 # Set up farm properties to work with OIDC
 $cert = New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -Provider 'Microsoft Enhanced RSA and AES Cryptographic Provider' -Subject "CN=SharePoint Cookie Cert"
@@ -126,7 +134,7 @@ $fileName = $rsaCert.key.UniqueName
 
 # If you have multiple SharePoint servers in the farm, you need to export the certificate by Export-PfxCertificate and import the certificate to all other SharePoint servers in the farm by Import-PfxCertificate. 
 
-# After the certificate is successfully imported to SharePoint Server, we will need to grant access permission to the certificate's private key.
+# After the certificate is successfully imported to SharePoint Server, we need to grant access permission to the certificate's private key.
 
 $path = "$env:ALLUSERSPROFILE\Microsoft\Crypto\RSA\MachineKeys\$fileName"
 $permissions = Get-Acl -Path $path
@@ -143,7 +151,7 @@ $farm.Properties['SP-NonceCookieHMACSecretKey']='seed'
 $farm.Update()
 ```
 > [!IMPORTANT]
-> The nonce cookie certificate, with private key, must be installed on all SharePoint servers in the farm.  Also, permission to the private key must be given to the web application pool service account on each server.  Failure to complete this step will result OIDC authentication failures. 
+> The nonce cookie certificate, with private key, must be installed on all SharePoint servers in the farm.  Also, permission to the private key must be given to the web application pool service account on each server.  Failure to complete this step results in OIDC authentication failures. 
 > It's recommended to use the PowerShell example above to set permission on the private key file to ensure it's done correctly.
 
 ## Step 3: Configure SharePoint to trust the identity provider
@@ -184,7 +192,8 @@ This can simplify the configuration of the OIDC token issuer.
 With the following PowerShell example, we can use metadata endpoint from Microsoft Entra ID to configure SharePoint to trust Microsoft Entra OIDC.
 
 > [!NOTE]
-> Read the instructions mentioned in the following PowerShell script carefully. You will need to enter your own environment-specific values in certain places.  For example, replace \<tenantid\> with your own Directory (tenant) ID.
+> Read the instructions mentioned in the following PowerShell script carefully. You need to enter your own environment-specific values in certain places.  For example, replace `<tenantid>` with your own Directory (tenant) ID.
+
 ```powershell
 # Define claim types
 # In this example, we're using Email Address as the Identity claim.
@@ -207,19 +216,19 @@ New-SPTrustedIdentityTokenIssuer -Name "contoso.local" -Description "contoso.loc
 |ImportTrustCertificate     | A certificate that is used to validate `id_token` from OIDC identifier. |
 | ClaimsMappings | A `SPClaimTypeMapping` object, which is used to identify which claim in the `id_token` is regarded as identifier in SharePoint. |
 | IdentifierClaim | Specifies the type of identifier. |
-| DefaultClientIdentifier | Specifies the `client_id` of SharePoint server, which is assigned by OIDC identity provider. This is validated against aud claim in `id_token`. |
+| DefaultClientIdentifier | Specifies the `client_id` of SharePoint server, which the OIDC identity provider assigns. It is validated against the "aud" claim in `id_token`. |
 | MetadataEndPoint | Specifies the well-known metadata endpoint from OIDC identity provider, which can be used to retrieve latest certificate, issuer, authorization endpoint, and sign out endpoint. |
 
 ### Configure SharePoint to trust Microsoft Entra ID as the OIDC provider manually
 
-When configuring manually, several additional parameters must be specified. You can retrieve the values from the OIDC discovery endpoint.
+When configuring manually, several extra parameters must be specified. You can retrieve the values from the OIDC discovery endpoint.
 
 In Microsoft Entra ID, there are two versions of OIDC authentication endpoints. Therefore, there are two versions of OIDC discovery endpoints respectively:
 
 - V1.0: `https://login.microsoftonline.com/<TenantID>/.well-known/openid-configuration`
 - V2.0: `https://login.microsoftonline.com/<TenantID>/v2.0/.well-known/openid-configuration`
 
-Replace TenantID with the **Directory (tenant) ID** saved in [Step 1: Setup identity provider](#step-1-setup-identity-provider) and connect to the endpoint through your browser. Then, save the following information:
+Replace `<tenantid>` with the **Directory (tenant) ID** saved in [Step 1: Setup identity provider](#step-1-setup-identity-provider) and connect to the endpoint through your browser. Then, save the following information:
 
 | Value | Link |
 |---------|---------|
@@ -235,7 +244,8 @@ Open jwks_uri (`https://login.microsoftonline.com/common/discovery/keys`) and sa
 Start the SharePoint Management Shell as a farm administrator, and after entering the values you obtained above, run the following script to create the Trusted identity Token Issuer:
 
 > [!NOTE]
-> Read the instructions mentioned in the following PowerShell script carefully. You will need to enter your own environment-specific values in certain places.  For example, replace \<tenantid\> with your own Directory (tenant) ID.
+> Read the instructions mentioned in the following PowerShell script carefully. You need to enter your own environment-specific values in certain places.  For example, replace `<tenantid>` with your own Directory (tenant) ID.
+
 ```powershell
 # Define claim types
 # In this example, we're using Email Address as the identity claim.
@@ -275,7 +285,7 @@ Here, `New-SPTrustedIdentityTokenIssuer` PowerShell cmdlet is extended to suppor
 | RegisteredIssuerName | Specifies the issuer identifier, which issues the `id_token`. It's used to validate the `id_token`. |
 | AuthorizationEndPointUrl | Specifies the authorization endpoint of the OIDC identity provider. |
 | SignoutUrl | Specifies the sign out endpoint of the OIDC identity provider. |
-| DefaultClientIdentifier | Specifies the `client_id` of SharePoint server, which is assigned by OIDC identity provider. This is validated against aud claim in `id_token`. |
+| DefaultClientIdentifier | Specifies the `client_id` of SharePoint server, which the OIDC identity provider assigns. This is validated against "aud" claim in `id_token`. |
 | ResponseTypesSupported | Specifies the response type of IDP, which is accepted by this token issuer. It can accept two strings: `id_token` and `code id_token`. If this parameter isn't provided, it uses `code id_token` as default. |
 
 ## Step 4: Configure the SharePoint web application
@@ -283,8 +293,9 @@ Here, `New-SPTrustedIdentityTokenIssuer` PowerShell cmdlet is extended to suppor
 In this step, you configure a web application in SharePoint to be federated with the Microsoft Entra OIDC, using the `SPTrustedIdentityTokenIssuer` created in the previous step.
 
 > [!IMPORTANT]
-> - The default zone of the SharePoint web application must have Windows authentication enabled. This is required for the Search crawler. 
-> - The SharePoint URL that will use Microsoft Entra OIDC federation must be configured with Hypertext Transfer Protocol Secure (HTTPS).
+> - The Search Crawler requires that the default zone of the SharePoint web application must have Windows authentication enabled.
+- The SharePoint URL that will use Microsoft Entra OIDC federation must be configured with Hypertext Transfer Protocol Secure (HTTPS).
+
 
 You can complete this configuration either by:
 
@@ -390,4 +401,4 @@ In this step, you create a team site collection with two administrators: One as 
 Once the site collection is created, you should be able to sign-in using either the Windows or the federated site collection administrator account.
 
 ## Step 7: Set up People Picker
-In OIDC authentication, the People Picker doesn't validate the input, which can lead to misspellings or users accidentally selecting the wrong claim type. This can be addressed either by using a Custom Claims Provider, or by using the new UPA-backed claim provider included in SharePoint Server Subscription Edition.  To configure a UPA-backed claim provider, see [Enhanced People Picker for modern authentication](/sharepoint/administration/enhanced-people-picker-for-trusted-authentication-method).
+In OIDC authentication, the People Picker doesn't validate the input, which can lead to misspellings or users accidentally selecting the wrong claim type. This problem can be addressed either by using a Custom Claims Provider, or by using the new UPA-backed claim provider included in SharePoint Server Subscription Edition.  To configure a UPA-backed claim provider, see [Enhanced People Picker for modern authentication](/sharepoint/administration/enhanced-people-picker-for-trusted-authentication-method).
