@@ -23,7 +23,7 @@ description: "Learn about the report generated when migrating SharePoint Server 
 
 # Migration workflow report and error codes
 
-When migrating SharePoint Server workflows to Microsoft 365 using the SharePoint Migration Tool (SPMT), reports are automatically generated. Any error codes encountered are listed below.
+When migrating SharePoint Server workflows to Microsoft 365 using the SharePoint Migration Tool (SPMT), reports are automatically generated. Any error codes encountered are listed in the following table.
 
 ## Workflow migration reports
 
@@ -34,23 +34,23 @@ The work migration task generates two reports, one for scans and the other for t
 
 |Report column name |Notes |
 :-----|:-----|
-|Source association URL |Source SharePoint object URL that is associated with the workflow. It can be URL of list, library, site |
-|Destination association URL|Destination SharePoint object URL that is associated with the migrated Power Automate flow. It can be the URL of a list or library. |
-|Source workflow URL |Location of the source workflow. |
+|Source association URL |The source SharePoint object URL associated with the workflow. It can be the URL of a list, a library, or a site |
+|Destination association URL|The destination SharePoint object URL associated with the migrated Power Automate flow. It can be the URL of a list or a library. |
+|Source workflow URL |The location of the source workflow. |
 |Destination workflow URL |The location where the workflow is migrated. |
 |Source workflow ID ||
 |Destination flow ID ||
 |Source workflow name ||
 |Destination flow name ||
-|Solution name |The name of Power Automate solution that contains migrated flows. Flow owner can find migrated flows in the solution. |
+|Solution name |The name of the Power Automate solution that contains migrated flows. The flow owner can find migrated flows in the solution. |
 |Source workflow owner |The creator of source workflow instance. |
-|Destination flow owner |The owner(s) of migrated Power Automate flow. |
+|Destination flow owner |The owner or owners of the migrated Power Automate flow. |
 |Association type |Possible values: List, Site, or Content type. |
 |Workflow version |Possible values: Workflow 2010, Workflow 2013. |
 |Workflow template name ||
-|Workflow accessed date |Latest execution/modification date of the workflow. |
+|Workflow accessed date |The latest execution or modification date of the workflow. |
 |Total action count |The count of actions for SPD workflow. |
-|Unsupported actions |List of actions that aren't supported by migration tool. |
+|Unsupported actions |A list of actions not supported by migration tool. |
 |Status |Possible values: Migrated, Failed, Skipped, Scan Finished. |
 |Result category |Possible values: Migrated, Scan Finished, SCAN FILTER, MIGRATION SKIP, SCAN FAILURE, FLOW CREATE FAILURE. |
 |Message |Error message. |
