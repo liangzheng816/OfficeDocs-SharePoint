@@ -26,7 +26,7 @@ description: Migrate Google Sheet spreadsheets with Migration Manager.
 # Scan Google Sheet spreadsheets with Migration Manager
 
 >[!Important]
->Due to the limitations of the Google API quota, Sheet Scan operates with a restricted scope on each sheet file. Specifically, the sheet scan examines only the top 1,000 cells or the first 100 errors identified, whichever condition is met first, then the scan process for that sheet file will conclude.
+>Due to the limitations of the Google API quota, Sheet Scan operates with a restricted scope on each sheet file. Specifically, the sheet scan examines only the top 1,000 cells or the first 100 errors identified, whichever condition is met first, then the scan process for that sheet file concludes.
 
 A sheet scan is a scanning feature that exposes issues such as incompatible formulas and invalid embedded links in Google Sheets when exported and transferred to Microsoft Excel files. Migration Manager generates sheet reports listing issues discovered in the sheet scan process.
 
@@ -75,7 +75,6 @@ To download Sheet Scan reports, select one or multiple scan tasks, and then sele
 
 A summary of Google Sheets of each selected task. Each line represents a summary of each task selected.
 
-
 |Column name     |Description                                                |
 |:---------------|:----------------------------------------------------------|
 |TaskId          |ID of the selected task, used for troubleshooting.         |
@@ -90,30 +89,30 @@ A summary of Google Sheets of each selected task. Each line represents a summary
 
 List all the Google Sheets files scanned and whether they have issues or not.
 
-|Column name|Description|
-|:-----|:-----|
-|TaskId|ID of the selected task, used for troubleshooting.|
-|TransactionID|Every time when task is run, it's a transaction. Transaction ID is used for troubleshooting.|
-|Name|Display name of the selected task in the source.|
-|SourcePath|Source path of the selected task.|
-|FullPath|Full path of the item in the source.|
-|LastModified|Last modified time of the Google Sheets file.|
-|IssueCount|Total number of issues found in the Google Sheets file.|
+|Column name   |Description                                                                                  |
+|:-------------|:--------------------------------------------------------------------------------------------|
+|TaskId        |ID of the selected task, used for troubleshooting.                                           |
+|TransactionID |Every time when task is run, it's a transaction. Transaction ID is used for troubleshooting. |
+|Name          |Display name of the selected task in the source.                                             |
+|SourcePath    |Source path of the selected task.                                                            |
+|FullPath      |Full path of the item in the source.                                                         |
+|LastModified  |Last modified time of the Google Sheets file.                                                |
+|IssueCount    |Total number of issues found in the Google Sheets file.                                      |
 
 ### SheetIssue.csv
 
 Issue details of selected tasks.
 
-|Column name|Description|
-|:-----|:-----|
-|TaskId|ID of the selected task, used for troubleshooting.|
-|TransactionID|Every time when task is run, it's a transaction. Transaction ID is used for   troubleshooting.|
-|Name|Display name of the selected task in the source.|
-|SourcePath|Source path of the selected task.|
-|FullPath|Full path of the item in the source.|
-|LastModified|Last modified time of the Google Sheets file.|
-|SheetName|The name of the Google Sheets file.|
-|IssueType|Type of issue found.|
-|IssueDetail|Details of the issue found.|
-|CellLocation|Location of the cell with issue found.|
-|CellContent|Original content of the cell with issue found.|
+|Column name   |Description                                                                                 |
+|:-------------|:-------------------------------------------------------------------------------------------|
+|TaskId        |ID of the selected task, used for troubleshooting.                                          |
+|TransactionID |Every time when task is run, it's a transaction. Transaction ID is used for troubleshooting.|
+|Name          |Display name of the selected task in the source.                                            |
+|SourcePath    |Source path of the selected task.                                                           |
+|FullPath      |Full path of the item in the source.                                                        |
+|LastModified  |Last modified time of the Google Sheets file.                                               |
+|SheetName     |The name of the Google Sheets file.                                                         |
+|IssueType     |Type of issue found.                                                                        |
+|IssueDetail   |Details of the issue found.                                                                 |
+|CellLocation  |Location of the cell with issue found.                                                      |
+|CellContent   |Original content of the cell with issue found.                                              |
