@@ -220,7 +220,7 @@ This report lists the failures at the task level. This report is only generated 
 |--------------------------|------------|
 |Structure type            |Site collection, site, list, field, content type, view. |
 |Structure title           |Display name of the object |
-|Operation                 |Skipped, created or updated. |
+|Operation                 |Skipped, created, or updated. |
 |Status                    |Success, partial success, failure. |
 |Details                   |Reason for failure. |
 |Source structure URL      |Displays the source URL. The URL is listed for site collections, sites, and lists. Fields, content types, and views display its container's URL. |
@@ -237,7 +237,7 @@ This is an aggregate of all the task failure reports. This ia only generated if 
 |--------------------------|------------|
 |Structure type            |Site collection, site, list, field, content type, view. |
 |Structure title           |Display name of the object. |
-|Operation                 |Skipped, created or updated. |
+|Operation                 |Skipped, created, or updated. |
 |Status                    |Success, partial success, failure |
 |Details                   |Reason for failure. |
 |Source structure URL |Display the source URL. The URL is listed for site collections, sites, and lists. Fields, content types, and views display its container's URL. |
