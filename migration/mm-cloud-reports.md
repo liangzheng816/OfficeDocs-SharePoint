@@ -295,12 +295,12 @@ The Migration Summary.csv report is a task level summary of all migration tasks.
 |Tags               |Predefined tags of the task. |
 |StatusCode         |Status code of the migration task. To learn more, see [Status codes](#status-codes). |
 |FoldersCreated     |Folder created in the destination for the migration. |
-|FilesTotalCopied   |To date, the total files that have been migrated to the destination from all migrations ever initiated. |
+|FilesTotalCopied   |To date, the total files migrated to the destination from all migrations ever initiated. |
 |FilesLatestCopied  |Files that migrated to the destination in the latest migration. |
 |FilesAlreadyCopied |Files already migrated to the destination from previous migrations or already exist in the destination. |
 |FilesFiltered      |Files not migrated due to migration filter setting. |
 |FilesFailed        |Files that failed in the migrating process. |
-|DataTotalCopied    |Total data size (in bytes) that has been migrated to the destination from all migrations ever initiated. |
+|DataTotalCopied    |Total data size (in bytes) migrated to the destination from all migrations ever initiated. |
 |DataLatestCopied   |Data size (in bytes) migrated to the destination in the latest migration. |
 |DataAlreadyCopied  |Data size (in bytes) already migrated to the destination from previous migrations or already existing in the destination. |
 |DataFiltered       |Data size (in bytes) not migrated due to migration filter setting. |
