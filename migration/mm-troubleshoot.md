@@ -122,7 +122,7 @@ If the clientsetup.exe can't be opened:
 If errors occurred during the installation process:
 
 - For errors with specific stated actions, take the corresponding action and then reopen the clientsetup.exe.
-- For other nonspecific errors, make sure your Administrator account has been added to the domain. Close the application window and then retry installation.
+- For other nonspecific errors, make sure your Administrator account is added to the domain. Close the application window and then retry installation.
 
 ## Agent disconnected
 
@@ -310,14 +310,14 @@ The User Principal Name (UPN) referenced is invalid. In order to create or updat
 |0x02040012 |The temporary storage on your local computer is too low. Migration Manager caches the package on the working folder. Expand your temporary storage and retry. |
 |0x02030003 |There are too many items with unique permissions. Simplify your permissions list by reducing the number of unique permissions. aRetry your migration. |
 |0x02050001 |Local storage file is corrupted. The working folder was touched or modified during the migration. Retry your migration. |
-|0x02080001 |The file in the package has been changed or deleted while uploading. All files and folders in the Migration Manager working folder, *%appdata%\Microsoft\SPMigration\Logs\Migration\MigrationToolStorage*, must be closed. Restart your migration. |
+|0x02080001 |The file in the package was changed or deleted while uploading. All files and folders in the Migration Manager working folder, *%appdata%\Microsoft\SPMigration\Logs\Migration\MigrationToolStorage*, must be closed. Restart your migration. |
 |0x02040009 |The package can't be created because the directory can't be found. All files and folders in the Migration Manager working folder, *%appdata%\Microsoft\SPMigration\Logs\Migration\MigrationToolStorage*, must be closed. Restart your migration. |
 |0x02010020 |Disable migrating version history in Migration Manager settings or enable versioning in SharePoint. |
 |0x0201000E |Check if the global setting has filtered out special characters in the target path or if the path has unsupported characters. |
-|0X0201000F |Invalid site URL. Check if the site URL is valid. Try to access the URL via a browser. If this account is a OneDrive account, make sure it has been pre-provisioned before you migrate. |
+|0X0201000F |Invalid site URL. Check if the site URL is valid. Try to access the URL via a browser. If this account is a OneDrive account, make sure it is pre-provisioned before you migrate. |
 |0x0207001 |You don't have access to the task folder. Check if you can access *%appdata%\Microsoft\SPMigration\Logs\Migration\MigrationToolStorage*. |
 |0x01410010 |A failure occurred because of missing dependencies on list items. Check the FailureSummaryReport.csv for details. Check if the dependencies are included in your migration scope. |
-|0x01510001 |Packages failed to upload. If you have customized Azure storage, check if you can access the Azure storage and check if you can access the target site. Try migrating again. |
+|0x01510001 |Packages failed to upload. If you have a customized Azure storage, check if you can access the Azure storage and check if you can access the target site. Try migrating again. |
 |0x01510001 |Failed to Upload the Job to Server: Upload file failed during migration. |
 |0x02070009 |Several packages failed to upload. Pause the task and check your network connection. |
 |0x01710009 |A failure occurred due to job end failures; some items failed in the package. Restart migration. |
