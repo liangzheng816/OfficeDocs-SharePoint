@@ -86,7 +86,7 @@ When assessing your migration jobs, we recommend that you first look at these su
 |Total GB |The total number of gigabytes scanned in source destination. |
 |Migrated bytes |The total number of bytes of data migrated. |
 |Migrated GB |The total size of the files migrated, expressed in gigabytes. |
-|Agent |The address of the migration agent (VM or computer) running the migration task. |
+|Agent |The address of the migration agent (virtual machine or computer) running the migration task. |
 |Duration |The length of time in minutes the migration task took to complete. |
 |TaskID |The unique ID of the task. |
 |Task failure reason |An explanation of task failure. |
