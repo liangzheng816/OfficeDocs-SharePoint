@@ -17,7 +17,7 @@ ms.collection:
 - m365initiative-migratetom365
 ms.custom: admindeeplinkSPO
 search.appverid: MET150
-description: "Learn how File share migration works when using Migration Manager in Microsoft 365 SharePoint admin center."
+description: "Learn how File share migration works, for a computer or a VM (virtual machine) when using Migration Manager in Microsoft 365 SharePoint admin center."
 ---
 
 # How does Migration Manager work for file share migrations
