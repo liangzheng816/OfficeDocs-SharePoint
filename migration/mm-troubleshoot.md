@@ -133,7 +133,7 @@ If errors occurred during the installation process:
 **Diagnosis / Investigation**:
 
 - Check the network health on the computer on which the agent is installed.
-- If the password of the logged-in Tenant Administrator account has changed, or any other similar, critical changes are applied to the Tenant Admin account that would require you to sign in again, all of the agents are disconnected. Reinstallation is required on all of them.
+- If the password of the logged-in Tenant Administrator account is changed, or any other similar, critical changes are applied to the Tenant Admin account that would require you to sign in again, all of the agents are disconnected. Reinstallation is required on all of them.
 - If the agent failed to autoupgrade, the version is likely too old. Reinstall the agent.
 - Token expiration can also cause the agent to disconnect.
 
@@ -238,7 +238,7 @@ Migration Manager currently doesn't support the Geo admin role for specific scen
 
 ## Group inherited SharePoint admins unable to access the Scans and Migrations tabs
 
-SharePoint admin roles created as a result of joining an Azure group aren't fully supported by Migration Manager. For file share migrations, these users can't access the **Scans** tab. For cloud migrations, these users can't access the **Scans** tab or the **Migrations** tab.
+Migration Manager doesn't fully support SharePoint admin roles created as a result of joining an Azure group. For file share migrations, these users can't access the **Scans** tab. For cloud migrations, these users can't access the **Scans** tab or the **Migrations** tab.
 
 **Workaround**. Assign the user either a SharePoint admin or Global admin role.
 
