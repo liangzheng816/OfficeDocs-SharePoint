@@ -221,7 +221,7 @@ Run less concurrent transactions.
 
 **Status**:
 
-This is a known issue. ETA not set.
+This issue is a known issue. ETA not set.
 
 ## Geo admins not supported
 
