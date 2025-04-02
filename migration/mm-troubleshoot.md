@@ -141,7 +141,7 @@ If errors occurred during the installation process:
 
 - If there's a network issue, fix that. The agent should reconnect soon after.
 - If there are critical changes to the Tenant Admin account that require you to sign in again: Reinstall the agent on all the computers.
-- Otherwise, start by reinstalling the agent first.
+- If neither of these options applies, start by reinstalling the agent first.
 
 ## Task stuck in "Queued" status
 
