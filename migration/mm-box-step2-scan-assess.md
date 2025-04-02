@@ -37,12 +37,13 @@ After you connect, scan and assess your Box user accounts.
 6. Review the scanned users. Search for specific text, or select a filter to review the list more easily.
 
 >[!Important]
-> The total number of rows in the Scans list cannot exceed 50,000.
+> The total number of rows (tasks) in the Scans list cannot exceed 50,000.
 
 
 ## Download reports
 
-Summary and detailed scan reports are available to assist you in troubleshooting. [Download the generated reports](/sharepointmigration/mm-cloud-reports#download-scan-reports) to investigate any possible issues that might block your migration.
+Scan summary and detailed reports are available to assist you in troubleshooting. [Download the generated reports](/sharepointmigration/mm-cloud-reports#download-scan-reports) to investigate any possible issues that might block your migration. 
+Check the [status code](/sharepointmigration/mm-cloud-reports#status-codes) in **Scan summary report** to address task-level errors. For file-level errors, refer to the [failure code](/sharepointmigration/mm-cloud-reports#failure-codes) in the **Scan detailed report**.
 
 
 ## Managing users who own large amounts of data
