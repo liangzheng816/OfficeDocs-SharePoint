@@ -55,7 +55,7 @@ Make sure you meet the prerequisites for agent installation, and review the requ
 
 |Message |Action |
 |--------|-------|
-|*Migration agent couldn't be installed. Close setup and try again.* |You may be using an out-of-date version of the agent setup file to install the agent. See the [Agent installation failure](#agent-installation-failure) section for more information. |
+|*Migration agent couldn't be installed. Close setup and try again.* |You may be using an out-of-date version of the agent setup file to install the agent. For more information, see the [Agent installation failure](#agent-installation-failure) section. |
 |*Current user doesn't have access to source file share* |Make sure the source file share is a network file share. Verify that the Windows account associated with the agent has **Read** permissions to the file share you want to migrate. |
 |*The source file share doesn't exist* |Make sure the source file share is an existing network file share. Confirm that the Windows account associated with the agent has **Read** permissions to the file share you want to migrate. |
 
@@ -261,7 +261,7 @@ The User Principal Name (UPN) referenced is invalid. In order to create or updat
 
 **Mitigation**
 
-- If there's no agents in the **Default** agent group, change the existing agent's group to **Default**. Any scan tasks that have been stuck should now move out of this state.
+- If there's no agents in the **Default** agent group, change the existing agent's group to **Default**. Any scan tasks that were stuck should now move out of this state.
 
  :::image type="content" source="media/mm-scan-task-issue-3.png" alt-text="Scan task issue edit agents.":::
 
@@ -316,12 +316,12 @@ The User Principal Name (UPN) referenced is invalid. In order to create or updat
 |0x0201000E |Check if the global setting has filtered out special characters in the target path or if the path has unsupported characters. |
 |0X0201000F |Invalid site URL. Check if the site URL is valid. Try to access the URL via a browser. If this is a OneDrive account, make sure it has been preprovisioned before you migrate. |
 |0x0207001 |You don't have access to the task folder. Check if you can access *%appdata%\Microsoft\SPMigration\Logs\Migration\MigrationToolStorage*. |
-|0x01410010 |A failure occurred because of missing dependencies on list items. Check the FailureSummaryReport.csv for details. Check if the dependencies have been included in your migration scope. |
+|0x01410010 |A failure occurred because of missing dependencies on list items. Check the FailureSummaryReport.csv for details. Check if the dependencies are included in your migration scope. |
 |0x01510001 |Packages failed to upload. If you have customized Azure storage, check if you can access the Azure storage and check if you can access the target site. Try migrating again. |
 |0x01510001 |Failed to Upload the Job to Server: Upload file failed during migration. |
 |0x02070009 |Several packages failed to upload. Pause the task and check your network connection. |
 |0x01710009 |A failure occurred due to job end failures; some items failed in the package. Restart migration. |
-|0x01710009 |Errors or time-out for Server Processing the file: Not all the items in the package have been migrated. |
+|0x01710009 |Errors or time-out for Server Processing the file: Not all the items in the package were migrated. |
 |0x01610001 |The Azure container is expired. Retry migration task. |
 |0x01710006 |Errors or time-out for server processing the file: Job Fatal Error. |
 |0x01710004 |Errors or time-out for server processing the file. Fail to look up folder name. The item may exist in other list or site in the same site collection. Or the item is in the recycle bin. |
