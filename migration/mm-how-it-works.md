@@ -28,7 +28,7 @@ The Migration Manager centralizes the management of large file share migrations 
 
 **Agent setup**
 
-From the SharePoint admin center, select <a href="https://go.microsoft.com/fwlink/?linkid=2185075" target="_blank">**Migration center**</a> and then **File Shares**. Download the agent setup file and install it on each Windows computer or virtual machine you want to use as a migration agent. The agent setup file prompts for two sets of credentials: the SharePoint Admin credentials to access your destination and the Windows credentials that have read access to any network file shares you plan to migrate.
+From the SharePoint admin center, select <a href="https://go.microsoft.com/fwlink/?linkid=2185075" target="_blank">**Migration center**</a> and then **File Shares**. Download the agent setup file and install it on each Windows computer or virtual machine you want to use as a migration agent. The agent setup file prompts for two sets of credentials: the SharePoint Admin credentials to access your destination and the Windows credentials that have **Read** access to any network file shares you plan to migrate.
 
 This pair of credentials creates a trust with Migration Manager. Migration Manager now sees it as an available agent to which it can automatically distribute migrations tasks.
 
