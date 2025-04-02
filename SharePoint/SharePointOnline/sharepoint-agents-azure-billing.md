@@ -62,7 +62,7 @@ The following table illustrates the differences in the subscription models for t
 | Tenant graph grounding for messages   | 10 messages  | No charge                                          | 10 messages    |
 
 > [!NOTE]
-> Each interaction with a SharePoint agent includes a question and an answer. A successful interaction uses 32 messages. Effective April 1st 2025, each interaction will use 12 messages, reducing the billing rate to $0.12 per interaction for SharePoint agent consumption-based usage.
+> Each interaction with a SharePoint agent includes a question and an answer. The answer integrates the generative answer and the tenant graph grounding for messages. A successful interaction uses 12 messages.
 
 ### Monitor consumption in Microsoft Cost Management
 
