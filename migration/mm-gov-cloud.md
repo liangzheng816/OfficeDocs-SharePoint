@@ -16,7 +16,7 @@ ms.collection:
 - SPMigration
 - M365-collaboration
 - m365initiative-migratetom365
-description: An explanation of Government Cloud configuration settings when using Migration Manager for file share migrations.
+description: An explanation of Government Community Cloud (GCC) configuration settings when using Migration Manager for file share migrations.
 ---
 
 # Government cloud settings for Migration Manager
