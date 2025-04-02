@@ -78,8 +78,8 @@ When assessing your migration jobs, we recommend that you first look at these su
 |Status |The status of each task (success, failure, in progress, not started). |
 |Source |The file path or URL of the location of the data being migrated. |
 |Destination |The URL of the Site and library to where the data is being migrated. |
-|Total scanned items |The total number of files and list items, including those filtered out because of settings or potential scan issues. |
-|Total to be migrated items |The total number of files and list items that were expected to migrate excluding those filtered out based on settings or potential scan issues. |
+|Total scanned items |The total number of files and list items, including those files and list items filtered out because of settings or potential scan issues. |
+|Total to be migrated items |The total number of files and list items that were expected to migrate excluding those files and list items filtered out based on settings or potential scan issues. |
 |Migrated items |The total number of files migrated. |
 |Items not migrated |The number of files that didn't migrate. |
 |Total bytes |The total number of bytes scanned in source destination. |
@@ -94,7 +94,7 @@ When assessing your migration jobs, we recommend that you first look at these su
 
 ## Task Reports
 
-When you need to do a more in-depth investigation or a thorough verification of your migration task, the task level reports help you drill down into the specific details. We recommend using these reports to help you accomplish this.
+When you need to do a more in-depth investigation or a thorough verification of your migration task, the task level reports help you drill down into the specific details.
 
 - **ItemSummary.csv:** A report similar to the overall summary report, except that it aggregates the data just for a single task.
 - **ItemFailureReport.csv:** A failure report at the item level. This report is a filtered version of the files report, showing only failures.
@@ -114,11 +114,11 @@ The **ItemSummary.csv** report is a summary report at the task level.
 |Scanned |The total number of files scanned before migration. |
 |Item scan failures |The number of files that failed the scan and didn't qualify for the migration. |
 |Filtered out items |The number of files not included in migration. |
-|Expected migrated file count |The total number of files expected to migrate, excluding those filtered out based on settings or scanned potential issues. |
+|Expected migrated file count |The total number of files expected to migrate, excluding those files filtered out based on settings or scanned potential issues. |
 |Read |The total number of files read. |
 |Packaged |The total number of files packaged and ready to upload to the destination. |
 |Uploaded |The total number of files that attempted to upload. |
-|ReUploaded |The total number of files reuploaded. |
+|Reuploaded |The total number of files reuploaded. |
 |Submitted |The total number of files submitted. |
 |Resubmitted |The total number of files resubmitted. |
 |Migrated |The total number of files migrated. |
@@ -203,7 +203,7 @@ Structure report at the task level.
 |--------------------------|------------|
 |Structure type            |Site collection, site, list, field, content type, view. |
 |Structure title           |Display name of the object |
-|Operation                 |Skipped, created or updated. |
+|Operation                 |Skipped, created, or updated. |
 |Status                    |Success, partial success, failure. |
 |Details                   |Reason for failure. |
 |Source structure URL      |Displays the source URL. The URL is listed for site collections, sites, and lists. Fields, content types, and views display its container's URL. |
