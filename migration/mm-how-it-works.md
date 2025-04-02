@@ -80,9 +80,9 @@ Each container is dedicated to the customer and not reused. The data is stored i
 
 The random, single-use default container key is generated programmatically and is only valid for three days. This key is the only way to gain access to the container. SharePoint never stores the key.
 
-The container itself lives longer than the key. The container is purged anywhere from 30 to 90 days from its creation date. The container is housed in a shared Microsoft storage outside the tenant but within the region. It's protected using the container key. For multi-Geo customers, the containers are generated based on the destination URL, and dictate in what Geo it's stored.
+The container itself lives longer than the key. The container is purged anywhere from 30 to 90 days from its creation date. The container is housed in a shared Microsoft storage outside the tenant but within the region. The container key protects it. For multi-Geo customers, the containers are generated based on the destination URL, and dictate the Geo it's stored in.
 
-If your key is lost or obtained by someone else, there are two defenses in place that protect you. First, the container only enables read/write operations. And, as the container has no list, you need to know the details of the files stored in the container to read or write. Secondly, the files are encrypted at rest with AES-256-CBC.
+If your key is lost or someone else obtains it, there are two defenses in place that protect you. First, the container only enables read/write operations. And, as the container has no list, you need to know the details of the files stored in the container to read or write. Secondly, the files are encrypted at rest with AES-256-CBC.
 
 >[!Important]
 >Only those who have the key have access to the container. Other users in the subscription or the tenant do not have access.
