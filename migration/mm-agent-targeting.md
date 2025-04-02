@@ -23,7 +23,7 @@ description: "Learn about creating and using agent groups in Migration Manager."
 
 With Migration Manager, you can create "agent groups" and assign agents to them. Agent groups are considered an advanced feature and not commonly used by most users.
 
-When an Agent is created in Migration Manager, it's not assigned to any group other than the default location. With the introduction of Agent Groups, you can assign one or more agents to a specific group. A group may represent a particular geographical location or other targeted purpose. Agent groups let you organize and prioritize your agents for a targeted purpose or regional goal.
+An Agent created in Migration Manager is assigned to the default location, and not to any other group. With the introduction of Agent Groups, you can assign one or more agents to a specific group. A group may represent a particular geographical location or other targeted purpose. Agent groups let you organize and prioritize your agents for a targeted purpose or regional goal.
 
 |What                      |Why |
 |:-------------------------|:---|
