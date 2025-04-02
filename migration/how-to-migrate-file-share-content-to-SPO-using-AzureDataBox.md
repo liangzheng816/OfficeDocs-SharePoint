@@ -55,7 +55,8 @@ You can use your Azure Data Box and the SharePoint Migration Tool (SPMT) to migr
 Depending on the size of data you intend to transfer, you can choose from:
 
 - [Data Box Disk](/azure/databox/data-box-disk-overview) with 35-TB usable capacity per order for small-to-medium datasets.
-- [Data Box](/azure/databox/data-box-overview) with 80-TB usable capacity per device for medium-to-large datasets.
+- [Data Box](/azure/databox/data-box-overview?pivots=dbx) with 80-TB usable capacity per device for medium-to-large datasets.
+- [Data Box Next-Gen](/azure/databox/data-box-overview?pivots=dbx-ng) with either 120-TB and 525-TB usable capacity per device for medium-to-large datasets.
 - [Data Box Heavy](/azure/databox/data-box-heavy-overview) with 770-TB usable capacity per device for large datasets.
 
  
