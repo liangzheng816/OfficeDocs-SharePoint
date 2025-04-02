@@ -55,8 +55,7 @@ Navigate to [Microsoft 365 Admin Center Home - Setup - Migration and imports](ht
 - **Access to the source**: Have Box account credentials that have **Read** access to any Box user account you plan to migrate.
 - **Prerequisites installed:** Make sure you have the necessary prerequisites installed.
 
-## Migration limits
-Learning more about migration limits in Migration Manager:
+Once a migration project is created, you can start connecting to the source as described in the next step. 
 
-- [File size limitations](/sharepointmigration/mm-file-size-limitations)
-- [Unsupported files](/sharepointmigration/mm-unsupported-files)
+> [!NOTE]
+> There are [file size limitations](/sharepointmigration/mm-file-size-limitations) and [unsupported files](/sharepointmigration/mm-unsupported-files) in Migration Manager.
