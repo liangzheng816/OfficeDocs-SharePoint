@@ -23,7 +23,7 @@ search.appverid: MET150
 description: "Step 3: Copy to migrations using Migration Manager."
 ---
 
-# Step 3: Copy to migrations using Migration Manager
+# Step 3: Copy to migration list using Migration Manager
 
 After the Box users are scanned and marked as ready, add them to your migration list.
 
