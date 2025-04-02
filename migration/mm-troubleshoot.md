@@ -56,8 +56,8 @@ Make sure you meet the prerequisites for agent installation, and review the requ
 |Message |Action |
 |--------|-------|
 |*Migration agent couldn't be installed. Close setup and try again.* |You may be using an out-of-date version of the agent setup file to install the agent. See the [Agent installation failure](#agent-installation-failure) section for more information. |
-|*Current user doesn't have access to source file share* |Make sure the source file share is a network file share. Verify that the Windows account associated with the agent has read permissions to the file share you want to migrate. |
-|*The source file share doesn't exist* |Make sure the source file share is an existing network file share. Confirm that the Windows account associated with the agent has read permissions to the file share you want to migrate. |
+|*Current user doesn't have access to source file share* |Make sure the source file share is a network file share. Verify that the Windows account associated with the agent has **Read** permissions to the file share you want to migrate. |
+|*The source file share doesn't exist* |Make sure the source file share is an existing network file share. Confirm that the Windows account associated with the agent has **Read** permissions to the file share you want to migrate. |
 
 ## Destination site URL issues
 
