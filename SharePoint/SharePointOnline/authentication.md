@@ -9,7 +9,7 @@ ms.date: 10/24/2024
 audience: Admin
 f1.keywords:
 - CSH
-ms.topic: conceptual
+ms.topic: article
 ms.service: sharepoint-online
 ms.localizationpriority: medium
 ms.collection: 

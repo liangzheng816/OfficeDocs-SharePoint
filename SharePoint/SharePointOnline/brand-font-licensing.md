@@ -8,7 +8,7 @@ manager: jtremper
 audience: Admin
 f1.keywords:
 - NOCSH
-ms.topic: conceptual
+ms.topic: article
 ms.service: sharepoint
 ms.localizationpriority: medium
 search.appverid:

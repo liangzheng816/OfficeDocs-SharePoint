@@ -1,5 +1,5 @@
 ---
-ms.date: 08/07/2023
+ms.date: 03/25/2025
 title: "Step 2: Scan and assess Google accounts using Migration Manager"
 ms.reviewer:
 ms.author: heidip
@@ -8,7 +8,7 @@ manager: jtremper
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection:
@@ -25,16 +25,16 @@ description: "Step 2:  Scan and assess Google users using Migration Manager."
 
 # Step 2: Scan and assess Google Drives
 
-After you have connected to Google, add the Drives to scan and assess.
+After you connect to Google, add the Drives to scan and assess.
 
-1. Select **Add Drives** and choose a method: to look for new users in Google Drives, target a single source path, or bulk upload the source paths using a CSV file.  You can choose to automatically start scanning or do it later.  However, all drives must be scanned before you can migrate them.
+1. Select **Add Drives** and choose a method: to look for new users in Google Drives, target a single source path, or bulk upload the source paths using a CSV file. You can choose to automatically start scanning or do it later. However, all drives must be scanned before you can migrate them.
 
-   :::image type="content" source="media/mm-google-add-drive-choices.png" alt-text="select how to add google drives":::
+   :::image type="content" source="media/mm-google-add-drive-choices.png" alt-text="Select how to add google drives.":::
 
 2. After adding the drives, highlight any or all of the drives and then select **Scan** if you haven't already.
 
 >[!Important]
-> The total number cannot exceed 50,000 tasks.
+> The total number can't exceed 50,000 tasks.
 
 3. Once the scan is complete, a table summary displays to give you an at-a-glance overview of your users. The summary includes content size, migration readiness, and any issues that need attention. Review the scanned users. Search for specific text, or select a filter to review the list more easily or download summary and detailed reports to troubleshoot further.
 
@@ -46,13 +46,13 @@ Summary and detailed scan reports are available to assist you in troubleshooting
 
    ![download reports for google](media/mm-google-download-reports-button.png)
    
-2. To download a detailed scan report for an individual account, select a single row, then select **Download scan log**.   </br>
+2. To download a detailed scan report for an individual account, select a single row, then select **Download scan log**.
 
 ## Managing Drives that own large amounts of data
 
 Upon completing your scan, download the scan reports and review/address any large source data owners.
 
-A migration task (Google Drive) should not exceed 100,000 items or 1 TB of data. To enable faster transfers, Google Drives with large data sets should be divided into smaller migration tasks based on their root folders.
+A migration task (Google Drive) shouldn't exceed 100,000 items or 1 TB of data. To enable faster transfers, Google Drives with large data sets should be divided into smaller migration tasks based on their root folders.
 
 To split a Drive into multiple migration tasks, follow these steps:
 
@@ -66,6 +66,4 @@ To split a Drive into multiple migration tasks, follow these steps:
     - `LargeDrive01@contoso.com/folder04` 
 5. Save the updated .csv file and upload it to create the divided migration tasks.
 
-
 ## Go to [**Step 3: Copy to migrations**](mm-Google-step3-copy-to-migrations.md)
-

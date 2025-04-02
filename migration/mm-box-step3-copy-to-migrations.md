@@ -1,5 +1,5 @@
 ---
-ms.date: 01/21/2021
+ms.date: 03/24/2025
 title: "Step 3: Copy to migrations tab for Box migration"
 ms.reviewer: 
 ms.author: heidip
@@ -8,7 +8,7 @@ manager: jtremper
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection:
@@ -25,8 +25,7 @@ description: "Step 3: Copy to migrations using Migration Manager."
 
 # Step 3: Copy to migrations using Migration Manager
 
-
-After the Box users have been scanned and marked as ready, add them to your migration list.  
+After the Box users are scanned and marked as ready, add them to your migration list.
 
 1. In the **Users** tab, select the tasks (users) with a scan status of "Ready to migrate".
 1. Select **Copy to User migrations** from the action bar to activate "Copy to migrations" setting panel.
@@ -36,5 +35,3 @@ After the Box users have been scanned and marked as ready, add them to your migr
 1. Go to the **User Migrations** tab and proceed to the next step.
 
 ## [**Step 4: Review destinations**](mm-box-step4-review-destinations.md)
-
-

@@ -9,7 +9,7 @@ ms.date: 11/26/2024
 audience: Admin
 f1.keywords:
 - CSH
-ms.topic: article
+ms.topic: how-to
 ms.custom:
 - 'O365M_NoScript'
 - 'O365E_NoScript'
