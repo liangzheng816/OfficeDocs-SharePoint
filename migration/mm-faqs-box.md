@@ -30,7 +30,7 @@ Answer: Only files and folders owned by each user are copied. For example, if "F
 Answer: Box Notes are converted during migration to a .docx format.
 
 **Question:**  **Is this available for GCC, GCCHigh, DoD tenants?**</br>
-Answer.  Currently Migration Manager Box isn't available for any of the Government clouds.
+Answer:  For the latest updates, refer to [specialty environments support](mm-specialty-environments-support.md)
 </br>
 
 **Question:**   **Does Migration Manager Box sync files?**</br>
