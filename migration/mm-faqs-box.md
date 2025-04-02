@@ -29,8 +29,8 @@ Answer: Only files and folders owned by each user are copied. For example, if "F
 **Question:**  **What happens to Box Notes?**</br>
 Answer: Box Notes are converted during migration to a .docx format.
 
-**Question:**  **Is this available for GCC, GCCHigh, DoD tenants?**</br>
-Answer:  For the latest updates, refer to [specialty environments support](mm-specialty-environments-support.md)
+**Question:**  **Is Migration Manager Box available for GCC, GCCHigh, DoD tenants?**</br>
+Answer:  For the latest updates, refer to [specialty environments support](mm-specialty-environments-support.md).
 </br>
 
 **Question:**   **Does Migration Manager Box sync files?**</br>
