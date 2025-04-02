@@ -22,7 +22,7 @@ description: "Bulk upload file share sources to scan in Migration Manager."
 
 # Upload file share sources using a CSV file
 
-Migration Manager lets you use a comma-separated (CSV) file to bulk upload your file share sources to scan. Use any text editor, or an application like Excel, to create the CSV file. Or download the blank CSV template from Migration Manager file share workflow.
+Migration Manager lets you use a comma-separated (CSV) file to bulk upload your file share sources to scan. Create the CSV file using any text editor, or an application like Excel. You can also download the blank CSV template from Migration Manager file share workflow.
 
 :::image type="content" source="media/mm-fileshare-upload-csv.png" alt-text="Fileshare source choice screenshot.":::
 
