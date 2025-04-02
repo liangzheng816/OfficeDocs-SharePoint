@@ -93,7 +93,7 @@ An outdated *clientsetup.exe* file could cause this problem.
 
 1. Go to the [Migration center](https://go.microsoft.com/fwlink/?linkid=2185075) in the SharePoint admin center, and sign in with an account that has [admin permissions](/sharepoint/sharepoint-admin-role) for your organization.
 2. Select **Download agent setup file**.
-3. Run the *clientsetup.exe* file on the computer or VM you want to install the agent on. Follow the instructions to complete the agent installation.
+3. Run the *clientsetup.exe* file on the computer or virtual machine you want to install the agent on. Follow the instructions to complete the agent installation.
 
 **Issue:** The migration agent doesn't install successfully, or the clientsetup.exe can't be opened.
 
@@ -110,7 +110,7 @@ If the *clientsetup.exe* can't be opened:
 If errors occurred during installation process:
 
 - The error message should already include the failure reason, and the appropriate actions to take if possible.
-- If errors don't suggest actions to resolve, the problem could be caused by temporary network failure, or other unknown issues.
+- If errors don't suggest actions to resolve, temporary network failure could cause this problem, or other unknown issues.
 
 **Mitigation**:
 
@@ -312,7 +312,7 @@ The User Principal Name (UPN) referenced is invalid. In order to create or updat
 |0x02050001 |Local storage file is corrupted. The working folder was touched or modified during the migration. Retry your migration. |
 |0x02080001 |The file in the package has been changed or deleted while uploading. All files and folders in the Migration Manager working folder, *%appdata%\Microsoft\SPMigration\Logs\Migration\MigrationToolStorage*, must be closed. Restart your migration. |
 |0x02040009 |The package can't be created because the directory can't be found. All files and folders in the Migration Manager working folder, *%appdata%\Microsoft\SPMigration\Logs\Migration\MigrationToolStorage*, must be closed. Restart your migration. |
-|0x02010020 |Disable migrating version history in Migration Manager settings or enable versioning in SPO. |
+|0x02010020 |Disable migrating version history in Migration Manager settings or enable versioning in SharePoint. |
 |0x0201000E |Check if the global setting has filtered out special characters in the target path or if the path has unsupported characters. |
 |0X0201000F |Invalid site URL. Check if the site URL is valid. Try to access the URL via a browser. If this is a OneDrive account, make sure it has been preprovisioned before you migrate. |
 |0x0207001 |You don't have access to the task folder. Check if you can access *%appdata%\Microsoft\SPMigration\Logs\Migration\MigrationToolStorage*. |
