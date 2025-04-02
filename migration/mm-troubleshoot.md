@@ -44,7 +44,7 @@ This article describes how to resolve issues and errors you may experience when 
 
 ## Check prerequisites and settings
 
-Make sure you meet the prerequisites for agent installation, and review the required endpoints. Government cloud customers should confirm thetheir configuration is set correctly.
+Make sure you meet the prerequisites for agent installation, and review the required endpoints. Government cloud customers should confirm the configuration is set correctly.
 
 - [Agent installation prerequisites](mm-prerequisites.md).
 - [Required endpoints](mm-prerequisites.md#required-endpoints).
@@ -70,12 +70,12 @@ Make sure you meet the prerequisites for agent installation, and review the requ
 
 |Message |Recommended action |
 |--------|-------------------|
-|*Invalid source folder* |Confirm the path you entered is correct and follows the proper format.</br>Confirm you have read access to the folder. |
+|*Invalid source folder* |Confirm the path you entered is correct and follows the proper format. </br>Confirm you have read access to the folder. |
 |*The site can't be created or updated* |Make sure that you have permissions to create the site and that the URL is valid. </br>If the site exists, confirm you're the site collection administrator. </br>If it still fails, create the site manually and point the migration tool to this newly created site.|
 |*Scan file failure: The folder name is invalid* |See [Invalid file names and file types in OneDrive and SharePoint](https://support.office.com/article/64883a5d-228e-48f5-b3d2-eb39e07630fa). |
 |*Scan file failure: Target path is too long* |See [Invalid file names and file types in OneDrive and SharePoint](https://support.office.com/article/64883a5d-228e-48f5-b3d2-eb39e07630fa). </br>The entire path, including the file name, must contain fewer than 400 characters for OneDrive and SharePoint. |
-|*Scan File Failure: Not enough disk space to pack the file* |The disk space available for the migration working folder is too small for the size of your source file. Enlarge your size of your working folder try again .
-|*Packaging failure: Can't open file* |Packaging failed due to a nonexistant source. Check if you can access the source root folder. |
+|*Scan File Failure: Not enough disk space to pack the file* |The disk space available for the migration working folder is too small for the size of your source file. Enlarge your size of your working folder and try again. |
+|*Packaging failure: Can't open file* |Packaging failed due to a nonexistent source. Check if you can access the source root folder. |
 |*A duplicate task has already been created.* |The CSV file used to do bulk migration can't have duplicate entries. Remove the duplicate line or lines and try again. |
 |*The parent folder wasn't migrated* |The parent folder wasn't migrated, therefore all items under the folder fail to migrate. Check your parent folder and retry your migration. |
 
