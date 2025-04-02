@@ -34,7 +34,7 @@ When an Agent is created in Migration Manager, it's not assigned to any group ot
 
 ## Create an agent group
 
-1. From the Agents tab in Migration Manager, highlight an agent from the list. A side panel displays to the right.
+1. From the Agents tab in Migration Manager, highlight an agent from the list. A side panel displays on the right side of the page.
 2. Under Agent group, select **Edit.**
 3. Select **Add or remove agent groups**.
 4. Enter a name for your new agent group. An agent group name can't exceed 255 characters.
@@ -42,7 +42,7 @@ When an Agent is created in Migration Manager, it's not assigned to any group ot
 
 ## Assign an agent to an agent group
 
-1.  From the Agents tab in Migration Manager, highlight an agent from the list.  A side panel displays to the right.
+1.  From the Agents tab in Migration Manager, highlight an agent from the list. A side panel displays on the right side of the page.
 2.  Select an agent group from the choices in the dropdown list.
 3. Select **Save**.
 
