@@ -134,7 +134,7 @@ If errors occurred during the installation process:
 
 - Check the network health on the computer on which the agent is installed.
 - If the password of the logged-in Tenant Administrator account has changed, or any other similar, critical changes are applied to the Tenant Admin account that would require you to sign in again, all of the agents are disconnected. Reinstallation is required on all of them.
-- If the agent failed to auto-upgrade, the version is likely too old. Reinstall the agent.
+- If the agent failed to autoupgrade, the version is likely too old. Reinstall the agent.
 - Token expiration can also cause the agent to disconnect.
 
 **Mitigation**:
@@ -314,7 +314,7 @@ The User Principal Name (UPN) referenced is invalid. In order to create or updat
 |0x02040009 |The package can't be created because the directory can't be found. All files and folders in the Migration Manager working folder, *%appdata%\Microsoft\SPMigration\Logs\Migration\MigrationToolStorage*, must be closed. Restart your migration. |
 |0x02010020 |Disable migrating version history in Migration Manager settings or enable versioning in SharePoint. |
 |0x0201000E |Check if the global setting has filtered out special characters in the target path or if the path has unsupported characters. |
-|0X0201000F |Invalid site URL. Check if the site URL is valid. Try to access the URL via a browser. If this account is a OneDrive account, make sure it has been preprovisioned before you migrate. |
+|0X0201000F |Invalid site URL. Check if the site URL is valid. Try to access the URL via a browser. If this account is a OneDrive account, make sure it has been pre-provisioned before you migrate. |
 |0x0207001 |You don't have access to the task folder. Check if you can access *%appdata%\Microsoft\SPMigration\Logs\Migration\MigrationToolStorage*. |
 |0x01410010 |A failure occurred because of missing dependencies on list items. Check the FailureSummaryReport.csv for details. Check if the dependencies are included in your migration scope. |
 |0x01510001 |Packages failed to upload. If you have customized Azure storage, check if you can access the Azure storage and check if you can access the target site. Try migrating again. |
