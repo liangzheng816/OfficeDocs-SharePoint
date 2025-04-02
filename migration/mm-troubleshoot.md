@@ -230,7 +230,7 @@ Migration Manager currently doesn't support the Geo admin role for specific scen
 **Workaround**. Assign the Geo user either a SharePoint admin or Global admin role.
 
 > [!IMPORTANT]
-> Microsoft recommends that you use roles with the fewest permissions, which helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+> Microsoft recommends that you use roles with the fewest permissions, helping to improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 1. In the admin center, go to the **Users** > [Active users](https://go.microsoft.com/fwlink/p/?linkid=850628) page.
 2. On the **Active users** page, select the user whose admin role you want to change. In the flyout pane, under **Roles**, select **Manage roles**.
@@ -243,7 +243,7 @@ Migration Manager doesn't fully support SharePoint admin roles created as a resu
 **Workaround**. Assign the user either a SharePoint admin or Global admin role.
 
 > [!IMPORTANT]
-> Microsoft recommends that you use roles with the fewest permissions, which helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+> Microsoft recommends that you use roles with the fewest permissions, helping to improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 1. In the admin center, go to the **Users** > [Active users](https://go.microsoft.com/fwlink/p/?linkid=850628) page.
 2. On the **Active users** page, select the user whose admin role you want to change. In the flyout pane, under **Roles**, select **Manage roles**.
