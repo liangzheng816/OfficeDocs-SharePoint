@@ -59,3 +59,5 @@ Once a migration project is created, you can start connecting to the source as d
 
 > [!NOTE]
 > There are [file size limitations](/sharepointmigration/mm-file-size-limitations) and [unsupported files](/sharepointmigration/mm-unsupported-files) in Migration Manager.
+
+## [**Step 1: Connect to Box**](mm-box-step1-connect.md)
