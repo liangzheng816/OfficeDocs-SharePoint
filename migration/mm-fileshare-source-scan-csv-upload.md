@@ -26,8 +26,8 @@ Migration Manager lets you use a comma-separated (CSV) file to bulk upload your 
 
 :::image type="content" source="media/mm-fileshare-upload-csv.png" alt-text="Fileshare source choice screenshot.":::
 
-- **Column heading**.  You can optionally use the column headings in your CSV file to make your file easier to read.
-- **UTF-8**.  The encoding of the CSV file must be UTF-8.
+- **Column heading**. You can optionally use the column headings in your CSV file to make your file easier to read.
+- **UTF-8**. The encoding of the CSV file must be UTF-8.
 
 ## Create and format your file
 
@@ -35,7 +35,7 @@ Create a single column CSV file. There's only one column, the source path.
 
  :::image type="content" source="media/mm-fileshare-addsource-upload.png" alt-text="Upload a file share csv file.":::
 
-The following example uses Excel to create the CSV file.
+The following example creates the CSV file using Excel.
   
 1. Start Excel.
 2. Enter source paths. Enter one source path per row. *Required.*
