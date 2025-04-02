@@ -319,7 +319,7 @@ The User Principal Name (UPN) referenced is invalid. In order to create or updat
 |0x02080001 |The file in the package was changed or deleted while uploading. All files and folders in the Migration Manager working folder, *%appdata%\Microsoft\SPMigration\Logs\Migration\MigrationToolStorage*, must be closed. Restart your migration. |
 |0x02040009 |The package can't be created because the directory can't be found. All files and folders in the Migration Manager working folder, *%appdata%\Microsoft\SPMigration\Logs\Migration\MigrationToolStorage*, must be closed. Restart your migration. |
 |0x02010020 |Disable migrating version history in Migration Manager settings or enable versioning in SharePoint. |
-|0x0201000E |Check if the global setting has filtered out special characters in the target path or if the path has unsupported characters. |
+|0x0201000E |Check if the global setting is filtering out special characters in the target path or if the path has unsupported characters. |
 |0X0201000F |Invalid site URL. Check if the site URL is valid. Try to access the URL via a browser. If this account is a OneDrive account, make sure it is pre-provisioned before you migrate. |
 |0x0207001 |You don't have access to the task folder. Check if you can access *%appdata%\Microsoft\SPMigration\Logs\Migration\MigrationToolStorage*. |
 |0x01410010 |A failure occurred because of missing dependencies on list items. Check the FailureSummaryReport.csv for details. Check if the dependencies are included in your migration scope. |
