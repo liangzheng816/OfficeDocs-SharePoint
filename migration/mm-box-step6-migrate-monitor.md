@@ -25,25 +25,28 @@ description: "Step 6: Migrate and monitor Box migration"
 
 # Step 6:  Migrate and monitor your Box migration
 
-Once you review the accounts, confirm the destinations, and correctly map identities, you're ready to migrate.
+Once you review the tasks (Box users), confirm the destinations, and correctly map identities, you're ready to migrate.
 
 >[!Important]
 >We strongly recommend that you don't rename or move migrated files before the final migration has been completed. Doing so results in files being overwritten.
 
-1. Select the accounts to migrate.
-
-![Select accounts to migrate](media/mm-box-select-to-migrate.png)
-
+1. Select the tasks (Box users) to migrate.
 2. Select **Migrate**.
-3. A confirmation step displays. Click **Migrate**.
-
->[!Note]
-> Starting your migration only copies content from your Box account to the location you specified in Microsoft 365. Make sure the destinations are correct, as once the migration starts, they can't be modified.
-
+3. A confirmation panel displays. Click **Migrate**.
 4. Once the migration begins, monitor the migration status, and the table summary at the top. Depending on how large your migration, this step may take hours or days.
 
-## How many task rows can I run at once?
+>[!Note]
+> Starting your migration only copies content from your Box account to the location you specified in Microsoft 365. 
+
+## Delta sync
+When a migration task is conducted for the first time, we call it an initial migration or new migration. After the initial migration, the destination can't be changed. If the task is migrated again, we call it a delta sync. We may also call it an incremental sync, or incremental migration. Learn more about [file transfer behaviors in a detal sync](mm-delta-sync.md).
+
+## Migration lanes
 
 At a maximum, only 50 task rows can run simultaneously. This total includes both scanning and migrating. If you select more than that total combined number and start scanning or migrating, only 50 randomly chosen rows are going to run. The rest of the tasks are going to be queued.
 
 As a task row completes, another from the queue starts migrating or scanning automatically. While the maximum number of task rows allowed is set to 50, if a migration experiences any slowdowns or back-off requests, it may drop lower than this number to keep the migration stable.
+
+## Schedule a migration
+Migration Manager allows you to schedule a migration for one or multiple tasks. This is a one-time migration event. When the scheduled time arrives, Migration Manager will start queuing the scheduled tasks. The queued tasks will begin migrating immediately if the migration lane limit is not reached.
+
