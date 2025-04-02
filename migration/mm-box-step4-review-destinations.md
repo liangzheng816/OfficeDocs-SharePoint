@@ -63,4 +63,10 @@ If there are many destinations to edit, you can choose to upload a bulk destinat
 |OneDrive UPN |name@example.com |user@contoso.onmicrosoft.com |
 |OneDrive URL |https://<*tenant name*>-my.sharepoint.com/personal/<*user principal name*>/Documents/<*optional folder name*> |`https://contoso-my.sharepoint.com/personal/user_contoso_onmicrosoft_com/Documents` </br>`https://contoso-my.sharepoint.com/personal/user_contoso_onmicrosoft_com/Documents/SubFolder` |
 
+
+## Pre-provision OneDrive
+
+If you choose OneDrive as the destination, please [pre-provision OneDrive for users in your organization](https://learn.microsoft.com/en-us/sharepoint/pre-provision-accounts) before migration. Otherwise, the OneDrive destinations won't pass validation, and the migrations will fail.
+
+
 ## Go to [**Step 5: Map identities**](mm-google-step5-map-identities.md)
