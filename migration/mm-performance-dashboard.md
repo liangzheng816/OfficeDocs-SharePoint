@@ -26,7 +26,7 @@ description: "Performance Dashboard in Migration Manager"
 
 # Using performance dashboards in Migration Manager
 
-Migration performance can be impacted by network infrastructure, file size, migration time, and throttling. Understanding these areas helps you plan and maximize the efficiency of your migration.
+Network infrastructure, file size, migration time, and throttling can impact migration performance. Understanding these areas helps you plan, and you can also maximize the efficiency of your migration.
 
 After submitting your task for migration and your task is running, select the **Migrations** tab. On the right side of the screen, select **Migration performance**.
 
