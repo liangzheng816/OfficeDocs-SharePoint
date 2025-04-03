@@ -129,19 +129,19 @@ Follow the steps to grant permission to a site using [PowerShell PnP](https://pn
 
 `Install-Module PnP.PowerShell -Force and Import-Module PnP.PowerShell`
 
-2. Run the command to create an app that plays as a proxy of PnP-PowerShell for granting permissions. Copy the client Id from the execution result.
+2. Run the command to create an app that plays as a proxy of PnP-PowerShell for granting permissions. Copy the client ID from the execution result.
 
 `Register-PnPEntraIDAppForInteractiveLogin -ApplicationName "PnP PowerShell" -Tenant yourtenant.onmicrosoft.com -Interactive`
 
-3. Set a variable PnPClientId with the client Id retrieved in the previous step.
+3. Set a variable PnPClientId with the client ID retrieved in the previous step.
 
-`$PnPClientId = <The client Id from the step above>`
+`$PnPClientId = <The client ID from the step above>`
 
 4. Run the command to Connect SharePoint Admin site. The admin URL is in the format `https://contoso-admin.sharepoint.com`.
 
 `Connect-PnPOnline –interactive  –Url <AdminSiteUrl>  -ClientId <PnPClientId>`
 
-5. Grant your app the SharePoint Admin site access permission. The 'ClientId' is your entra app client Id.
+5. Grant your app the SharePoint Admin site access permission. The 'ClientId' is your entra app client ID.
 
 `Grant-PnPAzureADAppSitePermission -AppId <ClientId> -DisplayName <App name or a random name> -Permissions ``<Permission> -Site <DestinationSiteUrl>`
 
