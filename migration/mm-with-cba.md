@@ -31,9 +31,9 @@ Follow [the instructions](/entra/identity-platform/quickstart-register-app?tabs=
 
 In the Microsoft Entra admin center, go to **Application > App registrations** and select 'MigApp' from the **All applications** tab.
 
-Next, grant the necessary API permissions under **API Permissions** page.
+Next, grant the necessary API permissions on the **API Permissions** page.
 
-To limit 'MigApp' to move content into specific SharePoint sites, grant 'Sites.Selected' permission under the SharePoint and Microsoft Graph API.
+To limit 'MigApp' to move content into specific SharePoint sites, grant the 'Sites.Selected' permission under the SharePoint and Microsoft Graph API.
 
 - SharePoint API:
    - 'Sites.Selected': Required for REST and CSOM (Client-Side Object Model) calls.
