@@ -1,6 +1,6 @@
 ---
 ms.date: 03/31/2025
-title: Monitor SharePoint Agent Usage
+title: Monitor SharePoint agent Usage
 ms.reviewer:
 ms.author: ruihu
 author: maggierui
@@ -22,25 +22,30 @@ search.appverid:
 description: "Learn how to monitor SharePoint agent usage as a site member, or as SharePoint admin. Monitor individual agent files with file statistics, Search function, and site usage. Monitor agent usage at the organization level with SharePoint Online Management Shell, SharePoint Advanced Management, Purview agent audit log, and Microsoft Cost Management."
 ---
 
-# Monitor SharePoint Agent Usage
+# Monitor SharePoint agent Usage
 
-There are multiple tools to understand how SharePoint agents are impacting your organization. This article introduces all the analytics and usage that we currently provide for our administrators, site owners, site members, and site visitors to monitor the agents’ usage.
+Monitoring SharePoint agent usage can be done through various tools and methods, each suited to the needs of specific user roles within the organization. This article outlines the options available for users with at least site visitor’s permissions and SharePoint admins. These two role groups have different ways to monitor and analyze the performance and usage of SharePoint agents in their respective areas.
 
 > [!NOTE]
-> To ensure that security and privacy settings are always honored, some of these tools are only available to specific user roles.
+> To ensure that security and privacy settings are always honored, some of these tools are restricted to specific user roles.
+
+The following outlines the tools and techniques available for monitoring SharePoint agent usage, categorized based on user roles and permissions:
 
 - For **Users with at least site visitor's permissions** (site admins, site owners, site members and site visitors): 
     - **File statistics**: Users with at least site visitor's permissions can select an individual *.agent* file and use the Details pane to view its file statistics.
     - **Search**: Users with at least site visitor's permissions can use **Search** to find all agents on a site for bulk actions.
     - **Site usage**: Users with at least site visitor's permissions can use **Site usage** to see the most popular files and agents on their sites.
 
-- for **SharePoint Admins**:
+- For **SharePoint admins**:
     - **SharePoint Online Management Shell**: SharePoint admins can get an inventory of the agents created across sites at the organization level in a specified time period using SharePoint Online Management Shell.
     - **Microsoft Purview audit log**: SharePoint admins with Compliance admin permissions can use the [Microsoft Purview audit log](/microsoft-365/compliance/audit-log-search) to monitor agent creation and usage details across the organization.
     - **Microsoft Cost Management**: SharePoint admins can use [Microsoft Cost Management](/azure/cost-management-billing/cost-management-billing-overview) to monitor the cost of agent usage at the organization level.
     - **SharePoint Advanced Management**: Coming soon, SharePoint admins can use [SharePoint Advanced Management](/sharepoint/advanced-management) to obtain detailed insights on agent usage across sites. The report will list the number of agents that are created, along with details on policies such as Restricted Content Discovery and Restricted Access Control associated with a particular site.
 
-## For users with at least site visitor's permissions
+These tools align with user roles and permissions, enabling monitoring and management of SharePoint agent activities.
+The following provides additional details on how each tool functions and can be used effectively.
+
+## Monitor agent usage with at least site visitor's permissions
 
 ### Check individual agent file’s usage with File Statistics
 
@@ -69,7 +74,7 @@ Site admins, owners, members, and visitors can view site usage data, which inclu
 To view usage data for your site, select the settings gear and then select **Site usage**. Based on your site navigation settings, you may also access the **Site contents** option from the left-hand menu. Then select the **Site usage** option in the top navigation bar.
 ![Site Usage](media/agents-sharepoint/site-usage.png)
 
-## For SharePoint Admins
+## Monitor agent usage as SharePoint admins
 
 ### Use SharePoint Online Management Shell to get an inventory of agents created across sites
 
