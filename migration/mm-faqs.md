@@ -116,7 +116,7 @@ Answer: Customers and ISVs use the [SharePoint-provided blob containers/queues](
  
 **Question:** Is the data in the SharePoint-provided containers encrypted?
 
-Answer: Yes. We mandate that the data uploaded to SharePoint provided containers must be encrypted using Advanced Encryption Standard Cypher Block Chaining (AES CBC) to ensure the data is secure. To learn more, see: [OneDrive for Business and SharePoint Online Migration API encryption](/sharepoint/dev/apis/migration-api-encryption).
+Answer: Yes. We mandate that the data uploaded to SharePoint provided containers must be encrypted using Advanced Encryption Standard (AES) Cypher Block Chaining (CBC) to ensure the data is secure. To learn more, see: [OneDrive for Business and SharePoint Online Migration API encryption](/sharepoint/dev/apis/migration-api-encryption).
 
 **Question:** Can my migration succeed if the temporary storage expires before content migration is complete?
 
