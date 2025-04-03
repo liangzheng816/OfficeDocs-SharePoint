@@ -38,7 +38,7 @@ Answer:  For the latest updates, refer to [specialty environments support](mm-sp
 
 Answer: There's a source-to-destination delta; when you run a transfer, we compare the destination directory to the source, and only transfer new or modified files over. We call this our incremental feature. We compare the timestamps of the files in both the source and destination and transfer the newest versions only. The incremental feature is always on. Here are a few examples of how we deal with changes to files and folders.
 
-- **Content changes**: If a document is edited in your source or you've added a few new files, we copy them to your destination on the next incremental run, overwriting the previously existing file(s) in the destination.
+- **Content changes**: If you edit a document in your source or you add a few new files, we copy them to your destination on the next incremental run, overwriting the previously existing files in the destination.
 - **Name changes**: If the name of a file or folder changes in Office 365, we treat it as a brand new object. This circumstance can lead to duplicate files being migrated to Office 365, or worse in that entire folders worth of data would be duplicated from the changed folder downwards.
 - **Example**: Changing the path `/Sales/Clients` to `/Global Sales/Clients` results in two copies of your `Sales` folder after the `Global Sales` folder is also copied during an incremental pass.
 
