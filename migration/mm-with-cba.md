@@ -58,7 +58,7 @@ Grant more permissions
 
 Go to the **Certificates & secrets** page and select the **Certificates** tab.
 
-- Upload the public key of your X.509 certificate that is issued by the Enterprise Public Key Infrastructure (PKI).
+- Upload the public key of your X.509 certificate issued by the Enterprise Public Key Infrastructure (PKI).
 - Copy the value in 'Thumbprint' for future use.
 
 ## Grant destination site access permission
