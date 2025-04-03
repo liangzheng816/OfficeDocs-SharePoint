@@ -37,7 +37,7 @@ Manually enter the values into whichever format you choose. The first row is val
 
 ## Using a comma-separated value (CSV) file for bulk upload
 
-Migration Manager lets you use a comma-separated (CSV) file to bulk migrate your data. Use any text editor, or an application like Excel, to create the CSV file.
+Migration Manager lets you use a comma-separated (CSV) file to bulk migrate your data. Create the CSV file using any text editor, or an application like Excel.
 
 ### CSV file format
 
