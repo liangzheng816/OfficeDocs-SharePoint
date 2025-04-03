@@ -51,12 +51,25 @@ After setting up an Azure resource group for SharePoint agents, you can set up p
 1. Read and accept the pay-as-you-go billing terms of service.
 1. Select **Save**.
 
-### Monitor consumption in Azure Cost Management
 
-To monitor your organization’s consumption of agents with the pay-as-you-go, you can create a budget in Azure Cost Management with [Bicep](/azure/cost-management-billing/costs/quick-create-budget-bicep) and [ARM template](/azure/cost-management-billing/costs/quick-create-budget-template). Budget helps you inform others about their spending to proactively manage costs and monitor how spending progresses over time. You can also set up various types of cost alerts to monitor the consumption. 
+### Billing rates
+
+The following table illustrates the differences in the subscription models for the cost of Copilot Studio events.
+
+| SharePoint agent feature              | Billing rate | Use in Microsoft 365 Copilot scenarios<sup>1</sup> | Autonomous use |
+|---------------------------------------|--------------|----------------------------------------------------|----------------|
+| Generative answer                     | 2 messages   | No charge                                          | 2 messages     |
+| Tenant graph grounding for messages   | 10 messages  | No charge                                          | 10 messages    |
+
+> [!NOTE]
+> Each interaction with a SharePoint agent includes a question and an answer. The answer integrates the generative answer and the tenant graph grounding for messages. A successful interaction uses 12 messages.
+
+### Monitor consumption in Microsoft Cost Management
+
+To monitor your organization’s consumption of agents with the pay-as-you-go, you can create a budget in Microsoft Cost Management with [Bicep](/azure/cost-management-billing/costs/quick-create-budget-bicep) and [ARM template](/azure/cost-management-billing/costs/quick-create-budget-template). Budget helps you inform others about their spending to proactively manage costs and monitor how spending progresses over time. You can also set up various types of cost alerts to monitor the consumption. 
 Furthermore, you can view your organization’s consumption by:
 
-1. Going to [Azure Cost Management](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/~/overview/openedBy/AzurePortal). 
+1. Going to [Microsoft Cost Management](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/~/overview/openedBy/AzurePortal). 
 1. If needed, change the scope to select the subscription that is being used for agents in SharePoint.
 
 #### Adjusting consumption

@@ -8,7 +8,7 @@ ms.date: 08/31/2023
 audience: ITPro
 f1.keywords:
 - NOCSH
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: sharepoint-server-itpro
 ms.localizationpriority: high
 ms.collection:

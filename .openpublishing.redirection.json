@@ -6,6 +6,51 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "Sharepoint/SharepointOnline/build-learning-and-training-experiences-for-employees.md",
+      "redirect_url": "/viva/microsoft-viva-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Sharepoint/SharepointOnline/onboard-employees.md",
+      "redirect_url": "/viva/microsoft-viva-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Sharepoint/SharepointOnline/leadership-connection.md",
+      "redirect_url": "/viva/microsoft-viva-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Sharepoint/SharepointOnline/distribute-corporate-news-to-your-organization.md",
+      "redirect_url": "/viva/microsoft-viva-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Sharepoint/SharepointOnline/choose-communication-method.md",
+      "redirect_url": "/viva/microsoft-viva-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Sharepoint/SharepointOnline/audience-profile.md",
+      "redirect_url": "/viva/microsoft-viva-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Sharepoint/SharepointOnline/review-communication-apps.md",
+      "redirect_url": "/viva/microsoft-viva-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Sharepoint/SharepointOnline/plan-communication-strategy.md",
+      "redirect_url": "/viva/microsoft-viva-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Sharepoint/SharepointOnline/corporate-communications-overview.md",
+      "redirect_url": "/viva/microsoft-viva-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "Sharepoint/SharepointOnline/fluid-framework-access.md",
       "redirect_url": "https://support.microsoft.com/office/get-started-with-loop-components-preview-d05278db-b82b-4d1f-8523-cf0c9c2fb2df",
       "redirect_document_id": false
@@ -1248,6 +1293,11 @@
     {
       "source_path": "migration/new-migration-transition.md",
       "redirect_url": "/sharepointmigration/migrate-to-sharepoint-online",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "SharePoint/SharePointOnline/SharePoint-Prioritization.md",
+      "redirect_url": "/SharePoint/sharepoint-app-prioritization",
       "redirect_document_id": false
     }
   ]

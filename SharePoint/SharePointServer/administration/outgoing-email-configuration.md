@@ -8,7 +8,7 @@ ms.date: 3/12/2018
 audience: ITPro
 f1.keywords:
 - CSH
-ms.topic: article
+ms.topic: how-to
 ms.custom:
 - WSSCentralAdmin_ConfigEmail
 ms.service: sharepoint-server-itpro
