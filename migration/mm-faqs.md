@@ -98,9 +98,9 @@ Answer: At this time, Migration Manager supports the migration of file shares an
 
 Answer: Yes.
 
-**Question:** Is multi-factor authentication supported by Migration Manager?
+**Question:** Is multifactor authentication supported by Migration Manager?
 
-Answer: Microsoft multi-factor authentication is supported; however third party multi-factor authentication isn't.
+Answer: Microsoft multifactor authentication is supported; however third party multifactor authentication isn't.
 
 **Question:** Can Migration Manager migrate content to non-English SharePoint sites?
 
@@ -112,7 +112,7 @@ Answer: Yes. Here's how you configure it: [Government cloud settings](./mm-gov-c
 
 **Question:** What’s the retention policy for the blog storage?
 
-Answer: When using the Migration API, customers and ISVs use the [SPO-provided blob containers/queues](/sharepoint/dev/apis/migration-api-azure-container-and-queue). [SAS URIs](/azure/storage/common/storage-sas-overview) are provided to access those containers/queues. The SAS URIs are valid for three days from creation for containers and 21 days for queues. After the SAS expires, the content in the blob containers/queues aren't accessible. SPO (SharePoint Online) backend jobs delete the content in the container/queues within 30 to 90 days of the creation.
+Answer: Customers and ISVs use the [SPO-provided blob containers/queues](/sharepoint/dev/apis/migration-api-azure-container-and-queue) when they used the Migration API. [SAS URIs](/azure/storage/common/storage-sas-overview) are provided to access those container and queues. The SAS URIs are valid for three days from creation for containers and 21 days for queues. After the SAS expires, the content in the blob containers and queues isn't accessible. SharePoint backend jobs delete the content in the container/queues within 30 to 90 days of the creation.
  
 **Question:** Is the data in the SPO provided containers encrypted?
 
@@ -145,8 +145,8 @@ Answer: For file share and cloud migrations, a file size of 250 GB is supported.
 
 **Question**: How many task rows can I run at once when migrating content from a cloud provider?
 
-Answer: At a maximum, only 50 task rows can run simultaneously. This total includes both scanning and migrating. This limit does not apply to file share migration.
+Answer: At a maximum, only 50 task rows can run simultaneously. This total includes both scanning and migrating. This limit doesn't apply to file share migration.
 
 **Question:** In the Migration Manager tool, is there a limit to the number of path characters you can enter?
 
-Answer: Yes. When entering the **source path** into the text box, you're allowed a maximum of 255 characters. However, during migration the **file path** can be up to 32,767 characters in length. After it's migrated into SPO, the path is limited to 400 characters.
+Answer: Yes. When entering the **source path** into the text box, you're allowed a maximum of 255 characters. However, during migration the **file path** can be up to 32,767 characters in length. The path is limited to 400 characters after migration.
