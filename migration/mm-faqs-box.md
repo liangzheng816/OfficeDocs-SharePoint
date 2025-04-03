@@ -72,4 +72,4 @@ Answer: If SharePoint or Teams sites in your tenant aren't visible in the UI whi
 - SharePoint admins only see sites where they are at least a member, as sites are searched using a user-scoped delegated token.
 - Admins might not see sites for a multi-geo tenant due to limitations in the graph API.
 - Sites that are recently created might take a couple of hours to sync and appear in the UI.
-- SharePoint site searxh in the UI might not work in some special cases (for example, when there are special characters in the destination path).
+- SharePoint site search in the UI might not work in some special cases (for example, when there are special characters in the destination path).
