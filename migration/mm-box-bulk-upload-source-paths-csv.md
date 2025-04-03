@@ -22,7 +22,7 @@ description: "How to format a CSV or JSON file to bulk upload source paths into 
 
 # Bulk upload Box source paths into Migration Manager using a CSV file
 
-Migration Manager lets you bulk upload your Box source paths using a comma-separated (CSV) file. Use any text editor, or an application like Excel, to create the CSV file.  JSON files are not supported.
+Migration Manager lets you bulk upload your Box source paths using a comma-separated (CSV) file. Use any text editor, or an application like Excel, to create the CSV file. JSON files aren't supported.
 
 ## Before you begin
 
