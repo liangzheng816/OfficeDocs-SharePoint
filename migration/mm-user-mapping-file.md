@@ -5,7 +5,7 @@ ms.author: heidip
 author: MicrosoftHeidi
 manager: jtremper
 recommendations: true
-ms.date: 09/22/2020
+ms.date: 04/02/2025
 audience: ITPro
 f1.keywords:
 - NOCSH
@@ -27,45 +27,33 @@ description: "Create a user-mapping file for data content migration when using M
 
 This article shows how to create a user-mapping file to use with Migration Manager.  Use Migration Manager to migrate your files shares to Microsoft 365.
   
-  
 ## Create a user-mapping file for data content migration
 
 Migration Manager uses a default user-mapping file when migrating your file shares, however, you can choose to create your own using the following guidelines. Use any text editor, or an application like Excel, to create the CSV file.
-  
- **CSV file format**
 
+### CSV file format
 
 > [!IMPORTANT]
-> Do not include a header row in your CSV file. 
-  
-  
+> Don't include a header row in your CSV file.
+
 The following example uses Excel to create the CSV file.
-  
+
 1. Start Excel.
-    
 2. Enter the values for your user-mapping.
-    
-  - **Column A:** From the source location, enter the **log in name of the user**.  *Required.* 
-    
-  - **Column B:** On the destination site, enter the **principal username**.  *Required.* 
-    
-  - **Column C:** If the principal username on the destination site is an Active Directory (AD) group, enter **TRUE**. If it's not an AD group, enter **FALSE**.  *Required.* 
-    
+  - **Column A:** From the source location, enter the **log in name of the user**. *Required.*
+  - **Column B:** On the destination site, enter the **principal username**. *Required.*
+  - **Column C:** If the principal username on the destination site is an Active Directory (AD) group, enter **TRUE**. If it's not an AD group, enter **FALSE**. *Required.*
 3. Close and save as a comma-delimited (\*.csv) file.
-    
- **Upload your user-mapping file to Migration Manager**
-  
+
+### Upload your user-mapping file to Migration Manager
+
 After you create your own user-mapping file, upload it to Migration Manager in the SharePoint Admin Center.
   
-1. Go to the <a href="https://go.microsoft.com/fwlink/?linkid=2185075" target="_blank">Migration center</a> in the SharePoint admin center, and sign in with an account that has [admin permissions](/sharepoint/sharepoint-admin-role) for your organization.
-
+1. Go to the [Migration center](https://go.microsoft.com/fwlink/?linkid=2185075) in the SharePoint admin center, and sign in with an account that has [admin permissions](/sharepoint/sharepoint-admin-role) for your organization.
 2. Select **Global settings**.
-
 3. Select **All settings**.
-
 4. Select **User mapping file**, and then select **Choose file** to browse to the file to use.
-
 5. Select **Save**.
 
 >[!Note]
-> It is not possible to map an AD group to a SharePoint group in the destination site.
+> It's not possible to map an AD group to a SharePoint group in the destination site.
