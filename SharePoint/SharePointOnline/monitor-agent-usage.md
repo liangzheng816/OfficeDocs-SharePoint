@@ -31,7 +31,7 @@ Monitoring SharePoint agent usage can be done through various tools and methods,
 
 The following outlines the tools and techniques available for monitoring SharePoint agent usage, categorized based on user roles and permissions:
 
-- For **Users with at least site visitor's permissions** (site admins, site owners, site members and site visitors): 
+- For **Users with at least site visitor's permissions** (site admins, site owners, site members, and site visitors): 
     - **File statistics**: Users with at least site visitor's permissions can select an individual `.agent` file and use the Details pane to view its file statistics.
     - **Search**: Users with at least site visitor's permissions can use **Search** to find all agents on a site for bulk actions.
     - **Site usage**: Users with at least site visitor's permissions can use **Site usage** to see the most popular files and agents on their sites.
