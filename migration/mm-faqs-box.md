@@ -24,7 +24,7 @@ description: Migration Manager Box FAQs
 
 **Question: What gets transferred?**
 
-Answer: Only files and folders owned by each user are copied. For example, if "Folder B" is located in User A's account but owned by User B and shared with User A, it's not scanned or migrated under User A. Instead, it's scanned and migrated under User B.
+Answer: Only files and folders owned by each user are copied. For example, if "Folder B" is located in User A's account but owned by User B and shared with User A, it isn't scanned or migrated under User A. Instead, it's scanned and migrated under User B.
 
 **Question: What happens to Box Notes?**
 
@@ -39,7 +39,7 @@ Answer:  For the latest updates, refer to [specialty environments support](mm-sp
 Answer: There's a source-to-destination delta; when you run a transfer, we compare the destination directory to the source, and only transfer new or modified files over. We call this our incremental feature. We compare the timestamps of the files in both the source and destination and transfer the newest versions only. The incremental feature is always on. Here are a few examples of how we deal with changes to files and folders.
 
 - **Content changes**: If a document is edited in your source or you've added a few new files, we copy them to your destination on the next incremental run, overwriting the previously existing file(s) in the destination.
-- **Name changes**: If the name of a file or folder changes in Office 365, we treat it as a brand new object. This can lead to duplicate files being migrated to Office 365, or worse in that entire folders worth of data would be duplicated from the changed folder downwards.
+- **Name changes**: If the name of a file or folder changes in Office 365, we treat it as a brand new object. This circumstance can lead to duplicate files being migrated to Office 365, or worse in that entire folders worth of data would be duplicated from the changed folder downwards.
 - **Example**: Changing the path `/Sales/Clients` to `/Global Sales/Clients` results in two copies of your `Sales` folder after the `Global Sales` folder is also copied during an incremental pass.
 
 **Question: Does Migration Manager delete my files?**
@@ -48,11 +48,11 @@ Answer: No. We never delete your data from any source. We take your data from on
 
 **Question: Can I rearrange content during a migration?**
 
-Answer: It's not recommended. Any major changes in directory structure should happen before or after your migration. It's also not a good idea to use our app to rearrange content. The risks that come with rearranging content during the migration are primarily in the form of data duplication; our incremental process sees all changes as new data. So, for example, if you change a folder name at the root, we detect that as a new folder, and all of the contents is retransferred, including all subfolders. When sharing permissions are transferred, both owners and collaborators receive duplicate data if content has been rearranged or renamed.
+Answer: It isn't recommended. Any major changes in directory structure should happen before or after your migration. It's also not a good idea to use our app to rearrange content. The risks that come with rearranging content during the migration are primarily in the form of data duplication; our incremental process sees all changes as new data. So, for example, if you change a folder name at the root, we detect that as a new folder, and all of the contents is retransferred, including all subfolders. When sharing permissions are transferred, both owners and collaborators receive duplicate data if content has been rearranged or renamed.
 
 **Question: What happens to external sharing links?**
 
-Answer: We don't recreate external sharing links. After migration, these have to be set in the destination manually.
+Answer: We don't recreate external sharing links. After migration, these links have to be set in the destination manually.
 
 **Question: What about external collaborators?**
 
@@ -68,7 +68,7 @@ Answer: No. We automatically suppress all emails to users so they aren't bombard
 
 **Question: Why I can’t see some of my SharePoint sites while assigning destinations on the user interface (UI(?**
 
-Answer: If SharePoint or Teams sites in your tenant aren't visible in the UI while assigning destinations, there could be a few reasons for this:
+Answer: If SharePoint or Teams sites in your tenant aren't visible in the UI while assigning destinations, there could be a few reasons for this lack of visibility:
 - SharePoint admins only see sites where they are at least a member, as sites are searched using a user-scoped delegated token.
 - Admins might not see sites for a multi-geo tenant due to limitations in the graph API.
 - Sites that are recently created might take a couple of hours to sync and appear in the UI.
