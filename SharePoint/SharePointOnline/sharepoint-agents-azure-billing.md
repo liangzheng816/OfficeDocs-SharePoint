@@ -54,15 +54,21 @@ After setting up an Azure resource group for SharePoint agents, you can set up p
 
 ### Billing rates
 
-The following table illustrates the differences in the subscription models for the cost of Copilot Studio events.
+The following table illustrates the differences in the subscription models for the cost of SharePoint agent usage.
 
 | SharePoint agent feature              | Billing rate | Use in Microsoft 365 Copilot scenarios<sup>1</sup> | Autonomous use |
 |---------------------------------------|--------------|----------------------------------------------------|----------------|
 | Generative answer                     | 2 messages   | No charge                                          | 2 messages     |
 | Tenant graph grounding for messages   | 10 messages  | No charge                                          | 10 messages    |
 
+<sup>1</sup> Interactive use of generative answers, tenant graph grounding and agent actions by authenticated Microsoft 365 Copilot users, in Microsoft 365 apps and services, are included at no extra cost.
+
+- Generative answers: These events are dynamically generated using AI models, such as Generative Pretrained Transformers (GPTs). They can adapt and change based on the context and the knowledge sources they're connected to. They're useful for handling a wide range of topics and providing more flexible and natural interactions.
+
+- Tenant graph grounding for messages: These events provide higher quality grounding for your agents using retrieval-augmented generation (RAG) over your tenant-wide Microsoft Graph, including external data synced into Microsoft Graph through connectors. This results in more relevant and improved responses and ensures that the grounding information is up-to-date. This capability is optional, and you can turn it on or off for each agent.
+  
 > [!NOTE]
-> Each interaction with a SharePoint agent includes a question and an answer. The answer integrates the generative answer and the tenant graph grounding for messages. A successful interaction uses 12 messages.
+> SharePoint agents are grounded in the tenant graph, so each interaction with a SharePoint agent uses 12 messages (10 messages for tenant graph grounding, and 2 messages for generative answers) to respond to a single complex prompt from the user.
 
 ### Monitor consumption in Microsoft Cost Management
 
