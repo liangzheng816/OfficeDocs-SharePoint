@@ -36,7 +36,7 @@ Migration Manager lets you bulk upload your Box source paths using a comma-separ
 ![Format for bulk uploading Box source files into Migration Manager.](media/mm-box-csv-bulk-upload-source.png)
 
 1. Start Excel. 
-2. Enter one source per row.  The column heading is optional. Enter your source in one of the following ways:
+2. Enter one source per row. The column heading is optional. Enter your source in one of the following ways:
  - [username]@[domainname]/[folder name]  **or** [username]@[domainname]
 3. Close and save as a comma delimited (*.csv) file. The encoding of the CSV file must be UTF-8.
 
@@ -47,7 +47,7 @@ Migration Manager lets you bulk upload your Box source paths using a comma-separ
 
 ![Add new source to upload bulk file.](media/mm-upload-cloud-csv.png)
 
-3. Select **Upload a CSV file**.  Browse to your file and then select **Add**.
+3. Select **Upload a CSV file**. Browse to your file and then select **Add**.
 
 ![upload box sources from csv.](media/mm-box-add-source-paths.png)
 
