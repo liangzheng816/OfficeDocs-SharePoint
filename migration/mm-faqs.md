@@ -88,7 +88,7 @@ Answer: In file share migrations, files are transferred to the SharePoint docume
 
 **Question:** Is there a Tenant to Tenant (T2T) migration solution?
 
-Answer: Yes. Cross-tenant OneDrive migration is now available outside of Migration Manager. A cross tenant migration solution for **SharePoint** is currently available.</br>[Learn more about the Cross-tenant OneDrive migration](/microsoft-365/enterprise/cross-tenant-onedrive-migration.)
+Answer: Yes. Cross-tenant OneDrive migration is now available outside of Migration Manager. A cross tenant migration solution for **SharePoint** is currently available. [Learn more about the cross-tenant OneDrive migration](/microsoft-365/enterprise/cross-tenant-onedrive-migration).
 
 **Question:** Can I migrate content from SharePoint Server?
 
