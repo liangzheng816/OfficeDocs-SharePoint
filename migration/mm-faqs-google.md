@@ -22,6 +22,9 @@ description: Migration Manager Google FAQs
 
 # Frequently Asked Questions: Migration Manager Google
 
+**Question:**  **Is Migration Manager Google available for GCC, GCCHigh, DoD tenants?**</br>
+Answer:  For the latest updates, refer to [specialty environments support](mm-specialty-environments-support.md).
+
 **Question:**   **Are there any other tools available to migrate my Google accounts?**</br>
 Answer. Currently, Migration Manager is the tool to use to for migrating Google content.
 
