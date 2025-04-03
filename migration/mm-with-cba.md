@@ -1,6 +1,6 @@
 ---
 title: Certificate Based Authentication for migration
-description: How to use Certificate Based Authentication in SharePoint migration in M365.
+description: How to use Certificate Based Authentication in SharePoint migration in Microsoft 365.
 author:      zacsun-ms # GitHub alias
 ms.author: zhaosu
 ms.reviewer: heidip
