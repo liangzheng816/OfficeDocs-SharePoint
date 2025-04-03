@@ -56,7 +56,7 @@ Answer: We don't recreate external sharing links. After migration, these have to
 
 **Question: What about external collaborators?**
 
-Answer: We don't share content with external collaborators. This policy is in place to protect your organization, and industry best practice is to never automatically share sensitive internal data with external users.
+Answer: We don't share content with external collaborators. This policy is in place to protect your organization, and industry best practice is to never automatically share sensitive internal data with external collaborators.
 
 **Question: Does Migration Manager preserve file versions?**
 
@@ -68,8 +68,8 @@ Answer: No. We automatically suppress all emails to users so they aren't bombard
 
 **Question: Why I can’t see some of my SharePoint sites while assigning destinations on the user interface (UI(?**
 
-Answer: If SharePoint or Teams sites in your tenant aren't visible on the UI while assigning destinations, there could be a few reasons:
+Answer: If SharePoint or Teams sites in your tenant aren't visible in the UI while assigning destinations, there could be a few reasons for this:
 - SharePoint admins only see sites where they are at least a member, as sites are searched using a user-scoped delegated token.
 - Admins might not see sites for a multi-geo tenant due to limitations in the graph API.
-- Recently created sites might take a couple of hours to sync and appear in the UI.
-- For some corner cases (for example, special characters in the destination path), SP site search in the UI might not work.
+- Sites that are recently created might take a couple of hours to sync and appear in the UI.
+- SharePoint site searxh in the UI might not work in some special cases (for example, when there are special characters in the destination path).
