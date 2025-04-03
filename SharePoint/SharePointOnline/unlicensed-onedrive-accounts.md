@@ -144,7 +144,7 @@ You can identify unlicensed OneDrive accounts using the SharePoint admin center.
 
 ### View more details on unlicensed OneDrive accounts
 
-You can view details on all unlicensed OneDrive accounts, even ones that aren’t passed their 93rd unlicensed day yet, in the SharePoint admin center.
+You can view details on all unlicensed OneDrive accounts, even ones that aren't passed their 93rd unlicensed day yet, in the SharePoint admin center.
 
 1. In the SharePoint admin center, select **Reports**.
 1. Select **OneDrive accounts** and then select **View more details**.
@@ -253,7 +253,8 @@ As an example, if the billing is put down to reactivate one particular unlicense
 **Answer:** It takes up to 24 hours for the account to be accessible. Once the account is reactivated, it remains active for a total of 30 days before it gets automatically archived again.
 
 **11. Is there any charge to use the eDiscovery Hold feature?**
-**Answer:** We honor eDiscovery holds to their full extent and aren't introducing any new charges for eDiscovery searches or exports. eDiscovery Hold works the same way as retention policy and legal hold.  If billing is enabled for unlicensed OneDrive accounts, then you'll be charged for the monthly storage of archived unlicensed accounts, but there will be no additional charges for eDiscovery actions. 
+
+**Answer:** We honor eDiscovery holds to their full extent and aren't introducing any new charges for eDiscovery searches or exports. eDiscovery Hold works the same way as retention policy and legal hold. If billing is enabled for unlicensed OneDrive accounts, then you'll be charged for the monthly storage of archived unlicensed accounts, but there will be no additional charges for eDiscovery actions. 
 
 **12. What's the process to relicense an account once it's archived?**
 
@@ -265,7 +266,7 @@ As an example, if the billing is put down to reactivate one particular unlicense
 
 **14. Why are there two different report pages with different numbers about unlicensed accounts?**
 
-**Answer:** The [top-level report page](http://spo.ms/admin#/oneDriveAccounts) shows you insights and lets you download the list of accounts which are at least 93 days unlicensed.  This page directly indicates the amount of storage that will be billed if you have enabled billing.  The [detailed report page](http://spo.ms/admin#/oneDriveAccounts/management) is linked from the top-level report page, and indicates all accounts that are currently unlicensed, even if they have been unlicensed for fewer than 93 days.  
+**Answer:** The [top-level report page](http://spo.ms/admin#/oneDriveAccounts) shows you insights and lets you download the list of accounts which are at least 93 days unlicensed. This page directly indicates the amount of storage that will be billed if you have enabled billing.  The [detailed report page](http://spo.ms/admin#/oneDriveAccounts/management) is linked from the top-level report page, and indicates all accounts that are currently unlicensed, even if they have been unlicensed for fewer than 93 days.  
 
 **15. Why is the '*deletion scheduled on*' column empty in my CSV export of unlicensed accounts?**
 
@@ -273,7 +274,7 @@ As an example, if the billing is put down to reactivate one particular unlicense
 
 **16. Will the unlicensed account enforcement override existing read-only or NoAccess settings which are already applied to my OneDrive accounts?**
 
-**Answer:** No.  When enforcing unlicensed OneDrive accounts, the system will not override existing read-only or NoAccess modes.  When the system tries to put an account into read-only mode, it will skip the account if the account is already in read-only or NoAccess mode.  When the account gets Archived, it will retain any read-only and NoAccess settings which the admin applied, which will take effect if the account is reactivated.  
+**Answer:** No. When enforcing unlicensed OneDrive accounts, the system will not override existing read-only or NoAccess modes.  When the system tries to put an account into read-only mode, it will skip the account if the account is already in read-only or NoAccess mode.  When the account gets Archived, it will retain any read-only and NoAccess settings which the admin applied, which will take effect if the account is reactivated. 
 
 ## Related topics
 
