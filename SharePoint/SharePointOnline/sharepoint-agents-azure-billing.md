@@ -60,6 +60,7 @@ The following table illustrates the differences in the subscription models for t
 |---------------------------------------|--------------|----------------------------------------------------|----------------|
 | Generative answer                     | 2 messages   | No charge                                          | 2 messages     |
 | Tenant graph grounding for messages   | 10 messages  | No charge                                          | 10 messages    |
+
 <sup>1</sup> Interactive use of generative answers, tenant graph grounding and agent actions by authenticated Microsoft 365 Copilot users, in Microsoft 365 apps and services, are included at no extra cost.
 
 - Generative answers: These events are dynamically generated using AI models, such as Generative Pretrained Transformers (GPTs). They can adapt and change based on the context and the knowledge sources they're connected to. They're useful for handling a wide range of topics and providing more flexible and natural interactions.
