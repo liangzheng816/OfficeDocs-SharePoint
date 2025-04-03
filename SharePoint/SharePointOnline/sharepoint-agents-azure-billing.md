@@ -54,7 +54,7 @@ After setting up an Azure resource group for SharePoint agents, you can set up p
 
 ### Billing rates
 
-The following table illustrates the differences in the subscription models for the cost of Copilot Studio events.
+The following table illustrates the differences in the subscription models for the cost of SharePoint agent usage.
 
 | SharePoint agent feature              | Billing rate | Use in Microsoft 365 Copilot scenarios<sup>1</sup> | Autonomous use |
 |---------------------------------------|--------------|----------------------------------------------------|----------------|
