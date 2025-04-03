@@ -112,7 +112,7 @@ Answer: Yes. Here's how you configure it: [Government cloud settings](./mm-gov-c
 
 **Question:** What’s the retention policy for the blog storage?
 
-Answer: Customers and ISVs use the [SharePoint-provided blob containers/queues](/sharepoint/dev/apis/migration-api-azure-container-and-queue) when they used the Migration API. [SAS URIs](/azure/storage/common/storage-sas-overview) are provided to access the container and queues. The SAS URIs are valid for three days from creation for containers and 21 days for queues. After the SAS expires, the content in the blob containers and queues isn't accessible. SharePoint backend jobs delete the content in the container/queues within 30 to 90 days of the creation.
+Answer: Customers and independent software vendors (ISVs) use the [SharePoint-provided blob containers/queues](/sharepoint/dev/apis/migration-api-azure-container-and-queue) when they used the Migration API. [SAS URIs](/azure/storage/common/storage-sas-overview) are provided to access the container and queues. The SAS URIs are valid for three days from creation for containers and 21 days for queues. After the SAS expires, the content in the blob containers and queues isn't accessible. SharePoint backend jobs delete the content in the container/queues within 30 to 90 days of the creation.
  
 **Question:** Is the data in the SharePoint-provided containers encrypted?
 
