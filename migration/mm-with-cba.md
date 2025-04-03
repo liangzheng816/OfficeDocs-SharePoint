@@ -85,7 +85,7 @@ Prepare a configuration Json file with the following content:
 }
 ```
 
-Install an agent by following [the instructions](/sharepointmigration/mm-setup-clients). In the agent setup Welcome page, select the "Certificate Authentication" option and load the certificate auth config file, which is prepared in the preious step. Then complete the rest installation steps.
+Install an agent by following [the instructions](/sharepointmigration/mm-setup-clients). In the agent setup Welcome page, select the "Certificate Authentication" option and load the certificate auth config file, which is prepared in the previous step. Then complete the rest installation steps.
 
 - If the file contains incorrect attribute values, the agent displays an error message to explain the reason and disables the next button.
 - If 'MigApp' doesn't have sufficient permissions, the agent displays an error message reminding you to grant necessary permissions to the app.
