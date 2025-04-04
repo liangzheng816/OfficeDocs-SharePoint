@@ -30,7 +30,7 @@ Tags can be updated anytime during your project. If you scan a group of sources 
 
 ## Using and managing tags
 
-While you can create as many tags as you wish, we strongly recommend limiting the number of tags you use to simplify your projects. Making the tags reusable, like using "Ready for migration" or "Incremental run", is one way of limiting the number of tags you use.
+While you can create as many tags as you wish, we strongly recommend limiting the number of tags you use to simplify your projects. Making tags like "Ready for migration" or "Incremental run" reusable is one way of limiting the number of tags you use.
 
 You can enter one or more tags per source, separating them with a semi-colon in the CSV file. Keep in mind that tags are case-sensitive and filter on an exact string match. Tags are part of the metadata associated with the content and are preserved even after you copy tasks to the migration tab. The Summary reports and scans also include tags.
 
