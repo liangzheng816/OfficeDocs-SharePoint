@@ -27,9 +27,9 @@ Migration Manager lets you bulk upload your Dropbox drives using a comma-separat
 ## Before you begin
 
 - The number of sources listed in a single file must be less than 10,000.
-- Up to 50 scans are done simultaneously on the uploaded values.
+- The uploaded values have up to 50 scans done on them simultaneously.
 - The file contains a single column, and the column heading is optional.
-- Source paths can be entered either as [username]@[domainname]/[folder name]  or as [username]@[domainname].
+- Source paths can be entered either as [username]@[domainname]/[folder name] or as [username]@[domainname].
 
 ## Formatting your CSV file
 
