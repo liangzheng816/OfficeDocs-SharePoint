@@ -63,8 +63,8 @@ Answer: No. We automatically suppress all emails to users so they aren't bombard
 
 **Question: Why I can’t see some of my SharePoint sites while assigning destinations on the UI?**
 
-Answer: If SP or Teams sites in your tenant aren't visible on the UI while assigning destinations, there could be a few reasons:
-- SP admins only see sites where they're at least a member, as sites are searched using a user-scoped delegated token.
+Answer: If SharePoint or Teams sites in your tenant aren't visible on the UI while assigning destinations, there could be a few reasons:
+- SharePoint admins only see sites where they're at least a member, as sites are searched using a user-scoped delegated token.
 - Admins might not see sites for a multi-geo tenant due to limitations in the graph API.
-- Recently created sites might take a couple of hours to sync and appear on the UI.
+- Sites that are recently created might take a couple of hours to sync and appear in the UI.
 - SharePoint site search in the UI might not work in some special cases (for example, when there are special characters in the destination path).
