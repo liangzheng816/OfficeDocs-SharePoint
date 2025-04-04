@@ -38,7 +38,7 @@ Answer: Only owned folders and the root files for each user are copied. If a use
 
 Answer: After you complete a migration task for the first time, triggering the **Migrate** button again initiates a delta sync (incremental migration run). During this process, the destination directory is compared to the source, and only new or modified files are transferred. Here are a few examples of how we deal with changes to files and folders:
 
-- **Content changes**: If a document is edited in the source, it's copied to the destination during the next incremental run, replacing the previous versions. If new files are added in the source, they're also migrated in the next incremental run.
+- **Content changes**: If you edit a document in your source or you add a few new files, we copy them to your destination on the next incremental run, overwriting the previously existing files in the destination.
 - **Name changes**: If the name of a file or folder changes in Office 365, we treat it as a brand new object. This change can lead to duplicate files being migrated to Office 365, or entire folders worth of data could be duplicated from the changed folder down.
   - **Example**: Changing the path **/Sales/Clients** to **/Global Sales/Clients** results in two copies of your **Sales** folder after the **Global Sales** folder is also copied during an incremental pass.
 
