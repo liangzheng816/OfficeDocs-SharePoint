@@ -38,9 +38,9 @@ When a run ends, an automatic rerun may occur if the conditions listed under eac
 
 A transfer can be canceled under the following conditions:
 
-- The task is "Queued", and has a status code 600 or 601.
+- The task is "Queued" and has a status code 600 or 601.
 OR
-- The task is "Running", and has a status code 620 or 300.
+- The task is "Running" and has a status code 620 or 300.
 
 ## Incremental feature
 
