@@ -62,7 +62,7 @@ The formatting for personal drives and shared drives is slightly different.
 
   ![Add new source to upload bulk file.](media/mm-upload-cloud-csv.png)
 
-3. Select **Upload a CSV file**.  Browse to your file and then select **Add**.
+3. Select **Upload a CSV file**. Browse to your file and then select **Add**.
 
 ![add new Google source paths.](media/mm-google-add-source-paths.png)
 
