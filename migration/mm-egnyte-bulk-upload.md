@@ -17,7 +17,7 @@ ms.collection:
 - M365-collaboration
 - m365initiative-migratetom365
 search.appverid: MET150
-description: "How to format a CSV or JSON file to bulk upload your Egnyte shareed and private folders into Migration Manager."
+description: "How to format a CSV or JSON file to bulk upload your Egnyte shared and private folders into Migration Manager."
 ---
 
 # Bulk upload Egnyte folders into Migration Manager using a CSV file
