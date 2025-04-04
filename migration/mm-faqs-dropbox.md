@@ -48,7 +48,7 @@ Answer: We don't recreate external sharing links. After migration, these have to
 
 **Question: What about external collaborators?**
 
-Answer: We don't share content with external collaborators. This policy is in place to protect your organization, and industry best practice is to never automatically share sensitive internal data with external users.
+Answer: We don't share content with external collaborators. This policy is in place to protect your organization, and industry best practice is to never automatically share sensitive internal data with external collaborators.
 
 **Question: Does Migration Manager preserve file versions?**
 
