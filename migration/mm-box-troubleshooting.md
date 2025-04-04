@@ -30,9 +30,9 @@ When a run ends, an automatic rerun may occur if the conditions listed under eac
 
 |Scenario |Conditions |
 |:--------|:----------|
-|The task is being scanned OR migrated for the first time |When a task is first scanned or migrated, it may trigger reruns. </br>When a task scan is started and then canceled. If that task is scanned again, it does NOT trigger reruns, because it's not the first time the task was scanned. |
-|More automatic reruns are still available |A task is automatically rerun a maximum of three times. </br>A first task scan/migrate action can result in triggering a total of four transactions: the original transaction (run), and three more attempts (reruns). Six reruns can be triggered at the most: 3 for the initial scan, and 3 for the initial migration. |
-|Last transaction status codes |An automatic rerun may occur if the last transaction ends with any of the following status codes: 201, 202, 210, 220, 211, 401, 403,404, 405, 406, or 491. |
+|The task is being scanned OR migrated for the first time. |When a task is first scanned or migrated, it may trigger reruns. </br>When a task scan is started and then canceled. If that task is scanned again, it does NOT trigger reruns, because it's not the first time the task was scanned. |
+|More automatic reruns are still available. |A task is automatically rerun a maximum of three times. </br>A first task scan/migrate action can result in triggering a total of four transactions: the original transaction (run), and three more attempts (reruns). Six reruns can be triggered at the most: 3 for the initial scan, and 3 for the initial migration. |
+|Last transaction status codes. |An automatic rerun may occur if the last transaction ends with any of the following status codes: 201, 202, 210, 220, 211, 401, 403,404, 405, 406, or 491. |
 
 ## Canceling a transfer
 
@@ -44,7 +44,7 @@ OR
 
 ## Incremental feature
 
-Our incrementals are delta operations that compare files in your source to files in Microsoft 365. Using this comparison, we copy anything that's new or has changed. This lets us keep Microsoft 365 data up to date when the final cut-over of users occurs. These incremental passes are an important part of our process.
+Our incrementals are delta operations that compare files in your source to files in Microsoft 365. Using this comparison, we copy anything that's new or has changed. This action lets us keep Microsoft 365 data up to date when the final cut-over of users occurs. These incremental passes are an important part of our process.
 
 **Technical clarification**: We compare what you have in your source to what's in Microsoft 365. We only transfer anything that doesn't already exist, or has a newer timestamp.
 
