@@ -43,13 +43,13 @@ The formatting for personal drives and shared drives is slightly different.
 
 **For personal drives:**
 
-*[username]@[domainname]/[folder name]*  **or** *[username]@[domainname]*
+[username]@[domainname]/[folder name] or [username]@[domainname]
 
 ![Format for bulk uploading google drives into Migration Manager.](media/mm-google-csv-format.png)
 
 **For Shared drives:**
 
-- */[shared drive name]*
+- /[shared drive name]
 
 ![Format to use for shared drive for bulk upload.](media/mm-google-csv-example.png)
 
