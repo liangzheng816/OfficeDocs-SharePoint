@@ -35,7 +35,7 @@ Answer: Only owned folders and the root files for each user are copied. If a use
 Answer: There's a source-to-destination delta; when you run a transfer, we compare the destination directory to the source, and only transfer new or modified files over. We call this our incremental feature. We compare the timestamps of the files in both the source and destination and transfer the newest versions only. The incremental feature is always on. Here are a few examples of how we deal with changes to files and folders.
 
 - **Content changes**: If a document is edited in your source or you've added a few new files, we copy them to your destination on the next incremental run, overwriting the previously existing file(s) in the destination.
-- **Name changes**: If the name of a file or folder changes in Office 365, we treat it as a brand new object. This can lead to duplicate files being migrated to Office 365, or worse in that entire folders worth of data would be duplicated from the changed folder downwards.
+- **Name changes**: If the name of a file or folder changes in Office 365, we treat it as a brand new object. This change can lead to duplicate files being migrated to Office 365, or worse in that entire folders worth of data would be duplicated from the changed folder downwards.
 - **Example**: Changing the path `/Sales/Clients` to `/Global Sales/Clients` results in two copies of your `Sales` folder after the `Global Sales` folder is also copied during an incremental pass.
 
 **Question: Does Migration Manager delete my files?**
@@ -48,7 +48,7 @@ Answer:  Not recommended. Any major changes in directory structure should happen
 
 **Question: What happens to external sharing links?**
 
-Answer: We don't recreate external sharing links. After migration, these have to be set in the destination manually.
+Answer: We don't recreate external sharing links. After migration, the links have to be set in the destination manually.
 
 **Question: What about external collaborators?**
 
