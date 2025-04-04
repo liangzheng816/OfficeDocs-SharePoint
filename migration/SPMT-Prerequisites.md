@@ -31,7 +31,7 @@ This article is a resource where you can find prerequisites and endpoint informa
 |:----------------|:-------------------------------------------------------------------------------------|
 |CPU              |64-bit quad core processor or better                                                  |
 |RAM              |16 GB                                                                                 |
-|Local Storage    |Solid-state disk: 150 GB free space                                                   |
+|Local Storage    |Solid-state disk: 150 GB of free space                                                |
 |Network card     |1 Gbps                                                                                |
 |Operating system |Windows Server 2016 or Windows 10 client or later  <br/>.NET Framework 4.6.2 or later |
 
@@ -41,7 +41,7 @@ This article is a resource where you can find prerequisites and endpoint informa
 |:----------------|:--------------------------------------------------------------------------------------|
 |CPU              |64-bit 1.4-GHz 2-core processor or better                                              |
 |RAM              |8 GB                                                                                   |
-|Local Storage    |Hard disk: 150 GB free space                                                           |
+|Local Storage    |Hard disk: 150 GB of free space                                                        |
 |Network card     |High-speed Internet connection                                                         |
 |Operating system |Windows Server 2016 or Windows 10 client or later  <br/> .NET Framework 4.6.2 or later |
 
