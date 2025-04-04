@@ -44,7 +44,7 @@ OR
 
 ## Incremental feature
 
-Our incrementals are delta operations that compare files in your source to files in Microsoft 365. Using this comparison, we copy anything that's new or has changed. This action lets us keep Microsoft 365 data up to date when the final cut-over of users occurs. These incremental passes are an important part of our process.
+Our incrementals are delta operations that compare files in your source to files in Microsoft 365. Using this comparison, we copy anything that's new or changed. This action lets us keep Microsoft 365 data up to date when the final cut-over of users occurs. These incremental passes are an important part of our process.
 
 **Technical clarification**: We compare what you have in your source to what's in Microsoft 365. We only transfer anything that doesn't already exist, or has a newer timestamp.
 
