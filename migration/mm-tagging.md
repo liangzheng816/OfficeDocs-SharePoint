@@ -26,11 +26,11 @@ Use tags to better organize, plan, and schedule your content migrations in Migra
 
 If you have a large migration project, you likely migrate the content in phases or need to identify them by groupings. Apply tags to indicate department, region, wave, or any other collection relevant to your organization. With tags, you can filter, group, and keep organized.
  
-Tags can be updated anytime during your project. If you scan a group of sources and they are ready to migrate, you can apply new tags to identify their status quickly. Or if a group of tasks need to be run again, you may tag them with "Incremental run" to make that group stand out.
+Tags can be updated anytime during your project. If you scan a group of sources and they're ready to migrate, you can apply new tags to identify their status quickly. Or if a group of tasks need to be run again, you may tag them with "Incremental run" to make that group stand out.
 
 ## Using and managing tags
 
-While you can create as many tags as you wish, we strongly recommend limiting the number of tags you use to simplify your projects. Making them reusable, like using "Ready for migration" or "Incremental run" is one way of limiting the number of tags you use.
+While you can create as many tags as you wish, we strongly recommend limiting the number of tags you use to simplify your projects. Making the tags reusable, like using "Ready for migration" or "Incremental run", is one way of limiting the number of tags you use.
 
 You can enter one or more tags per source, separating them with a semi-colon in the CSV file. Keep in mind that tags are case-sensitive and filter on an exact string match. Tags are part of the metadata associated with the content and are preserved even after you copy tasks to the migration tab. The Summary reports and scans also include tags.
 
