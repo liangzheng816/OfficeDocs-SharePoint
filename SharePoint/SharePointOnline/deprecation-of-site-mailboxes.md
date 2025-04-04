@@ -58,15 +58,13 @@ Get-SiteMailbox -BypassOwnerCheck -ResultSize unlimited | ft Name, Owners
 
 ## Export site mailboxes through PST (Manually)
 
-You must have [Microsoft 365 admin permissions](/microsoft-365/admin/add-users/assign-admin-roles) to access the [Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center). 
+You must have [Microsoft 365 admin permissions](/microsoft-365/admin/add-users/assign-admin-roles) to access the [Microsoft Purview portal](/purview/purview-portal). 
 
 For more information, see [Permissions and sharing](./modern-experience-sharing-permissions.md).
 
-1. Go to [https://compliance.microsoft.com/](https://compliance.microsoft.com/) and sign in with an account that has [admin permissions](./sharepoint-admin-role.md) for your organization.
+1. Go to [https://purview.microsoft.com/](https://purview.microsoft.com/) and sign in with an account that has [admin permissions](./sharepoint-admin-role.md) for your organization.
 
-2. In the Microsoft Purview compliance portal Home page, navigate to **Show all** > **eDiscovery** > **Core**.
-
-   The **eDiscovery (Standard)** page is displayed.
+2. In the Microsoft Purview portal Home page, navigate to **eDiscovery**.
 
 3. Click **Create a case**.
 
@@ -191,7 +189,7 @@ For more information, see [Permissions and sharing](./modern-experience-sharing-
 
 8. Press 'y' when prompted "Do you like to proceed further? (Y/N)" to continue.
 
-9. Once you get "Mailboxes content search are complete" message on your screen, access the export results created for each mailbox by going to the Microsoft Purview compliance portal.
+9. Once you get "Mailboxes content search are complete" message on your screen, access the export results created for each mailbox by going to the Microsoft Purview portal.
 
    >[!NOTE]
    > Use Compliance center dashboard to download PST messages on your screen.

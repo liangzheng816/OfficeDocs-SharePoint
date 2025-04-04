@@ -97,7 +97,7 @@ The following table enumerates the scenarios and the expected version storage be
 
 ## Auditing versioning events
 
-Audit events are available on the Microsoft Purview compliance portal to help you monitor version history activities. Audit events are logged for the following activities:
+Audit events are available on the Microsoft Purview portal to help you monitor version history activities. Audit events are logged for the following activities:
 
 - Changes made to organization version history limits.
 - Changes made to site version history limits.

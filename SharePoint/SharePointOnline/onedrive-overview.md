@@ -88,7 +88,7 @@ Many organizations use OneDrive without changing any of the options. To change t
 
 - **Access control.** Go to <a href="https://go.microsoft.com/fwlink/?linkid=2185071" target="_blank">Access control</a> to control access from unmanaged devices or based on network location.
 
-- **Compliance.** [View the compliance and risk management solutions available in Microsoft 365](https://compliance.microsoft.com/solutioncatalog)
+- **Compliance.** [View the compliance and risk management solutions available in Microsoft Purview](https://purview.microsoft.com)
 
 - **Notifications.** Go to <a href="https://go.microsoft.com/fwlink/?linkid=2185072" target="_blank">Settings</a> and select **Notifications**. For information about this setting, see [Control notifications](/onedrive/turn-on-external-sharing-notifications).
 

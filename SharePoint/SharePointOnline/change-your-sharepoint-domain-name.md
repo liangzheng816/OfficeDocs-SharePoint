@@ -80,7 +80,7 @@ If your organization is going through a rebranding, merger, or acquisition and n
 | Custom apps and Group Policy objects | Absolute URLs embedded in these apps and objects aren't changed. | Edit custom apps and Active Directory Group Policy objects that contain absolute URLs and if necessary, change the URLs to the new domain name. Confirm with third-party app publishers that apps don't contain absolute URLs. |
 | Custom and third-party apps | Some apps might not process the HTTP 308 direct correctly. | Edit custom apps and work with third-party app publishers to ensure that they handle HTTP 308 responses correctly. |
 | Delve | It can take 24 hours before People profiles can be viewed. | None |
-| eDiscovery | Holds can't be removed until you update the URLs. | In the Microsoft Purview compliance portal, change the eDiscovery hold URLs to the new domain name. |
+| eDiscovery | Holds can't be removed until you update the URLs. | In the Microsoft Purview portal, change the eDiscovery hold URLs to the new domain name. |
 | InfoPath forms | Forms that use a SharePoint connection as a data source don't work. | Reconnect these forms to SharePoint. |
 | Loop | Existing workspaces can't be shared and new pages can't be added to them. | No action is available. |
 | Microsoft 365 Archive | Archived sites aren't renamed. | Reactivate archived sites before the rename. <br>Avoid archiving any sites during the rename. |
