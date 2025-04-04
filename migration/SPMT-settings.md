@@ -41,7 +41,7 @@ The following table details the settings available in SPMT. Advanced settings sh
 
 |Setting |Description |
 |:-------|:-----------|
-|Microsoft Entra lookup |By default, this is set to **On**. If no user mapping file is provided by the user, then Microsoft Entra ID is used as the default for user mapping. |
+|Microsoft Entra lookup |By default, this setting is set to **On**. If no user mapping file is provided by the user, then Microsoft Entra ID is used as the default for user mapping. |
 |Automatic user mapping |User mapping is done automatically. |
 |User mapping file |By default, *Microsoft Entra lookup* is used to map users when submitting migration jobs. If you want to use your own mapping file, select the file to be used by selecting **Choose file**. If you choose to use a custom user mapping file and want to preserve user permissions, turn off *Microsoft Entra lookup*. By doing so, if a user isn't found in the mapping file, the tool doesn't look it up in Microsoft Entra ID. |
 
