@@ -137,7 +137,7 @@ Advanced Tenant Rename is a part of SharePoint Advanced Management.
 Advanced Tenant Rename can currently only support tenants meeting the following conditions:
 -  You must have SharePoint Advanced Management licenses purchased for all users in your organization.
 - Your organization has <100,000 total sites.
-- Your organization doesn’t have Microsoft365 Multi Geo enabled.
+- Your organization doesn’t have Microsoft 365 Multi Geo enabled.
 - Your organization doesn’t use government clouds, including GCC, GCC High and DoD.
 - Your organization doesn’t use vanity domains (from the earlier MTE offering).
 
@@ -165,8 +165,8 @@ The PowerShell cmdlets for prioritization should be used once the tenant rename 
     > Do NOT use the domain to test this procedure in a test environment first. If you do, you won't be able to use the domain for your production environment.
 
 2. Add your [new .onmicrosoft.com domain using the Domains page in the M365 Admin Center](/microsoft-365/admin/setup/add-or-replace-your-onmicrosoftcom-domain#add-a-new-onmicrosoftcom-domain). 
-     - Do not use the "Add domain" option directly present in the Domains page, since that does not create a .onmicrosoft.com domain. Use the steps in the link above to correctly create one.
-     - Do not make this domain your fallback domain.
+     - Don't use the "Add domain" option directly present in the Domains page, since that does not create a .onmicrosoft.com domain. Use the steps in the link above to correctly create one.
+     - Don't make this domain your fallback domain.
     
 3. Go back to the Domains page and check that the newly added .onmicrosoft.com domain appears in a 'Healthy' state.
 
@@ -175,7 +175,7 @@ The PowerShell cmdlets for prioritization should be used once the tenant rename 
 > [!WARNING]
 > - When the change of the SharePoint domain starts, sites that remain on the original domain will be temporarily inaccessible. As each site gets renamed to the new domain, it will become accessible again.
 > - Changing your SharePoint domain name might take several hours to days depending on the number of sites and OneDrive users that you have. We strongly recommend that you make this change during a period of low usage (like a weekend) and tell users to avoid accessing SharePoint and OneDrive content during the change. In addition, any actions that create new OneDrives and sites (such as creating a new team or private channel in Microsoft Teams) will be temporarily blocked during the rename.
-> - Do not plan any UPN changes or renames while the change of your SharePoint domain name is in progress. If you need to perform any, please do so after the domain name change is complete.
+> - Don't plan any UPN changes or renames while the change of your SharePoint domain name is in progress. If you need to perform any, please do so after the domain name change is complete.
   
 1. **REQUIRED** - [Download the latest SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251). If you installed a previous version of the SharePoint Online Management Shell, go to Add or remove programs and uninstall "SharePoint Online Management Shell". Make sure you review the System Requirements and Install Instructions. The app isn't supported on Mac.
   
@@ -197,7 +197,7 @@ The PowerShell cmdlets for prioritization should be used once the tenant rename 
 
     `Start-SPOTenantRename -DomainName "fabrikam" -ScheduledDateTime "2021-12-31T10:25:00"`
 
-   If the PowerShell command Start-SPOTenantRename is not found or nothing is returned, make sure you installed the latest SharePoint Online Management Shell. Before installing the latest version, you might need to uninstall all previous versions by running `Uninstall-Module Microsoft.Online.SharePoint.PowerShell -Force -AllVersions`. For more info about the Start-SPOTenantRename cmdlet, see [Start-SPOTenantRename](/powershell/module/sharepoint-online/start-spotenantrename)
+   If the PowerShell command Start-SPOTenantRename isn't found or nothing is returned, make sure you installed the latest SharePoint Online Management Shell. Before installing the latest version, you might need to uninstall all previous versions by running `Uninstall-Module Microsoft.Online.SharePoint.PowerShell -Force -AllVersions`. For more info about the Start-SPOTenantRename cmdlet, see [Start-SPOTenantRename](/powershell/module/sharepoint-online/start-spotenantrename)
 
 To cancel a rename before it starts, you can run `Stop-SPOTenantRename`. [More info about this cmdlet](/powershell/module/sharepoint-online/start-spotenantrename)
 
