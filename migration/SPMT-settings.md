@@ -131,7 +131,7 @@ For more info, see, [Allow or prevent custom script](/sharepoint/allow-or-preven
 
 ## Proxy connections
 
-Proxy connections aren't supported for either SharePoint or file share migrations. By default, SPMT doesn't use system proxy credentials and web requests fail if a proxy server is configured. You may drr "SharePoint sign in fail" or "can't load document library" errors, as examples. However, you can modify the SPMT app config file to follow your system proxy settings.
+Proxy connections aren't supported for either SharePoint or file share migrations. By default, SPMT doesn't use system proxy credentials and web requests fail if a proxy server is configured. You may see "SharePoint sign in fail" or "can't load document library" errors, as examples. However, you can modify the SPMT app config file to follow your system proxy settings.
 
 ### Update proxy
 
