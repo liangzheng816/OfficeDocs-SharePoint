@@ -25,7 +25,7 @@ description: "A complete listing of the SharePoint Migration basic and advanced 
 
 # SharePoint Migration Tool Settings
 
-The following table details the settings available in SPMT. Advanced settings should be managed by your IT professional.
+The following table details the settings available in SPMT. Your IT professional should manage advanced settings.
 
 ## General
 
