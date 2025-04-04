@@ -25,7 +25,7 @@ description: "A complete listing of the SharePoint Migration basic and advanced 
 
 # SharePoint Migration Tool Settings
 
-The following table details the settings available in SPMT. Your IT professional should manage advanced settings.
+The following table details the settings available in the SharePoint Migration Tool (SPMT). Your IT professional should manage advanced settings.
 
 ## General
 
@@ -73,7 +73,7 @@ The following table details the settings available in SPMT. Your IT professional
 |Migration of web parts and pages |Choose how to handle migration if the pages and web parts already exist in the destination. <br/> Select one: *Overwrite duplicate*, *Rename duplicate*, *Skip duplicate*, or *Don't migrate*. |
 |Temporarily allow migration of scripts |This setting automatically allows the migration of scripted web parts. |
 |Migrate site navigation |Migrate the navigation links of a site or page in SharePoint. |
-|Migrate lists with lookup columns |This setting controls the behavior of migrating all lists referenced in lookup columns. Options include: *Migrate all lists referenced in lookup columns*, *Ignore lookup columns in migrated lists*, and *Only report error for any list with a lookup column. Don't migrate.* This setting is only available if the source selected in a task is a list. If you're doing a site migration, SPMT automatically migrates all referred lists, so this setting doesn't appear to the user. |
+|Migrate lists with lookup columns |This setting controls the behavior of migrating all lists referenced in lookup columns. Options include: *Migrate all lists referenced in lookup columns*, *Ignore lookup columns in migrated lists*, and *Only report error for any list with a lookup column. Don't migrate.* This setting is only available if the source selected in a task is a list. If you're doing a site migration, the SPMT automatically migrates all referred lists, so this setting doesn't appear to the user. |
 
 ## Workflow migration
 
@@ -110,7 +110,7 @@ If you're on a government cloud, you must first take these steps:
     - **3** if you're DoD
     - **2** if you're GCC high
     - **0** if you use the Worldwide consumer cloud
-3. Double-click "microsoft.sharepoint.migrationtool.advancedapp.exe" to start SPMT.
+3. Double-click "microsoft.sharepoint.migrationtool.advancedapp.exe" to start the SPMT.
 
 ## Allow or prevent a Custom Script (NoScript)
 
@@ -131,18 +131,18 @@ For more info, see: [Allow or prevent custom script](/sharepoint/allow-or-preven
 
 ## Proxy connections
 
-Proxy connections aren't supported for either SharePoint or file share migrations. By default, SPMT doesn't use system proxy credentials and web requests fail if a proxy server is configured. You may see "SharePoint sign in fail" or "can't load document library" errors, as examples. However, you can modify the SPMT app config file to follow your system proxy settings.
+Proxy connections aren't supported for either SharePoint or file share migrations. By default, the SPMT doesn't use system proxy credentials and web requests fail if a proxy server is configured. You may see "SharePoint sign in fail" or "can't load document library" errors, as examples. However, you can modify the SPMT app config file to follow your system proxy settings.
 
 ### Update proxy
 
-Download the latest version of SPMT. Start SPMT.
+Download the latest version of the SPMT. Start the SPMT.
 
-If SPMT doesn't connect to Microsoft 365:
+If the SPMT doesn't connect to Microsoft 365:
 
 1. Go to **%localappdata%\Apps\SharePointMigrationTool\SPMT**.
 1. Open the **microsoft.sharepoint.migrationtool.advancedapp.exe.config** file.
 1. Uncomment the default proxy setting shown here:![Edit the config file to comment out the proxy setting](media/spmt-settings/image.png).
-1. Restart SPMT.
+1. Restart the SPMT.
 
 ## Related articles
 
