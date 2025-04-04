@@ -60,7 +60,7 @@ Migration Manager lets you bulk upload your Dropbox drives using a comma-separat
 
   ![Add new source to upload bulk file](media/mm-upload-cloud-csv.png)
 
-3. Select **Upload a CSV file**.  Browse to your file and then select **Add**.
+3. Select **Upload a CSV file**. Browse to your file and then select **Add**.
 
 ![Add Dropbox source paths.](media/mm-dropbox-add-source-path.png)
 
