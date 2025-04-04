@@ -38,7 +38,8 @@ Migration Manager lets you bulk upload your Dropbox drives using a comma-separat
 1. Start Excel.
 2. Enter one source per row. The column heading is optional. Enter your source in one of the following ways:
 
-- **For member folders:**</br>
+- **For member folders:**
+
 [username]@[domainname]/[folder name] or [username]@[domainname]
 
 - **For team folders:**
