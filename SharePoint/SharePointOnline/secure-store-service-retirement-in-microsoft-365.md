@@ -64,4 +64,4 @@ Microsoft has no plans to retire Secure Store Service in SharePoint Server Subsc
 
 For more information about Azure Key Vault and its capabilities, see:
 
-- [Azure Key Vault (AKV) Documentation](/azure/key-vault/keys/%22%20/t%20%22_new)
+- [Azure Key Vault (AKV) Documentation](/azure/key-vault/keys/)
