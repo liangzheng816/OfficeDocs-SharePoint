@@ -17,7 +17,7 @@ ms.collection:
 - SPMigration
 - M365-collaboration
 - m365initiative-migratetom365
-description: "List of SharePoint Server site features suppored by the SharePoint Migration Tool (SPMT)"
+description: "List of SharePoint Server site features supported by the SharePoint Migration Tool (SPMT)"
 ---
 
 # SPMT supported SharePoint site features
