@@ -25,7 +25,7 @@ description: "SharePoint Migration Tool table of supported list templates for mi
 
 # SPMT supported SharePoint List Templates
 
-The following table details SharePoint List templates and which ones are supported by the SharePoint Migration Tool (SPMT).
+The following table details SharePoint List templates and identifies the templates the SharePoint Migration Tool (SPMT) supports.
 
 |**List template ID** |**Name** |**Description** |**Supported by SPMT** |
 |:--------------------|:--------|:---------------|:---------------------|
