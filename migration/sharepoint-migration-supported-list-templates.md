@@ -96,4 +96,11 @@ The following table details SharePoint List templates and identifies the templat
 |1230 |DeveloperSiteDraftApps |Draft Apps library in Developer Site. Value = 1230 |No |
 
 > [!NOTE]
-> Sites Pages (for example, a Wiki Page Library) migration is available only when the source selected is *all lists, libraries, pages, and web parts* because SPMT treats it as part of the whole site.
+> Migration for Site pages, such as a Wiki Page library, is available only when the source selected is all:
+> 
+> - lists
+> - libraries
+> - pages
+> - web parts
+> 
+> SPMT treats the source as part of the whole site in this scenario.
