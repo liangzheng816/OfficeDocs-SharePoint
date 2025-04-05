@@ -112,8 +112,8 @@ This table details the SharePoint web parts currently supported by the SharePoin
 |Media and Content     |Image Viewer                                   |Yes       |
 |Media and Content     |Script Editor                                  |Yes       |
 |Media and Content     |SilverLight web part                           |Yes       |
-|Mysite                |My Site First Run Experience                   |No        |
-|Mysite                |My Site Personal Site Upgrade On Navigation    |No        |
+|My Site               |My Site First Run Experience                   |No        |
+|My Site               |My Site Personal Site Upgrade On Navigation    |No        |
 |OutLook               |Outlook web access                             |No        |
 |Performance Point     |Performance Point web parts                    |No        |
 |Search                |Actions Links                                  |No        |
