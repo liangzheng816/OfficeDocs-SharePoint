@@ -1,5 +1,5 @@
 ---
-ms.date: 04/12/2024
+ms.date: 04/04/2025
 title: "Deploy OneDrive apps using Microsoft Endpoint Configuration Manager"
 ms.reviewer: baladell
 ms.author: mactra
@@ -30,7 +30,7 @@ description: "In this article, you'll learn how to deploy OneDrive apps using Mi
 
 # Deploy OneDrive apps using Microsoft Endpoint Configuration Manager
 
-You can use Microsoft Endpoint Configuration Manager to deploy the new OneDrive sync app (OneDrive.exe), and the mobile apps for iOS and Android. Before you begin deploying, make sure you have reviewed the planning information and deployment options in the [Plan file sync for SharePoint and OneDrive in Microsoft 365](plan-file-sync.md).<br/><br/>
+You can use Microsoft Endpoint Configuration Manager to deploy the new OneDrive sync app (OneDrive.exe), and the mobile apps for iOS and Android. Before you begin deploying, make sure you have reviewed the planning information and deployment options in the [Plan file sync for SharePoint and OneDrive in Microsoft 365](plan-file-sync.md).
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=502d1d70-de8b-4180-adc6-5786a518e0e7]
   
@@ -80,9 +80,9 @@ To set registry keys on computers in your domain, install OneDrive and copy the 
 
 If you don't use the sample package, run the following command using Microsoft Endpoint Configuration Manager:
   
-```
+`
 Execute <pathToExecutable>\OneDriveSetup.exe /silent
-```
+`
 
 (where pathToExecutable is a location on the local computer or an accessible network share).
   
@@ -94,50 +94,33 @@ Execute <pathToExecutable>\OneDriveSetup.exe /silent
 [Learn more about application management in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699373(v=technet.10)).
 The installer will install the OneDrive executable file under **%localappdata%\Microsoft\OneDrive**.
   
-### Deploy the RMS client to enable syncing IRM-protected files
-
-The new OneDrive sync app for Windows now supports syncing IRM-protected SharePoint document libraries and OneDrive locations. To create a seamless IRM sync experience for your users, deploy to your users' computers the latest [Rights Management Service (RMS) client](https://aka.ms/odirm) from the Microsoft Download Center. Even if these computers have the Azure Information Protection client installed, which includes the RMS client, the OneDrive sync app still needs a separate installation of the RMS client from the Microsoft Download Center.
-  
-To silently install the RMS client on computers, use the /qn switch as part of the command-line options of the Microsoft Windows Installer Tool (Msiexec.exe). For example, the following command shows the silent mode installation (assuming the RMS Client installer package is already downloaded to C:\Downloads).
-  
-```console
-msiexec /qn c:\downloads\setup.msi
-```
-
-You can have the setup file on a network share and use managed software deployment to run the msiexec command.
-  
-> [!NOTE]
-> The sync app does not support IRM policies that expire document access rights.
-  
 ## Help users sign in
-
-<a name="step3"> </a>
 
 To help users sign in, you can use [silent account configuration](use-silent-account-configuration.md) or one of these methods:
   
 - Use the following URL to start OneDrive Setup on users' computers. When users select to begin Setup, a sign-in window appears for users can enter email address.
 
-  ```
+  `
   odopen://launch
-  ```
+  `
 
 - Use the following URL with each user's email address to start Setup and prepopulate user email addresses in the sign-in window.
 
-  ```
+  `
   odopen://sync?useremail=youruseremail@organization.com
-  ```
+  `
 
 - Run the following command using Configuration Manager script:
 
-  ```
-  %localappdata%\Microsoft\OneDrive\OneDrive.exe 
-  ```
+  `
+  %localappdata%\Microsoft\OneDrive\OneDrive.exe
+  `
 
     It starts the OneDrive process. If users haven't set up any accounts, it displays OneDrive Setup. To display OneDrive Setup specifically to users who haven't set up an account for your organization, use the command-line parameter:
 
-  ```
+  `
    /configure_business:<tenantId>
-  ```
+  `
 
 > [!NOTE]
 > When you use Microsoft Endpoint Configuration Manager, make sure you run OneDrive.exe with User permissions (not as an Administrator). </br> For help finding your tenant ID, see [Find your Microsoft 365 tenant ID](find-your-office-365-tenant-id.md).
@@ -146,9 +129,9 @@ To help users sign in, you can use [silent account configuration](use-silent-acc
 
 If you want to autoconfigure a SharePoint site to be synced, you can use the URL below as a guide to build the path to the SharePoint site you want to sync automatically. You can also use a policy to sync sites automatically. For info, see [Configure team site libraries to sync automatically](use-group-policy.md#configure-team-site-libraries-to-sync-automatically).
 
-```
+`
 odopen://sync/?siteId=<siteId>&webId=<webId>&webUrl=<webURL>&listId=<listId>&userEmail=<userEmail>&webTitle=<webTitle>&listTitle=<listTitle>
-```
+`
 
 where:
 
@@ -171,9 +154,9 @@ For example, if you want to synchronize `https://contoso.sharepoint.com/sites/Sa
 
 The resulting odopen:// URL is:
 
-```
+`
 odopen://sync/?siteId={ssssssss-ssss-ssss-ssss-ssssssssssss}&webId={wwwwwwww-wwww-wwww-wwww-wwwwwwwwwwww}&webUrl=https://contoso.sharepoint.com/sites/SalesTeam-01&listId={llllllll-llll-llll-llll-llllllllllll}&userEmail=user@contoso.com&webTitle=Sales&listTitle=Unicorn
-```
+`
 
 > [!NOTE]
 > You will need Client Side Object Model (CSOM) knowledge if you want to automate querying the team site to determine the appropriate siteId, webId, and listId to build the appropriate URL.
@@ -213,7 +196,5 @@ For more info, see [Create iOS applications with Configuration Manager](/configm
 For more info, see [Create Android applications with Configuration Manager](/configmgr/mdm/deploy-use/creating-android-applications/).
 
 ## See also
-
-<a name="cad"> </a>
 
 [Invalid file names and file types in OneDrive and SharePoint](https://support.office.com/article/64883a5d-228e-48f5-b3d2-eb39e07630fa)

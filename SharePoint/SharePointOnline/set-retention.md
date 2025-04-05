@@ -1,5 +1,5 @@
 ---
-ms.date: 04/09/2024
+ms.date: 04/05/2025
 title: "Set the OneDrive retention for deleted users"
 ms.reviewer: jmcdowe
 ms.author: mactra
@@ -32,7 +32,7 @@ description: "Learn how to specify how long the OneDrive files of deleted users 
 
 If a user's Microsoft 365 account is deleted, their OneDrive files are preserved for a period of time. You can set this time period.
   
- **To set the retention time for OneDrive accounts**
+## Set the retention time for OneDrive accounts
   
 1. Go to <a href="https://go.microsoft.com/fwlink/?linkid=2185072" target="_blank">**Settings** in the new SharePoint admin center</a>, and sign in with an account that has [admin permissions](/sharepoint/sharepoint-admin-role) for your organization.
 

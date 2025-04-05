@@ -1,5 +1,5 @@
 ---
-ms.date: 06/04/2024
+ms.date: 04/05/2025
 title: "Restore a deleted OneDrive"
 ms.reviewer: jmcdowe
 ms.author: mactra
@@ -78,7 +78,7 @@ If the user was deleted within 30 days, you can restore the user and all their d
 For more info about these cmdlets, see [Get-SPODeletedSite](/powershell/module/sharepoint-online/get-spodeletedsite) and [Restore-SPODeletedSite](/powershell/module/sharepoint-online/restore-spodeletedsite).
 
 > [!NOTE]
-> When a OneDrive is restored, it will continue to remain available until it's explicitly deleted.
+> When a OneDrive is restored, it continues to remain available until it's explicitly deleted.
   
 ## Permanently delete a OneDrive
 
@@ -90,7 +90,7 @@ Remove-SPODeletedSite -Identity <URL>
 ```
 
 > [!CAUTION]
-> When you permanently delete a OneDrive, you will not be able to restore it.
+> When you permanently delete a OneDrive, you won't be able to restore it.
   
 ## See also
 

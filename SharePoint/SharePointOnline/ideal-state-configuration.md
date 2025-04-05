@@ -1,7 +1,7 @@
 ---
-ms.date: 06/20/2024
+ms.date: 04/05/2025
 title: "Recommended sync app configuration"
-ms.reviewer: gacarini
+ms.reviewer: kangan
 ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
@@ -33,7 +33,8 @@ For the best performance, reliability, and user experience, follow these "ideal 
 
 ## Updates and rings
 
-- **Allow access to oneclient.sfx.ms and g.live.com**. Computers must be able to reach these URLs to apply updates and bug fixes, and enable or disable features. Updates are installed automatically; so, you don't need to package and deploy them. Because OneDrive runs in the background, updates are also installed silently and don't impact users.
+- **Allow access to oneclient.sfx.ms and g.live.com**. Computers must be able to reach these URLs to apply updates and bug fixes, and enable or disable features. Updates are installed automatically; so, you don't need to package and deploy them. Because OneDrive runs in the background, updates are also installed silently and don't affect users.
+
 - **Use the Insiders and Production rings**. Select several people in your IT department as early adopters to join the Insiders ring and receive features early. Leave everyone else in the organization on the default Production ring to ensure they receive bug fixes and new features in a timely fashion. This recommendation applies even if you are on the Semi-Annual Enterprise Channel for Windows and Office. For more information about the rings, see [Sync app update process](sync-client-update-process.md). To set the update ring on Windows, see [Set the sync app update ring](use-group-policy.md#set-the-sync-app-update-ring). To set it on Mac, see [Deploy and configure the new OneDrive sync app for Mac](deploy-and-configure-on-macos.md#tier).
 
 ## Windows Notification Service
