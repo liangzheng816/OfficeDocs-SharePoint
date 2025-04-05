@@ -1,5 +1,5 @@
 ---
-ms.date: 04/05/2025
+ms.date: 02/07/2025
 title: "Restore a deleted OneDrive"
 ms.reviewer: jmcdowe
 ms.author: mactra
