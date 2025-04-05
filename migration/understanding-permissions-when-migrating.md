@@ -29,7 +29,7 @@ description: "Learn about what happens to the file and folder permissions when u
 
 The location of your on-premises data, and whether your Active Directory accounts to Microsoft Entra ID are synchronized or not, can affect the permission settings on your files after they're migrated to SharePoint in Microsoft 365.
 
-**Syncing your environment**: In order to maintain existing on-premises file permissions, there must be a corresponding user in SharePoint. The easiest way to accomplish this is to synchronize your Active Directory accounts to Microsoft Entra ID.
+**Syncing your environment**: In order to maintain existing on-premises file permissions, there must be a corresponding user in SharePoint. The easiest way to accomplish this permission maintenance is to synchronize your Active Directory accounts to Microsoft Entra ID.
 
 |User mapping type |File share details |SharePoint on-premises file |
 |------------------|-------------------|----------------------------|
@@ -38,7 +38,7 @@ The location of your on-premises data, and whether your Active Directory account
 
 ### Permissions conditions and results
 
-The SharePoint Migration Tool permission control is affected by various conditions. The following table lists all the conditions and the corresponding results.
+Various conditions affect the SharePoint Migration Tool's permission control. The following table lists all the conditions and the corresponding results.
 
 |Source |Preserve user permissions setting set to On |Migrating to |Target library permission before migration |Target library permission after migration |Note |
 |---|---|---|---|---|---|
@@ -60,6 +60,6 @@ The SharePoint Migration Tool permission control is affected by various conditio
 |Document library |Yes |Sub folder |Unique |Unique |The same as file share migration with the same condition. |
 |Site/Web |No |Not applicable |Inherited |Inherited |The role assignment of the target site/web is unchanged. |
 |Site/Web |No |Not applicable |Unique |Unique |The role assignment of the target site/web is unchanged. |
-|Site/Web |Yes |Not applicable |Inherited |Unique |The role assignment in the source site/web **replace** those in the target site/web. |
+|Site/Web |Yes |Not applicable |Inherited |Unique |The role assignment in the source site/web **replace** the role assignment in the target site/web. |
 |Site/Web A with Subsite B (both migrated with SPMT) |Yes |Not applicable | | |Subsite B or sub web inherited from main Site A Subsite B/web unique from the new SharePoint main site A. Site A is migrated as described for normal site migration. Subsite B becomes unique Subsite B's role assignments are **replaced**. |
 |Site/Web |Yes |Not applicable |Unique |Unique |The role assignment of the source site/web is added as new role assignments to the target site/web. |
