@@ -115,7 +115,7 @@ This table details the SharePoint web parts currently supported by the SharePoin
 |My Site               |My Site First Run Experience                   |No        |
 |My Site               |My Site Personal Site Upgrade On Navigation    |No        |
 |OutLook               |Outlook web access                             |No        |
-|Performance Point     |Performance Point web parts                    |No        |
+|PerformancePoint      |PerformancePoint web parts                    |No        |
 |Search                |Actions Links                                  |No        |
 |Search                |Advanced Search Box                            |No        |
 |Search                |Best Bets                                      |No        |
