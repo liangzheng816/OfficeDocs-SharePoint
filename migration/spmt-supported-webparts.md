@@ -30,12 +30,12 @@ description: "SharePoint Migration Tool table of supported SharePoint web parts 
 >
 > During migration, some web parts require this setting be set to **Allow**. Otherwise, the web parts aren't migrated.
 >
-> At least 24 hours before you start migration, do the following:
+> At least 24 hours before you start migration, take this action:
 >
 > 1. From the SharePoint Admin Center, select [Settings](https://go.microsoft.com/fwlink/?linkid=2185072).
 > 2. Scroll down to **Custom Script**.
 > 3. If you're using the modern experience, select **Go to the classic settings** page.
-> 4. Select both of the following:
+> 4. Select both options:
 >    - *Allow users to run custom script on personal sites*
 >    - *Allow users to run customer script on self-service created sites*
 >
@@ -45,7 +45,7 @@ description: "SharePoint Migration Tool table of supported SharePoint web parts 
 
 For more information, see: [Allow or prevent custom script](/sharepoint/allow-or-prevent-custom-script).
 
-The following table details the SharePoint web parts currently supported by the SharePoint Migration Tool (SPMT).
+This table details the SharePoint web parts currently supported by the SharePoint Migration Tool (SPMT):
 
 |Category              |Web part name                                  |Supported |
 |----------------------|-----------------------------------------------|----------|
