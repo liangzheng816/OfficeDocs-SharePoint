@@ -25,9 +25,9 @@ description: "Learn about what happens to the file and folder permissions when u
 
 # File and folder permissions when using the SharePoint Migration Tool
 
-## What happens to the permissions on a file when it's migrated?
+## What happens to the permissions on a migrated file?
 
-The location of your on-premises data, and whether you have synchronized your Active Directory accounts to Microsoft Entra ID or not, can affect the permission settings on your files after they're migrated to SharePoint in Microsoft 365.
+The location of your on-premises data, and whether your Active Directory accounts to Microsoft Entra ID are synchronized or not, can affect the permission settings on your files after they're migrated to SharePoint in Microsoft 365.
 
 **Syncing your environment**: In order to maintain existing on-premises file permissions, there must be a corresponding user in SharePoint. The easiest way to accomplish this is to synchronize your Active Directory accounts to Microsoft Entra ID.
 
