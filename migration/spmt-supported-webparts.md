@@ -39,7 +39,7 @@ description: "SharePoint Migration Tool table of supported SharePoint web parts 
 >    - *Allow users to run custom script on personal sites*
 >    - *Allow users to run customer script on self-service created sites*
 >
-> Leave these settings in place for the duration of your migration.
+> Leave these settings in place until your migration completes.
 >
 > Changes to this setting might take up to 24 hours to take effect.
 
