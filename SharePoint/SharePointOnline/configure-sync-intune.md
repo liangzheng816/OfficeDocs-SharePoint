@@ -51,7 +51,7 @@ Profiles in Microsoft Intune let you configure settings and push them to devices
 1. In the settings picker, select **OneDrive** to see all the available settings.
 
 1. Select any setting you want to configure. Or, choose **Select all these settings**. After you add your settings, close the settings picker.
-    For info about these settings, see [Use OneDrive policies](use-group-policy.md). For info about the recommended settings, see [Recommended sync app sonfiguration](ideal-state-configuration.md).
+    For info about these settings, see [Use OneDrive policies](use-group-policy.md). For info about the recommended settings, see [Recommended sync app configuration](ideal-state-configuration.md).
 
     :::image type="content" source="media/intune-settings-catalog.png" alt-text="A screenshot showing the configuration of the Intune settings catalog policy for OneDrive." lightbox="media/intune-settings-catalog.png":::
 
