@@ -1,5 +1,5 @@
 ---
-ms.date: 01/11/2019
+ms.date: 04/04/2025
 title: "SharePoint Migration Tool supported SharePoint web parts"
 ms.reviewer:
 ms.author: heidip
@@ -28,13 +28,13 @@ description: "SharePoint Migration Tool table of supported SharePoint web parts 
 >
 > With Microsoft 365 tenants, you can control whether users can run custom script on personal sites and self-service created sites.
 >
-> During migration, some web parts require this setting set to **allow**. Otherwise, the web part will not be migrated.
+> During migration, some web parts require this setting be set to **Allow**. Otherwise, the web parts aren't migrated.
 >
 > At least 24 hours before you start migration, do the following:
 >
-> 1. From the SharePoint Admin Center, select <a href="https://go.microsoft.com/fwlink/?linkid=2185072" target="_blank">**Settings**</a>.
-> 2. Scroll down to "Custom Script".
-> 3. If using the modern experience, click on Go to the classic settings page
+> 1. From the SharePoint Admin Center, select [Settings](https://go.microsoft.com/fwlink/?linkid=2185072).
+> 2. Scroll down to **Custom Script**.
+> 3. If you're using the modern experience, select **Go to the classic settings** page.
 > 4. Select both of the following:
 >    - *Allow users to run custom script on personal sites*
 >    - *Allow users to run customer script on self-service created sites*
