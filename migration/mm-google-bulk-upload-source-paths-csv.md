@@ -29,7 +29,7 @@ Migration Manager lets you bulk upload your Google drives using a comma-separate
 - The number of sources listed in a single file must be less than 10,000.
 - The uploaded values have up to 50 scans done on them simultaneously.
 - The file contains a single column, and the column heading is optional.
-- Source paths can be entered either as [username]@[domainname]/[folder name]  or as [username]@[domainname].
+- Source paths can be entered either as [username]@[domainname]/[folder name] or as [username]@[domainname].
 
 >[!Tip]
 > Download a list of users from your organization's Google account to help construct your CSV file. Learn more: [Download a list of users](https://support.google.com/a/answer/7348070?hl=en&fl=1).
@@ -43,13 +43,13 @@ The formatting for personal drives and shared drives is slightly different.
 
 **For personal drives:**
 
-*[username]@[domainname]/[folder name]*  **or** *[username]@[domainname]*
+[username]@[domainname]/[folder name] or [username]@[domainname]
 
 ![Format for bulk uploading google drives into Migration Manager.](media/mm-google-csv-format.png)
 
 **For Shared drives:**
 
-- */[shared drive name]*
+- /[shared drive name]
 
 ![Format to use for shared drive for bulk upload.](media/mm-google-csv-example.png)
 
