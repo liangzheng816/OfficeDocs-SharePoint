@@ -1,7 +1,7 @@
 ---
-ms.date: 03/24/2024
+ms.date: 04/07/2024
 title: "Review the destination paths for your Box migration with Migration Manager"
-ms.reviewer: 
+ms.reviewer: kbchen
 ms.author: heidip
 author: MicrosoftHeidi
 manager: jtremper
@@ -20,13 +20,14 @@ ms.collection:
 - highpri
 - m365initiative-migratetom365
 search.appverid: MET150
-description: Review your destination paths for your Box migration while using Migration Manager.
+description: Review your destination paths for your users and items your Box migration while using Migration Manager. Covers SharePoint and OneDrive URL and OneDrive User Principal Name (UPN) types.
 ---
+
 # Step 4: Review destination paths
 
 On the **User migrations** tab, review the destination paths of the Box users you moved to the migration list, and make sure they're correct. A task (Box user) can't be migrated without a destination indicated. Once you start migrating content to a destination, the destination can't be modified.
 
-## Single destination edit
+## Editing a single destination
 
 If a destination is missing on a task (Box user), highlight the row and update the value.
 
@@ -40,14 +41,14 @@ If a destination is missing on a task (Box user), highlight the row and update t
 3. Select **Save path**.
 
 >[!Note]
-> Destinations might not be visible on the UI due to admin access limitations, multi-geo tenant issues, recent site creation delays, or special characters in the destination path. If this occurs, please upload the data using a CSV file as described in the next section.
+> Destinations might not be visible on the UI due to admin access limitations, multi-geo tenant issues, recent site creation delays, or special characters in the destination path. If this occurs, upload the data using a CSV file as described in the next section.
 
 ## Upload destinations using a CSV file
 
 If there are many destinations to edit, you can choose to upload a bulk destinations CSV file. 
 
 1. Select **Upload destinations** from the menu bar to activate the upload destinations panel.
-2. Download the CSV template to your computer. The template lists all migration tasks you haven't run.
+2. Download the CSV template to your computer. The template lists all never-run migration tasks.
 3. Input your destinations in the correct [destination path format](#destination-path-format) by adding to or modifying the "Destination path (to be added/modified)" column in the downloaded CSV template. Save your file as a .csv file with any name you wish.
 4. Select the **Browse** button to upload the file you saved. The destinations are validated upon uploading. The validation process may take a while and a validation report is generated if issues are found. We strongly recommend you complete the validation.
 5. Ensure all destinations pass the validation, then select **Save**.

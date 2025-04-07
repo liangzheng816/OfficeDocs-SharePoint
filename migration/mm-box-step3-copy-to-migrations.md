@@ -1,7 +1,7 @@
 ---
-ms.date: 03/24/2025
+ms.date: 04/07/2025
 title: "Step 3: Copy to migrations tab for Box migration"
-ms.reviewer: 
+ms.reviewer: kbchen
 ms.author: heidip
 author: MicrosoftHeidi
 manager: jtremper
