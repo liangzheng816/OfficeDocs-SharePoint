@@ -49,8 +49,8 @@ Use any text editor, or an application like Microsoft Excel, to create the CSV f
 |Column 4 "Target Web" | *Required*. Enter the destination SharePoint site URL where the files are to be migrated. |
 |Column 5 "Target DocLib" | *Required*. Enter the name of the document library with the SharePoint site where the files are to be migrated. |
 |Column 6 "Target SubFolder" | *Optional*. Enter the name of the subfolder in the document library. If this column is left empty, the files are moved to the root level. |
-|Column  7 "RegisterAsHubSite" |*Optional.*  To register a site as a hub site after migration, enter the name of hub site and leave the next column, AssociateWithHubURL, blank. For SharePoint site migration only. |
-|Column 8 "AssociateWithHubURL" |*Optional.* To associate the site to another hub site, enter the URL of an existing hub site. In this case, column 7 "RegisterAsHubSite" is left blank. For SharePoint site migration only. |
+|Column  7 "RegisterAsHubSite" |*Optional.*  To register a site as a hub site after migration, enter the name of hub site and leave the next column, AssociateWithHubURL, blank. This option is only for SharePoint site migration. |
+|Column 8 "AssociateWithHubURL" |*Optional.* To associate the site to another hub site, enter the URL of an existing hub site. In this case, column 7 "RegisterAsHubSite" is left blank. This options is only for SharePoint site migration. |
 
 >[!Important]
 >**Hub site association:** Registering and associating hubsites occurs at the final stage of the migration. If you terminate a task before it completes, the hub site work may not be performed.  SPMT will not change the hub association if it finds the site is already associated to a hub site.  A site will not be -"un-registered" if it already registered as a hub site.
