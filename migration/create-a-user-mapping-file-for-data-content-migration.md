@@ -31,7 +31,7 @@ SPMT enables you to migrate your files from SharePoint on-premises document libr
 > [!NOTE]
 > The SharePoint Migration Tool isn't currently available for users of Office 365 operated by 21Vianet in China.
 
-You can use the default user-mapping file when you migrate data from a local file share or on-premises SharePoint Server document library. Or, you can create your own mapping file by using the following guidelines. Use any text editor, or an application like Microsoft Excel, to create this CSV file.
+You can use the default user-mapping file when you migrate data from a local file share or on-premises SharePoint Server document library. Or, you can create your own mapping file by using the following guidelines. You can create the CSV file using any text editor, or an application like Microsoft Excel.
 
 ## CSV file format
 
