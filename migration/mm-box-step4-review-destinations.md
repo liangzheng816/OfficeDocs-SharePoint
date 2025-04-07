@@ -20,7 +20,7 @@ ms.collection:
 - highpri
 - m365initiative-migratetom365
 search.appverid: MET150
-description: Review your destination paths for your Box migration while using Migration Manager.
+description: Review your destination paths for your users and items your Box migration while using Migration Manager. Covers SharePoint and OneDrive URL and OneDrive User Principal Name (UPN) types.
 ---
 
 # Step 4: Review destination paths
