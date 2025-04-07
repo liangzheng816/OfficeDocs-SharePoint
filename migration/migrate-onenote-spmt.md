@@ -24,13 +24,13 @@ description: "How to migrate OneNote folder using the SharePoint Migration Tool 
 The SharePoint Migration Tool (SPMT) supports migrating your OneNote folders to Microsoft 365.
 But before migrating your OneNote folders, it's important to understand a little about their file structure.
 
-On your computer, a OneNote Notebook is presented as a normal folder. For each Notebook, there's a *.onetoc2* file created under the root folder of the Notebook folder. You can have as many Notebooks as you want.
+On your computer, a OneNote Notebook is presented as a normal folder. For each Notebook, there's a **.onetoc2** file created under the root folder of the Notebook folder. You can have as many Notebooks as you want.
 
 ![Screenshot of a OneNote notebook icon of a folder, with a ONETOC file underneath the folder.](media/onenote-file-1.png)
 
-If you create section groups in your Notebook, those groups are also presented as a folder. Under each section group, you can create multiple sections, and each one of those sections is presented as *.one* file in file system.
+If you create section groups in your Notebook, those groups are also presented as a folder. Under each section group, you can create multiple sections, and each one of those sections is presented as **.one** file in file system.
 
-You can create multiple pages within a section, but the content of those pages is contained in the same *.one* file as the section to which they belong.
+You can create multiple pages within a section, but the content of those pages is contained in the same **.one** file as the section to which they belong.
 
 ![A screenshot of a section in a OneNote.](media/onenote-file-2.png)
 
