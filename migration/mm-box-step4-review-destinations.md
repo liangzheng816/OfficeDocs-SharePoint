@@ -48,7 +48,7 @@ If a destination is missing on a task (Box user), highlight the row and update t
 If there are many destinations to edit, you can choose to upload a bulk destinations CSV file. 
 
 1. Select **Upload destinations** from the menu bar to activate the upload destinations panel.
-2. Download the CSV template to your computer. The template lists all migration tasks you haven't run.
+2. Download the CSV template to your computer. The template lists all never-run migration tasks.
 3. Input your destinations in the correct [destination path format](#destination-path-format) by adding to or modifying the "Destination path (to be added/modified)" column in the downloaded CSV template. Save your file as a .csv file with any name you wish.
 4. Select the **Browse** button to upload the file you saved. The destinations are validated upon uploading. The validation process may take a while and a validation report is generated if issues are found. We strongly recommend you complete the validation.
 5. Ensure all destinations pass the validation, then select **Save**.
