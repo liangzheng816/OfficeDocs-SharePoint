@@ -174,7 +174,7 @@ If you wish to use your system proxy settings, use one of these methods:
 ![Edit the config file to comment out the proxy setting](media/spmt-proxy-edits.png)  
 7. Restart SPMT.
 
-### Additional Errors
+### Other Errors
 
 |Error |Description |
 |:-----|:-----------|
