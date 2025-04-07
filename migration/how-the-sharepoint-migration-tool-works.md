@@ -1,5 +1,5 @@
 ---
-ms.date: 03/13/2018
+ms.date: 04/07/2025
 title: "How does the SharePoint Migration Tool work?"
 ms.reviewer: 
 ms.author: heidip
@@ -31,7 +31,7 @@ description: The SharePoint Migration Tool simplifies migrating your data from o
 >[!Note]
 > Use a Site Collection administrator account on the target SharePoint site when you're prompted for credentials.
   
-**Authentication:** After you open the tool, you must first authenticate to the destination, which is the tenant you'll migrate your files to. Providing your user name and password to the tenant associates the migration jobs you submit to this account. This functionality allows you to resume your migration from another computer, if needed, by logging in with the same credentials. This account should be a site admin of the destination you're migrating to. The following authentication methods are supported:
+**Authentication:** After you open the tool, you must first authenticate to the destination, which is the tenant you migrate your files to. Providing your user name and password to the tenant associates the migration jobs you submit to this account. This functionality allows you to resume your migration from another computer, if needed, by logging in with the same credentials. This account should be a site admin of the destination you're migrating to. The following authentication methods are supported:
 
 - NTLM
 - Kerberos
@@ -65,7 +65,7 @@ Each container is dedicated to a customer and not reused. The data is stored in 
   
 A random, single-use default container key is generated programmatically and is only valid for three days. This key is the only way to gain access to the container. SharePoint never stores the key.
   
-The container itself lives longer than the key. The container is purged 30 to 90 days after its creation. The container is housed in shared Microsoft storage outside the tenant but within the region. It's protected by the container key. For "multi-geo" customers, containers are generated based on the destination URL to dictate what geo it will be stored in.
+The container itself lives longer than the key. The container is purged 30 to 90 days after its creation. The container is housed in shared Microsoft storage outside the tenant but within the region. It's protected by the container key. For "multi-geo" customers, containers are generated based on the destination URL to dictate what geo it's stored in.
   
 There are two defenses in place that protect you if your key is lost or someone else obtains it. First, the container only enables read/write operations. The container has no list. You would need to know the details of the files in the container to read them or write to them. Second, the files are encrypted at rest by using AES-256-CBC.
 
