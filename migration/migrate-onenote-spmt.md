@@ -34,7 +34,7 @@ You can create multiple pages within a section, but the content of those pages i
 
 ![A screenshot of a section in a OneNote.](media/onenote-file-2.png)
 
-When you open the OneNote application, the notebook, section groups, and sections appear to the left on the screen, with individual section pages you can put content into on the right on the screen:
+When you open the OneNote application, the notebook, section groups, and sections appear to the left side of the application. Individual section pages you can put content into are on the right side of the application:
 
 ![A screenshot of the OneNote application showing the notebook name, section groups with sections on the left-hand side of the screen, and an empty section page on the right side of the screen.](media/onenote-file-3.png)
 
