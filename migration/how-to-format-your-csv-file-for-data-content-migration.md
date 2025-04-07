@@ -41,9 +41,9 @@ Use any text editor, or an application like Microsoft Excel, to create the CSV f
 
 ### Column definitions  
   
-|Column content|Description|
-|:-----|:-----|
-|Column 1 "Source" | *Required*. Enter an on-premises SharePoint Server site URL or the path to a local file share. For SharePoint Server 2013 and 2016, you can also use the log-in name or the SID in this column. |
+|Column content |Description |
+|:--------------|:-----------|
+|Column 1 "Source" | *Required*. Enter an on-premises SharePoint Server site URL or the path to a local file share. For SharePoint Server 2013 and 2016, you can also use the log-in name or the Security Identifier (SID) in this column. |
 |Column 2 "Source DocLib" | *Optional*. Enter the name of the SharePoint Server document library that you're migrating. If you leave this field empty, all document libraries are migrated. This column needs to be empty when migrating from a local file share. |
 |Column 3 "Source SubFolder" | *Optional*. Enter the name of the subfolder in the document library. If this column is left empty, the migration starts from the root. If there's a value in this column, the migration starts from the subfolder. This column needs to be empty when migrating from a local file share. |
 |Column 4 "Target Web" | *Required*. Enter the destination SharePoint site URL where the files are to be migrated. |
