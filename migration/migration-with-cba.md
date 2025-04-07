@@ -30,11 +30,11 @@ SPMT allows customers to use Azure App Registrations with certificate authentica
 
 ### 1. Register an application
 
-Follow [the instructions](/entra/identity-platform/quickstart-register-app?tabs=certificate) to register an application in the Microsoft Entra admin center. Let's name this application 'MigApp'.
+Follow [the instructions](/entra/identity-platform/quickstart-register-app?tabs=certificate) to register an application in the Microsoft 365 admin center. Let's name this application 'MigApp'.
 
 ### 2. Grant permissions
 
-1. In the Entra admin center, go to **Application > App registrations** and select 'MigApp' from the **All applications** tab.
+1. In the Microsoft 365 admin center, go to **Application > App registrations** and select 'MigApp' from the **All applications** tab.
 2. Next, grant the necessary API permissions under **API Permissions** page.
 3. To limit 'MigApp' to move content into specific SharePoint sites, grant the 'Sites.Selected' permission under the SharePoint and Microsoft Graph API.
 
@@ -43,7 +43,7 @@ Follow [the instructions](/entra/identity-platform/quickstart-register-app?tabs=
 - Microsoft Graph API:
   - 'Sites.Selected': Required for site-related operations.
 
-4. To allow 'MigApp' to move content into all SharePoint sites, grant ‘Sites.FullControl.All’ permission under the SharePoint and Microsoft Graph API.
+4. To allow 'MigApp' to move content into all SharePoint sites, grant 'Sites.FullControl.All' permission under the SharePoint and Microsoft Graph API.
 
 - SharePoint API:
   - 'Sites.FullControl.All': Required for full control of all site collections.
