@@ -66,7 +66,7 @@ Here's an example of the CSV file format. The first row shows files that are bei
 - If the language of the destination SharePoint site isn't English, check the internal name of the "Shared Documents" Document library at `https://contoso.sharepoint.com/sites/SampleSite/_layouts/15/viewlsts.aspx?view=14`.
 
 > [!IMPORTANT]
-> All columns detailed above must be present and can be blank if not needed.
+> All columns detailed in the previous section must be present and can be blank if not needed.
   
 ![Spreadsheet view of SharePoint Migration Tool sample format when using a CSV file.](media/73fadfad-77ad-4d3a-b738-bc7063bc2659.jpg)
   
