@@ -49,7 +49,7 @@ Add-SPOOrgAssetsLibrary -LibraryUrl <URL> [-ThumbnailUrl <URL>] [-OrgAssetType I
 
 - *ThumbnailURL* is the URL for the image file that you want to appear in the card's background in the file picker; this image must be on the same site as the library. The name publicly displayed for the library is the organization's name. 
 
-- *OrgAssetType* must be ImageDocumentLibrary. For now search functionality only supports ImageDocumentLibrary. 
+- *OrgAssetType* must be ImageDocumentLibrary. For now, search functionality only supports ImageDocumentLibrary. 
 
 - *CopilotSearchable* is the toggle of the search functionality. To enable the organization image library, set CopilotSearchable to true in this location. 
 If you don't specify the *CdnType*, it enables a private CDN by default. 
@@ -73,9 +73,9 @@ Set-SPOOrgAssetsLibrary -LibraryUrl <URL> [-ThumbnailUrl <URL>] [-OrgAssetType I
 > - Ensure SharePoint Management Shell version is 16.0.24915.12000 or later.
 > - Organization asset libraries can currently be searched from PowerPoint and Word Copilot chat, on both desktop and web. Support for further Copilot features, endpoints, and M365 applications are currently in development.
 > - This feature is available in version 2409 in Current Channel (CC) and in version 2502 in the Monthly Enterprise Channel (MEC).
-> - You can only specify one organization image library to be searchable. For multi-geo tenants you can specify 1 per region.
+> - You can only specify one organization image library to be searchable. For multi-geo tenants, you can specify 1 per region.
 > - If you don’t already have an organization asset library created, use Microsoft PowerShell to specify an existing library as an organization asset library
-> - For the organization assets library to appear to a user in PowerPoint or Word on the web, the user must be assigned a license to Office 365 E3 or E5. Users who use the Word, Excel, or PowerPoint desktop app also need Microsoft 365 Apps Version 2002 or later.
+> - For a user to see the organization's asset library in PowerPoint or Word on the web, they must have an Office 365 E3 or E5 license. Users who use the Word, Excel, or PowerPoint desktop app also need Microsoft 365 Apps Version 2002 or later.
 > - Allow up to 24 hours for the organization assets library to appear to a user in the desktop apps. 
 - Users need at least read permissions on the root site for your organization for the organization assets library to appear in the desktop apps.
 
