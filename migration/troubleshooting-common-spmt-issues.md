@@ -41,7 +41,7 @@ This article describes common issues and errors you may encounter when using the
 |*Scan file failure: The folder name is invalid* |See [Invalid file names and file types in OneDrive and SharePoint](https://support.office.com/article/64883a5d-228e-48f5-b3d2-eb39e07630fa). |
 |*Scan file failure: Target path is too long* |See [Invalid file names and file types in OneDrive and SharePoint](https://support.office.com/article/64883a5d-228e-48f5-b3d2-eb39e07630fa). </br>The entire path, including the file name, must contain fewer than 400 characters for OneDrive, OneDrive, and SharePoint. |
 |*Scan File Failure: Not enough disk space to pack the file* |The disk space available for the migration working folder is too small for the size of your source file. Enlarge your size of your working folder and try again. |
-|*Packaging failure: Cannot open file* |Packaging failed due to a non-existant source. Check if you can access the source root folder. |
+|*Packaging failure: Cannot open file* |The packaging failed due to a nonexistant source. Check if you can access the source root folder. |
 |*A duplicate task has already been created.* |The CSV file used to do bulk migration can't have duplicate entries. Remove the duplicate line(s) and try again. |
 |*The parent folder was not migrated* |The parent folder wasn't migrated, therefore all items under the folder failed to migrate. Check your parent folder and retry your migration. |
 |*Task #, parameter 1. The source path should not be empty* |Confirm that the source path column in the CSV file has a value. |
