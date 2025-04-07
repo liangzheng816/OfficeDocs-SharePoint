@@ -64,7 +64,7 @@ Follow [the instructions](/entra/identity-platform/quickstart-register-app?tabs=
 ### 3. Upload certificate
 
 Go to the **Certificates & secrets** page, and select the **Certificates** tab.
-- Upload the public key of your X.509 certificate that is issued by the Enterprise Public Key Infrastructure (PKI).
+- Upload the public key of your X.509 certificate issued by the Enterprise Public Key Infrastructure (PKI).
 - Copy the value in 'Thumbprint' for future use.
 
 ## Grant destination site access permission
@@ -97,7 +97,7 @@ Copy **CertificateConfig.json** under %appdata%\Microsoft\MigrationToolStorage. 
 - If the file isn't provided, SPMT prompts you to enter SharePoint admin credentials.
 
 Additionally, if 'MigApp' doesn't have sufficient permissions, all migrations fail with one of the following error messages:
-- "Sorry, you can’t create this site. Please enter a different SharePoint Online site URL or contact your administrator" if the target site doesn't exist.
+- "Sorry, you can’t create this site. Enter a different SharePoint Online site URL or contact your administrator" if the target site doesn't exist.
 - "Invalid site URL" if the target site already exists.
 
 ## Setup for Workflow migration
