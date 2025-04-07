@@ -1,5 +1,5 @@
 ---
-ms.date: 03/24/2025
+ms.date: 04/07/2025
 title: "Step 6: Migrate and monitor Box migration"
 ms.reviewer: 
 ms.author: heidip
@@ -47,14 +47,13 @@ Check the [status code](/sharepointmigration/mm-cloud-reports#status-codes) in *
 After resolving the issues related to warnings or failed tasks, migrate the tasks again to ensure the successful migration of all required files.
 
 ## Delta sync
-When a migration task is conducted for the first time, we call it an initial migration or new migration. After the initial migration, the destination can't be changed. If the task is migrated again, we call it a delta sync. We may also call it an incremental sync, or incremental migration. Learn more about [file transfer behaviors in a detal sync](mm-delta-sync.md).
+When a migration task is conducted for the first time, we call it an initial migration or new migration. After the initial migration, the destination can't be changed. If the task is migrated again, we call it a delta sync. We may also call it an incremental sync, or incremental migration. Learn more about [file transfer behaviors in a delta sync](mm-delta-sync.md).
 
 ## Migration lanes
 
 At a maximum, only 50 task rows can run simultaneously. This total includes both scanning and migrating. If you select more than that total combined number and start scanning or migrating, only 50 randomly chosen rows are going to run. The rest of the tasks are going to be queued.
 
-As a task row completes, another from the queue starts migrating or scanning automatically. While the maximum number of task rows allowed is set to 50, if a migration experiences any slowdowns or back-off requests, it may drop lower than this number to keep the migration stable.
+As a task row completes, another from the queue starts migrating or scanning automatically. The maximum number of task rows allowed is set to 50. If a migration experiences any slowdowns or back-off requests, it may drop lower than this number to keep the migration stable.
 
 ## Schedule a migration
-Migration Manager allows you to schedule a migration for one or multiple tasks. This is a one-time migration event. When the scheduled time arrives, Migration Manager will start queuing the scheduled tasks. The queued tasks will begin migrating immediately if the migration lane limit is not reached.
-
+Migration Manager allows you to schedule a migration for one or multiple tasks. This migration is a one-time migration event. When the scheduled time arrives, Migration Manager starts queuing the scheduled tasks. The queued tasks begin migrating immediately if the migration lane limit isn't reached.
