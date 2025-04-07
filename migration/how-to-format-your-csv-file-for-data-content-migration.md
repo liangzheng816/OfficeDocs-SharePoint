@@ -165,8 +165,10 @@ If you wish to use your system proxy settings, use one of these methods:
 1. If SPMT can't upgrade itself, go to **%localappdata%\Apps\SharePointMigrationTool\InstallerClient.**
 2. Open the **installclient.exe.config** file.
 3. Add the following configuration at line 31, just after the ```<appSettings></appSettings``` tag:  
-![Edit the config file](media/spmt-proxy-edits.png)  
-4. Launch installclient.exe and SPMT should auto-upgrade to latest SPMT release.
+
+![Edit the config file](media/spmt-proxy-edits.png) 
+
+4. Launch installclient.exe and SPMT should autoupgrade to latest SPMT release.
 5. Open the **microsoft.sharepoint.migrationtool.advancedapp.exe.config** file.
 6. Uncomment the default proxy setting:  
 ![Edit the config file to comment out the proxy setting](media/spmt-proxy-edits.png)  
@@ -176,6 +178,6 @@ If you wish to use your system proxy settings, use one of these methods:
 
 |Error |Description |
 |:-----|:-----------|
-|**Destination site cannot associate to an invalid hub site**|This error occurs if the destination site is already registered as a hub site.  SPMT doesn't change the hub registration of a destination site.|
+|**Destination site cannot associate to an invalid hub site**|This error occurs if the destination site is already registered as a hub site. SPMT doesn't change the hub registration of a destination site.|
 |**Destination site cannot associate to an invalid hub site**|This error happens if you're attempting to associate with an invalid hub site. Check the URL and try again.|
 |**Destination site associates with an existing hub, it cannot be changed during migration**| This error occurs if the destination site is already associated with a different hub. SPMT doesn't change the association a destination site.|
