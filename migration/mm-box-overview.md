@@ -30,10 +30,10 @@ Collaborate all in one place by migrating your Box documents, data, and users to
 ## How does it work?
 
 - **Step 1:** [Connect to Box](mm-box-step1-connect.md). Sign in to your Box account and add the Microsoft 365 migration app to your Box account custom apps.
-- **Step 2:** [Scan and assess](mm-box-step2-scan-assess.md). Box user accounts are scanned automatically for you. Once the scans are complete, download the generated reports and logs to investigate any possible issues that might block your migration.
+- **Step 2:** [Scan and assess](mm-box-step2-scan-assess.md). Add tasks for scanning. Once the scans are complete, download Scan reports to investigate any possible issues that might block your subsequent migration. You can skip this step in Box migration.
 - **Step 3:** [Copy to Migrations list](mm-box-step3-copy-to-migrations.md). After a Box user is scanned and determined to be ready, add them to your migration list.
-- **Step 4:** [Review destination paths](mm-box-step4-review-destinations.md). We automatically map source paths to any exactly matching destination paths. Ensure content is being copied to the right place by reviewing and modifying as needed for each destination path.
-- **Step 5:** [Map identities](mm-box-step5-map-identities.md). Map your groups and users in Box to an account in Microsoft 365 to migrate your Box sharing settings.
+- **Step 4:** [Review destination paths](mm-box-step4-review-destinations.md). Review destinations before migrating as destinations cannot be modified once migration starts.
+- **Step 5:** [Map identities](mm-box-step5-map-identities.md). Align your domain, users, and groups in the source with those in Microsoft 365 to ensure accurate migration of file metadata and permissions.
 - **Step 6:** [Migrate and Monitor](mm-box-step6-migrate-monitor.md). After reviewing your migration setup, migrate your Box accounts and monitor the progress.
 
 ## Get started
@@ -50,11 +50,14 @@ Navigate to [Microsoft 365 Admin Center Home - Setup - Migration and imports](ht
 
   >[!IMPORTANT]
   >
-  > Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+  > Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization.
 
 - **Access to the source**: Have Box account credentials that have **Read** access to any Box user account you plan to migrate.
 - **Prerequisites installed:** Make sure you have the necessary prerequisites installed.
 
-## Box notes
+Once a migration project is created, you can start connecting to the source as described in the next step. 
 
-Migration Manager now supports converting Box notes to .docx format. However, certain elements such as File Preview, Table of Contents, and Annotations are omitted during the conversion process.
+> [!NOTE]
+> There are [file size limitations](/sharepointmigration/mm-file-size-limitations) and [unsupported files](/sharepointmigration/mm-unsupported-files) in Migration Manager.
+
+## [**Step 1: Connect to Box**](mm-box-step1-connect.md)
