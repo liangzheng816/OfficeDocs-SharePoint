@@ -38,6 +38,14 @@ Once you review the tasks (Box users), confirm the destinations, and correctly m
 >[!Note]
 > Starting your migration only copies content from your Box account to the location you specified in Microsoft 365. 
 
+## Download reports
+
+**Migration summary report** and **Migration detailed reports** are available to assist you in troubleshooting. [Download the generated reports](/sharepointmigration/mm-cloud-reports#download-migration-reports) to investigate any possible issues that occurred during the migration. 
+
+Check the [status code](/sharepointmigration/mm-cloud-reports#status-codes) in **Migration summary report** to address task-level errors. For file-level errors, refer to the [failure code (*ResultCode*)](/sharepointmigration/mm-cloud-reports#failure-codes) in the **Migration detailed report**.
+
+After resolving the issues related to warnings or failed tasks, migrate the tasks again to ensure the successful migration of all required files.
+
 ## Delta sync
 When a migration task is conducted for the first time, we call it an initial migration or new migration. After the initial migration, the destination can't be changed. If the task is migrated again, we call it a delta sync. We may also call it an incremental sync, or incremental migration. Learn more about [file transfer behaviors in a detal sync](mm-delta-sync.md).
 
