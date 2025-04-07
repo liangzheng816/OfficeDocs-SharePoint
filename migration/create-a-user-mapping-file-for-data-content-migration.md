@@ -38,7 +38,7 @@ You can use the default user-mapping file when you migrate data from a local fil
 > [!IMPORTANT]
 > For **SharePoint Server 2010** migrations, only the log-in name is supported in column A.
 >
-> For **SharePoint Server 2013 and later**, you can use either the log-in name or the SID in column A.
+> For **SharePoint Server 2013 and later**, you can use either the log-in name or the Security Identifier (SID) in column A.
 
 For all SharePoint Server versions:
 
