@@ -1,7 +1,7 @@
 ---
 ms.date: 04/07/2024
 title: "Review the destination paths for your Box migration with Migration Manager"
-ms.reviewer: 
+ms.reviewer: kbchen
 ms.author: heidip
 author: MicrosoftHeidi
 manager: jtremper
