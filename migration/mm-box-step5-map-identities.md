@@ -25,31 +25,42 @@ description: "Step 5:  Map Box identities with Migration Manager."
 
 # Step 5: Map identities of Box accounts to Microsoft 365 accounts
 
-Identity Mapping is when you match the user and group identities that have access to your source environment (in this case Box) and map those identities to Microsoft 365 user and group identities. This process is important to migration. If identities aren't properly set up before migration, it can result in users losing access to content. It can also result in information being incorrect at the destination.
+Identity Mapping is the process of matching the domain, user, and group identities in the source to those in Microsoft 365. This process is important to migration. If identities aren't properly set up before migration, it can result in users losing access to content. It can also result in file metadata being incorrect at the destination.
 
-Map your groups and users in Box to groups and users in Microsoft 365 to migrate your Box sharing settings.
-
-1. Select the **User migrations** tab.
-2. Select **Map identities** on the menu bar.
-3. Select **Auto-map** to have Migration Manager map the identities for you or select **Import users and groups** to upload the values using a CSV file.
-
-## Mapping individual identities
-
-1. To edit a single mapping, highlight the row. Enter the mapping Microsoft 365 user account.
-2. Select **Save**.
-
-## Import users and groups
-
-If you have many mappings to edit, you can choose to upload a .csv file containing your users and groups mappings. Download the file template to your computer and enter your destinations. Save your file as a .csv file using any name you wish.
-
-Upload your own users and groups mappings using the M.
-1. Select **Import users and groups**.
-2. Download the mapping.csv template file, inserting your own mappings. You can name the .csv any name you wish.
-3. Choose **Select file**. Navigate to your mapping .csv file and select it.
-4. Select **Save**.
-5. Select **Close**.
+To map your identities, select **Map identities** from the menu bar on the **User migrations** tab.
 
 > [!Important]
-> Make sure to verify your mappings before uploading the file. The file isn't validated, and once migration starts, it can't be changed.
+> - Before mapping the identities, ensure you have created all the necessary identities (domains, users and groups) in Microsoft 365.
+> - Ensure all the required identity entries (domains, users and groups) in the source are fully mapped before migration.
+
+## Automap
+By default, Migration Manager automaps the identities for you based on the exact match of identity names between the source and the destination. 
+
+In most cases, automapping is unlikely to map all the identities. You can manually edit individual identities or import identities.
+
+## Edit individual identities
+
+To edit a single mapping discovered in the auto-mapping process:
+1. Highlight the row to activate the mapping panel.
+2. Input the equivalent Microsoft 365 domain, user, or group.
+3. Select **Save**.
+
+## Import identities
+
+If you want to add one single user mapping or group mapping:
+1. Select the **Import users and groups** button from the menu bar to activate the importing panel.
+2. Choose **Sing user mapping** or **Sing group mapping**.
+3. Input the user or group in both the source and the destination textboxes.
+4. Select **Save**.
+
+If you have many mappings to edit:
+1. Select the **Import users and groups** button from the menu bar to activate the importing panel.
+2. Choose **Batch upload**.
+3. Download the CSV template to your computer, adding to or modifying the "Microsoft 365 identity" column in the downloaded CSV template. Save your file as a .csv file with any name you wish.
+4. Choose **Select file** to upload the file you saved.
+5. Select **Save**.
+
+> [!Important]
+> Make sure to verify your mappings before uploading the file. The file isn't validated.
 
 ## [**Step 6: Migrate and monitor**](mm-box-step6-migrate-monitor.md)
