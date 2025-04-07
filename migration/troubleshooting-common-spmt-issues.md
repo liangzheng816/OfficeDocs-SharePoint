@@ -59,12 +59,12 @@ This article describes common issues and errors you may encounter when using the
 |0x0201000C |Check your credentials and then reenter your username and password. |
 |0x02010017 |You must be a site collection admin. |
 |0x02060009 | 1 - The site collection can't be created because the URL is already in use or an invalid URL. |
-|           | 2 -  The site collection can't be created because the URL contains invalid character. |
-|           | 3 -  The site collection can't be created or updated. |
+|           | 2 - The site collection can't be created because the URL contains invalid character. |
+|           | 3 - The site collection can't be created or updated. |
 |0x02060007 | 1 - The site collection can't be created because the URL is already in use or an invalid URL. |
-|           | 2 -  The site collection can't be created because the URL contains invalid character. |
+|           | 2 - The site collection can't be created because the URL contains invalid character. |
 |0x02010018 | 1 - Check your credentials and then try again. |
-|           | 2 -  A problem occurred accessing SharePoint. Check your credentials and try again. |
+|           | 2 - A problem occurred accessing SharePoint. Check your credentials and try again. |
 |           | 3 - A problem occurred accessing SharePoint. Check your credentials and your network connection and try again. |
 |           | 4 - A problem occurred accessing SharePoint. Check your credentials and your site URL for accuracy and try again. |
 |           | 5 - A problem occurred accessing SharePoint. Check your credentials and the format of your URL. Retry. |
@@ -89,17 +89,17 @@ This article describes common issues and errors you may encounter when using the
 |0x02080001 |The file in the package has been changed or deleted while uploading. All files and folders in the SPMT working folder, %appdata%\Microsoft\MigrationToolStorage, must be closed. Restart your migration. |
 |0x02010006 |The source SharePoint site doesn't have any defined role definitions. Check to see if your role exists when accessing source site. |
 |0x02040009 |The package can't be created because the directory can't be found. All files and folders in the SPMT working folder, %appdata%\Microsoft\MigrationToolStorage, must be closed. Restart your migration. |
-|0x02010020 |Disable migrating version history in SPMT settings or enable versioning in SPO. |
-|0x0201000E |Check if the global setting has filtered out special characters in the target path or if the path has unsupported characters. |
+|0x02010020 |Disable migrating version history in SPMT settings or enable versioning in Microsoft 365's SharePoint. |
+|0x0201000E |Check if the global setting is filtering out special characters in the target path or if the path has unsupported characters. |
 |0x02010016 |We're unable to find your SharePoint Server user. Make sure you're a site collection admin. |
 |0X0201000F |Invalid site URL. Check if the site URL is valid. Try to access the URL via a browser. |
 |0x0207001  |You do not have access to the task folder. Check if you can access %appdata%\Microsoft\MigrationToolStorage. |
-|0x01410010 |A failure occurred because of missing dependencies on list items. Check the FailureSummaryReport.csv for details. Check if the dependencies have been included in your migration scope. |
-|0x01510001 |Packages failed to upload. 	If you have customized Azure Storage, check if you can access the Azure Storage and check if you can access the target site. Try migrating again. |
+|0x01410010 |A failure occurred because of missing dependencies on list items. Check the FailureSummaryReport.csv for details. Check if the dependencies are included in your migration scope. |
+|0x01510001 |Packages failed to upload. If Azure Storage is customized, check if you can access the Azure Storage and check if you can access the target site. Try migrating again. |
 |0x01510001 |Failed to Upload the Job to Server: Upload file failed during migration. |
 |0x02070009 |Several packages failed to upload. Pause the task and check your network connection. |
 |0x01710009 |A failure occurred due to job end failures; some items failed in the package. Restart migration. |
-|0x01710009 |Errors or timeout for Server Processing the file: Not all the items in the package have been migrated. |
+|0x01710009 |Errors or timeout for Server Processing the file: Not all the items in the package are migrated. |
 |0x01610001 |The Azure container is expired. Retry migration task. |
 |0x01710006 |Errors or timeout for Server Processing the file: Job Fatal Error. |
 |0x01710004 |Errors or timeout for Server Processing the file. Fail to look up folder name. The item may exist in other list or site in the same site collection. Or the item is in the recycle bin. |
@@ -137,6 +137,6 @@ This article describes common issues and errors you may encounter when using the
 |Migration failed due to page migration failed |Migration of the page failed, and all the web parts on that page. |Retry migrating the failed page. If the page succeeds, then all the web parts on that page will successfully migrate. |
 |Migration failed due to it is an unsafe web part and the server setting 'NoScript' |When the setting **NoScript** is turned on in the target SharePoint site, the web parts are considered to be unsafe as they could have the ability to execute JavaScript scripts or other code. Web parts will be blocked from migrating. |Turn off the **NoScript** setting on the target SharePoint site so that these web parts will be unblocked. **Important**: Your site may be at risk if you turn off the settings. For more information, see [Allow or prevent custom script](/sharepoint/allow-or-prevent-custom-script). |
 |Migration failed due to invalid XML definition |The XsltListView web part and ListView web part contain an XML definition critical for the migration of these web parts. Sometimes the XML definition is invalid because of upgrading issues or server errors. |Delete the failed web part from the SharePoint Server source page. Re-add it and try the migration again. |
-|Migration failed due to invalid assembly name |The assembly name of the web part is critical for SPMT to migrate the web part. If the assembly of the web part can't be parsed from its SOAP response, the migration fails. |Check whether this web part is a supported "out-of-the box" (OOTB) web part. If it's supported, file a bug and we'll investigate. However, if the web part is a third-party web part, it isn't supported. |
+|Migration failed due to invalid assembly name |The assembly name of the web part is critical for SPMT to migrate the web part. If the assembly of the web part can't be parsed from its SOAP response, the migration fails. |Check whether this web part is a supported out-of-the box (OOTB) web part. If it's supported, file a bug and we'll investigate. However, if the web part is a third-party web part, it isn't supported. |
 |Migration failed due to web part connection failure. |The web part is connected to another web part that failed to migrate, causing both to fail. |Make sure the connected web part is migrated successfully. Retry your migration. |
 |Migration failed due to unable to map user |If the User field is a property of the web part, SPMT will attempt to map the user on the source web part (usually an on-premises user) to a user on the target SharePoint site. This error occurs when SPMT can't map to the user. |Confirm that a Microsoft 365 account is used to sync all on-premises users to SharePoint. |
