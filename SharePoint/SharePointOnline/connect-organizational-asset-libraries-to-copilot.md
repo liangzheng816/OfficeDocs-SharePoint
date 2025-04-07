@@ -22,12 +22,12 @@ description: "Learn how to enable Copilot to provide an on-brand asset experienc
 ---
 # Connect organizational asset libraries to Copilot for an on-brand experience
 
-Copilot can now search and retrieve enterprise assets directly from your organizational asset libraries (OALs). This new workflow helps organizations democratize access of approved brand assets and simplifies retrieval through Copilot chat. Create on-brand documents with quick access to company stock images, logos, icons and illustrations.
+Copilot can now search and retrieve enterprise assets directly from your organizational asset libraries (OALs). This new workflow helps organizations democratize access of approved brand assets and simplifies retrieval through Copilot chat. Create on-brand documents with quick access to company stock images, logos, icons, and illustrations.
 
 ## How does it work?
 
 - Assigning an organization image library authorizes Copilot to search and download content directly from the library. 
-- Powered by Designer, any image request that utilizes “brand” or “enterprise” in the prompt directs the query to search the assigned organization asset library. For example, “add a brand image of a warehouse” would query the assigned library for any image with associated metadata that matches “warehouse.”
+- Powered by Designer, any image request that utilizes "brand" or "enterprise" in the prompt directs the query to search the assigned organization asset library. For example, "add a brand image of a warehouse" would query the assigned library for any image with associated metadata that matches "warehouse."
 - Searching from Copilot utilizes image metadata stored within the OAL. Image tags, file name, description, and location are used to help find the most relevant results.
 ![Screenshot of searching for brand images in Copilot.](media/copilot-brand-image-search.png)
 
@@ -70,7 +70,7 @@ Set-SPOOrgAssetsLibrary -LibraryUrl <URL> [-ThumbnailUrl <URL>] [-OrgAssetType I
 
 > [!NOTE]
 > - You can only use image document libraries.
-> - Ensure SharePoint Management Shell version is above 16.0.24915.12000 
+> - Ensure SharePoint Management Shell version is 16.0.24915.12000 or later.
 > - Organization asset libraries can currently be searched from PowerPoint and Word Copilot chat, on both desktop and web. Support for further Copilot features, endpoints and M365 applications are currently in development.
 > - This feature is available in version 2409 in Current Channel (CC) and in version 2502 in the Monthly Enterprise Channel (MEC).
 > - You can only specify 1 organization image library to be searchable. For multi-geo tenants you can specify 1 per region.
