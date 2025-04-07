@@ -71,9 +71,9 @@ Set-SPOOrgAssetsLibrary -LibraryUrl <URL> [-ThumbnailUrl <URL>] [-OrgAssetType I
 > [!NOTE]
 > - You can only use image document libraries.
 > - Ensure SharePoint Management Shell version is 16.0.24915.12000 or later.
-> - Organization asset libraries can currently be searched from PowerPoint and Word Copilot chat, on both desktop and web. Support for further Copilot features, endpoints and M365 applications are currently in development.
+> - Organization asset libraries can currently be searched from PowerPoint and Word Copilot chat, on both desktop and web. Support for further Copilot features, endpoints, and M365 applications are currently in development.
 > - This feature is available in version 2409 in Current Channel (CC) and in version 2502 in the Monthly Enterprise Channel (MEC).
-> - You can only specify 1 organization image library to be searchable. For multi-geo tenants you can specify 1 per region.
+> - You can only specify one organization image library to be searchable. For multi-geo tenants you can specify 1 per region.
 > - If you don’t already have an organization asset library created, use Microsoft PowerShell to specify an existing library as an organization asset library
 > - For the organization assets library to appear to a user in PowerPoint or Word on the web, the user must be assigned a license to Office 365 E3 or E5. Users who use the Word, Excel, or PowerPoint desktop app also need Microsoft 365 Apps Version 2002 or later.
 > - Allow up to 24 hours for the organization assets library to appear to a user in the desktop apps. 
