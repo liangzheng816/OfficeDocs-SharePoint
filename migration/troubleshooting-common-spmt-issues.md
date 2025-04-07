@@ -86,7 +86,7 @@ This article describes common issues and errors you may encounter when using the
 |0x02040012 |The temporary storage on your local computer is too low. SPMT caches the package on the working folder. Expand your temporary storage and retry. |
 |0x02030003 |There are too many items with unique permissions. Simplify your permissions list by reducing the number of unique permissions. Retry your migration. |
 |0x02050001 |Local storage file is corrupted. The working folder was touched or modified during the migration. Retry your migration. |
-|0x02080001 |The file in the package has been changed or deleted while uploading. All files and folders in the SPMT working folder, %appdata%\Microsoft\MigrationToolStorage, must be closed. Restart your migration. |
+|0x02080001 |The file in the package was changed or deleted while uploading. All files and folders in the SPMT working folder, %appdata%\Microsoft\MigrationToolStorage, must be closed. Restart your migration. |
 |0x02010006 |The source SharePoint site doesn't have any defined role definitions. Check to see if your role exists when accessing source site. |
 |0x02040009 |The package can't be created because the directory can't be found. All files and folders in the SPMT working folder, %appdata%\Microsoft\MigrationToolStorage, must be closed. Restart your migration. |
 |0x02010020 |Disable migrating version history in SPMT settings or enable versioning in Microsoft 365's SharePoint. |
