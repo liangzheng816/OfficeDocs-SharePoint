@@ -37,7 +37,7 @@ description: The SharePoint Migration Tool simplifies migrating your data from o
 - Kerberos
 - Forms
 - ADFS
-- Multi-factor authentication
+- Multifactor authentication
 - SAML-based claims
 - Client certificate authentication
 
