@@ -1,5 +1,5 @@
 ---
-ms.date: 03/24/2024
+ms.date: 04/07/2024
 title: "Review the destination paths for your Box migration with Migration Manager"
 ms.reviewer: 
 ms.author: heidip
@@ -22,11 +22,12 @@ ms.collection:
 search.appverid: MET150
 description: Review your destination paths for your Box migration while using Migration Manager.
 ---
+
 # Step 4: Review destination paths
 
 On the **User migrations** tab, review the destination paths of the Box users you moved to the migration list, and make sure they're correct. A task (Box user) can't be migrated without a destination indicated. Once you start migrating content to a destination, the destination can't be modified.
 
-## Single destination edit
+## Editing a single destination
 
 If a destination is missing on a task (Box user), highlight the row and update the value.
 
@@ -40,7 +41,7 @@ If a destination is missing on a task (Box user), highlight the row and update t
 3. Select **Save path**.
 
 >[!Note]
-> Destinations might not be visible on the UI due to admin access limitations, multi-geo tenant issues, recent site creation delays, or special characters in the destination path. If this occurs, please upload the data using a CSV file as described in the next section.
+> Destinations might not be visible on the UI due to admin access limitations, multi-geo tenant issues, recent site creation delays, or special characters in the destination path. If this occurs, upload the data using a CSV file as described in the next section.
 
 ## Upload destinations using a CSV file
 
