@@ -77,7 +77,7 @@ Set-SPOOrgAssetsLibrary -LibraryUrl <URL> [-ThumbnailUrl <URL>] [-OrgAssetType I
 > - If you don’t already have an organization asset library created, use Microsoft PowerShell to specify an existing library as an organization asset library
 > - For a user to see the organization's asset library in PowerPoint or Word on the web, they must have an Office 365 E3 or E5 license. Users who use the Word, Excel, or PowerPoint desktop app also need Microsoft 365 Apps Version 2002 or later.
 > - Allow up to 24 hours for the organization assets library to appear to a user in the desktop apps. 
-- Users need at least read permissions on the root site for your organization for the organization assets library to appear in the desktop apps.
+> - Users need at least read permissions on the root site for your organization for the organization assets library to appear in the desktop apps.
 
 ## Best Practices
 
