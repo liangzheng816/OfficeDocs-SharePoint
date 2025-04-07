@@ -91,6 +91,8 @@ You can also create a budget in Microsoft Cost Management with [Bicep](/azure/co
 
 Budget helps you inform others about their spending to proactively manage costs and monitor how spending progresses over time. When You can also set up various types of cost alerts to monitor the consumption.
 
+You can view your invoices under **Billing** > **Invoices**. Use text search to filter for the invoices you want. You can also filter by **Status** and **Timespan**. You can also download the invoice in CSV format.
+
 ![Monitor consumption in Microsoft Cost Management](media/agents-sharepoint/cost-management.png)
 
 #### Adjusting consumption
