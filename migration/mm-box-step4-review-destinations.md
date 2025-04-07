@@ -65,6 +65,6 @@ If there are many destinations to edit, you can choose to upload a bulk destinat
 
 ## Pre-provision OneDrive
 
-If you choose OneDrive as the destination, [pre-provision OneDrive for users in your organization](../SharePoint/SharePointOnline/pre-provision-accounts.md) before migration. Otherwise, the OneDrive destinations aren't going to pass validation, causing migrations to fail.
+If you choose OneDrive as the destination, [pre-provision OneDrive for users in your organization](pre-provision-accounts.md) before migration. Otherwise, the OneDrive destinations aren't going to pass validation, causing migrations to fail.
 
 ## Go to [**Step 5: Map identities**](mm-google-step5-map-identities.md)
