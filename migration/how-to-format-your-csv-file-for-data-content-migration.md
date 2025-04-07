@@ -174,8 +174,8 @@ If you wish to use your system proxy settings, use one of these methods:
 
 ### Additional Errors
 
-|Error|Description|
-|:-----|:-----|
-|**Destination site cannot associate to an invalid hub site**|This error occurs if the destination site is already registered as a hub site.  SPMT won't change the hub registration of a destination site.|
+|Error |Description |
+|:-----|:-----------|
+|**Destination site cannot associate to an invalid hub site**|This error occurs if the destination site is already registered as a hub site.  SPMT doesn't change the hub registration of a destination site.|
 |**Destination site cannot associate to an invalid hub site**|This happens if you're attempting to associate with an invalid hub site. Check the URL and try again.|
-|**Destination site associates with an existing hub, it cannot be changed during migration**| This error occurs if the destination site is already associated with a different hub.  SPMT won't change the association a destination site.|
+|**Destination site associates with an existing hub, it cannot be changed during migration**| This error occurs if the destination site is already associated with a different hub. SPMT doesn't change the association a destination site.|
