@@ -28,8 +28,8 @@ In this article, you learn how to identify, monitor, and manage unlicensed OneDr
 ## Enforcement of policy changes for unlicensed OneDrive accounts
 
 > [!IMPORTANT]
-> Enforcement began on January 27, 2025.  The rollout has slowed to ensure a safe roll-out with sufficient time for admins to adjust. Admins should anticipate that it takes time for all unlicensed accounts to complete the enforcement process.  
-> 
+> Enforcement began on January 27, 2025.  The rollout has slowed to ensure a safe roll-out with sufficient time for admins to adjust. Admins should anticipate that it takes time for all unlicensed accounts to complete the enforcement process.  The initial enforcement rollout will be complete by October 29, 2025.
+
 - Unlicensed OneDrive accounts subject to a retention policy, retention period, or legal hold will be automatically archived after 93 days of license removal. While these accounts remain visible to admins through administrative tools, neither admins nor end users have access to their content. Access stays restricted until administrators take specific actions. (Note these changes don't apply to EDU, GCC, or DoD customers.)
 - Unlicensed accounts not covered by any retention policy or legal hold will be moved to the recycle bin after 93 days of license removal.
 
