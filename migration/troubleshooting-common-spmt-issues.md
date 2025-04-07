@@ -41,7 +41,7 @@ This article describes common issues and errors you may encounter when using the
 |*Scan file failure: The folder name is invalid* |See [Invalid file names and file types in OneDrive and SharePoint](https://support.office.com/article/64883a5d-228e-48f5-b3d2-eb39e07630fa). |
 |*Scan file failure: Target path is too long* |See [Invalid file names and file types in OneDrive and SharePoint](https://support.office.com/article/64883a5d-228e-48f5-b3d2-eb39e07630fa). </br>The entire path, including the file name, must contain fewer than 400 characters for OneDrive, OneDrive, and SharePoint. |
 |*Scan File Failure: Not enough disk space to pack the file* |The disk space available for the migration working folder is too small for the size of your source file. Enlarge your size of your working folder and try again. |
-|*Packaging failure: Cannot open file* |The packaging failed due to a nonexistant source. Check if you can access the source root folder. |
+|*Packaging failure: Cannot open file* |The packaging failed due to a nonexistent source. Check if you can access the source root folder. |
 |*A duplicate task has already been created.* |The CSV file used to do bulk migration can't have duplicate entries. Remove the duplicate lines and try again. |
 |*The parent folder was not migrated* |The parent folder wasn't migrated, therefore all items under the folder failed to migrate. Check your parent folder and retry your migration. |
 |*Task #, parameter 1. The source path should not be empty* |Confirm that the source path column in the CSV file has a value. |
@@ -132,7 +132,7 @@ This article describes common issues and errors you may encounter when using the
 |Error |Reason |Action |
 |:-----|:------|:------|
 |Migration not supported web part |Currently, SPMT doesn't support this web part. |Check the list of currently supported web parts: [SPMT supported web parts](spmt-supported-webparts.md). |
-|Migration failed due to referring list is missing |The list isn't added to the task list. |Check your web part and the referring list to ensure it's in your migration scope. |
+|Migration failed due to referring list is missing |The list isn't added to the task list. |Make sure your web part's in your migration scope by checking your web part and the referring list. |
 |Migration failed due to page being customized |SPMT currently doesn't support customized page migration. |Restore the page's template page by using SharePoint Designer and restart your migration. |
 |Migration failed due to page migration failed |Migration of the page failed, and all the web parts on that page. |Retry migrating the failed page. If the page succeeds, then all the web parts on that page successfully migrate. |
 |Migration failed due to it is an unsafe web part and the server setting 'NoScript' |When the setting **NoScript** is turned on in the target SharePoint site, the web parts are considered to be unsafe as they could have the ability to execute JavaScript scripts or other code. Web parts are blocked from migrating. |Turn off the **NoScript** setting on the target SharePoint site so that these web parts are unblocked. **Important**: Your site may be at risk if you turn off the settings. For more information, see [Allow or prevent custom script](/sharepoint/allow-or-prevent-custom-script). |
