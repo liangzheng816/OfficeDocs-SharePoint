@@ -1,5 +1,5 @@
 ---
-ms.date: 03/07/2024
+ms.date: 04/07/2025
 title: "Format your JSON or CSV file for data content migration - SharePoint"
 ms.reviewer: 
 ms.author: heidip
@@ -44,13 +44,13 @@ Use any text editor, or an application like Microsoft Excel, to create the CSV f
 |Column content|Description|
 |:-----|:-----|
 |Column 1 "Source" | *Required*. Enter an on-premises SharePoint Server site URL or the path to a local file share. For SharePoint Server 2013 and 2016, you can also use the log-in name or the SID in this column. |
-|Column 2 "Source DocLib" | *Optional*. Enter the name of the SharePoint Server document library that you're migrating. If you leave this field empty, all document libraries are migrated. This column needs to be empty when migrating from a local file share.|
-|Column 3 "Source SubFolder" | *Optional*. Enter the name of the subfolder in the document library. If this column is left empty, the migration starts from the root. If there's a value in this column, the migration starts from the subfolder. This column needs to be empty when migrating from a local file share.|
-|Column 4 "Target Web" | *Required*. Enter the destination SharePoint site URL where the files are to be migrated.|
-|Column 5 "Target DocLib" | *Required*. Enter the name of the document library with the SharePoint site where the files are to be migrated.|
-|Column 6 "Target SubFolder "| *Optional*. Enter the name of the subfolder in the document library. If this column is left empty, the files are moved to the root level. |
-|Column  7 "RegisterAsHubSite"|*Optional.*  To register a site as a hub site after migration, enter the name of hub site and leave the next column, AssociateWithHubURL, blank. For SharePoint site migration only. |
-|Column 8 "AssociateWithHubURL"|*Optional.* To associate the site to another hub site, enter the URL of an existing hub site. In this case, column 7 "RegisterAsHubSite" is left blank. For SharePoint site migration only.|
+|Column 2 "Source DocLib" | *Optional*. Enter the name of the SharePoint Server document library that you're migrating. If you leave this field empty, all document libraries are migrated. This column needs to be empty when migrating from a local file share. |
+|Column 3 "Source SubFolder" | *Optional*. Enter the name of the subfolder in the document library. If this column is left empty, the migration starts from the root. If there's a value in this column, the migration starts from the subfolder. This column needs to be empty when migrating from a local file share. |
+|Column 4 "Target Web" | *Required*. Enter the destination SharePoint site URL where the files are to be migrated. |
+|Column 5 "Target DocLib" | *Required*. Enter the name of the document library with the SharePoint site where the files are to be migrated. |
+|Column 6 "Target SubFolder" | *Optional*. Enter the name of the subfolder in the document library. If this column is left empty, the files are moved to the root level. |
+|Column  7 "RegisterAsHubSite" |*Optional.*  To register a site as a hub site after migration, enter the name of hub site and leave the next column, AssociateWithHubURL, blank. For SharePoint site migration only. |
+|Column 8 "AssociateWithHubURL" |*Optional.* To associate the site to another hub site, enter the URL of an existing hub site. In this case, column 7 "RegisterAsHubSite" is left blank. For SharePoint site migration only. |
 
 >[!Important]
 >**Hub site association:** Registering and associating hubsites occurs at the final stage of the migration. If you terminate a task before it completes, the hub site work may not be performed.  SPMT will not change the hub association if it finds the site is already associated to a hub site.  A site will not be -"un-registered" if it already registered as a hub site.
@@ -82,7 +82,7 @@ https://sharepoint2013.com/sites/contosoteamsite/,DocumentLibraryName,DocLibrary
 
 The following example shows the JSON file format that you can use to migrate your data.
 
-The minimum required values are *SourcePath* and *TargetPath*.  
+The minimum required values are *SourcePath* and *TargetPath*.
 
 ```json
 {
@@ -159,8 +159,6 @@ If you wish to use your system proxy settings, use one of these methods:
 1. Uncomment the default proxy setting shown here:  
 ![Edit the config file to comment out the proxy setting](media/spmt-proxy-edits.png)  
 1. Restart SPMT.
-
-</br>
 
 #### If SPMT doesn't upgrade
 
