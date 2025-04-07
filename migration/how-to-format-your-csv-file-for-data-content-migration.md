@@ -37,7 +37,7 @@ Learn how to:
   
 ## Use a CSV file for bulk upload
 
-You can create the CSV file using any text editor, or an applucation like Microsoft Excel. The first three columns are source values that detail where your data is currently located. The remaining three columns indicate the site, document library, and optional subfolder where you're migrating your data.
+You can create the CSV file using any text editor, or an application like Microsoft Excel. The first three columns are source values that detail where your data is currently located. The remaining three columns indicate the site, document library, and optional subfolder where you're migrating your data.
 
 ### Column definitions  
   
