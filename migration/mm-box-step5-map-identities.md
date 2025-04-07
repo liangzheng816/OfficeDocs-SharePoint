@@ -25,7 +25,7 @@ description: "Step 5:  Map Box identities with Migration Manager."
 
 # Step 5: Map identities of Box accounts to Microsoft 365 accounts
 
-Identity Mapping is the process of matching the domain, user, and group identities in the source to those in Microsoft 365. This process is important to migration. If identities aren't properly set up before migration, it can result in users losing access to content. It can also result in file metadata being incorrect at the destination.
+Identity Mapping is the process of matching the domain, user, and group identities in the source to those identities in Microsoft 365. This process is important to migration. If identities aren't properly set up before migration, it can result in users losing access to content. It can also result in file metadata being incorrect at the destination.
 
 To map your identities, select **Map identities** from the menu bar on the **User migrations** tab.
 
@@ -40,7 +40,7 @@ In most cases, automapping is unlikely to map all the identities. You can manual
 
 ## Edit individual identities
 
-To edit a single mapping discovered in the auto-mapping process:
+To edit a single mapping discovered in the automapping process:
 1. Highlight the row to activate the mapping panel.
 2. Input the equivalent Microsoft 365 domain, user, or group.
 3. Select **Save**.
