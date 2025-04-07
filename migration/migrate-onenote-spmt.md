@@ -1,5 +1,5 @@
 ---
-ms.date: 01/15/2020
+ms.date: 04/07/2025
 title: Migrating OneNote folders with the SharePoint Migration Tool (SPMT)
 ms.author: heidip
 author: MicrosoftHeidi
@@ -26,22 +26,20 @@ But before migrating your OneNote folders, it's important to understand a little
 
 On your computer, a OneNote Notebook is presented as a normal folder. For each Notebook, there's a *.onetoc2* file created under the root folder of the Notebook folder. You can have as many Notebooks as you want.
 
-![OneNote migration setting1](media/onenote-file-1.png)</br></br>
+![Screenshot of a OneNote notebook icon of a folder, with a .onetoc file underneath the folder.](media/onenote-file-1.png)
 
-If you create section groups in your Notebook, those groups are also presented as a folder. Under each section group, you can create multiple sections, and each one of those sections will be presented as *.one* file in file system. 
+If you create section groups in your Notebook, those groups are also presented as a folder. Under each section group, you can create multiple sections, and each one of those sections will be presented as *.one* file in file system.
 
 You can create multiple pages within a section, but the content of those pages will be contained in the same *.one* file as the section to which they belong.
 
-![OneNote migration setting2](media/onenote-file-2.png)
+![A screenshot of a section in a OneNote.](media/onenote-file-2.png)
 
-When you open the OneNote application, they appear like this:
+When you open the OneNote application, the notebook, section groups, and sections appear to the left, with individual section pages you can put content into on the right:
 
-![OneNote migration setting3](media/onenote-file-3.png)
+![A screenshot of the OneNote application showing the notebook name, section groups with sections on the left-hand side, and an empty section page on the right.](media/onenote-file-3.png)
 
+Folders are migrated to SharePoint as **OneNote Notebook** content rather than a normal folder with files. They'll appear in a SharePoint Document Library with a OneNote link and the name of the folder applied:
 
-Folders are migrated to SharePoint as **OneNote Notebook** content rather than a normal folder with files. They'll appear in SharePoint like this:
-
-![OneNote migration setting6](media/onenote-file-5.png)
+![A screenshot of a SharePoint communication site, showing the Documents foler with a OneNote document in the folder.](media/onenote-file-5.png)
 
 For this **OneNote Notebook** to appear in your Notebooks list in OneNote, select the **Show Actions** ellipses next to the notebook name in the Document library, then select **Open > Open in app**. Remember to first close the OneNote application for the already migrated notebooks.
-
