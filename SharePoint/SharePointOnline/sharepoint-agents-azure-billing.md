@@ -80,12 +80,11 @@ Select **Reporting + analytics**, then select **Cost analysis** to review and an
 
 You can quickly create a budget under **Monitoring** > **Budgets** for your selected scope.
 
-![Create a budget in Microsoft Cost Management](media/agents-sharepoint/create-budget.png)
+![Screenshot of creating a budget in Microsoft Cost Management](media/agents-sharepoint/create-budget.png)
 
 Select Alert conditions to set up the budget alert conditions. You can set up alerts for when your actual spending or the forecast reaches a certain percentage of your budget. Select **Manage action group** to set up the action group for the alert. You can choose to send an email, SMS, or push notification to the action group when the alert is triggered.
 
-![Create action group in Microsoft Cost Management](media/agents-sharepoint/create-action-group.png)
-
+![Screenshot of creating action group in Microsoft Cost Management](media/agents-sharepoint/create-action-group.png)
 
 You can also create a budget in Microsoft Cost Management with [Bicep](/azure/cost-management-billing/costs/quick-create-budget-bicep) and [ARM template](/azure/cost-management-billing/costs/quick-create-budget-template).
 
@@ -93,7 +92,7 @@ Budget helps you inform others about their spending to proactively manage costs 
 
 You can view your invoices under **Billing** > **Invoices**. Use text search to filter for the invoices you want. You can also filter by **Status** and **Timespan**. You can also download the invoice in CSV format.
 
-![Monitor consumption in Microsoft Cost Management](media/agents-sharepoint/cost-management.png)
+![Screenshot of monitoring consumption in Microsoft Cost Management](media/agents-sharepoint/cost-management.png)
 
 #### Adjusting consumption
 
