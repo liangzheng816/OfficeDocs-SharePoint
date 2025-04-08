@@ -55,7 +55,7 @@ Ensure the updated InfoPath forms function correctly during the migration user a
 
 The following table describes the columns in the **InfoPath-detail.csv** report.
 
-This scan report contains InfoPath forms that require remediation prior to migration, or at a minimum, validation on the new platform.
+This scan report contains InfoPath forms that require remediation before migration, or at a minimum, validation on the new platform.
 
 |**Column** |**Description** |
 |:----------|:---------------|
