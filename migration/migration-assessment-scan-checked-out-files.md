@@ -30,11 +30,11 @@ Learn about issues with checked-out files during data migration.
 
 ## Overview
 
-Migration reads the source SharePoint farm using an account that has Full Read access to the environment. If a file is checked out by a user, the migration tooling is not able to read the checked out file. However, the migration tooling sees the last checked in version of the file instead. To avoid losing data, users should check in their files prior to their site migrating.
+Migration reads the source SharePoint farm using an account that has Full Read access to the environment. If a file is checked out by a user, the migration tooling isn't able to read the checked out file. However, the migration tooling sees the last checked in version of the file instead. To avoid losing data, users should check in their files prior to their site migrating.
 
 ## Data Migration
 
-Only checked-in content is migrated. To avoid any potential data loss, encourage users to check in their files prior to migration. A site administrator can check in a file for a user, however only the content that was saved to SharePoint by the user would be migrated - if a user downloaded the file and was working on it outside of SharePoint, those changes would not appear post check-in.
+Only checked-in content is migrated. To avoid any potential data loss, encourage users to check in their files prior to migration. A site administrator can check in a file for a user, however only the content that was saved to SharePoint by the user would be migrated - if a user downloaded the file and was working on it outside of SharePoint, those changes wouldn't appear post check-in.
 
 > [!IMPORTANT]
 > Any site that is configured as "No Access" (locked), in SharePoint is skipped. To see a list of locked site collections see the Locked Sites scan output.
@@ -67,7 +67,7 @@ This scan report provides a view of the files that are checked out and which use
 |LastContentModifiedDate |Date/Time the site collection had content modified. |
 |TotalItemCount |Total number of items found in the site collection. |
 |Hits |Number of requests logged for the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
-|DistinctUsers |Number of distinct users that have accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DistinctUsers |Number of distinct users who accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
 |DaysOfUsageData |Number of days the usage logging service retains data. This information provides context for Hits and DistinctUsers. For example, if this number is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
 |File |File that is checked out. |
 |CheckedOutUser |User that has the file checked out. |
