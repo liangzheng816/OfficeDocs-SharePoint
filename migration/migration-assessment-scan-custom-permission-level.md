@@ -17,6 +17,7 @@ ms.collection:
 - SPMigration
 - M365-collaboration
 - m365initiative-migratetom365
+description: "Learn about issues with custom permission level during data migration."
 ---
 
 # Migration Assessment Scan: Custom Permission Level
