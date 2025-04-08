@@ -26,7 +26,7 @@ description: "Overview of the SharePoint Migration Assessment Tool (SMAT). A too
 
 The SharePoint Migration Assessment Tool is a simple command line executable tool. It scans the contents of your SharePoint farm to help identify the impact of migrating your server to SharePoint with Microsoft 365.
 
-The tool is designed to run without impacting your environment, so you might observe that the tool requires one to two days to complete a scan of your environment. During this time, the tool reports progress in the console window. After the scan finishes, the output files are in the Logs directory. The log files are where you can find the summary and more detailed insights into the scenarios that could be impacted by migration.
+The tool is designed to run without impacting your environment, so you might observe that the tool requires one to two days to complete a scan of your environment. During this time, the tool reports progress in the console window. After the scan finishes, the output files are in the Logs directory. The log files are where you can find the summary and more detailed insights into the migration-impacted scenarios.
 
 > [!NOTE]
 > To download the SharePoint Migration Assessment Tool, see [Download the SharePoint Migration Assessment Tool](https://www.microsoft.com/download/details.aspx?id=53598).
