@@ -28,7 +28,7 @@ Learn how to fix issues with alerts during migration.
 
 ## Overview
 
-Most migration tools don't migrate alerts. Alerts are created on items, lists, and libraries to notify a user of when content changed. This report provides visibility into the alerts that are currently configured in the source environment. If users want to be notified of content changes after the migration, they need to configure the alerts on the new environment. As a result of alerts not migrating, we provide ample raw data associated with the alerts should the need arise to recreate the alerts post migration.
+Most migration tools don't migrate alerts. Alerts are created on items, lists, and libraries to notify a user of when content changed. This report provides visibility into the alerts that are currently configured in the source environment. If users want to be notified of content changes after the migration, they need to configure the alerts on the new environment. As a result of alerts not migrating, we provide ample raw data associated with the alerts if you need to recreate the alerts post-migration.
 
 ## Data Migration
 
@@ -66,14 +66,14 @@ This scan report provides a list of all the alerts installed in the environment.
 |TotalItemCount |Total number of items found in the site collection. |
 |Hits |Number of requests logged for the site collection. Relies on data from the usage logging service. If the usage logging service is disabled this row shows N/A. |
 |DistinctUsers |Number of distinct users that have accessed the site collection. Relies on data from the usage logging service. If the usage logging service is disabled this row shows N/A. |
-|DaysOfUsageData |Number of days the usage logging service retains data. This provides context for Hits and DistinctUsers. For example, if this is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
+|DaysOfUsageData |Number of days the usage logging service retains data. This provides context for Hits and DistinctUsers. For example, if this period is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
 |WebURL |Web URL. |
 |Title |Title of the alert. |
 |AlertTemplateName |Name of the alert. |
 |Filter |The CAML query filter applied to the alert. |
 |ID |ID assigned to the alert. |
 |MatchID |Per-filtering ID for an externally matched alert. |
-|ItemID |ID of the item an alert is associated with. IF this is empty, the alert is associated with the list instead. |
+|ItemID |ID of the item an alert is associated with. IF this column is empty, the alert is associated with the list instead. |
 |ListURL |Time the add-in was installed. |
 |ListID |ID of the list the alert is associated with. |
 |List |ID or the web hosting the add-in |
@@ -86,5 +86,5 @@ This scan report provides a list of all the alerts installed in the environment.
 |AlertTime |The date and time for sending the alert. |
 |Status |Determines if the alert is enabled or not. |
 |User |User the alert is associated with. |
-|DynamicRecipient |If the alert is dynamically generated, this determines how the recipient is defined. |
+|DynamicRecipient |If the alert is dynamically generated, determines how the recipient is defined. |
 |ScanID |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool. |
