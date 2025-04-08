@@ -64,6 +64,6 @@ Once a migration project is created, you can start connecting to the source as d
 
 > [!NOTE]
 > - There are [file size limitations](/sharepointmigration/mm-file-size-limitations) and [unsupported files](/sharepointmigration/mm-unsupported-files) in Migration Manager.
-> - Learn more about [frequently asked questions for Google migration](migration/mm-faqs-google.md).
+> - Learn more about [frequently asked questions for Google migration](mm-faqs-google.md).
 
 ## [**Step 1: Connect to Google Workspace**](mm-google-step1-connect.md)
