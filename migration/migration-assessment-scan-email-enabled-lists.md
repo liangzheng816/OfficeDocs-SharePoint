@@ -30,7 +30,7 @@ Learn how to mitigate issues with Email Enabled Lists during migration.
 
 ## Overview
 
-On the source environment it's possible to configure lists that can accept incoming email. This feature isn't available on the target environment.
+It's possible to configure lists that can accept incoming email in the source environment. This feature isn't available on the target environment.
 
 ## Data Migration
 
@@ -65,7 +65,7 @@ The following table describes the columns in the **EmailEnabledLists-detail.csv*
 |LastContentModifiedDate |Date/Time the site collection had content modified. |
 |TotalItemCount |Total number of items found in the site collection. |
 |Hits |Number of requests logged for the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
-|DistinctUsers |Number of distinct users that have accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DistinctUsers |Number of distinct users that accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
 |DaysOfUsageData |Number of days the usage logging service retains data. This information provides context for Hits and DistinctUsers. For example, if this number is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
 |WebURL |Url to the web hosting the email enabled list. |
 |ListTitle |Title of the email enabled lists. |
