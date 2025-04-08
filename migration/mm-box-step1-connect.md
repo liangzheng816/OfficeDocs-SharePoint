@@ -1,7 +1,7 @@
 ---
 title: "Connect to Box with Migration Manager"
-ms.date:  03/24/2025
-ms.reviewer: 
+ms.date:  04/07/2025
+ms.reviewer: kbchen
 ms.author: heidip
 author: MicrosoftHeidi
 manager: jtremper
