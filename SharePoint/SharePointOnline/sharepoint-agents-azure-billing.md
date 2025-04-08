@@ -1,5 +1,5 @@
 ---
-ms.date: 01/13/2025
+ms.date: 04/07/2025
 title: Set up SharePoint agents for pay-as-you-go billing
 ms.reviewer:
 ms.author: ruihu
@@ -45,7 +45,7 @@ To set up SharePoint agents as an Azure resource, you need to do the following i
 After setting up an Azure resource group for SharePoint agents, you can set up pay-as-you-go billing for SharePoint agents in the Microsoft 365 admin center. Here's how:
 
 1. Go to the Microsoft 365 admin center, select **Settings** then **Org settings** then select **pay-as-you-go** services (formerly Microsoft Syntex).
-    Alternatively, you can select Setup, and then in the **Billing and licenses** section, select **Activate pay-as-you-go services**. On the **Activate pay-as-you-go services** page, select **Get started**.
+    Alternatively, you can select **Setup**, and then in the **Billing and licenses** section, select **Activate pay-as-you-go services**. On the **Activate pay-as-you-go services** page, select **Get started**.
 1. On the **Pay-as-you-go services** page, under **Billing**, select **agents in SharePoint**.
 1. On the **Set up billing and turn on services** panel, in the **Set up billing** section, under **Azure subscription**, select the dropdown, and then follow the steps to select the Azure subscription, resource group, and region. (The region determines where your tenant ID and usage information such as site names are stored.)
 1. Read and accept the pay-as-you-go billing terms of service.
@@ -68,15 +68,31 @@ The following table illustrates the differences in the subscription models for t
 - Tenant graph grounding for messages: These events provide higher quality grounding for your agents using retrieval-augmented generation (RAG) over your tenant-wide Microsoft Graph, including external data synced into Microsoft Graph through connectors. This results in more relevant and improved responses and ensures that the grounding information is up-to-date. This capability is optional, and you can turn it on or off for each agent.
   
 > [!NOTE]
-> SharePoint agents are grounded in the tenant graph, so each interaction with a SharePoint agent uses 12 messages (10 messages for tenant graph grounding, and 2 messages for generative answers) to respond to a single complex prompt from the user.
+> - SharePoint agents are grounded in the tenant graph, so each interaction with a SharePoint agent uses 12 messages (10 messages for tenant graph grounding, and 2 messages for generative answers) to respond to a single complex prompt from the user.
+> - Charges of SharePoint agent usage appear under the Copilot Studio meter in your invoice. However, in Microsoft cost management, you can see a detailed breakdown by feature, including SharePoint agents.
+> - If your organization have [trial access to SharePoint agents](/sharepoint/manage-trial-agents-sharepoint-powershell#what-is-the-trial-access-to-sharepoint-agents), and haven't exceeded the 10,000 free message limit for the month, you won't see any charges related to SharePoint agents. You can learn more on how to check your promo usage here: [Get-SPOCopilotPromoUsage](/powershell/module/sharepoint-online/get-spocopilotpromousage)
 
 ### Monitor consumption in Microsoft Cost Management
 
-To monitor your organization’s consumption of agents with the pay-as-you-go, you can create a budget in Microsoft Cost Management with [Bicep](/azure/cost-management-billing/costs/quick-create-budget-bicep) and [ARM template](/azure/cost-management-billing/costs/quick-create-budget-template). Budget helps you inform others about their spending to proactively manage costs and monitor how spending progresses over time. You can also set up various types of cost alerts to monitor the consumption. 
-Furthermore, you can view your organization’s consumption by:
+You can monitor your organization's consumption of SharePoint agents with the pay-as-you-go with [Microsoft Cost Management](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/~/overview/openedBy/AzurePortal). If needed, change the scope to select the subscription that is being used for agents in SharePoint.
 
-1. Going to [Microsoft Cost Management](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/~/overview/openedBy/AzurePortal). 
-1. If needed, change the scope to select the subscription that is being used for agents in SharePoint.
+Select **Reporting + analytics**, then select **Cost analysis** to review and analyze your consumption. Choose to use [**Smart views**](/azure/cost-management-billing/costs/quick-acm-cost-analysis#analyze-costs-with-smart-views) to quickly view your consumption by Services, Resources, and Resources groups. You can also create [custom views](/azure/cost-management-billing/costs/quick-acm-cost-analysis#analyze-costs-with-customizable-views) to analyze your consumption by different dimensions. 
+
+You can quickly create a budget under **Monitoring** > **Budgets** for your selected scope.
+
+![Screenshot of creating a budget in Microsoft Cost Management.](media/agents-sharepoint/create-budget.png)
+
+Select Alert conditions to set up the budget alert conditions. You can set up alerts for when your actual spending or the forecast reaches a certain percentage of your budget. Select **Manage action group** to set up the action group for the alert. You can choose to send an email, SMS, or push notification to the action group when the alert is triggered.
+
+![Screenshot of creating action group in Microsoft Cost Management.](media/agents-sharepoint/create-action-group.png)
+
+You can also create a budget in Microsoft Cost Management with [Bicep](/azure/cost-management-billing/costs/quick-create-budget-bicep) and [ARM template](/azure/cost-management-billing/costs/quick-create-budget-template).
+
+Budget helps you inform others about their spending to proactively manage costs and monitor how spending progresses over time. When You can also set up various types of cost alerts to monitor the consumption.
+
+You can view your invoices under **Billing** > **Invoices**. Use text search to filter for the invoices you want. You can also filter by **Status** and **Timespan**. You can also download the invoice in CSV format.
+
+![Screenshot of monitoring consumption in Microsoft Cost Management.](media/agents-sharepoint/cost-management.png)
 
 #### Adjusting consumption
 
@@ -88,7 +104,7 @@ Your organization receives an invoice for all Azure services used at the end of 
 
 ## Disconnect agents from pay-as-you-go billing
 
-To Disconnect Agents from pay-as-you-go billing, follow these steps:
+To disconnect Agents from pay-as-you-go billing, follow these steps:
 
 1. In the Microsoft 365 admin center, select **Settings** > **Org Settings**.
 1. On the **Pay-as-you-go services** page, on the **Billing** tab, select **Agents in SharePoint**.
