@@ -37,7 +37,7 @@ With some tooling, this data isn't migrated. We recommend you use the permission
   
 ## Preparing for Migration
 
-Understand the custom permission levels in use in your source environment and determine the plan to move forward. Either move users and groups to the default SharePoint permission levels, or build out a plan for creating the custom permission levels and fixing permissions post migration.
+Determine the plan to move forward by understanding the custom permission levels in use in your source environment. Either move users and groups to the default SharePoint permission levels, or build out a plan for creating the custom permission levels and fixing permissions post migration.
   
 ## Post Migration
 
