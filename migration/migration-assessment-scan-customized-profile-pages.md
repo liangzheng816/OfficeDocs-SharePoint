@@ -32,7 +32,7 @@ Learn how to mitigate issues with Customized Profile pages during migration.
 
 In the source environment, viewing a user's profile is managed by a page hosted in the My Site Host named Person.aspx. For example, selecting a colleague's name in a document library or from their Microsoft OneDrive takes you to the person.aspx page to view the user's profile.
 
-After migration to the target environment, the profile experience is managed by the Delve service. There's currently a limitation in that the Delve profile page can't be modified. This scan report shows you any customizations that have been made to the Person.aspx page in the source environment. This data can be used to understand any impact with the move to the target environment regarding the profile experience.
+After migration to the target environment, the profile experience is managed by the Delve service. There's currently a limitation in that the Delve profile page can't be modified. This scan report shows you any customizations made to the Person.aspx page in the source environment. This data can be used to understand any impact with the move to the target environment regarding the profile experience.
 
 To learn more, see: [How can I find people and information in Microsoft Delve?](https://support.office.com/article/5b8bffdd-a50a-430a-8570-09b39481887c).
 
@@ -46,11 +46,11 @@ Validate the profile experience on the new platform.
 
 ## Scan Result Reports
 
-**CustomizedProfilePages_\<Date\>_\<Time\>.csv** This scan report shows whether the Person.aspx profile page was modified in SharePoint Designer, or if any of the web parts have been added, deleted, or moved on the page.
+**CustomizedProfilePages_\<Date\>_\<Time\>.csv** This scan report shows whether the Person.aspx profile page was modified in SharePoint Designer, or if any of the web parts added, deleted, or moved on the page.
 
-|Column|Description|
-|:-----|:-----|
-|DisplayTitle |Display title of the web part. If the page was modified, there is a row with DisplayTitle of "Profile Page". |
+|Column |Description |
+|:------|:-----------|
+|DisplayTitle |Display title of the web part. If the page was modified, there's a row with DisplayTitle of "Profile Page". |
 |WebPart |Type of web part. |
-|Scope |One of the following: <br/> Page - The page was modified in SharePoint Designer. <br/> SharedWebPart - A Shared Web Part was added, deleted, or moved. <br/> UserWebPart - A User Web Part was added, deleted, or moved. |
-|Difference |The piece of information that was flagged as a change. This flag could be a combination of the following: <br/> Added Web Part. <br/> Web Part Zone. <br/> Web Part Order. <br/> Web Part Missing. <br/> Page modified in SharePoint Designer. |
+|Scope |One of the following options: <br/> Page - The page was modified in SharePoint Designer. <br/> SharedWebPart - A Shared Web Part was added, deleted, or moved. <br/> UserWebPart - A User Web Part was added, deleted, or moved. |
+|Difference |The piece of information that was flagged as a change. This flag could be a combination of the following options: <br/> Added Web Part. <br/> Web Part Zone. <br/> Web Part Order. <br/> Web Part Missing. <br/> Page modified in SharePoint Designer. |
