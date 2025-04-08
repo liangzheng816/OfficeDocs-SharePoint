@@ -28,7 +28,7 @@ Learn how to mitigate issues with SharePoint add-ins during migration.
 
 ## Overview
 
-Migrating SharePoint add-ins (formerly called apps) isn't supported in the target environment. The site content is migrated, but the add-ins isn't. As a result, once the site is migrated, the add-ins need to be reinstalled. If you purchased the add-in, you'll need to reclaim the license from the Add-in store.
+Migrating SharePoint add-ins (formerly called apps) isn't supported in the target environment. The site content is migrated, but the add-ins aren't. As a result, once the site is migrated, the add-ins need to be reinstalled. If you purchased the add-in, you need to reclaim the license from the Add-in store.
 
 ## Data Migration
 
@@ -64,8 +64,8 @@ This scan report provides a list of all the add-ins installed in the environment
 |ContentDBSizeInMB |Size of the content database hosting the site collection. |
 |LastContentModifiedDate |Date/Time the site collection had content modified. |
 |TotalItemCount |Total number of items found in the site collection. |
-|Hits |Number of requests logged for the site collection. Relies on data from the usage logging service. If the usage logging service is disabled this row shows N/A. |
-|DistinctUsers |Number of distinct users that accessed the site collection. Relies on data from the usage logging service. If the usage logging service is disabled this row shows N/A. |
+|Hits |Number of requests logged for the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DistinctUsers |Number of distinct users that accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
 |DaysOfUsageData |Number of days the usage logging service retains data. This information provides context for Hits and DistinctUsers. For example, if this period is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
 |OwnerLogin |Owner of the site collection. [duplicate of Site Owner column] |
 |OwnerTitle |Display name for the owner. |
