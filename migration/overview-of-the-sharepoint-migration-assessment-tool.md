@@ -59,7 +59,7 @@ The **SupportedVersion** informs SMAT which versions of SharePoint a specific sc
 
 `{ "Name": "Apps", "Type": "AppsScanner", "SupportedVersions": [ "2013", "2016" ], "ReportCategoryType": "SPSite", "Enabled": true }`
 
-Some scans have additional configuration options. These options are configurable in the ScanDef.json file. Not all scans have configurable properties. However, if a scan does have a property, there's a default property configured in the ScanDef.json file that can be modified. For example, the **SiteTemplateLanguage** scan has a filter to exclude English sites [locale 1033]. If your team has concerns about migrating English sites, you could modify the filter to include those sites:
+Some scans have extra configuration options. These options are configurable in the ScanDef.json file. Not all scans have configurable properties. However, if a scan does have a property, there's a default property configured in the ScanDef.json file that can be modified. For example, the **SiteTemplateLanguage** scan has a filter to exclude English sites [locale 1033]. If your team has concerns about migrating English sites, you could modify the filter to include those sites:
 
 `{ "Name": "SiteTemplateLanguage", "Type": "SiteTemplateLanguageScanner", "SupportedVersions": [ "2010", "2013", "2016" ], "Property": { "ExcludedLanguages": "" }, "ReportCategoryType": "SPSite", "Enabled": true }`
 
