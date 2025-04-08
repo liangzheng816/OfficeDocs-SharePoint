@@ -26,6 +26,15 @@ SharePoint has a long history of helping users securely work with external data 
 
 This follows the discontinuation of [Business Connectivity Services](/sharepoint/business-connectivity-services-retirement) (BCS), which was the primary use case for Secure Store Service.
 
+## Impact on SharePoint Server
+
+This announcement has no impact on Secure Store Service in SharePoint Server.
+
+This feature will remain supported in SharePoint Server 2016 and SharePoint Server 2019 until those products reach their end of support date of July 14, 2026.
+
+> [!NOTE]
+> Microsoft has no plans to retire Secure Store Service in SharePoint Server Subscription Edition currently. Deprecation and removal announcements for SharePoint Server Subscription Edition are announced in the [What's deprecated or removed from SharePoint Server Subscription Edition](/sharepoint/what-s-new/what-s-deprecated-or-removed-from-sharepoint-server-subscription-edition) article.
+
 ## Impacted features and scenarios
 
 All Secure Store Service features will be retired in SharePoint in Microsoft 365. This includes features such as:
@@ -51,14 +60,6 @@ To learn more about Azure Key Vault, see the links in the [More information](#mo
 ## Automatic Retirement
 
 Microsoft will manage the retirement process automatically. Administrators do not need to take any manual steps to disable Secure Store Service. Once retired, the service will no longer be available, and any existing configurations will be removed.
-
-## Impact on SharePoint Server
-
-This announcement has no impact on Secure Store Service in SharePoint Server.
-
-This feature will remain supported in SharePoint Server 2016 and SharePoint Server 2019 until those products reach their end of support date of July 14, 2026.
-
-Microsoft has no plans to retire Secure Store Service in SharePoint Server Subscription Edition currently. Deprecation and removal announcements for SharePoint Server Subscription Edition are announced in the [What's deprecated or removed from SharePoint Server Subscription Edition](/sharepoint/what-s-new/what-s-deprecated-or-removed-from-sharepoint-server-subscription-edition) article.
 
 ## More Information about Azure Key Vault
 

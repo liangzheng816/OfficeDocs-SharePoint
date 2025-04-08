@@ -643,7 +643,7 @@ items:
       items:
       - name: BCS retirement
         href: business-connectivity-services-retirement.md
-      - name: Secure Store Service (SSS) retirement in Microsoft 365
+      - name: SSS retirement
         href: secure-store-service-retirement-in-microsoft-365.md
       - name: Manage BCS applications
         href: manage-business-connectivity-service-applications.md
