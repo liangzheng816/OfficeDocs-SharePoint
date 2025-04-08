@@ -32,7 +32,7 @@ Business Connectivity Services (BCS) was introduced in SharePoint 2010 as an imp
 
 ## Data Migration
 
-BCS applications are not migrated to the target environment. Depending on the type of data you are accessing and the location, you may need to implement a BCS hybrid solution.
+BCS applications aren't migrated to the target environment. Depending on the type of data you're accessing and the location, you may need to implement a BCS hybrid solution.
 
 > [!IMPORTANT]
 > Any site that is configured as "No Access" (locked), in SharePoint is skipped. To see a list of locked site collections see the Locked Sites scan output.
@@ -55,7 +55,7 @@ Ensure that your solutions, which rely on the BCS applications, function with th
 
 The following table describes the columns in the **BCSApplications-detail.csv** report.
 
-This file contains the BCS LobSystem definitions that are deployed to the target environment and some information to help you identify the definition and what it is used for.
+This file contains the BCS LobSystem definitions deployed to the target environment. The file also has information to help you identify the definition and what it's used for.
 
 |**Column**    |**Description**                                                                                 |
 |:-------------|:-----------------------------------------------------------------------------------------------|
