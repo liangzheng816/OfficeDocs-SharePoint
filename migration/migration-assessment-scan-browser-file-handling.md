@@ -42,7 +42,7 @@ Data is migrated, but the behavior with the HTM and HTML files changes from open
 
 ## Preparing for Migration
 
-The provided report contains a list of all the HTM and HTML files in your environment. Contact the site owners to ensure they're aware of the issue. If the files are required to open in the browser, rename them to \*.aspx. Uploading an ASPX file requires Designer access to a site collection, which reduces the footprint of the risk to people who have more permissions than Contribute. A contributor is able to create wiki pages on some document libraries, which are technically ASPX pages, however, the contributor permissions restrict the user's ability to add or configure web parts that would expose a cross site scripting attack on these pages. For example, the following occurs for a contributor attempting to add web parts to an ASPX page:
+The provided report contains a list of all the HTM and HTML files in your environment. Contact the site owners to ensure they're aware of the issue. If the files are required to open in the browser, rename them to \*.aspx. Uploading an ASPX file requires Designer access to a site collection, which reduces the footprint of the risk to people who have more permissions than Contribute. A contributor is able to create wiki pages on some document libraries, which are technically ASPX pages. However, the contributor permissions restrict the user's ability to add or configure web parts that would expose a cross site scripting attack on these pages. For example, the following occurs for a contributor attempting to add web parts to an ASPX page:
 
 - Content Editor web part isn't available as an option.
 - Script Editor web part is available, but doesn't allow a user to submit anything with \<script\> tags.
