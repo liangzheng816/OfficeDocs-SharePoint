@@ -37,7 +37,7 @@ description: The SharePoint Migration Tool simplifies migrating your data from o
 - Kerberos
 - Forms
 - ADFS
-- Multi-factor authentication
+- Multifactor authentication
 - SAML-based claims
 - Client certificate authentication
 
@@ -60,13 +60,13 @@ During the upload and import phases, data is encrypted, and Azure containers and
   
 > [!IMPORTANT]
 > The SharePoint service and a select number of engineers can run maintenance commands, but they don't have direct access to the accounts. Our datacenter technicians don't know how the data is laid out on disk and don't have ready access to equipment to mount disks. All drives are physically destroyed before they leave the datacenters. Physical security is also in place at all datacenters.
-  
-Each container is dedicated to a customer and not reused. The data is stored in the Azure blob for 4 to 30 days, and then it's deleted. When the data is deleted, the files are delinked and later soft-deleted from disk. A file in an account and on disk may be shared across many servers. The same process is used for replicas, including backup copies (geo-replicated data, if applicable).
-  
+
+Each container is dedicated to a customer and not reused. The data is stored in the Azure blob for 4 to 30 days, before deletion. When the data is deleted, the files are delinked and later soft-deleted from disk. A file in an account and on disk may be shared across many servers. The same process is used for replicas, including backup copies (geo-replicated data, if applicable).
+
 A random, single-use default container key is generated programmatically and is only valid for three days. This key is the only way to gain access to the container. SharePoint never stores the key.
-  
-The container itself lives longer than the key. The container is purged 30 to 90 days after its creation. The container is housed in shared Microsoft storage outside the tenant but within the region. It's protected by the container key. For "multi-geo" customers, containers are generated based on the destination URL to dictate what geo it's stored in.
-  
+
+The container itself lives longer than the key. The container is purged 30 to 90 days after its creation. The container is housed in shared Microsoft storage outside the tenant but within the region. It's protected by the container key. For "multi-geo" customers, containers are generated based on the destination URL, which dictates in what geo stores the container.
+
 There are two defenses in place that protect you if your key is lost or someone else obtains it. First, the container only enables read/write operations. The container has no list. You would need to know the details of the files in the container to read them or write to them. Second, the files are encrypted at rest by using AES-256-CBC.
 
 > [!IMPORTANT]
