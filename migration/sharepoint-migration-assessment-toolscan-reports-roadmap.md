@@ -27,7 +27,7 @@ The following articles provide detailed information about issues that arose duri
 
 ## Detailed reports
 
-Select any of the reports below to learn how to interpret your scan results, how to prepare for migration, and tasks to take post-migration.
+Select any of these reports to learn how to interpret your scan results, how to prepare for migration, and tasks to take post-migration.
 
 |**Detailed reports** |**Detailed reports** |
 |:--------------------|:--------------------|
