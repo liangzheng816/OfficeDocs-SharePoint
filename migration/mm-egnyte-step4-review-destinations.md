@@ -1,5 +1,5 @@
 ---
-ms.date: 03/27/2025
+ms.date: 04/08/2025
 title: "Review the destination paths for your Egnyte migration with Migration Manager"
 ms.reviewer: 
 ms.author: heidip
@@ -42,7 +42,7 @@ If a destination is missing on a single user, highlight the row and update the v
 3. Select **Save path**.
 
 >[!Note]
-> Destinations might not be visible on the UI due to admin access limitations, multi-geo tenant issues, recent site creation delays, or special characters in the destination path, etc. If you cannot locate a destination in the "Edit destination" panel, please upload the data using a CSV file as described in the next section.
+> Destinations might not be visible on the UI due to admin access limitations, multi-geo tenant issues, recent site creation delays, or special characters in the destination path, and so on. If you cannot locate a destination in the "Edit destination" panel, please upload the data using a CSV file as described in the next section.
 
 ## Upload destinations using a CSV file
 
