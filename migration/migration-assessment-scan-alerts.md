@@ -65,12 +65,12 @@ This scan report provides a list of all the alerts installed in the environment.
 |LastContentModifiedDate |Date/Time the site collection had content modified. |
 |TotalItemCount |Total number of items found in the site collection. |
 |Hits |Number of requests logged for the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
-|DistinctUsers |Number of distinct users that have accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DistinctUsers |Number of distinct users who've accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
 |DaysOfUsageData |Number of days the usage logging service retains data. This information provides context for Hits and DistinctUsers. For example, if this period is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
 |WebURL |Web URL. |
 |Title |Title of the alert. |
 |AlertTemplateName |Name of the alert. |
-|Filter |The CAML query filter applied to the alert. |
+|Filter |The Collaborative Application Markup Language (CAML) query filter applied to the alert. |
 |ID |ID assigned to the alert. |
 |MatchID |Per-filtering ID for an externally matched alert. |
 |ItemID |ID of the item an alert is associated with. IF this column is empty, the alert is associated with the list instead. |
