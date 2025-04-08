@@ -29,7 +29,7 @@ For more information on permission levels, see [Understanding permission levels 
   
 ## Data Migration
 
-With some tooling, this data isn't migrated. It's recommended to use the permission levels provided by SharePoint. However, if custom permission levels are required, the permission levels would need to be manually recreated on the SharePoint sites.
+With some tooling, this data isn't migrated. We recommend you use the permission levels provided by SharePoint. However, if custom permission levels are required, the permission levels would need to be manually recreated on the SharePoint sites.
   
 > [!IMPORTANT]
 > Any site that is configured as "No Access" (locked) in SharePoint is skipped. To see a list of locked site collections see the Locked Sites scan output. 
@@ -40,7 +40,7 @@ Understand the custom permission levels in use in your source environment and de
   
 ## Post Migration
 
-Validate the users and groups have the correct permission levels. If you needed to create custom permission levels, ensure those are functioning as expected.
+Validate the users and groups have the correct permission levels. If you needed to create custom permission levels, ensure those custom levels are functioning as expected.
   
 ## Scan Result Reports
 
@@ -61,7 +61,7 @@ The following table describes the columns in the **CustomPermissionLevel-detail.
 |LastContentModifiedDate |Date/Time the site collection had content modified. |
 |TotalItemCount |Total number of items found in the site collection. |
 |Hits |Number of requests logged for the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
-|DistinctUsers |Number of distinct users that have accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DistinctUsers |Number of distinct users who accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
 |DaysOfUsageData |Number of days the usage logging service retains data. This information provides context for Hits and DistinctUsers. For example, if this number is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
 |WebURL |Url to the site that has publishing features enabled. |
 |PermissionLevelName |Name of the custom permission level. |
