@@ -51,7 +51,7 @@ You can modify two config files for SMAT:
 
 To disable a scan, locate the entry in the ScanDef.json file, and set *Enabled* to **false**. This setting is useful if there's a scan that your business doesn't care about. Disabling the scan reduces the overall execution time of SMAT.
 
-The following disables the Alerts scan.
+The following configuration disables the Alerts scan.
 
 `{ "Name": "Alerts", "Type": "AlertsScanner", "SupportedVersions": [ "2010", "2013", "2016" ], "ReportCategoryType": "SPSite", "Enabled": false }`
 
@@ -76,13 +76,14 @@ SMAT.exe is a launcher program that determines your intentions based on the para
 - **SMIT.exe** - Performs identity mapping work for both SharePoint 2010 and 2013 environments.
 
 > [!NOTE]
-> SMIT stops functioning after June 30th, 2023 due to the deprecation of Azure AD Graph service. For more details on the latest announcement, see [Important: Azure AD Graph Retirement and Powershell Module Deprecation](https://aka.ms/aadgraphupdate).
+> SMAT stopped functioning after June 30, 2023 due to the deprecation of Azure AD Graph service. For more information on the latest announcement, see [Important: Azure AD Graph Retirement and PowerShell Module Deprecation](https://aka.ms/aadgraphupdate).
 When running SMAT.exe to perform an assessment from PowerShell.exe, the following actions occur. The PowerShell window running SMAT.exe launches the app to perform the work. After the working app is loaded, the SMAT.exe loader program terminates, and returns control to the operator. The tool performing the work runs in its own window until it completes.
+
 ## Log files
 
 You may see up to three log files in the output directory:
 
-- **SMAT.log** - This file contains all the logging from the tool execution. This file contains three levels of logging: *Information*, *Warning*, and *Errors*. Information helps track down progress and troubleshooting issues. Typically, Warnings are expected error conditions. Errors are unexpected conditions that our tooling was unable to determine whether they are a blocker to moving forward. These blockers need to be reviewed.
+- **SMAT.log** - This file contains all the logging from the tool execution. This file contains three levels of logging: *Information*, *Warning*, and *Errors*. Information helps track down progress and troubleshooting issues. Typically, Warnings are expected error conditions. Errors are unexpected conditions that our tooling was unable to determine whether they're a blocker to moving forward or not. These blockers need to be reviewed.
 - **SMAT_Errors.log** - This file contains only the Error events. If this file is missing after the tooling completes, it indicates that no errors were found.
 - **SMATTelemetry.log** - This file contains logging for the telemetry upload tooling. Any issues in here don't impact generating your reports.
 
