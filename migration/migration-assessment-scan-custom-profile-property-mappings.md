@@ -49,7 +49,7 @@ The target environment contains the default profile property mappings for ShareP
 
 ## Preparing for Migration
 
-If the property mappings listed in the scan output are used in a SharePoint add-in or company portal, we advise you to look into the sync application discussed in the overview section to ensure that profile property data not included by default continues to be updated post migration.
+If the property mappings listed in the scan output are used in a SharePoint add-in or company portal, we advise you to look into the sync application discussed in the overview section. This action ensures that profile property data not included by default is updated post migration.
 
 ## Post Migration
 
