@@ -30,11 +30,11 @@ Learn how to fix issues with file versions during migration.
 
 ## Overview
 
-Versions have historically impacted the length of a migration for a given site in a linear fashion. The more versions you have, the longer it takes to migrate a given site.
+Versions historically impact the length of a migration for a given site in a linear fashion. The more versions you have, the longer it takes to migrate a given site.
 
 ## Data Migration
 
-By default, versioning is enabled for all lists and libraries on the target platform. In the destination SharePoint site, there is no limit when versioning is enabled.
+By default, versioning is enabled for all lists and libraries on the target platform. In the destination SharePoint site, there's no limit when versioning is enabled.
 
 > [!IMPORTANT]
 > Any site configured as "No Access" (locked) in SharePoint is skipped. To see a list of locked site collections see the Locked Sites scan output.
@@ -67,7 +67,7 @@ This scan report provides a list of all the files in the environment that have v
 |LastContentModifiedDate |Date/Time the site collection had content modified. |
 |TotalItemCount |Total number of items found in the site collection. |
 |Hits |Number of requests logged for the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
-|DistinctUsers |Number of distinct users that have accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DistinctUsers |Number of distinct users that accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
 |DaysOfUsageData |Number of days the usage logging service retains data. This information provides context for Hits and DistinctUsers. For example, if this number is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
 |SiteURL |URL to the site collection. |
 |SiteOwner |Site collection owner. |
