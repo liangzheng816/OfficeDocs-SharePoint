@@ -1,5 +1,5 @@
 ---
-ms.date: 01/19/2024
+ms.date: 03/27/2025
 title: "The OneDrive sync app update process"
 ms.reviewer: kangan
 ms.author: mactra
@@ -77,7 +77,7 @@ If both of these conditions are true, OneDrive downloads the update to a hidden 
 For info about the latest releases, see [New OneDrive sync app release notes](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0).
 
 > [!NOTE]
-> To apply sync app updates, computers in your organization must be able to reach the following: "oneclient.sfx.ms" and "g.live.com." Make sure you don't block these URLs. They are also used to enable and disable features and apply bug fixes. See [More info about the URLs and IP address ranges used in Microsoft 365](/office365/enterprise/urls-and-ip-address-ranges).
+> To apply sync app updates, computers in your organization must be able to reach the following: "oneclient.sfx.ms" and "g.live.com." Make sure you don't block these URLs. They're also used to enable and disable features and apply bug fixes. See [More info about the URLs and IP address ranges used in Microsoft 365](/office365/enterprise/urls-and-ip-address-ranges).
   
 ## Deploying updates in the Deferred ring
 

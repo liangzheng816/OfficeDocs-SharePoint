@@ -111,6 +111,8 @@ items:
           href: manage-trial-agents-sharepoint-powershell.md
         - name: Use agents with pay-as-you-go billing
           href: sharepoint-agents-azure-billing.md
+        - name: Monitor agent usage
+          href: monitor-agent-usage.md
   - name: Classic to modern
     items:
     - name: Publishing
@@ -641,6 +643,8 @@ items:
       items:
       - name: BCS retirement
         href: business-connectivity-services-retirement.md
+      - name: SSS retirement
+        href: secure-store-service-retirement-in-microsoft-365.md
       - name: Manage BCS applications
         href: manage-business-connectivity-service-applications.md
       - name: Create or edit Secure Store Target Application
@@ -679,5 +683,5 @@ items:
       href: /Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365
     - name: SharePoint Embedded
       href: /sharepoint/dev/embedded/overview
-    - name: SharePoint App Prioritization
-      href: SharePoint-Prioritization.md
+    - name: SharePoint app prioritization
+      href: sharePoint-app-prioritization.md
