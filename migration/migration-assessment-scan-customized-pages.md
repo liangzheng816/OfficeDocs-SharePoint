@@ -30,7 +30,7 @@ Learn how to mitigate issues with Customized Pages during migration.
 
 ## Overview
 
-Customized files are out of the box SharePoint files that aren't modified by a user. A common example is using a tool like SharePoint Designer to open a site and modify the default.aspx file of a site. During migration, these pages are reverted to their uncustomized state.
+Customized files are out of the box SharePoint files not modified by a user. A common example is using a tool like SharePoint Designer to open a site and modify the default.aspx file of a site. During migration, these pages are reverted to their uncustomized state.
 
 Any file modified by the SharePoint System Account is excluded from the scan report.
 
