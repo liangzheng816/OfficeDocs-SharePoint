@@ -64,9 +64,9 @@ This scan report provides a list of all the alerts installed in the environment.
 |ContentDBSizeInMB |Size of the content database hosting the site collection. |
 |LastContentModifiedDate |Date/Time the site collection had content modified. |
 |TotalItemCount |Total number of items found in the site collection. |
-|Hits |Number of requests logged for the site collection. Relies on data from the usage logging service. If the usage logging service is disabled this row shows N/A. |
-|DistinctUsers |Number of distinct users that have accessed the site collection. Relies on data from the usage logging service. If the usage logging service is disabled this row shows N/A. |
-|DaysOfUsageData |Number of days the usage logging service retains data. This provides context for Hits and DistinctUsers. For example, if this period is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
+|Hits |Number of requests logged for the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DistinctUsers |Number of distinct users that have accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DaysOfUsageData |Number of days the usage logging service retains data. This information provides context for Hits and DistinctUsers. For example, if this period is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
 |WebURL |Web URL. |
 |Title |Title of the alert. |
 |AlertTemplateName |Name of the alert. |
