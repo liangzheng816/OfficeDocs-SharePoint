@@ -25,41 +25,55 @@ description: Migration Manager Egnyte FAQs
 **Question: Is Migration Manager Egynte available for GCC, GCCHigh, DoD tenants?**
 
 Answer: For the latest updates, refer to [specialty environments support](mm-specialty-environments-support.md).
+</br> </br>
 
 **Question: What gets transferred?**
 
-Answer: Only owned folders and the root files for each user are copied. If a user isn't the owner of data they can access, we don't copy it. Content may be automatically reshared after migration, ensuring that each user retains access to their content exactly as before.
+Answer: Only owned folders and the root files for each user are copied. If a user isn't the owner of data they can access, we don't copy it. 
+
+As to the permissions, when [identities are fully mapped](mm-egnyte-step5-map-identities.md), content will be automatically reshared after migration, ensuring that each user retains access to their content exactly as before.
+</br> </br>
 
 **Question: Does Migration Manager Egnyte sync files?**
 
-Answer: There's a source-to-destination delta. When you run a transfer, we compare the destination directory to the source, and only transfer new or modified files over. We call this functionality our incremental feature. We compare the timestamps of the files in both the source and destination and transfer the newest versions only. The incremental feature is always on. Here are a few examples of how we deal with changes to files and folders.
+Answer: After you complete a migration task for the first time, triggering the **Migrate** button again will initiate a delta sync (incremental migration run). During this process, by default the destination directory is compared to the source, and only new or modified files are transferred. Here are a few examples of how we deal with changes to files and folders.
 
-- **Content changes**: If you edit a document in your source or you add a few new files, we copy them to your destination on the next incremental run, overwriting the previously existing files in the destination.
+- **Content changes**: If you edit a document in your source or you add a few new files, we copy them to your destination during the next incremental run, replacing the previous versions. If new files are added in the source, they're also migrated in the next incremental run.
 - **Name changes**: If the name of a file or folder changes in Office 365, we treat it as a brand new object. This change can lead to duplicate files being migrated to Office 365, or worse in that entire folders worth of data would be duplicated from the changed folder downwards.
 - **Example**: Changing the path `/Sales/Clients` to `/Global Sales/Clients` results in two copies of your `Sales` folder after the `Global Sales` folder is also copied during an incremental pass.
+
+Learn more about how to change the file transfer behavior during a [delta sync](mm-delta-sync.md).
+</br> </br>
 
 **Question: Does Migration Manager delete my files?**
 
 Answer: No. We never delete your data from any source. We take your data from one place and copy it to another; akin to *copy and paste* rather than *cut and paste.* We also don't retain any of your cloud storage data for any reasons.
+</br> </br>
 
 **Question: Can I rearrange content during a migration?**
 
 Answer:  Not recommended. Any major changes in directory structure should happen before or after your migration. It's also not a good idea to use our app to rearrange content. The risks that come with rearranging content during the migration are primarily in the form of data duplication; our incremental process sees all changes as new data. So, for example, if you change a folder name at the root, we detect that as a new folder, and all of the contents is retransferred, including all subfolders. When sharing permissions are transferred, both owners and collaborators receive duplicate data if content was rearranged or renamed.
+</br> </br>
 
 **Question: What happens to external sharing links?**
 
 Answer: We don't recreate external sharing links. After migration, the links have to be set in the destination manually.
+</br> </br>
 
 **Question: What about external collaborators?**
 
 Answer: We don't share content with external collaborators. This policy is in place to protect your organization, and industry best practice is to never automatically share sensitive internal data with external collaborators.
+</br> </br>
 
 **Question: Does Migration Manager preserve file versions?**
-Answer: No. During a migration, only the most recent version of a file is transferred.
+
+Answer: No. During a Egnyte migration, only the most recent version of a file is transferred.
+</br> </br>
 
 **Question: Does Migration Manager automatically notify users?**
 
-Answer: No. We automatically suppress all emails to users so they aren't bombarded with excessive notifications about the data they now have access to.
+Answer:  Migration Manager allows you to customize email notifications to track your migration progress. [Learn more about email notification](mail-notification.md).
+</br> </br>
 
 **Question: Why I can’t see some of my SharePoint sites while assigning destinations on the UI?**
 
@@ -68,3 +82,6 @@ Answer: If SharePoint or Teams sites in your tenant aren't visible on the UI whi
 - Admins might not see sites for a multi-geo tenant due to limitations in the graph API.
 - Sites that are recently created might take a couple of hours to sync and appear in the UI.
 - SharePoint site search in the UI might not work in some special cases (for example, when there are special characters in the destination path).
+
+If you cannot locate a destination in the "Edit destination" panel, please [upload the destination using a CSV file](/sharepointmigration/mm-egnyte-step4-review-destinations#upload-destinations-using-a-csv-file).
+</br> </br>
