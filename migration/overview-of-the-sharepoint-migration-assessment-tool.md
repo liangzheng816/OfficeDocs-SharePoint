@@ -39,7 +39,7 @@ The tool is designed to run without impacting your environment, so you might obs
 The tool is built to be run from within a SharePoint 2010, 2013, or 2016 farm and has these prerequisites:
 
 - To run the tool, all files must be extracted from any compressed package before execution.
-- The tool must run as the Farm service account. A farm administrator account is acceptable as long as the account has been given read access to all web applications. The account also needs explicit Full Control permissions on both **Operations** > **Administrators** and **Sharing** > **Permissions** on the User Profile service application. There are a series of checks to ensure that the account has enough permissions before it scans the environment.
+- The tool must run as the Farm service account. A farm administrator account is acceptable as long as the account is given read access to all web applications. The account also needs explicit Full Control permissions on both **Operations** > **Administrators** and **Sharing** > **Permissions** on the User Profile service application. There are a series of checks to ensure that the account has enough permissions before it scans the environment.
 - The tool supports only English versions of SharePoint.
 
 ## Config files
