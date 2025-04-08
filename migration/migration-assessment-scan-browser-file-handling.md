@@ -51,7 +51,7 @@ The provided report contains a list of all the HTM and HTML files in your enviro
 Options for renaming the file extension of a file:
 
 - Open the site in SharePoint Designer and rename the file.
-- Programmatically rename files using SPFile.MoveTo() via CSOM.
+- Programmatically rename files using SPFile.MoveTo() via the SharePoint client-side object model (CSOM).
 
 ## Post Migration
 
