@@ -78,5 +78,5 @@ Answer: If SharePoint or Teams sites in your tenant aren't visible on the UI whi
 - Sites that are recently created might take a couple of hours to sync and appear in the UI.
 - SharePoint site search in the UI might not work in some special cases (for example, when there are special characters in the destination path).
 
-If you cannot locate a destination in the "Edit destination" panel, please [upload the destination using a CSV file](/sharepointmigration/mm-dropbox-step4-review-destinations#upload-destinations-using-a-csv-file).
+If you can't locate a destination in the "Edit destination" panel, [upload the destination using a CSV file](/sharepointmigration/mm-dropbox-step4-review-destinations#upload-destinations-using-a-csv-file).
 </br> </br>
