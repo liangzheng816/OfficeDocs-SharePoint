@@ -28,7 +28,14 @@ Learn how to fix issues with BCS before migrating your data.
 
 ## Overview
 
-Business Connectivity Services (BCS) was introduced in SharePoint 2010 as an improvement to the Business Data Catalog created for Office SharePoint Server 2007. BCS enables SharePoint to access data from external data systems such as SAP, ERP, and CRM, in addition to other data-driven applications that are exposed through Windows Communication Foundation (WCF) services or Open Data (OData) endpoints.
+Business Connectivity Services (BCS) was introduced in SharePoint 2010 as an improvement to the Business Data Catalog created for Office SharePoint Server 2007. BCS lets SharePoint access data from external data systems, including:
+
+- SAP
+- ERP
+- CRM
+- Other data-driven applications that are exposed through:
+  - Windows Communication Foundation (WCF) services
+  - Open Data (OData) endpoints
 
 ## Data Migration
 
@@ -55,7 +62,7 @@ Ensure that your solutions, which rely on the BCS applications, function with th
 
 The following table describes the columns in the **BCSApplications-detail.csv** report.
 
-This file contains the BCS LobSystem definitions deployed to the target environment. The file also has information to help you identify the definition and what it's used for.
+This file contains the BCS LobSystem definitions deployed to the target environment and some information to help you identify the definition and what it's used for.
 
 |**Column**    |**Description**                                                                                 |
 |:-------------|:-----------------------------------------------------------------------------------------------|
