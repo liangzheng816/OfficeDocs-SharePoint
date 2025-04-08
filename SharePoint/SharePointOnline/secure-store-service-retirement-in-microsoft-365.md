@@ -1,5 +1,5 @@
 ---
-ms.date: 04/03/2025
+ms.date: 04/08/2025
 title: Secure Store Service (SSS) retirement in Microsoft 365
 ms.reviewer: troys
 ms.author: ruihu
@@ -28,12 +28,9 @@ This follows the discontinuation of [Business Connectivity Services](/sharepoint
 
 ## Impact on SharePoint Server
 
-This announcement has no impact on Secure Store Service in SharePoint Server.
+This announcement has no immediate impact on Secure Store Service in SharePoint Server 2016, 2019, and Subscription Edition.
 
-This feature will remain supported in SharePoint Server 2016 and SharePoint Server 2019 until those products reach their end of support date of July 14, 2026.
-
-> [!NOTE]
-> Microsoft has no plans to retire Secure Store Service in SharePoint Server Subscription Edition currently. Deprecation and removal announcements for SharePoint Server Subscription Edition are announced in the [What's deprecated or removed from SharePoint Server Subscription Edition](/sharepoint/what-s-new/what-s-deprecated-or-removed-from-sharepoint-server-subscription-edition) article.
+Until  SharePoint Server 2016 and SharePoint Server 2019 reach their end of support date of July 14, 2026, SSS will be supported. For SharePoint Server Subscription Edition, there are no current and immediate plans to retire SSS. For any deprecation or feature support removal announcements, see [What's deprecated or removed from SharePoint Server Subscription Edition](/sharepoint/what-s-new/what-s-deprecated-or-removed-from-sharepoint-server-subscription-edition)
 
 ## Impacted features and scenarios
 
@@ -43,12 +40,6 @@ All Secure Store Service features will be retired in SharePoint in Microsoft 365
 - Credential storage
 - Mapping for external data sources
 
-## Recommended replacement technology: Azure Key Vault
-
-We encourage you to explore using Azure Key Vault to replace Secure Store Service solutions in SharePoint in Microsoft 365. Although there is no direct migration from Secure Store Service to Azure Key Vault, it supports a modern, cloud-first credential and secret management experience. Azure Key Vault can integrate with various Microsoft 365 services and external data sources through its secure and scalable architecture.
-
-To learn more about Azure Key Vault, see the links in the [More information](#more-information-about-azure-key-vault) section.
-
 ## Retirement schedule
 
 | Date | Milestone |
@@ -57,9 +48,15 @@ To learn more about Azure Key Vault, see the links in the [More information](#mo
 | **May 31, 2025** | Adding new Target Applications or credentials in Secure Store Service is restricted. |
 | **September 30, 2025** | Secure Store Service is fully retired in Microsoft 365. |
 
-## Automatic Retirement
+## Automatic retirement
 
 Microsoft will manage the retirement process automatically. Administrators do not need to take any manual steps to disable Secure Store Service. Once retired, the service will no longer be available, and any existing configurations will be removed.
+
+## Recommended replacement technology: Azure Key Vault
+
+We encourage you to explore using Azure Key Vault to replace Secure Store Service solutions in SharePoint in Microsoft 365. Although there is no direct migration from Secure Store Service to Azure Key Vault, it supports a modern, cloud-first credential and secret management experience. Azure Key Vault can integrate with various Microsoft 365 services and external data sources through its secure and scalable architecture.
+
+To learn more about Azure Key Vault, see the links in the [More information](#more-information-about-azure-key-vault) section.
 
 ## More Information about Azure Key Vault
 
