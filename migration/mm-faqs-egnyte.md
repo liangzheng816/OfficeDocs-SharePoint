@@ -1,5 +1,5 @@
 ---
-ms.date: 04/04/2025
+ms.date: 04/08/2025
 title: "Migration Manager Egnyte FAQs"
 ms.reviewer: 
 ms.author: heidip
@@ -67,7 +67,7 @@ Answer: We don't share content with external collaborators. This policy is in pl
 
 **Question: Does Migration Manager preserve file versions?**
 
-Answer: No. During a Egnyte migration, only the most recent version of a file is transferred.
+Answer: No. During an Egnyte migration, only the most recent version of a file is transferred.
 </br> </br>
 
 **Question: Does Migration Manager automatically notify users?**
@@ -83,5 +83,5 @@ Answer: If SharePoint or Teams sites in your tenant aren't visible on the UI whi
 - Sites that are recently created might take a couple of hours to sync and appear in the UI.
 - SharePoint site search in the UI might not work in some special cases (for example, when there are special characters in the destination path).
 
-If you cannot locate a destination in the "Edit destination" panel, please [upload the destination using a CSV file](/sharepointmigration/mm-egnyte-step4-review-destinations#upload-destinations-using-a-csv-file).
+If you can't locate a destination in the "Edit destination" panel, [upload the destination using a CSV file](/sharepointmigration/mm-egnyte-step4-review-destinations#upload-destinations-using-a-csv-file).
 </br> </br>
