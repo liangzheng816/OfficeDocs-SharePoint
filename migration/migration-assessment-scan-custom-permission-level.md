@@ -5,7 +5,7 @@ ms.author: heidip
 author: MicrosoftHeidi
 manager: jtremper
 recommendations: true
-ms.date: 12/14/2017
+ms.date: 04/08/2025
 audience: ITPro
 f1.keywords:
 - NOCSH
@@ -23,7 +23,7 @@ ms.collection:
 
 ## Overview
 
-In SharePoint, it's possible to create a custom permission level and then assign that permission level to users and groups. Some migration tools have problems moving this information to SharePoint. As a result, permissions won't be the same for impacted users and groups post migration.
+In SharePoint, it's possible to create a custom permission level and then assign that permission level to users and groups. Some migration tools have problems moving this information to SharePoint. As a result, permissions aren't the same for impacted users and groups post migration.
   
 For more information on permission levels, see [Understanding permission levels in SharePoint](/sharepoint/understanding-permission-levels).
   
@@ -32,7 +32,7 @@ For more information on permission levels, see [Understanding permission levels 
 With some tooling, this data isn't migrated. It's recommended to use the permission levels provided by SharePoint. However, if custom permission levels are required, the permission levels would need to be manually recreated on the SharePoint sites.
   
 > [!IMPORTANT]
-> Any site that is configured as "No Access" (locked), in SharePoint will be skipped. To see a list of locked site collections see the Locked Sites scan output. 
+> Any site that is configured as "No Access" (locked) in SharePoint is skipped. To see a list of locked site collections see the Locked Sites scan output. 
   
 ## Preparing for Migration
 
@@ -46,27 +46,25 @@ Validate the users and groups have the correct permission levels. If you needed 
 
 The following table describes the columns in the **CustomPermissionLevel-detail.cs** v report. This scan report provides a list of all the custom permission levels in the environment. 
   
-|**Column**|**Description**|
-|:-----|:-----|
-|SiteId  <br/> |Unique identifier of the impacted site collection.  <br/> |
-|SiteURL  <br/> |URL to the impacted site collection.  <br/> |
-|WebApplicationURL  <br/> |URL of the Web Application hosting the site collection.  <br/> |
-|SiteOwner  <br/> |Owner of the site collection.  <br/> |
-|SiteAdmins  <br/> |List of people listed as site collection administrators  <br/> |
-|SiteSizeInMB  <br/> |Size of the size collection in megabytes [MB]  <br/> |
-|NumOfWebs  <br/> |Number of webs that exist in the site collection.  <br/> |
-|ContentDBName  <br/> |Name of the content database hosting the site collection.  <br/> |
-|ContentDBServerName  <br/> |SQL Server hosting the content database.  <br/> |
-|ContentDBSizeInMB  <br/> |Size of the content database hosting the site collection.  <br/> |
-|LastContentModifiedDate  <br/> |Date/Time the site collection had content modified.  <br/> |
-|TotalItemCount  <br/> |Total number of items found in the site collection.  <br/> |
-|Hits  <br/> |Number of requests logged for the site collection. Relies on data from the usage logging service. If the usage logging service is disabled this row shows N/A.  <br/> |
-|DistinctUsers  <br/> |Number of distinct users that have accessed the site collection. Relies on data from the usage logging service. If the usage logging service is disabled this row shows N/A.  <br/> |
-|DaysOfUsageData  <br/> |Number of days the usage logging service retains data. This provides context for Hits and DistinctUsers. For example, if this is 14 days, the Hits and DistinctUsers data is for the last 14 days.  <br/> |
-|WebURL  <br/> |Url to the site that has publishing features enabled.  <br/> |
-|PermissionLevelName  <br/> |Name of the custom permission level.  <br/> |
-|PermissionLevelDescription  <br/> |Description of the custom permission level.  <br/> |
-|Permission LevelURL  <br/> |Url to the custom permission level.  <br/> |
-|ScanID  <br/> |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool.  <br/> |
-   
-
+|**Column** |**Description** |
+|:----------|:---------------|
+|SiteId |Unique identifier of the impacted site collection. |
+|SiteURL |URL to the impacted site collection. |
+|WebApplicationURL |URL of the Web Application hosting the site collection. |
+|SiteOwner |Owner of the site collection. |
+|SiteAdmins |List of people listed as site collection administrators |
+|SiteSizeInMB |Size of the size collection in megabytes (MB) |
+|NumOfWebs |Number of webs that exist in the site collection. |
+|ContentDBName |Name of the content database hosting the site collection. |
+|ContentDBServerName |SQL Server hosting the content database. |
+|ContentDBSizeInMB |Size of the content database hosting the site collection. |
+|LastContentModifiedDate |Date/Time the site collection had content modified. |
+|TotalItemCount |Total number of items found in the site collection. |
+|Hits |Number of requests logged for the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DistinctUsers |Number of distinct users that have accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DaysOfUsageData |Number of days the usage logging service retains data. This information provides context for Hits and DistinctUsers. For example, if this number is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
+|WebURL |Url to the site that has publishing features enabled. |
+|PermissionLevelName |Name of the custom permission level. |
+|PermissionLevelDescription |Description of the custom permission level. |
+|Permission LevelURL |Url to the custom permission level. |
+|ScanID |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool. |
