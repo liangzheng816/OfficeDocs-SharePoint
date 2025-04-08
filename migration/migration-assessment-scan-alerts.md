@@ -81,7 +81,7 @@ This scan report provides a list of all the alerts installed in the environment.
 |DeliveryChannels |Title of the web hosting the add-in. |
 |AlertType |The type of object to which the alert applies. It can be a list or document library, a list item or document, or a custom object. |
 |EventType |The type of event to which the alert applies. |
-|EventTypeBitmask |This can be ignored. |
+|EventTypeBitmask |This column can be ignored. |
 |AlertFrequency |Gets or sets the time interval for sending the alert. |
 |AlertTime |The date and time for sending the alert. |
 |Status |Determines if the alert is enabled or not. |
