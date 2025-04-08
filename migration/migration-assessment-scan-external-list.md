@@ -24,7 +24,7 @@ description: "Learn how to scan external lists during migration."
 
 ## Overview
 
-External lists are lists created from a Business Catalogs Services (BCS) application. These are lists that appear to be SharePoint lists, but are actually backed by an external datasource. For example, you could have a list showing data from an external SQL Server or Web Service.
+External lists are lists created from a Business Catalogs Services (BCS) application. These lists appear to be SharePoint lists, but are actually backed by an external datasource. For example, you could have a list showing data from an external SQL Server or Web Service.
 
 ## Data Migration
 
@@ -64,7 +64,7 @@ The following table describes the columns in the **ExternalLists-detail.csv** re
 |LastContentModifiedDate |Date/Time the site collection had content modified. |
 |TotalItemCount |Total number of items found in the site collection. |
 |Hits |Number of requests logged for the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
-|DistinctUsers |Number of distinct users that have accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DistinctUsers |Number of distinct users that accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
 |DaysOfUsageData |Number of days the usage logging service retains data. This information provides context for Hits and DistinctUsers. For example, if this number is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
 |WebURL |Url to the site with publishing features enabled. |
 |ListTitle |Title of the list. |
