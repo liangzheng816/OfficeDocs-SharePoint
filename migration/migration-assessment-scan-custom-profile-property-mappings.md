@@ -32,7 +32,7 @@ Learn how to mitigate issues with Custom Profile Property mappings during migrat
 
 In the source environment, it was possible to add other profile property mappings to the User Profile Service Application. The profile property mappings enable SharePoint to pull in profile property values from data sources outside of SharePoint. For example, you could map a profile property to an attribute in Active Directory. During a profile sync, SharePoint populated the user's profile with the value from Active Directory. Another scenario was to use Business Connectivity Services (BCS) to populate profile property values from a database or web service.
 
-The target environment uses Microsoft Entra ID to populate the SharePoint profile values. SharePoint synchronizes the most common profile data from Microsoft Entra ID into SharePoint. The target environment doesn't support extending the Microsoft Entra schema and configuring other profile property mappings. If you need to populate data that is not provided by the out of the box profile property mappings, it's required to write a program that pushes the values you want into the profile properties in the service.
+The target environment uses Microsoft Entra ID to populate the SharePoint profile values. SharePoint synchronizes the most common profile data from Microsoft Entra ID into SharePoint. The target environment doesn't support extending the Microsoft Entra schema and configuring other profile property mappings. If you need to populate data that isn't provided by the out of the box profile property mappings, it's required to write a program that pushes the values you want into the profile properties in the service.
 
 For guidance on updating profile property values using the Client Side Object Model (CSOM), see:
 
@@ -74,7 +74,7 @@ This scan report contains a list of all the profile property mappings that don't
 |ScanID |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool. |
 
 > [!NOTE]
-> Source environments contain some properties that were previously used in a feature called Phonetic Search. This feature enabled you to search for a person's name, and the search results would return names that were similar to the name entered. This functionality no longer relies on these properties in the target environment, and as a result, they are present in your report. If you aren't explicitly using the following properties in any of your customization, you don't need to take any action on these entries.
+> Source environments contain some properties that were previously used in a feature called Phonetic Search. This feature enabled you to search for a person's name, and the search results would return names that were similar to the name entered. This functionality no longer relies on these properties in the target environment, and as a result, they're present in your report. If you aren't explicitly using the following properties in any of your customizations, you don't need to take any action on these entries.
 
 |Property Display Name |Property Name           |Mapping                  |
 |----------------------|------------------------|-------------------------|
