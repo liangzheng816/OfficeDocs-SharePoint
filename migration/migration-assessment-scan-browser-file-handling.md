@@ -29,7 +29,7 @@ Learn how to mitigate issues with Browser File Handling during migration.
 
 ## Overview
 
-The Browser File Handling settings on the Web Applications in SharePoint impact how you can browse certain file types. The source environment allowed you to change this setting from Strict to Permissive. The Permissive setting enables you to open all file types within the browser. However, in the target environment, the Strict setting is enforced and cannot be modified. As a result, you may find some file types don't open in the browser post-migration. For example, \*.htm and \*.html files in document libraries no longer open in the browser. Users are prompted to download the files.
+The Browser File Handling settings on the Web Applications in SharePoint impact how you can browse certain file types. The source environment allowed you to change this setting from Strict to Permissive. The Permissive setting enables you to open all file types within the browser. However, in the target environment, the Strict setting is enforced and can't be modified. As a result, you may find some file types don't open in the browser post-migration. For example, \*.htm and \*.html files in document libraries no longer open in the browser. Users are prompted to download the files.
 
 The main reason for the change is that the Strict setting is more secure. There's a potential elevation of privilege scenario where a malicious user with contributor access to a site could create an HTML file that contains JavaScript that runs against a different site collection that they don't have permissions to. They then have a user that does have permissions to browse the page, which results in the elevated user executing the JavaScript and accessing the data that the malicious user was after.
 
