@@ -1,5 +1,5 @@
 ---
-ms.date: 03/27/2025
+ms.date: 04/08/2025
 title: "Step 6: Migrate and monitor Egnyte migration"
 ms.reviewer: 
 ms.author: heidip
@@ -25,7 +25,7 @@ description: "Step 6: Migrate and monitor Egnyte migration"
 ---
 # Step 6:  Migrate and monitor your Egnyte migration
 
-Once you review the tasks (Egnyte folderes), confirm the destinations, and correctly map identities, you're ready to migrate.
+Once you review the tasks (Egnyte folders), confirm the destinations, and correctly map identities, you're ready to migrate.
 
 >[!Important]
 >We strongly recommend you don't rename or move migrated files before the final migration has been completed. Doing so results in files being overwritten.
