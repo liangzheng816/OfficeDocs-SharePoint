@@ -79,7 +79,7 @@ This scan report contains InfoPath forms that require remediation before migrati
 |UnsupportedSoapCallsCount |Number of unsupported SOAP calls found in the XSN file. |
 |UnsupportedDataConnectionTypes |Data connections not supported on the new platform. |
 |UnsupportedDataConnectionCount |Number of unsupported data connections. |
-|ManagedCode |True - The XSN file has managed code associated with it. </br>False - The XSN file doesn't have managed code associated with it. |
+|ManagedCode |True - There is managed code associated with the XSN file. </br>False - There's no managed code associated with the XSN file. |
 |ManagedCodeState |ValidationRequired - Managed code may work in the target environment. It requires validation during the migration testing phase to be sure. <br/>RemediationRequired - The form has managed code that requires remediation. |
 |Mode |The mode that the form was published in. </br>A mode of "Client" results in an InfoPath form that only opens in the InfoPath client. A mode of "Client Server" opens in both the browser and the InfoPath client. Forms with mode set to Client don't show up in this report. <br/>Three more custom values are: </br>"WorkflowInitAssoc" - This value specifies that the form template (.xsn) file represents the form used to edit items in a workflow. </br>"List" - This value specifies that the form template (.xsn) file represents the form used to edit items in a list. </br>"Entity" -This value specifies that the form template (.xsn) file represents the form used to edit items in an **external** list. |
 |PeoplePickerCount |Number of people picker fields found in the form. |
