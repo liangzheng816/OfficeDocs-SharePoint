@@ -56,12 +56,6 @@ Navigate to [Microsoft 365 Admin Center Home - Setup - Migration and imports](ht
 - **Prerequisites installed:** Make sure you have the necessary prerequisites installed.
 - **Request a rate increase from Egynte**. Your new Egnyte application lets you connect to your Egnyte account. However, it's likely that it won't allow you to migrate content to Microsoft 365 due to the limits Egnyte imposes on new applications. Sign into your Egynte developer account to determine your existing rate limit. Then contact Egynte support to submit your request.
 
-**Sample request email:**
-
-   **Subject:**  Egnyte connection</br>
-   **Text:**     I would like the user rate limits increased for my application [*enter application name*] to [*x calls*] per second and [*y calls*] per day.
-
-
 Once a migration project is created, you can start connecting to the source as described in the next step.
 
 > [!NOTE]
