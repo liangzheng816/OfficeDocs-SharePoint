@@ -43,7 +43,7 @@ InfoPath forms (XSN files) are migrated, but some forms may not function without
 
 XSN files that use the following scenarios need to be remediated. If remediation doesn't occur, these forms fail post migration. The common scenarios are as follows:
 
-- XSN or UDCX makes SOAP calls that aren't supported in the target environment. These forms need to be updated to call supported endpoints.
+- XSN or universal data connection (UDCX) files make SOAP calls that aren't supported in the target environment. These forms need to be updated to call supported endpoints.
 - XSN uses managed code that requires remediation. Managed code isn't supported on the target platform.
 - InfoPath forms that use people picker fields. These fields need to be updated with the new user's identity post migration because the on-premises identity (for example, Windows claims) doesn't match the user's Microsoft 365 identity.
 
