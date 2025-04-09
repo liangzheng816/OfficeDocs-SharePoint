@@ -39,7 +39,7 @@ For more information, download the new [Deploying SQL Server 2016 PowerPivot and
 
 ## Use a dedicated server for SQL Server
 
-To ensure optimal performance for farm operations, we recommend that you install SQL Server on a dedicated server that does not run other farm roles and does not host databases for other applications. The only exception is deployment of SharePoint Server 2016 or 2019 in a Single-Server farm role or SharePoint 2013 on a stand-alone server, which is meant for development or testing, and is not recommended for production use. For more information, see [Description of MinRole and associated services in SharePoint Servers 2016 and 2019](description-of-minrole-and-associated-services-in-sharepoint-server-2016.md) and [Install SharePoint Servers 2016 or 2019 on one server](../install/install-sharepoint-server-2016-on-one-server.md).
+To ensure optimal performance for farm operations, we recommend that you install SQL Server on a dedicated server that doesn't run other farm roles and doesn't host databases for other applications. The only exception is deployment of SharePoint Server 2016 or 2019 in a Single-Server farm role or SharePoint 2013 on a stand-alone server, which is meant for development or testing, and isn't recommended for production use. For more information, see [Description of MinRole and associated services in SharePoint Servers 2016 and 2019](description-of-minrole-and-associated-services-in-sharepoint-server-2016.md) and [Install SharePoint Servers 2016 or 2019 on one server](../install/install-sharepoint-server-2016-on-one-server.md).
 
 > [!NOTE]
 > The recommendation to use a dedicated server for relational databases also applies to deploying SQL Server in virtual environments.
@@ -50,15 +50,15 @@ To ensure consistent behavior and performance, configure the following options a
 
 - Due to potential performance issues with maintaining multiple SQL instances, we recommend that you use a single instance of SQL Server per deployed database server.
 
-- Do not enable auto-create statistics on SharePoint content databases. Enabling auto-create statistics is not supported for SharePoint Server. SharePoint Server configures the required settings during provisioning and upgrade. Manually enabling auto-create statistics on a SharePoint database can significantly change the execution plan of a query. The SharePoint databases either use a stored procedure that maintains the statistics (proc_UpdateStatistics) or rely on SQL Server to do this.
+- Don't enable auto-create statistics on SharePoint content databases. Enabling auto-create statistics isn't supported for SharePoint Server. SharePoint Server configures the required settings during provisioning and upgrade. Manually enabling auto-create statistics on a SharePoint database can significantly change the execution plan of a query. The SharePoint databases either use a stored procedure that maintains the statistics (proc_UpdateStatistics) or rely on SQL Server to do this.
 
 - For SharePoint Server 2013, Maintenance Plans are managed by SharePoint:
-  - SQL statistics are managed by the health rule "Databases used by SharePoint have outdated index statistics" that calls proc_updatestatics
-  - Content databases have the Auto Update Statistics property set to **False**
+  - SQL statistics are managed by the health rule "Databases used by SharePoint have outdated index statistics" that calls proc_updatestatics.
+  - Content databases have the Auto Update Statistics property set to **False**.
 
 - For SharePoint Servers 2016 and 2019, SQL administrator must create [Maintenance Plans](/sql/relational-databases/maintenance-plans/maintenance-plans?view=sql-server-2017&preserve-view=true) for SharePoint content databases:
   - SQL statistics are not managed by the health rule "Databases used by SharePoint have outdated index statistics"
-  - Content databases have the Auto Update Statistics property set to **True** `
+  - Content databases have the Auto Update Statistics property set to **True**.
 
 - Set max degree of parallelism (MAXDOP) to 1 for instances of SQL Server that host SharePoint databases to make sure that a single SQL Server process serves each request.
 
@@ -154,21 +154,21 @@ Following are recommendations to proactively manage the growth of data and log f
 
 - When possible, increase all data files and log files to their expected final size, or periodically increase these at set periods, for example, every month or every six months, or before rollout of a new storage-intensive site such as during file migrations.
 
-- Enable database autogrowth as a protective measure to make sure that you do not run out of space in data and log files. Consider the following:
+- Enable database autogrowth as a protective measure to make sure that you don't run out of space in data and log files. Consider the following:
 
     > [!IMPORTANT]
     > You must factor in the performance and operations issues associated with using autogrowth. For more information, see [Considerations for the "autogrow" and "autoshrink" settings in SQL Server](/troubleshoot/sql/admin/considerations-autogrow-autoshrink).
 
-  - The default settings for a new database are to grow by 1 MB increments. Because this default setting for autogrowth results in increases in the size of the database, do not rely on the default setting. Instead, use the guidance provided in [Set SQL Server options](storage-and-sql-server-capacity-planning-and-configuration.md#Section6_3).
+  - The default settings for a new database are to grow by 1 MB increments. Because this default setting for autogrowth results in increases in the size of the database, don't rely on the default setting. Instead, use the guidance provided in [Set SQL Server options](storage-and-sql-server-capacity-planning-and-configuration.md#Section6_3).
 
   - Set autogrowth values to a fixed number of megabytes instead of to a percentage. The bigger the database, the bigger the growth increment should be.
 
     > [!NOTE]
-    > Use care when you set the autogrowth feature for SharePoint databases. If you set a database to autogrow as a percentage, for example at a 10-percent (%) growth rate, a database that is 5 GB grows by 500MB every time that a data file has to be expanded. In this scenario, you could run out of disk space.
+    > Use care when you set the autogrowth feature for SharePoint databases. If you set a database to autogrow as a percentage, for example at a 10-percent (%) growth rate, a database that is 5 GB grows by 500 MB every time that a data file has to be expanded. In this scenario, you could run out of disk space.
 
-    Consider for example, a scenario where content is gradually increased, say at 100MB increments, and autogrowth is set at 10MB. Then suddenly a new document management site requires a very large amount of data storage, perhaps with initial size of 50 GB. For this large addition, growth at 500 MB increments is more appropriate than 10MB increments.
+    Consider for example, a scenario where content is gradually increased, say at 100 MB increments, and autogrowth is set at 10 MB. Then suddenly a new document management site requires a very large amount of data storage, perhaps with initial size of 50 GB. For this large addition, growth at 500 MB increments is more appropriate than 10 MB increments.
 
-  - For a managed production system, consider autogrowth to be merely a contingency for unexpected growth. Do not use the autogrow option to manage your data and log growth on a day-to-day basis. Instead, set the autogrowth to allow for an approximate size in one year and then add a 20 percent margin for error. Also set an alert to notify you when the database runs low on space or approaches a maximum size.
+  - For a managed production system, consider autogrowth to be merely a contingency for unexpected growth. Don't use the autogrow option to manage your data and log growth on a day-to-day basis. Instead, set the autogrowth to allow for an approximate size in one year and then add a 20 percent margin for error. Also set an alert to notify you when the database runs low on space or approaches a maximum size.
 
 - Maintain a level of at least 25 percent available space across drives to accommodate growth and peak usage patterns. If you add drives to a RAID array or allocate more storage to manage, monitor capacity closely to avoid running out of space.
 
@@ -176,7 +176,7 @@ Following are recommendations to proactively manage the growth of data and log f
 
 We recommend that you continuously monitor SQL Server storage and performance to make sure that each production database server is adequately handling the load put on it. Additionally, continuous monitoring enables you to establish benchmarks that you can use for resource planning.
 
-Take a comprehensive view of resource monitoring. Do not limit monitoring to resources that are specific to SQL Server. It is equally important to track the following resources on computers that are running SQL Server: CPU, memory, cache/hit ratio, and the I/O subsystem.
+Take a comprehensive view of resource monitoring. Don't limit monitoring to resources that are specific to SQL Server. It's equally important to track the following resources on computers that are running SQL Server: CPU, memory, cache/hit ratio, and the I/O subsystem.
 
 When one or more of the server resources seems slow or overburdened, consider the following performance guidelines based on the current and projected workload.
 
@@ -190,7 +190,7 @@ When one or more of the server resources seems slow or overburdened, consider th
 
 ## Use backup compression to speed up backups and reduce file sizes
 
-Backup compression can speed up SharePoint backup operations. It is available in SQL Server Standard and Enterprise Edition. If you set the compression option in your backup script or configure SQL Server to compress by default, you can significantly reduce the size of your database backups and shipped logs. For more information, see [Backup Compression (SQL Server)](/sql/relational-databases/backup-restore/backup-compression-sql-server?viewFallbackFrom=sql-server-2014) and [Data Compression](/sql/relational-databases/data-compression/data-compression?viewFallbackFrom=sql-server-2014), or [Enable Compression on a Table or Index](/sql/relational-databases/data-compression/enable-compression-on-a-table-or-index?viewFallbackFrom=sql-server-2014)
+Backup compression can speed up SharePoint backup operations. It's available in SQL Server Standard and Enterprise Edition. If you set the compression option in your backup script or configure SQL Server to compress by default, you can significantly reduce the size of your database backups and shipped logs. For more information, see [Backup Compression (SQL Server)](/sql/relational-databases/backup-restore/backup-compression-sql-server?viewFallbackFrom=sql-server-2014) and [Data Compression](/sql/relational-databases/data-compression/data-compression?viewFallbackFrom=sql-server-2014), or [Enable Compression on a Table or Index](/sql/relational-databases/data-compression/enable-compression-on-a-table-or-index?viewFallbackFrom=sql-server-2014)
 
 ## Acknowledgements
 

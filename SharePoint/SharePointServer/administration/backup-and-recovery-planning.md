@@ -24,7 +24,7 @@ description: "Learn how to plan backup and recovery strategies for your SharePoi
   
 Typically, you want to have a backup and recovery plan available before you deploy your SharePoint Server environment. You then need to maintain and update your backup and recovery plan as your SharePoint Server changes to protect your data.
   
-The stages involved in planning for backup and recovery include determining backup and recovery strategies for a SharePoint Server environment and deciding which tools to use. The stages do not have to be done in the order listed, and the process may be iterative.
+The stages involved in planning for backup and recovery include determining backup and recovery strategies for a SharePoint Server environment and deciding which tools to use. The stages don't have to be done in the order listed, and the process may be iterative.
   
 When you plan backup and recovery for disaster recovery, consider common events, failures, and errors; local emergencies; and regional emergencies. The sections in this article describe the stages that you must address in your backup and recovery plan. Each stage is a step toward the final goal of a good backup to use to recover your SharePoint Server farm. You can customize the stages to meet your needs. Note that your overall backup and recovery plan is dynamic and must reflect your current SharePoint Server environment.
   
@@ -34,9 +34,9 @@ For more information about SharePoint Server backup and recovery, see [Overview 
 
 To define business requirements, determine the following for each farm and service in the environment: 
   
-- Recovery point objective (RPO) is the objective for the maximum time period between the last available backup and any potential failure point. It is determined by how much data that the business can afford to lose if a failure were to occur. 
+- Recovery point objective (RPO) is the objective for the maximum time period between the last available backup and any potential failure point. It's determined by how much data that the business can afford to lose if a failure were to occur. 
     
-- Recovery time objective (RTO) is the objective for the maximum time that a data recovery process will take. It is determined by the time that the business can afford for the site or service to be unavailable. 
+- Recovery time objective (RTO) is the objective for the maximum time that a data recovery process will take. It's determined by the time that the business can afford for the site or service to be unavailable. 
     
 - Recovery level objective (RLO) is the objective that defines the granularity with which you must be able to recover data — whether you must be able to recover the whole farm, Web application, site collection, site, list or library, or item. 
     
@@ -73,13 +73,13 @@ The following tables list components of a SharePoint environment that you might 
   
 (2) Farm-level and database-level backups can be used with SharePoint Server 2016 unattached database recovery to restore site collections, sites, lists, and configurations.
   
-(3) Content stored in remote BLOB stores cannot be restored by using System Center Data Protection Manager. 
+(3) Content stored in remote BLOB stores can't be restored by using System Center Data Protection Manager. 
   
 (4) Changes to Web.config can be backed up by using file system backup from DPM.
   
 (5) IIS configurations can be recovered by using a bare-metal backup from DPM. 
   
-(6) DPM can recover this item by using a combination of a bare-metal backup and SharePoint Server 2016 backup. It cannot be backed up and recovered as an object. 
+(6) DPM can recover this item by using a combination of a bare-metal backup and SharePoint Server 2016 backup. It can't be backed up and recovered as an object. 
   
 (7) Fully-trusted solution packages are stored in the configuration database, and sandboxed solutions are stored in content databases. They can be recovered as part of farm or content database recovery.
   
@@ -114,22 +114,22 @@ For more information, see [Announcement: Protect your Server 2016 workloads with
   
 (2) Farm-level and database-level backups can be used with SharePoint 2013 unattached database recovery to restore site collections, sites, lists, and configurations.
   
-(3) Content stored in remote BLOB stores cannot be restored by using System Center Data Protection Manager.
+(3) Content stored in remote BLOB stores can't be restored by using System Center Data Protection Manager.
   
 (4) Changes to Web.config can be backed up by using file system backup from DPM.
   
 (5) IIS configurations can be recovered by using a bare-metal backup from DPM. 
   
-(6) DPM can recover this item by using a combination of a bare-metal backup and SharePoint 2013 backup. It cannot be backed up and recovered as an object. 
+(6) DPM can recover this item by using a combination of a bare-metal backup and SharePoint 2013 backup. It can't be backed up and recovered as an object. 
   
 (7) Fully-trusted solution packages are stored in the configuration database, and sandboxed solutions are stored in content databases. They can be recovered as part of farm or content database recovery.
   
-(8) Configuration settings can be recovered from farm-level backups. For more information, see [Restore farms in SharePoint Server](restore-a-farm.md). 
+(8) Configuration settings can be recovered from farm-level backups. For more information, see [Restore farms in SharePoint Server](restore-a-farm.md).
   
 (9) The Central Administration content database and the configuration database for a SharePoint 2013 farm can be recovered but only as part of a full-farm recovery to the same farm, with the same computers. 
   
 > [!NOTE]
-> You can register SharePoint 2013 with Windows Server Backup by using the stsadm.exe **-o -registerwsswriter** operation to configure the Volume Shadow Copy Service (VSS) writer for SharePoint 2013. Windows Server Backup then includes SharePoint 2013 in server-wide backups. When you restore from a Windows Server backup, you can select SharePoint Foundation (regardless of which version of SharePoint 2013 is installed), and all components reported by the VSS writer for SharePoint 2013 on that server at the time of the backup will be restored. > Windows Server Backup is recommended only for use with for single-server deployments. 
+> You can register SharePoint 2013 with Windows Server Backup by using the stsadm.exe **-o -registerwsswriter** operation to configure the Volume Shadow Copy Service (VSS) writer for SharePoint 2013. Windows Server Backup then includes SharePoint 2013 in server-wide backups. When you restore from a Windows Server backup, you can select SharePoint Foundation (regardless of which version of SharePoint 2013 is installed), and all components reported by the VSS writer for SharePoint 2013 on that server at the time of the backup will be restored. Windows Server Backup is recommended only for use with for single-server deployments.
   
 ### Choose what to recover from within SharePoint content databases
 <a name="section2"> </a>
@@ -170,7 +170,7 @@ Workflows are a special case of customizations that you can back up and recover.
     
   - The XML definition files (.ACTIONS files) are stored in the 15\TEMPLATE\{LCID}\Workflow directory.
     
-  - An XML entry to mark the activity as an authorized type is stored in the Web.config file for the Web applications in which it is used.
+  - An XML entry to mark the activity as an authorized type is stored in the Web.config file for the Web applications in which it's used.
     
     If your farm workflows use custom actions, you should use a file backup system to protect these files and XML entries. Similar to SharePoint Server features such as Web Parts and event receivers, these files should be reapplied to the farm as needed after recovery.
     
@@ -178,17 +178,17 @@ Workflows are a special case of customizations that you can back up and recover.
     
 - If you create a custom workflow that interacts with a site collection other than the one where the workflow is deployed, you must back up both site collections to protect the workflow. This includes workflows that write to a history list or other custom list in another site collection. Performing a farm backup is sufficient to back up all site collections in the farm and all workflows that are associated with them. For more information, see "Back up workflows in SharePoint" in [Back up customizations in SharePoint Server](back-up-customizations.md).
     
-- Workflows that are not yet deployed must be backed up and restored separately like any other data file. When you are developing a new workflow but have not yet deployed it to the SharePoint Server farm, make sure that you back up the folder where you store your workflow project files by using Windows Server Backup or another file system backup application.
+- Workflows that aren't yet deployed must be backed up and restored separately like any other data file. When you're developing a new workflow but have not yet deployed it to the SharePoint Server farm, make sure that you back up the folder where you store your workflow project files by using Windows Server Backup or another file system backup application.
     
 ### Protecting service applications
 <a name="Workflow"> </a>
 
-Service applications in a SharePoint Server environment can be made up of both service settings and one or more databases, or only service settings. You cannot restore a complete service application by restoring the database only. However, you can restore the databases for a service application and then provision the service application. For more information, see [Restore service applications in SharePoint Server](restore-a-service-application.md). 
+Service applications in a SharePoint Server environment can be made up of both service settings and one or more databases, or only service settings. You can't restore a complete service application by restoring the database only. However, you can restore the databases for a service application and then provision the service application. For more information, see [Restore service applications in SharePoint Server](restore-a-service-application.md). 
   
 ### Protecting SQL Server Reporting Services databases
 <a name="Workflow"> </a>
 
-SharePoint Server backup and recovery does not include SQL Server Reporting Services databases. You must use SQL Server tools for SharePoint Server. For more information, see [Backup and Restore Operations for Reporting Services](/sql/reporting-services/install-windows/backup-and-restore-operations-for-reporting-services?viewFallbackFrom=sql-server-2014).
+SharePoint Server backup and recovery doesn't include SQL Server Reporting Services databases. You must use SQL Server tools for SharePoint Server. For more information, see [Backup and Restore Operations for Reporting Services](/sql/reporting-services/install-windows/backup-and-restore-operations-for-reporting-services?viewFallbackFrom=sql-server-2014).
   
 ## Choose SharePoint backup and recovery tools
 <a name="ChooseTools"> </a>
@@ -220,7 +220,7 @@ For detailed information about the backup and recovery systems that can be used 
 
 Based on your business requirements, recovery needs, and the tools that you have selected, determine and document the backup and recovery strategies for your environment.
   
-It is common for IT departments that support SharePoint Server environments to decide to use more than one tool to protect the environment, as they determine the strategies that they will use.
+It's common for IT departments that support SharePoint Server environments to decide to use more than one tool to protect the environment, as they determine the strategies that they will use.
   
 For example, in an environment that has databases that are managed by DBAs, the strategies in the following list might be employed:
   
@@ -243,7 +243,7 @@ For example, in an environment that has databases that are managed by DBAs, the 
     Recovering from a snapshot is faster than standard recovery because a snapshot, and its underlying database, can be treated by SharePoint Server as an unattached database. However, creating snapshots can decrease the performance of the underlying database. We recommend that the effect that snapshots have on the performance of the system be tested before they are implemented, and that snapshots be discarded regularly to reduce the space that is required. 
     
     > [!NOTE]
-    > If you are using Remote Blob Storage (RBS), and the RBS provider that you are using does not support snapshots, you cannot use snapshots for backup. For example, the FILESTREAM provider does not support snapshots. 
+    > If you are using Remote Blob Storage (RBS), and the RBS provider that you are using doesn't support snapshots, you can't use snapshots for backup. For example, the FILESTREAM provider doesn't support snapshots. 
   
 - SharePoint Server backup is used to protect service applications. The backup interval is based on the following:
     
@@ -270,11 +270,11 @@ Follow the general recommendations for configuring SQL Server and storage for a 
   
 ### Minimize latency between SQL Server and the backup location
 
-In general, use a local disk instead of a network drive for backups. If you are backing up multiple servers, you may want to have a directly connected computer that both servers can write to. Network drives that have 1 millisecond or less latency between them and the computers that are running SQL Server will perform well. If your farm has multiple servers in it (including the computer that is running SQL Server, you must use UNC network paths for the SharePoint farm backup location.
+In general, use a local disk instead of a network drive for backups. If you are backing up multiple servers, you may want to have a directly connected computer that both servers can write to. Network drives that have 1 millisecond or less latency between them and the computers that are running SQL Server will perform well. If your farm has multiple servers in it (including the computer that is running SQL Server), you must use UNC network paths for the SharePoint farm backup location.
   
 ### Avoid processing conflicts
 
-Do not run backup jobs during times in which users must have access to the system. 
+Don't run backup jobs during times in which users must have access to the system. 
   
 To avoid I/O bottlenecks, perform the main backup to a separate disk, and only then copy to tape.
   
@@ -294,9 +294,10 @@ For detailed recommendations about how to optimize SQL Server backup and restore
   
 ### Ensure sufficient write performance on the backup drive
 
-Carefully consider whether to use redundant array of independent disks (RAID) on your disk backup device. For example, RAID 5 has low write performance, approximately the same speed as for a single disk. (This is because RAID 5 maintains parity information.) Using RAID 10 for a backup device may provide faster backups. For more information about how to use RAID with backups, see [Configure RAID for maximum SQL Server I/O throughput](https://go.microsoft.com/fwlink/p/?LinkId=126632 ).
+Carefully consider whether to use redundant array of independent disks (RAID) on your disk backup device. For example, RAID 5 has low write performance, approximately the same speed as for a single disk. (This is because RAID 5 maintains parity information.) Using RAID 10 for a backup device may provide faster backups. For more information about how to use RAID with backups, see [Configure RAID for maximum SQL Server I/O throughput](https://go.microsoft.com/fwlink/p/?LinkId=126632).
   
 ## See also
+
 <a name="PlanEnhancedPerformance"> </a>
 
 #### Concepts
