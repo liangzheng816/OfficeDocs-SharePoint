@@ -34,7 +34,7 @@ Lists over 20,000 items historically caused issues with the migration tooling, m
 
 ## Data Migration
 
-List data is migrated. However, the larger the list the more unpredictable the migration process has proven. Extremely large lists can result in an extended migration.
+List data is migrated. However, the larger the list the more unpredictable the migration process. Extremely large lists can result in an extended migration.
 
 > [!NOTE]
 > Any site configured as "No Access" (locked) in SharePoint is skipped. To see a list of locked site collections see the Locked Sites scan output. 
