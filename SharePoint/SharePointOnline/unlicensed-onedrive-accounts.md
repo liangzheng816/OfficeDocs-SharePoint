@@ -261,7 +261,7 @@ As an example, if the billing is put down to reactivate one particular unlicense
 
 **12. What's the process to relicense an account once it's archived?**
 
-**Answer:** If the archived account has an associated user, the IT admin can give the user a valid license and the account automatically reactivates within 24 hours. If the archived account doesn't have an associated user (for example, if the identity was deleted), then we recommend admins move any actively needed content to a SharePoint site or an active and licensed OneDrive account.
+**Answer:** If the archived account has an associated user, the IT admin can give the user a valid license and the account automatically reactivates within 48 hours. If the archived account doesn't have an associated user (for example, if the identity was deleted), then we recommend admins move any actively needed content to a SharePoint site or an active and licensed OneDrive account. The reactivation of the archived account will happen automatically, even if unlicensed OneDrive account billing is not enabled.  
 
 **13. If a change is made to retention policies, will that change sync down to the archived sites?**
 
