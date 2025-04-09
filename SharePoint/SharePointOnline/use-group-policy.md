@@ -668,32 +668,19 @@ Find *User Configuration policies* under User Configuration\Policies\Administrat
 
 ### Allow users to choose how to handle Office file sync conflicts
 
-This setting specifies what happens when conflicts occur between Office file versions during a sync. (This option is available for Office 2016 or later only. With earlier versions of Office, both copies are always kept.)
+This setting (EnableHoldTheFile) specifies what happens when conflicts occur between Office file versions during a sync. (This option is available for Office 2016 or later only. With earlier versions of Office, both copies are always kept.)
 
-If you enable this setting, users can decide if they want to merge changes or keep both copies.
-  
-Enabling this policy sets the following registry key value to 1:
-  
-`[HKCU\SOFTWARE\Policies\Microsoft\OneDrive] "EnableHoldTheFile"=dword:00000001`
+If you disable (dword:00000000) this setting, when a sync conflict occurs, both copies of the file are kept.
 
-If you disable this setting, when a sync conflict occurs, both copies of the file are kept.
-
-If this policy is left unconfigured, users are given the choice on how to handle the conflict.
-
-To enable this setting, you must enable [Coauthor and share in Office desktop apps](#coauthor-and-share-in-office-desktop-apps).
+By early May 2025, Microsoft will enable this behavior for all tenants and remove the GPO. If tenants had this GPO disabled (dword:00000000), end users might have had to manually merge hundreds of conflicts because OneDrive automatically forked a file instead of giving users the option to merge conflicts in Office. For organizations that have not changed the default value(dword:00000001) of the GPO registry key (left the GPO enabled and not disabled it), there should be no change for end users.
   
 ### Coauthor and share in Office desktop apps
 
-This setting lets multiple users use the Microsoft 365 Apps for enterprise, Office 2019, or Office 2016 desktop apps to simultaneously edit an Office file stored in OneDrive. It also lets users share files from the Office desktop apps.
+This setting (EnableAllOcsiClients) lets multiple users use the Microsoft 365 Apps for enterprise, Office 2019, or Office 2016 desktop apps to simultaneously edit an Office file stored in OneDrive. It also lets users share files from the Office desktop apps.
 
-> [!IMPORTANT]
-> We recommend keeping this setting enabled to make syncing faster and reduce network bandwidth. [See all our recommendations for configuring the sync app.](ideal-state-configuration.md)
+If you disable (dword:00000000) this setting, coauthoring and in-app sharing for Office files are disabled. When file conflicts occur, both copies of the file are kept.
 
-Enabling this policy sets the following registry key value to 1:
-  
-`[HKCU\SOFTWARE\Policies\Microsoft\OneDrive] "EnableAllOcsiClients"=dword:00000001`
-
-If you disable this setting, coauthoring and in-app sharing for Office files are disabled. When file conflicts occur, both copies of the file are kept.
+By early May 2025, Microsoft will enable this behavior for all tenants and remove the GPO. This will ensure that existing Office features like autosave, version history, real time user collab, and merging in the case of conflicts can work seamlessly for end users. For organizations that have not changed the default value(dword:00000001) of the GPO registry key (left the GPO enabled and not disabled it), there should be no change for end users.
   
 ### Configure team site libraries to sync automatically
 

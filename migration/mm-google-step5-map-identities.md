@@ -25,45 +25,43 @@ description: "Step 5:  Map Google identities with Migration Manager."
 
 # Step 5: Map identities of Google Drive to Microsoft 365 accounts
 
-Map identities of your Google Drives to Microsoft 365 accounts while using Migration Manager.
+Identity Mapping is the process of matching the domain, user, and group identities in the source to those identities in Microsoft 365. This process is important to migration. If identities aren't properly set up before migration, it can result in users losing access to content. It can also result in file metadata being incorrect at the destination.
 
-Identity Mapping is when you match the user and group identities that have access to your source environment (in this case Google) and map those identities to Microsoft 365 user and group identities. This process is important to migration. If identities aren't properly set up before migration, it can result in users losing access to content. It can also result in information being incorrect at the destination.
+To map your identities, select **Map identities** from the menu bar on the **Drive migrations** tab.
 
-Map your groups and users in Google to those groups and users in Microsoft 365 to migrate your Google sharing settings.
+> [!Important]
+> - Before mapping the identities, ensure you have created all the necessary identities (domains, users and groups) in Microsoft 365.
+> - Ensure all the required identity entries (domains, users and groups) in the source are fully mapped before migration.
 
-1. Select the Migrations tab.
-2. Select **Map identities** from the menu bar.
-3.  Select **Auto-map** to have Migration Manager map the identities for you or select **Import users and groups** to upload the values using a CSV file.
+## Automap
+By default, Migration Manager automaps the identities for you based on the exact match of identity names between the source and the destination. 
 
-## Mapping individual identities
+In most cases, automapping is unlikely to map all the identities. You can manually edit individual identities or import identities.
 
-1. To edit a single mapping, highlight the row. Enter the mapping Microsoft 365 user account.
-2. Select **Save**.
+## Edit individual identities
 
-## Import users and groups
+To edit a single mapping discovered in the automapping process:
+1. Highlight the row to activate the mapping panel.
+2. Input the equivalent Microsoft 365 domain, user, or group.
+3. Select **Save**.
 
-If you have many mappings to edit, you can choose to upload a CSV file containing your users and groups mappings. Download the  file template to your computer and enter your destinations. Save your file as a .csv file using any name you wish.
+## Import identities
 
-**Upload your own users and groups mappings**
-
-1. Select **Import users and groups**.
-2. Download the mapping.csv template file, inserting your own mappings. You can name the .csv any name you wish.
-3. Choose **Select file**. Navigate to your mapping .csv file and select.
+If you want to add one single user mapping or group mapping:
+1. Select the **Import users and groups** button from the menu bar to activate the importing panel.
+2. Choose **Sing user mapping** or **Sing group mapping**.
+3. Input the user or group in both the source and the destination textboxes.
 4. Select **Save**.
-5. Select **Close**.
 
->[!Important]
->Make sure to verify your mappings before uploading the file. The file isn't validated, and once migration can't be changed.
+If you have many mappings to edit:
+1. Select the **Import users and groups** button from the menu bar to activate the importing panel.
+2. Choose **Batch upload**.
+3. Download the CSV template to your computer, adding to or modifying the "Microsoft 365 identity" column in the downloaded CSV template. Save your file as a .csv file with any name you wish.
+4. Choose **Select file** to upload the file you saved.
+5. Select **Save**.
 
-### Migrating Google Shared Drives
+> [!Important]
+> Make sure to verify your mappings before uploading the file. The file isn't validated.
 
-Google Shared drives are now migrated by default. Google Shared Drive permissions are migrated according to the project settings, under [general permission setting](/sharepointmigration/mm-project-settings-permissions#migrate-permissions).
-
-Folder permissions are migrated by default. File permissions are migrated on demand.
-
-We recommend the following steps when migrating permissions in your shared drive:
-
-- Recreate a Microsoft 365 group with the same memberships as the Google Drive group. You can either create a new group or edit the group linked to the Team site designated as the migration destination for the Google Shared Drive.
-- In the 'Map Identities' setting, map the original Google Drive group of the shared drive to the Microsoft 365 group.
 
 ## Go to [**Step 6: Migrate and monitor**](mm-Google-step6-migrate-monitor.md)

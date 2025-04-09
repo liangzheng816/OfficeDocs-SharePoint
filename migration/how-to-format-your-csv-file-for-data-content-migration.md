@@ -1,5 +1,5 @@
 ---
-ms.date: 03/07/2024
+ms.date: 04/07/2025
 title: "Format your JSON or CSV file for data content migration - SharePoint"
 ms.reviewer: 
 ms.author: heidip
@@ -37,20 +37,20 @@ Learn how to:
   
 ## Use a CSV file for bulk upload
 
-Use any text editor, or an application like Microsoft Excel, to create the CSV file. The first three columns are source values that detail where your data is currently located. The remaining three columns indicate the site, document library, and optional subfolder where you're migrating your data.
+You can create the CSV file using any text editor, or an application like Microsoft Excel. The first three columns are source values that detail where your data is currently located. The remaining three columns indicate the site, document library, and optional subfolder where you're migrating your data.
 
 ### Column definitions  
   
-|Column content|Description|
-|:-----|:-----|
-|Column 1 "Source" | *Required*. Enter an on-premises SharePoint Server site URL or the path to a local file share. For SharePoint Server 2013 and 2016, you can also use the log-in name or the SID in this column. |
-|Column 2 "Source DocLib" | *Optional*. Enter the name of the SharePoint Server document library that you're migrating. If you leave this field empty, all document libraries are migrated. This column needs to be empty when migrating from a local file share.|
-|Column 3 "Source SubFolder" | *Optional*. Enter the name of the subfolder in the document library. If this column is left empty, the migration starts from the root. If there's a value in this column, the migration starts from the subfolder. This column needs to be empty when migrating from a local file share.|
-|Column 4 "Target Web" | *Required*. Enter the destination SharePoint site URL where the files are to be migrated.|
-|Column 5 "Target DocLib" | *Required*. Enter the name of the document library with the SharePoint site where the files are to be migrated.|
-|Column 6 "Target SubFolder "| *Optional*. Enter the name of the subfolder in the document library. If this column is left empty, the files are moved to the root level. |
-|Column  7 "RegisterAsHubSite"|*Optional.*  To register a site as a hub site after migration, enter the name of hub site and leave the next column, AssociateWithHubURL, blank. For SharePoint site migration only. |
-|Column 8 "AssociateWithHubURL"|*Optional.* To associate the site to another hub site, enter the URL of an existing hub site. In this case, column 7 "RegisterAsHubSite" is left blank. For SharePoint site migration only.|
+|Column content |Description |
+|:--------------|:-----------|
+|Column 1 "Source" | *Required*. Enter an on-premises SharePoint Server site URL or the path to a local file share. For SharePoint Server 2013 and 2016, you can also use the log-in name or the Security Identifier (SID) in this column. |
+|Column 2 "Source DocLib" | *Optional*. Enter the name of the SharePoint Server document library that you're migrating. If you leave this field empty, all document libraries are migrated. This column needs to be empty when migrating from a local file share. |
+|Column 3 "Source SubFolder" | *Optional*. Enter the name of the subfolder in the document library. If this column is left empty, the migration starts from the root. If there's a value in this column, the migration starts from the subfolder. This column needs to be empty when migrating from a local file share. |
+|Column 4 "Target Web" | *Required*. Enter the destination SharePoint site URL where the files are to be migrated. |
+|Column 5 "Target DocLib" | *Required*. Enter the name of the document library with the SharePoint site where the files are to be migrated. |
+|Column 6 "Target SubFolder" | *Optional*. Enter the name of the subfolder in the document library. If this column is left empty, the files are moved to the root level. |
+|Column  7 "RegisterAsHubSite" |*Optional*. To register a site as a hub site after migration, enter the name of hub site and leave the next column, AssociateWithHubURL, blank. This option is only for SharePoint site migration. |
+|Column 8 "AssociateWithHubURL" |*Optional*. To associate the site to another hub site, enter the URL of an existing hub site. In this case, column 7 "RegisterAsHubSite" is left blank. This option is only for SharePoint site migration. |
 
 >[!Important]
 >**Hub site association:** Registering and associating hubsites occurs at the final stage of the migration. If you terminate a task before it completes, the hub site work may not be performed.  SPMT will not change the hub association if it finds the site is already associated to a hub site.  A site will not be -"un-registered" if it already registered as a hub site.
@@ -66,7 +66,7 @@ Here's an example of the CSV file format. The first row shows files that are bei
 - If the language of the destination SharePoint site isn't English, check the internal name of the "Shared Documents" Document library at `https://contoso.sharepoint.com/sites/SampleSite/_layouts/15/viewlsts.aspx?view=14`.
 
 > [!IMPORTANT]
-> All columns detailed above must be present and can be blank if not needed.
+> All columns detailed in the previous section must be present and can be blank if not needed.
   
 ![Spreadsheet view of SharePoint Migration Tool sample format when using a CSV file.](media/73fadfad-77ad-4d3a-b738-bc7063bc2659.jpg)
   
@@ -82,7 +82,7 @@ https://sharepoint2013.com/sites/contosoteamsite/,DocumentLibraryName,DocLibrary
 
 The following example shows the JSON file format that you can use to migrate your data.
 
-The minimum required values are *SourcePath* and *TargetPath*.  
+The minimum required values are *SourcePath* and *TargetPath*.
 
 ```json
 {
@@ -160,24 +160,24 @@ If you wish to use your system proxy settings, use one of these methods:
 ![Edit the config file to comment out the proxy setting](media/spmt-proxy-edits.png)  
 1. Restart SPMT.
 
-</br>
-
 #### If SPMT doesn't upgrade
 
 1. If SPMT can't upgrade itself, go to **%localappdata%\Apps\SharePointMigrationTool\InstallerClient.**
 2. Open the **installclient.exe.config** file.
 3. Add the following configuration at line 31, just after the ```<appSettings></appSettings``` tag:  
-![Edit the config file](media/spmt-proxy-edits.png)  
-4. Launch installclient.exe and SPMT should auto-upgrade to latest SPMT release.
+
+![Edit the config file](media/spmt-proxy-edits.png) 
+
+4. Launch installclient.exe and SPMT should autoupgrade to latest SPMT release.
 5. Open the **microsoft.sharepoint.migrationtool.advancedapp.exe.config** file.
 6. Uncomment the default proxy setting:  
 ![Edit the config file to comment out the proxy setting](media/spmt-proxy-edits.png)  
 7. Restart SPMT.
 
-### Additional Errors
+### Other Errors
 
-|Error|Description|
-|:-----|:-----|
-|**Destination site cannot associate to an invalid hub site**|This error occurs if the destination site is already registered as a hub site.  SPMT won't change the hub registration of a destination site.|
-|**Destination site cannot associate to an invalid hub site**|This happens if you're attempting to associate with an invalid hub site. Check the URL and try again.|
-|**Destination site associates with an existing hub, it cannot be changed during migration**| This error occurs if the destination site is already associated with a different hub.  SPMT won't change the association a destination site.|
+|Error |Description |
+|:-----|:-----------|
+|**Destination site cannot associate to an invalid hub site**|This error occurs if the destination site is already registered as a hub site. SPMT doesn't change the hub registration of a destination site.|
+|**Destination site cannot associate to an invalid hub site**|This error happens if you're attempting to associate with an invalid hub site. Check the URL and try again.|
+|**Destination site associates with an existing hub, it cannot be changed during migration**| This error occurs if the destination site is already associated with a different hub. SPMT doesn't change the association a destination site.|
