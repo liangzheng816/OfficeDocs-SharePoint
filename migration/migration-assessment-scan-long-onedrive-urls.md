@@ -30,7 +30,7 @@ Learn how to fix issues with long OneDrive URLs during migration.
 
 ## Overview
 
-When you're moving a OneDrive site from your source to the target environment, the OneDrive URL changes formats. On the source platform, the OneDrive sites are in the format of https://onedrive.contoso.com/personal/domain_user. On the target platform, the Domain_User portion of the URL changes to use the UPN for the user. This looks similar to https://onedrive.contoso.com/personal/user_contoso_com.
+When you're moving a OneDrive site from your source to the target environment, the OneDrive URL changes formats. On the source platform, the OneDrive sites are in the format of https://onedrive.contoso.com/personal/domain_user. On the target platform, the Domain_User portion of the URL changes to use the UPN for the user. This URL looks similar to https://onedrive.contoso.com/personal/user_contoso_com.
 
 **Example:**
 
@@ -57,7 +57,7 @@ We identified four different locations in which failures are likely to occur due
 
 ## Data Migration
 
-The migration of the source content resulting in the long URLs fail. This causes migration jobs to fail, which prolongs the migration project unnecessarily.
+The migration of the source content resulting in the long URLs fail. This situation causes migration jobs to fail, which prolongs the migration project unnecessarily.
 
 > [!IMPORTANT]
 > Any site configured as "No Access" (locked), in SharePoint is skipped. To see a list of locked site collections see the Locked Sites scan output.
@@ -90,57 +90,57 @@ This scan results in four output files. Each file is for a specific long URL iss
 
 If there are files listed in this report, the owners need to move the files to shorter paths or delete the files. For example, they could move ProjectA.docx up to a folder directly under Documents, or they could delete the file if it's no longer needed.
 
-|Column|Description|
-|---|---|
-|SiteId|Unique identifier of the impacted site collection.|
-|SiteURL|URL to the impacted site collection.|
-|SiteOwner|Owner of the site collection.|
-|SiteAdmins|List of people listed as site collection administrators.|
-|SiteSizeInMB|Size of the size collection in megabytes (MB).|
-|NumOfWebs|Number of webs that exist in the site collection.|
-|ContentDBName|Name of the content database hosting the site collection.|
-|ContentDBServerName|SQL Server hosting the content database.|
-|ContentDBSizeInMB|Size of the content database hosting the site collection.|
-|LastContentModifiedDate|Date/Time the site collection had content modified.|
-|TotalItemCount|Total number of items found in the site collection.|
-|Hits|Number of requests logged for the site collection. Relies on data from the usage logging service. If the usage logging service is disabled this row shows N/A.|
-|DistinctUsers|Number of distinct users that accessed the site collection. Relies on data from the usage logging service. If the usage logging service is disabled this row shows N/A.|
-|DaysOfUsageData|Number of days the usage logging service retains data. This provides context for Hits and DistinctUsers. For example, if this is 14 days, the Hits and DistinctUsers data is for the last 14 days.|
-|UPN|UPN that was used to determine the difference in the URL length. If the UPN is "\*\*\*\*" that indicates the owner didn't have a UserPrincipalName set in their SharePoint profile. As a result, the average length of the UserPrincipalName values in the SharePoint profile store was used.|
-|URLLengthDifference|Amount the URL grows when the site is renamed.|
-|File|File that needs to be remediated.|
-|ScanID|Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool.|
+|Column |Description |
+|-------|------------|
+|SiteId |Unique identifier of the impacted site collection. |
+|SiteURL |URL to the impacted site collection. |
+|SiteOwner |Owner of the site collection. |
+|SiteAdmins |List of people listed as site collection administrators. |
+|SiteSizeInMB |Size of the size collection in megabytes (MB). |
+|NumOfWebs |Number of webs that exist in the site collection. |
+|ContentDBName |Name of the content database hosting the site collection. |
+|ContentDBServerName |SQL Server hosting the content database. |
+|ContentDBSizeInMB |Size of the content database hosting the site collection. |
+|LastContentModifiedDate |Date/Time the site collection had content modified. |
+|TotalItemCount |Total number of items found in the site collection. |
+|Hits |Number of requests logged for the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DistinctUsers |Number of distinct users that accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DaysOfUsageData |Number of days the usage logging service retains data. This information provides context for Hits and DistinctUsers. For example, if this number is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
+|UPN |UPN used to determine the difference in the URL length. The UPN displaying as "\*\*\*\*" indicates the owner didn't have a UserPrincipalName set in their SharePoint profile. As a result, the average length of the UserPrincipalName values in the SharePoint profile store was used. |
+|URLLengthDifference |Amount the URL grows when the site is renamed. |
+|File |File that needs to be remediated. |
+|ScanID |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool. |
 
- **LongODBUrl-NavNodes-detail.csv** Navigation nodes have a URL length limitation of 260 characters. This can lead to the URL field exceeding the maximum length.
+ **LongODBUrl-NavNodes-detail.csv** Navigation nodes have a URL length limitation of 260 characters. This situation can lead to the URL field exceeding the maximum length.
 
 For example, you have a OneDrive site at `https://OneDrive.contoso.com/personal/contoso_bobsmith`. That site has a link in the Quick launch named Reports and the URL of the link points to `https://onedrive.contoso.com/personal/contoso_bobsmith/documents/folder1/...folderN/Reports`. During the migration, SharePoint updates the URL to point to `/bobsmith_contoso_com/`. The extra length added to the URL may result in the length being over 260 characters, which causes the migration to fail.
 
 To remediate this issue, you can move the reports folder close to the root of the /documents/ library and then update the quick launch link. Another option is to remove the quick launch link.
 
-|Column|Description|
-|---|---|
-|SiteId|Unique identifier of the impacted site collection.|
-|SiteURL|URL to the impacted site collection.|
-|SiteOwner|Owner of the site collection.|
-|SiteAdmins|List of people listed as site collection administrators.|
-|SiteSizeInMB|Size of the size collection in megabytes (MB).|
-|NumOfWebs|Number of webs that exist in the site collection.|
-|ContentDBName|Name of the content database hosting the site collection.|
-|ContentDBServerName|SQL Server hosting the content database.|
-|ContentDBSizeInMB|Size of the content database hosting the site collection.|
-|UPN|UPN that was used to determine the difference in the URL length. If the UPN is "\*\*\*\*" that indicates the owner didn't have a UserPrincipalName set in their SharePoint profile. As a result, the average length of the UserPrincipalName in the SharePoint profile store was used.|
-|URLLengthDifference|URLLengthDifference Amount the URL grows when the site is renamed.|
-|WebURL|URL to the web that has the navigation node.|
-|NavigationNodeLocation|Navigation Node titles showing where the navigation node lives. You can have multiple levels of navigation nodes, and this helps locate the offending node.|
-|NavigationNodeTitle|Title of the impacted navigation node.|
-|NavigationNodeURL|URL that's too long after the site rename.|
-|ScanID|Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool.|
+|Column |Description |
+|-------|------------|
+|SiteId |Unique identifier of the impacted site collection. |
+|SiteURL |URL to the impacted site collection. |
+|SiteOwner |Owner of the site collection. |
+|SiteAdmins |List of people listed as site collection administrators. |
+|SiteSizeInMB |Size of the size collection in megabytes (MB). |
+|NumOfWebs |Number of webs that exist in the site collection. |
+|ContentDBName |Name of the content database hosting the site collection. |
+|ContentDBServerName |SQL Server hosting the content database. |
+|ContentDBSizeInMB |Size of the content database hosting the site collection. |
+|UPN |UPN that was used to determine the difference in the URL length. The UPN displaying as "\*\*\*\*" indicates the owner didn't have a UserPrincipalName set in their SharePoint profile. As a result, the average length of the UserPrincipalName in the SharePoint profile store was used. |
+|URLLengthDifference |URLLengthDifference Amount the URL grows when the site is renamed. |
+|WebURL |URL to the web that has the navigation node. |
+|NavigationNodeLocation |Navigation Node titles showing where the navigation node lives. You can have multiple levels of navigation nodes, and this information helps locate the offending node. |
+|NavigationNodeTitle |Title of the impacted navigation node. |
+|NavigationNodeURL |URL that's too long after the site rename. |
+|ScanID |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool. |
 
- **LongODBUrl-Perms-detail.csv** Permissions that are set on an object in SharePoint are tracked by the URL of that object. If you set permissions on a folder, SharePoint stores the relative path to the folder. If you set permissions on an item, SharePoint stores the server relative path to the item.
+ **LongODBUrl-Perms-detail.csv** Permissions set on an object in SharePoint are tracked by the URL of that object. If you set permissions on a folder, SharePoint stores the relative path to the folder. If you set permissions on an item, SharePoint stores the server relative path to the item.
 
-As a result, during a site migration, the URLs associated with permissions are updated. This may lead to failures if the new URL is too long.
+As a result, during a site migration, the URLs associated with permissions are updated. This situation may lead to failures if the new URL is too long.
 
-The remediation for this is to move the affected object closer to the root of the site collection. Another option is to remove the distinct permissions from the items in the report.
+The remediation for this failure is to move the affected object closer to the root of the site collection. Another option is to remove the distinct permissions from the items in the report.
 
 |Column |Description |
 |-------|------------|
@@ -163,8 +163,8 @@ The remediation for this is to move the affected object closer to the root of th
 
 There are two limitations in this report to be aware of:
 
-- FullURL has a limit of 260 characters. This is the file with the dependencies. To remediate if the FullURL is too long, either remove the file or move the file to a location closer to the root of the site collection.
-- DependencyDescription has a limit of 270 characters. This is the dependency associated with the FullURL. To remediate the DependencyDescription, either remove the dependency or move the dependency closer to the root of the site collection.
+- FullURL has a limit of 260 characters. This entry in the file has the dependencies. To remediate if the FullURL is too long, either remove the file or move the file to a location closer to the root of the site collection.
+- DependencyDescription has a limit of 270 characters. This entry is the dependency associated with the FullURL. To remediate the DependencyDescription, either remove the dependency or move the dependency closer to the root of the site collection.
 
 |Column |Description |
 |-------|------------|
@@ -180,5 +180,5 @@ There are two limitations in this report to be aware of:
 |UPN|UPN used to determine the difference in the URL length. If the UPN is "\*\*\*\*", that entry indicates the owner didn't have a UserPrincipalName set in their SharePoint profile. As a result, the average length of the UserPrincipalName in the SharePoint profile store was used. |
 |URLLengthDifference |Amount the URL grows when the site is renamed. |
 |FullURL |URL to the file that has the dependencies. |
-|DependencyDescription |DependencyDescription Description associated with the dependency. This may be a URL that's getting renamed. |
+|DependencyDescription |DependencyDescription Description associated with the dependency. This entry may be a URL that's getting renamed. |
 |ScanID |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool. |
