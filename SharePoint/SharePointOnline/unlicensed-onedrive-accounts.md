@@ -279,6 +279,10 @@ As an example, if the billing is put down to reactivate one particular unlicense
 
 **Answer:** No. When enforcing unlicensed OneDrive accounts, the system will not override existing read-only or NoAccess modes.  When the system tries to put an account into read-only mode, it will skip the account if the account is already in read-only or NoAccess mode.  When the account gets Archived, it will retain any read-only and NoAccess settings which the admin applied, which will take effect if the account is reactivated. 
 
+**17. Will an account get enforced if the site 'owner' property (also known as the primary site collection admin) has been modified from the original user?**
+
+**Answer:** No. Modifying the 'owner' property of a OneDrive account to any user or group other than the user who the account was provisioned for results in an unsupported state of the OneDrive account. This can cause many issues for the account.  However, the unlicensed enforcement effort does not utilize the 'owner' property to validate licensing.  Therefore, modifying the 'owner' property, while generally not a supported change, will not directly cause an account to be considered unlicensed. 
+
 ## Related topics
 
 - [OneDrive retention and deletion](retention-and-deletion.md)
