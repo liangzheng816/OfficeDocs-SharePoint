@@ -5,7 +5,7 @@ ms.author: heidip
 author: MicrosoftHeidi
 manager: jtremper
 recommendations: true
-ms.date: 9/13/2017
+ms.date: 04/09/2025
 audience: ITPro
 f1.keywords:
 - NOCSH
@@ -27,47 +27,45 @@ description: "Learn how to mitigate issues with Large sites during migration."
 # Migration Assessment Scan: Large Sites
 
 Learn how to mitigate issues with Large sites during migration.
-  
+
 ## Overview
 
 This assessment lets site owners validate site size and makes them aware of larger sites that might take a longer period of time to migrate.
-  
+
 ## Data Migration
 
 It's more difficult to predict a migration schedule and delivery of the migration for sites over 500 GB.
-  
+
 > [!IMPORTANT]
-> Any site that is configured as "No Access" (locked), in SharePoint will be skipped. To see a list of locked site collections see the Locked Sites scan output. 
-  
+> Any site configured as "No Access" (locked) in SharePoint is skipped. To see a list of locked site collections see the Locked Sites scan output.
+
 ## Preparing for Migration
 
 Not applicable.
-  
+
 ## Post Migration
 
 Not applicable.
-  
+
 ## Scan Result Reports
 
- **LargeSites-detail.csv** This scan report provides a list of all the site collections that are over 500 GB in size. 
-  
+**LargeSites-detail.csv** This scan report provides a list of all the site collections over 500 GB in size.
+
 |**Column**|**Description**|
 |:-----|:-----|
-|SiteId  <br/> |Unique identifier of the impacted site collection.  <br/> |
-|SiteURL  <br/> |URL to the impacted site collection.  <br/> |
-|SiteOwner  <br/> |Owner of the site collection.  <br/> |
-|SiteAdmins  <br/> |List of people listed as site collection administrators.  <br/> |
-|SiteSizeInMB  <br/> |Size of the size collection in megabytes [MB]  <br/> |
-|NumOfWebs  <br/> |Number of webs that exist in the site collection.  <br/> |
-|ContentDBName  <br/> |Name of the content database hosting the site collection.  <br/> |
-|ContentDBServerName  <br/> |SQL Server hosting the content database.  <br/> |
-|ContentDBSizeInMB  <br/> |Size of the content database hosting the site collection.  <br/> |
-|LastContentModifiedDate  <br/> |Date/Time the site collection had content modified.  <br/> |
-|TotalItemCount  <br/> |Total number of items found in the site collection.  <br/> |
-|Hits  <br/> |Number of requests logged for the site collection. Relies on data from the usage logging service. If the usage logging service is disabled this row shows N/A.  <br/> |
-|DistinctUsers  <br/> |Number of distinct users that have accessed the site collection. Relies on data from the usage logging service. If the usage logging service is disabled this row shows N/A.  <br/> |
-|DaysOfUsageData  <br/> |Number of days the usage logging service retains data. This provides context for Hits and DistinctUsers. For example, if this is 14 days, the Hits and DistinctUsers data is for the last 14 days.  <br/> |
-|SizeInGB  <br/> |Size of the impacted site collection.  <br/> |
-|ScanID  <br/> |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool.  <br/> |
-   
-
+|SiteId |Unique identifier of the impacted site collection. |
+|SiteURL |URL to the impacted site collection. |
+|SiteOwner |Owner of the site collection. |
+|SiteAdmins |List of people listed as site collection administrators. |
+|SiteSizeInMB |Size of the size collection in megabytes (MB). |
+|NumOfWebs |Number of webs that exist in the site collection. |
+|ContentDBName |Name of the content database hosting the site collection. |
+|ContentDBServerName |SQL Server hosting the content database. |
+|ContentDBSizeInMB |Size of the content database hosting the site collection. |
+|LastContentModifiedDate |Date/Time the site collection had content modified. |
+|TotalItemCount |Total number of items found in the site collection. |
+|Hits |Number of requests logged for the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DistinctUsers |Number of distinct users that accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DaysOfUsageData |Number of days the usage logging service retains data. This information provides context for Hits and DistinctUsers. For example, if this number is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
+|SizeInGB |Size of the impacted site collection. |
+|ScanID |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool. |
