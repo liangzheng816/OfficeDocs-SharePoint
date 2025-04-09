@@ -30,7 +30,7 @@ Learn how to mitigate issues with locked sites during migration.
 
 ## Overview
 
-When a site is configured as "No Access" in SharePoint, the site is inaccessible for both users and the system. As a result, the various pre-migration scans are configured to ignore any site configured as "No Access". It's **locked**.
+When a site is configured as "No Access" in SharePoint, the site is inaccessible for users and the system. As a result, the various pre-migration scans are configured to ignore any site configured as "No Access". It's **locked**.
 
 ## Data Migration
 
