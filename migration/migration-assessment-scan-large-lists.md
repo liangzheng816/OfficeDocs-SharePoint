@@ -30,7 +30,7 @@ Learn how to mitigate issues with Large Lists during migration.
 
 ## Overview
 
-Lists over 20,000 items have historically caused issues with the migration tooling, making the ability to predict the time it takes to migrate sites that contain a larger list to be problematic.
+Lists over 20,000 items historically caused issues with the migration tooling, making the ability to predict the time it takes to migrate sites that contain a larger list to be problematic.
 
 ## Data Migration
 
@@ -65,14 +65,14 @@ The migration tooling has built-in validation to ensure all list items are migra
 |LastContentModifiedDate |Date/Time the site collection had content modified. |
 |TotalItemCount |Total number of items found in the site collection. |
 |Hits |Number of requests logged for the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
-|DistinctUsers |Number of distinct users that have accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DistinctUsers |Number of distinct users who accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
 |DaysOfUsageData |Number of days the usage logging service retains data. This information provides context for Hits and DistinctUsers. For example, if this number is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
 |WebURL |Url to the subsite that contains the list. |
 |ListTitle |Title of the list. |
 |ListURL |Url to the root folder of the list. |
 |ListItemCount |Number of items in the list. |
 |ListTemplate |Template used when creating the list. |
-|ListType |The type of list configured. |
+|ListType |The type of configured list. |
 |ListCreator |User who created the list. |
 |ItemLastModifiedDate |Date/Time an item was last modified on the list. |
 |ScanID |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool. |
