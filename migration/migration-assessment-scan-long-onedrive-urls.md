@@ -21,7 +21,7 @@ ms.collection:
 - m365initiative-migratetom365
 ms.custom:
 ms.assetid: a2828065-b060-4784-9a7d-4c214b4054b1
-description: "Learn how to fix issues with long OneDrive URLs during migration."
+description: "Learn how to fix issues with long OneDrive URLs during migration, when a Universal Principal Names (UPN) is added to the URL."
 ---
 
 # Migration Assessment Scan: Long OneDrive URLs
