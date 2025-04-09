@@ -159,7 +159,7 @@ The remediation for this failure is to move the affected object closer to the ro
 |SecuredObject |The URL to the secured object that's too long after the site rename. If you add permissions to a file, it's the server relative path to the file. If you set permissions on a folder, it's the server relative path to the folder. |
 |ScanID |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool. |
 
-**LongODBUrl-Deps-detail.csv** Certain files can have other dependencies. Those dependencies are tracked by the URL. During the migration, if the dependency information is too long, the migration fails.
+**LongODBUrl-Deps-detail.csv** Certain files can have other dependencies. The URL is used to track those dependencies. During the migration, if the dependency information is too long, the migration fails.
 
 There are two limitations in this report to be aware of:
 
