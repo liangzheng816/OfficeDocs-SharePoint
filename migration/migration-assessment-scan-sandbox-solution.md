@@ -31,7 +31,7 @@ Learn how to mitigate issues with sandbox solutions during migration.
 ## Overview
 
 > [!IMPORTANT]
-> SharePoint in Microsoft 365 does not support sandbox solutions.
+> SharePoint in Microsoft 365 doesn't support sandbox solutions.
 
 SharePoint doesn't support sandbox solutions. As a result, any functionality using the sandbox in your current environment needs to be replaced with a supported technology. See the Office Dev Center Patterns and Practices site for information on building customizations:
 
