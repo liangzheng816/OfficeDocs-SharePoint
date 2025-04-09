@@ -78,15 +78,15 @@ This scan results in four output files. Each file is for a specific long URL iss
 
     `https://OneDrive.contoto.com/Personal/contoso_bobsmith/Documents/Folder1/Folder2/ProjectA.docx`
 
-    The directory name is the following: `Personal/contoso_bobsmith/Documents/Folder1/Folder2`.
+    The directory name is: `Personal/contoso_bobsmith/Documents/Folder1/Folder2`.
 
-    After the migration, the file path looks like the following. Notice the URL is now longer than it was before: `Personal/bobsmith_contoso_com/Documents/Folder1/Folder2`.
+    After the migration, the file path looks like the following example. Notice the URL is now longer than it was before: `Personal/bobsmith_contoso_com/Documents/Folder1/Folder2`.
 
 - The server relative path to a file or folder has a total maximum of 400 characters. Using the following example file:
 
     `https://OneDrive.contoto.com/Personal/contoso_bobsmith/Documents/Folder1/Folder2/ProjectA.docx`
 
-    The server relative path to the file looks similar to the following: Personal/contoso_bobsmith/Documents/Folder1/Folder2/ProjectA.docx
+    The server relative path to the file looks similar to: Personal/contoso_bobsmith/Documents/Folder1/Folder2/ProjectA.docx
 
 If there are files listed in this report, the owners need to move the files to shorter paths or delete the files. For example, they could move ProjectA.docx up to a folder directly under Documents, or they could delete the file if it's no longer needed.
 
