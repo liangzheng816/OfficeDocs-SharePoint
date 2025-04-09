@@ -68,7 +68,7 @@ Review the reports and follow the remediation recommended for each report. In ge
 
 ## Post Migration
 
-Validate that your content has migrated.
+Validate that your content is migrated.
 
 ## Scan Result Reports
 
