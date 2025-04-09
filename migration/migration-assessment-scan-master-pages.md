@@ -30,7 +30,7 @@ Learn how to mitigate issues with Master pages during migration.
   
 ## Overview
 
-During migration, the default master page should be set on all migrated sites. Doing this ensures the site renders once the migration is complete as the content migration doesn't have a dependency on any custom master pages. If you have custom master pages assigned to sites, you need to set the Master Page property on the new site after the migration completes.
+During migration, the default master page should be set on all migrated sites. This setting ensures the site renders once the migration is complete, as the content migration doesn't have a dependency on any custom master pages. If you have custom master pages assigned to sites, you need to set the Master Page property on the new site after the migration completes.
 
 ## Data Migration
 
