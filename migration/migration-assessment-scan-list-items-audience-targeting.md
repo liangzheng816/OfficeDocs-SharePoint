@@ -27,7 +27,7 @@ description: "Learn about list and list item audience data that doesn't migrate.
 
 ## Overview
 
-In SharePoint, it's possible to enable Audience Targeting on a list or library. After this feature is enabled users are able to target audiences on a given list item. Unfortunately during a migration from on-premises SharePoint to SharePoint in Microsoft 365, the list and list item audience data doesn't migrate. This report contains all the list items in the environment that are targeting audiences.
+In SharePoint, it's possible to enable Audience Targeting on a list or library. After this feature is enabled, users are able to target audiences on a given list item. Unfortunately during a migration from on-premises SharePoint to SharePoint in Microsoft 365, the list and list item audience data doesn't migrate. This report contains all the list items in the environment that are targeting audiences.
 
 ## Data Migration
 
