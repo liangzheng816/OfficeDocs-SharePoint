@@ -3,6 +3,7 @@ title: "Timer job reference for SharePoint Server"
 ms.reviewer: 
 ms.author: serdars
 author: SerdarSoysal
+ms.date: 02/28/2025
 manager: serdars
 audience: ITPro
 f1.keywords:
