@@ -30,7 +30,7 @@ Learn how to mitigate issues with IRM enabled lists during migration.
 
 ## Overview
 
-Information Rights Management (IRM) is a feature that lets you encrypt content when a user accesses it to ensure it can't be forwarded or manipulated. The files are stored in an unencrypted format in SharePoint. When a user accesses a file in an IRM protected list, the file is protected prior to transit. The file can only be opened in an IRM-supported client application such as Microsoft Office.
+Information Rights Management (IRM) is a feature that lets you encrypt content when a user accesses it to ensure it can't be forwarded or manipulated. The files are stored in an unencrypted format in SharePoint. When a user accesses a file in an IRM protected list, the file is protected before transit. The file can only be opened in an IRM-supported client application such as Microsoft Office.
 
 There are two main components to the IRM migration process:
 
@@ -79,7 +79,7 @@ The following table describes the columns in the **IRMEnabledLibrary-detail.csv*
 |LastContentModifiedDate |Date/Time the site collection had content modified. |
 |TotalItemCount |Total number of items found in the site collection. |
 |Hits |Number of requests logged for the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
-|DistinctUsers   |Number of distinct users that have accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DistinctUsers   |Number of distinct users that accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
 |DaysOfUsageData |Number of days the usage logging service retains data. This information provides context for Hits and DistinctUsers. For example, if this number is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
 |ListTitle |Title of the list or library with IRM enabled. |
 |URL |URL to the default list view. |
