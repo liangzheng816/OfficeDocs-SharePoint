@@ -43,7 +43,7 @@ Before you start a migration project, you want to understand how many lists use 
 
 ## Post Migration
 
-If migrating managed metadata columns is supported in the migration tooling you have chosen, you want to ensure that the lists using the columns are migrated and are properly configured to create and edit list items.
+If migrating managed metadata columns is supported in the migration tooling you chose, make sure the lists using the columns are migrated and properly configured to create and edit list items.
 
 ## Scan Result Reports
 
