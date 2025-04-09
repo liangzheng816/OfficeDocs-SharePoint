@@ -25,7 +25,7 @@ description: Learn about how the SharePoint assessment tool scans for issues in 
 
 ## Overview
 
-Publishing sites are typically customized intranet sites that rely on page layouts to allow end users to quickly create articles published to end users. Due to the high level of customization involved with publishing sites, they may be difficult to migrate to SharePoint in Microsoft 365 without an extensive amount of remediation effort.
+Publishing sites are typically customized intranet sites that rely on page layouts to allow end users to quickly create articles published to end users. Due to the high level of customization involved with publishing sites, they may be difficult to migrate to SharePoint in Microsoft 365. Migrating these sites may require an extensive amount of remediation effort.
 
 ## Data Migration
 
