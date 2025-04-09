@@ -51,7 +51,7 @@ IRM settings associated with lists and libraries aren't migrated. The following 
 ## Preparing for Migration
 
 1. IRM needs to be configured for SharePoint.
-2. IRM needs to be disabled on the source list prior to the migration event for that site collection.
+2. IRM needs to be disabled on the source list before the migration event for that site collection.
 
 ## Post Migration
 
