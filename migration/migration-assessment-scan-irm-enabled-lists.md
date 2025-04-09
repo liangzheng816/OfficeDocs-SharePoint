@@ -59,7 +59,7 @@ IRM settings associated with lists and libraries aren't migrated. The following 
 2. Perform the following steps to ensure documents in IRM protected libraries are protected.
   - Download a document from an IRM protected list.
   - Open the document on the client machine.
-  - Display a status beneath the ribbon if the document's protected.
+  - If the document is protected, there's a status displayed beneath the ribbon.
 
 ## Scan Result Reports
 
