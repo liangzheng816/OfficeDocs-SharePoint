@@ -37,7 +37,7 @@ The maximum limit for opening XLSX files in the browser is 10 MB in the target e
 XLSX files are migrated.
 
 > [!IMPORTANT]
-> Any site that's configured as "No Access" (locked) in SharePoint is skipped. To see a list of locked site collections see the Locked Sites scan output.
+> Any site configured as "No Access" (locked) in SharePoint is skipped. To see a list of locked site collections see the Locked Sites scan output.
 
 ## Preparing for Migration
 
