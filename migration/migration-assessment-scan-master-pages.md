@@ -35,7 +35,7 @@ During migration, the default master page should be set on all migrated sites. D
 ## Data Migration
 
 > [!IMPORTANT]
-> Custom master page files (\*.master) shouldn't be migrated to the new platform. The setting on the destination site ia set to the default master page. This process ensures the site renders after the migration.
+> Custom master page files (\*.master) shouldn't be migrated to the new platform. The setting on the destination site is set to the default master page. This process ensures the site renders after the migration.
 
 ## Preparing for Migration
 
