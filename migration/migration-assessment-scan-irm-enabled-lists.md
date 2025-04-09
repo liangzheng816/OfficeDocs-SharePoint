@@ -42,7 +42,7 @@ There are two main components to the IRM migration process:
 IRM settings associated with lists and libraries aren't migrated. The following process is required to enable the migration tooling to properly handle IRM protected libraries. This process ensures that the content is transferred and accessible post migration.
 
 1. Disable IRM on the source and target list.
-2. Migration tooling copies the files from the source and place them in the target.
+2. Migration tooling copies the files from the source and places them in the target.
 3. Enable IRM on the source and target list.
 
 > [!IMPORTANT]
@@ -57,10 +57,9 @@ IRM settings associated with lists and libraries aren't migrated. The following 
 
 1. Enable IRM on the migrated content list.
 2. Perform the following steps to ensure documents in IRM protected libraries are protected.
-
-- Download a document from an IRM protected list.
-- Open the document on the client machine.
-- If the document is protected, there's a status displayed beneath the ribbon.
+  - Download a document from an IRM protected list.
+  - Open the document on the client machine.
+  - Display a status beneath the ribbon if the document's protected.
 
 ## Scan Result Reports
 
