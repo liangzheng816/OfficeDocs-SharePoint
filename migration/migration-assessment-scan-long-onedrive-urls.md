@@ -45,7 +45,7 @@ The directory name of the file is:
 > [!NOTE]
 > There's a 400-character limit on the directory path to a file in SharePoint.
 
-After the migration, the file path looks like the following:
+After the migration, the file path looks like the following example:
 
 `Personal/bobsmith_contoso_com/Documents/Folder1/Folder2`
 
