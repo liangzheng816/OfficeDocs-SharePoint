@@ -30,18 +30,18 @@ Learn how to mitigate issues with locked sites during migration.
 
 ## Overview
 
-When a site is configured as "No Access" in SharePoint, the site is inaccessible for users and the system. As a result, the various premigration scans are configured to ignore any site configured as "No Access". It's **locked**.
+When a site is configured as **No Access** in SharePoint, the site is inaccessible for users and the system. As a result, the various premigration scans are configured to ignore any site configured as **No Access**. It's **locked**.
 
 ## Data Migration
 
 Locked sites can't be migrated to the target environment, as the migration tooling is unable to read the site contents.
 
 > [!IMPORTANT]
-> Any site configured as "No Access" (locked) in SharePoint is skipped. To see a list of locked site collections see the Locked Sites scan output.
+> Any site configured as **No Access** (locked) in SharePoint is skipped. To see a list of locked site collections see the Locked Sites scan output.
 
 ## Preparing for Migration
 
-Ensure the list of locked sites is correct. If you have sites that are incorrectly marked as "No Access", update their lock status to "Not Locked".
+Ensure the list of locked sites is correct. If you have sites that are incorrectly marked as **No Access**, update their lock status to **Not Locked**.
 
 ## Post Migration
 
@@ -56,15 +56,15 @@ To manage the lock status on sites on the target environment, use the SharePoint
 
 **How to set a site to "No Access"**
 
-1. Use Set-SPSite from the PowerShell cmdlets to lock sites. This action is similar to "No Access" in that users can't get to the site.
+1. Use Set-SPSite from the PowerShell cmdlets to lock sites. This action is similar to **No Access** in that users can't get to the site.
 2. Download the cmdlets from the [SharePoint Online Management Shell download.](https://www.microsoft.com/download/details.aspx?id=35588) https://www.microsoft.com/download/details.aspx?id=35588.
 3. Launch the SharePoint Online Management Shell.
 4. Run:  `Set-SPSite -LockStatus NoAccess`.
 
 **How to set a site to "Read only"**
 
-1. Set-SPSite doesn't support setting a site to "Read Only". An alternative method is to use Site Collection Policies on a site collection.
-2. Browse the site you want to be "Read Only".
+1. Set-SPSite doesn't support setting a site to **Read Only**. An alternative method is to use Site Collection Policies on a site collection.
+2. Browse the site you want to be **Read Only**.
 3. In the top right, select the gear icon, and then select **Site Settings**.
 4. Select **Site Policies**.
 5. Select **Create**.
@@ -75,14 +75,14 @@ To manage the lock status on sites on the target environment, use the SharePoint
 6. On **Site Settings**, select **Site Closure and Deletion**.
 7. For **Site Policy**, select the "Read Only" policy from Step 4.
 8. Select **OK**.
-9. Go back to **Site Closure and Deletion**, and select **Close this site now**. The site is now "Read Only".
+9. Go back to **Site Closure and Deletion**, and select **Close this site now**. The site is now **Read Only**.
 10. Only a site collection admin can access and select **Open this site**.
 
 ## Scan Result Reports
 
-**LockedSites-detail.csv** This scan report contains a list of URLs that are configured as "No Access" in SharePoint.
+**LockedSites-detail.csv** This scan report contains a list of URLs that are configured as **No Access** in SharePoint.
 
 |**Column** |**Description**                                                                                 |
 |:----------|:-----------------------------------------------------------------------------------------------|
-|URL        |URL of the site collection configured as "No Access".                                           |
+|URL        |URL of the site collection configured as **No Access**.                                         |
 |ScanID     |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool. |
