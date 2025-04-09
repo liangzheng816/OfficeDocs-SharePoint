@@ -49,7 +49,7 @@ To manage the lock status on sites on the target environment, use the SharePoint
 
 **How to unlock a site collection on vNext**
   
-1. Use the Set-SPSite cmdlet from the PowerShell cmdlets to unlock sites.
+1. To unlock sites, use the Set-SPSite cmdlet from the PowerShell cmdlets.
 2. Download the cmdlets from the [SharePoint Online Management Shell download.](https://www.microsoft.com/download/details.aspx?id=35588) https://www.microsoft.com/download/details.aspx?id=35588.
 3. Launch the SharePoint Online Management Shell.
 4. Run:  `Set-SPSite -LockStatus Unlock`.
