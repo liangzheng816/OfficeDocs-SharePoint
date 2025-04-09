@@ -39,16 +39,16 @@ Managed metadata columns are typically migrated, but support depends on the migr
   
 ## Preparing for Migration
 
-Before you start a migration project, you want to understand how many lists use Managed Metadata and you'll want to try to migrate these as close to the time you migrate your Managed Metadata Service Application data to the cloud.
-  
+Before you start a migration project, you want to understand how many lists use Managed Metadata. you also want to try to migrate these lists close to the time you migrate your Managed Metadata Service Application data to the cloud.
+
 ## Post Migration
 
-If migrating managed metadata columns is supported in the migration tooling you have chosen, you'll want to ensure that the lists using the columns migrated and is properly configured to create and edit list items.
-  
+If migrating managed metadata columns is supported in the migration tooling you have chosen, you want to ensure that the lists using the columns are migrated and are properly configured to create and edit list items.
+
 ## Scan Result Reports
 
-The following table describes the columns in the **ManagedMetadataLists-detail.csv** report. This scan report includes all lists that contain Managed Metadata columns. 
-  
+The following table describes the columns in the **ManagedMetadataLists-detail.csv** report. This scan report includes all lists that contain Managed Metadata columns.
+
 |**Column** |**Description** |
 |:----------|:---------------|
 |SiteId |Unique identifier of the impacted site collection. |
