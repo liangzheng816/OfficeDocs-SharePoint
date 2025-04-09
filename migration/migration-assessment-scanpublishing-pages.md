@@ -29,7 +29,7 @@ Publishing sites are typically customized intranet sites that rely on page layou
 
 ## Data Migration
 
-The files can migrate however the pages may not function correctly on the new platform. The common causes are changes to SharePoint provided master pages, JavaScript, and CSS files.
+The files can migrate, however the pages may not function correctly on the new platform. The common causes are changes to SharePoint provided master pages, JavaScript, and CSS files.
 
 > [!IMPORTANT]
 > Any site configured as "No Access" (locked) in SharePoint is skipped. To see a list of locked site collections see the Locked Sites scan output.
