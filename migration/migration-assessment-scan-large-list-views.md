@@ -78,8 +78,8 @@ Ensure the lists that you remediated are rendering correctly.
 |AggregateView |True/False. Determines if the view is an aggregate view. For example, the view is configured to display a Total. |
 |ListViewThrottled |True/False. Specifies whether the list view was actively throttled on the scanned environment. |
 |ViewItemCount |Number of items returned when the list view was executed. This field is empty if ListViewThrottled is True. |
-|Hidden |True/False. Indicates the list view is configured to be hidden from end users. |
-|ReadOnlyView  |True/False. Specifies if the list view is configured to be read only. |
+|Hidden |True/False. Indicates the list view is hidden from end users. |
+|ReadOnlyView  |True/False. Specifies if the list view is Read Only. |
 |WebURL |Url to the subsite that contains the list view. |
 |ListTitle |Title of the list view is associated with |
 |ListURL |Url to the root folder of the list. |
