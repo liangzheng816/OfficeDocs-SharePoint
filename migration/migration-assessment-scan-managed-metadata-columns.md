@@ -39,7 +39,7 @@ Managed metadata columns are typically migrated, but support depends on the migr
   
 ## Preparing for Migration
 
-Before you start a migration project, you want to understand how many lists use Managed Metadata. you also want to try to migrate these lists close to the time you migrate your Managed Metadata Service Application data to the cloud.
+Before you start a migration project, you want to understand how many lists use Managed Metadata. You also want to try to migrate these lists close to the time you migrate your Managed Metadata Service Application data to the cloud.
 
 ## Post Migration
 
