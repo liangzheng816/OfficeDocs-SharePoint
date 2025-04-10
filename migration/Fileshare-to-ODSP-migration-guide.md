@@ -72,7 +72,7 @@ In your planning, include how this transition to Microsoft 365 makes for a more 
 
 Review how you use the content stored in your file shares today. Does the file belong to a single user, even though they might share it with others? If so, save it in your OneDrive. Your OneDrive is private by default, but you can share files with others. This option is useful if you aren't working as a team yet.
 
-If you're working on a file or folder intended for team consumption and collaboration, move it to a **shared library**, where team members have access by default. OneDrive gives you access to all your shared libraries in Microsoft Teams, SharePoint, or Outlook. When you need a new shared library for team files, you can create one right from OneDrive, add members, and start working together.
+If you're working on a file or folder intended for team consumption and collaboration, move it to a **shared library**, where team members have default access. OneDrive gives you access to all your shared libraries in Microsoft Teams, SharePoint, or Outlook. When you need a new shared library for team files, you can create one right from OneDrive, add members, and start working together.
 
 ![A screenshot showing where users and files go from a fileshare to OneDrive and Shared Libraries.](media/SP-Migration-WhatGoesWhere_filesharetoODSP.png)
 
