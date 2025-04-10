@@ -40,7 +40,7 @@ Most migrations fall into regular phases as follows. Proven success factors for 
 
 |Migration planning |Assess and remediate |Prepare your OneDrive and SharePoint environment |Migrate |User onboarding |
 |:------------------|:--------------------|:------------------------------------------------|:-------|:---------------|
-|What content goes where <br>Understanding permissions versus sharing <br>What to expect before and after <br>Migration and network performance considerations <br>Change management and communications |Assess key areas <br>Remediate issues |Preprovision Microsoft 365 and users |Review migration offerings <br>Microsoft FastTrack services <br>Migration service providers |Send regular emails to users <br>Provide training <br>Let users know how they're impacted |
+|What content goes where <br>Understanding permissions versus sharing <br>What to expect before and after <br>Migration and network performance considerations <br>Change management and communications |Assess key areas <br>Remediate issues |Pre-provision Microsoft 365 and users |Review migration offerings <br>Microsoft FastTrack services <br>Migration service providers |Send regular emails to users <br>Provide training <br>Let users know how they're impacted |
 
 ## File shares
 
