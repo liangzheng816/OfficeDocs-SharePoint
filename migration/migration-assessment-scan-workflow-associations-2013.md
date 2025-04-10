@@ -31,7 +31,7 @@ Learn how to fix issues that occur with Workflow Associations 2013 during migrat
 
 When content is migrated from the SharePoint source environment to the new target environment there are two types of workflows that could be involved, depending on their use in the current farm.
 
-Workflows created using the workflow service available in SharePoint 2010 and are still in use on the source environment are migrated to the new farm and continue to work as expected.
+Workflows created using the workflow service available in SharePoint 2010 and are still in use on the source environment migrate to the new farm and continue to work as expected.
 
 SharePoint source farms may run Workflow 2013 using a version of the Workflow Manager. As a result, when content is moved from the source environment to the target environment, there's a process to migrate Workflow 2013 over to the Azure instance of the Workflow Manager.
 
