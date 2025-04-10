@@ -70,7 +70,7 @@ The following table describes the columns in the **Apps-detail.csv** report. Thi
 |TotalItemCount |Total number of items found in the site collection. |
 |Hits |Number of requests logged for the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
 |DistinctUsers |Number of distinct users that have accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
-|DaysOfUsageData |Number of days the usage logging service retains data. This information provides context for Hits and DistinctUsers. For example, if this number is 14 days,the Hits and DistinctUsers data is for the last 14 days. |
+|DaysOfUsageData |Number of days the usage logging service retains data. This information provides context for Hits and DistinctUsers. For example, if this number is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
 |File |Path to the Site Notebook. |
 |TimeCreated |Date/Time the file was created. |
 |TimeModified |Date/Time the file was last modified. |
