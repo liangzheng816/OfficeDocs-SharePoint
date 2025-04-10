@@ -99,7 +99,7 @@ For files and folders opened from a shared location:
 
 Before your migration starts, it's important to perform an analysis of your current environment. Only you know your data and how and who uses it.
 
-The SharePoint Migration Tool (SPMT) provides the ability to scan your files and provide assessment reports. To find any issues with your file before migration, turn on the setting **Only perform scanning**.
+The SharePoint Migration Tool (SPMT) scans your files and provide assessment reports. To find any issues with your file before migration, turn on the setting **Only perform scanning**.
 
 If you have multiple sources that you want to assess, consider using the bulk process by creating a .json or .csv file.
 
