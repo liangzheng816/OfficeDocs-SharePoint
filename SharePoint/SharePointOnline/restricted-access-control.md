@@ -216,7 +216,7 @@ You can run the following commands to create, fetch, and view report for access 
 
 ## Auditing
 
-[Audit events](/office/office-365-management-api/office-365-management-activity-api-schema) are available in the Purview compliance portal to help you monitor site access restriction activities. Audit events are logged for the following activities:
+[Audit events](/purview/audit-log-activities) are available in the Microsoft Purview portal to help you monitor site access restriction activities. Audit events are logged for the following activities:
 
 - Applying site access restriction for site
 - Removing site access restriction for site
