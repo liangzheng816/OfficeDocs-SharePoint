@@ -78,7 +78,7 @@ If you're working on a file or folder intended for team consumption and collabor
 
 ### Permissions vs sharing
 
-How you have shared your files dictates how they appear in the **Shared with me** view in OneDrive.
+How you shared your files dictates how they appear in the **Shared with me** view in OneDrive.
 
 For files and folders opened from a shared location:
 
