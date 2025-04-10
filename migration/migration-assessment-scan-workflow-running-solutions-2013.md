@@ -5,7 +5,7 @@ ms.author: heidip
 author: MicrosoftHeidi
 manager: jtremper
 recommendations: true
-ms.date: 9/13/2017
+ms.date: 04/10/2025
 audience: ITPro
 f1.keywords:
 - NOCSH
@@ -26,50 +26,48 @@ description: "Learn how to fix Workflow Running Solutions 2013 issues that occur
 # Migration Assessment Scan: Workflow Running Solutions 2013
 
 Learn how to fix Workflow Running Solutions 2013 issues that occur during migration.
-  
+
 ## Overview
 
-The migration is unable to migrate workflows that are in progress. If a workflow on a site or item is In Progress, it appears as if the workflow was never started on the item prior to migration. If you have business critical workflows that are in progress prior to migration, it's recommended to finish the workflow prior to migration.
-  
+The migration is unable to migrate workflows that are in progress. If a workflow on a site or item is In Progress, it appears as if the workflow was never started on the item before migration. If you have business critical workflows in progress before migration, we recommend you finish the workflow before migration.
+
 ## Data Migration
 
-Workflow definitions migrate, however in progress workflow information won't be migrated.
-  
+Workflow definitions migrate, however in progress workflow information isn't be migrated.
+
 > [!IMPORTANT]
-> Any site that is configured as "No Access" (locked), in SharePoint will be skipped. To see a list of locked site collections see the Locked Sites scan output. 
+> Any site configured as "No Access" (locked) in SharePoint is skipped. To see a list of locked site collections see the Locked Sites scan output.
   
 ## Preparing for Migration
 
-Communicate with end users that in progress workflows will need to be restarted after migration.
-  
+Communicate with end users that in progress workflows need to be restarted after migration.
+
 ## Post Migration
 
-Communicate with end users that in progress workflows will need to be restarted after migration.
-  
+Communicate with end users that in progress workflows need to be restarted after migration.
+
 ## Scan Result Reports
 
- **WorkflowRunning2013-detail.csv** This report contains all the running SharePoint 2013 workflow instances. 
-  
-|Column|Description|
-|:-----|:-----|
-|SiteId  <br/> |Unique identifier of the impacted site collection.  <br/> |
-|SiteURL  <br/> |URL to the impacted site collection.  <br/> |
-|SiteOwner  <br/> |Owner of the site collection.  <br/> |
-|SiteAdmins  <br/> |List of people listed as site collection administrators.  <br/> |
-|SiteSizeInMB  <br/> |Size of the size collection in megabytes [MB]  <br/> |
-|NumOfWebs  <br/> |Number of webs that exist in the site collection.  <br/> |
-|ContentDBName  <br/> |Name of the content database hosting the site collection.  <br/> |
-|ContentDBServerName  <br/> |SQL Server hosting the content database.  <br/> |
-|ContentDBSizeInMB  <br/> |Size of the content database hosting the site collection.  <br/> |
-|LastContentModifiedDate  <br/> |Date/Time the site collection had content modified.  <br/> |
-|TotalItemCount  <br/> |Total number of items found in the site collection.  <br/> |
-|Hits  <br/> |Number of requests logged for the site collection. Relies on data from the usage logging service. If the usage logging service is disabled this row shows N/A.  <br/> |
-|DistinctUsers  <br/> |Number of distinct users that have accessed the site collection. Relies on data from the usage logging service. If the usage logging service is disabled this row shows N/A.  <br/> |
-|DaysOfUsageData  <br/> |Number of days the usage logging service retains data. This provides context for Hits and DistinctUsers. For example, if this is 14 days, the Hits and DistinctUsers data is for the last 14 days.  <br/> |
-|WorkflowName  <br/> |Name of the workflow  <br/> |
-|ItemURL  <br/> |URL to the item the workflow was started against.  <br/> If this is a **site workflow**, the URL points to the site.  <br/> If this is a **list item workflow**, the URL points to the list item.  <br/> |
-|Scope  <br/> |Either Site or List.  <br/> |
-|WorkflowInitiator  <br/> |User that started the workflow.  <br/> |
-|ScanID  <br/> |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool.  <br/> |
-   
+**WorkflowRunning2013-detail.csv** This report contains all the running SharePoint 2013 workflow instances.
 
+|Column |Description |
+|:------|:-----------|
+|SiteId |Unique identifier of the impacted site collection. |
+|SiteURL |URL to the impacted site collection. |
+|SiteOwner |Owner of the site collection. |
+|SiteAdmins |List of people listed as site collection administrators. |
+|SiteSizeInMB |Size of the size collection in megabytes (MB) |
+|NumOfWebs |Number of webs that exist in the site collection. |
+|ContentDBName |Name of the content database hosting the site collection. |
+|ContentDBServerName |SQL Server hosting the content database. |
+|ContentDBSizeInMB |Size of the content database hosting the site collection. |
+|LastContentModifiedDate |Date/Time the site collection had content modified. |
+|TotalItemCount |Total number of items found in the site collection. |
+|Hits |Number of requests logged for the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DistinctUsers |Number of distinct users who accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DaysOfUsageData |Number of days the usage logging service retains data. This provides context for Hits and DistinctUsers. For example, if this number is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
+|WorkflowName |Name of the workflow. |
+|ItemURL |URL to the item the workflow was started against. <br/>If this item is a **site workflow**, the URL points to the site.  <br/>If this item is a **list item workflow**, the URL points to the list item. |
+|Scope |Either Site or List. |
+|WorkflowInitiator |User that started the workflow. |
+|ScanID |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool. |
