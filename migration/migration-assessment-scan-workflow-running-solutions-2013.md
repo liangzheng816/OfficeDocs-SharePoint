@@ -65,7 +65,7 @@ Communicate with end users that in progress workflows need to be restarted after
 |TotalItemCount |Total number of items found in the site collection. |
 |Hits |Number of requests logged for the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
 |DistinctUsers |Number of distinct users who accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
-|DaysOfUsageData |Number of days the usage logging service retains data. This provides context for Hits and DistinctUsers. For example, if this number is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
+|DaysOfUsageData |Number of days the usage logging service retains data. This information provides context for Hits and DistinctUsers. For example, if this number is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
 |WorkflowName |Name of the workflow. |
 |ItemURL |URL to the item the workflow was started against. <br/>If this item is a **site workflow**, the URL points to the site.  <br/>If this item is a **list item workflow**, the URL points to the list item. |
 |Scope |Either Site or List. |
