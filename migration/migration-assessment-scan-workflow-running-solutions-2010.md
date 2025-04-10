@@ -27,7 +27,7 @@ description: "Learn about issues migrating workflows that are in progress."
 
 ## Overview
 
-The migration is unable to migrate workflows that are in progress. If a workflow on a site or item is In Progress, it appears as if the workflow was never started on the item before migration. If you have business critical workflows that are in progress before migration, it's recommended to finish the workflow before migration.
+The migration is unable to migrate workflows that are in progress. If a workflow on a site or item is In Progress, it appears as if the workflow was never started on the item before migration. If you have business critical workflows that are in progress before migration, we recommend you finish the workflow before migration.
 
 ## Data Migration
 
