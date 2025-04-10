@@ -29,7 +29,7 @@ Learn how to mitigate issues with Secure Store during migration.
 
 ## Overview
 
-Secure Store Service is a shared service that provides storage and mapping of credentials, such as account names and passwords. It lets you securely store data in the Secure Store Service to provides required credentials. You can connect to external systems and associate those credentials to a specific identity or group of identities.
+Secure Store Service is a shared service that provides storage and mapping of credentials, such as account names and passwords. It lets you securely store data in the Secure Store Service to provide required credentials. You can connect to external systems and associate those credentials to a specific identity or group of identities.
 
 ## Data Migration
 
