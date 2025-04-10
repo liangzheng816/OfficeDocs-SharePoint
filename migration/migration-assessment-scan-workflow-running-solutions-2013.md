@@ -33,7 +33,7 @@ The migration is unable to migrate workflows that are in progress. If a workflow
 
 ## Data Migration
 
-Workflow definitions migrate, however in progress workflow information isn't be migrated.
+Workflow definitions migrate, however in progress workflow information isn't migrated.
 
 > [!IMPORTANT]
 > Any site configured as "No Access" (locked) in SharePoint is skipped. To see a list of locked site collections see the Locked Sites scan output.
