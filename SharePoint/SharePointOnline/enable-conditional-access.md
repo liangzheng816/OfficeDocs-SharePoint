@@ -1,7 +1,7 @@
 ---
 ms.date: 09/18/2024
 title: "Enable conditional access support in the OneDrive sync app"
-ms.reviewer: wsproule
+ms.reviewer: william.sproule
 ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper

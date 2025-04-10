@@ -1,7 +1,7 @@
 ---
-ms.date: 04/11/2024
+ms.date: 04/04/2025
 title: "Allow syncing only on computers joined to specific domains"
-ms.reviewer: 
+ms.reviewer: gacarini
 ms.author: mactra    
 author: MachelleTranMSFT
 manager: jtremper
@@ -27,12 +27,12 @@ description: "Learn how to restrict syncing to only devices on the domains you s
 
 # Allow syncing only on computers joined to specific domains
 
-To make sure that users sync OneDrive files only on managed computers, you can configure OneDrive to sync only on PCs that are joined to specific domains.
+To ensure users sync OneDrive files only on managed computers, you can configure OneDrive to sync only on PCs that are joined to specific domains.
   
- ##To allow syncing only on PCs joined to specific domains
+## To allow syncing only on PCs joined to specific domains
 
 > [!NOTE]
-> These settings apply to SharePoint sites as well as OneDrive.
+> These settings apply to SharePoint sites and OneDrive.
 > In a multi-geo environment, this setting can be configured separately for each geo location to apply to users with that preferred data location.
 
 1. Go to [Settings in the SharePoint admin center](https://go.microsoft.com/fwlink/?linkid=2185072){:target="_blank"}, and sign in with an account that has [admin permissions](/sharepoint/sharepoint-admin-role) for your organization.
@@ -49,10 +49,10 @@ To make sure that users sync OneDrive files only on managed computers, you can c
 4. Add the [GUID of each domain](/powershell/module/activedirectory/get-addomain) for the member computers that you want to be able to sync.
 
    > [!NOTE]
-   > Make sure to add the domain GUID of the computer domain membership. If users are in a separate domain, only the domain GUID that the computer account is joined to is required.
+   > Make sure to add the domain GUID of the computer domain membership. If users are in a separate domain, the only requirement is adding the domain GUID the computer account is joined to.
 
    > [!IMPORTANT]
-   > This setting is only applicable to Active Directory domains. It does not apply to Microsoft Entra domains. If you have devices that are only Microsoft Entra joined, consider using a [Conditional Access Policy](/azure/active-directory/conditional-access/overview) instead. For details, see [Enable conditional access support in the OneDrive sync app](enable-conditional-access.md).
+   > This setting is only applicable to Active Directory domains. It doesn't apply to Microsoft Entra domains. If you have devices that are only Microsoft Entra joined, consider using a [Conditional Access Policy](/azure/active-directory/conditional-access/overview) instead. For details, see [Enable conditional access support in the OneDrive sync app](enable-conditional-access.md).
 
 5. Select **Save**.
 
