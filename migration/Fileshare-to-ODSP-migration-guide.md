@@ -169,7 +169,7 @@ Develop a plan to prepare your users for the upcoming change. Consideration fact
 
 Develop a plan for sending communications to your user base, providing clear statements of timing, and expectations and impact to the individual, including:
 
-- Awareness of the migration timeline and how it impacts them. Include any user calls to action.
+- Being aware of the migration timeline and how it impacts them. Include any user calls to action.
 - Assure them that if they already have content in OneDrive, their content is safe and isn't overwritten.
 - Let them know whether individuals can opt out of the migration process.
 
