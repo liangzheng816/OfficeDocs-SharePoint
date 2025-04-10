@@ -32,7 +32,7 @@ This guide helps you prepare to migrate from file shares to OneDrive, Teams, and
 Most migrations fall into regular phases as follows. Proven success factors for migration include planning, assessing and remediating, preparing your target environment, migrating, and onboarding your users.
 
 > [!NOTE]
-> Migrating your file shares with Migration Manager lets you have a centralized way of connecting servers, creating tasks, and automatically load balancing your migration tasks. You're guided through the steps of migrating your file shares, from the setup of agents, the creation of tasks, and the migration to Microsoft 365.
+> Migrating your file shares with Migration Manager lets you have a centralized way of connecting servers, creating tasks, and automatically load balancing your migration tasks. Migration Manager guides you through the steps of migrating your file shares, from the setup of agents, the creation of tasks, and the migration to Microsoft 365.
 >
 > **Get started**: [Migrate file shares to Microsoft 365 with Migration Manager](/sharepointmigration/mm-get-started).
 
