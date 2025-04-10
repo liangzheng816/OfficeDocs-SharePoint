@@ -148,7 +148,7 @@ The benefit for self-service migration is that you have full control over your p
 
 **Microsoft FastTrack**
 
-FastTrack is a Microsoft service included in your subscription cost.  It provides you with a set of best practices, tools, resources, and experts committed to making your experience with the Microsoft cloud a great one. OneDrive onboarding guidance, migration benefits, and adoption guidance are included in the benefit offering.
+FastTrack is a Microsoft service included in your subscription cost. It provides you with a set of best practices, tools, resources, and experts committed to making your experience with the Microsoft cloud a great one. OneDrive onboarding guidance, migration benefits, and adoption guidance are included in the benefit offering.
 
 Onboarding guidance includes: help to discover what's possible, creating a plan for success, and onboarding new users and capabilities at a flexible pace. The [Data Migration](/fasttrack/O365-data-migration) benefit covers guidance on migrating content from file share, Box, or Google Drive source environments.
 
@@ -163,8 +163,8 @@ You may decide that your organization has specific business needs that require y
 Develop a plan to prepare your users for the upcoming change. Consideration factors to include in your plan:
 
 - **Evangelize the move**. Underscore the benefits, the collaborative capabilities, and the reasons for making the move.
-- **End user training**.  Provide training to your users on the features in OneDrive.
-- **Train your helpdesk**.  Before the cut-over event, train your helpdesk in key features and common user questions.
+- **End user training**. Provide training to your users on the features in OneDrive.
+- **Train your helpdesk**. Before the cut-over event, train your helpdesk in key features and common user questions.
 - **Prepare for any possible downtime**. Plan for possible downtime during the migration.
 
 Develop a plan for sending communications to your user base, providing clear statements of timing, and expectations and impact to the individual, including:
