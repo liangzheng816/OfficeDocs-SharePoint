@@ -77,5 +77,5 @@ Validate that your sites work post migration.
 |WebID |ID for the site linked to the invalid site template. |
 |WebTitle |Title for the impacted site. |
 |WebTemplateID |ID for the site template that isn't supported in the source environment. |
-|WebTemplate |Friendly name for the site template. If this is empty, it indicates that the site template is no longer registered on the source environment. |
+|WebTemplate |Friendly name for the site template. If this row is empty, it indicates that the site template is no longer registered on the source environment. |
 |ScanID |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool. |
