@@ -5,7 +5,7 @@ ms.author: heidip
 author: MicrosoftHeidi
 manager: jtremper
 recommendations: true
-ms.date: 9/13/2017
+ms.date: 04/09/2025
 audience: ITPro
 f1.keywords:
 - NOCSH
@@ -30,45 +30,43 @@ Learn how to mitigate issues with Master pages during migration.
   
 ## Overview
 
-During migration, the default master page should be set on all sites that are migrated. Doing this ensures that the site renders once the migration is complete as the content migration won't have a dependency on any custom master pages. If you have custom master pages assigned to sites, you'll need to set the Master Page property on the new site after the migration has completed.
-  
+During migration, the default master page should be set on all migrated sites. This setting ensures the site renders once the migration is complete, as the content migration doesn't have a dependency on any custom master pages. If you have custom master pages assigned to sites, you need to set the Master Page property on the new site after the migration completes.
+
 ## Data Migration
 
 > [!IMPORTANT]
-> Custom master page files (\*.master) shouldn't be migrated to the new platform. The setting on the destination site will be set to the default master page. This process ensures the site will render after the migration. 
-  
+> Custom master page files (\*.master) shouldn't be migrated to the new platform. The setting on the destination site is set to the default master page. This process ensures the site renders after the migration.
+
 ## Preparing for Migration
 
-Review the report and determine where you can move away from custom master pages before you migrate. Plan and understand what post migration work will be necessary to use the customized file moving forward.
-  
+Review the report and determine where you can move away from custom master pages before you migrate. Plan and understand what post migration work is necessary to use the customized file moving forward.
+
 ## Post Migration
 
-If you decide to continue using the customized master page on the new platform, you will need to apply the master page setting and validate your customizations work on the new platform.
-  
+If you decide to continue using the customized master page on the new platform, you need to apply the master page setting and validate your customizations work on the new platform.
+
 ## Scan Result Reports
 
- **NonDefaultMasterPages-detail.csv** This scan report contains all the sites that have a custom master page applied. 
-  
-|**Column**|**Description**|
-|:-----|:-----|
-|SiteId  <br/> |Unique identifier of the impacted site collection.  <br/> |
-|SiteURL  <br/> |URL to the impacted site collection.  <br/> |
-|SiteOwner  <br/> |Owner of the site collection.  <br/> |
-|SiteAdmins  <br/> |List of people listed as site collection administrators.  <br/> |
-|SiteSizeInMB  <br/> |Size of the size collection in megabytes [MB]  <br/> |
-|NumOfWebs  <br/> |Number of webs that exist in the site collection.  <br/> |
-|ContentDBName  <br/> |Name of the content database hosting the site collection.  <br/> |
-|ContentDBServerName  <br/> |SQL Server hosting the content database.  <br/> |
-|ContentDBSizeInMB  <br/> |Size of the content database hosting the site collection.  <br/> |
-|LastContentModifiedDate  <br/> |Date/Time the site collection had content modified.  <br/> |
-|TotalItemCount  <br/> |Total number of items found in the site collection.  <br/> |
-|Hits  <br/> |Number of requests logged for the site collection. Relies on data from the usage logging service. If the usage logging service is disabled this row shows N/A.  <br/> |
-|DistinctUsers  <br/> |Number of distinct users that have accessed the site collection. Relies on data from the usage logging service. If the usage logging service is disabled this row shows N/A.  <br/> |
-|DaysOfUsageData  <br/> |Number of days the usage logging service retains data. This provides context for Hits and DistinctUsers. For example, if this is 14 days, the Hits and DistinctUsers data is for the last 14 days.  <br/> |
-|WebUrl  <br/> |Url to the subsite that has the master page setting configured.  <br/> |
-|WebTitle  <br/> |Title of the impacted subsite.  <br/> |
-|MasterPageUrl  <br/> |Server relative path to the master page referenced by the MasterPageUrl property.  <br/> |
-|CustomMasterPageUrl  <br/> |Server relative path to the master page referenced by the CustomMasterPageUrl property.  <br/> |
-|ScanID  <br/> |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool.  <br/> |
-   
+**NonDefaultMasterPages-detail.csv** This scan report contains all the sites with a custom master page applied.
 
+|**Column** |**Description** |
+|:----------|:---------------|
+|SiteId |Unique identifier of the impacted site collection. |
+|SiteURL |URL to the impacted site collection. |
+|SiteOwner |Owner of the site collection. |
+|SiteAdmins |List of people listed as site collection administrators. |
+|SiteSizeInMB |Size of the size collection in megabytes (MB). |
+|NumOfWebs |Number of webs that exist in the site collection. |
+|ContentDBName |Name of the content database hosting the site collection. |
+|ContentDBServerName |SQL Server hosting the content database. |
+|ContentDBSizeInMB |Size of the content database hosting the site collection. |
+|LastContentModifiedDate |Date/Time the site collection had content modified. |
+|TotalItemCount |Total number of items found in the site collection. |
+|Hits  <br/> |Number of requests logged for the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DistinctUsers  <br/> |Number of distinct users who accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DaysOfUsageData |Number of days the usage logging service retains data. This information provides context for Hits and DistinctUsers. For example, if this number is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
+|WebUrl |Url to the subsite with the master page setting configured. |
+|WebTitle |Title of the impacted subsite. |
+|MasterPageUrl|Server relative path to the master page referenced by the MasterPageUrl property. |
+|CustomMasterPageUrl |Server relative path to the master page referenced by the CustomMasterPageUrl property. |
+|ScanID |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool. |

@@ -36,7 +36,7 @@ Collaborate all in one place by migrating your Google Workspace files, metadata,
 
 - **Step 4:** [Review destination paths](mm-google-step4-review-destinations.md). We automatically map source paths to any exactly matching destination paths. Ensure content is being copied to the right place by reviewing and modifying as needed for each destination path.
 
-- **Step 5:** [Map identities](mm-google-step5-map-identities.md). Map your groups and users in Google Drive to groups and users in Microsoft 365 to migrate metadata and permissions correctly.
+- **Step 5:** [Map identities](mm-google-step5-map-identities.md). Map your domains, groups and users in Google Drive to those in Microsoft 365 to migrate metadata and permissions correctly.
 
 - **Step 6:** [Migrate and Monitor](mm-google-step6-migrate-monitor.md). After reviewing your [migration setup](/sharepointmigration/mm-project-settings), migrate your Google Drives and monitor the progress.
 
@@ -54,39 +54,16 @@ To get started, navigate to [Microsoft 365 Admin Center Home - Setup - Migration
   - User that is granted with the "[Microsoft 365 Migration Administrator](/sharepointmigration/mm-migration-admin-role)" role
 
   >[!IMPORTANT]
-  >Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+  >Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization.
 
 - **Access to the source**: Have Google account credentials that have **Read** access to any Google user account you plan to migrate.
 
 - **Prerequisites installed:** Make sure you have the necessary prerequisites installed.
 
-## Google Shared Drives and permissions
+Once a migration project is created, you can start connecting to the source as described in the next step.
 
-Google Shared drives can now be discovered and migrated normally. Google Shared Drive permissions are migrated according to the Project settings, under [general permission setting](/sharepointmigration/mm-project-settings-permissions#migrate-permissions).
+> [!NOTE]
+> - There are [file size limitations](/sharepointmigration/mm-file-size-limitations) and [unsupported files](/sharepointmigration/mm-unsupported-files) in Migration Manager.
+> - Learn more about [frequently asked questions for Google migration](mm-faqs-google.md).
 
-Folder permissions are migrated by default. File permissions are migrated on demand.
-
-We recommend the following steps when migrating permissions in your shared drive:
-
-- Recreate a Microsoft 365 group with the same memberships as the Google Drive group. You can either create a new group or edit the group linked to the Team site designated as the migration destination for the Google Shared Drive.
-- Go to the 'Map Identities' setting and map the original Google Drive group of the shared drive to the Microsoft 365 group.
-
-## What isn't migrated
-
-Google Sites and Google Maps migration aren't supported, while Google Docs/Sheets/Slides/Forms are migrated as equivalent file types in Microsoft 365. [Learn more about the unsupported files](/sharepointmigration/mm-unsupported-files).
-
-### File size of Google proprietary files
-
-Google only started calculating the size of its proprietary files, including Google Docs, Sheets, Forms, and Slides, on May 2, 2022. Any Google proprietary files created and modified **before** May 2, 2022 won't include file size in the metadata info we get from the API calls. As a result, all Google proprietary files created before May 2, 2022 default to a scanned size of 1 byte and are reported as such in our *ScanSummary report*.
-
-### Files marked as restricted
-
-Google Workspace/Drive allows owners to control the ability for users to copy, download, or print files on a per-file basis. By default, this feature is enabled for each file. To ensure a successful migration, this setting must remain enabled. Disabling it may result in the following error when migrating a file owned by another user:
-
-`Permissions issue: File marked as restricted or not copyable`
-
-To enable this setting:
-
-1. Navigate to the **Share** panel for the file.
-1. Click on the **Settings Icon** located at the top right corner.
-1. Select the checkbox for the setting "**Viewers and commenters can see the option to download, print, and copy**."
+## [**Step 1: Connect to Google Workspace**](mm-google-step1-connect.md)

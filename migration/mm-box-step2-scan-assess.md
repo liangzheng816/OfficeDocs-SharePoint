@@ -1,7 +1,7 @@
 ---
-ms.date: 03/24/2025
+ms.date: 04/07/2025
 title: "Step 2: Scan and assess Box accounts using Migration Manager"
-ms.reviewer:
+ms.reviewer: kbchen
 ms.author: heidip
 author: MicrosoftHeidi
 manager: jtremper
@@ -26,32 +26,26 @@ description: "Step 2:  Scan and assess Box users using Migration Manager."
 # Step 2: Scan and assess Box users
 
 > [!NOTE]
-> "Step 2: Scan and access Box users" can now be skipped to alleviate Box throttling. Once the users (tasks) are added to the Scan list, they can be copied to the Migrations tab instantly for migration operations.
-
-> [!NOTE]
-> Migration Manager doesn't discover any possible errors and warnings before migration if the scan process is skipped.
+> "Step 2: Scan and access Box users" can now be skipped to alleviate Box throttling. Uncheck the **Automatically start scanning now** option in the **Add users** panel if you wish to skip the step. Once the Box users (tasks) are added to the scan list, they can be copied to the migration list instantly for migration operations. Migration Manager doesn't discover any possible errors and warnings before migration if the scan process is skipped.
 
 After you connect, scan and assess your Box user accounts.
 1. Select **Add users** from the menu bar to choose how to add users:</br> - **All new users** to autodiscover all new users in Box</br>- **Single user** for only one account,  or </br>- **Multiple specific users** to bulk upload users by entering them into a CSV file to upload.
 2. Choose to **Automatically start scanning now** or choose to scan later.
 3. Select **Add**.
 4. Highlight any or all of the accounts and then select **Scan** if you chose not to auto scan earlier.
+5. Once the scan is complete, a table summary displays to give you an at-a-glance source content overview, scan status, etc.
+6. Review the scanned users. Search for specific text, or select a filter to review the list more easily.
 
 >[!Important]
-> The total number cannot exceed 50,000 tasks.
+> The total number of rows (tasks) in the scan list cannot exceed 50,000.
 
-5. Once the scan is complete, a table summary displays to give you an at-a-glance overview of your users. The summary includes User item counts, migration readiness, and any issues that need attention.
-4. Review the scanned users. Search for specific text, or select a filter to review the list more easily.
 
 ## Download reports
 
-Summary and detailed scan reports are available to assist you in troubleshooting. Download the generated reports and logs to investigate any possible issues that might block your migration.
+**Scan summary report** and **Scan detailed reports** are available to assist you in troubleshooting. [Download the generated reports](/sharepointmigration/mm-cloud-reports#download-scan-reports) to investigate any possible issues that might block your migration. 
 
-1. Once the scan is complete, select **Download reports** from the menu bar for *summary* reports.
+Check the [status code](/sharepointmigration/mm-cloud-reports#status-codes) in **Scan summary report** to address task-level errors. For file-level errors, refer to the [failure code (*ResultCode*)](/sharepointmigration/mm-cloud-reports#failure-codes) in the **Scan detailed report**.
 
-   ![add source paths manually in Box](media/mm-add-source-path.png)
-
-2. Highlight a selected Box user, and select **Download scan log**  to download a *detailed* scan report of that user account. </br>
 
 ## Managing users who own large amounts of data
 
