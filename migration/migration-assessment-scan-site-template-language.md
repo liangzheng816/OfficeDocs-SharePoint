@@ -64,6 +64,6 @@ The following table describes the columns in the SiteTemplateLanguage-detail.csv
 |DaysOfUsageData |Number of days the usage logging service retains data. This information provides context for Hits and DistinctUsers. For example, if this number is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
 |WebURL |Url to the site. |
 |Template |Name of the template. This shows a number if SharePoint isn't able to determine name of the site template. |
-|TemplateID |ID associated with the site template. For example, 1 is associated with STS (Team Site). |
+|TemplateID |ID associated with the site template. For example, 1 is associated with STS (SharePoint Team Site). |
 |Locale |Language associated with the site template. If you installed English SharePoint and created a Team Site, the Locale would show 1033. |
 |ScanID |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool. |
