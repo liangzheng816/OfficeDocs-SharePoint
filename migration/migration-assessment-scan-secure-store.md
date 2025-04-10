@@ -63,6 +63,6 @@ If you created Secure Store applications in the target environment, ensure they 
 |FriendlyName |Friendly name for the Secure Store application. |
 |ContactEmail |Contact email address associated with the Secure Store application. |
 |ApplicationType |The type of the Secure Store application. The only supported option on vNext is Group Restricted. |
-|CredentialManagementURL |URL associated with managing credentials. The user doesn't typically set this URL. It's provided for informational purposes. |
+|CredentialManagementURL |URL associated with managing credentials. The user doesn't typically set this URL. We provide this data for informational purposes. |
 |TicketTimeout |Ticket time-out associated with the Secure Store application. |
 |ScanID |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool. |
