@@ -31,7 +31,7 @@ SharePoint Server 2013 and later support a feature called Site Notebook. This Sh
 Depending on the migration tools being used, your Site Notebook migrates. However, the name of the Site Notebook in SharePoint in Microsoft 365 is different from the name of the file in the on-premises environment. As a result, links referencing the original file name is broken. This report provides a list of OneNote files that match the following scenario:
 
 - OneNote Notebook files
-- Files xist in the Site Assets library
+- Files exist in the Site Assets library
 - Files have a name that ends in Notebook
 - OneNote isn't empty
 - File isn't flagged as deleted
