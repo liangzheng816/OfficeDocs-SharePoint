@@ -5,7 +5,7 @@ ms.author: heidip
 author: MicrosoftHeidi
 manager: jtremper
 recommendations: true
-ms.date: 9/13/2017
+ms.date: 04/10/2025
 audience: ITPro
 f1.keywords:
 - NOCSH
@@ -26,58 +26,56 @@ description: "Learn how to fix issues with Unsupported Site Templates during mig
 # Migration Assessment Scan: Unsupported Site Templates
 
 Learn how to fix issues with Unsupported Site Templates during migration.
-  
+
 ## Overview
 
 Every SharePoint site is based on a site template. In the SharePoint source environment, it was possible to create site collections using various default templates and templates deployed via Full Trust Code (FTC). However, site collections that are supported for migration are the Team Site and Personal Site templates. The Personal Site Template is used for creating Microsoft OneDrive sites.
-  
+
 Supported Site Templates:
-  
-|**Template Friendly Name**|**Template**|**ID**|
-|:-----|:-----|:-----|
-|TeamSite  <br/> |STS  <br/> |1  <br/> |
-|Personal Site  <br/> |SPSPERS  <br/> |21  <br/> |
-   
+
+|**Template Friendly Name** |**Template** |**ID** |
+|:--------------------------|:------------|:------|
+|TeamSite                   |STS          |1      |
+|Personal Site              |SPSPERS      |21     |
+
 ## Data Migration
 
 Any site that isn't using a Team Site or Personal Site template should be mapped to the Team Site template during migration. The content from the source environment is then copied into the new Team Site on the target.
-  
+
 > [!IMPORTANT]
-> Any site that is configured as "No Access" (locked), in SharePoint would be skipped. To see a list of locked site collections see the Locked Sites scan output. 
-  
+> Any site configured as "No Access" (locked) in SharePoint is skipped. To see a list of locked site collections see the Locked Sites scan output.
+
 ## Preparing for Migration
 
 Use the scan report for Unsupported Site Templates to identify site collections that are impacted. The impacted site's content is copied into a Team Site template during migration, but it's possible the Team Site template doesn't include the features/functionality of the source site.
-  
+
 ## Post Migration
 
 Validate that your sites work post migration.
-  
+
 ## Scan Result Reports
 
- **UnsupportedWebTemplate-detail.csv** This scan report contains a list of sites that are currently using a site template that isn't supported on the target platform. 
-  
-|**Column**|**Description**|
-|:-----|:-----|
-|SiteId  <br/> |Unique identifier of the impacted site collection.  <br/> |
-|SiteURL  <br/> |URL to the impacted site collection.  <br/> |
-|SiteOwner  <br/> |Owner of the site collection.  <br/> |
-|SiteAdmins  <br/> |List of people listed as site collection administrators.  <br/> |
-|SiteSizeInMB  <br/> |Size of the size collection in megabytes [MB]  <br/> |
-|NumOfWebs  <br/> |Number of webs that exist in the site collection.  <br/> |
-|ContentDBName  <br/> |Name of the content database hosting the site collection.  <br/> |
-|ContentDBServerName  <br/> |SQL Server hosting the content database.  <br/> |
-|ContentDBSizeInMB  <br/> |Size of the content database hosting the site collection.  <br/> |
-|LastContentModifiedDate  <br/> |Date/Time the site collection had content modified.  <br/> |
-|TotalItemCount  <br/> |Total number of items found in the site collection.  <br/> |
-|Hits  <br/> |Number of requests logged for the site collection. Relies on data from the usage logging service. If the usage logging service is disabled this row shows N/A.  <br/> |
-|DistinctUsers  <br/> |Number of distinct users that have accessed the site collection. Relies on data from the usage logging service. If the usage logging service is disabled this row shows N/A.  <br/> |
-|DaysOfUsageData  <br/> |Number of days the usage logging service retains data. This provides context for Hits and DistinctUsers. For example, if this is 14 days, the Hits and DistinctUsers data is for the last 14 days.  <br/> |
-|FullURL  <br/> |URL to the impacted site.  <br/> |
-|WebID  <br/> |ID for the site that is linked to the invalid site template.  <br/> |
-|WebTitle  <br/> |Title for the impacted site.  <br/> |
-|WebTemplateID  <br/> |ID for the site template that isn't supported in the source environment.  <br/> |
-|WebTemplate  <br/> |Friendly name for the site template. If this is empty, it indicates that the site template is no longer registered on the source environment.  <br/> |
-|ScanID  <br/> |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool.  <br/> |
-   
+**UnsupportedWebTemplate-detail.csv** This scan report contains a list of sites that are currently using a site template that isn't supported on the target platform.
 
+|**Column** |**Description** |
+|:----------|:---------------|
+|SiteId |Unique identifier of the impacted site collection. |
+|SiteURL |URL to the impacted site collection. |
+|SiteOwner |Owner of the site collection. |
+|SiteAdmins |List of people listed as site collection administrators. |
+|SiteSizeInMB |Size of the size collection in megabytes (MB). |
+|NumOfWebs |Number of webs that exist in the site collection. |
+|ContentDBName |Name of the content database hosting the site collection. |
+|ContentDBServerName |SQL Server hosting the content database. |
+|ContentDBSizeInMB |Size of the content database hosting the site collection. |
+|LastContentModifiedDate  |Date/Time the site collection had content modified. |
+|TotalItemCount |Total number of items found in the site collection. |
+|Hits |Number of requests logged for the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DistinctUsers |Number of distinct users that accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DaysOfUsageData |Number of days the usage logging service retains data. This information provides context for Hits and DistinctUsers. For example, if this number is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
+|FullURL |URL to the impacted site. |
+|WebID |ID for the site linked to the invalid site template. |
+|WebTitle |Title for the impacted site. |
+|WebTemplateID |ID for the site template that isn't supported in the source environment. |
+|WebTemplate |Friendly name for the site template. If this row is empty, it indicates that the site template is no longer registered on the source environment. |
+|ScanID |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool. |
