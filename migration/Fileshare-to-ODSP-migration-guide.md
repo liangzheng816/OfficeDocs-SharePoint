@@ -144,7 +144,7 @@ Currently, there are a variety of migration offerings available to you. Which on
 
 **Self service**
 
-The benefit for self-service migration is that you have full control over your process and timing, and you determine the pace of migration. Using [Migration Manager](/sharepointmigration/mm-get-started), you're able to leverage your own IT resources rather than having to invest in outside expertise.
+The benefit for self-service migration is that you have full control over your process and timing, and you determine the pace of migration. Using [Migration Manager](/sharepointmigration/mm-get-started), you're able to use your own IT resources rather than having to invest in outside expertise.
 
 **Microsoft FastTrack**
 
