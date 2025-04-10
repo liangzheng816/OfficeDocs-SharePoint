@@ -1,7 +1,7 @@
 ---
-ms.date: 04/12/2024
+ms.date: 04/05/2025
 title: "Install the previous OneDrive sync app"
-ms.reviewer: garezni
+ms.reviewer: gacarini
 ms.author: mactra
 author: MachelleTranMSFT
 manager: jtremper
@@ -13,7 +13,7 @@ ms.service: one-drive
 ms.custom: onedrive-toc
 ms.collection: M365-collaboration
 ms.localizationpriority: high
-description: "In this article, you'll learn how to install the previous OneDrive sync app (Groove.exe) for use with SharePoint Server."
+description: "In this article, you learn how to install the previous OneDrive sync app (Groove.exe) for use with SharePoint Server."
 ---
 
 # Install the previous OneDrive sync app
@@ -21,7 +21,7 @@ description: "In this article, you'll learn how to install the previous OneDrive
 If your organization still uses SharePoint Server 2016 or earlier, users can't use the new OneDrive sync app (OneDrive.exe) to sync files. They need to use the previous OneDrive sync app (Groove.exe). This article helps you install Groove.exe. If your organization uses SharePoint Server 2019, users should use the new OneDrive sync app (OneDrive.exe). [Learn more](/sharepoint/install/configure-syncing-with-the-onedrive-sync-app)
 
 > [!IMPORTANT]
-> Support for the previous OneDrive for Business sync app (Groove.exe) with Microsoft 365 ended on January 11, 2021. Groove.exe will continue to work for files in SharePoint Server. [Learn how to transition to the new sync app](transition-from-previous-sync-client.md)
+> Support for the previous OneDrive for Business sync app (Groove.exe) with Microsoft 365 ended on January 11, 2021. Groove.exe continues to work for files in SharePoint Server. [Learn how to transition to the new sync app](transition-from-previous-sync-client.md)
 
 ## Install Groove.exe with Office 2016
 
@@ -58,7 +58,7 @@ The previous sync app (Groove.exe) is no longer installed by default with Office
     ```
 
    > [!NOTE]
-   > This file will install the 32-bit US English edition of OneDrive. To install the 64-bit edition, change the value of OfficeClientEdition to 64. To install OneDrive in a different language, change the Language ID to a different language tag (ll-CC) by referring to the list of [Language identifiers](/DeployOffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016).
+   > This file installs the 32-bit US English edition of OneDrive. To install the 64-bit edition, change the value of OfficeClientEdition to 64. To install OneDrive in a different language, change the Language ID to a different language tag (ll-CC) by referring to the list of [Language identifiers](/DeployOffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016).
 
     b. Save the file to your desktop, and name it **AddODB**.
 
@@ -106,7 +106,7 @@ To install the previous OneDrive sync app with Office 2013, follow these steps.
 
 1. Uninstall any earlier versions of the previous OneDrive sync app.
 
-2. Select one of the installer links below to download the installer for your language and system edition. If the 32-bit or 64-bit edition of Office is already installed, you must select the same edition for OneDrive.
+2. Select one of the installer links to download the installer for your language and system edition. If the 32-bit or 64-bit edition of Office is already installed, you must select the same edition for OneDrive.
 
 |Language  |32-bit download link  |64-bit download link  |
 |---------|---------|---------|
@@ -158,4 +158,4 @@ To install the previous OneDrive sync app with Office 2013, follow these steps.
 5. If you're asked to provide a license key, enter **3V9N8-W93CC-FQPB8-Y9WVF-TVGJ3**.
 
     > [!NOTE]
-    > The OneDrive sync app ships together with two components that are not selected for installation by default. We recommend that you do not change these default settings.
+    > The OneDrive sync app ships together with two components that aren't selected for installation by default. We recommend that you don't change these default settings.
