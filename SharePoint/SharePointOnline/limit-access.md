@@ -91,7 +91,7 @@ The configured learn more link is launched when the user selects the **Know more
 
 ## Audit events
 
-[Audit events](/microsoft-365/compliance/audit-log-activities) are available in Microsoft Purview compliance portal to help you monitor restricted access control activities. Audit events are logged for the following activities:
+[Audit events](/microsoft-365/compliance/audit-log-activities) are available in Microsoft Purview portal to help you monitor restricted access control activities. Audit events are logged for the following activities:
 
 - Enabled Restricted OneDrive access and sharing
 - Disabled Restricted OneDrive access and sharing

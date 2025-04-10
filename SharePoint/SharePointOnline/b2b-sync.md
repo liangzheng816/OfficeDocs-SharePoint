@@ -1,9 +1,9 @@
 ---
-ms.date: 04/23/2024
+ms.date: 04/04/2025
 title: "B2B Sync"
 ms.reviewer: wsproule
-ms.author: ruihu
-author: maggierui
+ms.author: mactra
+author: MachelleTranMSFT
 manager: jtremper
 audience: Admin
 f1.keywords:
@@ -27,9 +27,9 @@ description: "Learn how the OneDrive sync app allows users to sync folders share
 
 # B2B Sync
 
-The OneDrive sync app now lets users sync libraries or folders in Microsoft SharePoint or Microsoft OneDrive that have been shared from other organizations. This scenario is often referred to as Business-to-Business (B2B) Collaboration. We're calling this new feature in the OneDrive sync app "B2B Sync".
+The B2B Sync feature in the OneDrive sync app lets users sync libraries or folders in Microsoft SharePoint or Microsoft OneDrive that were shared from other organizations. This scenario is often referred to as Business-to-Business (B2B) Collaboration.
 
-Microsoft Entra guest accounts play a key role in making B2B Collaboration possible. A guest account at one organization links to a member account at another organization. Once created, a guest account allows Microsoft 365 services like OneDrive and SharePoint to grant a guest permission to sites and folders the same way a member within the organization is granted permission. Since the accounts at two organizations are linked, the user only needs to remember the username and password for the account at their organization. As a result, a single sign-in to their account enables access to content from their own organization and from any other organizations that have created guest accounts for them.
+Microsoft Entra guest accounts play a key role in making B2B Collaboration possible. A guest account at one organization links to a member account at another organization. Once created, a guest account allows Microsoft 365 services like OneDrive and SharePoint to grant a guest permission to sites and folders the same way a member within the organization is granted permission. Since the accounts at two organizations are linked, the user only needs to remember the username and password for the account at their organization. As a result, a single sign-in to their account enables access to content from their own organization and from any other organizations that created guest accounts for them.
 
 > [!IMPORTANT]
 > We recommend that you enable [SharePoint and OneDrive integration with Microsoft Entra B2B](/sharepoint/sharepoint-azureb2b-integration) to help ensure that the required Microsoft Entra guest account for the share recipient is created in your organization's directory.
@@ -41,19 +41,19 @@ For people outside your organization to sync shared libraries and folders:
 - External sharing must be enabled for your organization.
 - External sharing must be enabled for the site or OneDrive.
 - The content must be shared with people outside the organization at the site or folder level. If a folder is shared, it must be through a link that requires sign-in.
-- Sharing recipients must have a Microsoft 365 work or school account (in Microsoft Entra ID) in the same cloud as the content tenant - Microsoft Azure Commercial, Microsoft Azure Government, or Microsoft Azure China. (Note that Microsoft Azure Commercial contains the Microsoft 365 commercial and GCC cloud environments, and Microsoft Azure Government contains the GCC High and DoD cloud environments.)
-- Any Microsoft Entra Conditional Access policies must be compatible with guests ([more below](#ensure-any-azure-ad-conditional-access-ca-policies-are-compatible-with-external-access)).
-- ADAL must not be enabled if using builds before 19.086.*.
+- Sharing recipients must have a Microsoft 365 work or school account (in Microsoft Entra ID) in the same cloud as the content tenant - Microsoft Azure Commercial, Microsoft Azure Government, or Microsoft Azure China 21Vianet. (Microsoft Azure Commercial contains the Microsoft 365 commercial and GCC cloud environments, and Microsoft Azure Government contains the GCC High and DoD cloud environments.)
+- Any Microsoft Entra Conditional Access policies must be compatible with guests. See [Conditional Access policies](#ensure-any-microsoft-entra-conditional-access-ca-policies-are-compatible-with-external-access) for more information on external access and compatibility.
+- Microsoft Authentication Library must not be enabled if using builds before 19.086.
 
 This article gives an overview of the B2B Sync experience and describes these requirements in more detail.
 
 ## Known issues with this release
 
-- Content shared from a tenant in one cloud (for example, Microsoft Azure China) can't be synced by a user in a different cloud (for example, Microsoft Azure Commercial).
-- On the Mac, Files On-Demand thumbnails will not display from external organization's sites. Thumbnails will display correctly for files from the user's own organization.
-- On the Mac, if the guest account was created with a different email address format than the form they are using with the sync app, the external site's content cannot be synced. For example, <first.last@fabrikam.com> vs <alias@fabrikam.com>.
-- On the Mac, the external content may be placed on the local computer in the user's own organization's folder instead of one with the external organization's name.
-- Interactive authentication UI for guest accounts from an external organization is not supported by the sync client.
+- Sync between users in different clouds isn't supported For example, content shared from a tenant in Microsoft Azure China 21Vianet isn't synched for a user with a Microsoft Azure Commercial cloud.
+- On the Mac, Files On-Demand thumbnails won't display from external organization's sites. Thumbnails display correctly for files from the user's own organization.
+- On the Mac, if the guest account was created with a different email address format than the form they're using with the sync app, the external site's content can't be synced. For example, <first.last@fabrikam.com> vs <alias@fabrikam.com>.
+- On Mac, the external content can be placed on the local computer in the user's own organization's folder instead of one with the external organization's name.
+- Interactive authentication UI for guest accounts from an external organization isn't supported by the sync client.
 
 ## Overview of the B2B Sync experience
 
@@ -63,28 +63,28 @@ Here's an example of what happens after someone at "Contoso" shares a site or fo
 
     ![A sharing invitation email](media/sharing-invitation.png)
 
-2. When the recipient clicks the link in the email to go to the shared item, they need to click "Organizational account" to sign in with their Fabrikam account. Behind the scenes, this creates the Contoso guest account in Microsoft Entra ID.
+2. When the recipient selects the link in the email to go to the shared item, they need to select "Organizational account" to sign in with their Fabrikam account. Behind the scenes, this creates the Contoso guest account in Microsoft Entra ID.
 
     ![Accepting an invitation](media/accept-invitation.png)
 
-3. The recipient may need to enter their Fabrikam username or password, and then they can view the shared item. If they don't want to sync everything that was shared, they can browse to the library or folder they want to sync. To set up syncing, they need to click the Sync button.
+3. The recipient may need to enter their Fabrikam username or password, and then they can view the shared item. If they don't want to sync everything that was shared, they can browse to the library or folder they want to sync. To set up syncing, they need to select the Sync button.
 
     ![The Sync button in a SharePoint document library](media/sync-button.png)
 
-4. The guest's browser will display up a message asking if they want to open "Microsoft OneDrive," and they will need to allow this.
+4. The guest's browser displays up a message asking if they want to open "Microsoft OneDrive," and they'll need to allow this.
 
-5. If this is the first time the guest has used the sync app with their Fabrikam account, they'll need to sign in. The email address will be automatically set to the Fabrikam account used in the previous steps. The guest needs to select "Sign in."
+5. If this is the first time the guest has used the sync app with their Fabrikam account, they need to sign in. The email address is automatically set to the Fabrikam account used in the previous steps. The guest needs to select "Sign in."
 
-6. The guest might be able to sign in to the sync app without entering their Fabrikam password if they're signed in to Windows with the same account. Otherwise they'll need to enter their password.
+6. The guest might be able to sign in to the sync app without entering their Fabrikam password if they're signed in to Windows with the same account. Otherwise they need to enter their password.
 
-7. The guest will confirm where they want to sync the shared item on their computer.
+7. The guest confirms where they want to sync the shared item on their computer.
 
     > [!NOTE]
     > The content is placed in a folder whose name includes the name of the organization ("SharePoint - Contoso" in this example). If the user is syncing SharePoint content from Fabrikam as well, they'll also have a "SharePoint - Fabrikam" folder.
 
-8. The guest will continue through OneDrive sync app setup.
+8. The guest continues through OneDrive sync app setup.
 
-9. After the guest completes setup, the site will begin syncing. The user can click the blue cloud icon in the notification area to open the OneDrive sync activity center and see the files syncing, open the local folder with the files, or open the SharePoint site in a web browser.
+9. After the guest completes setup, the site will begin syncing. The user can select the blue cloud icon in the notification area to open the OneDrive sync activity center and see the files syncing, open the local folder with the files, or open the SharePoint site in a web browser.
 
 ## Enable external sharing for your organization
 
@@ -96,7 +96,7 @@ You can change your organization-level sharing settings in two different places 
 - In the Microsoft 365 admin center, on the Org settings page > SharePoint.
 
 > [!IMPORTANT]
-> If you allow Anyone links (sometimes referred to as "anonymous access" links), these links do not create guest accounts and therefore the external share recipient will not be able to leverage B2B Sync when receiving that link type.
+> If you allow Anyone links (sometimes referred to as "anonymous access" links), these links don't create guest accounts and therefore the external share recipient won't be able to use B2B Sync when receiving that link type.
 
 For more info, see [External sharing overview](/sharepoint/external-sharing-overview).
 
@@ -115,7 +115,7 @@ You can remove a guest's permission to a site or folder, or you can delete the g
 
 To view or change the sharing setting for any site, use the new SharePoint admin center.
 
-1. Go to <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">Active sites in the SharePoint admin center</a>, and sign in with an account that has [admin permissions](/sharepoint/sharepoint-admin-role) for your organization.
+1. Go to **Active sites** in the [SharePoint admin center](https://go.microsoft.com/fwlink/?linkid=2185220), and sign in with an account that has [admin permissions](/sharepoint/sharepoint-admin-role) for your organization.
 
     >[!Note]
     >If you have Office 365 operated by 21Vianet (China), [sign in to the Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), then browse to the SharePoint admin center and open the Active sites page.
@@ -124,28 +124,26 @@ To view or change the sharing setting for any site, use the new SharePoint admin
 
 3. If you need to, [change the external sharing setting for a site](/sharepoint/manage-sites-in-new-admin-center#change-the-external-sharing-setting-for-a-site).
 
-<a name='ensure-any-azure-ad-conditional-access-ca-policies-are-compatible-with-external-access'></a>
-
 ## Ensure any Microsoft Entra Conditional Access (CA) policies are compatible with external access
 
 The tenant admin can enable several kinds of conditional access policies at their tenant. When a guest is going to access a tenant's content, those policies may need to be adjusted for the guests so they can gain access.
 
-- Currently the sync client does not support interactive authentication UI when syncing external content. Any policy that would require a sign-in UI such as MFA (multifactor authentication) or TOU (terms of use) prompt, will prevent the syncing of the external content from that tenant. If a tenant admin deploys such a policy before a guest starts syncing from that tenant, the user will be unable to establish the sync relationship. If the policy is deployed after a guest is syncing content from the tenant, that guest will receive an error and be unable to continue to sync from the tenant.
+- Currently the sync client doesn't support interactive authentication UI when syncing external content. Any policy that would require a sign-in UI such as MFA (multifactor authentication) or TOU (terms of use) prompt, will prevent the syncing of the external content from that tenant. If a tenant admin deploys such a policy before a guest starts syncing from that tenant, the user is unable to establish the sync relationship. If the policy is deployed after a guest is syncing content from the tenant, that guest will receive an error and be unable to continue to sync from the tenant.
 
-- Tenants may update their Terms of Use (TOU) from time to time. A policy can trigger the user to view and accept the updated TOU via an interactive authentication prompt. Since sync doesn't support external tenant sign-in UI, sync will indicate it is unable to sync the external site's content.
+- Tenants may update their Terms of Use (TOU) from time to time. A policy can trigger the user to view and accept the updated TOU via an interactive authentication prompt. Since sync doesn't support external tenant sign-in UI, sync indicates it's unable to sync the external site's content.
 
 - Device Compliance requires user machines to be managed by the tenant and then to be up to date with requirements. For guests, their machines are likely to be managed by their own organization and thus are incompatible with requiring their machines to be managed by the content sharing tenant.
 
-- Location-based conditional access policies are typically used to enforce additional requirements like MFA when the user is not connecting from a trusted location (such as the tenant's office network). Typically in a guest scenario the client machine won't be located at the trusted locations, and since sync doesn't support MFA, you likely do not want this policy to apply to your guests.
+- Location-based conditional access policies are typically used to enforce more requirements like MFA when the user isn't connecting from a trusted location (such as the tenant's office network). Typically in a guest scenario the client machine won't be located at the trusted locations, and since sync doesn't support MFA, you likely don't want this policy to apply to your guests.
 
-For more information see [Authentication and Conditional Access for External Identities](/azure/active-directory/external-identities/authentication-conditional-access).
+For more information, see [Authentication and Conditional Access for External Identities](/azure/active-directory/external-identities/authentication-conditional-access).
 
 ## Methods of sharing
 
 Sites and folders can be shared in different ways in SharePoint and OneDrive:
 
 - If users are syncing a folder, they can right-click it in File Explorer to share it.
-- Users can go to the SharePoint site or folder on the web and click the Share button to share it.
+- Users can go to the SharePoint site or folder on the web and select the Share button to share it.
 - Users can share sites and folders in the SharePoint and OneDrive mobile apps.
 - Admins can create guest accounts and use the admin center or PowerShell to add them to sites.
 
@@ -159,7 +157,7 @@ B2B Sync works with all these methods of sharing. It has only the following requ
 
 ### Add guests to SharePoint sites
 
-As an admin in Microsoft 365, you can share with people outside the organization by [creating guests individually in the Microsoft Entra admin center](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal), and then adding them to a SharePoint team site individually or by adding them to a security group that already has permissions to the site you want to share. If you grant permissions by using the advanced permissions page (instead of by using the Share site button), you'll need to inform the guest that you've given them permission to the site. They won't receive an invitation email.
+As an admin in Microsoft 365, you can share with people outside the organization by [creating guests individually in the Microsoft Entra admin center](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal), and then adding them to a SharePoint team site individually or by adding them to a security group that already has permissions to the site you want to share. If you grant permissions by using the advanced permissions page (instead of by using the Share site button), you need to inform the guest that you've given them permission to the site. They won't receive an invitation email.
 
 > [!IMPORTANT]
 > If you use the advanced permissions page, we recommend granting permissions at the site level, not at the document library or folder level.
@@ -170,7 +168,7 @@ If you need to create and grant permissions to many guest accounts, you can use 
 
 [!INCLUDE [Azure AD PowerShell deprecation note](includes/aad-powershell-deprecation-note.md)]
 
-As users are added to the Microsoft Entra group, they should receive an email welcoming them to the group. After running the script, you'll need to email the users with a direct link to the SharePoint site you gave them permissions to. When they click the link, they'll be presented with the below UI to accept the terms of the invitation. Once they accept, they will be taken to the site you shared with them. At that point they can click the Sync button to begin syncing the sites files to their PC or Mac.
+As users are added to the Microsoft Entra group, they should receive an email welcoming them to the group. After running the script, you'll need to email the users with a direct link to the SharePoint site you gave them permissions to. When they select the link, they're presented with the below UI to accept the terms of the invitation. Once they accept, they're taken to the site you shared with them. At that point they can select the Sync button to begin syncing the sites files to their PC or Mac.
 
 ![Accepting a sharing invitation](media/accept-invitation-message.png)
 
@@ -259,30 +257,30 @@ For more info, see:
 
 ## When a guest loses access to shared content
 
-If a person's guest account is deleted or their permission to shared content is removed, the sync app will display an error.
+If a person's guest account is deleted or their permission to shared content is removed, the sync app displays an error.
 
-- A notification will appear indicating that the library can't be synced.
+- A notification appears indicating that the library can't be synced.
 
     ![We can't sync your document library notification](media/cant-sync-notification.png)
 
-- The OneDrive icon in the notification area will show an error.
+- The OneDrive icon in the notification area shows an error.
 
     ![OneDrive sync error icon](media/onedrive-error-icon.png)
 
-    When the guest clicks the icon, they will see an error banner in the activity center.
+    When the guest selects the icon, they see an error banner in the activity center.
 
     ![OneDrive needs your attention message](media/error-activity-center.png)
     ![Request access or stop syncing library](media/error-resolution.png)
 
 ## Policy Setting to Prevent B2B Sync
 
-The B2B Sync feature of the OneDrive sync app allows users at an organization to sync content shared with them from another organization. If you wish to prevent users at your organization from being able to use B2B Sync, you may set a policy value on your users' Windows PC or Mac to block external sync.
+The B2B Sync feature of the OneDrive sync app allows users at an organization to sync content shared with them from another organization. If you wish to prevent users at your organization from being able to use B2B Sync, you can set a policy value on your users' Windows PC or Mac to block external sync.
 
 You only need to take these actions if you wish to prevent users at your organization from using the B2B Sync feature (to prevent syncing libraries and folders shared from other organizations).
 
-The new BlockExternalSync setting is described in the adm\OneDrive.admx and OneDrive.adml files installed as part of the OneDrive sync product build 19.086.* or higher.  If you use ADM to manage your sync app policies, import the new files as you normally would in order to see the new setting.
+The new BlockExternalSync setting is described in the adm\OneDrive.admx and OneDrive.adml files installed as part of the OneDrive sync product build 19.086.* or higher. If you use ADM to manage your sync app policies, import the new files as you normally would in order to see the new setting.
 
-If you are using other management systems to deploy policies to your users' Windows PCs, use the equivalent of the following command to prevent B2B Sync:
+If you're using other management systems to deploy policies to your users' Windows PCs, use the equivalent of the following command to prevent B2B Sync:
 
 ```cmd
 reg add "HKLM\SOFTWARE\Policies\Microsoft\OneDrive" /v BlockExternalSync /t REG_DWORD /d 1

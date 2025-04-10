@@ -5,7 +5,7 @@ ms.author: heidip
 author: MicrosoftHeidi
 manager: jtremper
 recommendations: true
-ms.date: 9/13/2017
+ms.date: 04/10/2025
 audience: ITPro
 f1.keywords:
 - NOCSH
@@ -28,69 +28,66 @@ ms.assetid: ebf375f6-588f-4d5e-9126-e945aa31f7e2
 ## Overview
 
 The migration tooling is typically able to migrate the Workflow Definitions from the SharePoint source to the target environment. However, any in progress workflow instances aren't migrated. As a result, in progress workflows are reset to appear as if they were never started on the destination.
-  
+
 ## Data Migration
 
 Workflow Data is divided into the following two parts:
-  
-- **Workflow Definition:** The definition describes the overall workflow process, for example, a three stage approval workflow with custom routing rules for each stage. This data will typically be migrated with the rest of the site collection data and will be available in your target environment. 
-    
-- **Workflow Instances:** Each running instance of a workflow definition maintains the state of the in progress workflow, for example, this document is in Stage 2 of the approval process and is assigned to John Doe. Unfortunately, this information can't be migrated to the new platform. The result is the loss of all running workflow instances. For example, a document that was in Stage 2 of a workflow in the source environment will be back at Stage Zero (workflow not started) post migration to the target environment. 
-    
+
+- **Workflow Definition:** The definition describes the overall workflow process, for example, a three stage approval workflow with custom routing rules for each stage. This data is typically migrated with the rest of the site collection data and is available in your target environment.
+- **Workflow Instances:** Each running instance of a workflow definition maintains the state of the in progress workflow, for example, this document is in Stage 2 of the approval process and is assigned to John Doe. Unfortunately, this information can't be migrated to the new platform. The result is the loss of all running workflow instances. For example, a document that was in Stage Two of a workflow in the source environment is set back to Stage Zero (workflow not started) post migration to the target environment.
+
 > [!IMPORTANT]
-> Any site that is configured as "No Access" (locked), in SharePoint will be skipped. To see a list of locked site collections see the Locked Sites scan output. 
-  
+> Any site configured as "No Access" (locked) in SharePoint is skipped. To see a list of locked site collections see the Locked Sites scan output.
+
 ## Preparing for Migration
 
-To avoid unnecessary workflow restarts, it is best to complete in-flight workflows before the migration event when your content is moved to the target environment.
-  
+To avoid unnecessary workflow restarts, it's best to complete in-flight workflows before the migration event when your content is moved to the target environment.
+
 ## Post Migration
 
-Once the migration to the target environment is complete, users will need to restart any workflows that were still in flight. If the workflow contained identities, it may be necessary to republish the workflow using SharePoint Designer.
-  
+Once the migration to the target environment is complete, users need to restart any workflows that were still in flight. If the workflow contained identities, it may be necessary to republish the workflow using SharePoint Designer.
+
 ## Scan Result Reports
 
- **WorkflowAssociations2010-detail.csv** This scan report provides a list of all the 2010 workflow associations in the environment along with how many running instances at the time the scan was executed. 
-  
-|**Column**|**Description**|
-|:-----|:-----|
-|SiteId  <br/> |Unique identifier of the impacted site collection.  <br/> |
-|SiteURL  <br/> |URL to the impacted site collection.  <br/> |
-|SiteOwner  <br/> |Owner of the site collection.  <br/> |
-|SiteAdmins  <br/> |List of people listed as site collection administrators.  <br/> |
-|SiteSizeInMB  <br/> |Size of the size collection in megabytes [MB]  <br/> |
-|NumOfWebs  <br/> |Number of webs that exist in the site collection.  <br/> |
-|ContentDBName  <br/> |Name of the content database hosting the site collection.  <br/> |
-|ContentDBServerName  <br/> |SQL Server hosting the content database.  <br/> |
-|ContentDBSizeInMB  <br/> |Size of the content database hosting the site collection.  <br/> |
-|LastContentModifiedDate  <br/> |Date/Time the site collection had content modified.  <br/> |
-|TotalItemCount  <br/> |Total number of items found in the site collection.  <br/> |
-|Hits  <br/> |Number of requests logged for the site collection. Relies on data from the usage logging service. If the usage logging service is disabled this row shows N/A.  <br/> |
-|DistinctUsers  <br/> |Number of distinct users that have accessed the site collection. Relies on data from the usage logging service. If the usage logging service is disabled this row shows N/A.  <br/> |
-|DaysOfUsageData  <br/> |Number of days the usage logging service retains data. This provides context for Hits and DistinctUsers. For example, if this is 14 days, the Hits and DistinctUsers data is for the last 14 days.  <br/> |
-|Scope  <br/> |Either List, ContentType, or Site. This is the level that the workflow is associated with.  <br/> |
-|RunningInstances  <br/> |Number of workflows actively running at that scope.  <br/> |
-|WebURL  <br/> |URL to the web that the workflow is associated with.  <br/> |
-|ListTitle  <br/> |Title of the list the workflow is associated with. If the scope is Site, the value will be N/A.  <br/> |
-|ListUrl  <br/> |Url to the list with the workflow association.  <br/> |
-|ContentTypeName  <br/> |Name of the content type if the scope is ContentType.  <br/> |
-|IsReusable  <br/> |True if the workflow association was published as a reusable workflow.  <br/> |
-|ReusableScope  <br/> |Specifies the scope of the reusable workflow. Reusable or GlobalReusable.  <br/> |
-|WorkflowName  <br/> |Name of the workflow association. This is the text that displays in SharePoint when starting the workflow.  <br/> |
-|WorkflowDescription  <br/> |Description of the workflow association.  <br/> |
-|HasCustomWorkflowActivity  <br/> |True if the workflow is using a custom workflow activity that was deployed via full trust solutions.  <br/> |
-|WorkflowReferencedAssemblies  <br/> |Name of the assembly associated with a custom activity. Populated if HasCustomWorkflowActivity is True.  <br/> |
-|SolutionNames  <br/> |Name of the full trust solution package the custom activity is associated with. Populated if HasCustomWorkflowActivity is True.  <br/> |
-|WorkflowPublishedBy  <br/> |Name of the person that published the workflow.  <br/> |
-|WorkflowID  <br/> |Unique identifier associated with the workflow.  <br/> |
-|AddListItemPermissionsExist  <br/> |True if the workflow contains an action that adds list permissions. The activity embeds a user's identity and may not function post migration without manual republish of the workflow.  <br/> |
-|RemoveListItemPermissionsExists  <br/> |True if the workflow contains an action that removes list permissions. The activity embeds a user's identity and may not function post migration without manual republish of the workflow.  <br/> |
-|ReplaceListItemPermissionsExists  <br/> |True if the workflow contains an action that replaces list permissions. The activity embeds a user's identity and may not function post migration without manual republish of the workflow.  <br/> |
-|EmailActivityExists  <br/> |True if the workflow contains an action that sends email. The activity embeds a user's identity and may not function post migration without manual republish of the workflow.  <br/> |
-|ImpersonationExists  <br/> |True if the workflow contains an action that impersonates an account to perform an action. The activity embeds a user's identity and may not function post migration without manual republish of the workflow.  <br/> |
-|RulesFileExists  <br/> |True if the workflow contains conditional rules that contain identities. The activity embeds a user's identity and may not function post migration without manual republish of the workflow.  <br/> |
-|ContentAppovalExists  <br/> |True if the workflow contains content approval activities. The activity embeds a user's identity and may not function post migration without manual republish of the workflow.  <br/> |
-|WorkflowFileCheckedOut  <br/> |If the workflow file is checked out, it will not migrate as expected.  <br/> |
-|ScanID  <br/> |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool.  <br/> |
-   
+**WorkflowAssociations2010-detail.csv** This scan report provides a list of all the 2010 workflow associations in the environment along with how many running instances at the time the scan was executed.
 
+|**Column** |**Description** |
+|:----------|:---------------|
+|SiteId |Unique identifier of the impacted site collection. |
+|SiteURL |URL to the impacted site collection. |
+|SiteOwner |Owner of the site collection. |
+|SiteAdmins |List of people listed as site collection administrators. |
+|SiteSizeInMB |Size of the size collection in megabytes (MB). |
+|NumOfWebs |Number of webs that exist in the site collection. |
+|ContentDBName |Name of the content database hosting the site collection. |
+|ContentDBServerName |SQL Server hosting the content database. |
+|ContentDBSizeInMB |Size of the content database hosting the site collection. |
+|LastContentModifiedDate |Date/Time the site collection had content modified. |
+|TotalItemCount |Total number of items found in the site collection. |
+|Hits |Number of requests logged for the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DistinctUsers |Number of distinct users who accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DaysOfUsageData |Number of days the usage logging service retains data. This information provides context for Hits and DistinctUsers. For example, if this number is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
+|Scope |Either List, ContentType, or Site. This entry is the level that associated with the workflow. |
+|RunningInstances |Number of workflows actively running at that scope. |
+|WebURL |URL to the web that the workflow is associated with. |
+|ListTitle |Title of the list the workflow is associated with. The value is N/A if the scope is Site. |
+|ListUrl |Url to the list with the workflow association. |
+|ContentTypeName |Name of the content type if the scope is ContentType. |
+|IsReusable |True if the workflow association was published as a reusable workflow. |
+|ReusableScope |Specifies the scope of the reusable workflow. Reusable or GlobalReusable. |
+|WorkflowName |Name of the workflow association. The text that displays in SharePoint when starting the workflow. |
+|WorkflowDescription |Description of the workflow association. |
+|HasCustomWorkflowActivity |True if the workflow uses a custom workflow activity deployed using full trust solutions. |
+|WorkflowReferencedAssemblies |Name of the assembly associated with a custom activity. Populated if HasCustomWorkflowActivity is True. |
+|SolutionNames |Name of the full trust solution package associated with a custom activity. Populated if HasCustomWorkflowActivity is True. |
+|WorkflowPublishedBy |Name of the person who published the workflow. |
+|WorkflowID |Unique identifier associated with the workflow. |
+|AddListItemPermissionsExist |True if the workflow contains an action that adds list permissions. The activity embeds a user's identity and may not function post migration without manual republish of the workflow. |
+|RemoveListItemPermissionsExists |True if the workflow contains an action that removes list permissions. The activity embeds a user's identity and may not function post migration without manual republish of the workflow. |
+|ReplaceListItemPermissionsExists |True if the workflow contains an action that replaces list permissions. The activity embeds a user's identity and may not function post migration without manual republish of the workflow. |
+|EmailActivityExists |True if the workflow contains an action that sends email. The activity embeds a user's identity and may not function post migration without manual republish of the workflow. |
+|ImpersonationExists |True if the workflow contains an action that impersonates an account to perform an action. The activity embeds a user's identity and may not function post migration without manual republish of the workflow. |
+|RulesFileExists |True if the workflow contains conditional rules that contain identities. The activity embeds a user's identity and may not function post migration without manual republish of the workflow. |
+|ContentAppovalExists |True if the workflow contains content approval activities. The activity embeds a user's identity and may not function post migration without manual republish of the workflow. |
+|WorkflowFileCheckedOut |If the workflow file is checked out, it doesn't migrate as expected. |
+|ScanID |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool. |
