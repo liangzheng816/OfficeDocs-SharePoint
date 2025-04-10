@@ -29,7 +29,7 @@ Learn how to mitigate issues with Secure Store during migration.
 
 ## Overview
 
-Secure Store Service is a shared service that provides storage and mapping of credentials, such as account names and passwords. It enables you to securely store data that provides credentials required for connecting to external systems and associating those credentials to a specific identity or group of identities.
+Secure Store Service is a shared service. It provides storage and mapping of credentials, such as account names and passwords. It enables you to securely store data in the Secure Store Service that then provides credentials required for connecting to external systems and associating those credentials to a specific identity or group of identities.
 
 ## Data Migration
 
@@ -63,6 +63,6 @@ If you created Secure Store applications in the target environment, ensure they 
 |FriendlyName |Friendly name for the Secure Store application. |
 |ContactEmail |Contact email address associated with the Secure Store application. |
 |ApplicationType |The type of the Secure Store application. The only supported option on vNext is Group Restricted. |
-|CredentialManagementURL |URL associated with managing credentials. This URL isn't typically set by the user, but is provided for informational purposes. |
-|TicketTimeout |Ticket timeout associated with the Secure Store application. |
+|CredentialManagementURL |URL associated with managing credentials. The user doesn't typically set this URL. It's provided for informational purposes. |
+|TicketTimeout |Ticket time-out associated with the Secure Store application. |
 |ScanID |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool. |
