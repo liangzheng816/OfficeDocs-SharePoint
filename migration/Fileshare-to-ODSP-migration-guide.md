@@ -54,7 +54,7 @@ Before you start your migration, it's important that you plan your outcome by pe
 - The amount of content you migrate. Determine if content is redundant, out of date, or still relevant.
 - Build your user onboarding into your upfront planning. Communicate early and often with your users about the migration and how it impacts them. Don't wait until the very end to start preparing them for the change.
 
-### What's migrated
+### What gets migrated
 
 When preparing for your file share migration, it's important to know what's being migrated when you use the SharePoint Migration Tool and what's not.
 
@@ -70,7 +70,7 @@ When preparing for your file share migration, it's important to know what's bein
 
 In your planning, include how this transition to Microsoft 365 makes for a more collaborative experience for your users.
 
-Review how you use the content stored in your file shares today. Does the file belong to a single user, even though they might share it with others? If so, save it in your OneDrive. Your OneDrive is private by default, but you can share files with others. This option is particularly useful if you aren't working as a team yet.
+Review how you use the content stored in your file shares today. Does the file belong to a single user, even though they might share it with others? If so, save it in your OneDrive. Your OneDrive is private by default, but you can share files with others. This option is useful if you aren't working as a team yet.
 
 If you're working on a file or folder intended for team consumption and collaboration, move it to a **shared library**, where team members have access by default. OneDrive gives you access to all your shared libraries in Microsoft Teams, SharePoint, or Outlook. When you need a new shared library for team files, you can create one right from OneDrive, add members, and start working together.
 
