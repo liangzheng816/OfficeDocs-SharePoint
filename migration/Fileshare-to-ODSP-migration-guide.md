@@ -82,7 +82,7 @@ How you shared your files dictates how they appear in the **Shared with me** vie
 
 For files and folders opened from a shared location:
 
-- After migration, a mapping of the most restrictive share or NTFS (NT File System)permission level determines the final permission level.
+- After migration, a mapping of the most restrictive share or NTFS (NT File System) permission level determines the final permission level.
 - A user's **Shared with me** folder in OneDrive isn't updated for source files shared with a group the user is a part of.
 - After migration, all advanced NTFS permissions are removed. For explicit deny permissions, which means the content is subject to parallel permissions or permission on the folder and parent level and may become accessible.
 
