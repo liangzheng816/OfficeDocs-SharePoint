@@ -5,7 +5,7 @@ ms.author: heidip
 author: MicrosoftHeidi
 manager: jtremper
 recommendations: true
-ms.date: 7/5/2017
+ms.date: 04/10/2025
 audience: ITPro
 f1.keywords:
 - NOCSH
@@ -26,44 +26,41 @@ description: "Learn how to fix issues with Web Application policies during migra
 # Migration Assessment Scan: Web Application Policies
 
 Learn how to fix issues with Web Application policies during migration.
-  
+
 ## Overview
 
 In the source environment, there are typically discrete web applications for Team, Portal, Partner, and MySite (OneDrive). SharePoint Server allows the use of web application policies to grant or deny blanket-level permissions to entire web applications. These permissions override any permissions set at the site collection, site, list/library, or item level.
-  
+
 The target environment uses a single web application to host all site collections.
-  
-We do not currently offer a permission feature that applies uniquely to specific root site names and all child items together.
-  
+
+We don't currently offer a permission feature that applies uniquely to specific root site names and all child items together.
+
 ## Data Migration
 
 None of the web application policies are migrated to the target environment.
-  
+
 > [!IMPORTANT]
-> Any site that is configured as "No Access" (locked), in SharePoint will be skipped. To see a list of locked site collections see the Locked Sites scan output. 
-  
+> Any site configured as "No Access" (locked) in SharePoint is skipped. To see a list of locked site collections see the Locked Sites scan output.
+
 ## Preparing for Migration
 
-Web application policies are not migrated. Some alternatives at this time include:
-  
-- Change administrative procedures to manage all permissions at the site collection level (this can be performed via Tenant Admin) instead of using web application policies.
-    
+Web application policies aren't migrated. Some alternatives at this time include:
+
+- Change administrative procedures to manage all permissions at the site collection level (this action can be performed with the Tenant Admin) instead of using web application policies.
 - Use licensing to grant or limit specific capabilities to specific users and groups.
-    
+
 ## Post Migration
 
 Ensure the alternative options function correctly during the User Acceptance Testing phase.
-  
+
 ## Scan Result Reports
 
- **WebApplicationPolicy-detail.csv** This scan report lists all policies for all of your web applications. 
-  
-|**Column**|**Description**|
-|:-----|:-----|
-|WebApplication  <br/> |The source web application.  <br/> |
-|PolicyDisplayName  <br/> |Display Name of the user or group.  <br/> |
-|PolicyUserName  <br/> |The login ID of the user or group.  <br/> |
-|PolicyRoleBinding  <br/> |Permission granted to the user or group in the source.  <br/> |
-|ScanID  <br/> |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool.  <br/> |
-   
+**WebApplicationPolicy-detail.csv** This scan report lists all policies for all of your web applications.
 
+|**Column**        |**Description**                                                                                 |
+|:-----------------|:-----------------------------------------------------------------------------------------------|
+|WebApplication    |The source web application.                                                                     |
+|PolicyDisplayName |Display Name of the user or group.                                                              |
+|PolicyUserName    |The login ID of the user or group.                                                              |
+|PolicyRoleBinding |Permission granted to the user or group in the source.                                          |
+|ScanID            |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool. |

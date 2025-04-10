@@ -138,7 +138,7 @@ If you want to use a sensitivity label to apply the authentication context, upda
 
 To update a sensitivity label
 
-1. In the [Microsoft Purview compliance portal](https://compliance.microsoft.com/informationprotection), on the **Information protection** tab, select the label that you want to update and then select **Edit label**.
+1. In the [Microsoft Purview portal](https://purview.microsoft.com/informationprotection), on the **Information protection** tab, select the label that you want to update and then select **Edit label**.
 
 2. Select **Next** until you are on the **Define protection settings for groups and sites** page.
 

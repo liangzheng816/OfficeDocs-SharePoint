@@ -172,7 +172,7 @@ You can run the following commands to create, fetch, and view report for access 
 
 ## Auditing
 
-Audit events are available in the Microsoft Purview compliance portal to help you monitor site access restriction activities. Audit events are logged for the following activities:
+Audit events are available in the Microsoft Purview portal to help you monitor site access restriction activities. Audit events are logged for the following activities:
 
 - Applying site access restriction for site
 - Removing site access restriction for site
