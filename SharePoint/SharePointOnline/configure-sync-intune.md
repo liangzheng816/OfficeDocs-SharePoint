@@ -1,5 +1,5 @@
 ---
-ms.date: 04/04/2025
+ms.date: 04/10/2025
 title: "Configure settings with Intune"
 ms.reviewer: scott.breen
 ms.author: mactra
@@ -59,14 +59,14 @@ Profiles in Microsoft Intune let you configure settings and push them to devices
     > [!NOTE]
     > Some settings require entering your tenant ID. [Learn how to find it](find-your-office-365-tenant-id.md). When you're done, select **Next**.
 
-1. Select scope tags, and then select **Next**. For information about scope tags, see [Use role based access controls (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
+1. Select scope tags, and then select **Next**. For information about scope tags, see [Use role based access controls (RBAC) and scope tags for distributed IT](/intune/intune-service/fundamentals/scope-tags).
 
-1. In **Assignments**, include or exclude the profile from selected groups. For info about assigning profiles, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).
+1. In **Assignments**, include or exclude the profile from selected groups. For info about assigning profiles, see [Assign user and device profiles](/intune/intune-service/configuration/device-profile-assign).
 
     > [!NOTE]
     > If the profile is assigned to user groups, then configured Administrative Template Files (ADMX) settings apply to any device that the user enrolls, and signs in to. If the profile is assigned to device groups, then configured ADMX settings apply to any user that signs into that device. This assignment happens if the ADMX setting is a computer configuration (`HKEY_LOCAL_MACHINE`), or a user configuration (`HKEY_CURRENT_USER`). With some settings, a computer setting assigned to a user can also affect the experience of other users on that device.
     >
-    > For more info, see [User groups vs. device groups](/mem/intune/configuration/device-profile-assign#user-groups-vs-device-groups).
+    > For more info, see [User groups vs. device groups](/intune/intune-service/configuration/device-profile-assign).
 
     When you're done, select **Next**.
 
@@ -74,6 +74,6 @@ Profiles in Microsoft Intune let you configure settings and push them to devices
 
 ## See also
 
-- [Use the settings catalog to configure settings on Windows](/mem/intune/configuration/settings-catalog)
+- [Use the settings catalog to configure settings on Windows](/intune/intune-service/configuration/settings-catalog)
 - [Understanding ADMX-backed policies](/windows/client-management/mdm/understanding-admx-backed-policies)
-- [Monitor device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-monitor)
+- [Monitor device profiles in Microsoft Intune](/intune/intune-service/configuration/device-profile-monitor)
