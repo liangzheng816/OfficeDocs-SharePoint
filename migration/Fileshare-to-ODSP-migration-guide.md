@@ -134,7 +134,7 @@ The following is a typical migration process that follows Microsoft's best pract
 
 ### Migration offerings
 
-Currently, there are a variety of migration offerings available to you. Which one is right for you?
+Currently, there are many migration offerings available to you:
 
 |Offering |Pricing |Process |Infrastructure |Scheduling |Pace |Expertise |Schedule flexibility |
 |:--------|:-------|:-------|:--------------|:----------|:----|:---------|:--------------------|
