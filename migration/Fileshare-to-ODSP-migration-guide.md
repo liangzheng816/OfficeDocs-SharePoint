@@ -122,7 +122,7 @@ Before you migrate your file share content, you must pre-provision your users in
 
 ### Migration process
 
-The following is a typical migration process that follows Microsoft's best practices guidance.
+The following walkthrough is a typical migration process that follows Microsoft's best practices guidance.
 
 > [!IMPORTANT]
 > Make sure that the account used to migrate content has permissions on the destination OneDrive.
