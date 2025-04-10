@@ -73,7 +73,7 @@ For detailed recommendations about how to optimize SQL Server backup and restore
 
 ### Use RAID 10 if you use RAID
 
-Carefully consider whether to use redundant array of independent disks (RAID) on the device to which you back up data. For example, RAID 5 has slow write performance, approximately the same speed as for a single disk. This is because RAID 5 has to maintain parity information. RAID 10 can provide faster backups because it doesn't need to manage parity. Therefore, it reads and writes data faster. For more information about how to use RAID with backups, see [Configure RAID for maximum SQL Server I/O throughput](https://go.microsoft.com/fwlink/p/?LinkId=126632 ) and [RAID Levels and SQL Server](/previous-versions/sql/sql-server-2008-r2/ms190764(v=sql.105)).
+Carefully consider whether to use redundant array of independent disks (RAID) on the device to which you back up data. For example, RAID 5 has slow write performance, approximately the same speed as for a single disk. This is because RAID 5 has to maintain parity information. RAID 10 can provide faster backups because it doesn't need to manage parity. Therefore, it reads and writes data faster. For more information about how to use RAID with backups, see [Configure RAID for maximum SQL Server I/O throughput](https://go.microsoft.com/fwlink/p/?LinkId=126632) and [RAID Levels and SQL Server](/previous-versions/sql/sql-server-2008-r2/ms190764(v=sql.105)).
 
 ### Configure SharePoint settings to improve backup or restore performance
 

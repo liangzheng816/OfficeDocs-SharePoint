@@ -1,5 +1,5 @@
 ---
-ms.date: 06/04/2024
+ms.date: 04/05/2025
 title: "Pre-provision OneDrive for users in your organization"
 ms.reviewer: jmcdowe
 ms.author: mactra
@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - ODB160
-- ODB150
+- ODB150s
 - GOB150
 - GOB160
 - MET150
@@ -89,7 +89,7 @@ To verify that OneDrive has been created for your users, see [Get a list of all 
 
 ## Pre-provision OneDrive for all licensed users in your organization
 
-The following code snippet will pre-provision OneDrive in batches of 199.
+The following code snippet pre-provisions OneDrive in batches of 199.
 > [!NOTE]
 > You need to provide your Microsoft 365 Tenant ID. For more information, see [Find IDs and domain names](/partner-center/account-settings/find-ids-and-domain-names).
 

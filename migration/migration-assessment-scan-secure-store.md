@@ -5,7 +5,7 @@ ms.author: heidip
 author: MicrosoftHeidi
 manager: jtremper
 recommendations: true
-ms.date: 7/5/2017
+ms.date: 04/10/2025
 audience: ITPro
 f1.keywords:
 - NOCSH
@@ -26,45 +26,43 @@ description: "Learn how to mitigate issues with Secure Store during migration."
 # Migration Assessment Scan: Secure Store
 
 Learn how to mitigate issues with Secure Store during migration.
-  
+
 ## Overview
 
-Secure Store Service is a shared service that provides storage and mapping of credentials, such as account names and passwords. It enables you to securely store data that provides credentials required for connecting to external systems and associating those credentials to a specific identity or group of identities.
-  
+Secure Store Service is a shared service that provides storage and mapping of credentials, such as account names and passwords. It lets you securely store data in the Secure Store Service to provide required credentials. You can connect to external systems and associate those credentials to a specific identity or group of identities.
+
 ## Data Migration
 
 Secure Store applications aren't migrated to the target environment.
-  
+
 > [!IMPORTANT]
-> Any site that is configured as "No Access" (locked), in SharePoint will be skipped. To see a list of locked site collections see the Locked Sites scan output. 
-  
+> Any site configured as "No Access" (locked) in SharePoint is skipped. To see a list of locked site collections see the Locked Sites scan output.
+
 ## Preparing for Migration
 
-Determine if the Secure Store applications listed in the scan results are required on the target platform. If they're required, you'll want to create them in Tenant Administration on the new platform during the migration testing.
-  
+Determine if the Secure Store applications listed in the scan results are required on the target platform. If they're required, you need to create them in Tenant Administration on the new platform during the migration testing.
+
 > [!NOTE]
-> The target environment only supports the Group Restricted type. 
-  
+> The target environment only supports the Group Restricted type.
+
 ## Post Migration
 
-If you created Secure Store applications in the target environment, ensure they're working as expected.
-  
+If you created Secure Store applications in the target environment, ensure they work as expected.
+
 ## Scan Result Reports
 
- **SecureStoreApplications-detail.csv** This scan report contains the Secure Store applications configured in the source environment. The information provided should be enough for you to recreate the applications in the target environment, if necessary. 
-  
-> [!NOTE]
-> If you see Secure Store application entries related to user profile, you should view the CustomProfilePropertyMappings output and remediation file to determine if those are in use and how to remediate. 
-  
-|**Column**|**Description**|
-|:-----|:-----|
-|ApplicationID  <br/> |Secure Store application ID.  <br/> |
-|Name  <br/> |The name of the Secure Store application. This typically matches the Application ID.  <br/> |
-|FriendlyName  <br/> |FriendlyName Friendly name for the Secure Store application.  <br/> |
-|ContactEmail  <br/> |ContactEmail Contact email address associated with the Secure Store application.  <br/> |
-|ApplicationType  <br/> |The type of the Secure Store application. The only supported option on vNext will be Group Restricted.  <br/> |
-|CredentialManagementURL  <br/> |URL associated with managing credentials. This is typically not set by the user, but is provided for informational purposes  <br/> |
-|TicketTimeout  <br/> |Ticket timeout associated with the Secure Store application.  <br/> |
-|ScanID  <br/> |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool.  <br/> |
-   
+**SecureStoreApplications-detail.csv** This scan report contains the Secure Store applications configured in the source environment. The information provided should be enough for you to recreate the applications in the target environment, if necessary.
 
+> [!NOTE]
+> If you see Secure Store application entries related to user profile, you should view the CustomProfilePropertyMappings output and remediation file to determine if the Secure Store applications are in use and how to remediate.
+
+|**Column** |**Description** |
+|:----------|:---------------|
+|ApplicationID |Secure Store application ID. |
+|Name |The name of the Secure Store application. The name typically matches the Application ID. |
+|FriendlyName |Friendly name for the Secure Store application. |
+|ContactEmail |Contact email address associated with the Secure Store application. |
+|ApplicationType |The type of the Secure Store application. The only supported option on vNext is Group Restricted. |
+|CredentialManagementURL |URL associated with managing credentials. The user doesn't typically set this URL. We provide this data for informational purposes. |
+|TicketTimeout |Ticket time-out associated with the Secure Store application. |
+|ScanID |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool. |

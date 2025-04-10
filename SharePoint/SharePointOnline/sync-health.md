@@ -1,5 +1,5 @@
 ---
-ms.date: 06/04/2024
+ms.date: 04/05/2025
 title: "OneDrive sync reports in the Apps Admin Center"
 ms.reviewer: kangan
 ms.author: mactra
@@ -33,7 +33,7 @@ Use the OneDrive sync health dashboard in the Microsoft 365 [Apps Admin Center](
 
 Proactively keeping OneDrive healthy helps ensure that your organization's information is protected. The dashboard provides you with sync health reports for tracking relevant health issues and advisories, checking the sync status and app version of individual devices, and monitoring Known Folder Move roll out.
 
-In this article, you'll learn how to set up and navigate the sync health dashboard to better manage your OneDrive users and increase OneDrive adoption.
+In this article, you learn how to set up and navigate the sync health dashboard to better manage your OneDrive users and increase OneDrive adoption.
 
 ## Requirements  
 
@@ -52,7 +52,7 @@ Before getting started, be sure that you're familiar with the requirements neede
 
 ## Set up the OneDrive sync health dashboard
 
-In this section, you'll learn how to set up sync reports on Windows and macOS devices.
+In this section, you learn how to set up sync reports on Windows and macOS devices.
 
 # [Intune](#tab/intune)
 This tab provides how-to steps for enabling sync reports on Intune joined devices.
@@ -76,7 +76,7 @@ This tab provides how-to steps for enabling sync reports on Intune joined device
 
 8. Create a new policy, select **Windows 10 and later** or **macOS** for platform and **Settings catalog** for policy type.
 
-9. Name the new policy and give it a description then click next.
+9. Name the new policy and give it a description then select next.
 
 10. Select **Add settings** and then navigate to **OneDrive**
 
@@ -110,7 +110,7 @@ This tab provides how-to steps for enabling sync reports on Windows devices.
 6. Enable the OneDrive EnableSyncAdminReports Group Policy Object (GPO).
 
     > [!IMPORTANT]
-    > **You must enable this setting on the devices from which you want to get reports.** This setting does not affect users. We recommend a gradual rollout starting with a few test devices per day, then up to 100 devices per day, then gradually up to 10,000 devices per day until you finish.
+    > **You must enable this setting on the devices from which you want to get reports.** This setting doesn't affect users. We recommend a gradual rollout starting with a few test devices per day, then up to 100 devices per day, then gradually up to 10,000 devices per day until you finish.
 
     You can enable this setting in multiple ways:
 
@@ -164,7 +164,7 @@ This tab provides how-to steps for enabling sync reports on macOS devices.
 
 4. In the left navigation menu, select **Setup**.
 
-5. Confirm that a **Tenant Association Key** has been generated in the text field.
+5. Confirm the **Tenant Association Key** was generated in the text field.
 
 6. Before proceeding, ensure that the OneDrive application has been quit.
 
@@ -243,7 +243,7 @@ When someone in your organization reports a problem with syncing files to OneDri
 
 The **Issues** tab shows you a list of OneDrive error messages found in the health report and the number of devices affected by them in your organization. Use this view to see if there are any common patterns between users and the errors present across your organization.
 
-You can learn more about the error and devices affected by selecting an error message from the list. The **Issues** panel will appear with a summary of the devices affected, along with a list of users and their current app version and operating system. Partner with your users to fix common OneDrive sync issues.
+You can learn more about the error and devices affected by selecting an error message from the list. The **Issues** panel appears with a summary of the devices affected, along with a list of users and their current app version and operating system. Partner with your users to fix common OneDrive sync issues.
 
 To learn more about OneDrive error messages, see [What do the OneDrive error codes mean?](https://support.microsoft.com/office/what-do-the-onedrive-error-codes-mean-f7a68338-e540-4ebf-ad5d-56c5633acded).
 
@@ -257,31 +257,31 @@ To learn more about the controls available to you, see [Overview of privacy cont
 
 This section describes known limitations and considerations in sync reporting.
 
-**Limitations**
+### Limitations
 
 **Device Records:** By default, device records are kept in inventory for 30 days, after which they expire from the report.
 
-**Folders in OneDrive:** Devices with folders in OneDrive will appear in reports as a device with 0-3 known folders. If a device has not enabled folders in OneDrive, it will appear in reports as a device that is **Not eligible** in the **Known Folders** section of the **Overview** tab. In the **Devices** tab, a hyphen ("-") will appear in the cell value of the **Known folders** table for devices that aren't applicable devices. This behavior is expected.
+**Folders in OneDrive:** Devices with folders in OneDrive appear in reports as a device with 0-3 known folders. If a device hasn't enabled folders in OneDrive, it appears in reports as a device that is **Not eligible** in the **Known Folders** section of the **Overview** tab. In the **Devices** tab, a hyphen ("-") will appear in the cell value of the **Known folders** table for devices that aren't applicable devices. This behavior is expected.
 
-**Sync app version: Mac App Store edition:** For devices using the Mac App Store edition of the sync app, the version installed on each device is displayed in the **Devices** tab. The dashboard doesn't currently track whether or not the Mac App Store edition is the latest version of the sync app available in the Mac App Store. If any devices use this edition, they'll be excluded from the **Sync app version** section of the **Overview** tab and the number of excluded devices is displayed. This is the expected result.
+**Sync app version: Mac App Store edition:** For devices using the Mac App Store edition of the sync app, the version installed on each device is displayed in the **Devices** tab. The dashboard doesn't currently track whether or not the Mac App Store edition is the latest version of the sync app available in the Mac App Store. If any devices use this edition, they are excluded from the **Sync app version** section of the **Overview** tab and the number of excluded devices is displayed. This is the expected result.
 
 **Minimum time device is on for eligibility:** Devices need to be turned on for a minimum of five hours to be eligible for the report. Devices that are turned off frequently and not on for that amount of time might be missing from the dashboard, even if the group policy is set.
 
 **User sign-in:** Clients won't report status to the report if the user is signed out.
 
-**Considerations:**
+### Considerations
 
-- There is negligible impact to a network after enabling the sync reports setting on devices.
+- There's negligible impact to a network after enabling the sync reports setting on devices.
 - Microsoft continues its commitment to meet and exceed the requirements of EU data protection laws. All data storage is EU Data Boundary compliant.
 - There are no Power BI templates available for sync reports.
-- Admins will see errors based on the user's client language, not in the admin's configured language.
+- Admins see errors based on the user's client language, not in the admin's configured language.
 
 ## Troubleshooting
 
 Use this section to troubleshoot if the OneDrive sync reports don't appear after three days.
 
 > [!IMPORTANT]
-> If you enable the EnableSyncAdminReports setting on devices that don't meet the [requirements](#requirements), it will have no effect. The app won't send reports.
+> If you enable the EnableSyncAdminReports setting on devices that don't meet the [requirements](#requirements), it has no effect. The app won't send reports.
 
 
 Confirm that the EnableSyncAdminReports setting is applied to the device. Run Command Prompt as an administrator, and then run the following command:
