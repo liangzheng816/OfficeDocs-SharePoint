@@ -30,7 +30,7 @@ description: "In this article, you learn how to prevent users from uploading spe
 
 You can prevent users from uploading specific file types when they sync their OneDrive files.
 
-This setting prevents file types from being uploaded but not downloaded. If users already have blocked file types in their OneDrive, the files sync to their computer, but any changes they make on their computer won't be uploaded.
+This setting prevents file types from being uploaded but not downloaded. If users already blocked file types in their OneDrive, the files sync to their computer, but any changes they make on their computer aren't uploaded.
 
 > [!NOTE]
 > The OneDrive sync app doesn't sync .tmp and .ini files.
@@ -51,7 +51,7 @@ This setting prevents file types from being uploaded but not downloaded. If user
 4. Enter the file name extensions you want to block, for example: **exe** or **mp3**.
 
     > [!IMPORTANT]
-    > Do not include the periods with the extensions, or any other punctuation, spaces, or special characters.
+    > Don't include the periods with the extensions, or any other punctuation, spaces, or special characters.
   
 5. Select **Save**.
 

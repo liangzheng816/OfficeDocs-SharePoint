@@ -1,5 +1,5 @@
 ---
-ms.date: 04/09/2024
+ms.date: 04/04/2025
 title: "How UPN changes affect OneDrive"
 ms.reviewer: jmcdowe
 ms.author: mactra
@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 - ODB150
 - MET150
-description: "In this article, you'll learn how changing a User Principal Name (UPN) affects the OneDrive URL and OneDrive features."
+description: "In this article, you learn how changing a User Principal Name (UPN) affects the OneDrive URL and OneDrive features."
 ---
 
 # How UPN changes affect the OneDrive URL and OneDrive features
 
-A User Principal Name (UPN) is made up of two parts, the prefix (user account name) and the suffix (DNS domain name). For example:
+A User Principal Name (UPN) is made up of two parts, the prefix (user account name) and the suffix Domain Name System (DNS). For example:
 
 user1@contoso.com
 
@@ -66,7 +66,7 @@ A user's OneDrive URL is based on their UPN:
 (where user1_contoso_com corresponds with user1@contoso.com)
 
 > [!NOTE]
-> If the user's UPN contains an underscore, it will be present in the resultant OneDrive URL.
+> If the user's UPN contains an underscore, it's present in the resultant OneDrive URL.
 
 In this case, if you changed the prefix to user2 and the suffix to contososuites.com, the user's OneDrive URL would change to:
 
@@ -76,10 +76,10 @@ After you change a UPN, any saved links to the user's OneDrive (such as desktop 
   
 ## Sync
 
-The sync app (on both Windows and Mac) will automatically switch to sync with the new OneDrive location after a UPN change. While the UPN change is propagating through your environment, users may see an error in the OneDrive sync app that "One or more libraries couldn't be synced." If they select for more information, they'll see "You don't have permission to sync this library." Users who see this error should restart the sync app. The error goes away when the UPN change has been fully propagated and the sync app is updated to use the user's new OneDrive URL.  
+The sync app (on both Windows and Mac) will automatically switch to sync with the new OneDrive location after a UPN change. While the UPN change is propagating through your environment, users might see an error in the OneDrive sync app that "One or more libraries couldn't be synced." If they select for more information, they see "You don't have permission to sync this library." Users who see this error should restart the sync app. The error goes away when the UPN change is fully propagated and the sync app is updated to use the user's new OneDrive URL.  
 
 > [!NOTE]
-> Synced team sites are not impacted by the OneDrive URL change.
+> Synced team sites aren't impacted by the OneDrive URL change.
 
 ## OneNote
 
@@ -91,7 +91,7 @@ After a UPN change, users will need to close and reopen their OneNote notebooks 
 
 ## Microsoft Teams
 
-After a UPN change, accessing the OneDrive app in Microsoft Teams can result in an error: 404 File not found.
+After a UPN change, accessing the OneDrive app in Microsoft Teams can result in an error: 404 Files not found.
 
 Until a fix is released, to resolve the error:
 
@@ -99,15 +99,15 @@ Until a fix is released, to resolve the error:
 
 1. In the message box, select __Actions and apps__ __> Attach file > Upload from this device__.
 
-1. Select a file you will send to the other user, then select __Open__.
+1. Select a file you send to the other user, then select __Open__.
 
 1. Press __Enter__ to send the file or select __Send__.
 
-After you’ve sent the file, navigate to the OneDrive app in Teams.
+After sending the file, navigate to the OneDrive app in Teams.
 
 ## Recent files lists
 
-After a UPN change, users will need to browse to reopen active OneDrive files in their new location. Any links to the files (including browser favorites, desktop shortcuts, and "Recent" lists in Office apps and Windows) will no longer work.
+After a UPN change, users will need to browse to reopen active OneDrive files in their new location. Any links to the files (including browser favorites, desktop shortcuts, and "Recent" lists in Office apps and Windows) no longer work.
 
 ## Shared OneDrive files
 
@@ -121,7 +121,7 @@ After a UPN change, although Office will continue to work as expected, the user'
 
 After a UPN change, it might take a while for files at the new OneDrive URL to be indexed. During this time, search results in OneDrive and SharePoint will use the old URL. Users can copy the URL, paste it in the address bar, and then update the portion for the new UPN.
 
-Delve will also link to old OneDrive URLs for a period of time after a UPN change. As activity occurs in the new location, the new links will start appearing.
+Delve will also link to old OneDrive URLs for a period of time after a UPN change. As activity occurs in the new location, the new links start appearing.
 
 ## SharePoint automated workflows and customizations
 
