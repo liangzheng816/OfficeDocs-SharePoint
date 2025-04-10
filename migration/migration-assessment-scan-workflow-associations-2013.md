@@ -47,7 +47,7 @@ Workflow Data is divided into two parts:
 
 ## Preparing for Migration
 
-To avoid unnecessary workflow restarts, it's best to complete in-flight workflows before the migration event when your content is moved to the target environment. If the feature is in use in the source environment today you can receive a list of running instances of workflows before migration. You can communicate this status to your site owners.
+To avoid unnecessary workflow restarts, it's best to complete in-flight workflows before the migration event when your content is moved to the target environment. If the feature is in use in the source environment today, you can receive a list of running instances of workflows before migration. You can communicate this status to your site owners.
 
 ## Post Migration
 
