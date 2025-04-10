@@ -152,7 +152,7 @@ FastTrack is a Microsoft service included in your subscription cost.  It provide
 
 Onboarding guidance includes: help to discover what's possible, creating a plan for success, and onboarding new users and capabilities at a flexible pace. The [Data Migration](/fasttrack/O365-data-migration) benefit covers guidance on migrating content from file share, Box, or Google Drive source environments.
 
-This guidance covers enablement of both OneDrive and the source environment. FastTrack also performs specific data migration activities on behalf of the customer for those with 500 or more licenses. For more information, see [FastTrack Center Benefit Overview](/fasttrack/O365-data-migration). Interested in getting started? Visit [FastTrack.microsoft.com](https://fasttrack.microsoft.com/), review resources, and submit a Request for Assistance.
+This guidance covers enablement of both OneDrive and the source environment. FastTrack also performs specific data migration activities on behalf of customers with 500 or more licenses. For more information, see [FastTrack Center Benefit Overview](/fasttrack/O365-data-migration). Interested in getting started? Visit [FastTrack.microsoft.com](https://fasttrack.microsoft.com/), review resources, and submit a Request for Assistance.
 
 **Migration service providers**
 
