@@ -33,7 +33,7 @@ In the source environment, there are typically discrete web applications for Tea
 
 The target environment uses a single web application to host all site collections.
 
-We do not currently offer a permission feature that applies uniquely to specific root site names and all child items together.
+We don't currently offer a permission feature that applies uniquely to specific root site names and all child items together.
 
 ## Data Migration
 
@@ -44,7 +44,7 @@ None of the web application policies are migrated to the target environment.
 
 ## Preparing for Migration
 
-Web application policies are not migrated. Some alternatives at this time include:
+Web application policies aren't migrated. Some alternatives at this time include:
 
 - Change administrative procedures to manage all permissions at the site collection level (this action can be performed with the Tenant Admin) instead of using web application policies.
 - Use licensing to grant or limit specific capabilities to specific users and groups.
