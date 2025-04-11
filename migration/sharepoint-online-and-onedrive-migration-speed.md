@@ -29,7 +29,7 @@ description: "This article explains the factors that influence migration speed a
 >
 >We implemented tighter throttling limits on background apps (migration, DLP, and backup solutions) during weekday daytime hours. You should expect that these apps achieve limited throughput during these times. However, **during evening and weekend hours** for the region, the service is ready to process a higher volume of requests from background apps.
 >
-> **Can Microsoft turn off the throttle to help me with migration?** **No.** Throttling is in place to protect the reliability and availability of the service. Throttling rules can't be disabled or suspended. Opening a support ticket doesn't lift throttle. See the [FAQ and Troubleshooting](#faq-and-troubleshooting) section for additional information.
+> **Can Microsoft turn off the throttle to help me with migration?** **No.** Throttling is in place to protect the reliability and availability of the service. Throttling rules can't be disabled or suspended. Opening a support ticket doesn't lift throttle. For more information, see the [FAQ and Troubleshooting](#faq-and-troubleshooting).
 
 ## Performance guidance for Migration Manager and SPMT
 
