@@ -120,7 +120,7 @@ Create modern hub sites based on how you mapped your sites to a system of hub si
 
 ## Migration process
 
-Below is a typical migration process that follows Microsoft's best practices guidance.
+The following is a typical migration process that follows Microsoft's best practices guidance:
 
 1. Select a small set of users for a pilot migration. The goals of the pilot are to validate the process, including performance and user communication, and to get a sample of user feedback.
 1. Run the pilot migration. Use an incremental migration method that runs in the background with no user impact. Follow this incremental migration with a cutover event in which you disable SharePoint Server team sites. Direct users to use the SharePoint environment. This method is preferred, as it reduces user impact.
