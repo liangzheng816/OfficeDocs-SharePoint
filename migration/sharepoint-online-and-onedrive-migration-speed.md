@@ -43,7 +43,7 @@ When using either the SharePoint Migration Tool (SPMT) or running a Migration Ma
 
 Network infrastructure, file size, migration time, and throttling can impact migration. By understanding these factors, you can plan your migration and maximize its efficiency. This guidance may also be applied to SPMT.
 
-Currently, [SPMT](./introducing-the-sharepoint-migration-tool.md) and other third party vendor tools use the SharePoint API for migration. It uses Azure and uses channels for large content transfer. Whatever migration tool you use, these factors apply. Follow the recommendations listed below for each phase of your migration process.
+Currently, [SPMT](./introducing-the-sharepoint-migration-tool.md) and other third party vendor tools use the SharePoint API for migration. It uses Azure and uses channels for large content transfer. Whatever migration tool you use, these factors apply. Follow these recommendations for each phase of your migration process:
 
 ### Before migration
 
