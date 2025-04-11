@@ -211,7 +211,7 @@ If you want to file a Microsoft support ticket, follow these steps and include t
     - Your organization URL.
     - How much is left of your migration (x TB?).
     - Migration start and end date.
-    - A description of where you're migrating your content from, such as SharePoint Server, Box, Google Workspace Drive, File shares.
+    - A description of where you're migrating your content from, such as SharePoint Server, Box, Google Workspace Drive, or file shares.
     - If it's a throttling related escalation, provide information such as the number of throttles, how many throttles per hour, and the specific time and date the throttling happened. If you're experiencing poor performance, please describe the nature of the poor performance.
     - Indicate which migration tool you're using (for example, SPMT, ShareGate, Mover, and so on).
     - State if you're logging in using *user login* or *app-based authentication*.
