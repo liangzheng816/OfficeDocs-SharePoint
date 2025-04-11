@@ -96,7 +96,7 @@ To improve throughput, users are encouraged to run parallel tasks against differ
 
 During migration, it's common for your migration task to be throttled. Throttling is implemented to ensure the best user experience and reliability of SharePoint. It's primarily used to load balance the database and can occur if you misconfigure migration settings, such as migrating all your content in a single task or attempting to migrate during peak hours.
 
-For more technical background and information, please see:
+For more technical background and information, see:
 
 - [Migration API Overview](/sharepoint/dev/apis/migration-api-overview)
 - [Avoid getting throttled or blocked in SharePoint](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)
@@ -163,7 +163,7 @@ Answer: Check this article to help identify where the performance bottleneck is:
 
 **Question: I am experiencing throttling during migration.**
 
-Answer: First check the guidance in this document. Learn more at: [Avoid getting throttled or blocked in SharePoint.](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)</br>For specific tools configuration or questions, please contact your third party tools vendor for more information.
+Answer: First check the guidance in this document. Learn more at: [Avoid getting throttled or blocked in SharePoint.](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)</br>For specific tools configuration or questions, contact your third party tools vendor for more information.
 
 **Question: I'm continually getting throttled while I am attempting to migrate. Can Microsoft turn off the throttle to help me with migration?**
 
@@ -212,7 +212,7 @@ If you want to file a Microsoft support ticket, follow these steps and include t
     - How much is left of your migration (x TB?).
     - Migration start and end date.
     - A description of where you're migrating your content from, such as SharePoint Server, Box, Google Workspace Drive, or file shares.
-    - If it's a throttling related escalation, provide information such as the number of throttles, how many throttles per hour, and the specific time and date the throttling happened. If you're experiencing poor performance, please describe the nature of the poor performance.
+    - If it's a throttling related escalation, provide information such as the number of throttles, how many throttles per hour, and the specific time and date the throttling happened. If you're experiencing poor performance, describe the nature of the poor performance.
     - Indicate which migration tool you're using (for example, SPMT, ShareGate, Mover, and so on).
     - State if you're logging in using *user login* or *app-based authentication*.
 
