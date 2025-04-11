@@ -103,7 +103,7 @@ For more technical background and information, see:
 
 ### After migration
 
-After the migration is completed, verify that your content's successfully moved to SharePoint or OneDrive.
+After the migration is completed, verify that your content successfully moved to SharePoint or OneDrive.
 
 ### Large migrations over 100 TB
 
