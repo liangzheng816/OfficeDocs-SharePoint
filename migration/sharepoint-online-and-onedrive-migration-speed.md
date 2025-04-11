@@ -165,7 +165,7 @@ Answer: First check the guidance in this document. Learn more at: [Avoid getting
 
 **Question: I'm continually getting throttled while I am attempting to migrate. Can Microsoft turn off the throttle to help me with migration?**
 
-Answer: Throttling is in place to protect the reliability and availability of the service. Throttling rules can't be disabled or suspended and **opening a support ticket doesn't lift throttle**. Refer to [Avoid getting throttled or blocked in SharePoint](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online) for more information.
+Answer: Throttling is in place to protect the reliability and availability of the service. Throttling rules can't be disabled or suspended and **opening a support ticket doesn't lift throttle**. For more information, refer to [Avoid getting throttled or blocked in SharePoint](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online).
 
 **Question: If you can't turn off the throttle, what can I do if I am being throttled or experience poor performance?**
 
