@@ -27,7 +27,7 @@ description: "This article explains the factors that influence migration speed a
 > [!IMPORTANT]
 > Many Microsoft SharePoint and Microsoft OneDrive customers run business-critical applications against the service that run in the background. These applications include content migration, data loss prevention (DLP), and backup solutions.
 >
->We implemented tighter throttling limits on background apps (migration, DLP and backup solutions) during weekday daytime hours. You should expect that these apps achieve very limited throughput during these times. However, **during evening and weekend hours** for the region, the service is ready to process a significantly higher volume of requests from background apps.
+>We implemented tighter throttling limits on background apps (migration, DLP, and backup solutions) during weekday daytime hours. You should expect that these apps achieve very limited throughput during these times. However, **during evening and weekend hours** for the region, the service is ready to process a significantly higher volume of requests from background apps.
 >
 > **Can Microsoft turn off the throttle to help me with migration?** **No.** Throttling is in place to protect the reliability and availability of the service. Throttling rules can't be disabled or suspended. Opening a support ticket doesn't lift throttle. See the [FAQ and Troubleshooting](#faq-and-troubleshooting) section for additional information.
 
@@ -73,7 +73,7 @@ The following table provides estimates of the type of speed you may achieve base
 The speed of this step depends on the efficiency of the tool you're using and the type of content that you package. Splitting your packages in a smart way is something that greatly improves this step. In addition, ensure that your permissions, sharing, or other limits are set up properly for migration and are within [SharePoint limits and boundaries](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits).
 
 > [!NOTE]
-> If you're planning to migrate over 100TB, review the following section, **Large Migration**.
+> If you're planning to migrate over 100 TB, review the following section, **Large Migration**.
 
 ### During migration
 
