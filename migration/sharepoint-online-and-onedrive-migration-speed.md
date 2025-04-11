@@ -114,13 +114,11 @@ After the migration is completed, verify that your content's successfully moved 
 > - The migration is occurring within the next 30 days.
 > - The migration is over 100 TB of data.
 
-If you're planning to migrate over 100 TB, submit a support request following the steps listed below. Make sure to include all requested information.
-
-Follow these steps:
+If you're planning to migrate over 100 TB, submit a support request, follow these steps (make sure you include all requested information):
 
 1. As an administrator, select the following link, which populates a help query in the admin center: [SharePoint Migration over 100 TB](https://admin.microsoft.com/AdminPortal/?searchSolutions=SharePoint%20Migration%20over%20100TB).
 2. At the bottom of the pane, select **Contact Support**, and then select **New Service Request**.
-3. Leave **Description** blank.
+3. Leave the **Description** blank.
 4. Fill out the remaining info, and select **Contact me**.
 5. After the ticket's created, provide the support agent with the following information:
     - Estimated size of your migration.
