@@ -47,7 +47,7 @@ Currently, [SPMT](./introducing-the-sharepoint-migration-tool.md) and other thir
 
 ### Before migration
 
-Planning is the key to optimizing your migration. Determine what content you need to migrate, prioritize when the content needs to be migrated, and decide on what the optimal migration infrastructure should be.
+Planning is the key to optimizing your migration. Determine what content you need to migrate, prioritize when to migrate the content, and decide on what the optimal migration infrastructure should be.
 
 #### I. Scan the source
 
