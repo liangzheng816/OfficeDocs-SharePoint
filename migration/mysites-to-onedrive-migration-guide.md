@@ -105,7 +105,7 @@ Use the [SharePoint Migration Tool](./introducing-the-sharepoint-migration-tool.
 The following information describes a typical migration process that follows Microsoft best-practices guidance.
 
 1. Select a small set of users for a pilot migration. The goals of the pilot are to validate the process, including performance and user communication, and to get a sample of user feedback.
-1. Run the pilot migration. Use an incremental migration method that runs in the background with no user impact, followed by a cutover event in which users' on-premises My Sites accounts are disabled. Direct users to the target OneDrive environment. This method is preferred, as it reduces user impact.
+1. Run the pilot migration. Use an incremental migration method that runs in the background with no user impact. Follow this incremental migration with a cutover event in which you disable users' on-premises My Sites accounts. Direct users to the target OneDrive environment. This method is preferred, as it reduces user impact.
 1. Assess the data from the pilot migration to determine the rest of your migration schedule, and make any changes. For example, you might update your user communication template to address questions you received from pilot users.
 1. Do the rest of the migration. Use an incremental migration method, just like the pilot. We recommend a single cutover event for all users to switch to OneDrive and then disable their My Sites accounts. This approach uses both My Sites and OneDrive at the same time to help eliminate any confusion resulting from users having to collaborate.
 
