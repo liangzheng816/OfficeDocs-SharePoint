@@ -47,7 +47,7 @@ The speed is usually impacted by either:
 Suggestions:
 
 - Often local network speed is the problem. When the source content is located on the same computer or VM as the migration computer, stop other applications that may compete with the disk load for reading the data.
-- Change the working folder setting to point to a different physical disk (if there is one) on your migration computer.
+- Change the working folder setting to point to a different physical disk (if you have one) on your migration computer.
 
 ## Improving the migration computer speed
 
