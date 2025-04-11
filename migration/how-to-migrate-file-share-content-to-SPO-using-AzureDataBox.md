@@ -116,5 +116,5 @@ After you receive confirmation from the Azure data team that your data copy comp
 6. Follow the remaining prompts, including setting your target location. For more info, see [How to use the SharePoint Migration Tool](./how-to-use-the-sharepoint-migration-tool.md).
 
 > [!IMPORTANT]
-> - Several factors impact the speed at which data is ingested into SharePoint, regardless if you have your data already in Azure. Understanding these factors helps you plan your migration and maximize efficiency. For more info, see [SharePoint and OneDrive Migration Speed](./sharepoint-online-and-onedrive-migration-speed.md).
+> - Several factors impact the speed at which data is ingested into SharePoint, regardless if you have your data already in Azure. Understanding these factors helps you plan your migration and maximize its efficiency. For more info, see [SharePoint and OneDrive Migration Speed](./sharepoint-online-and-onedrive-migration-speed.md).
 > - File metadata and NTFS permissions can be preserved when the data is uploaded to Azure Files. To learn more, see [Preserving file ACLs, attributes, and timestamps with Azure Data Box](/azure/databox/data-box-file-acls-preservation).
