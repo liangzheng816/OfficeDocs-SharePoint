@@ -79,7 +79,7 @@ The speed of this step depends on the efficiency of the tool you're using and th
 
 #### I. Upload to Azure
 
-SPMT or your third-party tool migrates your content into SharePoint using the Migration API, leveraging Azure as a temporary holding place.
+SPMT or your third-party tool migrates your content into SharePoint using the Migration API, using Azure as a temporary holding place.
 
 If you have a good connection and can configure your datacenter, choose the same datacenter location closest geographically to you for your Azure and your Microsoft 365 account. Migration data throughput is highest during off-peak hours, which are typically nights and weekends in your region's time zone. Your region's time zone is determined by where your SharePoint tenant is set up.
 
