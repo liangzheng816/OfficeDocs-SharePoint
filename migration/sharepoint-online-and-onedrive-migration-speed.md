@@ -94,7 +94,7 @@ To improve throughput, users are encouraged to run parallel tasks against differ
 >
 > To learn more about processing performance, see [Avoid getting throttled or blocked in SharePoint in Microsoft 365](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online).
 
-During migration, it's common for your migration task to be throttled. Throttling is implemented to ensure the best user experience and reliability of SharePoint. It's primarily used to load-balance the database. Throttling can occur if you misconfigure migration settings, such as migrating all your content in a single task or attempting to migrate during peak hours.
+During migration, it's common for your migration task to be throttled. Throttling is implemented to ensure the best user experience and reliability of SharePoint. It load-balances the database. Throttling can occur if you misconfigure migration settings, such as migrating all your content in a single task or attempting to migrate during peak hours.
 
 For more technical background and information, see:
 
