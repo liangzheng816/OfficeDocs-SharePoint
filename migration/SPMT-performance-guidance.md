@@ -26,7 +26,7 @@ description: "How to improve performance when using the SharePoint Migration Too
 When using either the SharePoint Migration Tool (SPMT) or running a Migration Manager agent, follow these guidelines to help improve your migration performance.
 
 > [!NOTE]
-> For simplicity,for the remainder of this article, SPMT and the Migration Manager agent is referred to as the **migration computer**.
+> For simplicity, for the remainder of this article, SPMT and the Migration Manager agent is referred to as the **migration computer**.
 
 ## Recommendations
 
