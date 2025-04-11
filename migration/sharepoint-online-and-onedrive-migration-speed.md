@@ -41,7 +41,7 @@ When using either the SharePoint Migration Tool (SPMT) or running a Migration Ma
 
 ## Performance guidance for the SharePoint Migration API
 
-Migration performance can be impacted by network infrastructure, file size, migration time, and throttling. Understanding these impacts helps you plan and maximize the efficiency of your migration. This guidance may also be applied to SPMT.
+Migration performance can be impacted by network infrastructure, file size, migration time, and throttling. By understanding these factors, you can plan your migration and maximize its efficiency. This guidance may also be applied to SPMT.
 
 Currently, [SPMT](./introducing-the-sharepoint-migration-tool.md) and other third party vendor tools use the SharePoint API for migration. It leverages Azure and uses channels for large content transfer. Whatever migration tool you use, these factors apply. Follow the recommendations listed below for each phase of your migration process.
 
@@ -92,7 +92,7 @@ To improve throughput, users are encouraged to run parallel tasks against differ
 > [!IMPORTANT]
 > We recommend that you don't have more than 5,000 migration jobs/requests **in the queue**. This number *doesn't* refer to the number of jobs *processing*.
 >
-> To learn more about processing performance, see [Avoid getting throttled or blocked in SharePoint Online](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online).
+> To learn more about processing performance, see [Avoid getting throttled or blocked in SharePoint in Microsoft 365](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online).
 
 During migration, it's common for your migration task to be throttled. Throttling is implemented to ensure the best user experience and reliability of SharePoint. It's primarily used to load balance the database and can occur if you misconfigure migration settings, such as migrating all your content in a single task or attempting to migrate during peak hours.
 
@@ -144,7 +144,7 @@ Each user account has a certain quota for API call rate and bandwidth. Using mul
 - The number of consumers of the source computer.
 - Anti-virus competes the CPU and disk with agent.
 - Network speed.
-- Throttling - Decided by multiple factors including client side factors and server side factors. The throttling can be mitigated by using multiple SharePoint Online migration accounts.
+- Throttling - Decided by multiple factors including client side factors and server side factors. The throttling can be mitigated by using multiple SharePoint in Microsoft 365 migration accounts.
 
 According to our telemetry and support tickets, the typical bottleneck is from source reading. Primary reasons are:
 
@@ -193,11 +193,11 @@ Follow these steps:
     - Estimate the number of throttles (for example, x throttle per hour?) and when (specific time and date) the throttling happened.
     - Which migration tool you're using. For example, SPMT, ShareGate, Mover, and so on.
 
-**Question: When migrating OneNote notebooks that contain attachments from SharePoint 2010 to SharePoint Online, all attachments greater than 100 KB are missing.**
+**Question: When migrating OneNote notebooks that contain attachments from SharePoint 2010 to SharePoint in Microsoft 365, all attachments greater than 100 KB are missing.**
 
 Answer: In SharePoint 2010, OneNote notebooks with attachments greater than 100 KB are put into a folder with a special content type that the SharePoint Migration Tool can't read.
 
-As a workaround, you can migrate your SharePoint 2010 data to SharePoint 2016, then use the SharePoint Migration Tool to migrate the data from SharePoint 2016 to SharePoint Online.
+As a workaround, you can migrate your SharePoint 2010 data to SharePoint 2016, then use the SharePoint Migration Tool to migrate the data from SharePoint 2016 to SharePoint in Microsoft 365.
 
 ### How to open a Microsoft support ticket for other migration issues
 
