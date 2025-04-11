@@ -151,5 +151,5 @@ Develop a plan to prepare your users for the upcoming change. Consideration fact
 Develop a plan for sending communications to your user base, providing clear statements of timing, expectations, and impact to the individual. Include:
 
 - The migration timeline and how it impacts them. Include any end user calls to action. 
-- Assure them that if they have content already in SharePoint, that their content is safe and not overwritten. 
-- Let them know whether individuals can opt out of the migration process
+- Assurances that if they have content already in SharePoint, their content is safe and not overwritten. 
+- Awareness about whether or not individuals can opt out of the migration process.
