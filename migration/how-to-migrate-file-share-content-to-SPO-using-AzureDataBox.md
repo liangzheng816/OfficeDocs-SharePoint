@@ -83,7 +83,7 @@ This workflow requires you to perform steps on Data Box and on SharePoint:
 The following steps relate to SharePoint:
 
 1. Create a VM in the Azure portal and mount the Azure file share on it.
-2. On the Azure VM, install SPMT.
+2. Install SPMT on the Azure VM.
 3. Using the Azure file share as the SOURCE, run SPMT.
 4. Complete the final steps of SPMT.
 5. Verify and confirm your data.
@@ -103,7 +103,7 @@ Take the following steps to copy data to your Data Box.
 
 ## Migrating your data to Microsoft 365 using SPMT
 
-After you receive confirmation from the Azure data team that your data copy has completed, you can now proceed to migrate your data to Microsoft 365. For best performance and connectivity, we recommend you create an Azure Virtual Machine (VM).
+After you receive confirmation from the Azure data team that your data copy completes, you can now proceed to migrate your data to Microsoft 365. For best performance and connectivity, we recommend you create an Azure Virtual Machine (VM).
 
 1. Sign into the Azure portal, and then create a virtual machine. To learn how, see [Quickstart: Create Windows virtual machine in the Azure portal](/azure/virtual-machines/windows/quick-create-portal).
 2. [Mount the Azure file share onto the VM](/azure/storage/files/storage-how-to-use-files-windows).
@@ -116,5 +116,5 @@ After you receive confirmation from the Azure data team that your data copy has 
 6. Follow the remaining prompts, including setting your target location. For more info, see [How to use the SharePoint Migration Tool](./how-to-use-the-sharepoint-migration-tool.md).
 
 > [!IMPORTANT]
-> - The speed at which data is ingested into SharePoint is impacted by several factors, regardless if you have your data already in Azure. Understanding these factors helps you plan and maximize the efficiency of your migration. For more info, see [SharePoint and OneDrive Migration Speed](./sharepoint-online-and-onedrive-migration-speed.md).
+> - Several factors impact the speed at which data is ingested into SharePoint, regardless if you have your data already in Azure. Understanding these factors helps you plan and maximize the efficiency of your migration. For more info, see [SharePoint and OneDrive Migration Speed](./sharepoint-online-and-onedrive-migration-speed.md).
 > - File metadata and NTFS permissions can be preserved when the data is uploaded to Azure Files. To learn more, see [Preserving file ACLs, attributes, and timestamps with Azure Data Box](/azure/databox/data-box-file-acls-preservation).
