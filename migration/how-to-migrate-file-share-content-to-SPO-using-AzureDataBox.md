@@ -19,7 +19,7 @@ ms.collection:
 - M365-collaboration
 - m365initiative-migratetom365
 ms.localizationpriority: medium
-description: "Learn how to migrate your file share content to SharePoint in Microsoft 365 by using the Azure Data Box"
+description: "Learn how to migrate your file share content, preserving file metadata and NTFS (NT File System) information, to SharePoint in Microsoft 365 by using the Azure Data Box."
 ---
 
 # Migrate your file share content to Microsoft 365 using the Azure Data Box
@@ -34,7 +34,7 @@ Most of our large enterprise customers don't use Azure Data Box to migrate to On
 
 The most important thing to understand when deciding if you should use Azure Data Box is your migration's current bottleneck. We recommend running a performance test using multiple computers. Use a test size that pushes your migration boundaries so you can evaluate your bottleneck. Unfortunately, customers often attempt a test pilot that's too small and fail to see accurate results.
 
-Another factor to consider is the added complexity involved in using the Azure Data Box. After loading the data onto the Data Box, you must allow for the delay caused by shipment time before the data can be copied into an Azure file share. Then you still need to perform the same migration steps as if you hadn't used it.
+Another factor to consider is the added complexity involved in using the Azure Data Box. After loading the data onto the Data Box, you must allow for the delay caused by shipment time before the data can be copied into an Azure file share. Then you still need to perform the same migration steps on the copied data.
 
 **Wrong reasons for using Data Box:**
 
