@@ -172,7 +172,7 @@ Answer: Throttling is in place to protect the reliability and availability of th
 Answer: Here are some quick self-help checks to consider:
 
 - Try to migrate during off-peak business hours
-- If you're experiencing slowness, make sure you aren't running any unnecessary software that may compete with migration resources.
+- Make sure you aren't running any unnecessary software that may compete with migration resources if you're experiencing slowness.
 - Check with your software provider to ensure you're migrating to SPO/OneDrive using *app-based authentication*. Migration is a background task and shouldn't be run in user mode. If attempted to migrate in user mode, it can trigger larger than normal throttling.
 
 **Question: My migration is blocked with consistent high volume of Http 503 errors ("Server Too Busy")?**
