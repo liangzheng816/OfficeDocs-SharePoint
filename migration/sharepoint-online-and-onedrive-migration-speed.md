@@ -193,11 +193,11 @@ Follow these steps:
     - Estimate the number of throttles (for example, x throttle per hour?) and when (specific time and date) the throttling happened.
     - Which migration tool you're using. For example, SPMT, ShareGate, Mover, and so on.
 
-**Question: When migrating OneNote notebooks that contain attachments from SharePoint 2010 to SharePoint in Microsoft 365, all attachments greater than 100 KB are missing.**
+**Question: When migrating OneNote notebooks that contain attachments from SharePoint Server 2010 to SharePoint in Microsoft 365, all attachments greater than 100 KB are missing.**
 
-Answer: In SharePoint 2010, OneNote notebooks with attachments greater than 100 KB are put into a folder with a special content type that the SharePoint Migration Tool can't read.
+Answer: In SharePoint Server 2010, OneNote notebooks with attachments greater than 100 KB are put into a folder with a special content type that the SharePoint Migration Tool can't read.
 
-As a workaround, you can migrate your SharePoint 2010 data to SharePoint 2016, then use the SharePoint Migration Tool to migrate the data from SharePoint 2016 to SharePoint in Microsoft 365.
+As a workaround, you can migrate your SharePoint Server 2010 data to SharePoint Server 2016, then use the SharePoint Migration Tool to migrate the data from SharePoint Server 2016 to SharePoint in Microsoft 365.
 
 ### How to open a Microsoft support ticket for other migration issues
 
