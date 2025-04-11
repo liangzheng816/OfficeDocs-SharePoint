@@ -25,7 +25,7 @@ description: "This article explains the factors that influence migration speed a
 # General migration performance guidance
 
 > [!IMPORTANT]
-> Many Microsoft SharePoint and Microsoft OneDrive customers run business-critical applications against the service that run in the background. These include content migration, data loss prevention (DLP), and backup solutions.
+> Many Microsoft SharePoint and Microsoft OneDrive customers run business-critical applications against the service that run in the background. These applications include content migration, data loss prevention (DLP), and backup solutions.
 >
 >We implemented tighter throttling limits on background apps (migration, DLP and backup solutions) during weekday daytime hours. You should expect that these apps achieve very limited throughput during these times. However, **during evening and weekend hours** for the region, the service is ready to process a significantly higher volume of requests from background apps.
 >
