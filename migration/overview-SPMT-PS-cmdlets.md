@@ -24,7 +24,7 @@ description: "Learn how the PowerShell cmdlets based on the SharePoint Migration
 
 # Migrate to SharePoint using PowerShell
 
-This article is about the new PowerShell cmdlets based on the SharePoint Migration Tool (SPMT) migration engine. They can be used to move files from SharePoint 2010 and SharePoint 2013 on-premises document libraries and list items, and file shares to Microsoft 365.  For information on all current PowerShell cmdlets relating to SharePoint migration, see the [Microsoft SharePoint Migration Tool cmdlet reference](/powershell/spmt/intro).
+This article is about the new PowerShell cmdlets based on the SharePoint Migration Tool (SPMT) migration engine. They can be used to move files from SharePoint 2010 and SharePoint 2013 on-premises document libraries and list items, and file shares to Microsoft 365. For information on all current PowerShell cmdlets relating to SharePoint migration, see the [Microsoft SharePoint Migration Tool cmdlet reference](/powershell/spmt/intro).
 
 The PowerShell cmdlets provide the same functionalities as the [SharePoint Migration Tool](introducing-the-sharepoint-migration-tool.md).
 
