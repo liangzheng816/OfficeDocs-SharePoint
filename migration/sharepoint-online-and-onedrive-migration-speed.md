@@ -120,7 +120,7 @@ If you're planning to migrate over 100 TB, submit a support request, follow thes
 2. At the bottom of the pane, select **Contact Support**, and then select **New Service Request**.
 3. Leave the **Description** blank.
 4. Fill out the remaining info, and select **Contact me**.
-5. After the ticket's created, provide the support agent with the following information:
+5. After ticket creation, provide the support agent with the following information:
     - Estimated size of your migration.
     - An estimate of when you want to start and complete your migration.
     - Where you're migrating your content from, such as SharePoint Server, Box, Google Workspace Drive, File shares, and so on.
@@ -184,7 +184,7 @@ Follow these steps:
 1. As an administrator, select the following link, which populates a help query in the admin center: [SharePoint Migration Throttle with 503](https://aka.ms/503MigrationThrottle).
 2. At the bottom of the pane, select **Contact Support**, and then select **New Service Request**.
 3. Leave **Description** blank.
-4. After the ticket's created, ensure you provide the support agent with the following information:
+4. After ticket creation, ensure you provide the support agent with the following information:
     - How much is left of your migration (x TB?).
     - Migration start and end date.
     - Describe where you're migrating your content from, such as SharePoint Server, Box, Google Workspace Drive, or file shares.
@@ -205,7 +205,7 @@ If you want to file a Microsoft support ticket, follow these steps and include t
 2. At the bottom of the pane, select **Contact Support**, and then select **New Service Request**.
 3. Leave **Description** blank.
 4. Fill out the remaining info, and select **Contact me**.
-5. After the ticket's created, make sure to include the following information:
+5. After ticket creation, make sure to include the following information:
     - Your organization URL.
     - How much is left of your migration (x TB?).
     - Migration start and end date.
