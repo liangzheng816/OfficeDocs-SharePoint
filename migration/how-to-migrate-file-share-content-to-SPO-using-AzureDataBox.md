@@ -44,7 +44,7 @@ Another factor to consider is the added complexity involved in using the Azure D
 **Correct Reasons for using Data box**
 
 - My data is in a remote location with poor connectivity to Microsoft 365.
-- My source is very low on resources, and I can scale up my migration by using the Azure Data Box.
+- My source is low on resources, and I can scale up my migration by using the Azure Data Box.
 
 To learn more about our migration performance, see [General migration performance guidance.](./sharepoint-online-and-onedrive-migration-speed.md).
 
