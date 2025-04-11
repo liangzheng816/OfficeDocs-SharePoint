@@ -161,7 +161,7 @@ Answer: Check this article to help identify where the performance bottleneck is:
 
 **Question: I am experiencing throttling during migration.**
 
-Answer: First check the guidance in this document. Learn more at: [Avoid getting throttled or blocked in SharePoint.](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)</br>For specific tools configuration or questions, contact your third party tools vendor for more information.
+Answer: First check the guidance in this document. Learn more at: [Avoid getting throttled or blocked in SharePoint.](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online). For specific tools configuration or questions, contact your third party tools vendor.
 
 **Question: I'm continually getting throttled while I am attempting to migrate. Can Microsoft turn off the throttle to help me with migration?**
 
