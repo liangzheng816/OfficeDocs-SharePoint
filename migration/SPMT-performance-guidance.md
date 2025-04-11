@@ -1,5 +1,5 @@
 ---
-ms.date: 03/30/2020
+ms.date: 04/11/2025
 title: Improve SPMT or Migration Manager agent performance
 ms.author: heidip
 author: MicrosoftHeidi
@@ -26,7 +26,7 @@ description: "How to improve performance when using the SharePoint Migration Too
 When using either the SharePoint Migration Tool (SPMT) or running a Migration Manager agent, follow these guidelines to help improve your migration performance.
 
 > [!NOTE]
-> For simplicity,for the remainder of this article, SPMT and the Migration Manager agent will be referred to as the "*migration computer*".
+> For simplicity,for the remainder of this article, SPMT and the Migration Manager agent is referred to as the **migration computer**.
 
 ## Recommendations
 
@@ -37,9 +37,9 @@ When using either the SharePoint Migration Tool (SPMT) or running a Migration Ma
 
 ## Improving the speed at which the source can be read
 
-During migration, information needs to be read from the source location. The speed at which that information can be read can impact your migration.  We recommend doing further testing to understand the actual bottleneck.
+During migration, information needs to be read from the source location. The speed at which that information can be read can impact your migration. We recommend doing further testing to understand the actual bottleneck.
 
-The speed is usually impacted by either
+The speed is usually impacted by either:
 
 - The local network speed between the migration computer and the file server, or
 - The performance of the file server itself.
@@ -71,7 +71,6 @@ Suggestions:
 
 ## Performing migration following our best practice
 
-Migration performance can be impacted by network infrastructure, file size, migration time, and throttling. Understanding these will help you plan and maximize the efficiency of your migration. These are detailed here:
+Migration performance can be impacted by network infrastructure, file size, migration time, and throttling. Understanding these issues helps you plan and maximize the efficiency of your migration. They're detailed here:
 
 - [General guidelines for migration performance](sharepoint-online-and-onedrive-migration-speed.md)
-
