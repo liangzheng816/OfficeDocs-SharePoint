@@ -43,7 +43,7 @@ When using either the SharePoint Migration Tool (SPMT) or running a Migration Ma
 
 Migration performance can be impacted by network infrastructure, file size, migration time, and throttling. By understanding these factors, you can plan your migration and maximize its efficiency. This guidance may also be applied to SPMT.
 
-Currently, [SPMT](./introducing-the-sharepoint-migration-tool.md) and other third party vendor tools use the SharePoint API for migration. It leverages Azure and uses channels for large content transfer. Whatever migration tool you use, these factors apply. Follow the recommendations listed below for each phase of your migration process.
+Currently, [SPMT](./introducing-the-sharepoint-migration-tool.md) and other third party vendor tools use the SharePoint API for migration. It uses Azure and uses channels for large content transfer. Whatever migration tool you use, these factors apply. Follow the recommendations listed below for each phase of your migration process.
 
 ### Before migration
 
@@ -57,7 +57,7 @@ The first rule of a good migration is to know your source; evaluate and triage y
 
 This step is where the tool creates a proper package for the content to be imported into the cloud. This step is automated in SPMT and in most third-party tools.
 
-**Package size.** To improve migration throughput, we recommend that you package at least 250 files per transfer. For the transfer size, we recommend a minimum of 100 MB and less than 250 MB per package. Keeping within these guidelines result in a faster upload speed to Azure and leverages the scale capabilities of the migration API.
+**Package size.** To improve migration throughput, we recommend that you package at least 250 files per transfer. For the transfer size, we recommend a minimum of 100 MB and less than 250 MB per package. Keeping within these guidelines result in a faster upload speed to Azure and uses the scale capabilities of the migration API.
 
 The following table provides estimates of the type of speed you may achieve based on the types of content you're migrating.
 
@@ -144,7 +144,7 @@ Each user account has a certain quota for API call rate and bandwidth. Using mul
 - The number of consumers of the source computer.
 - Anti-virus competes the CPU and disk with agent.
 - Network speed.
-- Throttling - Decided by multiple factors including client side factors and server side factors. The throttling can be mitigated by using multiple SharePoint in Microsoft 365 migration accounts.
+- Throttling - Decided by multiple factors including client side factors and server side factors. Using multiple SharePoint in Microsoft 365 migration accounts can mitigate throttling.
 
 According to our telemetry and support tickets, the typical bottleneck is from source reading. Primary reasons are:
 
