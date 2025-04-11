@@ -71,6 +71,6 @@ Suggestions:
 
 ## Performing migration following our best practice
 
-Network infrastructure, file size, migration time, and throttling can impact migration performance. Understanding these issues helps you plan and maximize the efficiency of your migration. They're detailed here:
+Network infrastructure, file size, migration time, and throttling can impact migration performance. By understanding these factors, you can plan your migration and maximize its efficiency. They're detailed here:
 
 - [General guidelines for migration performance](sharepoint-online-and-onedrive-migration-speed.md)
