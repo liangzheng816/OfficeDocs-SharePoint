@@ -127,7 +127,7 @@ If you're planning to migrate over 100 TB, submit a support request, follow thes
 
 ## File share migration performance factors
 
-Throughput for file share migration is impacted by multiple factors. The chart below shows the relationship between the number of agents and throughput. Data thus far indicates no obvious throughput drop when agent count increases.
+Throughput for file share migration is impacted by multiple factors. The following chart shows the relationship between the number of agents and throughput. Data thus far indicates no obvious throughput drop when agent count increases.
 
 Each user account has a certain quota for API call rate and bandwidth. Using multiple credentials mitigates throttling.
 
