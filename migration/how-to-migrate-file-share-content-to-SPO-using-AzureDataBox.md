@@ -24,7 +24,7 @@ description: "Learn how to migrate your file share content to SharePoint in Micr
 
 # Migrate your file share content to Microsoft 365 using the Azure Data Box
 
-The Microsoft Azure Data Box is a service that lets you order a device from the Microsoft Azure portal. You can then copy terabytes of data from your servers to the device. After shipping it back to Microsoft, your data is copied into Azure.
+The Microsoft Azure Data Box is a service that lets you order a device from the Microsoft Azure portal. You can then copy terabytes of data from your servers to the device. After you ship it back to Microsoft, your data is copied into Azure.
 
 This article specifically talks about how to use the Azure Data Box to migrate your file share content to SharePoint in Microsoft 365.
 
