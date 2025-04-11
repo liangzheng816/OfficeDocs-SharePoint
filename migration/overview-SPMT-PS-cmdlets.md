@@ -60,7 +60,7 @@ The PowerShell cmdlets provide the same functionalities as the [SharePoint Migra
 
 ## Before you begin
 
-1. Provision your Microsoft 365 with either your existing active directory or one of the other options for adding accounts to Microsoft 365. See [Microsoft 365 integration with on-premises environments](/microsoft-365/enterprise/microsoft-365-integration) and [Add users to Microsoft 365 Apps for business](/microsoft-365/admin/add-users/add-users) for more information.
+1. Provision your Microsoft 365 with either your existing active directory or one of the other options for adding accounts to Microsoft 365. For more informatoin, see [Microsoft 365 integration with on-premises environments](/microsoft-365/enterprise/microsoft-365-integration) and [Add users to Microsoft 365 Apps for business](/microsoft-365/admin/add-users/add-users).
 2. Open the folder:
 
    *$env:UserProfile\Documents\WindowsPowerShell\Modules\Microsoft.SharePoint.MigrationTool.PowerShell*
@@ -82,7 +82,7 @@ This cmdlet creates and then initializes a migration session. The initialization
 
 - **[Add-SPMTTask](/powershell/module/spmt/Add-SPMTTask)**
 
-Use this cmdlet to add a new migration task to the registered migration session. Currently there are three different types of tasks allowed:  File share task, SharePoint task and JSON defined task.  Note:  Duplicate tasks aren't allowed.
+Use this cmdlet to add a new migration task to the registered migration session. Currently there are three different types of tasks allowed: File share task, SharePoint task, and JSON defined task.  Note:  Duplicate tasks aren't allowed.
   
 ### Remove a task
 
@@ -116,7 +116,7 @@ This cmdlet cancels the current migration.
 
 - **[Show-SPMTMigration](/powershell/module/spmt/Show-SPMTMigration)**
 
-If you start the migration in *NoShow* mode, running the **Show-SPMTMigration** cmdlet displays the task ID, data source location, target location and migration status in the console. Pressing Ctrl+C returns the display to *NoShow* mode.
+If you start the migration in *NoShow* mode, running the **Show-SPMTMigration** cmdlet displays the task ID, data source location, target location, and migration status in the console. Selecting Ctrl+C returns the display to *NoShow* mode.
 
 ### Remove the migration session
 
