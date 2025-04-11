@@ -63,7 +63,11 @@ As you plan your migration strategy, it's important to understand the modern arc
 
 **Modern team sites, pages and hubs**
 
-When moving your team site, we recommend that you create team sites in SharePoint that are **modern**. While this action doesn't automatically make them group or **Microsoft Teams** connected, you can connect them in the future. You can either create them using the user interface, using PowerShell, or by using a migration tool such as the SharePoint Migration Tool (SPMT), which can create these sites for you.
+When moving your team site, we recommend that you create team sites in SharePoint that are **modern**. While this action doesn't automatically make them group or **Microsoft Teams** connected, you can connect them in the future. You can either create them using:
+
+- The user interface
+- PowerShell
+- A migration tool such as the SharePoint Migration Tool (SPMT), which can create these sites for you.
 
 As you plan your migration, we recommend that a **hub site** the best way to create relationships between sites. We recommend taking this opportunity to bring those subsites to be their own site collections in order to connect them through a hub.
 
@@ -129,7 +133,7 @@ The following is a typical migration process that follows Microsoft's best pract
 
 ### Migration offerings
 
-Currently, you have a variety of migration offerings available to you:
+Currently, you have these migration offerings available to you:
 
 **Self service**
 
