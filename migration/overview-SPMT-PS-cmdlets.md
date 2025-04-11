@@ -82,8 +82,8 @@ This cmdlet creates and then initializes a migration session. The initialization
 
 - **[Add-SPMTTask](/powershell/module/spmt/Add-SPMTTask)**
 
-Use this cmdlet to add a new migration task to the registered migration session. Currently there are three different types of tasks allowed: File share task, SharePoint task, and JSON defined task.  Note:  Duplicate tasks aren't allowed.
-  
+Use this cmdlet to add a new migration task to the registered migration session. Currently there are three different types of tasks allowed: File share task, SharePoint task, and JSON defined task. **Note**: Duplicate tasks aren't allowed.
+
 ### Remove a task
 
 - **[Remove-SPMTTask](/powershell/module/spmt/Remove-SPMTtask)**
