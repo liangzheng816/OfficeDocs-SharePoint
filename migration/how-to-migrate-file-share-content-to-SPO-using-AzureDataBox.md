@@ -95,7 +95,7 @@ Take the following steps to copy data to your Data Box.
 1. [Order your Data Box](/azure/databox/data-box-deploy-ordered).
 2. After you receive your Data Box, [Set up the device](/azure/databox/data-box-deploy-set-up). You cable and configure your device.
 3. [Copy data to Data Box](/azure/databox/data-box-deploy-copy-data). While copying, make sure to:
-    - Use only the *StorageAccountName_AzFile* folder in the Data Box to copy the data. This location is important because you want the data to end up in an Azure file share, not in block blobs or page blobs.
+    - Copy the data using only the *StorageAccountName_AzFile* folder in the Data Box. This location is important because you want the data to end up in an Azure file share, not in block blobs or page blobs.
     - Copy files to a folder within *StorageAccountName_AzFile* folder. A subfolder within *StorageAccountName_AzFile* folder creates a file share. Files copied directly to *StorageAccountName_AzFile* folder fail, and are uploaded as block blobs. This location is the file share you mount on your VM in the next step.
 4. Run [Prepare to ship](/azure/databox/data-box-deploy-picked-up#prepare-to-ship) on your device. A successful 'prepare to ship' ensures a successful upload of files to Azure.
 5. [Return the device](/azure/databox/data-box-deploy-picked-up#ship-data-box-back).
