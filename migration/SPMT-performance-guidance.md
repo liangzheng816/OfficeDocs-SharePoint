@@ -39,7 +39,7 @@ When using either the SharePoint Migration Tool (SPMT) or running a Migration Ma
 
 During migration, information needs to be read from the source location. The speed at which that information can be read can impact your migration. We recommend doing further testing to understand the actual bottleneck.
 
-These elemenys usuall impact speed:
+These elements usually impact speed:
 
 - The local network speed between the migration computer and the file server.
 - The performance of the file server itself.
