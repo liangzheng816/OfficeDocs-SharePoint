@@ -98,8 +98,8 @@ During migration, it's common for your migration task to be throttled. Throttlin
 
 For more technical background and information, see:
 
-- [Migration API Overview](/sharepoint/dev/apis/migration-api-overview)
-- [Avoid getting throttled or blocked in SharePoint](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)
+- Migration information: [Migration API Overview](/sharepoint/dev/apis/migration-api-overview)
+- Throttling information: [Avoid getting throttled or blocked in SharePoint](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)
 
 ### After migration
 
