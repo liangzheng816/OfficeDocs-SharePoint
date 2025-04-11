@@ -125,7 +125,7 @@ Below is a typical migration process that follows Microsoft's best practices gui
 1. Select a small set of users for a pilot migration. The goals of the pilot are to validate the process, including performance and user communication, and to get a sample of user feedback.
 1. Run the pilot migration. Use an incremental migration method that runs in the background with no user impact. Follow this incremental migration with a cutover event in which you disable SharePoint Server team sites. Direct users to use the SharePoint environment. This method is preferred, as it reduces user impact.
 1. Assess the data from the pilot migration to determine the rest of your migration schedule, and make any needed changes. For example, you may update your user communication template to address questions you received from pilot users.
-1. Do the rest of the migration. Use an incremental migration method, just like the pilot. We recommend a single cutover event for all users to switch to to using their SharePoint sites. This approach helps prevent users from updating duplicate copies of content.
+1. Do the rest of the migration. Use an incremental migration method, just like the pilot. We recommend a single cutover event for all users to switch to using their SharePoint sites. This approach helps prevent users from updating duplicate copies of content.
 
 ### Migration offerings
 
