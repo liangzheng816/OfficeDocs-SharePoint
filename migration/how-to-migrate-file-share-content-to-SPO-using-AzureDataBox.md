@@ -64,7 +64,7 @@ Depending on the size of data you intend to transfer, you can choose from:
 #### For Data Box
 
 - Data Box is only available for Enterprise Agreement (EA), Cloud solution provider (CSP), or Pay-as-you-go subscription offers. If you don't have one of these subscriptions, contact Microsoft Support to upgrade your subscription, or see [Azure subscription pricing](https://azure.microsoft.com/pricing/).
-- There's a fee to use Data Box. Make sure to review the [Data Box pricing](https://azure.microsoft.com/pricing/details/databox/).
+- Data Box has a fee for use. Make sure to review the [Data Box pricing](https://azure.microsoft.com/pricing/details/databox/).
 
 #### For SharePoint
 
