@@ -23,10 +23,11 @@ description: "What is service prioritization in SharePoint and How to Leverage I
 
 # Service Prioritization in SharePoint
 
-Service prioritization in SharePoint is a powerful service designed to prioritize apps within your SharePoint Online tenants, particularly those considered business-critical. By leveraging service prioritization, organizations can ensure optimal performance, scalability, and reliability for key applications without requiring code modifications. Below, we explore what service prioritization entails and how to effectively leverage it within your organization.
+Service prioritization in SharePoint is a powerful service designed to prioritize apps within your SharePoint Online tenants, particularly those considered business-critical. By using service prioritization, organizations can ensure optimal performance, scalability, and reliability for key applications without requiring code modifications. Next, we explore what service prioritization entails and how to effectively use it within your organization.
 
 > [!NOTE]
-> This functionality is still rolling out and might not be fully enabled on your tenant yet. 
+> This functionality is still rolling out and might not be fully enabled on your tenant yet.
+
 ## What is Service Prioritization in SharePoint?
 
 Service prioritization in SharePoint enables businesses to assign a higher priority to their critical applications within a SharePoint environment. This prioritization ensures that these apps are the last to experience throttling in their tenant during periods of high resource usage. It allows the app to scale resource usage limits ([aka.ms/SPO429](https://aka.ms/spo429)) significantly—ranging from a minimum of 2x up to 10x when there are available resources. Additionally, these apps receive dedicated resource units that are separate from the general tenant limits, enhancing their reliability and performance.
@@ -50,7 +51,8 @@ To support prioritization, service prioritization in SharePoint operates on a me
 - **Other API Requests**: SharePoint APIs such as CSOM and REST are charged at $1.00 per 1,000 requests.
 
 > [!NOTE]
-> As stated above while this is part of the Microsoft Graph Metered API platform all API calls to SharePoint and OneDrive will be included. Price will vary based on the API used per pricing above.
+> As stated previously while this is part of the Microsoft Graph Metered API platform, all API calls to SharePoint and OneDrive are included. Price varies based on the API used per pricing above.
+
 ## How to Leverage Service Prioritization in SharePoint
 
 Administrators can onboard and manage service prioritization policies and app registrations using the [SharePoint Online PowerShell module](/powershell/module/sharepoint-online/index.md). Below are some key cmdlets:
@@ -73,8 +75,8 @@ Administrators can onboard and manage service prioritization policies and app re
 - Take time to understand the limits of the service at [https://aka.ms/spo429](https://aka.ms/spo429).
 - Regularly review resource usage and adjust quotas or policies as necessary to balance performance with cost efficiency.
 
-## Related Topics
+## Related articles
 
-- [Azure Cost Management Documentation](/azure/cost-management/index.md)
+- [Microsoft Cost Management Documentation](/azure/cost-management/index.md)
 - [Understanding SharePoint Throttling Limits](https://aka.ms/spo429)
 - [SharePoint PowerShell Cmdlet](/powershell/module/sharepoint-online/index.md)
