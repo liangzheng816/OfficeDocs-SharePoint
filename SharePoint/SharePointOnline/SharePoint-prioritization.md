@@ -77,6 +77,6 @@ Administrators can onboard and manage service prioritization policies and app re
 
 ## Related articles
 
-- [Microsoft Cost Management Documentation](/azure/cost-management/index.md)
+- [Microsoft Cost Management Documentation](/azure/cost-management)
 - [Understanding SharePoint Throttling Limits](https://aka.ms/spo429)
-- [SharePoint PowerShell Cmdlet](/powershell/module/sharepoint-online/index.md)
+- [SharePoint PowerShell Cmdlet](/powershell/module/sharepoint-online)
