@@ -14,6 +14,10 @@
       "source_path": "Sharepoint/SharepointOnline/onboard-employees.md",
       "redirect_url": "/viva/microsoft-viva-overview",
       "redirect_document_id": false
+    },{
+      "source_path": "SharePoint/SharePointOnline/sharepoint-app-prioritization.md",
+      "redirect_url": "SharePoint/SharePointOnline/SharePoint-prioritization",
+      "redirect_document_id": false
     },
     {
       "source_path": "Sharepoint/SharepointOnline/leadership-connection.md",

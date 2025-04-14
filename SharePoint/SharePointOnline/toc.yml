@@ -683,5 +683,5 @@ items:
       href: /Office365/Enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365
     - name: SharePoint Embedded
       href: /sharepoint/dev/embedded/overview
-    - name: SharePoint app prioritization
-      href: sharePoint-app-prioritization.md
+    - name: Service prioritization in SharePoint Online
+      href: SharePoint-prioritization.md
