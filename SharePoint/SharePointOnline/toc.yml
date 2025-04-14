@@ -684,4 +684,4 @@ items:
     - name: SharePoint Embedded
       href: /sharepoint/dev/embedded/overview
     - name: Service prioritization in SharePoint Online
-      href: SharePoint-prioritization.md
+      href: sharepoint-prioritization.md
