@@ -55,7 +55,7 @@ To support prioritization, service prioritization in SharePoint operates on a me
 
 ## How to Leverage Service Prioritization in SharePoint
 
-Administrators can onboard and manage service prioritization policies and app registrations using the [SharePoint Online PowerShell module](/powershell/module/sharepoint-online/index.md). Below are some key cmdlets:
+Administrators can onboard and manage service prioritization policies and app registrations using the [SharePoint Online PowerShell module](/powershell/module/sharepoint-online). Below are some key cmdlets:
 
 ### 1. Onboard on Service Prioritization in SharePoint Using PowerShell
 
