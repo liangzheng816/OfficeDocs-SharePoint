@@ -5,7 +5,7 @@ ms.author: heidip
 author: MicrosoftHeidi
 manager: jtremper
 recommendations: true
-ms.date: 9/13/2017
+ms.date: 04/09/2025
 audience: ITPro
 f1.keywords:
 - NOCSH
@@ -27,52 +27,50 @@ description: "Learn how to mitigate issues with sandbox solutions during migrati
 # Migration Assessment Scan: Sandbox Solution
 
 Learn how to mitigate issues with sandbox solutions during migration.
-  
+
 ## Overview
 
 > [!IMPORTANT]
-> SharePoint in Microsoft 365 does not support sandbox solutions. 
-  
-SharePoint doesn't support sandbox solutions. As a result, any functionality that is using the sandbox in your current environment needs to be replaced with a supported technology. See the Office Dev Center Patterns and Practices site for information on building customizations.
-  
-https://pnp.github.io/
-  
+> SharePoint in Microsoft 365 doesn't support sandbox solutions.
+
+SharePoint doesn't support sandbox solutions. As a result, any functionality using the sandbox in your current environment needs to be replaced with a supported technology. See the Office Dev Center Patterns and Practices site for information on building customizations:
+
+[https://pnp.github.io/](https://pnp.github.io/)
+
 ## Data Migration
 
 > [!IMPORTANT]
-> Any site that is configured as "No Access" (locked), in SharePoint will be skipped. To see a list of locked site collections see the Locked Sites scan output. 
-  
+> Any site configured as "No Access" (locked) in SharePoint is skipped. To see a list of locked site collections see the Locked Sites scan output.
+
 ## Scan Result Reports
 
-The following table describes the columns in the **SandboxSolution-detail.csv** report. 
-  
-|**Column**|**Description**|
-|:-----|:-----|
-|SiteId  <br/> |Unique identifier of the impacted site collection.  <br/> |
-|SiteURL  <br/> |URL to the impacted site collection.  <br/> |
-|SiteOwner  <br/> |Owner of the site collection.  <br/> |
-|SiteAdmins  <br/> |List of people listed as site collection administrators.  <br/> |
-|SiteSizeInMB  <br/> |Size of the size collection in megabytes [MB]  <br/> |
-|NumOfWebs  <br/> |Number of webs that exist in the site collection.  <br/> |
-|ContentDBName  <br/> |Name of the content database hosting the site collection.  <br/> |
-|ContentDBServerName  <br/> |SQL Server hosting the content database.  <br/> |
-|ContentDBSizeInMB  <br/> |Size of the content database hosting the site collection.  <br/> |
-|LastContentModifiedDate  <br/> |Date/Time the site collection had content modified.  <br/> |
-|TotalItemCount  <br/> |Total number of items found in the site collection.  <br/> |
-|Hits  <br/> |Number of requests logged for the site collection. Relies on data from the usage logging service. If the usage logging service is disabled this row shows N/A.  <br/> |
-|DistinctUsers  <br/> |Number of distinct users that have accessed the site collection. Relies on data from the usage logging service. If the usage logging service is disabled this row shows N/A.  <br/> |
-|DaysOfUsageData  <br/> |Number of days the usage logging service retains data. This provides context for Hits and DistinctUsers. For example, if this is 14 days, the Hits and DistinctUsers data is for the last 14 days.  <br/> |
-|SandboxSolutionName  <br/> |Sandbox solution name  <br/> |
-|WebApplicationURL  <br/> |Web application URL hosting the sandbox solution  <br/> |
-|SandboxSolutionID  <br/> |Sandbox solution ID  <br/> |
-|Signature  <br/> |Sandbox solution hash value  <br/> |
-|HasAssembly  <br/> |True if the solution contains assemblies; otherwise, false  <br/> |
-|SolutionStatus  <br/> |Sandbox solution status, which may be activated, deactivated, or disabled  <br/> |
-|SolutionType  <br/> |Sandbox solution type, which maybe "Custom Code", "Site Template", or "Design Package"  <br/> |
-|CreatedBy  <br/> |User identity who created the solution  <br/> |
-|CreatedDate  <br/> |Date when the solution was created  <br/> |
-|ModifiedBy  <br/> |User identity who last modified the solution  <br/> |
-|ModifiedDate  <br/> |Date when the solution was last modified  <br/> |
-|ScanID  <br/> |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool.  <br/> |
-   
+The following table describes the columns in the **SandboxSolution-detail.csv** report.
 
+|**Column** |**Description** |
+|:----------|:---------------|
+|SiteId |Unique identifier of the impacted site collection. |
+|SiteURL |URL to the impacted site collection. |
+|SiteOwner |Owner of the site collection. |
+|SiteAdmins |List of people listed as site collection administrators. |
+|SiteSizeInMB |Size of the size collection in megabytes (MB). |
+|NumOfWebs |Number of webs that exist in the site collection. |
+|ContentDBName |Name of the content database hosting the site collection. |
+|ContentDBServerName |SQL Server hosting the content database. |
+|ContentDBSizeInMB |Size of the content database hosting the site collection. |
+|LastContentModifiedDate |Date/Time the site collection had content modified. |
+|TotalItemCount |Total number of items found in the site collection. |
+|Hits |Number of requests logged for the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DistinctUsers |Number of distinct users that accessed the site collection. Relies on data from the usage logging service. This row shows N/A if the usage logging service is disabled. |
+|DaysOfUsageData  <br/> |Number of days the usage logging service retains data. This information provides context for Hits and DistinctUsers. For example, if this number is 14 days, the Hits and DistinctUsers data is for the last 14 days. |
+|SandboxSolutionName |Sandbox solution name. |
+|WebApplicationURL |Web application URL hosting the sandbox solution. |
+|SandboxSolutionID |Sandbox solution ID. |
+|Signature |Sandbox solution hash value. |
+|HasAssembly |True if the solution contains assemblies; otherwise, false. |
+|SolutionStatus |Sandbox solution status, which may be activated, deactivated, or disabled. |
+|SolutionType |Sandbox solution type, which may be **Custom Code**, **Site Template**, or **Design Package**. |
+|CreatedBy |User identity who created the solution. |
+|CreatedDate |Date when the solution was created. |
+|ModifiedBy |User identity who last modified the solution. |
+|ModifiedDate |Date when the solution was last modified. |
+|ScanID |Unique identifier assigned to a specific execution of the SharePoint Migration Assessment Tool. |

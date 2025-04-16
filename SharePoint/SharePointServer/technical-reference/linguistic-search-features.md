@@ -75,7 +75,7 @@ The following table shows the languages that SharePoint Server by default suppor
 |Hungarian|hu|Yes|Yes|Yes|No|Yes|Yes|Not applicable|No|No|
 |Icelandic|is|Yes|Yes|Yes|No|No|Yes|Not applicable|No|No|
 |Indonesian|id|Yes|Yes|Yes|No|No|Yes|Not applicable|No|No|
-|Irish Gaelic|ga|Yes|No|No|No|No|Yes|Not applicable|No|No|
+|Irish|ga|Yes|No|No|No|No|Yes|Not applicable|No|No|
 |Italian|it|Yes|Yes|Yes|No|Yes|Yes|Not applicable|Yes|Yes|
 |Japanese|ja|Yes|Yes|No|No|No|No|Not applicable|Yes|Yes|
 |Kannada|kn|Yes|Yes|Yes|No|No|Yes|Not applicable|No|No|

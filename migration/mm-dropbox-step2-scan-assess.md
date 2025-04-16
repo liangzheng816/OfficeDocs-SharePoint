@@ -25,28 +25,25 @@ description: "Step 2: Scan and assess Dropbox folders using Migration Manager."
 
 # Step 2: Scan and assess Dropbox folders
 
-After you connect to Dropbox, add the source paths to scan and assess your Dropbox folders.
+After you connect to Dropbox, add the tasks (source paths) to scan and assess your Dropbox folders.
 
-After you connect, scan and assess your Box user accounts.
-
-1. Select **Add folders** from the menu bar to choose how to add folders:</br> - **All new folders** to autodiscover all new users in Box</br>- **Single folder** for only one account, or </br>- **Multiple specific folders** to bulk upload folders by entering them into a CSV file to upload.
+1. Select **Add folders** from the menu bar to choose how to add folders:</br> - **All new folders** to autodiscover all new folders in Dropbox</br>- **Single folder** for only one account, or </br>- **Multiple specific folders** to bulk upload folders by entering them into a CSV file to upload.
 2. Choose to **Automatically start scanning now** or choose to scan later.
 3. Select **Add**.
-4. Highlight any or all of the accounts and then select **Scan** if you chose not to auto scan earlier.
+4. Highlight any or all of the accounts and then select **Scan** from the menu bar if you chose not to auto scan earlier.
+5. Once the scan is complete, a table summary displays to give you an at-a-glance overview of source content, scan status, etc.
+6. Review the scanned folders. Search for specific text, or select a filter to review the list more easily.
 
 >[!Important]
-> The total number can't exceed 50,000 tasks.
+> The total number of rows (tasks) in the scan list cannot exceed 50,000.
 
-5. Once the scan is complete, a table summary displays to give you an at-a-glance overview of your folders. The summary includes Folder item counts, migration readiness, and any issues that need attention.
-4. Review the scanned folders. Search for specific text, or select a filter to review the list more easily.
 
 ## Download reports
 
-Summary and detailed scan reports are available to assist you in troubleshooting. Download the generated reports and logs to investigate any possible issues that might block your migration.
+**Scan summary report** and **Scan detailed reports** are available to assist you in troubleshooting. [Download the generated reports](/sharepointmigration/mm-cloud-reports#download-scan-reports) to investigate any possible issues that might block your migration. 
 
-1. Once the scan is complete, select **Download summary report**.
+Check the [status code](/sharepointmigration/mm-cloud-reports#status-codes) in **Scan summary report** to address task-level errors. For file-level errors, refer to the [failure code (*ResultCode*)](/sharepointmigration/mm-cloud-reports#failure-codes) in the **Scan detailed report**.
 
-2. To download a detailed scan report for an individual account, select a single row, then select **Download scan log**.
 
 ## Managing Folders that contain large amounts of data
 
