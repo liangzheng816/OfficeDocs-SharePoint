@@ -31,7 +31,7 @@ When users share files and folders in Microsoft 365, a shareable link is created
       
   An *anyone* link is a transferrable, revocable secret key. It's transferrable because it can be forwarded to others. It's revocable because by deleting the link, you can revoke the access of everyone who got it through the link. It's secret because it can't be guessed or derived. The only way to get access is to get the link, and the only way to get the link is for somebody to give it to you. *Anyone* links can't be used with files in a Teams shared channel site.
 
-    Simply creating creating an *anyone* link doesn't make the associated content appear in search results, be accessible via Copilot, or immediately grant access to the content to everyone. An *anyone* link must be activated by clicking the link (redemption) before the shared content becomes searchable by the person in possession of the link.
+    Simply creating an *anyone* link doesn't make the associated content appear in search results, be accessible via Copilot, or immediately grant access to the content to everyone. An *anyone* link must be activated by clicking the link (redemption) before the shared content becomes searchable by the person in possession of the link.
 
 - *People in your organization* links work for only people inside your Microsoft 365 organization. (They don't work for guests in the directory, only members).  
 
