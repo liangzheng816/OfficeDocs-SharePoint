@@ -31,7 +31,7 @@ For example, if you changed a site address from https://<i></i>contoso.sharepoin
 In some cases, you might want to free up the old URL to use it for a new site. To do this, you need to delete the redirect.
 
 > [!NOTE]
-> After you delete a redirect, any request to that URL won't get redirected. This means that any bookmarks, links, or Shared With Me references will not be routed to the new URL.
+> After you delete a redirect, any request to that URL won't get redirected. This means that any bookmarks, links, or Shared With Me references aren't routed to the new URL.
 
 ## To remove a redirect 
 
