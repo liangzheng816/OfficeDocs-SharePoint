@@ -96,6 +96,8 @@ Set-SPOTenantRestrictedSearchMode 
 ```powershell
 Set-SPOTenantRestrictedSearchMode -Mode Enabled  
 ```
+> [!NOTE]
+> Once enabled, any new sites created are excluded unless they are added to the allowed list.
 
 Example 1 sets or enables the Restricted Tenant Search mode for the tenant.
 
@@ -155,7 +157,10 @@ This example lets the admin add the sites to the allowed list.
 ```powershell
 Add-SPOTenantRestrictedSearchAllowedList  -SitesListFileUrl C:\Users\admin\Downloads\UrlList.csv
 ```
-  
+> [!NOTE]
+>  To generate a list of all your SharePoint site URL's, navigate to your SharePoint online admin center, navigate to **Active Sites** and select **export**. The exported list includes classic sites as well.
+ Remove any sites from this list that you don't want indexed. You can include up to 100 URL's.
+
 This example lets the admin add the sites to the allowed list by giving a CSV file. Add the list of site URLs in URL column.
 
 **Parameters**
