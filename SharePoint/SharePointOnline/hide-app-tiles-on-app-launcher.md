@@ -38,7 +38,7 @@ By default, the OneDrive and SharePoint app tiles appear in the app launcher and
 ![Microsoft 365 start page with SharePoint selected](media/4ff2c093-2b26-4d28-a65b-4d02e66818df.png)
   
 > [!NOTE]
-> Hiding these services doesn't remove them for users. If users have saved the address of the service, they will still be able to access it. <br> If users click a tile for a service they don't have, they will see an Access Denied message.
+> Hiding these services doesn't remove them for users. If users have saved the address of the service, they'll still be able to access it. <br> If users select a tile for a service they don't have, they'll see an Access Denied message.
   
 ## To show or hide app tiles
 
