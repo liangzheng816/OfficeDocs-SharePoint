@@ -53,7 +53,7 @@ In some cases, you might want to free up the old URL to use it for a new site. T
 
 4. When prompted, confirm that you want to delete the redirect. 
 
-To confirm that the redirect has been deleted, browse to the URL. It should return a 404 error. You can also run `Get-SPOSite -Identity https://contoso.sharepoint.com/sites/OldSiteName`. It returns "we cannot get the site."
+To confirm that the redirect is deleted, browse to the URL. It should return a 404 error. You can also run `Get-SPOSite -Identity https://contoso.sharepoint.com/sites/OldSiteName`. It returns "we cannot get the site."
 
 > [!NOTE]
 > You might need to clear your browser history and cache before browsing to the URL. Otherwise, it may take longer for the redirect site deletion to reflect, depending on individual browser settings.
