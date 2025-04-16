@@ -97,7 +97,7 @@ Set-SPOTenantRestrictedSearchMode 
 Set-SPOTenantRestrictedSearchMode -Mode Enabled  
 ```
 > [!NOTE]
-> Once enabled, any new sites created are excluded unless they are added to the allowed list.
+> Once enabled, any new sites created are excluded unless they're added to the allowed list.
 
 Example 1 sets or enables the Restricted Tenant Search mode for the tenant.
 
