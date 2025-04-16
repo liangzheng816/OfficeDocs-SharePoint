@@ -1,5 +1,5 @@
 ---
-ms.date: 01/21/2025
+ms.date: 04/16/2025
 title: "Manage unlicensed OneDrive user accounts"
 ms.author: mactra
 author: MachelleTranMSFT
@@ -28,26 +28,28 @@ In this article, you learn how to identify, monitor, and manage unlicensed OneDr
 ## Enforcement of policy changes for unlicensed OneDrive accounts
 
 > [!IMPORTANT]
->
-> Enforcement will begin on January 27, 2025, and the process will roll out gradually over a few months. Admins should anticipate that it takes time for all unlicensed accounts to complete the enforcement process.
->
-> - Unlicensed OneDrive accounts subject to a retention policy, retention period, or legal hold will be automatically archived after 93 days of license removal. While these accounts remain visible to admins through administrative tools, neither admins nor end users have access to their content. Access stays restricted until administrators take specific actions. (Note these changes don't apply to EDU, GCC, or DoD customers.)
-> - Unlicensed accounts not covered by any retention policy or legal hold will be moved to the recycle bin after 93 days of license removal.
+> Enforcement began on January 27, 2025. The rollout has slowed to ensure a safe roll-out with sufficient time for admins to adjust. Admins should anticipate that it takes time for all unlicensed accounts to complete the enforcement process. The initial enforcement rollout will be complete by October 29, 2025.
 
-### Timeline for accounts unlicensed before February 17, 2025
+- Unlicensed OneDrive accounts subject to a retention policy, retention period, or legal hold will be automatically archived after 93 days of license removal. While these accounts remain visible to admins through administrative tools, neither admins nor end users have access to their content. Access stays restricted until administrators take specific actions. (Note these changes don't apply to EDU, GCC, or DoD customers.)
+- Unlicensed accounts not covered by any retention policy or legal hold will be moved to the recycle bin after 93 days of license removal.
 
-- April 25, 2025: By this date, all unlicensed accounts transition to read-only mode. Admins are advised to check after this date. Checking earlier can result in an incomplete status snapshot.
-- May 16, 2025: By this date, all unlicensed accounts are archived. Admins are advised to check after this date. Checking earlier can result in an incomplete status snapshot.
+### Timeline for accounts unlicensed before July 28, 2025
 
-### Timeline for accounts unlicensed after February 17, 2025
+- September 26, 2025: By this date, all unlicensed accounts transition to read-only mode. Admins are advised to check after this date. Checking earlier can result in an incomplete status snapshot.
 
-For accounts unlicensed after February 17, 2025, the account will be put into read-only mode on the 60th unlicensed day, and will be archived or moved to the recycle bin on the 93rd unlicensed day.
+- October 29, 2025: By this date, all unlicensed accounts are archived. Admins are advised to check after this date. Checking earlier can result in an incomplete status snapshot.
+
+### Timeline for accounts unlicensed after July 28, 2025
+
+For accounts unlicensed after July 28, 2025, the account will be put into read-only mode on the 60th unlicensed day, and will be archived or moved to the recycle bin on the 93rd unlicensed day.
 
 **Example:**
 
-- Unlicensed Date: March 1, 2025
-- Day 60: April 30, 2025. The account is placed in read-only mode.
-- Day 93: June 2, 2025: The account is either archived (if a retention policy is in place) or moved to the recycle bin (if no retention policy applies).
+- Unlicensed Date: October 1, 2025
+
+- Day 60: Nov 30, 2025. The account is placed in read-only mode.
+
+- Day 93: January 2, 2026: The account is archived. If the user is still active in Entra ID but the admin hasn't enabled billing, then this is also the date on which the account will begin the deprovisioning process.
 
 Admins are encouraged to monitor account statuses based on these timelines to ensure compliance and take any necessary actions.
 
@@ -64,7 +66,7 @@ You can also bulk assign licenses using either of the following methods:
 - [Assign licenses to user accounts in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users)
 - [Assign licenses to user accounts with PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell)
 
-**After the unlicensed OneDrive account archival** - If the archived account has an associated user as the owner (also known as the *primary site collection administrator*), the IT admin can give the user a valid license and the account is automatically reactivated within 24 to 48 hours. If the archived account doesn't have an associated user (for example, if the identity was deleted), then we recommend admins move any actively needed content to a SharePoint site or an active and licensed OneDrive account.  If the account is already archived and doesn't have an associated user, then the account needs to be reactivated before that data can be moved. For more information on licensing and active users in Microsoft 365, see [Assign or unassign licenses for users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
+**After the unlicensed OneDrive account archival** - If the archived account has an associated user as the owner (also known as the *primary site collection administrator*), the IT admin can give the user a valid license and the account is automatically reactivated within 24 to 48 hours. If the archived account doesn't have an associated user (for example, if the identity was deleted), then we recommend admins move any actively needed content to a SharePoint site or an active and licensed OneDrive account. If the account is already archived and doesn't have an associated user, then the account needs to be reactivated before that data can be moved. For more information on licensing and active users in Microsoft 365, see [Assign or unassign licenses for users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ### Delete unlicensed OneDrive account
 
@@ -78,7 +80,7 @@ Once you delete the unlicensed account, both the OneDrive account and its files 
 
 If no action is taken, the account remains archived through [Microsoft 365 Archive](/microsoft-365/syntex/archive/archive-overview). Archiving the account lets you keep the OneDrive account and its data for long periods of time in case you need to retrieve it later.
 
-For newly unlicensed OneDrive accounts, it will be after 93 days of the license removal or user deletion. For example, a OneDrive account that became unlicensed on August 1, 2025, will be inaccessible to users as of November 2, 2025. For unlicensed OneDrive accounts with license removal before October 26, 2024, the accounts will be archived sometime between late January 2025 to late March 2025.
+For newly unlicensed OneDrive accounts, it will be after 93 days of the license removal or user deletion. For example, a OneDrive account that became unlicensed on August 1, 2025, will be inaccessible to users as of November 2, 2025. 
 
 ### Access unlicensed OneDrive account
 
@@ -125,22 +127,23 @@ You can identify unlicensed OneDrive accounts using the SharePoint admin center.
 
    The following table provides more information on data shown in the unlicensed OneDrive accounts report:
 
-   |Column|Description|
-   |---|---|
-   | Unlicensed accounts | Total number of OneDrive accounts that aren't licensed as of the date the report is generated.|
-   | Storage used | Total storage consumed by these unlicensed OneDrive accounts as of the report's date.|
-   | Retention period | Unlicensed accounts with a [set retention period](set-retention.md) during the process of license removal or user account deletion. The retention period is honored, and the content remains in an archived state until the period expires.|
-   | Retention policy | Unlicensed accounts subject to a [retention policy](/purview/retention) set up in Microsoft Purview. The retention policy is honored, and the content remains in an archived state until the policy expires.|
-   | Active user with no license | Accounts where the user's license was removed, but the account wasn't deleted as part of the [user deletion process](/microsoft-365/admin/add-users/delete-a-user). Starting in January 2025, users who aren't assigned a license, but are still considered active in the system, are archived on the 93rd unlicensed day. If unlicensed billing is enabled, then these archived accounts remain in the Archive state indefinitely, otherwise they're deleted. |
-   | Duplicate account | Unlicensed accounts created when an employee transfers to a different country/region, or firm within the organization. If these duplicate accounts are unnecessary, we recommend using the downloadable CSV from the SharePoint admin center to identify and delete them. If no action is taken, the accounts are automatically archived starting in January 2025 and incurs archive charges.|
-   | Unlicensed reason | 'No owner' – There's no owner assigned to the OneDrive account, meaning that no license can be associated with this account.|
-   ||'Owner deleted from Entra ID' – The assigned owner was deleted, thus there's no license associated with this account.|
-   ||'License removed by admin' – The owner is present in Entra ID, but the owner’s license has been removed from the account.|
-   ||'Duplicate account' – The owner has multiple OneDrive accounts associated with their identity. The duplicate account isn't the primary OneDrive account associated with the owner’s identity. All nonprimary accounts associated with the owner are considered unlicensed.|
-   |Deletion blocked by|'Retention period' – The OneDrive account has been market for deletion but is within the global OneDrive account retention period, as defined by the [OneDrive retention period setting](set-retention.md). Shortening the retention period helps reduce unlicensed OneDrive accounts being retained for this reason.|
-||'Retention policy' – A retention policy, a legal hold, or a compliance hold defined in Purview is stopping this account’s contents from being deleted. The retention policy might be applied to only a subset of the account’s contents, which would prevent the entire OneDrive account from being deleted. Modify your Purview retention or hold requirements to reduce OneDrive accounts held for this reason.|
-||'Owner active in Entra ID' – The OneDrive account’s owner is still active in Entra ID, causing the account to not be deleted. When unlicensed OneDrive account enforcement begins, these accounts will be deleted after the 93rd unlicensed day and will follow the usual deprovisioning flow including honoring the retention period and any Purview retention or hold requirements.|
-|| 'Restored site' – This account was restored from the site recycle bin by an IT administrator. Since the account was intentionally restored, it will no longer be deleted automatically.|
+| Column | Description |
+|---|---|
+| Unlicensed accounts | Total number of OneDrive accounts that aren't licensed as of the date the report is generated. |
+| Storage used | Total storage consumed by these unlicensed OneDrive accounts as of the report's date. |
+| Retention period | Unlicensed accounts with a set-retention.md during the process of license removal or user account deletion. The retention period is honored, and the content remains in an archived state until the period expires. |
+| Retention policy | Unlicensed accounts subject to a /purview/retention set up in Microsoft Purview. The retention policy is honored, and the content remains in an archived state until the policy expires. |
+| Active user with no license | Accounts where the user's license was removed, but the account wasn't deleted as part of the /microsoft-365/admin/add-users/delete-a-user. Starting in January 2025, users who aren't assigned a license, but are still considered active in the system, are archived on the 93rd unlicensed day. If unlicensed billing is enabled, then these archived accounts remain in the Archive state indefinitely, otherwise they're deleted. |
+| Duplicate account | Unlicensed accounts created when an employee transfers to a different country/region, or firm within the organization. If these duplicate accounts are unnecessary, we recommend using the downloadable CSV from the SharePoint admin center to identify and delete them. If no action is taken, the accounts are automatically archived starting in January 2025 and incurs archive charges. |
+| Unlicensed reason | '*No owner*' – There's no owner assigned to the OneDrive account, meaning that no license can be associated with this account. |
+|  | '*Owner deleted from Entra ID*' – The assigned owner was deleted, thus there's no license associated with this account. |
+|  | '*License removed by admin*' – The owner is present in Entra ID, but the owner’s license has been removed from the account. |
+|  | '*Duplicate account*' – The owner has multiple OneDrive accounts associated with their identity. The duplicate account isn't the primary OneDrive account associated with the owner’s identity. All nonprimary accounts associated with the owner are considered unlicensed. |
+| Deletion blocked by | '*Retention period*' – The OneDrive account has been marked for deletion but is within the global OneDrive account retention period, as defined by the set-retention.md. Shortening the retention period helps reduce unlicensed OneDrive accounts being retained for this reason. |
+|  | '*Retention policy*' – A retention policy, a legal hold, or a compliance hold defined in Purview is stopping this account’s contents from being deleted. The retention policy might be applied to only a subset of the account’s contents, which would prevent the entire OneDrive account from being deleted. Modify your Purview retention or hold requirements to reduce OneDrive accounts held for this reason. |
+|  | '*Owner active in Entra ID*' – The OneDrive account’s owner is still active in Entra ID, causing the account to not be deleted. When unlicensed OneDrive account enforcement begins, these accounts will be deleted after the 93rd unlicensed day and will follow the usual deprovisioning flow including honoring the retention period and any Purview retention or hold requirements. |
+|  | '*Restored site*' – This account was restored from the site recycle bin by an IT administrator. Since the account was intentionally restored, it will no longer be deleted automatically. |
+
 
 ### View more details on unlicensed OneDrive accounts
 
@@ -159,20 +162,20 @@ You can view details on all unlicensed OneDrive accounts, even ones that aren't 
    - Reactivate accounts
 
 > [!NOTE]
-> Admins can reactivate accounts from the detailed report.  Accounts selected in the detailed report will display a 'Reactivate' button if the account is archived and billing for Unlicensed OneDrive accounts has been enabled. Alternatively, admins can use PowerShell to reactivate accounts with the *Set-SPOSiteArchiveState* cmdlet. 
+> Admins can reactivate accounts from the detailed report. Accounts selected in the detailed report displays a 'Reactivate' button if the account is archived and billing for Unlicensed OneDrive accounts has been enabled. Alternatively, admins can use PowerShell to reactivate accounts with the *Set-SPOSiteArchiveState* cmdlet. 
 
 ## Charges from archived accounts
 
 Once billing for unlicensed OneDrive accounts has been enabled, archived unlicensed OneDrive accounts which aren't deleted will begin to incur charges for both monthly storage and ad-hoc account reactivation.
 
 > [!NOTE]
-> Billing enablement refers to turning on the Unlicensed OneDrive accounts billing toggle, which can only be enabled once a general pay-as-you-go billing method has been set up. Billing starts when the billing enablement for unlicensed OneDrive accounts is activated, not when an account is reactivated. Reactivation requires billing enablement, and once it is activated, storage charges begin.
+> Billing enablement refers to turning on the Unlicensed OneDrive accounts billing toggle, which can only be enabled once a general pay-as-you-go billing method has been set up. Billing starts when the billing enablement for unlicensed OneDrive accounts is activated, not when an account is reactivated. Reactivation requires billing enablement, and once it's activated, storage charges begin.
 
 :::image type="content" source="media/unlicensed-onedrive/0-unlicensed-accounts-enablement.png" alt-text="screenshot of billing enablement for unlicensed accounts." lightbox="media/unlicensed-onedrive/0-unlicensed-accounts-enablement.png":::
 
 If the billing is put down to reactivate one particular unlicensed account, the reactivation fee is applied for $0.60/GB for that account, and from that month onward, the storage fee of $0.05/GB/Month is applicable for all unlicensed accounts within the organization for longer than 93 days.
 
-For example, if an organization has 100 unlicensed OneDrive accounts, each consuming 1 TB for a total of 100 TB, and enforcement occurs between January and March 2025, the 100 unlicensed accounts are automatically archived. If the organization needs to reactivate a specific account in October 2025 and set up billing, they incur the following costs:
+For example, if an organization has 100 unlicensed OneDrive accounts, each consuming 1 TB for a total of 100 TB, and enforcement occurs between January and October 2025, the 100 unlicensed accounts are automatically archived. If the organization needs to reactivate a specific account in December 2025 and set up billing, they incur the following costs:
 
 - A one-time reactivation fee of $0.60/GB for 1TB, totaling $614.40.
 - A monthly storage fee of $0.05/GB for 100TB, amounting to $5,120/month starting from October 2025.
@@ -182,7 +185,7 @@ For example, if an organization has 100 unlicensed OneDrive accounts, each consu
 
 ## Use Microsoft Purview in Archived State
 
-Archived OneDrive accounts fully honor retention policies, settings, and litigation hold and eDiscovery hold. For example, if your company has a five-year retention policy, it remains unchanged whether the OneDrive account is active or archived. Archiving doesn't reset the timeline of the retention policy or holds.
+Archived OneDrive accounts fully honor retention policies, settings, and litigation hold and eDiscovery hold. For example, if your company has a five-year retention policy, it remains unchanged whether the OneDrive account is active or archived. Archiving doesn't reset the timeline of the retention policy or holds. 
 
 Microsoft Purview eDiscovery and Content Search are still discoverable in archived content. Exporting the content that's supporting the search results doesn't require manual reactivation of the archived account, and it takes up to 24 hours to complete.
 
@@ -254,11 +257,11 @@ As an example, if the billing is put down to reactivate one particular unlicense
 
 **11. Is there any charge to use the eDiscovery Hold feature?**
 
-**Answer:** We honor eDiscovery holds to their full extent and aren't introducing any new charges for eDiscovery searches or exports. eDiscovery Hold works the same way as retention policy and legal hold. If billing is enabled for unlicensed OneDrive accounts, then you'll be charged for the monthly storage of archived unlicensed accounts, but there will be no additional charges for eDiscovery actions. 
+**Answer:** We honor eDiscovery holds to their full extent and aren't introducing any new charges for eDiscovery searches or exports. eDiscovery Hold works the same way as retention policy and legal hold. If billing is enabled for unlicensed OneDrive accounts, then you are charged for the monthly storage of archived unlicensed accounts, but there will be no additional charges for eDiscovery actions.
 
 **12. What's the process to relicense an account once it's archived?**
 
-**Answer:** If the archived account has an associated user, the IT admin can give the user a valid license and the account automatically reactivates within 24 hours. If the archived account doesn't have an associated user (for example, if the identity was deleted), then we recommend admins move any actively needed content to a SharePoint site or an active and licensed OneDrive account.
+**Answer:** If the archived account has an associated user, the IT admin can give the user a valid license and the account automatically reactivates within 48 hours. If the archived account doesn't have an associated user (for example, if the identity was deleted), then we recommend admins move any actively needed content to a SharePoint site or an active and licensed OneDrive account. The reactivation of the archived account happens automatically, even if unlicensed OneDrive account billing isn't enabled.  
 
 **13. If a change is made to retention policies, will that change sync down to the archived sites?**
 
@@ -266,15 +269,19 @@ As an example, if the billing is put down to reactivate one particular unlicense
 
 **14. Why are there two different report pages with different numbers about unlicensed accounts?**
 
-**Answer:** The [top-level report page](http://spo.ms/admin#/oneDriveAccounts) shows you insights and lets you download the list of accounts which are at least 93 days unlicensed. This page directly indicates the amount of storage that will be billed if you have enabled billing.  The [detailed report page](http://spo.ms/admin#/oneDriveAccounts/management) is linked from the top-level report page, and indicates all accounts that are currently unlicensed, even if they have been unlicensed for fewer than 93 days.  
+**Answer:** The [top-level report page](http://spo.ms/admin#/oneDriveAccounts) shows you insights and lets you download the list of accounts which are at least 93 days unlicensed. This page directly indicates the amount of storage that will be billed if you have enabled billing. The [detailed report page](http://spo.ms/admin#/oneDriveAccounts/management) is linked from the top-level report page, and indicates all accounts that are currently unlicensed, even if they have been unlicensed for fewer than 93 days.  
 
-**15. Why is the '*deletion scheduled on*' column empty in my CSV export of unlicensed accounts?**
+**15. Why is the *"deletion scheduled on"* column empty in my CSV export of unlicensed accounts?**
 
-**Answer:** "_Deletion scheduled on_" refers to when the system will try to delete the account next.  It takes into account the retention period of the unlicensed OneDrive account. This property may be empty if there is a hold or retention policy applied to the account.  Additionally, the column will be empty for users who are still active in Entra ID until the 'deletion' part of the enforcement rollout is complete.  If you delete the active user from Entra ID, and there's no retention policy or hold applied, then the "_Deletion scheduled on_" column will be populated within 7 days.
+**Answer:** *"Deletion scheduled on"* refers to when the system tries to delete the account next. It takes into account the retention period of the unlicensed OneDrive account. This property may be empty if there's a hold or retention policy applied to the account. Additionally, the column is empty for users who are still active in Entra ID until the 'deletion' part of the enforcement rollout is complete. If you delete the active user from Entra ID, and there's no retention policy or hold applied, then the "_Deletion scheduled on_" column will be populated within 7 days.
 
 **16. Will the unlicensed account enforcement override existing read-only or NoAccess settings which are already applied to my OneDrive accounts?**
 
-**Answer:** No. When enforcing unlicensed OneDrive accounts, the system will not override existing read-only or NoAccess modes.  When the system tries to put an account into read-only mode, it will skip the account if the account is already in read-only or NoAccess mode.  When the account gets Archived, it will retain any read-only and NoAccess settings which the admin applied, which will take effect if the account is reactivated. 
+**Answer:** No. When enforcing unlicensed OneDrive accounts, the system won't override existing read-only or NoAccess modes. When the system tries to put an account into read-only mode, it skips the account if the account is already in read-only or NoAccess mode. When the account gets Archived, it will retain any read-only and NoAccess settings which the admin applied, which will take effect if the account is reactivated. 
+
+**17. Will an account get enforced if the site 'owner' property (also known as the primary site collection admin) has been modified from the original user?**
+
+**Answer:** No. Modifying the 'owner' property of a OneDrive account to any user or group other than the user who the account was provisioned for results in an unsupported state of the OneDrive account. This can cause many issues for the account. However, the unlicensed enforcement effort doesn't utilize the 'owner' property to validate licensing. Therefore, modifying the 'owner' property, while generally not a supported change, won't directly cause an account to be considered unlicensed. 
 
 ## Related topics
 
