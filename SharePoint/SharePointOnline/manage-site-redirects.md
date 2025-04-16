@@ -24,9 +24,9 @@ description: "This article contains information on how to manage site redirects 
 
 # Manage site redirects 
 
-As part of [changing a SharePoint site address](change-site-address.md), [moving a site to a different geo location](/office365/enterprise/move-sharepoint-between-geo-locations), or [swapping a site](modern-root-site.md#replace-your-root-site), we automatically create redirects to ensure that links pointing to the prior URL continue to work. These redirects are sites that use a special site template at the prior site URL.
+When you [change a SharePoint site address](change-site-address.md), such as [moving a site to a different geo location](/office365/enterprise/move-sharepoint-between-geo-locations), or [swapping a site](modern-root-site.md#replace-your-root-site), we automatically create redirects to ensure that prior URLs continue to work. These redirects are sites that use a special site template at the prior site URL.
 
-For example, if you changed a site address from https://<i></i>contoso.sharepoint.<i></i>com/sites/*OldSiteName* to https://<i></i>contoso.sharepoint.<i></i>com/sites/*NewSiteName*, or if you moved a site from https://<i></i>*contoso*.sharepoint.<i></i>com/sites/SiteName to https://<i></i>*contosoEUR*.sharepoint.<i></i>com/sites/SiteName, we'll place a redirect (Template type REDIRECTSITE#0) at the old URL, which contains special headers and logic to redirect your browser requests to the new site.
+For example, if you changed a site address from https://<i></i>contoso.sharepoint.<i></i>com/sites/*OldSiteName* to https://<i></i>contoso.sharepoint.<i></i>com/sites/*NewSiteName*, or if you moved a site from https://<i></i>*contoso*.sharepoint.<i></i>com/sites/SiteName to https://<i></i>*contosoEUR*.sharepoint.<i></i>com/sites/SiteName, we place a redirect (Template type REDIRECTSITE#0) at the old URL. This redirect contains special headers and logic to redirect your browser requests to the new site.
 
 In some cases, you might want to free up the old URL to use it for a new site. To do this, you need to delete the redirect.
 
