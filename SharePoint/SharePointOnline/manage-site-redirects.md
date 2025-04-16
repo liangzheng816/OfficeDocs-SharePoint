@@ -63,6 +63,6 @@ To confirm that the redirect has been deleted, browse to the URL. It should retu
 Run the following command.
  
  ```PowerShell
- Get-SPOSite -Template REDIRECTSITE#0
+ Get-SPOSite -Template REDIRECTSITE
  ```
 
