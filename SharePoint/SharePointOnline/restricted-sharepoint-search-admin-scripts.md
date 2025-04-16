@@ -71,7 +71,7 @@ Get-SPOTenantRestrictedSearchMode
 Get-SPOTenantRestrictedSearchMode
 ```
 
-This example lets the admin get the existing allowed list in the tenant. Result can be ‘Enabled’ or ‘Disabled’ based on the current setting.
+This example lets the admin get the existing allowed list in the tenant. Result can be "Enabled" or "Disabled" based on the current setting.
 
 ## Enable or disable the Restricted Search setting
 
