@@ -158,8 +158,8 @@ This example lets the admin add the sites to the allowed list.
 Add-SPOTenantRestrictedSearchAllowedList  -SitesListFileUrl C:\Users\admin\Downloads\UrlList.csv
 ```
 > [!NOTE]
->  To generate a list of all your SharePoint site URL's, navigate to your SharePoint online admin center, navigate to **Active Sites** and select **export**. The exported list includes classic sites as well.
- Remove any sites from this list that you don't want indexed. You can include up to 100 URL's.
+>  To generate a list of all your SharePoint site URLs, navigate to your SharePoint online admin center, navigate to **Active Sites** and select **export**. The exported list includes classic sites as well.
+ Remove any sites from this list that you don't want indexed. You can include up to 100 URLs.
 
 This example lets the admin add the sites to the allowed list by giving a CSV file. Add the list of site URLs in URL column.
 
