@@ -28,7 +28,7 @@ When you [change a SharePoint site address](change-site-address.md), such as [mo
 
 For example, if you changed a site address from https://<i></i>contoso.sharepoint.<i></i>com/sites/*OldSiteName* to https://<i></i>contoso.sharepoint.<i></i>com/sites/*NewSiteName*, or if you moved a site from https://<i></i>*contoso*.sharepoint.<i></i>com/sites/SiteName to https://<i></i>*contosoEUR*.sharepoint.<i></i>com/sites/SiteName, we place a redirect (Template type REDIRECTSITE#0) at the old URL. This redirect contains special headers and logic to redirect your browser requests to the new site.
 
-In some cases, you might want to free up the old URL to use it for a new site. To do this, you need to delete the redirect.
+In some cases, you might want to free up the old URL to use it for a new site. To free up the old URL, you need to delete the redirect.
 
 > [!NOTE]
 > After you delete a redirect, any request to that URL won't get redirected. This means that any bookmarks, links, or Shared With Me references aren't routed to the new URL.
