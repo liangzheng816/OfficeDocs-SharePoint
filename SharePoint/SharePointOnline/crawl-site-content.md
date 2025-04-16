@@ -5,7 +5,7 @@ ms.author: ruihu
 author: maggierui
 manager: jtremper
 recommendations: true
-ms.date: 4/24/2024
+ms.date: 4/15/2025
 audience: End User
 f1.keywords:
 - NOCSH
@@ -58,7 +58,7 @@ See also: [Enable content on a site to be searchable](make-site-content-searchab
 
 1. On the site, go to the list or library that you want to reindex. 
     
-1. In the upper right corner, selet **Settings**, and then choose **Library Settings** or **List Settings**. 
+1. In the upper right corner, select **Settings**, and then choose **Library Settings** or **List Settings**. 
 
 1. On the Settings page, under **General Settings**, choose **Advanced settings**. If you don't see the **Settings** page, you may need to choose **More library settings** or **More List settings**.
     

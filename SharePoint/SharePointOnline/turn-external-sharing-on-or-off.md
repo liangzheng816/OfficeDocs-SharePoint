@@ -1,5 +1,5 @@
 ---
-ms.date: 06/24/2024
+ms.date: 04/15/2025
 title: Manage sharing settings for SharePoint and OneDrive in Microsoft 365
 ms.reviewer: srice
 ms.author: ruihu
@@ -101,7 +101,7 @@ This setting is for your organization overall. Each site has its own sharing set
 
 ### More external sharing settings
 
-**Limit external sharing by domain**
+#### Limit external sharing by domain
 
 This is useful if you want to limit sharing with particular partners, or help prevent sharing with people at certain organizations. The organization-level setting on this page affects all SharePoint sites and each user's OneDrive. To use this setting, list the domains (maximum of 5000) in the box, using the format *domain.com*. To list multiple domains, press Enter after adding each domain. 
 
@@ -109,19 +109,19 @@ You can also limit external sharing by domain by using the [Set-SPOTenant](/powe
 
 [Allowed or blocked domains in Microsoft Entra ID](/azure/active-directory/external-identities/allow-deny-list) also affect SharePoint and OneDrive site sharing (always) and file and folder sharing (if Azure B2B collaboration is enabled). Be sure to review Microsoft Entra collaboration restrictions as part of your SharePoint and OneDrive sharing setup.
 
-**Allow only users in specific security groups to share externally**
+#### Allow only users in specific security groups to share externally
 
 For info about this setting, see [Manage security groups](./manage-security-groups.md).
 
-**Allow guests to share items they don't own**
+#### Allow guests to share items they don't own
 
 By default, guests must have full control permission to share items externally.
 
-**Guest access to a site or OneDrive will expire automatically after this many days**
+#### Guest access to a site or OneDrive will expire automatically after this many days
 
 If your administrator has set an expiration time for guest access, each guest that you invite to the site or with whom you share individual files and folders will be given access for a certain number of days. For more information visit, [Manage guest expiration for a site](https://support.microsoft.com/en-us/office/manage-guest-expiration-for-a-site-25bee24f-42ad-4ee8-8402-4186eed74dea)
 
-**People who use a verification code must reauthenticate after this many days**
+#### People who use a verification code must reauthenticate after this many days
 
 If people who use a verification code have selected to "stay signed in" in the browser, they must prove they can still access the account they used to redeem the sharing invitation by entering a code sent to that account. If Azure B2B collaboration is enabled, the [Microsoft Entra setting](/azure/active-directory/external-identities/one-time-passcode) is used instead of this setting.
 
@@ -157,14 +157,14 @@ If you are using file requests, the link permissions must be set for **View and 
 
 ![Screenshot of other sharing settings.](media/othersettings.png)
 
-**Show owners the names of people who viewed their files in OneDrive**
+### Show owners the names of people who viewed their files in OneDrive
 
 This setting lets you control whether the owner of a shared file can see on the file card the people who only view (and don't edit) the file in OneDrive. The file card appears when users hover over a file name or thumbnail in OneDrive. The info includes the number of views on the file, the number of people who viewed it, and the list of people who viewed it. To learn more about the file card, see [See files you shared in OneDrive](https://support.office.com/article/6b67b82b-9c5c-4348-ab10-fd5b0d8df76c). 
 
 > [!NOTE]
 > This setting is selected by default. If you clear it, file viewer info is still recorded and available to you to audit as an admin. OneDrive owners can also still see people who have viewed their shared Office files by opening the files from Office.com or from the Office desktop apps.
 
-**Let site owners choose to display the names of people who viewed files or pages in SharePoint**
+### Let site owners choose to display the names of people who viewed files or pages in SharePoint
 
 This setting lets you specify whether site owners can allow users who have access to a file, page, or news post to see on the file card who has viewed the item. 
 
@@ -174,7 +174,8 @@ This setting is turned on by default at the organization level and off at the si
 
 > [!NOTE]
 > Historical data is included when this setting is enabled. Likewise, if the setting is turned off and back on at the organization level or site level, the views during the off period are included in the history.
-**Use short links for sharing files and folders**
+
+### Use short links for sharing files and folders
 
 Uses a shorter link format for sharing files and folders. This may be useful if you have integrations that require a shorter URL.
 
