@@ -32,13 +32,18 @@ Help us improve Migration Manager by sending your suggestions and reporting bugs
 ## Coming soon
 - **Simplified Google migration.** Simplify migration flow for SMBs migrating from Google Drive.
 
+## April 2025
+
+- **Delta sync settings**. Migration Manager now enables customization of file transfer behaviors for incremental migrations. [Learn more](/sharepointmigration/mail-notification).
+- **Email notification**. Migration Manager now allows you to customize email notifications for all cloud migration scenarios to track your migration progress. [Learn more](/sharepointmigration/mail-notification).
+
 
 ## March 2025
 
 - **Certificate Based Authentication**. Migration Manager allows users to use Azure App Registrations with certificate authentication as the identity model to migrate File Share. [Learn more](/sharepointmigration/mm-with-cba).
 
 ## February 2025
-- **Google file version support.** Migration Manager now supports migrating version histories along with each of the files from Google. [Learn more](/sharepointmigration/file-versions).
+- **Google file version support.** Migration Manager now supports migrating version histories along with each of the files from Google. [Learn more](/sharepointmigration/mm-delta-sync).
 
 ## December 2024
 - **Large file support for cloud migrations**. All migration scenarios now support migrating files up to 250 GB.
