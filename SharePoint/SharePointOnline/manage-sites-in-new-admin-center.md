@@ -1,5 +1,5 @@
 ---
-ms.date: 03/21/2024    
+ms.date: 04/17/2025    
 title: "Manage sites in the SharePoint admin center"
 ms.reviewer: daminasy
 ms.author: ruihu
@@ -63,9 +63,9 @@ The <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**
    |301 |REDIRECTSITE# |Redirect site |
    |70 |CSPCONTAINER# |CSP container |
 
-Note that you may see differences between the sites in the active sites list and those listed in the [SharePoint site usage report in the Microsoft 365 admin center](/microsoft-365/admin/activity-reports/sharepoint-site-usage-ww) because the site templates and URLs listed above are included in the SharePoint site usage report.
+Note that you may see differences between the sites in the active sites list and those listed in the [SharePoint site usage report in the Microsoft 365 admin center](/microsoft-365/admin/activity-reports/sharepoint-site-usage-ww) because both the site templates and URLs listed above are included in the SharePoint site usage report.
 
-For more info about tasks on the Active sites page, see:
+For more info about tasks on the **Active sites** page, see:
 
 - [Create a site](create-site-collection.md)
 - [Register a site as a hub site](create-hub-site.md) and [Unregister a site as a hub site](remove-hub-site.md)
@@ -99,7 +99,7 @@ For all site types except channel sites, you can add or remove site admins and c
 ## View site details
 <a name="viewsitedetails"> </a>
 
-For more info about a site, select the site name or click anywhere on the site row except on the URL column to open the details panel or for channel sites select the link in the **Channel sites** column and then select the site name.
+For more info about a site, select the site name or select anywhere on the site row except on the URL column to open the details panel. For channel sites, select the link in the **Channel sites** column and then select the site name.
   
 ![Screenshot of the General tab of the details panel](media/site-details.png)
 
