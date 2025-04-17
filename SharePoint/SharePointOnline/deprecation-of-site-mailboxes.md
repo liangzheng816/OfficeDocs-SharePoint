@@ -18,7 +18,7 @@ description: "In this article, you'll learn how to identify and remove site mail
 
 # Retirement of site mailboxes
 
-The site mailboxes are being retired and will be out of service and/or removed. Please use the following instructions to identify, backup, and delete site mailboxes.
+The site mailboxes are being retired and will be out of service and/or removed. Use the following instructions to identify, backup, and delete site mailboxes.
 
 ## To view a list of site mailboxes
 
@@ -29,9 +29,9 @@ Get-SiteMailbox -BypassOwnerCheck -ResultSize Unlimited | ft Name, WhenCreated, 
 ```
 
 The 'create' date shows the recently created site mailboxes. 
-The 'ClosedTime' in the output of 'Get-SiteMailbox' refers to the status of the associated SharePoint site. The companies set a SharePoint policy to close sites after a period of time or provide users permission to close the sites. Closing the site generally means it is out of service. Closed site mailboxes are removed from view in the Outlook desktop client, but they are available in the Outlook Web Access.
+The 'ClosedTime' in the output of 'Get-SiteMailbox' refers to the status of the associated SharePoint site. The companies set a SharePoint policy to close sites after a period of time or provide users permission to close the sites. Closing the site generally means it's out of service. Closed site mailboxes are removed from view in the Outlook desktop client, but they're available in the Outlook Web Access.
 
-For more information see, [Use policies for site closure and deletion](https://support.office.com/article/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5).
+For more information, see, [Use policies for site closure and deletion](https://support.office.com/article/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5).
 
 ## To identify active site mailboxes
 
@@ -58,30 +58,28 @@ Get-SiteMailbox -BypassOwnerCheck -ResultSize unlimited | ft Name, Owners
 
 ## Export site mailboxes through PST (Manually)
 
-You must have [Microsoft 365 admin permissions](/microsoft-365/admin/add-users/assign-admin-roles) to access the [Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center). 
+You must have [Microsoft 365 admin permissions](/microsoft-365/admin/add-users/assign-admin-roles) to access the [Microsoft Purview portal](/purview/purview-portal). 
 
 For more information, see [Permissions and sharing](./modern-experience-sharing-permissions.md).
 
-1. Go to [https://compliance.microsoft.com/](https://compliance.microsoft.com/) and sign in with an account that has [admin permissions](./sharepoint-admin-role.md) for your organization.
+1. Go to [https://purview.microsoft.com/](https://purview.microsoft.com/) and sign in with an account that has [admin permissions](./sharepoint-admin-role.md) for your organization.
 
-2. In the Microsoft Purview compliance portal Home page, navigate to **Show all** > **eDiscovery** > **Core**.
+2. In the Microsoft Purview portal Home page, navigate to **eDiscovery**.
 
-   The **eDiscovery (Standard)** page is displayed.
-
-3. Click **Create a case**.
+3. Select **Create a case**.
 
 4. In **New case** details pane, enter the following details:
 
    - Enter the **Case name** (mandatory).
    - Enter the **Case description** (optional).
 
-5. Click **Save**.
+5. Select **Save**.
 
-6. Select the case that you saved from the list view and click :::image type="icon" source="media/icon-for-im3.png" border="false"::: to open the case.
+6. Select the case that you saved from the list view and select :::image type="icon" source="media/icon-for-im3.png" border="false"::: to open the case.
 
    The case opens in a new window.
 
-7. Click **Search** > **+Guided search**.
+7. Select **Search** > **+Guided search**.
 
    The **New Search** details pane is displayed.
 
@@ -93,25 +91,25 @@ For more information, see [Permissions and sharing](./modern-experience-sharing-
       
       1. Enter **Description** (optional).
       
-      1. Click **Next**.
+      1. Select **Next**.
       
    1. In **Choose Locations** tab, do the following:
    
       1. Select **Specific locations**.
       
-      1. In **Location**, click **Choose users, groups, or team**.
+      1. In **Location**, select **Choose users, groups, or team**.
       
          The **Edit locations** window is displayed.
         
-      1. In **Edit locations** window, under **Exchange email**, click **Choose users, groups, or team**.
+      1. In **Edit locations** window, under **Exchange email**, select **Choose users, groups, or team**.
       
       1. Enter the name of the site mailbox to be exported.
       
       1. Check the confirmation box to ensure the site mailbox is added.
       
-      1. Click **Choose** and then click **Done**.
+      1. Select **Choose** and then select **Done**.
       
-      1. Under **SharePoint sites** option, click **Choose sites** to add the SharePoint site associated with the site mailbox.
+      1. Under **SharePoint sites** option, select **Choose sites** to add the SharePoint site associated with the site mailbox.
       
       1. To find the SharePoint URL for the site mailbox, run the following command in PowerShell:
 
@@ -121,41 +119,41 @@ For more information, see [Permissions and sharing](./modern-experience-sharing-
         
       1. Enter the URL and check the confirmation box to ensure the URL is added.
       
-      1. Click **Choose** and then click **Done**.
+      1. Select **Choose** and then select **Done**.
       
-      1. Click **Next**.
+      1. Select **Next**.
       
-   1. In **Create query** tab, click **Finish**.
+   1. In **Create query** tab, select **Finish**.
    
       >[!NOTE]
       > Leave the Condition card blank to ensure the entire mailbox content is searched. The search will take a while based on the amount of content.
 
-9. Once the search is complete, click **More** > **Export results**.
+9. Once the search is complete, select **More** > **Export results**.
 
    The **Export results** window is displayed.
     
-10. Select the appropriate options and click **Export**.
+10. Select the appropriate options and select **Export**.
       
     >[!NOTE]
     > The export wizard takes a few minutes to launch the Export window.
 
-11. In the **Export** window, under the **Export key** section, click **Copy to clipboard**.
+11. In the **Export** window, under the **Export key** section, select **Copy to clipboard**.
 
-12. Click **Download results**.
+12. Select **Download results**.
 
-13. In the dialog box, click **Open**.
+13. In the dialog box, select **Open**.
     
     >[!NOTE]
     > This will launch the Microsoft Office 365 eDiscovery Export Tool to export the mailbox to PST.
     
-14. Click **Install** to install the **Export Tool** to export the mailbox to PST.
+14. Select **Install** to install the **Export Tool** to export the mailbox to PST.
 
-15. Paste the **Export key**, provide the location to save the PST file locally and then click **Start**.
+15. Paste the **Export key**, provide the location to save the PST file locally and then select **Start**.
     
     >[!NOTE]
     > The export will take a while based on the size of the PST file.
 
-16. Click **Close**.
+16. Select **Close**.
 
     The PST can be now attached in Outlook.
     
@@ -171,7 +169,7 @@ For more information, see [Permissions and sharing](./modern-experience-sharing-
 
 2. Start Windows PowerShell in administrator mode.
 
-   For more information see, [Microsoft 365 admin permissions](/microsoft-365/admin/add-users/assign-admin-roles).
+   For more information, see, [Microsoft 365 admin permissions](/microsoft-365/admin/add-users/assign-admin-roles).
    
    >[!NOTE]
    > Ensure you have admin permissions for the following roles:
@@ -185,13 +183,13 @@ For more information, see [Permissions and sharing](./modern-experience-sharing-
 
 5. You can review the list of site mailboxes by opening 'SiteMailboxesList.csv' file on a working directory, when it prompts you to review the file.
 
-6. Remove any site mailbox(es) from the list which you would not like to back up.
+6. Remove any site mailbox(es) from the list which you wouldn't like to back up.
 
 7. Save 'SiteMailboxesList.csv', after reviewing it.
 
 8. Press 'y' when prompted "Do you like to proceed further? (Y/N)" to continue.
 
-9. Once you get "Mailboxes content search are complete" message on your screen, access the export results created for each mailbox by going to the Microsoft Purview compliance portal.
+9. Once you get "Mailboxes content search are complete" message on your screen, access the export results created for each mailbox by going to the Microsoft Purview portal.
 
    >[!NOTE]
    > Use Compliance center dashboard to download PST messages on your screen.
@@ -204,7 +202,7 @@ For more information, see [Permissions and sharing](./modern-experience-sharing-
 
 ## Import site mailboxes
 
-For the site mailboxes to be accessible again for site owners, import the PST files to a mailbox. See one of the following topics for detailed, step-by-step instructions for bulk-importing your organization's PST files to Office 365.
+For the site mailboxes to be accessible again for site owners, import the PST files to a mailbox. See one of the following articles for detailed, step-by-step instructions for bulk-importing your organization's PST files to Office 365.
 
 - [Use network upload to import PST files to Office 365](/microsoft-365/compliance/use-network-upload-to-import-pst-files)
 
@@ -214,9 +212,9 @@ For the site mailboxes to be accessible again for site owners, import the PST fi
 
 You can also export and import site mailboxes using EWS APIs like any other mailbox. Exporting and importing of appointments, emails, contacts, tasks, and other mailbox items can be done by using the EWS-Managed API or EWS in Exchange.
 
-For more information see, [Exporting and importing items by using EWS in Exchange](/exchange/client-developer/exchange-web-services/exporting-and-importing-items-by-using-ews-in-exchange).
+For more information, see, [Exporting and importing items by using EWS in Exchange](/exchange/client-developer/exchange-web-services/exporting-and-importing-items-by-using-ews-in-exchange).
 
-See one of the following topics for exporting and importing of mailbox content:
+See one of the following articles for exporting and importing of mailbox content:
 
 - [Export items by using EWS in Exchange](/exchange/client-developer/exchange-web-services/how-to-export-items-by-using-ews-in-exchange)    
 - [Import items by using EWS in Exchange](/exchange/client-developer/exchange-web-services/how-to-import-items-by-using-ews-in-exchange)
@@ -231,11 +229,11 @@ You can hide the site mailbox by removing it from the SharePoint site but it wil
 
 1. Navigate to the SharePoint site from which you want to hide the mailbox.
 
-2. Click **Settings** > **Site contents**.
+2. Select **Settings** > **Site contents**.
 
 3. Under **Lists, Libraries, and other APPs**, point to **Site Mailbox**, and then click **...** for more information.
 
-4. Click **Remove** and then click **OK** to remove the site mailbox app.
+4. Select **Remove** and then select **OK** to remove the site mailbox app.
 
    >[!NOTE]
    > If you remove a mailbox from a site, it won't be displayed on the site, but it will still be visible in Outlook (if you're using Exchange).
@@ -252,14 +250,14 @@ If the SharePoint site is deleted, Exchange is notified to also delete the site 
 
 1. Navigate to the SharePoint site you want to delete.
 
-2. Select **Settings** at the top of the site and then click **Site information**.
+2. Select **Settings** at the top of the site and then select **Site information**.
 
     >[!NOTE]
-    > If you do not see **Site information** in the **Settings** panel, work with your SharePoint Administrator to get access.
+    > If you don't see **Site information** in the **Settings** panel, work with your SharePoint Administrator to get access.
 
 3. At the bottom of the **Site Information** panel, select **Delete site**.
 
-4. Check the confirmation box, and then click **Delete**.
+4. Check the confirmation box, and then select **Delete**.
 
 **Option 3**: Delete the site mailbox manually.
 
