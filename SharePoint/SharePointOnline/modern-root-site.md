@@ -70,6 +70,7 @@ If you've [turned on audit log search](/office365/securitycompliance/turn-audit-
 - Replacing the root site with another site replaces the entire site collection with the new site collection. If your current root site has subsites, they'll be archived. 
 - The site you select as the new root site must be within the same domain as the current root site.
 - If the site is on hold, you'll receive an informative error and you can't replace the site.
+- You as the admin must also be a member of the site that you are replacing.
   
 ### Use the new SharePoint admin center
 
