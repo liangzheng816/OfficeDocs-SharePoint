@@ -339,6 +339,7 @@ Status codes provide the final status of the scan and migration tasks. Status co
 |405 |Failed      |Crashed. Try again. |
 |410 |Failed      |Couldn't connect to Source name. Try reauthorizing. |
 |423 |Failed      |Source connector not found. Try again. |
+|430 |Failed      |Microsoft 365 authentication details have changed. Sign out and back in to the Microsoft Admin Center, then restart the task in Migration Manager.|
 |490 |Failed      |Ended by company name Admin. Try again. |
 |491 |Failed      |Microsoft migration reporting communication failure. Try again. |
 |500 |Failed      |Unknown, contact support. |
@@ -354,16 +355,16 @@ Failure codes represent file-level errors during both the scan and migration pro
 |:------------------------------|:-----------|:-----------|
 |MACCESSDENIED                  |User denied access. |Check permissions and Try again... |
 |MACCESSTOKENNULL               |Failed to execute request as connector authorization failed. |Unexpected error. Try again. |
-|MAUTHACCESSTOKEN               |Connector authorization failure. Failed to get access token. |Unexpected error. Try again. |
-|MAUTHACCESSTOKENINVALID        |Connector authorization failure. The API request failed because the access token is invalid or expired. |Retry. |
-|MAUTHCALLERNOTAUTHENTICATED    |Connector authorization failed. The service isn't allowing to connect as it doesn't recognize the caller. |Try again. |
-|MAUTHMOVERAPP                  |Microsoft 365 migration app needs to be authorized in source account. |Sign in to the source account and grant permission to the Microsoft 365 migration app. Try again. |
-|MAUTHNOCODE                    |Connector authorization failed as auth code isn't provided. |Try again. |
-|MAUTHNOEMAIL                   |Connector authorization failure. Failed to get email from claim. |Unexpected error. Try again. |
-|MAUTHNOIDTOKEN                 |Connector authorization failure. Failed to get ID token from access token. |Unexpected error. Try again. |
-|MAUTHNOTENANT                  |Connector authorization failed; no tenant/enterprise ID found. Tenant = Enterprise. Tenant is the term in MS/Azure and Enterprise is used by Box and others. |Try again. |
-|MAUTHREFRESHTOKEN              |Connector authorization failure. Failed to get refresh token. |Try again. |
-|MAUTHUSERNOTADMIN              |Connector authorization failed; user doesn't have admin role. |Check permissions and Try again... |
+|MAUTHACCESSTOKEN               |Connector authorization failure. Failed to get access token. |In Migration Manager, go to Project Settings > Project Details, disconnect the source, reconnect to the source, and rerun the migration task. |
+|MAUTHACCESSTOKENINVALID        |Connector authorization failure. The API request failed because the access token is invalid or expired. |In Migration Manager, go to Project Settings > Project Details, disconnect the source, reconnect to the source, and rerun the migration task. |
+|MAUTHCALLERNOTAUTHENTICATED    |Connector authorization failed. The service isn't allowing to connect as it doesn't recognize the caller. |In Migration Manager, go to Project Settings > Project Details, disconnect the source, reconnect to the source, and rerun the migration task. |
+|MAUTHMOVERAPP                  |Microsoft 365 migration app needs to be authorized in source account. |In Migration Manager, go to Project Settings > Project Details, disconnect the source, reconnect to the source, and rerun the migration task. |
+|MAUTHNOCODE                    |Connector authorization failed as auth code isn't provided. |In Migration Manager, go to Project Settings > Project Details, disconnect the source, reconnect to the source, and rerun the migration task. |
+|MAUTHNOEMAIL                   |Connector authorization failure. Failed to get email from claim. |In Migration Manager, go to Project Settings > Project Details, disconnect the source, reconnect to the source, and rerun the migration task.  |
+|MAUTHNOIDTOKEN                 |Connector authorization failure. Failed to get ID token from access token. |In Migration Manager, go to Project Settings > Project Details, disconnect the source, reconnect to the source, and rerun the migration task. |
+|MAUTHNOTENANT                  |Connector authorization failed; no tenant/enterprise ID found. Tenant = Enterprise. Tenant is the term in MS/Azure and Enterprise is used by Box and others. |In Migration Manager, go to Project Settings > Project Details, disconnect the source, reconnect to the source, and rerun the migration task. |
+|MAUTHREFRESHTOKEN              |Connector authorization failure. Failed to get refresh token. |In Migration Manager, go to Project Settings > Project Details, disconnect the source, reconnect to the source, and rerun the migration task.  |
+|MAUTHUSERNOTADMIN              |Connector authorization failed; user doesn't have admin role. |In Migration Manager, go to Project Settings > Project Details, disconnect the source, reconnect to the source, and rerun the migration task. |
 |MAZUREUPLOAD                   |Failed to submit the migration job to Migration API after the files were uploaded to the Azure blob. | Try again. |
 |MBADREQUEST                    |Bad request when operating on source or destination item. |Unexpected error. Try again. |
 |MCONNECTORNOTFOUND             |Connector not found in database. |Check connector settings. Try again. |
