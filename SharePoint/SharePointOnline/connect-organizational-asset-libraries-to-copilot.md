@@ -86,7 +86,7 @@ Follow these guidelines to improve the organization asset library image search e
 - Avoid exceptionally large images. Images over 10 MB result in search latency and slow downloads, host application limits may also apply.
 - Remove any files that aren’t image based. Non-image files may be included in search results but fail on insertion.
 - Insufficient tagging and descriptions. Successful search results require meaningful file names, image tags, location, and descriptions to be included with the content in the organization image asset library. Insufficient metadata reduces search hit rates and lower result relevancy.
-- The following image formats are supported. JPEG, PNG, SVG, BMP, GIF, TIFF, WEB P, HEIF, ICO.
+- The following image formats are supported: JPEG, PNG, SVG, BMP, GIF, TIFF, WEB P, HEIF, ICO.
 
 ## Reference
 
