@@ -44,7 +44,7 @@ We're continuously adding new features to the new <a href="https://go.microsoft.
 Whether preparing for [Copilot deployment](/copilot/microsoft-365/microsoft-365-copilot-setup) or managing content post-implementation, this solution offers capabilities to:
 
 - prevent [content sprawl](advanced-management.md#manage-content-sprawl),
-- streamline [access management](advanced-management.md#manage-permissions-and-access) for SharePoint and OneDrive sites, and
+- Streamline [access management](advanced-management.md#manage-permissions-and-access) for SharePoint and OneDrive sites
 - analyze usage patterns through comprehensive reporting.
 
 ## April 2022
