@@ -61,6 +61,9 @@ It's essential to confirm all sites have valid owners before cleaning up unused 
 - You can run a Site Ownership policy in Simulation mode to identify any sites that don't have a minimum of two owners.
 - Set up the policy in simulation mode to identify owners based on your desired criteria. Then upgrade the policy to Active mode to enable notifications to site owner candidates.
 
+> [!NOTE]
+> Site Ownership Policy is temporarily unavailable for [Copilot licensed organizations](/sharepoint/advanced-management). We are working towards enabling this feature.
+
 ### Step 3: Clean up unused sites
 
 Identify inactive sites, then take action to reduce your governance footprint and improve Copilot response quality. Inactive sites often contain outdated content, cluttering Copilot’s data source and leading to less accurate responses. Removing these sites helps Copilot focus on current information for better results. Currently, you can identify unused sites by running an inactive site policy and ask site owners to attest if the site is still needed.
