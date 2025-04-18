@@ -33,7 +33,7 @@ Site ownership policies help solve this problem by allowing you to configure you
 To access and use this feature, your organization must have [Microsoft SharePoint Premium – SharePoint Advanced Management](/sharepoint/advanced-management).
 
 > [!NOTE]
-> Site Ownership Policy is currently unavailable for Copilot licensed organizations. We are working towards enabling this feature at the earliest.
+> Site Ownership Policy is temporarily unavailable for [Copilot licensed organizations](/sharepoint/advanced-management). We are working towards enabling this feature at the earliest.
 
 ## Scope of site ownership policies
 
