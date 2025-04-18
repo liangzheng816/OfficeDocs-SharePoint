@@ -32,6 +32,9 @@ Site ownership policies help solve this problem by allowing you to configure you
 
 To access and use this feature, your organization must have [Microsoft SharePoint Premium – SharePoint Advanced Management](/sharepoint/advanced-management).
 
+> [!NOTE]
+> Site Ownership Policy is temporarily unavailable for [Copilot licensed organizations](/sharepoint/advanced-management). We are working towards enabling this feature at the earliest.
+
 ## Scope of site ownership policies
 
 You can create different policies with different scopes based on your organization's requirements.
@@ -131,9 +134,9 @@ The potential recipients of these email notifications, if configured in the poli
 
   - If the policy runs after 30 days of a user's leaving the organization, manager information won't be available, and notifications can't be sent.  
 
-- **Active site members:** Based on policy configuration, emails are sent to the most active members of a site to accept ownership. Activity is determined based on the number of modifications, additions, and deletions the site members make to the documents located in a site.  
+- **Active site members:** Based on policy configuration, emails are sent to the most active members of a site to accept ownership. Activity is determined based on the number of read and write activities performed by site members on a site. External and guest users will not be considered for these notifications to accept ownership.
 
-  > [!NOTE]
+    > [!NOTE]
   > If a site has no one to be notified as per the email recipients provided during policy configuration, the count is provided in the summary. You can triage the sites and determine the next course of action.  
 
 ## Actions
@@ -161,4 +164,6 @@ Site owners can't remove a site from read-only mode and must contact the tenant 
 ## Related topics
 
 - [SharePoint Advanced Management overview](advanced-management.md)
+
 - [Site lifecycle policies - SharePoint Advanced Management](site-lifecycle-management.md)
+

@@ -125,7 +125,7 @@ Inactive site policies analyze activity across SharePoint and connected platform
 |---------|---------|
 |**SharePoint**     |Viewed files, edited files, shared files internally and externally, synced files, viewed pages, visited pages          |
 |**Viva Engage (formerly Yammer)**     |Posted messages, read conversations, liked messages         |
-|**Teams**     |Posted channel messages in a team across all channels, posted messages in Teams and all channels, replied to messages, mentioned in messages, reacted to messages, sent urgent messages, conducted meetings (recurring, ad hoc, one-time)          |
+|**Teams**     |Posted channel messages in a team across standard channels, posted messages in Teams and standard channels, replied to messages, mentioned in messages, reacted to messages, sent urgent messages, conducted meetings (recurring, ad hoc, one-time)          |
 |**Exchange**     | Received emails in the Exchange mailbox       |
 
 ### In-scope site templates
@@ -149,6 +149,8 @@ The following sites are considered out-of-scope and excluded from site activity 
 - Root sites
 - Home sites
 - Tenant admin sites
+
+- Sites associated with Shared and Private Teams channels
 
 ## Reporting
 
