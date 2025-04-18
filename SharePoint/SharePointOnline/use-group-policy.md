@@ -265,14 +265,6 @@ Enabling this policy sets the following registry key value to 1:
 `[HKLM\SOFTWARE\Policies\Microsoft\OneDrive]"DehydrateSyncedTeamSites"=dword:00000001`
 
 For information about querying and setting file and folder states, see [Query and set Files On-Demand states](files-on-demand-mac.md).
-
-### Deploy Restrict Known Folder Move from Office Group Policy
-
-The Restrict Known Folder Move from Office (Restrict KFM from Office) Group Policy allows administrators to control whether Office apps display prompts encouraging users to back up their files to Microsoft OneDrive.
-
-When this policy is enabled and deployed, Office apps won’t display the message bar, even if users are eligible for the Known Folder Move (KFM) feature. This policy applies only to Office apps and does not affect other OneDrive or KFM configurations. It is available in the [Administrative Template files for Microsoft Office](https://www.microsoft.com/download/details.aspx?id=49030) (version 5497.1000 or newer).
-
-See [Deploy Restrict Known Folder Move from Office Group Policy](restrict-known-folder-move-office-group-policy.md) for more information on how to enable and deploy this policy.
   
 ### Enable automatic upload bandwidth management for OneDrive
 
@@ -754,6 +746,14 @@ If you disable or don't configure this setting, syncing pauses automatically whe
 Enabling this policy sets the following registry key value to 1:
 
 `[HKCU\SOFTWARE\Policies\Microsoft\OneDrive] "DisablePauseOnBatterySaver"=dword:00000001`
+
+### Deploy Restrict Known Folder Move from Office Group Policy
+
+The Restrict Known Folder Move from Office (Restrict KFM from Office) Group Policy allows administrators to control whether Office apps display prompts encouraging users to back up their files to Microsoft OneDrive.
+
+When this policy is enabled and deployed, Office apps won’t display the message bar, even if users are eligible for the Known Folder Move (KFM) feature. This policy applies only to Office apps and does not affect other OneDrive or KFM configurations. It is available in the [Administrative Template files for Microsoft Office](https://www.microsoft.com/download/details.aspx?id=49030) (version 5497.1000 or newer).
+
+See [Deploy Restrict Known Folder Move from Office Group Policy](restrict-known-folder-move-office-group-policy.md) for more information on how to enable and deploy this policy.
 
 ### Disable the tutorial that appears at the end of OneDrive Setup
 
