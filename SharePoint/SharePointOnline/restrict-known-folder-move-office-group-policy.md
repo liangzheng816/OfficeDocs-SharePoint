@@ -102,15 +102,15 @@ To deploy the policy:
 6. If applying to specific groups, select **Add Groups** and choose the relevant groups.
 
     > [!NOTE]
->
+    >
 > Adding multiple groups to a single policy configuration allows for the same group to be included in multiple policy configurations, facilitating a more streamlined and efficient policy management process.
 
-1. Select **Next**.
-1. On the **Configure Settings** page:
+7. Select **Next**.
+8. On the **Configure Settings** page:
    - Search for **Restrict KFM from Office** or use a filter.
    - Set the configuration to **Enabled**, then select **Apply**.
-1. Review your selections and choose **Create**.
-1. Select **Done**.
+9. Review your selections and choose **Create**.
+10. Select **Done**.
 
 :::image type="content" source="media/restrict-kfm-from-office/2-restrict-kfm-from-office-group-policy-configure-cloud-policy.png" alt-text="screenshot of KFM configuration settings" lightbox="media/restrict-kfm-from-office/2-restrict-kfm-from-office-group-policy-configure-cloud-policy.png":::
 
