@@ -26,32 +26,32 @@ description: "Learn how to deploy the Restrict Known Folder Move from Office Gro
 
 The Restrict Known Folder Move from Office (Restrict KFM from Office) Group Policy allows administrators to control whether Office apps display prompts encouraging users to back up their files to Microsoft OneDrive.
 
-When this policy is enabled and deployed, Office apps won’t display the message bar, even if users are eligible for the Known Folder Move (KFM) feature. This policy applies only to Office apps and does not affect other OneDrive or KFM configurations. It is available in the [Administrative Template files for Microsoft Office](https://www.microsoft.com/download/details.aspx?id=49030) (version 5497.1000 or newer).
+When this policy is enabled and deployed, Office doesn't display the message bar, even if users are eligible for the Known Folder Move (KFM) feature. This policy applies only to Office apps and doesn't affect other OneDrive or KFM configurations. It's available in the [Administrative Template files for Microsoft Office](https://www.microsoft.com/download/details.aspx?id=49030) (version 5497.1000 or newer).
 
 > [!TIP]
 >
 > - Enable this policy if you don’t want users to see prompts to back up their files.
-> - If KFM is blocked in your organization, the message bar won't appear, even if users are eligible.
-> - Microsoft respects existing policies that block KFM and will not display prompts in those environments.
+> - If KFM is blocked in your organization, the message bar doesn't appear, even if users are eligible.
+> - Microsoft respects existing policies that block KFM and doesn't display prompts in those environments.
 
 ## What users see when eligible
 
-When the policy is not enabled, eligible users may see a message bar in Microsoft Word, Excel, and PowerPoint (Windows desktop versions) prompting them to enroll in [OneDrive Known Folder Move (KFM)](/sharepoint/redirect-known-folders). The message bar allows users to select folders to back up to OneDrive.
+When the policy isn't enabled, eligible users might see a message bar in Microsoft Word, Excel, and PowerPoint (Windows desktop versions) prompting them to enroll in [OneDrive Known Folder Move (KFM)](/sharepoint/redirect-known-folders). The message bar allows users to select folders to back up to OneDrive.
 
 > [!IMPORTANT]
-> If users are not enrolled in KFM, they may see the message:  
+> If users aren't enrolled in KFM, they might see the message:  
 > **"BACK UP THIS DOCUMENT: Share and work with others in this and other files using OneDrive."**  
 >
 > Selecting **Open OneDrive** lets users choose which folders to back up.
 
 By enabling and deploying the **Restrict KFM from Office** Group Policy, administrators can prevent these prompts and maintain control over KFM adoption.
 
-## When the Message Bar is not displayed
+## When the Message Bar isn't displayed
 
-The message bar does not appear under the following conditions:
+The message bar doesn't appear under the following conditions:
 
 - The user is already enrolled in KFM.
-- OneDrive is not provisioned, installed, or running.
+- OneDrive isn't provisioned, installed, or running.
 - The policy [Prevent users from moving their Windows known folders to OneDrive](/sharepoint/use-group-policy#prevent-users-from-moving-their-windows-known-folders-to-onedrive) is enabled.
 - The **Restrict KFM from Office** policy is enabled.
 
@@ -71,7 +71,7 @@ If you're using Active Directory, Microsoft Entra, or a hybrid environment, you 
    - Copy the corresponding language `.adml` files into **%SYSTEMROOT%\PolicyDefinitions\[Language-CountryRegion]**
      - For example, copy U.S. English `.adml` files into the `en-us` folder.
 7. Open **Group Policy Management**.
-8. Under **Domains**, select the appropriate policy (e.g., **Default Domain Policy**) and choose **Edit**.
+8. Under **Domains**, select the appropriate policy (for example, **Default Domain Policy**) and choose **Edit**.
 9. In the Group Policy Management Editor, go to:  
    **User Configuration** > **Policies** > **Administrative Templates: Policy Definitions** > **All Settings**
 10. Locate **Restrict KFM from Office**, right-click it, and select **Edit**.
@@ -79,11 +79,11 @@ If you're using Active Directory, Microsoft Entra, or a hybrid environment, you 
 12. The policy setting should now display as **Enabled**.
 
 > [!NOTE]
-> It may take up to 24 hours for the policy to take effect.
+> It might take up to 24 hours for the policy to take effect.
 
 ### Option 2: Deploy via Cloud Policy service
 
-You can also deploy this policy using the [Cloud Policy service for Microsoft 365](https://config.office.com/officeSettings/officePolicies). This method works even if the device is not domain-joined.
+You can also deploy this policy using the [Cloud Policy service for Microsoft 365](https://config.office.com/officeSettings/officePolicies). This method works even if the device isn't domain-joined.
 
 To deploy the policy:
 
