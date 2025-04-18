@@ -45,7 +45,7 @@ Whether preparing for [Copilot deployment](/copilot/microsoft-365/microsoft-365-
 
 - prevent [content sprawl](advanced-management.md#manage-content-sprawl),
 - Streamline [access management](advanced-management.md#manage-permissions-and-access) for SharePoint and OneDrive sites
-- analyze usage patterns through comprehensive reporting.
+- Analyze usage patterns through comprehensive reporting
 
 ## April 2022
 
