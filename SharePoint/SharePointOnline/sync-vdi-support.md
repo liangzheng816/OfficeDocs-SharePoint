@@ -130,29 +130,29 @@ The following registry keys help to roam the user environment on multiple nodes 
 
 - [IncludeRegistryTrees]
 
-  - HKCU\Software\Microsoft\Office
+  - `HKCU\Software\Microsoft\Office`
   
-  - HKCU\Software\Microsoft\Internet Explorer
+  - `HKCU\Software\Microsoft\Internet Explorer`
   
-  - HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings
+  - `HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings`
   
-  - HKCU\Software\Microsoft\Windows\CurrentVersion\Shell Extensions\Cached
+  - `HKCU\Software\Microsoft\Windows\CurrentVersion\Shell Extensions\Cached`
   
-  - HKCU\Software\Microsoft\OneDrive
+  - `HKCU\Software\Microsoft\OneDrive`
   
 - [IncludeFolderTrees]
 
-  - <Appdata>\Microsoft\Windows\Recent
+  - `<Appdata>\Microsoft\Windows\Recent`
   
-  - <Appdata>\Microsoft\crypto
+  - `<Appdata>\Microsoft\crypto`
   
-  - <Appdata>\SystemCertificates
+  - `<Appdata>\SystemCertificates`
   
-  - <LocalAppdata>\Microsoft\IdentityCache
+  - `<LocalAppdata>\Microsoft\IdentityCache`
   
-  - <LocalAppdata>\Microsoft\Internet Explorer
+  - `<LocalAppdata>\Microsoft\Internet Explorer`
   
-  - <LocalAppdata>\Microsoft\Windows\INetCache
+  - `<LocalAppdata>\Microsoft\Windows\INetCache`
   
 ### Configure Omnissa Dynamic Environment Manager with Horizon Apps
 
@@ -175,12 +175,12 @@ For more info on how to configure FSLogix Office Container (ODFC) on all Horizon
 
 - Create the following entries in each Horizon farm servers. You can use DEM or similar user environment management tool to deploy the registry to all virtual app farm servers. 
 
-  - Key: HKLM\Software\Microsoft\Windows\CurrentVersion\Run  
+  - Key: `HKLM\Software\Microsoft\Windows\CurrentVersion\Run`
   Type: REG_SZ  
   Name: OneDrive  
   Data: "C:\Program Files\Microsoft OneDrive\OneDrive.exe"/background
   
-  - Key: HKLM\Software\Policies\Microsoft\OneDrive  
+  - Key: `HKLM\Software\Policies\Microsoft\OneDrive`
   Type: REG_DWORD  
   Name: SilentAccountconfig  
   Data: 1
