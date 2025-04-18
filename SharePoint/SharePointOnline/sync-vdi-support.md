@@ -176,16 +176,17 @@ For more info on how to configure FSLogix Office Container (ODFC) on all Horizon
 - Create the following entries in each Horizon farm servers. You can use DEM or similar user environment management tool to deploy the registry to all virtual app farm servers. 
 
   - Key: `HKLM\Software\Microsoft\Windows\CurrentVersion\Run`
-  Type: REG_SZ  
-  Name: OneDrive  
-  Data: "C:\Program Files\Microsoft OneDrive\OneDrive.exe"/background
+  - Type: `REG_SZ`
+  - Name: `OneDrive`
+  - Data: `"C:\Program Files\Microsoft OneDrive\OneDrive.exe"/background`
   
   - Key: `HKLM\Software\Policies\Microsoft\OneDrive`
-  Type: REG_DWORD  
-  Name: SilentAccountconfig  
-  Data: 1
+  - Type: `REG_DWORD`
+  - Name: `SilentAccountconfig`
+  - Data: `1`
   
-Note: Sometimes the silent login will take several seconds. If the first attempt fails, a second attempt might be required. 
+> [!NOTE]
+> Sometimes the silent login will take several seconds. If the first attempt fails, a second attempt might be required. 
 
 ## See also
 
