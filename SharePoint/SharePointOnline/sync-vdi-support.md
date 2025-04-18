@@ -53,7 +53,7 @@ For all [supported operating systems](https://support.office.com/article/cc0cb2b
 
 ## Set up OneDrive in Citrix Virtual Apps
 
-This article describes how to enable and use OneDrive in Citrix Virtual Apps.
+This section describes how to enable and use OneDrive in Citrix Virtual Apps.
 
 ### Prerequisites
 
@@ -105,6 +105,88 @@ To ensure that the feature is correctly enabled, open a command window (cmd.exe)
 
     > [!NOTE]
     > Silent sign-in should work if your machine is connected to Microsoft Entra ID. Make sure to turn off this setting if your computer is not Microsoft Entra joined.
+
+
+## Set up OneDrive in Omnissa Horizon Virtual Apps
+This section describes how to enable and use OneDrive in Omnissa Horizon Virtual Apps.
+
+### Prerequisites
+
+- Omnissa Horizon
+
+- Windows
+
+  - Windows 10 and Windows 11 Guest Operating Systems for Horizon Agent and Remote Experience, for Omnissa Horizon 8.x (2006 and later) (78714)
+  
+  - Non-Windows 10 and 11 Guest Operating Systems for Horizon 8 Agent (78715)
+  
+- FSLogix
+
+- Omnissa Dynamic Environment Manager (DEM) or a product which enables user environment personalization. The system on which you plan to install DEM must meet certain software requirements. For more info refer to [this article](https://docs.omnissa.com/bundle/DEMInstallConfigGuideV2406/page/SoftwareRequirements.html).
+
+### Registry Keys
+
+The following registry keys help to roam the user environment on multiple nodes in the virtual application farm. Omnissa Dynamic Environment Manager or a similar user environment management tool can be used to deploy the registry keys to all farm servers.
+
+- [IncludeRegistryTrees]
+
+  - `HKCU\Software\Microsoft\Office`
+  
+  - `HKCU\Software\Microsoft\Internet Explorer`
+  
+  - `HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings`
+  
+  - `HKCU\Software\Microsoft\Windows\CurrentVersion\Shell Extensions\Cached`
+  
+  - `HKCU\Software\Microsoft\OneDrive`
+  
+- [IncludeFolderTrees]
+
+  - `<Appdata>\Microsoft\Windows\Recent`
+  
+  - `<Appdata>\Microsoft\crypto`
+  
+  - `<Appdata>\SystemCertificates`
+  
+  - `<LocalAppdata>\Microsoft\IdentityCache`
+  
+  - `<LocalAppdata>\Microsoft\Internet Explorer`
+  
+  - `<LocalAppdata>\Microsoft\Windows\INetCache`
+  
+### Configure Omnissa Dynamic Environment Manager with Horizon Apps
+
+1.	Launch the Omnissa Dynamic Environment Manager management console, select **Create Config File** and select **Use an Application Template**.
+
+2.	Select the application template (Microsoft Office 2016 and 2019, or Microsoft 365), Select **OneDrive for Business** and click **Next**.
+
+3.	Provide the file name and description and select **Finish**.
+
+4.	Add the previously listed **required registry keys** to **Import / Export** settings.
+
+
+### Configure FSLogix with Omnissa Dynamic Environment Manager
+
+Configuring FSLogix in combination with Dynamic Environment Manager will help with store OneDrive cache and the save location for Microsoft and non-Microsoft applications.
+
+For more info on how to configure FSLogix Office Container (ODFC) on all Horizon Virtual App farm servers, refer to [this article](/fslogix/tutorial-configure-odfc-containers).
+
+- Install the per-machine version of the OneDrive sync app on all the Horizon Virtual App farm hosts. 
+
+- Create the following entries in each Horizon farm servers. You can use DEM or similar user environment management tool to deploy the registry to all virtual app farm servers. 
+
+  - Key: `HKLM\Software\Microsoft\Windows\CurrentVersion\Run`
+  - Type: `REG_SZ`
+  - Name: `OneDrive`
+  - Data: `"C:\Program Files\Microsoft OneDrive\OneDrive.exe"/background`
+  
+  - Key: `HKLM\Software\Policies\Microsoft\OneDrive`
+  - Type: `REG_DWORD`
+  - Name: `SilentAccountconfig`
+  - Data: `1`
+  
+> [!NOTE]
+> Sometimes the silent login will take several seconds. If the first attempt fails, a second attempt might be required. 
 
 ## See also
 
