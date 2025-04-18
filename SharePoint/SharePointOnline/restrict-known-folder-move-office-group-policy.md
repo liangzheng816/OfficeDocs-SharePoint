@@ -101,8 +101,8 @@ To deploy the policy:
    - Users accessing Office for the web anonymously
 6. If applying to specific groups, select **Add Groups** and choose the relevant groups.
 
-    > [!NOTE]
-    >
+> [!NOTE]
+>
 > Adding multiple groups to a single policy configuration allows for the same group to be included in multiple policy configurations, facilitating a more streamlined and efficient policy management process.
 
 7. Select **Next**.
