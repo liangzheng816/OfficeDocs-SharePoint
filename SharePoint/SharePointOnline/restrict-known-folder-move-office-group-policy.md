@@ -1,5 +1,5 @@
 ---
-ms.date: 04/17/2025
+ms.date: 04/18/2025
 title: Deploy Restrict Known Folder Move from Office Group Policy
 ms.reviewer: nirupama.m
 manager: jtremper
@@ -78,12 +78,16 @@ If you're using Active Directory, Microsoft Entra, or a hybrid environment, you 
 11. Change the setting from **Not Configured** to **Enabled**, then select **Apply** and **OK**.
 12. The policy setting should now display as **Enabled**.
 
+:::image type="content" source="media/restrict-kfm-from-office/0-restrict-kfm-from-office-group-policy-editor.png" alt-text="screenshot shows comment being added to the Restrict KFM from Office tool." lightbox="media/rac-spac/non-group-connected-sites/restricted-access-control-non-group-connected-site-page.png":::
+
+:::image type="content" source="media/restrict-kfm-from-office/1-restrict-kfm-from-office-group-policy-editor-all-settings.png" alt-text="screenshot of disabling KFM pop ups via the Group Policy Management editor" lightbox="media/restrict-kfm-from-office/1-restrict-kfm-from-office-group-policy-editor-all-settings.png":::
+
 > [!NOTE]
 > It might take up to 24 hours for the policy to take effect.
 
 ### Option 2: Deploy via Cloud Policy service
 
-You can also deploy this policy using the [Cloud Policy service for Microsoft 365](https://config.office.com/officeSettings/officePolicies). This method works even if the device isn't domain-joined.
+You can also deploy this policy using the [Cloud Policy service for Microsoft 365](https://config.office.com/officeSettings/officePolicies). This method works even if the device isn't domain-joined. When a user signs into Microsoft 365 Apps for Enterprise on a device, the policy settings roam to that device. See [Overview of Cloud Policy](/microsoft-365-apps/admin-center/overview-cloud-policy) to learn more about cloud policies for Microsoft 356 Apps.
 
 To deploy the policy:
 
@@ -107,6 +111,8 @@ To deploy the policy:
    - Set the configuration to **Enabled**, then select **Apply**.
 1. Review your selections and choose **Create**.
 1. Select **Done**.
+
+:::image type="content" source="media/restrict-kfm-from-office/2-restrict-kfm-from-office-group-policy-configure-cloud-policy.png" alt-text="screenshot of KFM configuration settings" lightbox="media/restrict-kfm-from-office/2-restrict-kfm-from-office-group-policy-configure-cloud-policy.png":::
 
 Once configured, the policy will apply to eligible users the next time they sign in to Microsoft 365 Apps on any device.
 
