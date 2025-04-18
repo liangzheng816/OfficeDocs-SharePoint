@@ -43,15 +43,8 @@ For information about how conditional access works, see:
 
 ## Recommendations for Windows
 
-We recommend using this feature on Windows together with [silent account configuration](use-silent-account-configuration.md) for the best experience. The OneDrive sync app will automatically use ADAL, and will support both device-based and location-based conditional access policies.
+We recommend using this feature on Windows together with [silent account configuration](use-silent-account-configuration.md) for the best experience. The OneDrive sync app supports both device-based and location-based conditional access policies.
 
-If you don't use silent account configuration, set the EnableADAL registry key:
-
-[HKEY_CURRENT_USER\SOFTWARE\Microsoft\OneDrive]
-"EnableADAL"=dword:1
-
-Setting this registry key configures the OneDrive sync app to use ADAL directly.
-  
 ## Known issues
 
 The following are known issues with this release:
@@ -66,14 +59,3 @@ The following are known issues with this release:
 
 - If you enable location-based conditional access, users get a prompt about every 90 to 120 minutes by default when they leave the set of approved IP address ranges. The exact timing depends on the access token expiry duration (60 minutes by default), when their computer last obtained a new access token, and any specific conditional access timeouts put in place.
 
-## Reporting problems
-
-Let us know if you run into any problems while using this release.
-  
- To report a problem
-  
-1. Right-click the blue OneDrive cloud icon in the Windows taskbar notification area or macOS menu bar.
-
-2. Select **Get help**.
-
-3. Type a brief description of your issue, and then select **Submit**.
