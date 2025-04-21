@@ -78,7 +78,7 @@ If you're using Active Directory, Microsoft Entra, or a hybrid environment, you 
 11. Change the setting from **Not Configured** to **Enabled**, then select **Apply** and **OK**.
 12. The policy setting should now display as **Enabled**.
 
-:::image type="content" source="media/restrict-kfm-from-office/0-restrict-kfm-from-office-group-policy-editor.jpg" alt-text="screenshot shows comment being added to the Restrict KFM from Office tool." lightbox="media/rac-spac/non-group-connected-sites/restricted-access-control-non-group-connected-site-page.jpg":::
+:::image type="content" source="media/restrict-kfm-from-office/0-restrict-kfm-from-office-group-policy-editor.jpg" alt-text="screenshot shows comment being added to the Restrict KFM from Office tool." lightbox="media/restrict-kfm-from-office/0-restrict-kfm-from-office-group-policy-editor.jpg:::
 
 :::image type="content" source="media/restrict-kfm-from-office/1-restrict-kfm-from-office-group-policy-editor-all-settings.jpg" alt-text="Screenshot that shows the disabling KFM pop ups via the Group Policy Management editor." lightbox="media/restrict-kfm-from-office/1-restrict-kfm-from-office-group-policy-editor-all-settings.jpg":::
 
