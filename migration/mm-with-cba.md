@@ -36,7 +36,7 @@ Next, grant the necessary API permissions on the **API Permissions** page.
 To limit 'MigApp' to move content into specific SharePoint sites, grant the 'Sites.Selected' permission under the SharePoint and Microsoft Graph API.
 
 - SharePoint API:
-   - 'Sites.Selected': Required for REST and CSOM (Client-Side Object Model) calls.
+  - 'Sites.Selected': Required for REST and CSOM (Client-Side Object Model) calls.
    - Microsoft Graph API:
       - 'Sites.Selected': Required for site-related operations.
       
