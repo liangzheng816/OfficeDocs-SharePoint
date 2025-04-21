@@ -58,15 +58,22 @@ The PowerShell cmdlets provide the same functionalities as the [SharePoint Migra
 |Microsoft Visual C++ 2015 Redistributable |Required for OneNote migration.           |
 |PowerShell                                |PowerShell 5.x required to support migration of file paths of up to 400 characters. PowerShell 6.0 or higher isn't supported. |
 
+## Workaround for long path issue
+
+When using SPMT PowerShell, you might encounter scan failures on source files with paths longer than 260 characters. To resolve this issue, you can modify the system registry to enable PowerShell to read long path files.
+
+Open **Register Editor**, navigate to `"Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework"`, add a new key `"AppContext"`. Then add 2 String values under the key. 
+
+- Value Name: `Switch.System.IO.BlockLongPaths` Value Data: `false`
+
+- Value Name: `Switch.System.IO.UseLegacyPathHandling` Value Data: `false`
+
 ## Before you begin
 
 1. Provision your Microsoft 365 with either your existing active directory or one of the other options for adding accounts to Microsoft 365. For more information, see [Microsoft 365 integration with on-premises environments](/microsoft-365/enterprise/microsoft-365-integration) and [Add users to Microsoft 365 Apps for business](/microsoft-365/admin/add-users/add-users).
-2. Open the folder:
+1. Open the folder: *`$env:UserProfile\Documents\WindowsPowerShell\Modules\Microsoft.SharePoint.MigrationTool.PowerShell`.* Make sure you have DLLs inside of it.
 
-   *$env:UserProfile\Documents\WindowsPowerShell\Modules\Microsoft.SharePoint.MigrationTool.PowerShell*
-
-Make sure you have DLLs inside of it, if you're using OneDrive you may need to copy the WindowsPowershell Folder into OneDrive / Documents.
-3. From this location, run the following PowerShell command:
+1. From this location, run the following PowerShell command:
 
    ```powershell
    Import-Module Microsoft.SharePoint.MigrationTool.PowerShell
@@ -103,7 +110,7 @@ This cmdlet starts the registered SPMT migration.
 Returns the object of the current session. This cmdlet includes the status of current tasks and current session level settings. Current task status includes:
 
 S  - Count of scanned files
-  - Count of migrated files
+- Count of migrated files
   - Any migration error messages
 
 ### Stop your current migration
