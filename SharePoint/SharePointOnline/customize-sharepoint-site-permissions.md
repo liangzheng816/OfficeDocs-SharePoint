@@ -70,11 +70,11 @@ If you are on a [communication site](https://support.microsoft.com/office/use-th
 
 1. Select **Site access**.  
   
-    ![Screenshot of site access for communication sites](media/customize-permissions/communication-site-add-member.png)
+    ![Screenshot of site access for communication sites.](media/customize-permissions/communication-site-add-member.png)
     
 2. In the **Site access** dialog that appears, enter the name or email address of the user or group that you want to add. When the name appears, choose the permission level from the dropdown.
   
-    ![Screenshot of adding a member to a group dialog](media/add-user-to-a-group.png)
+    ![Screenshot of adding a member to a group dialog.](media/add-user-to-a-group.png)
 
 3. If you want to add more names, repeat these steps. 
     
@@ -86,11 +86,11 @@ If you are on a [team site](https://support.microsoft.com/office/what-is-a-share
 
 1. Select **members**.
     
-    ![Screenshot of adding members for team sites](media/customize-permissions/team-site-add-member.png)
+    ![Screenshot of adding members for team sites.](media/customize-permissions/team-site-add-member.png)
   
 2. In the **Group membership** dialog, select **Add members**. Start typing the name of the user that you want to add. When the name appears, select it. You can add multiple users at once.
 
-    ![Screenshot of adding members to a group dialog](media/customize-permissions/add-member-team-site.png)
+    ![Screenshot of adding members to a group dialog.](media/customize-permissions/add-member-team-site.png)
 
 To make a member an owner, add them as a member and then use the drop-down arrow in the member profile to make them an owner.
 
