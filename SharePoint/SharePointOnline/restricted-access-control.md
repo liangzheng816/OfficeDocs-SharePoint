@@ -1,5 +1,5 @@
 ---
-ms.date: 04/18/2025
+ms.date: 04/21/2025
 title: "Restrict SharePoint site access with Microsoft 365 groups and Microsoft Entra security groups"
 ms.reviewer: nibandyo
 manager: jtremper
