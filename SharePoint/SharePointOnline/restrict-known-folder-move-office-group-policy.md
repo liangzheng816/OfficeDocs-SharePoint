@@ -1,5 +1,5 @@
 ---
-ms.date: 04/18/2025
+ms.date: 04/21/2025
 title: Deploy Restrict Known Folder Move from Office Group Policy
 ms.reviewer: nirupama.m
 manager: jtremper
@@ -78,9 +78,9 @@ If you're using Active Directory, Microsoft Entra, or a hybrid environment, you 
 11. Change the setting from **Not Configured** to **Enabled**, then select **Apply** and **OK**.
 12. The policy setting should now display as **Enabled**.
 
-:::image type="content" source="media/restrict-kfm-from-office/0-restrict-kfm-from-office-group-policy-editor.png" alt-text="screenshot shows comment being added to the Restrict KFM from Office tool." lightbox="media/rac-spac/non-group-connected-sites/restricted-access-control-non-group-connected-site-page.png":::
+:::image type="content" source="media/restrict-kfm-from-office/0-restrict-kfm-from-office-group-policy-editor.jpg" alt-text="screenshot shows comment being added to the Restrict KFM from Office tool." lightbox="media/rac-spac/non-group-connected-sites/restricted-access-control-non-group-connected-site-page.jpg":::
 
-:::image type="content" source="media/restrict-kfm-from-office/1-restrict-kfm-from-office-group-policy-editor-all-settings.png" alt-text="screenshot of disabling KFM pop ups via the Group Policy Management editor" lightbox="media/restrict-kfm-from-office/1-restrict-kfm-from-office-group-policy-editor-all-settings.png":::
+:::image type="content" source="media/restrict-kfm-from-office/1-restrict-kfm-from-office-group-policy-editor-all-settings.jpg" alt-text="Screenshot that shows the disabling KFM pop ups via the Group Policy Management editor." lightbox="media/restrict-kfm-from-office/1-restrict-kfm-from-office-group-policy-editor-all-settings.jpg":::
 
 > [!NOTE]
 > It might take up to 24 hours for the policy to take effect.
@@ -112,7 +112,7 @@ To deploy the policy:
 9. Review your selections and choose **Create**.
 10. Select **Done**.
 
-:::image type="content" source="media/restrict-kfm-from-office/2-restrict-kfm-from-office-group-policy-configure-cloud-policy.png" alt-text="screenshot of KFM configuration settings" lightbox="media/restrict-kfm-from-office/2-restrict-kfm-from-office-group-policy-configure-cloud-policy.png":::
+:::image type="content" source="media/restrict-kfm-from-office/2-restrict-kfm-from-office-group-policy-configure-cloud-policy.jpg" alt-text="screenshot of KFM configuration settings" lightbox="media/restrict-kfm-from-office/2-restrict-kfm-from-office-group-policy-configure-cloud-policy.jpg":::
 
 Once configured, the policy will apply to eligible users the next time they sign in to Microsoft 365 Apps on any device.
 
