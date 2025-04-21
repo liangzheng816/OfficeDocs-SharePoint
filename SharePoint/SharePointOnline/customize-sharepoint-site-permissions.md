@@ -36,7 +36,7 @@ If you do need to customize SharePoint groups, this article describes how.
 A SharePoint group is a collection of users who all have the same set of permissions to sites and content. Rather than assign permissions one person at a time, you can use groups to conveniently assign the same permission level to many people at once. 
   
 > [!NOTE]
->  To do the following steps, you need a permission level that includes permissions to  *Create Groups*  and  *Manage Permissions*. The **Full Control** level has both. For more information, see [Understanding permission levels in SharePoint](understanding-permission-levels.md).
+> To do the following steps, you need a permission level that includes permissions to  *Create Groups*  and  *Manage Permissions*. The **Full Control** level has both. For more information, see [Understanding permission levels in SharePoint](understanding-permission-levels.md).
 
 ### Create a group
 <a name="__toc340230102"> </a>
@@ -66,22 +66,33 @@ A SharePoint group is a collection of users who all have the same set of permiss
 
 You can add users to a group at any time.
   
-1. On your website or team site, select **Share**.
-  
-    ![Click the share button to send invites to new members](media/d4917a74-658e-4ca8-8f61-5b83e9a5b532.png)
-  
-    If you see **Members** instead of **Share**, select **Members**, and then select **Add members**.
-    
-2. In the **Share site** dialog that appears, enter the name or email address of the user or group that you want to add. When the name appears, choose the permission level from the dropdown.
-  
-    ![Add a member to a group dialog](media/add-user-to-a-group.PNG)
+If you are on a [communication site](https://support.microsoft.com/office/use-the-sharepoint-standard-communication-showcase-and-blank-communication-site-templates-94a33429-e580-45c3-a090-5512a8070732), follow these steps:
 
+1. Select **Site access**.  
   
+    ![Screenshot of site access for communication sites](media/customize-permissions/communication-site-add-member.png)
+    
+2. In the **Site access** dialog that appears, enter the name or email address of the user or group that you want to add. When the name appears, choose the permission level from the dropdown.
+  
+    ![Screenshot of adding a member to a group dialog](media/add-user-to-a-group.png)
+
 3. If you want to add more names, repeat these steps. 
     
 4. Enter a message to send to the new users in the **Add a message** box.
 
 5. Select **Share**.
+
+If you are on a [team site](https://support.microsoft.com/office/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e), follow these steps:
+
+1. Select **members**.
+    
+    ![Screenshot of adding members for team sites](media/customize-permissions/team-site-add-member.png)
+  
+2. In the **Group membership** dialog, select **Add members**. Start typing the name of the user that you want to add. When the name appears, select it. You can add multiple users at once.
+
+    ![Screenshot of adding members to a group dialog](media/customize-permissions/add-member-team-site.png)
+
+To make a member an owner, add them as a member and then use the drop-down arrow in the member profile to make them an owner.
 
     
 ### Remove users from a group
@@ -91,7 +102,7 @@ You can add users to a group at any time.
     
 2. On the **Site Settings** page, under **Users and Permissions**, select **People and Groups**.
     
-3. On the **People and Groups** page, in the Quick Launch, select the name of the group that you want to remove users from. 
+3. On the **People and Groups** page, under **Groups**, select the name of the group that you want to remove users from. 
     
 4. Select the check boxes next to the users who you want to remove, select **Actions**, and then select **Remove Users from Group**. 
     
@@ -170,5 +181,3 @@ If you have customized a permission level or created a new permission level, you
     > [!NOTE]
     >  To see the Site Collection Administrators link, you must be at least a [SharePoint Administrator](./sharepoint-admin-role.md). This link isn't displayed to site owners.
   
-
-
