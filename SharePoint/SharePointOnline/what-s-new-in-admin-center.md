@@ -1,5 +1,5 @@
 ---
-ms.date: 07/11/2018
+ms.date: 04/18/2025
 title: "What's new in the SharePoint admin center"
 ms.reviewer: daminasy
 ms.author: ruihu
@@ -29,13 +29,23 @@ We're continuously adding new features to the new <a href="https://go.microsoft.
   
 > [!NOTE]
 > The new SharePoint admin center is supported in Microsoft Edge, Internet Explorer, Chrome, Firefox, and Safari.
-> 
+>
 > Some functionality is introduced gradually to organizations that have opted in to the [Targeted release option in Microsoft 365](/office365/admin/manage/release-options-in-office-365). This means that you might not yet see some features described in this article.
-> 
+>
 > For info about new features in the Microsoft 365 admin center, see [What's new in the Microsoft 365 admin center](/microsoft-365/admin/whats-new-in-preview). For info about new features in Migration Manager, see [What's new in Migration Manager](/sharepointmigration/mm-whats-new).
 
 > [!IMPORTANT]
-> Microsoft 365 apps and services will not support Internet Explorer 11 starting August 17, 2021 (Microsoft Teams will not support Internet Explorer 11 earlier, starting November 30, 2020). [Learn more](https://aka.ms/AA97tsw). Please note that Internet Explorer 11 will remain a supported browser. Internet Explorer 11 is a component of the Windows operating system and [follows the Lifecycle Policy](/lifecycle/faq/internet-explorer-microsoft-edge) for the product on which it is installed. 
+> Microsoft 365 apps and services will not support Internet Explorer 11 starting August 17, 2021 (Microsoft Teams will not support Internet Explorer 11 earlier, starting November 30, 2020). [Learn more](https://aka.ms/AA97tsw). Please note that Internet Explorer 11 will remain a supported browser. Internet Explorer 11 is a component of the Windows operating system and [follows the Lifecycle Policy](/lifecycle/faq/internet-explorer-microsoft-edge) for the product on which it is installed.
+
+## April 2025
+
+[**Microsoft SharePoint Premium - SharePoint Advanced Management**](advanced-management.md) is an essential add-on for Microsoft 365 that equips IT administrators with a powerful suite of tools to bolster content governance throughout the Microsoft Copilot deployment journey.
+
+Whether preparing for [Copilot deployment](/copilot/microsoft-365/microsoft-365-copilot-setup) or managing content post-implementation, this solution offers capabilities to:
+
+- Prevent [content sprawl](advanced-management.md#manage-content-sprawl)
+- Streamline [access management](advanced-management.md#manage-permissions-and-access) for SharePoint and OneDrive sites
+- Analyze usage patterns through comprehensive reporting
 
 ## April 2022
 
@@ -43,7 +53,7 @@ We're continuously adding new features to the new <a href="https://go.microsoft.
 
 ## December 2021
 
-- **Limit OneDrive access**. If you have a subscription to a qualifying plan, you can go to the <a href="https://go.microsoft.com/fwlink/?linkid=2185071" target="_blank">**Access control** page</a> and [limit access to OneDrive by security group](/onedrive/limit-access). 
+- **Limit OneDrive access**. If you have a subscription to a qualifying plan, you can go to the <a href="https://go.microsoft.com/fwlink/?linkid=2185071" target="_blank">**Access control** page</a> and [limit access to OneDrive by security group](/onedrive/limit-access).
 
 ## November 2021
 
@@ -55,19 +65,19 @@ We're continuously adding new features to the new <a href="https://go.microsoft.
 
 ## June 2021
 
-- **Info about connection to Microsoft Teams**. On the <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites** page</a>, you can use the new Teams column to view and filter sites connected to Microsoft Teams. When you select a site, the details panel also shows whether the site is connected to Microsoft Teams. 
+- **Info about connection to Microsoft Teams**. On the <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites** page</a>, you can use the new Teams column to view and filter sites connected to Microsoft Teams. When you select a site, the details panel also shows whether the site is connected to Microsoft Teams.
 - **Info about site creation source**. On the <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites** page</a>, you can use the new Created from column to see how the site was created. When you select a site, this info appears on the General tab of the details panel, under **Creation**. This info isn't available for sites created before October 2020.  
 - **New dashboard on home page**. On the home page, you can now add, remove, and rearrange cards. Several new cards were added:
 
-    - SharePoint storage usage over time
-    - OneDrive usage
-    - OneDrive file activity
-    - Search active sites
-    - Sensitivity labels
-    - Term store operations
-    - Microsoft 365 active users report
+  - SharePoint storage usage over time
+  - OneDrive usage
+  - OneDrive file activity
+  - Search active sites
+  - Sensitivity labels
+  - Term store operations
+  - Microsoft 365 active users report
 
-You can also create a card by [tracking a view](customize-admin-center-site-list.md#track-a-view) on the <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites** page</a>. 
+You can also create a card by [tracking a view](customize-admin-center-site-list.md#track-a-view) on the <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites** page</a>.
 
 [Learn more about the new home page dashboard](get-started-new-admin-center.md)
 
@@ -77,7 +87,7 @@ You can also create a card by [tracking a view](customize-admin-center-site-list
 
 ## March 2021
 
-- **OneDrive settings**. On the <a href="https://go.microsoft.com/fwlink/?linkid=2185072" target="_blank">**Settings** page</a>), you can now manage OneDrive settings. The OneDrive **Notifications** setting lets you [control whether users can receive notifications about file activity](/onedrive/turn-on-external-sharing-notifications). The **Retention** setting lets you [specify the days to retain a deleted user's OneDrive](/onedrive/set-retention). The **Storage limit** setting lets you [set the default OneDrive storage space](/onedrive/set-default-storage-space). The **Sync** setting lets you show or hide the Sync button on the OneDrive website, [allow syncing only on computers joined to specific domains](/onedrive/allow-syncing-only-on-specific-domains), and [block upload of specific file types](/onedrive/block-file-types). 
+- **OneDrive settings**. On the <a href="https://go.microsoft.com/fwlink/?linkid=2185072" target="_blank">**Settings** page</a>), you can now manage OneDrive settings. The OneDrive **Notifications** setting lets you [control whether users can receive notifications about file activity](/onedrive/turn-on-external-sharing-notifications). The **Retention** setting lets you [specify the days to retain a deleted user's OneDrive](/onedrive/set-retention). The **Storage limit** setting lets you [set the default OneDrive storage space](/onedrive/set-default-storage-space). The **Sync** setting lets you show or hide the Sync button on the OneDrive website, [allow syncing only on computers joined to specific domains](/onedrive/allow-syncing-only-on-specific-domains), and [block upload of specific file types](/onedrive/block-file-types).
 
 ## June 2020
 
@@ -91,14 +101,14 @@ You can also create a card by [tracking a view](customize-admin-center-site-list
 ## December 2019
 
 - **Customizable navigation pane**. You can [customize the navigation pane to show or hide items](./get-started-new-admin-center.md#customize-the-navigation-pane).
-    
+
     ![The Customize navigation option at the bottom of the navigation pane.](media/customize-navigation.png)
 
-- **Root site replacement**. On the <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites** page</a>, you can [select and replace the root site](modern-root-site.md). 
+- **Root site replacement**. On the <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites** page</a>, you can [select and replace the root site](modern-root-site.md).
 
     ![The Replace site button on the command bar.](media/replace-site-button.png)
 
-- **People cards**. On the <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites** page</a>, you can point to a name in the Primary admin column or on the Permissions tab of the details panel and see info about the person. 
+- **People cards**. On the <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites** page</a>, you can point to a name in the Primary admin column or on the Permissions tab of the details panel and see info about the person.
 
     ![A card showing details about a user.](media/people-card.png)
 
@@ -106,11 +116,11 @@ You can also create a card by [tracking a view](customize-admin-center-site-list
 
     ![The General tab of the details panel](media/general-tab-details-panel.png)
 
-- **Additional site-level sharing settings**. On the <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites** page</a>, when you select a site and then select **Sharing** on the command bar, you can [change the default sharing link type and default link permissions for the site](change-external-sharing-site.md). 
+- **Additional site-level sharing settings**. On the <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites** page</a>, when you select a site and then select **Sharing** on the command bar, you can [change the default sharing link type and default link permissions for the site](change-external-sharing-site.md).
 
     ![Default sharing link type settings](media/default-sharing-link-type-site.png)
 
-- **Site permission details**. On the <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites** page</a>, a new experience lets you manage all site admins in one details panel, such as view site members and visitors, and add site admins to sites that belong to Microsoft 365 groups. [Learn more about managing site permissions](site-permissions.md) 
+- **Site permission details**. On the <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites** page</a>, a new experience lets you manage all site admins in one details panel, such as view site members and visitors, and add site admins to sites that belong to Microsoft 365 groups. [Learn more about managing site permissions](site-permissions.md)
 
     ![The membership tab in the details panel.](media/membership-details-panel.png)
 
@@ -137,6 +147,3 @@ You can also create a card by [tracking a view](customize-admin-center-site-list
 - On the <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites** page</a>, you can select multiple sites and bulk edit sharing and hub association settings.
 
 - Classic SharePoint admin features such as Term Store, User Profiles, Search, Apps, and more are available from <a href="https://go.microsoft.com/fwlink/?linkid=2185077" target="_blank">**More features**</a> so you can access them directly from the new SharePoint admin center.
-
-
-
