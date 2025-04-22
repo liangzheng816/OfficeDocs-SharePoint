@@ -371,6 +371,8 @@ items:
         href: use-silent-account-configuration.md
       - name: Known Folder Move
         href: redirect-known-folders.md
+      - name: Deploy Restrict Known Folder Move from Office Group policy
+        href: restrict-known-folder-move-office-group-policy.md
       - name: OneDrive policies
         href: use-group-policy.md
       - name: Configure settings with Intune
