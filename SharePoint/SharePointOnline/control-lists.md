@@ -92,6 +92,7 @@ Where the template ID is:
 - Travel requests with approvals: '4EB20749-6360-417C-83DD-06135C0FF1CE'
 - Content scheduler with approvals: 'C381BD64-C1A1-4D9E-BE9C-0571900FF1CE'
 - Playlist: '3A867B4A-7429-0E1A-B02E-BF4B240FF1CE'
+- Resume repository: 'F6AEF3EE-EC97-433C-A662-E9170B0FF1CE'
 
 To re-enable a built-in template, use the parameter `EnableModernListTemplateIds`.
 
