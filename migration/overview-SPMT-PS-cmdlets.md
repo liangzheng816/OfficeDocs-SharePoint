@@ -71,7 +71,7 @@ Open **Register Editor**, navigate to `"Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Mic
 ## Before you begin
 
 1. Provision your Microsoft 365 with either your existing active directory or one of the other options for adding accounts to Microsoft 365. For more information, see [Microsoft 365 integration with on-premises environments](/microsoft-365/enterprise/microsoft-365-integration) and [Add users to Microsoft 365 Apps for business](/microsoft-365/admin/add-users/add-users).
-1. Open the folder: *`$env:UserProfile\Documents\WindowsPowerShell\Modules\Microsoft.SharePoint.MigrationTool.PowerShell`.* Make sure you have DLLs inside of it.
+1. Open the folder: *`$env:UserProfile\Documents\WindowsPowerShell\Modules\Microsoft.SharePoint.MigrationTool.PowerShell`.* Make sure you have DLLs inside of it. If you're using OneDrive, you need to copy the WindowsPowershell Folder into *`$env:UserProfile\OneDrive - Microsoft\Documents`*.
 
 1. From this location, run the following PowerShell command:
 
