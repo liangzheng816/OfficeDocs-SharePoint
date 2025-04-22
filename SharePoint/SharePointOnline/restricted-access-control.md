@@ -181,13 +181,13 @@ Set-SPOTenant -AllowSharingOutsideRestrictedAccessControlGroups $false
 
 Once sharing restriction is applied, sharing is blocked for users who aren't members of the Restricted Access Control group.
 
-:::image type="content" source="media/rac-spac/rac-share-with-users.png" alt-text="screenshot of sharing with users message" lightbox="media/rac-spac/rac-share-with-users.png":::
+:::image type="content" source="media/rac-spac/rac-share-with-users.png" alt-text="screenshot of sharing with users message." lightbox="media/rac-spac/rac-share-with-users.png":::
 
 ### Sharing with groups
 
 Sharing is allowed with Microsoft Entra Security or Microsoft 365 groups which are part of the Restricted Access Control groups list. Thus, sharing with all other groups including Everyone except external users or SharePoint groups aren't allowed.
 
-:::image type="content" source="media/rac-spac/rac-share-with-groups.png" alt-text="screenshot of sharing with groups message" lightbox="media/rac-spac/rac-share-with-groups.png":::
+:::image type="content" source="media/rac-spac/rac-share-with-groups.png" alt-text="screenshot of sharing with groups message." lightbox="media/rac-spac/rac-share-with-groups.png":::
 
 > [!NOTE]
 > Sharing of a site and its content isn't allowed for the nested security groups that are part of the Restricted Access Control groups. This support will be added in the next release iteration.
@@ -213,7 +213,7 @@ Get-SPOTenant | select RestrictedAccessControlForSitesErrorHelpLink
 
 The configured learn more link is launched when the user selects the **Know more about your organization’s policies here** link.
 
-![Screenshot that shows learn more link for Restricted Access Control](media/rac-spac/2-rac-learn-more-link.png)
+![Screenshot that shows learn more link for Restricted Access Control.](media/rac-spac/2-rac-learn-more-link.png)
 
 ## Related articles
 
