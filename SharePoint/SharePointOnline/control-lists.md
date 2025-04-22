@@ -1,5 +1,5 @@
 ---
-ms.date: 09/22/2020
+ms.date: 04/22/2025
 title: "Control Microsoft Lists"
 ms.reviewer: hasaladi
 ms.author: ruihu
@@ -106,4 +106,3 @@ Some built-in list templates include extra features such as automations and cust
 
     > [!NOTE]
     > Users in your organization will see the custom list template on the **From your organization** tab rather than on the **From Microsoft** tab.
-
