@@ -1,5 +1,5 @@
 ---
-ms.date: 01/27/2020
+ms.date: 04/23/2025
 title: "SharePoint governance overview"
 ms.reviewer:
 ms.author: ruihu
@@ -47,6 +47,8 @@ To see how SharePoint governance capabilities overlap with other Microsoft 365 s
 - [Settings interactions between Microsoft 365 Groups and SharePoint](/microsoft-365/solutions/groups-sharepoint-governance)
 
 - [Settings interactions between Microsoft 365 Groups, Teams and SharePoint](/microsoft-365/solutions/groups-sharepoint-teams-governance)
+
+- [Get ready for Microsoft 365 Copilot with SharePoint Advanced Management](/sharepoint/get-ready-copilot-sharepoint-advanced-management)
 
 For lifecycle guidance for SharePoint sites together with related Microsoft 365 services, see:
 
