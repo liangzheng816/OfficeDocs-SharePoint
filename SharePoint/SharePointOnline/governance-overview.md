@@ -40,7 +40,7 @@ Use these resources to further explore governance in Microsoft SharePoint and re
 
 ### Related services
 
-SharePoint is tightly integrated with other Microsoft 365 services, including Microsoft 365 Groups, Teams, and Viva Engage. It's important to think about SharePoint governance in a way that's inclusive of these other services. Microsoft 365 includes a variety of options to enable your governance policies across SharePoint and related services, including Teams, Planner, Stream, Outlook, Viva Engage and Microsoft 365 Groups.
+SharePoint is tightly integrated with other Microsoft 365 services, including Microsoft 365 Groups, Teams, and Viva Engage. It's important to think about SharePoint governance in a way that's inclusive of these other services. Microsoft 365 includes various options to enable your governance policies across SharePoint and related services, including Teams, Planner, Stream, Outlook, Viva Engage and Microsoft 365 Groups.
 
 To see how SharePoint governance capabilities overlap with other Microsoft 365 services, see:
 
@@ -57,7 +57,7 @@ For lifecycle guidance for SharePoint sites together with related Microsoft 365 
 - [End of lifecycle options for groups, teams, and Viva Engage](/microsoft-365/solutions/end-life-cycle-groups-teams-sites-yammer)
 
 
-## Related topics
+## Related articles
 
 [Manage who can create Microsoft 365 Groups](/office365/admin/create-groups/manage-creation-of-groups)
 
