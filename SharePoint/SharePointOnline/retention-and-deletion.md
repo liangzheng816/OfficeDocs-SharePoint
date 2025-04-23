@@ -1,5 +1,5 @@
 ---
-ms.date: 01/24/2025
+ms.date: 04/22/2025
 title: "OneDrive retention and deletion"
 ms.reviewer: kapadma
 ms.author: mactra
@@ -31,7 +31,7 @@ ms.custom:
 This article describes how you can manage a user's OneDrive when you delete the user's Microsoft 365 account for your organization, and what steps happen automatically.
 
 > [!IMPORTANT]
-> All OneDrive accounts that do not have a valid OneDrive license are automatically archived on their 93rd unlicensed day.  Retention settings, retention policies, eDiscovery, and all holds are still honored while an unlicensed account is in the archive state. For more info, see [Manage unlicensed OneDrive user accounts](unlicensed-onedrive-accounts.md).
+> All OneDrive accounts that don't have a valid OneDrive license are automatically archived on their 93rd unlicensed day. Retention settings, retention policies, eDiscovery, and all holds are still honored while an unlicensed account is in the archive state. For more info, see [Manage unlicensed OneDrive user accounts](unlicensed-onedrive-accounts.md).
 
 ## Deleting a user from the Microsoft 365 admin center
 
@@ -39,7 +39,7 @@ When you delete a user from the Active users page in the Microsoft 365 admin cen
 
 ![Panel for deleting a user from the Microsoft 365 admin center](media/delete-user-m365.png)
 
-If you give another user access to the OneDrive, that user has 30 days by default to access and download the files they want to keep. (To change the retention time, see [Set the OneDrive retention for deleted users](set-retention.md)). They receive an email with a link to these instructions for accessing the deleted user's OneDrive: [Copy files from another user's OneDrive](https://support.microsoft.com/office/copy-files-from-another-person-s-onedrive-7eb33f7d-6540-488f-afaf-56043828e47b).
+If you give another user access to the OneDrive, that user has 30 days by default to access and download the files they want to keep. (To change the retention time, see [Set the OneDrive retention for deleted users](set-retention.md)).
   
 ## Configure automatic access delegation
 
@@ -74,7 +74,7 @@ The OneDrive deletion process works as follows:
 
 4. If a manager is specified for the deleted user, the manager receives an email telling them that they have access to the OneDrive, and that the OneDrive will be deleted at the end of the OneDrive retention period. For info about specifying a user's manager in the Microsoft Entra admin center, see [Add or update a user's profile information](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
-    If a manager isn't specified for the user account, but a secondary owner was entered in the [SharePoint admin center](https://go.microsoft.com/fwlink/?linkid=2185219), the secondary owner receives an email telling them they have access to the OneDrive, and that the OneDrive will be deleted at the end of the retention period.
+    If a manager isn't specified for the user account, but a secondary owner was entered in the [SharePoint admin center](https://go.microsoft.com/fwlink/?linkid=2185219), the secondary owner receives an email telling them that they have access to the OneDrive, and that the OneDrive will be deleted at the end of the retention period.
 
 5. Seven days before the OneDrive retention period expires, a second email is sent to the manager or secondary owner as a reminder that the OneDrive will be deleted in seven days.
 
