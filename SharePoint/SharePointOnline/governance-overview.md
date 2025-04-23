@@ -1,5 +1,5 @@
 ---
-ms.date: 01/27/2020
+ms.date: 04/23/2025
 title: "SharePoint governance overview"
 ms.reviewer:
 ms.author: ruihu
@@ -40,13 +40,15 @@ Use these resources to further explore governance in Microsoft SharePoint and re
 
 ### Related services
 
-SharePoint is tightly integrated with other Microsoft 365 services, including Microsoft 365 Groups, Teams, and Viva Engage. It's important to think about SharePoint governance in a way that's inclusive of these other services. Microsoft 365 includes a variety of options to enable your governance policies across SharePoint and related services, including Teams, Planner, Stream, Outlook, Viva Engage and Microsoft 365 Groups.
+SharePoint is tightly integrated with other Microsoft 365 services, including Microsoft 365 Groups, Teams, and Viva Engage. It's important to think about SharePoint governance in a way that's inclusive of these other services. Microsoft 365 includes various options to enable your governance policies across SharePoint and related services, including Teams, Planner, Stream, Outlook, Viva Engage and Microsoft 365 Groups.
 
 To see how SharePoint governance capabilities overlap with other Microsoft 365 services, see:
 
 - [Settings interactions between Microsoft 365 Groups and SharePoint](/microsoft-365/solutions/groups-sharepoint-governance)
 
 - [Settings interactions between Microsoft 365 Groups, Teams and SharePoint](/microsoft-365/solutions/groups-sharepoint-teams-governance)
+
+- [Get ready for Microsoft 365 Copilot with SharePoint Advanced Management](/sharepoint/get-ready-copilot-sharepoint-advanced-management)
 
 For lifecycle guidance for SharePoint sites together with related Microsoft 365 services, see:
 
@@ -55,7 +57,7 @@ For lifecycle guidance for SharePoint sites together with related Microsoft 365 
 - [End of lifecycle options for groups, teams, and Viva Engage](/microsoft-365/solutions/end-life-cycle-groups-teams-sites-yammer)
 
 
-## Related topics
+## Related articles
 
 [Manage who can create Microsoft 365 Groups](/office365/admin/create-groups/manage-creation-of-groups)
 

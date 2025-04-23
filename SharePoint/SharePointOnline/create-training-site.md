@@ -1,5 +1,5 @@
 ---
-ms.date: 07/11/2018
+ms.date: 04/23/2025
 title: "Guided walkthrough: Creating a training site for your organization"
 ms.reviewer:
 ms.author: ruihu
@@ -26,7 +26,7 @@ description: "In this article, you learn how to convert a site into a hub site i
 
 # Guided walkthrough: Creating a Training site for your organization
 
-In this article, we show you elements of an example Training site to inspire you, and help you learn how to create similar sites for your own organization. This example site provides info about a specific event and guides the user toward learning and registration. It relies on visual impact to engage and motivate the visitor.
+In this article, we show you elements of an example Training site to inspire you, and help you learn how to create similar sites for your own organization. This example site provides info about a specific event and guides the user toward learning and registration. It relies on visuals to engage and motivate the visitor.
 
 First, if you haven't already created a Communication site, check out the [Create your site](#create-your-site) section in this article. If you need to learn how to edit and publish the page on your site, check out the section [Edit, work with sections and web parts, and publish](#manage-sections-and-web-parts) in this article.
 
@@ -93,7 +93,7 @@ When your page updates are ready, select **Publish** to make them visible to you
 ![Image of the publish icon](media/ts-10.png)
 
 > [!TIP]
-> To manage all of your pages on the site, click **Pages** on the top menu.
+> To manage all of your pages on the site, select **Pages** on the top menu.
 
 For more information on using pages, see [Create and use modern pages on a SharePoint site](https://support.microsoft.com/office/create-and-use-modern-pages-on-a-sharepoint-site-b3d46deb-27a6-4b1e-87b8-df851e503dec).
 
@@ -159,7 +159,7 @@ For more information on using the Quick Links web part, see [Use the Quick Links
 
 ## Use images with links
 
-The Image web part places a fixed image on the page. Images can be photographs, diagrams, or even used to bring impact to text. Captions and alt-text keep images accessible.
+The Image web part places a fixed image on the page. Images can be photographs, diagrams, or even used to bring emphasis to text. Captions and alt-text keep images accessible.
 
 ![Image of the Image web part](media/ts-15.png)
 
