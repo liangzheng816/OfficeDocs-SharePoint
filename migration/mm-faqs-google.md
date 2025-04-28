@@ -129,3 +129,21 @@ If you cannot locate a destination in the "Edit destination" panel, please [uplo
 </br> </br>
 
 
+**Question: Why am I receiving the "Permissions issue: File marked as restricted or not copyable" error in Migration detailed report when attempting to migrate a specific file?**
+
+Answer: Google Workspace/Drive allows owners to control the ability for users to copy, download, or print files on a per-file basis. By default, this feature is enabled for each file. To ensure a successful migration, this setting must remain enabled. Disabling it may result in the following error when migrating a file owned by another user:
+ 
+To enable this setting:
+ 
+1. Navigate to the **Share** panel for the file.
+1. Click on the **Settings Icon** located at the top right corner.
+1. Select the checkbox for the setting "**Viewers and commenters can see the option to download, print, and copy**."
+
+</br> </br>
+
+**Question: Why am I receiving the "MAUTHACCESSTOKENINVALID" or "MAUTHREFRESHTOKEN" failure code in Migration detailed report when attempting to migrate a specific file?**
+
+Answer: This failure occurs when the "Drive and Docs" service status is not set to "on for everyone". To resolve the issue, go to the Google Admin Console, select Apps -> Google Workspace -> Service Status, and change the service status of "Drive and Docs" to **ON for everyone**.
+
+</br> </br>
+
