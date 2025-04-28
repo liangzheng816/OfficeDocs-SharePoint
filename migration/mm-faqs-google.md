@@ -143,7 +143,7 @@ To enable this setting:
 
 **Question: Why am I receiving the "MAUTHACCESSTOKENINVALID" or "MAUTHREFRESHTOKEN" failure code in Migration detailed report when attempting to migrate a specific file?**
 
-Answer: This failure occurs when the "Drive and Docs" service status is not set to "on for everyone". To resolve the issue, go to the Google Admin Console, select Apps -> Google Workspace -> Service Status, and change the service status of "Drive and Docs" to **ON for everyone**.
+Answer: This failure occurs when the "Drive and Docs" service status isn't set to "On for everyone". To resolve the issue, go to the Google Admin Console, select Apps -> Google Workspace -> Service Status, and change the service status of "Drive and Docs" to **ON for everyone**.
 
 </br> </br>
 
