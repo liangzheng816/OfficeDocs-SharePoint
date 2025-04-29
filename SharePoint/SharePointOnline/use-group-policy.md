@@ -45,7 +45,7 @@ This article describes the OneDrive Group Policy objects (GPOs) that administrat
 1. Browse to `%localappdata%\Microsoft\OneDrive\\*BuildNumber*\adm\` (for [per-machine sync app](per-machine-installation.md) browse to `%ProgramFiles(x86)%\Microsoft OneDrive\BuildNumber\adm\` or `%ProgramFiles%\Microsoft OneDrive\BuildNumber\adm\` (depending on the OS architecture)) to the subfolder for your language, as necessary (where *BuildNumber* is the number displayed in sync app settings under the **About** tab).
 
     ![The ADM folder in the OneDrive installation directory](media/85e0fe3f-84eb-4a29-877f-c706dda4d075.png)
-   
+
 3. Copy the .adml and .admx files.
 
 4. Paste the .admx file in your domain's Central Store, `\\\\*domain*\sysvol\domain\Policies\PolicyDefinitions` (where *domain* is your domain name, such as corp.contoso.com), and the .adml file in the appropriate language subfolder, such as en-us. If the PolicyDefinitions folder doesn't exist, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://support.microsoft.com/help/3087759), or use your local policy store under `%windir%\policydefinitions`.
@@ -220,6 +220,7 @@ where "1111-2222-3333-4444" is the [tenant ID](find-your-office-365-tenant-id.md
 This setting takes priority over [Block syncing OneDrive accounts for specific organizations](use-group-policy.md#block-syncing-onedrive-accounts-for-specific-organizations). Don't enable both settings at the same time.
 
 ### Allow users to contact Microsoft for feedback and support
+
 This setting specifies whether users can contact Microsoft through user experiences in the app.
 
 If you enable or do not configure this setting, users can use the experiences in the OneDrive app to contact Microsoft directly for feedback and support.
@@ -488,7 +489,7 @@ Restore B2B Sync with:
 
 ### Prompt users to confirm when they delete shared content
 
-When local synced files, which multiple users have access to, are deleted, a dialog appears informing the user that other users will no longer have access to that content and asking them to confirm the action before OneDrive completes the deletes online. After confirming, deletes of other shared content, for a short period of time, do not trigger additional confirmations. Other content will continue to sync. Enable this setting to prevent users from hiding the confirmation dialog. Each time the user deletes shared content, their confirmation is required before the item is deleted for everyone online. Disable this setting to not show the delete confirmation message. Deletes will immediately be made in the cloud. 
+When local synced files, which multiple users have access to, are deleted, a dialog appears informing the user that other users will no longer have access to that content and asking them to confirm the action before OneDrive completes the deletes online. After confirming, deletes of other shared content, for a short period of time, do not trigger additional confirmations. Other content will continue to sync. Enable this setting to prevent users from hiding the confirmation dialog. Each time the user deletes shared content, their confirmation is required before the item is deleted for everyone online. Disable this setting to not show the delete confirmation message. Deletes will immediately be made in the cloud.
 
 Enabling this policy sets the following registry key to the value shown in the following example:
 
@@ -745,6 +746,14 @@ If you disable or don't configure this setting, syncing pauses automatically whe
 Enabling this policy sets the following registry key value to 1:
 
 `[HKCU\SOFTWARE\Policies\Microsoft\OneDrive] "DisablePauseOnBatterySaver"=dword:00000001`
+
+### Deploy Restrict Known Folder Move from Office Group Policy
+
+The Restrict Known Folder Move from Office (Restrict KFM from Office) Group Policy allows administrators to control whether Office apps display prompts encouraging users to back up their files to Microsoft OneDrive.
+
+When this policy is enabled and deployed, Office apps won’t display the message bar, even if users are eligible for the Known Folder Move (KFM) feature. This policy applies only to Office apps and does not affect other OneDrive or KFM configurations. It is available in the [Administrative Template files for Microsoft Office](https://www.microsoft.com/download/details.aspx?id=49030) (version 5497.1000 or newer).
+
+See [Deploy Restrict Known Folder Move from Office Group Policy](restrict-known-folder-move-office-group-policy.md) for more information on how to enable and deploy this policy.
 
 ### Disable the tutorial that appears at the end of OneDrive Setup
 

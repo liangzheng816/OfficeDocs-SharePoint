@@ -1,5 +1,5 @@
 ---
-ms.date: 09/22/2020
+ms.date: 04/22/2025
 title: "Control Microsoft Lists"
 ms.reviewer: hasaladi
 ms.author: ruihu
@@ -92,6 +92,7 @@ Where the template ID is:
 - Travel requests with approvals: '4EB20749-6360-417C-83DD-06135C0FF1CE'
 - Content scheduler with approvals: 'C381BD64-C1A1-4D9E-BE9C-0571900FF1CE'
 - Playlist: '3A867B4A-7429-0E1A-B02E-BF4B240FF1CE'
+- Resume repository: 'F6AEF3EE-EC97-433C-A662-E9170B0FF1CE'
 
 To re-enable a built-in template, use the parameter `EnableModernListTemplateIds`.
 
@@ -100,9 +101,8 @@ To re-enable a built-in template, use the parameter `EnableModernListTemplateIds
 Some built-in list templates include extra features such as automations and custom formatting. If you wish to keep only the base schema of a built-in list template but not the rest of its features included in that template:
 
 1. Create a list from the built-in list template.
-2. [Create a custom list template](lists-custom-template.md) based off of that list. The custom list template won't include any extra features by default.
+2. [Create a custom list template](lists-custom-template.md) based off of that list. The custom list template doesn't include any extra features by default.
 3. [Disable the original built-in list template](#disable-built-in-list-templates). 
 
     > [!NOTE]
-    > Users in your organization will see the custom list template on the **From your organization** tab rather than on the **From Microsoft** tab.
-
+    > Users in your organization see the custom list template on the **From your organization** tab rather than on the **From Microsoft** tab.
