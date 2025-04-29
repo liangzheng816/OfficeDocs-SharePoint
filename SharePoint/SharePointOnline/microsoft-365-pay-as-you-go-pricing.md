@@ -34,4 +34,4 @@ The following table describes the service, its pricing, and how it measures usag
 | Agents in SharePoint| [The number of messages used](/sharepoint/sharepoint-agents-azure-billing#set-up-pay-as-you-go-billing-for-sharepoint-agents).  | $0.01/message              |
 
 > [!NOTE] 
-> Each interaction includes a question and an answer. A successful interaction uses 32 messages.
+> Each interaction includes a question and an answer. A successful interaction uses 12 messages.
