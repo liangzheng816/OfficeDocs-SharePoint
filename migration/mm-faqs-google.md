@@ -131,10 +131,10 @@ If you cannot locate a destination in the "Edit destination" panel, please [uplo
 
 **Question: Why am I receiving the "Permissions issue: File marked as restricted or not copyable" error in Migration detailed report when attempting to migrate a specific file?**
 
-Answer: Google Workspace/Drive allows owners to control the ability for users to copy, download, or print files on a per-file basis. By default, this feature is enabled for each file. To ensure a successful migration, this setting must remain enabled. Disabling it may result in the following error when migrating a file owned by another user:
+Answer: Google Workspace/Drive allows owners to control the ability for users to copy, download, or print files on a per-file basis. By default, this feature is enabled for each file. To ensure a successful migration, this setting must remain enabled. Disabling it may result in the above error when migrating a file owned by another user.
  
-To enable this setting:
- 
+If you encounter this error, follow these steps to enable the setting:
+
 1. Navigate to the **Share** panel for the file.
 1. Click on the **Settings Icon** located at the top right corner.
 1. Select the checkbox for the setting "**Viewers and commenters can see the option to download, print, and copy**."
