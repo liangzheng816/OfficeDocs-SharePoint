@@ -30,7 +30,7 @@ Download and install SPMT using one of the links listed in the table.
 
 | Release |Public preview|First release|Rolling out|Full General Availability|
 |:-----|:-----|:-----|:-----|:-----|
-|Last released build |[4.1.128.1](https://aka.ms/spmt-beta-page) |[4.1.127.1](https://aka.ms/spmt-ga-page) |[4.1.127.1](https://aka.ms/spmt-ga-page) |[4.1.127.1](https://aka.ms/spmt-ga-page) |
+|Last released build |[4.1.129.0](https://aka.ms/spmt-beta-page) |[4.1.127.1](https://aka.ms/spmt-ga-page) |[4.1.127.1](https://aka.ms/spmt-ga-page) |[4.1.127.1](https://aka.ms/spmt-ga-page) |
 
 ## SPMT 4.1.127.1
 

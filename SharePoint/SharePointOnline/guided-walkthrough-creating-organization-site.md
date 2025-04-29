@@ -1,5 +1,5 @@
 ---
-ms.date: 08/21/2020
+ms.date: 04/23/2025
 title: Guided walkthrough - Creating an organization site
 ms.reviewer: 
 ms.author: ruihu
@@ -37,11 +37,11 @@ Once you have your created your site and know how to edit pages, you can use the
 
 ## Create your site
 
-To make a site like the one shown here, you'll create a [Communication site](https://support.microsoft.com/office/use-the-sharepoint-topic-showcase-and-blank-communication-site-templates-94a33429-e580-45c3-a090-5512a8070732?storagetype=live). To do this, select **Create site** from the SharePoint start page (or, if you're going to associate this site with a Hub site, navigate to the hub site and select **Create site** there so that the communication site is automatically associated with that hub site).
+To make a site like the one shown here, you need to create a [Communication site](https://support.microsoft.com/office/use-the-sharepoint-topic-showcase-and-blank-communication-site-templates-94a33429-e580-45c3-a090-5512a8070732?storagetype=live). To do this, select **Create site** from the SharePoint start page (or, if you're going to associate this site with a Hub site, navigate to the hub site and select **Create site** there so that the communication site is automatically associated with that hub site).
 
 ![Image of the command bar](media/gw-leadership/gw-2.png)
 
-Next, choose **Communication site**, and then the **Topic** layout. Fill out your site name, description, and other information, and select **Finish**. Then you'll get a template with the same type of layout as the example in this article.
+Next, choose **Communication site**, and then the **Topic** layout. Fill out your site name, description, and other information, and select **Finish**. Then you get a template with the same type of layout as the example in this article.
 
 ![Image of the edit pane for the Topic layout](media/gw-org/org-3.jpg)
 
@@ -51,7 +51,7 @@ For more information, see [Create a communication site in SharePoint online](htt
 
 ## Manage sections and web parts
 
-Sections make up your page, and are where you place one or more web parts. While editing the page, each section will show controls to edit the layout, move, or delete the sections.
+Sections make up your page, and are where you place one or more web parts. While editing the page, each section shows controls to edit the layout, move, or delete the sections.
 
 If your page isn't already in edit mode, select **Edit** on the top right of the page.
 
