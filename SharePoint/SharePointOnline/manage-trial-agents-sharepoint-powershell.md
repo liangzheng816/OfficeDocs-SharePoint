@@ -78,6 +78,10 @@ Tenants that qualify for the trial and have opted in can view organization-wide 
 
 ![Screenshot of the Copilot Admin page in the Microsoft 365 Admin Center.](media/agents-sharepoint/trial-usage-report-mac.png)
 
+> [!NOTE]
+> - You will see a warning message if your organization has reached 90% of the 10,000 queries limit for the month. 
+> - You will also see a warning if your organization is disqualified from the trial promotion. This can happen if you have less than 50 Microsoft 365 Copilot licenses. 
+
 ## Additional information
 
 - Learn more about [SharePoint agents](https://support.microsoft.com/office/get-started-with-sharepoint-agents-69e2faf9-2c1e-4baa-8305-23e625021bcf)
