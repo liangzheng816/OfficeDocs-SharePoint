@@ -53,13 +53,19 @@ Increase available storage by cleaning up low-value versions and inactive sites,
 
 - Manage site lifecycle policies through [SharePoint Advanced Management](/sharepoint/advanced-management). Set up an [inactive site policy](/sharepoint/site-lifecycle-management) to automatically detect inactive sites and send notifications to site owners via email. <sup>**(*)**</sup> 
 
-
 ## Purchase additional storage  
 To increase SharePoint storage capacity, purchase additional storage in one-gigabyte increments or acquire more SharePoint licenses.  
 
 - Purchase [additional storage](https://www.microsoft.com/en-us/microsoft-365/onedrive/additional-file-storage) at a cost per gigabyte (GB) per month.<sup>**(*)**</sup>  
 
 - Purchase additional SharePoint licenses, adding 10 GB per license to the storage limit.<sup>**(*)**</sup>  
+
+- Use SharePoint storage report <new link> to review storage trends, for example, usage by sites and growth trend. There might be a 48-hour data latency in the usage reports.
+
+  > [!NOTE]
+  > Microsoft 365 admin center usage reports show usage across all geo locations while the SharePoint admin center usage values are geo location specific.
+
+- Purchase additional storage at a cost per gigabyte (GB) per month.<sup>**(*)**</sup> 
 
 <sup>**(*)**</sup>: Additional licensing/charges might apply
 
