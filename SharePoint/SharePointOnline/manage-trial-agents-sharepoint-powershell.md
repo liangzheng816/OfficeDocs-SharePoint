@@ -80,7 +80,7 @@ Tenants that qualify for the trial and have opted in can view organization-wide 
 
 > [!NOTE]
 > - You will see a warning message if your organization has reached 90% of the 10,000 queries limit for the month. 
-> - You will also see a warning if your organization is disqualified from the trial promotion. This can happen if you have less than 50 Microsoft 365 Copilot licenses. 
+> - You will also see a warning if your organization is disqualified from the trial promotion. This happens if you have less than 50 Microsoft 365 Copilot licenses.
 
 ## Additional information
 
