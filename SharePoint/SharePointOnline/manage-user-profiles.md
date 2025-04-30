@@ -1,5 +1,5 @@
 ---
-ms.date: 04/24/2024
+ms.date: 04/30/2025
 title: "Manage user profiles in the SharePoint admin center"
 ms.reviewer: waynewin
 ms.author: ruihu
