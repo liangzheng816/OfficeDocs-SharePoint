@@ -1,5 +1,5 @@
 ---
-ms.date: 10/15/2018
+ms.date: 04/30/2025
 title: "Understanding permission levels in SharePoint"
 ms.reviewer: srice
 ms.author: ruihu
