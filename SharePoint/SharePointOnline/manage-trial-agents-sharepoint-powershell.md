@@ -54,23 +54,16 @@ You can manage the trial access to SharePoint agents by following these steps:
 
 ## How the trial access affects your organization
 
-<div>
-  <div>
 Once the trial promotion is available, your unlicensed users are able to view and interact directly with SharePoint agents. They receive a notification about their promotional access and be encouraged to start exploring the feature. If the user doesn't immediately see the Copilot button in the suite navigation bar, ask them to refresh the page.  
-    </div>
-      <div>
 
 ![Screenshot of the trial access message in chat pane.](media/agents-sharepoint/promo-message-to-users.png)
-        </div>
-    <div >
-      <br>Anytime these users interact with agents, their usage counts toward your organization’s monthly trial use of 10,000 queries. Once the maximum number of queries is reached, users are notified that the service is temporarily unavailable and prompted to try again next month.</br>
-        <br>
-        Unused queries don't roll over to the following month. If you need more queries, you can get them by adding more Microsoft 365 Copilot licenses. After the trial ends on June 30, 2025, users without a Microsoft 365 Copilot License will no longer be able to create or use the agents. However, agents created and used during the trial promotion remain available, and no historical data are lost.</br>
-        </div>
-    <div >
-      ![Screenshot of reaching query limit message.](media/agents-sharepoint/reached-limit-message.png)
-    </div>
-</div>
+
+Anytime these users interact with agents, their usage counts toward your organization’s monthly trial use of 10,000 queries. Once the maximum number of queries is reached, users are notified that the service is temporarily unavailable and prompted to try again next month.
+
+Unused queries don't roll over to the following month. If you need more queries, you can get them by adding more Microsoft 365 Copilot licenses. After the trial ends on June 30, 2025, users without a Microsoft 365 Copilot License will no longer be able to create or use the agents. However, agents created and used during the trial promotion remain available, and no historical data are lost.
+
+![Screenshot of reaching query limit message.](media/agents-sharepoint/reached-limit-message.png)
+
 
 ## View SharePoint agent trial usage in Microsoft 365 Admin Center
 
