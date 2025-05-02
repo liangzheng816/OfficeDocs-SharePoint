@@ -73,7 +73,7 @@ Below are all the URLs that redirect to modern search profile pages on Microsoft
 `https://nam.delve.office.com`<br/>
 `https://eur.delve.office.com`<br/>
 `https://apc.delve.office.com`<br/>
-`https://gbr.dele.office.com`<br/>
+`https://gbr.delve.office.com`<br/>
 `https://can.delve.office.com`<br/>
 `https://lam.delve.office.com`<br/>
 `https://sfeur.delve.office.com`<br/>
