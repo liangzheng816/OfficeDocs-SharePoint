@@ -79,6 +79,13 @@ Below are all the URLs that will redirect to modern search profile pages on Micr
 `https://sfeur.delve.office.com`<br/>
 `https://sfnam.delve.office.com`
 
+## How can administrators control which custom user profile properties are visible on profile cards?
+
+Administrators can control the visibility of custom user profile properties on the profile card by adjusting the Policy Setting and Display Setting for the specific custom user profile property in the SharePoint admin center. To do this, ensure the Default Privacy Setting under Policy Setting is set to "Everyone" and select "Show in the profile properties section of the user's profile page" under Display Settings. For more details, refer to the article [Add and edit user profile properties in SharePoint](/sharepoint/add-and-edit-user-profile-properties).  
+![User's image](media/delve-retirement/image.png)
+
+
+
 ## Where can users edit properties they used to edit in Delve?
 
 A new edit profile experience, tightly coupled with the profile card, was released in December 2024. It allows users to easily edit their profiles across Microsoft 365. Only properties that were editable in Delve are editable in the new edit profile experience. For some properties, like custom user profile properties, user will have to go to the SharePoint edit profile experience. To make this effortless, a link to the SharePoint edit profile experience will be part of the new edit profile experience.
