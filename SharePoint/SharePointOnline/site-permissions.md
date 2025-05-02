@@ -1,5 +1,5 @@
 ---
-ms.date: 04/23/2024
+ms.date: 04/30/2025
 title: "Admin center site permissions reference"
 ms.reviewer: srice
 ms.author: ruihu

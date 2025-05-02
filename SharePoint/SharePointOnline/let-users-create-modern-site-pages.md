@@ -1,5 +1,5 @@
 ---
-ms.date: 07/11/2018
+ms.date: 04/30/2025
 title: "Allow users to create modern pages"
 ms.reviewer: 
 ms.author: ruihu
@@ -23,14 +23,14 @@ search.appverid:
 - BSA160
 - MET150
 ms.assetid: c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b
-description: "In this article, you'll learn how to allow or prevent users from adding modern pages on SharePoint sites."
+description: "In this article, you learn how to allow or prevent users from adding modern pages on SharePoint sites."
 ---
 
 # Allow users to create modern pages
 
 Using modern pages in Microsoft SharePoint is a great way to share ideas using images, Office files, video, and more. Users can [Add a page to a site](https://support.office.com/article/b3d46deb-27a6-4b1e-87b8-df851e503dec) quickly and easily, and modern pages look great on any device.
   
-If you're a [SharePoint Administrator](/sharepoint/sharepoint-admin-role) and [above](/microsoft-365/admin/add-users/about-admin-roles) in Microsoft 365, you can allow or prevent users from creating modern pages. You can do this at the organization level by changing settings in the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>. If you allow the creation of site pages as the organization level, you can turn it on or off at the site level by using PowerShell. Site owners can also [turn it on or off at the site level](https://support.office.com/article/787F3BA1-9DF6-480A-AB4C-9F4525490CB9).
+If you have at least a [SharePoint Administrator](/sharepoint/sharepoint-admin-role) role or [more](/microsoft-365/admin/add-users/about-admin-roles) in Microsoft 365, you can allow or prevent users from creating modern pages. You can do this at the organization level by changing settings in the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>. If you allow the creation of site pages as the organization level, you can turn it on or off at the site level by using PowerShell. Site owners can also [turn it on or off at the site level](https://support.office.com/article/787F3BA1-9DF6-480A-AB4C-9F4525490CB9).
 
   
 > [!NOTE]
@@ -138,7 +138,7 @@ If you allow the creation of site pages as the organization level, you can turn 
    .\SitePagesOut.ps1
    ```
 
-8. The script will prompt you for a **SiteUrl** and **WebUrl**.
+8. The script prompts you for a **SiteUrl** and **WebUrl**.
 
    If you have a site such as: `https://contoso.sharepoint.com/sites/marketing/northwindcompete`
 
@@ -224,7 +224,7 @@ If you prevented users from creating modern pages on a site, follow these steps 
    .\SitePagesIn.ps1
    ```
 
-8. The script will prompt you for a **SiteUrl** and **WebUrl**.
+8. The script prompts you for a **SiteUrl** and **WebUrl**.
 
     If you have a site such as: `https://contoso.sharepoint.com/sites/marketing/northwindcompete`
 
