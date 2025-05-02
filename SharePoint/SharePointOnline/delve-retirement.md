@@ -81,8 +81,8 @@ Below are all the URLs that will redirect to modern search profile pages on Micr
 
 ## How can administrators control which custom user profile properties are visible on profile cards?
 
-Administrators can control the visibility of custom user profile properties on the profile card by adjusting the Policy Setting and Display Setting for the specific custom user profile property in the SharePoint admin center. To do this, ensure the Default Privacy Setting under Policy Setting is set to "Everyone" and select "Show in the profile properties section of the user's profile page" under Display Settings. For more details, refer to the article [Add and edit user profile properties in SharePoint](/sharepoint/add-and-edit-user-profile-properties).  
-![User's image](media/delve-retirement/image.png)
+Administrators can control the visibility of custom user profile properties on the profile card by adjusting the Policy Setting and Display Setting for the specific custom user profile property in the SharePoint admin center. To show a property, ensure the Default Privacy Setting under Policy Setting is set to "Everyone" and select "Show in the profile properties section of the user's profile page" under Display Settings. To hide a property, make sure "Show in the profile properties section of the user's profile page" is not selected. For more details, refer to the article [Add and edit user profile properties in SharePoint](/sharepoint/add-and-edit-user-profile-properties).  
+![Policy Setting and Display Setting in SharePoint admin center.](media/delve-retirement/image.png)
 
 
 
