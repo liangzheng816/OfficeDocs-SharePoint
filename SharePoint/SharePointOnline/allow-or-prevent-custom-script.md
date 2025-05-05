@@ -5,7 +5,7 @@ ms.author: ruihu
 author: maggierui
 manager: jtremper
 recommendations: true
-ms.date: 11/26/2024
+ms.date: 05/06/2025
 audience: Admin
 f1.keywords:
 - CSH
@@ -32,47 +32,17 @@ description: Learn how global and SharePoint admins can change the custom script
 
 # Allow or prevent custom script
 
-As a [SharePoint Administrator](./sharepoint-admin-role.md) in Microsoft 365, you can allow custom script as a way of letting users change the look, feel, and behavior of sites and pages to meet organizational objectives or individual needs. If you allow custom script, all users who have _Add and Customize Pages_ permission to a site or page can add any script they want. (By default, users who create sites are site owners and therefore have this permission.) 
+As a [SharePoint Administrator](./sharepoint-admin-role.md) in Microsoft 365, you can temporarey allow custom script as a way of letting users to operate with some "classic" features (like "script editor web part"), change the look, feel, and behavior of sites and pages to meet organizational objectives or individual needs. If you allow custom script, all users who have _Add and Customize Pages_ permission to a site or page can add any script they want. (By default, users who create sites are site owners and therefore have this permission.) 
   
 > [!NOTE]
 > For simple ways to change the look and feel of a site, see [Change the look of your SharePoint site](https://support.office.com/article/06bbadc3-6b04-4a60-9d14-894f6a170818). 
   
-By default, script is not allowed on most sites that admins create using the SharePoint admin center and all sites created using the New-SPOSite PowerShell command. Same applies to OneDrive, sites users create themselves, modern team and communication sites, and the root site for your organization. For more info about the security implications of custom script, see [Security considerations of allowing custom script](security-considerations-of-allowing-custom-script.md).
+By default, script is not allowed on almost all sites that admins create using the SharePoint admin center and all sites created using the New-SPOSite PowerShell command. Same applies to OneDrive, sites users create themselves, modern team and communication sites, and the root site for your organization. For more info about the security implications of custom script, see [Security considerations of allowing custom script](security-considerations-of-allowing-custom-script.md).
   
 > [!IMPORTANT]
 > If SharePoint was set up for your organization before 2015, your custom script settings might still be set to _Not Configured_ even though in the SharePoint admin center they appear to be set to prevent users from running custom script. In this case, users won't be able to copy items between SharePoint sites and between OneDrive and SharePoint. On the <a href="https://go.microsoft.com/fwlink/?linkid=2185072" target="_blank">Settings page in the SharePoint admin center</a>, to accept the custom script settings as they appear, select **OK**, and enable cross-site copying. For more info about copying items between OneDrive and SharePoint, see [Copy files and folders between OneDrive and SharePoint sites](https://support.office.com/article/67a6323e-7fd4-4254-99a8-35613492a82f). 
   
-## To allow custom script on OneDrive or user-created sites
-
-> [!NOTE]
-> This feature will be removed during H1 calendar year 2024. Once removed, it will no longer be possible to allow custom script on OneDrive sites.
-
-In the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>, you can choose to allow users to run custom script on OneDrive (referred to as _personal sites_) or on all classic team sites they create. For info about letting users create their own sites, see [Manage site creation in SharePoint](manage-site-creation.md).
-  
-> [!CAUTION]
-> Before you allow custom script on sites in your organization, make sure you understand the [security implications](security-considerations-of-allowing-custom-script.md). 
-  
-1. Go to <a href="https://go.microsoft.com/fwlink/?linkid=2185072" target="_blank">**Settings** in the SharePoint admin center</a>, and sign in with an account that has [admin permissions](./sharepoint-admin-role.md) for your organization.
-
-    > [!NOTE]
-    > If you have Office 365 operated by 21Vianet (China), [sign in to the Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), then browse to the SharePoint admin center and open the **Settings** page.
-
-2. At the bottom of the page, select **classic settings page**.
-
-3. Under **Custom Script**, select:
-
-    - **Allow users to run custom script on personal sites**.
-
-    - **Allow users to run custom script on self-service created sites**.
-
-    :::image type="content" alt-text="Screenshot of custom script section of settings page in SharePoint admin center." source="media/a96d5c23-6389-4343-81cb-7f055617f6e8.png" lightbox="media/a96d5c23-6389-4343-81cb-7f055617f6e8.png":::
-  
-    > [!NOTE]
-    > Because self-service site creation points to your organization's root site by default, changing the Custom Script setting allows custom script on your organization's root site. For info about changing where sites are created, see [Manage site creation in SharePoint](manage-site-creation.md). 
-  
-4. Select **OK**. It can take up to 24 hours for the change to take effect.
-
-## To allow custom script on other SharePoint sites
+## To temporarely allow custom script on SharePoint sites
 
 > [!CAUTION]
 > Before you allow custom script on sites in your organization, make sure you understand the [security implications](security-considerations-of-allowing-custom-script.md). 
@@ -97,15 +67,12 @@ To allow custom script on a particular site (previously called _site collection_
     Set-PnPSite -Identity <SiteURL> -NoScriptSite $false
     ``` 
 
-If you change this setting for a classic team site, it will be overridden by the Custom Script setting in the admin center within 24 hours.
+Changes to allow custom scripts will be overridden to "Enabled" within 24 hours.
 
 > [!NOTE]
-> You cannot allow or prevent custom scripts to an individual user's OneDrive.
+> Is not possible to allow custom scripts to an individual user's OneDrive.
   
 ## Manage custom script from SharePoint admin center
-
-> [!NOTE]
-> If you do not see the new options in SharePoint tenant admin center, the feature is not enabled in your tenant yet. Every customer will have this new set of capabilities enabled by end of June 2024
 
 Tenants administrators have a set of tools available in SharePoint tenant administration to manage custom script within their organization. Specifically, tenant administrators can:
 
@@ -117,7 +84,7 @@ Tenants administrators have a set of tools available in SharePoint tenant admini
 
 A new **Custom script** column is now available in the **Active sites** page under **Sites**.
 
-:::image type="content" alt-text="Screenshot of active sites view with custom script column visible." source="media/232a2283-7f38-4f77-b32d-e076bbcbbb01.png" lightbox="media/232a2283-7f38-4f77-b32d-e076bbcbbb01.png":::
+:::image type="content" alt-text="Screenshot of active sites view with custom script column visible." source="media/232a2283-7f3.8-4f77-b32d-e076bbcbbb01.png" lightbox="media/232a2283-7f38-4f77-b32d-e076bbcbbb01.png":::
 
 The column can be added to any view. A new **Custom script allowed sites** is also available to provide an easy access to all the sites where custom script is enabled:
 
@@ -135,26 +102,8 @@ Administrators can control custom script settings for a specific site; deciding 
 
 By default, any changes to custom script settings for a specific site only last for a maximum of 24 hours. After that time, the setting will reset to its original value for that specific site.
 
-### Persist custom script settings
-
-To prevent SharePoint in resetting custom script settings to its original value to the whole tenant follow these steps:
-
-1. [Download the latest SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
-
-    > [!NOTE]
-    > If you installed a previous version of the SharePoint Online Management Shell, go to Add or remove programs and uninstall "SharePoint Online Management Shell."
-
-2. Connect to SharePoint as a [SharePoint Administrator](./sharepoint-admin-role.md) in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
-
-3. Run the following command.
-
-    ```PowerShell
-    Set-SPOTenant -DelayDenyAddAndCustomizePagesEnforcement $True
-    ```
-
-> [!NOTE]
-> This setting affects all sites. There are no options to preserve changes to custom script settings only on some specific sites. This parameter will be available until November 2024. After that date, it will no longer be possible to prevent SharePoint in resetting custom script settings to its original value for all sites.
-> Running the command where [Multi-Geo capabilities on OneDrive and SharePoint](/microsoft-365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365) are configured, will only affect the current geo from which you ran the command. To persist custom script settings across the entire tenant you must run the command on each geo.
+> [!IMPORTANT]
+If the site is locked, either because it is in *ReadOnly* or *NoAccess" state, changes to the Custom Script settings will not be reflected in  SharePoint Tenant Administrator. However, as soon as the state of the site goes back to *Unlock*, Custom Script setting will immediately turn to "Not allowed" before any user can access to the site  
 
 ## Features affected when custom script is blocked
 
