@@ -66,6 +66,9 @@ Once you understand the extent of oversharing in your tenant, you can track furt
 
 These reports are useful in identifying sites which are active in collaboration and hence needs quicker intervention to mitigate any potential oversharing risk. These 'RecentActivity' based reports identify sites which are generating the most number of sharing links in the last 28 days.
 
+> [!IMPORTANT]
+> If you do not have a Microsoft SharePoint Premium - SharePoint Advanced Management license, you will be asked to enable data collection for 'RecentActivity' based reports, so that the product starts to collect the relevant audit data to build this report. Once enabled, the reports can be generated 24 hours later and will contain data from the point of collection and which will be stored for 28 days. If no reports are generated even once in 3 months, data collection will be paused and should be enabled again. To enable data collection for these reports, refer to the [documentation below](#data-collection-for-recent-activity-based-reports).
+
 #### Anyone sharing links created in last 28 days
 
 ```powershell
@@ -93,6 +96,9 @@ Provide the workload value as 'OneDriveForBusiness' to get all OneDrive accounts
 ### Content shared with Everyone except external users in last 28 days
 
 While Sharing links are one possible contributor for potential oversharing, another key contributor is 'Everyone except external users' (EEEU) which makes content 'public' that is, visible to entire organization and makes it easy for others to discover content and get access. These reports identify sites which actively used EEEU at various scopes in last 28 days.
+
+> [!IMPORTANT]
+> If you do not have a Microsoft SharePoint Premium - SharePoint Advanced Management license, you will be asked to enable data collection for 'RecentActivity' based reports, so that the product starts to collect the relevant audit data to build this report. Once enabled, the reports can be generated 24 hours later and will contain data from the point of collection and which will be stored for 28 days. If no reports are generated even once in 3 months, data collection will be paused and should be enabled again. To enable data collection for these reports, refer to the [documentation below](#data-collection-for-recent-activity-based-reports).
 
 #### Sites shared with Everyone except external users in last 28 days
 
@@ -133,6 +139,37 @@ Start-SPODataAccessGovernanceInsight -ReportEntity SensitivityLabelForFiles -Wor
 
 > [!NOTE]
 > Currently, the report for 'OneDriveForBusiness' accounts with labeled files isn't supported.
+
+## Data collection for recent activity based reports
+
+> [!IMPORTANT]
+> If you do not have a Microsoft SharePoint Premium - SharePoint Advanced Management license, you will be asked to enable data collection for 'RecentActivity' based reports, so that the product starts to collect the relevant audit data to build this report. Once enabled, the reports can be generated 24 hours later and will contain data from the point of collection and which will be stored for 28 days. If no reports are generated even once in 3 months, data collection will be paused and should be enabled again.
+
+### Enabling data collection
+
+This PowerShell command starts collecting audit data for reports on activities from the last 28 days.
+
+```powershell
+Start-SPOAuditDataCollectionForActivityInsights -ReportEntity SharingLinks_Anyone
+```
+
+The applicable values for the ReportEntity parameter are SharingLinksAnyone, SharingLinksPeopleInYourOrg, SharingLinksGuests, EveryoneExceptExternalUsersAtSite, EveryoneExceptExternalUsersForItems, CopilotAppInsights
+
+### Disabling data collection
+
+This PowerShell command stops collecting audit data for reports on activities from the last 28 days.
+
+```powershell
+Stop-SPOAuditDataCollectionForActivityInsights -ReportEntity SharingLinks_Anyone
+```
+
+### Checking the data collection status
+
+Once data collection is enabled, the reports can be generated after 24 hours. To check whether reports can be generated, use the PowerShell command **Get-SPOAuditDataCollectionStatusForActivityInsights**. This will return the current data collection status which can be "NotInitiated","InProgress", "Paused". Reports can be generated when the status is "InProgress".
+
+```powershell
+Get-SPOAuditDataCollectionStatusForActivityInsights -ReportEntity SharingLinks_Anyone
+```
 
 ## Tracking reports using PowerShell
 
