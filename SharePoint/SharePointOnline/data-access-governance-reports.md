@@ -67,7 +67,7 @@ Sharing links reports lets you identify potential sources of oversharing by show
 ### Run the reports
 
 > [!IMPORTANT]
-> If you do not have a Microsoft SharePoint Premium - SharePoint Advanced Management license, you will be asked to enable data collection so that the product starts to collect the relevant audit data to build this report. Once enabled, the reports can be generated 24 hours later and will contain data from the point of collection and which will be stored for 28 days. If no reports are generated even once in 3 months, data collection will be paused and should be enabled again.
+> If you don't have a Microsoft SharePoint Premium - SharePoint Advanced Management license, you'll be asked to enable data collection so that the product starts to collect the relevant audit data to build this report. Once enabled, the data is collected and stored for 28 days. Reports can be generated 24 hours later and will contain data from the point of collection. If no reports are generated even once in three months, data collection is paused and should be enabled again.
 
 :::image type="content" source="media/data-access-governance/enable-data-collection-SharingLinks.png" alt-text="Enabling data collection for sharing links activity reports":::
 
@@ -140,7 +140,7 @@ Now organizations can discover potential oversharing occurring via EEEU using th
 ### Create Everyone except external users reports
 
 > [!IMPORTANT]
-> If you do not have a Microsoft SharePoint Premium - SharePoint Advanced Management license, you will be asked to enable data collection so that the product starts to collect the relevant audit data to build this report. Once enabled, the reports can be generated 24 hours later and will contain data from the point of collection and which will be stored for 28 days. If no reports are generated even once in 3 months, data collection will be paused and should be enabled again.
+> If you don't have a Microsoft SharePoint Premium - SharePoint Advanced Management license, you'll be asked to enable data collection so that the product starts to collect the relevant audit data to build this report. Once enabled, the data is collected and stored for 28 days. Reports can be generated 24 hours later and contains data from the point of collection. If no reports are generated even once in 3 months, data collection is paused and should be enabled again.
 
 :::image type="content" source="media/data-access-governance/enable-data-collection-EEEU.png" alt-text="enabling data collection for EEEU activity reports":::
 
@@ -179,7 +179,7 @@ Each EEEU report includes data as shown in the following screenshot:
 After running the report, select the report to download the data. In the report:
 
 - The site with the most number of items/groups shared with EEEU appears first and the report includes up to 1 million such sites.
-- Other site related information such as the primary admin, admin's email address, site template, privacy, sensitivity label etc.
+- Other site related information such as the primary admin, admin's email address, site template, privacy, sensitivity label, etc.
 
 ## Limitations or known issues
 
@@ -193,7 +193,7 @@ It's vital for SharePoint admin to understand the permissions setup in their ten
 ### Creating the oversharing baseline report
 
 > [!IMPORTANT]
-> Currently, SharePoint admins can generate the report via PowerShell only. The first report for the tenant can take up to 5 days.
+> Currently, SharePoint admins can generate the report via PowerShell only. The first report for the tenant can take up to five days.
 
 > [!NOTE]
 > This report can only be run once a month.
@@ -226,7 +226,7 @@ The output for the report has the following data:
 |Site Privacy |   Applicable in Microsoft 365 connected team sites. Specifies the privacy setting of the group. Has values Public or Private   |
 |Site Sensitivity |   Specifies the sensitivity label applied to the site   |
 |Number of users having access |  Unique number of users having access to site content at any level/scope  |
-|Guest user permissions |  Count of permissions to guest users at any level/scope. These users are marked with #EXT# in their Entra identities |
+|Guest user permissions |  Count of permissions to guest users at any level/scope. These users are marked with #EXT# in their Microsoft Entra identities |
 |External participant permissions |  Count of permissions to external users who can directly use their own credentials to login and collaborate, such as in Shared channels |
 |Entra group count |  Number of Entra cloud only groups at all scopes |
 |File count |  Approximate number of all files in the site |
@@ -244,13 +244,13 @@ This number represents all unique users who have permission to access the site a
 Access to the site and its content can be given at any scope.
 
 - SharePoint groups have access to the entire content within the site as owner, members, or visitors. You can have individuals OR Microsoft Entra groups within SharePoint groups.
-- Access can be limited to a few items/files via unique permissions/broken inheritance. The target recipients could be individual users AND SharePoint groups/Entra groups. These are important to know and manage for oversharing since they are outside the site membership scope.
+- Access can be limited to a few items/files via unique permissions/broken inheritance. The target recipients could be individual users AND SharePoint groups/Entra groups. Such recipients are important to know and manage for oversharing since they are outside the site membership scope.
 
 This number is calculated by expanding all groups and individuals across all scopes, removing duplicates and by counting the number of unique users.
 In other words, this represents the extent of current ‘data exposure.’ If you're adding users directly OR adding Microsoft Entra groups across any scope, then this number increases corresponding to the Microsoft Entra group size and/or number of individuals added.
 However, creating sharing links and sharing the site with ‘Everyone except external users’ doesn't automatically increase this number since no permissions are directly assigned. These increase the probability that the site/site content is now publicly visible, and more users can access. The number increases only when the users access the content. Hence you can view the number of sharing links or EEEU permission as ‘potential exposure’
 
-This report thereby lists all sites with 'too-many-users' accessing the content and hence more prone for Copilot exposure.
+This report thus lists all sites with 'too-many-users' accessing the content and hence more prone for Copilot exposure.
 
 ## Remedial actions from Data access governance reports
 
