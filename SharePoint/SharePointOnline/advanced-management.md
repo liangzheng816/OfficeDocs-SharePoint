@@ -1,6 +1,6 @@
 ---
-ms.date: 03/26/2025
-title: "Microsoft SharePoint Premium - SharePoint Advanced Management overview"
+ms.date: 05/01/2025
+title: "SharePoint Advanced Management overview"
 ms.reviewer: daminasy
 ms.author: mactra
 author: MachelleTranMSFT
@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 recommendations: false
-description: "Learn about Microsoft SharePoint Premium - SharePoint Advanced Management and how you can use its features before and after deploying Copilot."
+description: "Learn about SharePoint Advanced Management and how you can use its features before and after deploying Copilot."
 ---
 
-# Microsoft SharePoint Premium - SharePoint Advanced Management overview
+# SharePoint Advanced Management overview
 
-Microsoft SharePoint Premium - SharePoint Advanced Management is an essential add-on for Microsoft 365 that equips IT administrators with a powerful suite of tools to bolster content governance throughout the Microsoft Copilot deployment journey.
+SharePoint Advanced Management is an essential add-on for Microsoft 365 that equips IT administrators with a powerful suite of tools to bolster content governance throughout the Microsoft Copilot deployment journey.
 
 Whether preparing for [Copilot deployment](/copilot/microsoft-365/microsoft-365-copilot-setup) or managing content post-implementation, this solution offers capabilities to:
 
@@ -49,7 +49,7 @@ SharePoint Advanced Management helps you identify, manage, and resolve common co
 
 ### Site ownership policy
 
-The site lifecycle management feature from Microsoft SharePoint Premium - SharePoint Advanced Management lets you improve site governance by having automated policies configured in the SharePoint admin center.
+The site lifecycle management feature from SharePoint Advanced Management lets you improve site governance by having automated policies configured in the SharePoint admin center.
 
 **[Site ownership policies](create-sharepoint-site-ownership-policy.md)** are a part of site lifecycle management and help effectively manage ownership of SharePoint sites in your organization.
 
@@ -117,7 +117,7 @@ Before enabling Copilot for your organization and tenant, you can proactively se
 
 Site access review involves site owners in the review process so they can address the concern of overshared sites identified in data access governance reports.
 
-### Data access governance management via PowerShell
+### Data Access Governance management via PowerShell
 
 While Data access governance is available in SharePoint admin center portal, large organizations usually look for **[PowerShell support](powershell-for-data-access-governance.md)** in order to manage scale via scripting and automation.
 
@@ -129,15 +129,15 @@ This document discusses all appropriate PowerShell commands available via ShareP
 
 :::image type="content" source="media/sam-overview/8-conditional-access-policies.png" alt-text="Screenshot of conditional access policy dashboard." lightbox="media/sam-overview/8-conditional-access-policies.png":::
 
-### Restricted access control for SharePoint
+### Restricted Access Control for SharePoint
 
-You can prevent sites and content from being discovered at the site-level by enabling **[Restricted access control for SharePoint sites](restricted-access-control.md)**. Site access restriction allows only users in the specified security group or Microsoft 365 group to access content. This policy can be used with Microsoft 365 group-connected, Teams-connected, and non-group connected sites.
+You can prevent sites and content from being discovered at the site-level by enabling **[Restricted Access Control for SharePoint sites](restricted-access-control.md)**. Site access restriction allows only users in the specified security group or Microsoft 365 group to access content. This policy can be used with Microsoft 365 group-connected, Teams-connected, and non-group connected sites.
 
 :::image type="content" source="media/sam-overview/3-restricted-access-control-sharepoint-sites.png" alt-text="Screenshot of saved changes for restricted access control for SharePoint sites." lightbox="media/sam-overview/3-restricted-access-control-sharepoint-sites.png":::
 
-### Restricted access control for OneDrive
+### Restricted Access Control for OneDrive
 
-You can limit access to shared content of a user's OneDrive to only people in a security group with the **[Restricted access control for OneDrive](onedrive-site-access-restriction.md)** policy.
+You can limit access to shared content of a user's OneDrive to only people in a security group with the **[Restricted Access Control for OneDrive](onedrive-site-access-restriction.md)** policy.
 
 Once the policy is enabled, anyone who isn't in the designated security group won't be able to access content in that OneDrive even if it was previously shared with them. To block users from accessing OneDrive as a service, you can enable the [Restrict OneDrive service access](limit-access.md) feature.
 
@@ -155,54 +155,58 @@ SharePoint Advanced Management is $3 per user per month for commercial customer
 
 Licensing details for each feature listed above are included in those articles.
 
-
 ### SharePoint Advanced Management features in Microsoft 365 Copilot licenses
-
-Customers with access to the following Copilot SKUs have access to these SharePoint Advanced Management (SAM) capabilities:
 
 The following SharePoint Advanced Management features are included in Microsoft 365 Copilot licenses:
 
-- **Site Lifecycle Policy**
-  - Inactive SharePoint sites policy
-  - Site Ownership Policy
+- **Advanced tenant rename**
+  - Applies to large tenants with up to 100K sites
+- **AI-Powered Insights**
+- **Block download policy**
+  - Files and Teams recordings
+  - SharePoint and OneDrive sites
+- **Change history**
+  - Site changes
+  - Tenant setting changes
 - **Data Access Governance (DAG) Insights**
   - "Everyone Except External Users" (EEEU) insights
-  - Sharing Links and Sensitivity Labels
   - PowerShell: Permission state report for Sites, OneDrives, and Files
-  - Sharing links report
-- **Site Access Review**
+  - Sharing Links and Sensitivity Labels
 - **PowerShell: Restricted Content Discovery (RCD)**
+- **Recent admin actions**
 - **Restricted Access Control (RAC)**
-  - Applies to SharePoint and OneDrive sites
-- **Recent Admin Actions**
-- **Change History**
-- **Block Download Policy**
   - SharePoint and OneDrive sites
-  - Teams recordings
+  - Restricted Access Control Insights
+- **Site Lifecycle Policy**
+  - Inactive SharePoint sites policy
+    - Read-only sites
+    - Archived sites
+  - Site Ownership Policy
+- **Site Access Review**
 
-The SharePoint Advanced Management features listed earlier apply to the following Microsoft 365 Copilot licenses:
+The following Copilot SKUs will include the SharePoint Advanced Management:
 
-• Microsoft 365 Copilot
-• Microsoft 365 Copilot GCC
-• Microsoft Sales Copilot for Faculty
-• Microsoft Sales Copilot for Students
-• Microsoft 365 Copilot for Finance
-• Microsoft 365 Copilot for Sales
-• Microsoft 365 Copilot for Service
-• Microsoft 365 Copilot Developer
-• Microsoft 365 Copilot (Education Faculty)
-• Microsoft 365 Copilot (Education Student 18+)
-• Microsoft 365 Copilot for Finance (Education Faculty)
-• Microsoft 365 Copilot for Finance (Education Student 18+)
-• Microsoft 365 Copilot for Sales (Education Faculty)
-• Microsoft 365 Copilot for Sales (Education Student 18+)
-• Microsoft 365 Copilot for Service (Education Faculty)
-• Microsoft 365 Copilot for Service (Education Student 18+)
+- Microsoft 365 Copilot
+- Microsoft 365 Copilot GCC
+- Microsoft Sales Copilot for Faculty
+- Microsoft Sales Copilot for Students
+- Microsoft 365 Copilot for Finance
+- Microsoft 365 Copilot for Sales
+- Microsoft 365 Copilot for Service
+- Microsoft 365 Copilot Developer
+- Microsoft 365 Copilot (Education Faculty)
+- Microsoft 365 Copilot (Education Student 18+)
+- Microsoft 365 Copilot for Finance (Education Faculty)
+- Microsoft 365 Copilot for Finance (Education Student 18+)
+- Microsoft 365 Copilot for Sales (Education Faculty)
+- Microsoft 365 Copilot for Sales (Education Student 18+)
+- Microsoft 365 Copilot for Service (Education Faculty)
+- Microsoft 365 Copilot for Service (Education Student 18+)
 
+> [!NOTE]
+> The features listed above are essential for enabling Copilot deployment and are included as part of SharePoint Advanced Management (SAM). Future features developed for SAM may not be included in the current Copilot SKUs. Customers with Copilot SKUs will have access to the current SAM features necessary for Copilot deployment.
 
 ## Related topics
-
-[Microsoft Syntex documentation](/microsoft-365/syntex)
 
 [Microsoft 365 Government - how to buy](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy)
 

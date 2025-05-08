@@ -107,7 +107,7 @@ items:
           href: get-started-sharepoint-agents.md
         - name: Manage Access
           href: manage-access-agents-in-sharepoint.md
-        - name: Trial access to SharePoint agents with PowerShell
+        - name: Trial access to SharePoint agents
           href: manage-trial-agents-sharepoint-powershell.md
         - name: Use agents with pay-as-you-go billing
           href: sharepoint-agents-azure-billing.md

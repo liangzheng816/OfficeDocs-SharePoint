@@ -356,14 +356,14 @@ Failure codes represent file-level errors during both the scan and migration pro
 |MACCESSDENIED                  |User denied access. |Check permissions and Try again... |
 |MACCESSTOKENNULL               |Failed to execute request as connector authorization failed. |Unexpected error. Try again. |
 |MAUTHACCESSTOKEN               |Connector authorization failure. Failed to get access token. |In Migration Manager, go to Project Settings > Project Details, disconnect the source, reconnect to the source, and rerun the migration task. |
-|MAUTHACCESSTOKENINVALID        |Connector authorization failure. The API request failed because the access token is invalid or expired. |In Migration Manager, go to Project Settings > Project Details, disconnect the source, reconnect to the source, and rerun the migration task. |
+|MAUTHACCESSTOKENINVALID        |Connector authorization failure. The API request failed because the access token is invalid or expired. | Go to Google Admin Console, select Apps -> Google Workspace -> Service Status. Then, change the service status of "Drive and Docs" to **ON for everyone**. |
 |MAUTHCALLERNOTAUTHENTICATED    |Connector authorization failed. The service isn't allowing to connect as it doesn't recognize the caller. |In Migration Manager, go to Project Settings > Project Details, disconnect the source, reconnect to the source, and rerun the migration task. |
 |MAUTHMOVERAPP                  |Microsoft 365 migration app needs to be authorized in source account. |In Migration Manager, go to Project Settings > Project Details, disconnect the source, reconnect to the source, and rerun the migration task. |
 |MAUTHNOCODE                    |Connector authorization failed as auth code isn't provided. |In Migration Manager, go to Project Settings > Project Details, disconnect the source, reconnect to the source, and rerun the migration task. |
 |MAUTHNOEMAIL                   |Connector authorization failure. Failed to get email from claim. |In Migration Manager, go to Project Settings > Project Details, disconnect the source, reconnect to the source, and rerun the migration task.  |
 |MAUTHNOIDTOKEN                 |Connector authorization failure. Failed to get ID token from access token. |In Migration Manager, go to Project Settings > Project Details, disconnect the source, reconnect to the source, and rerun the migration task. |
 |MAUTHNOTENANT                  |Connector authorization failed; no tenant/enterprise ID found. Tenant = Enterprise. Tenant is the term in MS/Azure and Enterprise is used by Box and others. |In Migration Manager, go to Project Settings > Project Details, disconnect the source, reconnect to the source, and rerun the migration task. |
-|MAUTHREFRESHTOKEN              |Connector authorization failure. Failed to get refresh token. |In Migration Manager, go to Project Settings > Project Details, disconnect the source, reconnect to the source, and rerun the migration task.  |
+|MAUTHREFRESHTOKEN              |Connector authorization failure. Failed to get refresh token. |Go to Google Admin Console, select Apps -> Google Workspace -> Service Status. Then, change the service status of "Drive and Docs" to **ON for everyone**. |
 |MAUTHUSERNOTADMIN              |Connector authorization failed; user doesn't have admin role. |In Migration Manager, go to Project Settings > Project Details, disconnect the source, reconnect to the source, and rerun the migration task. |
 |MAZUREUPLOAD                   |Failed to submit the migration job to Migration API after the files were uploaded to the Azure blob. | Try again. |
 |MBADREQUEST                    |Bad request when operating on source or destination item. |Unexpected error. Try again. |
@@ -372,7 +372,7 @@ Failure codes represent file-level errors during both the scan and migration pro
 |MDESTINATIONNOTWRITABLE        |You don't have write access to the destination. |Check permissions and Try again... |
 |MDUPLICATE                     |Duplicate. This file already exists in your destination location. |Confirm file is in destination already. |
 |MEMPTYMETADATA                 |Unable to find metadata. |Try again. |
-|MEXPORTFILERESTRICTED          |This file is restricted, and can’t be migrated from the source. |Check to see if this file has legal restrictions such as copyright claims. |
+|MEXPORTFILERESTRICTED          |This file is restricted, and can’t be migrated from the source. |Check the sharing settings or legal restrictions of this file in the source. |
 |MEXPORTFILEUNSUPPORTED         |Unsupported file type. |You can't migrate this file from the source. |
 |MEXPORTFILEUNSUPPORTEDMIMETYPE |Unsupported file type. |You can't migrate this file from the source. Check file at source. |
 |MFAILEDGETROOTITEM             |Failed to get root folder listing. Set in both Google and Office 365 connector. |Try again. |
