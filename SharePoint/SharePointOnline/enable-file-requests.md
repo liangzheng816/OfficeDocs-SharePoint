@@ -47,10 +47,10 @@ Admins can manage the **Request files** feature via the SharePoint Online Manage
 To manage **Request files** for SharePoint:
 
 1. Ensure [**Anyone** links are enabled](/sharepoint/turn-external-sharing-on-or-off#change-the-organization-level-external-sharing-setting).
-2. Set folder permissions to **View, edit, and upload**.
+2. Set folder permissions to **View, edit, and upload** or **View and upload**.
 3. Verify `CoreRequestFilesLinkEnabled` is **True** via the SharePoint Online Management Shell:
    - Run `Get-SPOTenant`.
-   - If not set to **True**, use `Set-SPOTenant -CoreRequestFIlesLinkEnabled $True`.
+   - If not set to **True**, use `Set-SPOTenant -CoreRequestFilesLinkEnabled $True`.
 
 (Optional) Set link expiration using `Set-SPOTenant -CoreRequestFilesLinkExpirationInDays`.
 
@@ -59,7 +59,7 @@ To manage **Request files** for SharePoint:
 To manage **Request files** for OneDrive:
 
 1. Enable [**Anyone** links](/sharepoint/turn-external-sharing-on-or-off#change-the-organization-level-external-sharing-setting).
-2. Set folder permissions to **View, edit, and upload**.
+2. Set folder permissions to **View, edit, and upload** or **View and upload**.
 3. Configure **Anyone** links for OneDrive at the tenant level.
 4. Verify `OneDriveRequestFilesLinkEnabled` is **True** via the SharePoint Online Management Shell:
    - Run `Get-SPOTenant`.
@@ -72,10 +72,10 @@ To manage **Request files** for OneDrive:
 To manage **Request files** for a specific site:
 
 1. Ensure [**Anyone** links are enabled](/sharepoint/turn-external-sharing-on-or-off#change-the-organization-level-external-sharing-setting).
-2. Set folder permissions to **View, edit, and upload**.
+2. Set folder permissions to **View, edit, and upload** or **View and upload**.
 3. Verify `RequestFilesLinkEnabled` is **True** via the SharePoint Online Management Shell:
    - Run `$r=Get-SPOSite -Identity <SiteURL> -Detailed`.
-   - If not set to **True**, use `Set-SPOSite -RequestFIlesLinkEnabled $True`.
+   - If not set to **True**, use `Set-SPOSite -RequestFilesLinkEnabled $True`.
 
 (Optional) Set link expiration using `Set-SPOSite -RequestFilesLinkExpirationInDays`.
 
