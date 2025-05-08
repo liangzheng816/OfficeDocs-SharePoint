@@ -69,7 +69,7 @@ Sharing links reports lets you identify potential sources of oversharing by show
 > [!IMPORTANT]
 > If you don't have a Microsoft SharePoint Premium - SharePoint Advanced Management license, you'll be asked to enable data collection so that the product starts to collect the relevant audit data to build this report. Once enabled, the data is collected and stored for 28 days. Reports can be generated 24 hours later and will contain data from the point of collection. If no reports are generated even once in three months, data collection is paused and should be enabled again.
 
-:::image type="content" source="media/data-access-governance/enable-data-collection-SharingLinks.png" alt-text="Enabling data collection for sharing links activity reports":::
+:::image type="content" source="media/data-access-governance/enable-data-collection-SharingLinks.png" alt-text="Screenshot showing how to enable data collection for sharing link activity reports.":::
 
 To get the latest data for each report, manually run the Data access governance report. You can run all reports or select individual reports to run. It can take a few hours for reports to fully generate. To check if a report is ready or to see when it was last updated, see the **Status** column.
 
@@ -142,7 +142,7 @@ Now organizations can discover potential oversharing occurring via EEEU using th
 > [!IMPORTANT]
 > If you don't have a Microsoft SharePoint Premium - SharePoint Advanced Management license, you'll be asked to enable data collection so that the product starts to collect the relevant audit data to build this report. Once enabled, the data is collected and stored for 28 days. Reports can be generated 24 hours later and contains data from the point of collection. If no reports are generated even once in 3 months, data collection is paused and should be enabled again.
 
-:::image type="content" source="media/data-access-governance/enable-data-collection-EEEU.png" alt-text="enabling data collection for EEEU activity reports":::
+:::image type="content" source="media/data-access-governance/enable-data-collection-EEEU.png" alt-text="Screenshot showing how to enable data collection for EEEU activity reports.":::
 
 When creating a report, you can select various options like create focused reports or filter later within the report.
 
