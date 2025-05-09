@@ -118,8 +118,7 @@ You can also encounter unlicensed OneDrive accounts when accounts are created, b
 You can identify unlicensed OneDrive accounts using the SharePoint admin center. The following steps show how to use the SharePoint admin center to generate a report of unlicensed OneDrive accounts:
 
 1. Sign in to the SharePoint admin center with your work or school account.
-2. Go to **Reports** and select **User reports**.
-3. Under **OneDrive usage**, select **Unlicensed users**.
+1. Go to **Reports** and select **OneDrive Accounts**.
 4. You can download the report as a CSV file.
 5. Starting January 2025, an interactive UI is available. You can select a username to view the details.
 
