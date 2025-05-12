@@ -1,5 +1,5 @@
 ---
-ms.date: 10/11/2024
+ms.date: 05/12/2025
 title: Plan for SharePoint storage
 ms.reviewer: 
 ms.author: ruihu
