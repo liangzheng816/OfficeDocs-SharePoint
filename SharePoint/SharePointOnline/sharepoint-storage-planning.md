@@ -60,7 +60,7 @@ To increase SharePoint storage capacity, purchase additional storage in one-giga
 
 - Purchase additional SharePoint licenses, adding 10 GB per license to the storage limit.<sup>**(*)**</sup>  
 
-- Use [SharePoint storage report](/microsoft-365/admin/activity-reports/sharepoint-storage-reports) to review storage trends, for example, usage by sites and growth trend. There might be a 48-hour data latency in the usage reports.
+- Use [SharePoint storage report](https://www.microsoft.com/en-us/microsoft-365/admin/activity-reports/sharepoint-storage-reports) to review storage trends, for example, usage by sites and growth trend. There might be a 48-hour data latency in the usage reports.
 
   > [!NOTE]
   > Microsoft 365 admin center usage reports show usage across all geo locations while the SharePoint admin center usage values are geo location specific.
