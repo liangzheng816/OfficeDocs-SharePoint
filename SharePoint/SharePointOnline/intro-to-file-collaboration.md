@@ -1,5 +1,5 @@
 ---
-ms.date: 05/31/2024
+ms.date: 05/13/2025
 title: Intro to file collaboration in Microsoft 365, powered by SharePoint
 ms.reviewer: 
 ms.author: ruihu
