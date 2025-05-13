@@ -32,7 +32,7 @@ description: Learn how global and SharePoint admins can change the custom script
 
 # Allow or prevent custom script
 
-As a [SharePoint Administrator](./sharepoint-admin-role.md) in Microsoft 365, you can temporarey allow custom script as a way of letting users to operate with some "classic" features (like "script editor web part"), change the look, feel, and behavior of sites and pages to meet organizational objectives or individual needs. If you allow custom script, all users who have _Add and Customize Pages_ permission to a site or page can add any script they want. (By default, users who create sites are site owners and therefore have this permission.) 
+As a [SharePoint Administrator](./sharepoint-admin-role.md) in Microsoft 365, you can temporarily allow custom script as a way of letting users operate with some "classic" features (like "script editor web part"), change the look, feel, and behavior of sites and pages to meet organizational objectives or individual needs. If you allow custom script, all users who have _Add and Customize Pages_ permission to a site or page can add any script they want. (By default, users who create sites are site owners and therefore have this permission.) 
   
 > [!NOTE]
 > For simple ways to change the look and feel of a site, see [Change the look of your SharePoint site](https://support.office.com/article/06bbadc3-6b04-4a60-9d14-894f6a170818). 
@@ -42,7 +42,7 @@ By default, script is not allowed on almost all sites that admins create using t
 > [!IMPORTANT]
 > If SharePoint was set up for your organization before 2015, your custom script settings might still be set to _Not Configured_ even though in the SharePoint admin center they appear to be set to prevent users from running custom script. In this case, users won't be able to copy items between SharePoint sites and between OneDrive and SharePoint. On the <a href="https://go.microsoft.com/fwlink/?linkid=2185072" target="_blank">Settings page in the SharePoint admin center</a>, to accept the custom script settings as they appear, select **OK**, and enable cross-site copying. For more info about copying items between OneDrive and SharePoint, see [Copy files and folders between OneDrive and SharePoint sites](https://support.office.com/article/67a6323e-7fd4-4254-99a8-35613492a82f). 
   
-## To temporarely allow custom script on SharePoint sites
+## To temporarily allow custom script on SharePoint sites
 
 > [!CAUTION]
 > Before you allow custom script on sites in your organization, make sure you understand the [security implications](security-considerations-of-allowing-custom-script.md). 
@@ -67,10 +67,10 @@ To allow custom script on a particular site (previously called _site collection_
     Set-PnPSite -Identity <SiteURL> -NoScriptSite $false
     ``` 
 
-Changes to allow custom scripts will be overridden to "Enabled" within 24 hours.
+Changes to allow custom scripts will be overridden to "Not allowed" within 24 hours.
 
 > [!NOTE]
-> Is not possible to allow custom scripts to an individual user's OneDrive.
+> Is not possible to allow custom scripts on an individual user's OneDrive.
   
 ## Manage custom script from SharePoint admin center
 
@@ -103,7 +103,7 @@ Administrators can control custom script settings for a specific site; deciding 
 By default, any changes to custom script settings for a specific site only last for a maximum of 24 hours. After that time, the setting will reset to its original value for that specific site.
 
 > [!IMPORTANT]
-If the site is locked, either because it is in *ReadOnly* or *NoAccess" state, changes to the Custom Script settings will not be reflected in  SharePoint Tenant Administrator. However, as soon as the state of the site goes back to *Unlock*, Custom Script setting will immediately turn to "Not allowed" before any user can access to the site  
+If the site is locked, either because it is in *ReadOnly* or *NoAccess" state, changes to the Custom Script settings will not be reflected in SharePoint Tenant Administration. However, as soon as the state of the site goes back to *Unlock*, Custom Script setting will immediately turn to "Not allowed" before any user can access to the site  
 
 ## Features affected when custom script is blocked
 
