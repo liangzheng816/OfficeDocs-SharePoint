@@ -41,7 +41,7 @@ Here's a diagram that shows how recommendations are determined in more detail (s
 
 
 ## How to disable recommendations
-To learn how to disable at the page and site level, see [SharePoint page recommendations](https://support.office.com/article/sharepoint-page-recommendations-12bf4c4e-3452-4575-afd4-ef7536b027fa/).
+To learn how to disable at the page and site level, see [SharePoint page recommendations](https://support.microsoft.com/office/sharepoint-page-recommendations-12bf4c4e-3452-4575-afd4-ef7536b027fa).
 
 In the article linked above, you'll learn the three different ways to hide or disable recommendations:
 

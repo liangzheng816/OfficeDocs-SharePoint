@@ -143,7 +143,7 @@ We recommend that you separate, and prioritize your data among the drives on the
     > [!NOTE]
     > If you manually restrict database size in SQL Server, you can cause unexpected system downtime when the capacity is exceeded.
 
-Proper configuration of I/O subsystems is very important to the optimal performance and operation of SQL Server systems. For more information, see [Monitoring Disk Usage](https://social.technet.microsoft.com/wiki/contents/articles/3214.monitoring-disk-usage.aspx)
+Proper configuration of I/O subsystems is very important to the optimal performance and operation of SQL Server systems. 
 
 > [!TIP]
 > Consider that how you measure disk speed varies between data files and log files. The fastest drives for database data may not be the fastest for log files. Consider usage patterns, I/O, and file size.
