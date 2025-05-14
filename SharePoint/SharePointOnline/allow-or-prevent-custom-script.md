@@ -40,7 +40,7 @@ As a [SharePoint Administrator](./sharepoint-admin-role.md) in Microsoft 365, yo
 By default, script is not allowed on almost all sites that admins create using the SharePoint admin center and all sites created using the New-SPOSite PowerShell command. Same applies to OneDrive, sites users create themselves, modern team and communication sites, and the root site for your organization. For more info about the security implications of custom script, see [Security considerations of allowing custom script](security-considerations-of-allowing-custom-script.md).
   
 > [!IMPORTANT]
-> If SharePoint was set up for your organization before 2015, your custom script settings might still be set to _Not Configured_ even though in the SharePoint admin center they appear to be set to prevent users from running custom script. In this case, users won't be able to copy items between SharePoint sites and between OneDrive and SharePoint. On the <a href="https://go.microsoft.com/fwlink/?linkid=2185072" target="_blank">Settings page in the SharePoint admin center</a>, to accept the custom script settings as they appear, select **OK**, and enable cross-site copying. For more info about copying items between OneDrive and SharePoint, see [Copy files and folders between OneDrive and SharePoint sites](https://support.office.com/article/67a6323e-7fd4-4254-99a8-35613492a82f). 
+> If SharePoint was set up for your organization before 2015, your custom script settings might still be set to _Not Configured_ even though in the SharePoint admin center they appear to be set to prevent users from running custom script. In this case, users can't copy items between SharePoint sites and between OneDrive and SharePoint. On the <a href="https://go.microsoft.com/fwlink/?linkid=2185072" target="_blank">Settings page in the SharePoint admin center</a>, to accept the custom script settings as they appear, select **OK**, and enable cross-site copying. For more info about copying items between OneDrive and SharePoint, see [Copy files and folders between OneDrive and SharePoint sites](https://support.office.com/article/67a6323e-7fd4-4254-99a8-35613492a82f). 
   
 ## To temporarily allow custom script on SharePoint sites
 
@@ -67,7 +67,7 @@ To allow custom script on a particular site (previously called _site collection_
     Set-PnPSite -Identity <SiteURL> -NoScriptSite $false
     ``` 
 
-Changes to allow custom scripts will be overridden to "Not allowed" within 24 hours.
+Changes to allow custom scripts are overridden to "Not allowed" within 24 hours.
 
 > [!NOTE]
 > Is not possible to allow custom scripts on an individual user's OneDrive.
@@ -100,10 +100,10 @@ Administrators can control custom script settings for a specific site; deciding 
 
 :::image type="content" alt-text="Screenshot of 'Custom scripts' values." source="media/05b24a6e-7dec-4b50-80e8-f09fe18e7dd4.png" lightbox="media/05b24a6e-7dec-4b50-80e8-f09fe18e7dd4.png":::
 
-By default, any changes to custom script settings for a specific site only last for a maximum of 24 hours. After that time, the setting will reset to its original value for that specific site.
+By default, any changes to custom script settings for a specific site only last for a maximum of 24 hours. After that time, the setting resets to its original value for that specific site.
 
 > [!IMPORTANT]
-If the site is locked, either because it is in *ReadOnly* or *NoAccess" state, changes to the Custom Script settings will not be reflected in SharePoint Tenant Administration. However, as soon as the state of the site goes back to *Unlock*, Custom Script setting will immediately turn to "Not allowed" before any user can access to the site  
+If the site is locked, either because it is in *ReadOnly* or *NoAccess" state, changes to the Custom Script settings won't be reflected in SharePoint Tenant Administration. However, as soon as the state of the site goes back to *Unlock*, Custom Script setting immediately turns to "Not allowed" before any user can access to the site  
 
 ## Features affected when custom script is blocked
 
@@ -148,14 +148,14 @@ The following web parts and features are unavailable to site admins and owners w
 |Master Page Gallery  |Can't create or edit master pages  |
 |Publishing Sites  |Can't create or edit master pages and page layouts  |
 
-Furthermore, SharePoint Framework web parts that have the _requiresCustomScript_ value set to **true**, will behave as following:   
+Furthermore, SharePoint Framework web parts that have the _requiresCustomScript_ value set to **true** behave as following:   
 
 - The web part is not available in the web part picker
-- Every instance of the web part that was added to the page while custom scripts that were allowed to run, will no longer surface in those pages. Author will still be able to remove them while editing the page 
+- Every instance of the web part that was added to the page while custom scripts that were allowed to run, will no longer surface in those pages. Author still can remove them while editing the page 
 
 ## Best practice for communicating script setting changes to users
 
-Before you prevent custom script on sites where you previously allowed it, we recommend communicating the change well in advance so users can understand the impact of it. Otherwise, users who are accustomed to changing themes or adding web parts on their sites will suddenly not be able to and will see the following error message.
+Before you prevent custom script on sites where you previously allowed it, we recommend communicating the change well in advance so users can understand the impact of it. Otherwise, users who are accustomed to changing themes or adding web parts on their sites will suddenly not be able to and see the following error message.
   
 :::image type="content" alt-text="Screenshot of the Error message that's displayed when scripting is disabled on a site." source="media/1c7666a0-9538-484f-a691-6e424c5db71a.png":::
   
