@@ -492,20 +492,20 @@ To install the WinHTTP KB update, follow the instructions from the KB article [U
     
   **For 64-bit operating system**
     
-    ```
-    Windows Registry Editor Version 5.00
-    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp]
-    "DefaultSecureProtocols"=dword:00000A80
-    [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp]
-    "DefaultSecureProtocols"=dword:00000A80
-    ```
+  ```
+  Windows Registry Editor Version 5.00
+  [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp]
+  "DefaultSecureProtocols"=dword:00000A80
+  [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp]
+  "DefaultSecureProtocols"=dword:00000A80
+  ```
 
   **For 32-bit operating system**
     
-    ```
-    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp]
-    "DefaultSecureProtocols"=dword:00000A80
-    ```
+  ```
+  [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp]
+  "DefaultSecureProtocols"=dword:00000A80
+  ```
 
 3. Save the **winhttp-tls10-tls12-enable.reg** file. 
     
