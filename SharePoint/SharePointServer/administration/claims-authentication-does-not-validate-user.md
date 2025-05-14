@@ -220,7 +220,7 @@ After you check the log files and web application configuration, verify the foll
     
 ### Step 4: Use a web debug tool to monitor and analyze web traffic
 
-Use a tool such as [HttpWatch](https://www.httpwatch.com/) or [Fiddler](https://go.microsoft.com/fwlink/p/?LinkId=154773) to analyze the following types of HTTP traffic: 
+Use a tool such as [HttpWatch](https://www.httpwatch.com/) or [Fiddler](/power-query/web-connection-fiddler) to analyze the following types of HTTP traffic: 
   
 - Between the web client computer and the server that is running SharePoint Server or SharePoint Foundation
     
