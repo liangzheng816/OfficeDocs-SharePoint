@@ -137,7 +137,7 @@ SharePoint mode in SQL Server 2016 is a SharePoint shared service that you confi
   
 SharePoint mode requires that a report server component of Reporting Services must run within a SharePoint Server farm. This means that a SharePoint application server must exist with the Reporting Services shared service installed and at least one Reporting Services service application.
   
-For more information, see [Reporting Services Report Server (SharePoint Mode)](/sql/reporting-services/report-server-sharepoint/reporting-services-report-server-sharepoint-mode?view=sql-server-2016&form=MG0AV3), [Reporting Services Report Server](/sql/reporting-services/reporting-services-concepts-ssrs?view=sql-server-ver16&formCode=MG0AV3), and [PowerShell cmdlets for Reporting Services SharePoint Mode](https://go.microsoft.com/fwlink/?LinkID=718034&clcid=0x409).
+For more information, see [Reporting Services Report Server (SharePoint Mode)](/sql/reporting-services/report-server-sharepoint/reporting-services-report-server-sharepoint-mode), [Reporting Services Report Server](/sql/reporting-services/reporting-services-concepts-ssrs), and [PowerShell cmdlets for Reporting Services SharePoint Mode](/sql/reporting-services/report-server-sharepoint/powershell-cmdlets-for-reporting-services-sharepoint-mode).
   
 ### SQL Server 2016
 <a name="sec5"> </a>
