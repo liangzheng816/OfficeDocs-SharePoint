@@ -84,7 +84,7 @@ Tenants administrators have a set of tools available in SharePoint tenant admini
 
 A new **Custom script** column is now available in the **Active sites** page under **Sites**.
 
-:::image type="content" alt-text="Screenshot of active sites view with custom script column visible." source="media/232a2283-7f3.8-4f77-b32d-e076bbcbbb01.png" lightbox="media/232a2283-7f38-4f77-b32d-e076bbcbbb01.png":::
+:::image type="content" alt-text="Screenshot of active sites view with custom script column visible." source="media/232a2283-7f38-4f77-b32d-e076bbcbbb01.png" lightbox="media/232a2283-7f38-4f77-b32d-e076bbcbbb01.png":::
 
 The column can be added to any view. A new **Custom script allowed sites** is also available to provide an easy access to all the sites where custom script is enabled:
 
