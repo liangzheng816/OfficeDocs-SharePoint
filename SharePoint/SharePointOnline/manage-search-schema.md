@@ -121,7 +121,9 @@ You can change the search schema for the whole tenant or for a specific site col
 
 When you change managed properties or add new ones, the changes take effect only after the content has been re-crawled. In SharePoint in Microsoft 365, crawling happens automatically based on the defined crawl schedule.
   
-When you have added a new property to a list or to a library, or when you have changed properties that are used in a list or library, search has to re-crawl the content before your changes will be reflected in the search index. Because your changes are made in the search schema, and not to the actual site, the search will not automatically re-crawl the list or the library. To make sure that your changes are crawled, you can specifically request a re-indexing of the list or library. When you do this, the list or library content will be re-crawled so that you can start using your new managed properties in queries, query rules and display templates.
+When you have added a new property to a list or to a library, or when you have changed properties that are used in a list or library, search has to re-crawl the content before your changes will be reflected in the search index. Because your changes are made in the search schema, and not to the actual site, the search will not automatically re-crawl the list or the library. To make sure that your changes are crawled, you can specifically request a re-indexing of the list or library. When you do this, the list or library content will be re-crawled so that you can start using your new managed properties in queries, query rules and display templates.  When working with built-in managed properties (like refinablestring##) we recommend updating/mapping properties at the tenant-level. This is easier to manage, creates a more consistent user experience, and will be more performant in the long run. 
+
+
   
 ### Managed properties and Delve
 <a name="__toc351360840"> </a>
