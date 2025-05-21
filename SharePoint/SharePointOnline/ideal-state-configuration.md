@@ -68,7 +68,7 @@ Windows users are familiar and comfortable with saving files to their Desktop, D
 
 ## Office integration
 
-- **Keep Office file collaboration enabled** Office uses differential sync to sync only changes instead of the entire file each time. This makes sync faster and reduces network bandwidth. This setting is on by default on Windows and Mac. For more info, see [Coauthor and share in Office desktop apps](use-group-policy.md#coauthor-and-share-in-office-desktop-apps). For info about this setting for Mac, see [Deploy and configure the new OneDrive sync app for Mac](deploy-and-configure-on-macos.md).
+- **Keep Office file collaboration enabled** Office uses differential sync to sync only changes instead of the entire file each time. This makes sync faster and reduces network bandwidth. This setting has been on by default on Windows and Mac starting May 2025.  For more info, see [Coauthor and share in Office desktop apps](use-group-policy.md#coauthor-and-share-in-office-desktop-apps). For info about this setting for Mac, see [Deploy and configure the new OneDrive sync app for Mac](deploy-and-configure-on-macos.md).
 
 ## Offline mode
 
