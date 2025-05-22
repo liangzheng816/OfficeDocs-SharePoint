@@ -34,14 +34,15 @@ You can generate and manage SharePoint Agent Insights report in SharePoint Admin
 3. In the left pane, expand **Reports** and then select **Agent insights**.
 4. On the Agent insights page, select **SharePoint agents - View reports**.
 
-## Create reports 
+## Create reports
 
  
 1. As SharePoint Administrator, you can generate the report by clicking on Create a report.  
-
+![Screenshot of creating report in SharePoint Agent Insights](media/agent-insights/create-report.png)
 
 2. Provide the Report name and under Report duration, specify the time frame for the report.  
- 
+
+    ![Screenshot of specifying report time frame in SharePoint Agent Insights](media/agent-insights/create-report-time-frame.png)
 
 3. Select **Create and run**. 
  
@@ -55,19 +56,21 @@ You can generate and manage SharePoint Agent Insights report in SharePoint Admin
 
  
 To check if a report is ready or when it was last updated, see the Status column.  
- 
- 
+
+  
+[![Screenshot of report status](media/agent-insights/reports-status-small.png)](media/agent-insights/reports-status-lightbox.png)
+
 ## View report  
 
 When a report is ready, select it to view the data. You can view the top 100 records hosting the highest number of agents. You can search for sites or filter on the site template, and governance policies.  
 
-
+![Screenshot of view report](media/agent-insights/agent-report-lightbox.png)
 
 ## Apply Content governance policies  
 
 You can further select a site and apply [Restrict site access policy](/SharePoint/restricted-access-control) or [Restrict Content Discovery policy](/sharepoint/restricted-content-discovery) on the site for content governance. 
 
- 
+ ![Screenshot of applying RCD](media/agent-insights/RCD-lightbox.png)
 
 > [!NOTE]
 > After a policy is applied to the site from the insights report, the policy status on the existing report won't be updated. To view the updated status of the policy on the site, select the policy to view the latest status or access the Active site panel and review the site settings.
@@ -75,7 +78,6 @@ You can further select a site and apply [Restrict site access policy](/SharePoin
  
 ## SharePoint Agent Insights report in SharePoint PowerShell Module 
  
-
 You can generate and manage SharePoint Agent Insights report using SharePoint Online Management Shell. 
 
 1. [Download](https://www.microsoft.com/download/details.aspx?id=35588) and install the latest version of SharePoint Online Management Shell.
@@ -88,7 +90,7 @@ With permissions of at least a SharePoint administrator, you can generate and vi
  
 `Start-SPOCopilotAgentInsightsReport`  
 
- 
+
 
 2. To generate a report for any other duration (1, 7, 14 or 28 days), run the command:  
  
@@ -96,14 +98,15 @@ With permissions of at least a SharePoint administrator, you can generate and vi
  
 For example, to generate report for the past 28 days, run the command:  
  
-`Start-SPOCopilotAgentInsightsReport -ReportPeriodInDays <28>~ 
+`Start-SPOCopilotAgentInsightsReport -ReportPeriodInDays <28>`
  
+ ![Screenshot of powershell scripts to genearte report](media\agent-insights\powershell-spocopilotagent-generate.png)
 
 3. To check the status of all active and available reports, run the command:  
  
 `Get-SPOCopilotAgentInsightsReport` 
  
-
+ ![Screenshot of powershell script status](media\agent-insights\powershell-spocopilotagent-status.png)
 4. To check the status of a specific report, run the command: 
  
 `Get-SPOCopilotAgentInsightsReport –ReportId` 
