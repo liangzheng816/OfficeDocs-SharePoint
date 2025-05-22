@@ -81,7 +81,7 @@ You can generate and manage SharePoint Agent Insights report using SharePoint On
 
 1. [Download](https://www.microsoft.com/download/details.aspx?id=35588) and install the latest version of SharePoint Online Management Shell.
 2. Connect to SharePoint Online as at least a [SharePoint administrator](/sharepoint/sharepoint-admin-role) in Microsoft 365. For more information, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
-3. To generate and view these reports, ensure the organization has the SharePoint Advanced Management add-on SKU or Microsoft 365 Copilot license .
+3. To generate and view these reports, ensure the organization has the SharePoint Advanced Management add-on SKU or Microsoft 365 Copilot license.
 
 With permissions of at least a SharePoint administrator, you can generate and view the insights using the following commands:  
  
@@ -91,7 +91,7 @@ With permissions of at least a SharePoint administrator, you can generate and vi
 
  
 
-2. To generate a report for any other duration (1,7,14 or 28 days), run the command:  
+2. To generate a report for any other duration (1, 7, 14 or 28 days), run the command:  
  
 `Start-SPOCopilotAgentInsightsReport -ReportPeriodInDays`  
  
@@ -120,7 +120,7 @@ For example, to generate report for the past 28 days, run the command:
 6. To view further detailed reports, the following options are available: 
  
 
-a. CopilotAgentsOnSites: Provides the name of all the agents currently available on all sites. This report contains up to one million records.  
+a. CopilotAgentsOnSites: Provides the name of all the agents currently available on all sites. This report contains up to 1,000,000 records.  
 
 
 > [!NOTE]
@@ -128,11 +128,11 @@ a. CopilotAgentsOnSites: Provides the name of all the agents currently available
  
 `Get-SPOCopilotAgentInsightsReport –ReportId -Content CopilotAgentsOnSites`  
 
-b. TopSites: Provides a list of one hundred sites with the number of agents available on each site.  
+b. TopSites: Provides a list of 100 sites with the number of agents available on each site.  
  
 `Get-SPOCopilotAgentInsightsReport –ReportId -Content TopSites`
 
-c. SiteDistribution: Provides the summarized view of agents across all types of sites like Communication sites, M365 group connected sites, OneDrive site, etc.  
+c. SiteDistribution: Provides the summarized view of agents across all types of sites like Communication sites, Microsoft 365 group connected sites, OneDrive site, etc.  
  
 `Get-SPOCopilotAgentInsightsReport –ReportId -Content SiteDistribution` 
 
@@ -140,10 +140,10 @@ c. SiteDistribution: Provides the summarized view of agents across all types of 
   
 - A report can be rerun only after 24 hours since the last report generated.  
 
-- In large tenants, it may take up to 48 hours for the data to be available.  
+- In large tenants, it might take up to 48 hours for the data to be available.  
 
 - There can only be one report for each value of Report range. This means you can see a maximum of four reports at a given point.  
 
 - The newly generated report replaces the previously created report with the same date range. To preserve the previously created report, download the report first before creating a new report for the same date range.  
 
-- These reports are generated using Microsoft 365 unified audit data and may not cover all audit events. 
+- These reports are generated using Microsoft 365 unified audit data and might not cover all audit events. 
