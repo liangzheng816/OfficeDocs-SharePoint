@@ -22,9 +22,9 @@ ms.custom:
 search.appverid: 
 description: "In this article, you learn about how to create and view insights on SharePoint agents in SharePoint and OneDrive sites."
 ---
-Insights report on SharePoint Agents provides SharePoint Administrators with rich information on the recently created SharePoint agents across all SharePoint sites and OneDrive sites within their organization. This provides admins with the ability to learn about the sites with the highest number of agents created as well as empowers them to further govern and maintain the integrity of the content used by agents as grounding data.  
+Insights report on SharePoint Agents provides SharePoint Administrators with rich information on the recently created SharePoint agents across all SharePoint sites and OneDrive sites within their organization. This report provides admins with the ability to learn about the sites with the highest number of agents created. Using this report, admins can further govern and maintain the integrity of the content used by agents as grounding data.  
 
-This is a [SharePoint Advanced Management](/sharepoint/advanced-management) feature and available in organization with SharePoint Advanced Management add-on sku or Microsoft 365 Copilot license. The insights report is based on the Microsoft audit data logged for SharePoint agents through the FileCreated and FileRenamed events. 
+Insights report is a [SharePoint Advanced Management](/sharepoint/advanced-management) feature and available in organization with SharePoint Advanced Management add-on SKU or Microsoft 365 Copilot license. The insights report is based on the Microsoft audit data logged for SharePoint agents through the FileCreated and FileRenamed events. 
 
 ## SharePoint Agent Insights report in SharePoint Admin Center  
 
@@ -47,10 +47,10 @@ You can generate and manage SharePoint Agent Insights report in SharePoint Admin
 3. Select **Create and run**. 
  
 > [!NOTE]
-> - A report can be re-run only after 24 hours since the last report was generated.
-> - In large tenants, it may take up to 48 hours for the data to be available.
+> - A report can be rerun only after 24 hours since the last report was generated.
+> - In large tenants, it might take up to 48 hours for the data to be available.
 > - There can only be one report for each value of the report range. This means you can see a maximum of four reports at a given point.
-> - The newly generated report will replace the previously created report with the same date range. To preserve the previously created report, download the report first before creating a new report for the same date range.
+> - The newly generated report replaces the previously created report with the same date range. To preserve the previously created report, download the report first before creating a new report for the same date range.
 
 ### View report status 
 
@@ -71,7 +71,7 @@ You can further select a site and apply [Restrict site access policy](/SharePoin
  
 
 > [!NOTE]
-> After a policy is applied to the site from the insights report, the policy status on the existing report will not be updated. To view the updated status of the policy on the site, click on the policy to view the latest status or access the Active site panel and review the site settings.
+> After a policy is applied to the site from the insights report, the policy status on the existing report won't be updated. To view the updated status of the policy on the site, select the policy to view the latest status or access the Active site panel and review the site settings.
 
  
 ### SharePoint Agent Insights report in SharePoint PowerShell Module 
@@ -81,7 +81,7 @@ You can generate and manage SharePoint Agent Insights report using SharePoint On
 
 1. [Download](https://www.microsoft.com/download/details.aspx?id=35588) and install the latest version of SharePoint Online Management Shell.
 2. Connect to SharePoint Online as at least a [SharePoint administrator](/sharepoint/sharepoint-admin-role) in Microsoft 365. For more information, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
-3. Ensure the organization has the SharePoint Advanced Management add-on SKU or Microsoft 365 Copilot license to generate and view these reports.
+3. To generate and view these reports, ensure the organization has the SharePoint Advanced Management add-on SKU or Microsoft 365 Copilot license .
 
 With permissions of at least a SharePoint administrator, you can generate and view the insights using the following commands:  
  
@@ -141,12 +141,12 @@ For example, to generate report for the past 28 days, run the command:
 
 ## Known Experiences:  
 
-- A report can be re-run only after 24 hours since the last report generated.  
+- A report can be rerun only after 24 hours since the last report generated.  
 
 - In large tenants, it may take up to 48 hours for the data to be available.  
 
 - There can only be one report for each value of Report range. This means you can see a maximum of four reports at a given point.  
 
-- The newly generated report will replace the previously created report with the same date range. To preserve the previously created report, download the report first before creating a new report for the same date range.  
+- The newly generated report replaces the previously created report with the same date range. To preserve the previously created report, download the report first before creating a new report for the same date range.  
 
-- These reports are generated using M365 unified audit data and may not cover all audit events. 
+- These reports are generated using Microsoft 365 unified audit data and may not cover all audit events. 
