@@ -58,7 +58,7 @@ You can generate and manage SharePoint Agent Insights report in SharePoint Admin
 To check if a report is ready or when it was last updated, see the Status column.  
 
   
-[![Screenshot of report status](media/agent-insights/reports-status-small.png)](media/agent-insights/reports-status-lightbox.png)
+![Screenshot of report status](media/agent-insights/reports-status-lightbox.png)
 
 ## View report  
 
