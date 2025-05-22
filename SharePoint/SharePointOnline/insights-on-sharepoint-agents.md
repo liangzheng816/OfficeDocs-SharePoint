@@ -30,7 +30,7 @@ Insights report is a [SharePoint Advanced Management](/sharepoint/advanced-manag
 You can generate and manage SharePoint Agent Insights report in SharePoint Admin Center.  
 
 1. Sign in to the SharePoint admin center with your SharePoint admin credentials.
-2. Ensure the organization has the SharePoint Advanced Management add-on SKU or Microsoft 365 Copilot license to generate and view these reports.
+2. Tto generate and view these reports, ensure the organization has the SharePoint Advanced Management add-on SKU or Microsoft 365 Copilot license.
 3. In the left pane, expand **Reports** and then select **Agent insights**.
 4. On the Agent insights page, select **SharePoint agents - View reports**.
 
