@@ -122,18 +122,15 @@ For example, to generate report for the past 28 days, run the command:
 
 a. CopilotAgentsOnSites: Provides the name of all the agents currently available on all sites. This report contains up to one million records.  
 
- 
+
 > [!NOTE]
 > The default value for the `-Content` parameter is `CopilotAgentsOnSites`. 
  
 `Get-SPOCopilotAgentInsightsReport –ReportId -Content CopilotAgentsOnSites`  
- 
 
 b. TopSites: Provides a list of one hundred sites with the number of agents available on each site.  
  
 `Get-SPOCopilotAgentInsightsReport –ReportId -Content TopSites`
-
- 
 
 c. SiteDistribution: Provides the summarized view of agents across all types of sites like Communication sites, M365 group connected sites, OneDrive site, etc.  
  
