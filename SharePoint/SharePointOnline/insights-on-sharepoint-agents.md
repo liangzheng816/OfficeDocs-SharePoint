@@ -22,11 +22,10 @@ ms.custom:
 search.appverid: 
 description: "In this article, you learn about how to create and view insights on SharePoint agents in SharePoint and OneDrive sites."
 ---
+# SharePoint Agent Insights report in SharePoint Admin Center  
 Insights report on SharePoint Agents provides SharePoint Administrators with rich information on the recently created SharePoint agents across all SharePoint sites and OneDrive sites within their organization. This report provides admins with the ability to learn about the sites with the highest number of agents created. Using this report, admins can further govern and maintain the integrity of the content used by agents as grounding data.  
 
 Insights report is a [SharePoint Advanced Management](/sharepoint/advanced-management) feature and available in organization with SharePoint Advanced Management add-on SKU or Microsoft 365 Copilot license. The insights report is based on the Microsoft audit data logged for SharePoint agents through the FileCreated and FileRenamed events. 
-
-# SharePoint Agent Insights report in SharePoint Admin Center  
 
 You can generate and manage SharePoint Agent Insights report in SharePoint Admin Center.  
 
