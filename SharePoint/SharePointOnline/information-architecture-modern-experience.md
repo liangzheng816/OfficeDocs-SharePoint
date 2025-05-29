@@ -1,5 +1,5 @@
 ---
-ms.date: 04/22/2024
+ms.date: 05/29/2025
 title: "Introduction to SharePoint information architecture"
 ms.reviewer: 
 ms.author: ruihu
@@ -49,7 +49,7 @@ Information architecture is about how you organize and label your content and ho
 Information architecture covers six main elements that relate to way finding in SharePoint:
 
 - **Global navigational structure** – Considered the top level of navigation across your SharePoint tenant and how you structure your sites so that users can find content including the [home site](./home-site.md) of your intranet.
-- **Hub structure and organization** – [Hubs](https://support.microsoft.com/office/what-is-a-sharepoint-hub-site-fe26ae84-14b7-45b6-a6d1-948b3966427f) enable you to group together similar topics, tasks, and content.
+- **Hub structure and organization** – [Hubs](https://support.microsoft.com/office/what-is-a-sharepoint-hub-site-fe26ae84-14b7-45b6-a6d1-948b3966427f) enable you to group together similar articles, tasks, and content.
 - **Local site and page navigational structure** – How content is organized on each site and page so that users can further navigate or consume content effectively.
 - **Metadata architecture** – [Metadata](./managed-metadata.md) impacts search and browsing structure as well as compliance and retention policies.
 - **Search experiences** – How your users "consume" information architecture in addition to browsing.
@@ -113,7 +113,7 @@ Many intranets include top navigation that persists on every site. Global naviga
 - Locations
 - Policies & Procedures/Tools & Resources/Safety & Security
 
-The goal of global navigation is to support browsing to content. Since there's limited real estate available for global navigation links, global links generally point to major category navigation pages, sub-links, or a mega menu experience to provide enough information to help viewers find the content they need. Because the context for global navigation must be broad, it's challenging to make the labels both comprehensive and useful. If you plan to implement global navigation, you want to test your proposed navigation to make sure that it resonates with users.
+The goal of global navigation is to support browsing to content. Since there's limited real estate available for global navigation links, global links generally point to major category navigation pages, sublinks, or a mega menu experience to provide enough information to help viewers find the content they need. Because the context for global navigation must be broad, it's challenging to make the labels both comprehensive and useful. If you plan to implement global navigation, you want to test your proposed navigation to make sure that it resonates with users.
 
 Global navigation is enabled with the [SharePoint app bar](./sharepoint-app-bar.md) on your [home site](./home-site.md). You need to have a home site to enable global navigation. Global navigation appears on the left side of every site and page.
 
@@ -174,7 +174,7 @@ Your sites generally include three types of pages:
 
 - The **home page** where you provide an overview of your content and introduce the reader to what they find on the site.
 - **Navigation pages** that provide options or summary information for the reader and help them get to a decision point about where they want to go next.
-- **Destination pages** that are the end point of the reader’s journey. This is where you'll present information to read, print, or download. If you have a lot of information on your destination page or you want to provide supplemental explanations for detailed topics, you can create an ancillary page.
+- **Destination pages** that are the end point of the reader’s journey. This is where you present information to read, print, or download. If you have a lot of information on your destination page or you want to provide supplemental explanations for detailed topics, you can create an ancillary page.
 
 Since we know that most readers don't read every word on a web page or even scroll to the bottom, you need to pay attention to how you present information on each page. Make sure that you put the most important information – the information that your readers must have for your communication to be successful – at the top of the page. As the page continues, you can add additional information that is helpful, but not crucial. Think of this as writing with your summary or conclusion up front, instead of at the end. Use sections, headings, and bullets to make your pages easier to read. For more info, see [Add sections and columns on SharePoint modern page](https://support.microsoft.com/office/fc491eb4-f733-4825-8fe2-e1ed80bd0899).
 
