@@ -340,7 +340,7 @@ If you need a property of a different type, or one that has different characteri
 9. Select **OK**.
 
 > [!NOTE]
-> To help clarify the the scope of Managed and Crawled Property mappings, Crawled Properties list **Scope** and **Override** values whose values are the scope at which the property was discovered or created and if the property overrides a property at a higher scope. If crawled properties with same name and property set Id exist in different scopes, the lower scope's value (e.g., Site Collection) overrides the higher scope (e.g., System). The scope override precedence from low to high is **Site Collection** -> **Tenant** -> **System**. An overridden property is greyed out and can only be modified at the scope at which it was created.
+> To help clarify the the scope of Managed and Crawled Property mappings, Crawled Properties list **Scope** and **Override** values whose values are the scope at which the property was discovered or created and if the property overrides a property at a higher scope. If crawled properties with same name and property set Id exist in different scopes, the lower scope's value (for example, Site Collection) overrides the higher scope (e.g., System). The scope override precedence from low to high is **Site Collection** -> **Tenant** -> **System**. An overridden property is greyed out and can only be modified at the scope at which it was created.
     
 ## View or edit crawled property categories
 <a name="__toc351360847"> </a>
@@ -406,7 +406,7 @@ The following table provides an overview of the default unused managed propertie
 ## Request re-indexing of a document library or list
 <a name="__ref341258429"> </a>
 
-1. On your site, go to the list or library where you have added the new property, and select the title. The **Library** or **List** tabs appear. 
+1. On your site, go to the list or library where you added the new property, and select the title. The **Library** or **List** tabs appear. 
     
 2. On the ribbon, select the **Library** tab or the **List** tab. 
     
