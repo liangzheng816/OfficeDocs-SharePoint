@@ -100,7 +100,7 @@ The search schema displays the name of auto-generated managed properties and the
 > [!IMPORTANT]
 > Auto-generated managed properties are case-sensitive. When accessing auto-generated managed properties, such as through a REST query, verify that the casing is correct. If the casing is incorrect, no value will be returned.
 >
-> When the implicit mapping between an auto-generated crawled property and its corresponding auto-generated managed property is modified, the implicit mapping is disrupted. For example, when the auto-generated crawled property is mapped to another explicit managed property or the auto-generated managed property is mapped to another explicit crawled property, the implicit mapping is disrupted. Following a reindex, both the auto-generated crawled property and auto-generated managed property will be removed.
+> When the implicit mapping between an auto-generated crawled property and its corresponding auto-generated managed property is modified, the implicit mapping is disrupted. For example, when the auto-generated crawled property is mapped to another explicit managed property or the auto-generated managed property is mapped to another explicit crawled property, the implicit mapping is disrupted. Following a reindex, both the auto-generated crawled property and auto-generated managed property are removed.
   
 ### Refine on managed properties
 <a name="__toc351360838"> </a>
@@ -119,16 +119,16 @@ You can change the search schema for the whole tenant or for a specific site col
 ### Crawling and re-indexing
 <a name="__toc351360840"> </a>
 
-When you change managed properties or add new ones, the changes take effect only after the content has been re-crawled. In SharePoint in Microsoft 365, crawling happens automatically based on the defined crawl schedule.
+When you change managed properties or add new ones, the changes take effect only after the content is re-crawled. In SharePoint in Microsoft 365, crawling happens automatically based on the defined crawl schedule.
   
-When you have added a new property to a list or to a library, or when you have changed properties that are used in a list or library, search has to re-crawl the content before your changes are reflected in the search index. Because your changes are made in the search schema, and not to the actual site, the search doesn't automatically re-crawl the list or the library. To make sure that your changes are crawled, you can specifically request a re-indexing of the list or library. When you do this, the list or library content is re-crawled so that you can start using your new managed properties in queries, query rules and display templates.  When working with built-in managed properties (like refinablestring##) we recommend updating/mapping properties at the tenant-level. This approach is easier to manage, creates a more consistent user experience, and performs better in the long run. 
+When you have added a new property to a list or to a library, or when you have changed properties that are used in a list or library, search has to re-crawl the content before your changes are reflected in the search index. Because your changes are made in the search schema, and not to the actual site, the search doesn't automatically re-crawl the list or the library. To make sure that your changes are crawled, you can specifically request a re-indexing of the list or library. When you do this, the list or library content is re-crawled so that you can start using your new managed properties in queries, query rules and display templates.  When working with built-in managed properties (like refinablestring##), we recommend updating/mapping properties at the tenant-level. This approach is easier to manage, creates a more consistent user experience, and performs better in the long run. 
 
   
 ## Create a new managed property
 <a name="__toc351360841"> </a>
 
 > [!NOTE]
-> Not all options are available in SharePoint in Microsoft 365.  Refinable Managed Properties cannot be created. Instead use the existing Refinable Managed Properties, e.g. RefinableString00 or RefinableInt00. Searching "Refinable" shows all of the usable Refinable Managed Properties available.
+> Not all options are available in SharePoint in Microsoft 365.  Refinable Managed Properties cannot be created. Instead use the existing Refinable Managed Properties, for example, RefinableString00 or RefinableInt00. Searching "Refinable" shows all of the usable Refinable Managed Properties available.
 
 In SharePoint in Microsoft 365, when you create a new managed property, it has some limitations. For example, the property can only be of type **Text** or **Yes/No**, and it can't be refinable or sortable.
 
