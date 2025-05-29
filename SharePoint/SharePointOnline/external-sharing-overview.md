@@ -1,5 +1,5 @@
 ---
-ms.date: 06/12/2024
+ms.date: 05/29/2025
 title: Overview of external sharing in SharePoint and OneDrive in Microsoft 365
 ms.reviewer: srice
 ms.author: jtremper
@@ -98,11 +98,11 @@ If you have confidential information that should never be shared externally, we 
 > [!NOTE]
 > To limit *internal* sharing of contents on a site, you can prevent site members from sharing, and enable access requests. For info, see [Set up and manage access requests](https://support.office.com/article/94B26E0B-2822-49D4-929A-8455698654B3). 
 > 
-> When users share a folder with multiple guests, the guests will be able to see each other's names in the Manage Access panel for the folder (and any items within it).
+> When users share a folder with multiple guests, the guests are able to see each other's names in the Manage Access panel for the folder (and any items within it).
   
 ## Sharing Microsoft 365 group-connected team sites
 
-When you or your users create Microsoft 365 groups (for example in Outlook, or by creating a team in Microsoft Teams), a SharePoint team site is created. Admins and users can also create team sites in SharePoint, which creates a Microsoft 365 group. For group-connected team sites, the group owners are added as site owners, and the group members are added as site members. In most cases, you'll want to share these sites by adding people to the Microsoft 365 group. However, you can share only the site. 
+When you or your users create Microsoft 365 groups (for example in Outlook, or by creating a team in Microsoft Teams), a SharePoint team site is created. Admins and users can also create team sites in SharePoint, which creates a Microsoft 365 group. For group-connected team sites, the group owners are added as site owners, and the group members are added as site members. In most cases, you want to share these sites by adding people to the Microsoft 365 group. However, you can share only the site. 
 
 > [!IMPORTANT]
 > It's important that all group members have permission to access the team site. If you remove the group's permission, many collaboration tasks (such as sharing files in Teams chats) won't work. Only add guests to the group if you want them to be able to access the site. For info about guest access to Microsoft 365 groups, see [Manage guest access in Groups](/office365/admin/create-groups/manage-guest-access-in-groups).  
@@ -115,9 +115,9 @@ Because these guests don't have a license in your organization, they're limited 
   
 - They can use Office.com for viewing and editing documents. If your plan includes Office Professional Plus, they can't install the desktop version of Office on their own computers unless you assign them a license.
 
-- They can perform tasks on a site based on the permission level that they've been given. For example, if you add a guest as a site member, they'll have Edit permissions and they'll be able to add, edit and delete lists; they'll also be able to view, add, update and delete list items and files.
+- They can perform tasks on a site based on the permission level that they've been given. For example, if you add a guest as a site member, they have Edit permissions and they are able to add, edit, and delete lists; they'll also be able to view, add, update, and delete list items and files.
 
-- They'll be able to see other types of content on sites, depending on the permissions they've been given. For example, they can navigate to different subsites within a shared site. They'll also be able to do things like view site feeds.
+- They are able to see other types of content on sites, depending on the permissions they've been given. For example, they can navigate to different subsites within a shared site. They'll also be able to do things like view site feeds.
 
 If your authenticated guests need greater capability such as OneDrive storage or creating a Power Automate flow, you must assign them an appropriate license.
 
