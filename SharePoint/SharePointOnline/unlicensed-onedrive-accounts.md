@@ -141,7 +141,9 @@ You can identify unlicensed OneDrive accounts using the SharePoint admin center.
 | Deletion blocked by | '*Retention period*' – The OneDrive account has been marked for deletion but is within the global OneDrive account retention period, as defined by the set-retention.md. Shortening the retention period helps reduce unlicensed OneDrive accounts being retained for this reason. |
 |  | '*Retention policy*' – A retention policy, a legal hold, or a compliance hold defined in Purview is stopping this account’s contents from being deleted. The retention policy might be applied to only a subset of the account’s contents, which would prevent the entire OneDrive account from being deleted. Modify your Purview retention or hold requirements to reduce OneDrive accounts held for this reason. |
 |  | '*Owner active in Entra ID*' – The OneDrive account’s owner is still active in Entra ID, causing the account to not be deleted. When unlicensed OneDrive account enforcement begins, these accounts will be deleted after the 93rd unlicensed day and will follow the usual deprovisioning flow including honoring the retention period and any Purview retention or hold requirements. |
-|  | '*Restored site*' – This account was restored from the site recycle bin by an IT administrator. Since the account was intentionally restored, it will no longer be deleted automatically. |
+|  | '*Restored from recycle bin*' – This account was restored from the site recycle bin by an IT administrator. Since the account was intentionally restored, it will no longer be deleted automatically. |
+|  | '*Active lock on account*' – This account has an active read-only or no-access lock applied by an IT administrator, which blocks the account from being automatically deleted.  IT administrators can use PowerShell to remove the lock state from the account or can delete this account directly. |
+|  | '*Previous lock or other state change*' – This account had a previous lock or other admin activity caused a state change which prevents the account from being automatically deleted.  IT administrators can directly delete this account via PowerShell or from the SharePoint admin center's [detailed OneDrive accounts report page](http://spo.ms/admin#/oneDriveAccounts/management). |
 
 
 ### View more details on unlicensed OneDrive accounts
@@ -281,6 +283,7 @@ As an example, if the billing is put down to reactivate one particular unlicense
 **17. Will an account get enforced if the site 'owner' property (also known as the primary site collection admin) has been modified from the original user?**
 
 **Answer:** No. Modifying the 'owner' property of a OneDrive account to any user or group other than the user who the account was provisioned for results in an unsupported state of the OneDrive account. This can cause many issues for the account. However, the unlicensed enforcement effort doesn't utilize the 'owner' property to validate licensing. Therefore, modifying the 'owner' property, while generally not a supported change, won't directly cause an account to be considered unlicensed. 
+
 
 ## Related topics
 
