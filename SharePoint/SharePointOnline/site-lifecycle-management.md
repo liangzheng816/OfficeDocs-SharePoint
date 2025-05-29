@@ -128,6 +128,18 @@ Inactive site policies analyze activity across SharePoint and connected platform
 |**Teams**     |Posted channel messages in a team across standard channels, posted messages in Teams and standard channels, replied to messages, mentioned in messages, reacted to messages, sent urgent messages, conducted meetings (recurring, ad hoc, one-time)          |
 |**Exchange**     | Received emails in the Exchange mailbox       |
 
+### Scope of app activities
+
+Inactive site policies do not consider app activity via app token. App activity via user token is considered only when a user agent involved and meets the following criteria.
+
+|Activity source| Condition when activity is considered|
+| -------- | -------- |
+|PnP PowerShell activity via user token|Is not considered|
+|SharePoint Online PowerShell activity via user token|Is considered only when UserAgent parameter value is passed       |
+|CSOM scripting activity via user token|Is considered when script explicitly sets UserAgent value|
+|Any other app activity via user token| Is considered when UserAgent exists, except in the following scenarios when<br> - UserAgent starts with "client-request=id"/"ACTIVEMONITORING"/SPORUNNERS" **OR**<br> - UserAgent ends with "MSDEMO"/"MSDPLATFORM"/"SystemUsage" **OR**<br> - UserAgent contains "GomezAgent"/"bingbot.htm"/"ms search 6.0 robot"/"http://www.monitis.com"/"ISV"|
+|App activity via app token| Is not considered     |
+
 ### In-scope site templates
 
 Site lifecycle management reviews the activity of communication sites, classic sites, Teams-connected sites, and group-connected sites with the following site template types:
