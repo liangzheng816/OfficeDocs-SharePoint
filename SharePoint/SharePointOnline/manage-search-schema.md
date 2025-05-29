@@ -38,7 +38,7 @@ Search discovers information by crawling items on your site. The discovered cont
   
 Not all crawled content or metadata is useful to have in the search index, so the search schema has a list of useful types of content and metadata, called **managed properties**. The index only includes content and metadata from the managed properties. Examples of useful metadata for the index are the author and the title of a document. 
   
-Search comes with relevant crawled properties mapped to managed properties. For example, crawled properties related to author map to a managed property related to author. If you add a managed property, you must map it to a crawled property to get content into the index. After the site, library, or list has been crawled, users can search for the content and metadata of new, or changed managed properties. See [Introducing Search Schema for SharePoint](/archive/blogs/tothesharepoint/introducing-search-schema-for-sharepoint-2013) for more info.
+Search comes with relevant crawled properties mapped to managed properties. For example, crawled properties related to author map to a managed property related to author. If you add a managed property, you must map it to a crawled property to get content into the index. After the site, library, or list is crawled, users can search for the content and metadata of new, or changed managed properties. See [Introducing Search Schema for SharePoint](/archive/blogs/tothesharepoint/introducing-search-schema-for-sharepoint-2013) for more info.
 
 > [!NOTE]
 > Numeric data in Microsoft Excel files isn't indexed. For example, the number "123456789" isn't indexed, but the string "PO123456789" is indexed. 
@@ -48,7 +48,7 @@ Search comes with relevant crawled properties mapped to managed properties. For 
 
 Each managed property has settings that determine how users can search for the content of that managed property, and how the content can be shown in the search results.
   
-You can create new, **custom** managed properties, but these can only contain text or Yes/No. If you need other content types in your custom managed property, then use one of the unused, **built-in** managed properties that search comes with. These managed properties can contain information in integer, decimal, date and time, double precision float, or binary format. You can "rename" these unused managed properties by using the alias setting. 
+You can create new, **custom** managed properties, but this type of properties can only contain text or Yes/No. If you need other content types in your custom managed property, then use one of the unused, **built-in** managed properties that search comes with. These managed properties can contain information in integer, decimal, date and time, double precision float, or binary format. You can "rename" these unused managed properties by using the alias setting. 
   
 For the built-in managed properties, you can change their mappings to crawled properties, but the only setting you can change is the alias.
 
@@ -63,7 +63,7 @@ If you set a managed property to be **searchable**, the content is added to the 
   
 If you want to prevent the content in a managed property from showing up as search results, you can disable the **retrievable** setting for the managed property. 
   
-If you don't want anonymous users to see the information in a managed property, for example who has authored an item, disable the "Safe for Anonymous" setting for the managed property.
+If you don't want anonymous users to see the information in a managed property, for example who authored an item, disable the "Safe for Anonymous" setting for the managed property.
   
 **Get better search results when you have multi-lingual content and metadata with special characters**
   
