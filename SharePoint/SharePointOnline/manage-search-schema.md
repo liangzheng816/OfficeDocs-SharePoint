@@ -1,5 +1,5 @@
 ---
-ms.date: 05/17/2024
+ms.date: 05/29/2025
 title: "Manage the search schema in SharePoint"
 ms.reviewer: 
 ms.author: ruihu
@@ -121,28 +121,16 @@ You can change the search schema for the whole tenant or for a specific site col
 
 When you change managed properties or add new ones, the changes take effect only after the content has been re-crawled. In SharePoint in Microsoft 365, crawling happens automatically based on the defined crawl schedule.
   
-When you have added a new property to a list or to a library, or when you have changed properties that are used in a list or library, search has to re-crawl the content before your changes will be reflected in the search index. Because your changes are made in the search schema, and not to the actual site, the search will not automatically re-crawl the list or the library. To make sure that your changes are crawled, you can specifically request a re-indexing of the list or library. When you do this, the list or library content will be re-crawled so that you can start using your new managed properties in queries, query rules and display templates.  When working with built-in managed properties (like refinablestring##) we recommend updating/mapping properties at the tenant-level. This is easier to manage, creates a more consistent user experience, and will be more performant in the long run. 
+When you have added a new property to a list or to a library, or when you have changed properties that are used in a list or library, search has to re-crawl the content before your changes are reflected in the search index. Because your changes are made in the search schema, and not to the actual site, the search doesn't automatically re-crawl the list or the library. To make sure that your changes are crawled, you can specifically request a re-indexing of the list or library. When you do this, the list or library content is re-crawled so that you can start using your new managed properties in queries, query rules and display templates.  When working with built-in managed properties (like refinablestring##) we recommend updating/mapping properties at the tenant-level. This approach is easier to manage, creates a more consistent user experience, and performs better in the long run. 
 
-
-  
-### Managed properties and Delve
-<a name="__toc351360840"> </a>
-
-Delve uses managed properties to query the Office graph and to display content cards in Delve. For example, you can see managed properties like Author, Filename, ModifiedBy and LastModifiedTime on the Delve content cards.
-  
-Any document that a user can view or edit in Microsoft 365, can also appear in Delve. Delve doesn't change any permissions and users will only see documents they already have access to. Sometimes, though, you may want to prevent a document from appearing in Delve.
-  
-You can use the HideFromDelve managed property to hide a document from Delve. You can keep storing the document in Office 365, and people can still find it through search - it just won't show up in Delve anymore. See [Hide documents from Delve](manage-search-schema.md#BKMK_HideFromDelveSteps).
-  
-For more info about Delve, see [Office Delve for Office 365 admins](./delve-for-office-365-admins.md)
   
 ## Create a new managed property
 <a name="__toc351360841"> </a>
 
 > [!NOTE]
-> Not all options are available in SharePoint in Microsoft 365.  Refinable Managed Properties cannot be created. Instead use the existing Refinable Managed Properties, e.g. RefinableString00 or RefinableInt00. Searching "Refinable" will show all of the usable Refinable Managed Properties available.
+> Not all options are available in SharePoint in Microsoft 365.  Refinable Managed Properties cannot be created. Instead use the existing Refinable Managed Properties, e.g. RefinableString00 or RefinableInt00. Searching "Refinable" shows all of the usable Refinable Managed Properties available.
 
-In SharePoint in Microsoft 365, when you create a new managed property, it will have some limitations. For example, the property can only be of type **Text** or **Yes/No**, and it can't be refinable or sortable.
+In SharePoint in Microsoft 365, when you create a new managed property, it has some limitations. For example, the property can only be of type **Text** or **Yes/No**, and it can't be refinable or sortable.
 
 > [!IMPORTANT]
 > Consider using only letters and digits in managed property names. Although it is possible to create custom managed properties with special characters (such as hyphens, dots, and underscores), many of those characters act as operator characters in the query syntax. For example, a hyphen means negation. Such property names have to be enclosed in double quotation marks when used in queries.  Many tools and applications that create queries don’t handle this correctly, and therefore it is better to use only letters and digits in managed property names.
@@ -227,7 +215,7 @@ If you need a property of a different type, or one that has different characteri
 8. Select **OK**.
     
     > [!IMPORTANT]
-    > When you have created a new managed property this way, the library or list that will use the refiner must be re-crawled and re-indexed before the property will appear as an option in the refinement configuration. See [Request re-indexing of a document library or list](manage-search-schema.md#__ref341258429). 
+    > When you create a new managed property this way, the library or list that uses the refiner must be re-crawled and re-indexed before the property appears as an option in the refinement configuration. See [Request re-indexing of a document library or list](manage-search-schema.md#__ref341258429). 
   
 ## View crawled properties and managed properties
 <a name="__toc351360843"> </a>
@@ -352,7 +340,7 @@ If you need a property of a different type, or one that has different characteri
 9. Select **OK**.
 
 > [!NOTE]
-> To help clarify the the scope of Managed and Crawled Property mappings, Crawled Properties list **Scope** and **Override** values whose values are the scope at which the property was discovered or created and if the property overrides a property at a higher scope. If crawled properties with same name and property set Id exist in different scopes, the lower scope's value (e.g., Site Collection) will override the higher scope (e.g., System). The scope override precedence from low to high is **Site Collection** -> **Tenant** -> **System**. An overridden property will be greyed out and can only be modified at the scope at which it was created.
+> To help clarify the the scope of Managed and Crawled Property mappings, Crawled Properties list **Scope** and **Override** values whose values are the scope at which the property was discovered or created and if the property overrides a property at a higher scope. If crawled properties with same name and property set Id exist in different scopes, the lower scope's value (e.g., Site Collection) overrides the higher scope (e.g., System). The scope override precedence from low to high is **Site Collection** -> **Tenant** -> **System**. An overridden property is greyed out and can only be modified at the scope at which it was created.
     
 ## View or edit crawled property categories
 <a name="__toc351360847"> </a>
@@ -414,42 +402,6 @@ The following table provides an overview of the default unused managed propertie
 
 \*\*\* Complete Matching
 
-## Hide documents from Delve
-
-<a name="BKMK_HideFromDelveSteps"> </a>
-
-If you don't want a document to show up in Delve, you can create a HideFromDelve site column of the type **Yes/No**. This site column creates a new crawled property, ows_HideFromDelve, which is automatically mapped to the HideFromDelve managed property.
-  
-**Add a site column to the library or list where the document is stored**
-  
-1. Sign in as a site collection administrator, and go to the site where the document that you want to hide from Delve is stored.
-    
-2. On the ribbon, select the **List** or **Library** tab. 
-    
-3. In the **Manage Views** group, select **Create Column**. 
-    
-4. Under the **Name and Type** section, in the **Column name** box, enter HideFromDelve, and then select **Yes/No** (check box)*
-    
-    > [!IMPORTANT]
-    > In the **Additional Column Settings** section, in the **Default value** dropdown, select **No**. If you select **Yes**, all new documents are hidden from Delve. 
-  
-5. Do one of the following:
-    
-   - For SharePoint 2016 or SharePoint in Microsoft 365, clear the **Add to all content types** check box. 
-    
-   - For SharePoint 2013, clear the **Add to default view** check box. 
-    
-6. Select **OK**.
-    
-**Mark the document you want to hide from Delve**
-  
-1. Go to the site where the document that you want to hide from Delve is stored.
-    
-2. Find the document that you want to hide in the library or list, select **edit properties**, and then check **HideFromDelve**. 
-    
-3. Select **OK**.
-    
-After the next scheduled crawl, or after you [Request re-indexing of a document library or list](manage-search-schema.md#__ref341258429), the document is hidden from Delve. If you want the document to show up in Delve again, uncheck the **HideFromDelve** column for the hidden document. 
   
 ## Request re-indexing of a document library or list
 <a name="__ref341258429"> </a>
