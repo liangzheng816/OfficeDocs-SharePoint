@@ -1,5 +1,5 @@
 ---
-ms.date: 04/24/2024
+ms.date: 05/29/2025
 title: Microsoft Entra B2B integration for SharePoint & OneDrive
 ms.reviewer: srice
 ms.author: ruihu
