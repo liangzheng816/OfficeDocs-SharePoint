@@ -18,7 +18,7 @@ ms.collection: M365-collaboration
 ms.custom:
  - Adm_O365
  - seo-marvel-apr2020
-description: In this article, you'll learn about the SharePoint and OneDrive integration with Microsoft Entra B2B.
+description: In this article, you learn about the SharePoint and OneDrive integration with Microsoft Entra B2B.
 ---
 
 # SharePoint and OneDrive integration with Microsoft Entra B2B 
@@ -27,19 +27,19 @@ This article describes how to enable Microsoft SharePoint and Microsoft OneDrive
 
 Microsoft Entra B2B provides authentication and management of guests. Authentication happens via one-time passcode when they don't already have a work or school account or a Microsoft account.
 
-With SharePoint and OneDrive integration with Azure B2B Invitation Manager enabled, Azure B2B Invitation Manager can be used for sharing of files, folders, list items, document libraries and sites with people outside your organization. This feature provides an upgraded experience from the existing secure external sharing recipient experience. Additionally, Azure B2B Invitation Manager one-time passcode feature allows users who don't have existing Work or School accounts or Microsoft Accounts to not have to create accounts to authenticate, but can instead use the one time passcode to verify their identity.
+With SharePoint and OneDrive integration with Azure B2B Invitation Manager enabled, Azure B2B Invitation Manager can be used for sharing of files, folders, list items, document libraries, and sites with people outside your organization. This feature provides an upgraded experience from the existing secure external sharing recipient experience. Additionally, Azure B2B Invitation Manager one-time passcode feature allows users who don't have existing Work or School accounts or Microsoft Accounts to not have to create accounts to authenticate, but can instead use the one time passcode to verify their identity.
 
 Enabling this integration doesn't change your sharing settings. For example, if you have site collections where external sharing is turned off, it remains off.
 
-Once the integration is enabled you and your users don't have to reshare or do any manual migration for guests previously shared with. Instead, when someone outside your organization clicks on a link that was created before Microsoft Entra B2B integration was enabled, SharePoint automatically creates a B2B guest account. This guest account is created for the user who originally created the sharing link. (If the user who created the link is no longer in the organization or no longer has permission to share, the guest won't be added to the directory and the file will need to be reshared.)
+Once the integration is enabled you and your users don't have to reshare or do any manual migration for guests previously shared with. Instead, when someone outside your organization selects a link that was created before Microsoft Entra B2B integration was enabled, SharePoint automatically creates a B2B guest account. This guest account is created for the user who originally created the sharing link. (If the user who created the link is no longer in the organization or no longer has permission to share, the guest won't be added to the directory and the file will need to be reshared.)
 
 SharePoint and OneDrive integration with the Microsoft Entra B2B one-time passcode feature is enabled by default for new tenants.
 
 Advantages of Microsoft Entra B2B include:
-- Invited people outside your organization are each given an account in the directory and are subject to Microsoft Entra ID access policies such as multi-factor authentication.
+- Invited people outside your organization are each given an account in the directory and are subject to Microsoft Entra ID access policies such as multifactor authentication.
 - Invitations to a SharePoint site use Microsoft Entra B2B and no longer require users to have or create a Microsoft account.
 - If you've configured Google federation in Microsoft Entra ID, federated users can now access SharePoint and OneDrive resources that you've shared with them.
-- SharePoint and OneDrive sharing is subject to the Microsoft Entra organizational relationships settings, such as **Members can invite** and **Guests can invite**. As with Microsoft 365 Groups and Teams, if a Microsoft Entra organizational relationship setting is more restrictive than a SharePoint or OneDrive setting, the Microsoft Entra setting will prevail.
+- SharePoint and OneDrive sharing is subject to the Microsoft Entra organizational relationships settings, such as **Members can invite** and **Guests can invite**. As with Microsoft 365 Groups and Teams, if a Microsoft Entra organizational relationship setting is more restrictive than a SharePoint or OneDrive setting, the Microsoft Entra setting prevails.
 
 > [!NOTE]
 > Microsoft Entra B2B doesn’t support Microsoft accounts in Microsoft 365 operated by 21Vianet.
@@ -47,8 +47,8 @@ Advantages of Microsoft Entra B2B include:
 ## Enabling the integration
 
  > [!NOTE]
- > When the integration is enabled, people outside the organization will be invited via the Azure B2B platform when sharing from SharePoint. They will sign in based on the [Microsoft Entra B2B redemption policy](/azure/active-directory/external-identities/redemption-experience#invitation-redemption-flow).
-> When the integration isn't enabled, people outside the organization will continue to use their existing accounts created when previously invited to the tenant. Any sharing to new people outside the organizaton may result in either Microsoft Entra ID-backed accounts or SharePoint-only email auth guests that use a SharePoint One Time Passcode experience to sign in.
+ > When the integration is enabled, people outside the organization will be invited via the Azure B2B platform when sharing from SharePoint. They'll sign in based on the [Microsoft Entra B2B redemption policy](/azure/active-directory/external-identities/redemption-experience#invitation-redemption-flow).
+> When the integration isn't enabled, people outside the organization continue to use their existing accounts created when previously invited to the tenant. Any sharing to new people outside the organization may result in either Microsoft Entra ID-backed accounts or SharePoint-only email auth guests that use a SharePoint One Time Passcode experience to sign in.
 
  >[!NOTE]
  > Review any custom [domain sharing restrictions in SharePoint and OneDrive](/sharepoint/restricted-domains-sharing) and decide if they should be moved to the [Microsoft Entra B2B Allow/Deny list](/azure/active-directory/external-identities/allow-deny-list). The Microsoft Entra ID Allow/Deny list also affects other Microsoft 365 services like Teams and Microsoft 365 Groups.
@@ -60,7 +60,7 @@ To enable SharePoint and OneDrive integration with Microsoft Entra B2B
     > [!NOTE]
     > If you installed a previous version of the SharePoint Online Management Shell, go to Add or remove programs and uninstall "SharePoint Online Management Shell." 
 
-2. Connect to SharePoint as a [SharePoint Administrator](/sharepoint/sharepoint-admin-role) or [above](/microsoft-365/admin/add-users/about-admin-roles) in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+2. Connect to SharePoint with permissions of a [SharePoint Administrator](/sharepoint/sharepoint-admin-role) or [more](/microsoft-365/admin/add-users/about-admin-roles) in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 3. Run the following cmdlets:
 
