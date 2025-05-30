@@ -1,5 +1,5 @@
 ---
-ms.date: 06/04/2024
+ms.date: 05/29/2025
 title: Block download policy for SharePoint sites and OneDrive
 ms.reviewer: samust
 ms.author: mactra
@@ -85,7 +85,7 @@ Blocking download might impact the user experience in some apps, including some 
 
 [SharePoint Q&A](/answers/topics/office-sharepoint-online.html)
 
-## Related topics
+## Related articles
 
 [Conditional access policy for SharePoint sites and OneDrive](authentication-context-example.md)
 
