@@ -54,7 +54,7 @@ The site lifecycle management feature from SharePoint Advanced Management lets y
 **[Site ownership policies](create-sharepoint-site-ownership-policy.md)** are a part of site lifecycle management and help effectively manage ownership of SharePoint sites in your organization.
 
 > [!NOTE]
-> Site Ownership Policy is temporarily unavailable for **[Copilot licensed organizations](/sharepoint/advanced-management)**. We are working towards enabling this feature at the earliest.
+> Site Ownership Policy is available for [Copilot licensed organizations](/sharepoint/advanced-management) as of 31st May 2025.
 
 ### AI Insights
 
@@ -185,7 +185,7 @@ The following SharePoint Advanced Management features are included in Microsoft 
   - Inactive SharePoint sites policy
     - Read-only sites
     - Archived sites
-  - Site Ownership Policy (temporarily unavailable for **[Copilot licensed organizations](/sharepoint/advanced-management)**. We are working towards enabling this feature at the earliest.)
+  - Site Ownership Policy (available for **[Copilot licensed organizations](/sharepoint/advanced-management)** as of 30th May 2025)
     
 - **Site Access Review**
 
