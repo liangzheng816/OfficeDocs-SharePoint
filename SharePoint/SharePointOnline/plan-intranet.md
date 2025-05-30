@@ -1,5 +1,5 @@
 ---
-ms.date: 04/11/2024
+ms.date: 05/29/2025
 title: "Plan an intelligent SharePoint intranet"
 ms.reviewer: 
 ms.author: ruihu
