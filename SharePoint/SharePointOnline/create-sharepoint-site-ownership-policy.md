@@ -122,8 +122,9 @@ Notifications are triggered only if the policy is running in Active mode.
 
 > [!IMPORTANT]
 > Site lifecycle policies leverage Outlook Actionable Messages to enable recipients take necessary actions within email. 
-> - For notifications render properly, ensure [Outlook version requirements](/outlook/actionable-messages/) are met in your organization.   
-> - To troubleshoot rendering issues, refer to [frequently asked questionnaire](/outlook/actionable-messages/actionable-messages-faq).
+> - For notifications to render properly, ensure [Outlook version requirements](/outlook/actionable-messages/) are met in your organization.   
+- To troubleshoot rendering issues, refer to [frequently asked questionnaire](/outlook/actionable-messages/actionable-messages-faq).
+
 
 Each policy runs every month to identify noncompliant sites. Email notifications are then sent to the configured set of recipients as per the policy.  
 
