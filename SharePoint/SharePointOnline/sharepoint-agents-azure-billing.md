@@ -69,13 +69,9 @@ If you currently have a pay-as-you-go policy in place for SharePoint agents set 
 To disconnect your existing SharePoint agents pay-as-you-go billing policy:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home), select **Org settings** > **Pay-as-you-go services**.
-1. Select SharePoint agents. The **Manage billing for SharePoint agents** page appears with a migration message: 
+1. Select SharePoint agents. The **Manage billing for SharePoint agents** page appears with a notification message at the top: 
 “We’ve updated how pay-as-you-go billing works with SharePoint agents. With the new billing policies, you can divide charges across multiple Azure subscriptions. Learn about using SharePoint agents with pay-as-you-go billing.
 To manage pay-as-you-go billing for SharePoint agents, go to _Copilot Billing & usage._" 
-
-> [!NOTE]
-> You may see a different warning message at this step, if your current billing policy requires attention: “Your Azure subscription is no longer connected.” To reconnect, follow the steps to create a new billing policy and connect it to SharePoint agent.
-
 3. Select **Copilot Billing & usage** to open the **Billing & usage** page.
 4. Select **SharePoint agents** under **Pay-as-you-go services**.
 5. Select **Disconnect previous billing**.
