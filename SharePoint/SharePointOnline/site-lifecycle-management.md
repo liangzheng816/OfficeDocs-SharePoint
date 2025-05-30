@@ -79,6 +79,11 @@ See the following table to learn more about how the inactive site policy behaves
 |**Read-only access**|Site owners or site admins receive monthly notifications for three months. If the notification recipients don't mark the site as certified during this period, the site goes into read-only mode.|
 |**Archive sites after mandatory read-only period**|Site owners or site admins receive monthly notifications for three months. If the notification recipients don't mark the site as certified during this period, then the site goes into a read-only mode for the configured number of months. After the configured number of months, the site gets archived through Microsoft 365 Archive. Archival is subject to the tenant enabling Microsoft 365 Archive on the Microsoft Admin center.|
 
+> [!IMPORTANT]
+> Site lifecycle policies leverage Outlook Actionable Messages to enable site owners or site admins take necessary actions within email.
+> - For notifications to render properly, ensure **[Outlook version requirements](/outlook/actionable-messages/)** are met in your organization.
+> - To troubleshoot rendering issues, refer to **[frequently asked questionnaire](/outlook/actionable-messages/actionable-messages-faq)**.
+
 > [!TIP]
 > Before creating an inactive site policy, check for any site access restriction policies that could disrupt site attestation by the respective site owner.
 
