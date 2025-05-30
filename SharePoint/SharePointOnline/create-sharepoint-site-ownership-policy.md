@@ -33,7 +33,7 @@ Site ownership policies help solve this problem by allowing you to configure you
 To access and use this feature, your organization must have [Microsoft SharePoint Premium – SharePoint Advanced Management](/sharepoint/advanced-management).
 
 > [!NOTE]
-> Site Ownership Policy is available for [Copilot licensed organizations](/sharepoint/advanced-management) as of 31st May 2025.
+> Site Ownership Policy is available for [Copilot licensed organizations](/sharepoint/advanced-management) as of May 31st, 2025.
 
 ## Scope of site ownership policies
 
@@ -148,7 +148,7 @@ The potential recipients of these email notifications, if configured in the poli
   
   - External and guest users will NOT be considered for these notifications to accept ownership.
   
-        > [!NOTE]
+    > [!NOTE]
     > If a site has no one to be notified as per the email recipients provided during policy configuration, the count is provided in the summary. You can triage the sites and determine the next course of action. 
     
 ## Actions
