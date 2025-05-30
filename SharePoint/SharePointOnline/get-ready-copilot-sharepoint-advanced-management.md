@@ -62,7 +62,7 @@ It's essential to confirm all sites have valid owners before cleaning up unused 
 - Set up the policy in simulation mode to identify owners based on your desired criteria. Then upgrade the policy to Active mode to enable notifications to site owner candidates.
 
 > [!NOTE]
-> Site Ownership Policy is temporarily unavailable for [Copilot licensed organizations](/sharepoint/advanced-management). We are working towards enabling this feature.
+> Site Ownership Policy is available for [Copilot licensed organizations](/sharepoint/advanced-management) as of 31st May 2025.
 
 ### Step 3: Clean up unused sites
 
