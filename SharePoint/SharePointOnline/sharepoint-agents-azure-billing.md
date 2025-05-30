@@ -56,7 +56,7 @@ To set up a pay-as-you-go billing policy for SharePoint agents, go to the [Micro
 
 ### Migrate from previous pay-as-you-go policies
 
-If you currently have a pay-as-you-go policy in place for SharePoint agents set up under **Org settings**, you can create a new billing policy. However, linking the SharePoint agent to the new policy is only possible after disconnecting the old one. You must disconnect the existing policy and then set up a new policy following the previously mentioned process. By doing so, you will be able to benefit from the updated pay-as-you-go billing policies:
+If you currently have a pay-as-you-go policy in place for SharePoint agents set up under Org settings and would like to take advantage of the new billing policy updates, you will need to first disconnect your existing policy before attempting to link SharePoint agent to a new policy. By doing so, you will be able to benefit from the updated pay-as-you-go billing policies:
 
 - You can assign one policy per security group and monitor cost for each group separately.
 - Only users in the security group assigned to the billing policy have access to SharePoint agents.
