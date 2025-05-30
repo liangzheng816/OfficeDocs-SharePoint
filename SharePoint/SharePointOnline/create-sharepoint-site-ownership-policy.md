@@ -33,7 +33,7 @@ Site ownership policies help solve this problem by allowing you to configure you
 To access and use this feature, your organization must have [Microsoft SharePoint Premium – SharePoint Advanced Management](/sharepoint/advanced-management).
 
 > [!NOTE]
-> Site Ownership Policy is temporarily unavailable for [Copilot licensed organizations](/sharepoint/advanced-management). We are working towards enabling this feature at the earliest.
+> Site Ownership Policy is available for [Copilot licensed organizations](/sharepoint/advanced-management) as of 31st May 2025.
 
 ## Scope of site ownership policies
 
@@ -120,6 +120,11 @@ Select **Download report** to download the detailed report in a .csv format. Thi
 
 Notifications are triggered only if the policy is running in Active mode.
 
+> [!IMPORTANT]
+> Site lifecycle policies leverage Outlook Actionable Messages to enable recipients take necessary actions within email. 
+> - For notifications render properly, ensure [Outlook version requirements](/outlook/actionable-messages/) are met in your organization.   
+> - To troubleshoot rendering issues, refer to [frequently asked questionnaire](/outlook/actionable-messages/actionable-messages-faq).
+
 Each policy runs every month to identify noncompliant sites. Email notifications are then sent to the configured set of recipients as per the policy.  
 
 The potential recipients of these email notifications, if configured in the policy, are:
@@ -134,11 +139,17 @@ The potential recipients of these email notifications, if configured in the poli
 
   - If the policy runs after 30 days of a user's leaving the organization, manager information won't be available, and notifications can't be sent.  
 
-- **Active site members:** Based on policy configuration, emails are sent to the most active members of a site to accept ownership. Activity is determined based on the number of read and write activities performed by site members on a site. External and guest users will not be considered for these notifications to accept ownership.
+- **Active site members:** Based on policy configuration, emails are sent to the most recent active members of a site to accept ownership. 
 
-    > [!NOTE]
-  > If a site has no one to be notified as per the email recipients provided during policy configuration, the count is provided in the summary. You can triage the sites and determine the next course of action.  
-
+  - To ensure relevance and recency, read or write activity performed by a site member on a site in the last 180 days is considered as an activity. 
+  
+  - Any user with last activity beyond 180 days is not considered for these notifications.
+  
+  - External and guest users will NOT be considered for these notifications to accept ownership.
+  
+        > [!NOTE]
+    > If a site has no one to be notified as per the email recipients provided during policy configuration, the count is provided in the summary. You can triage the sites and determine the next course of action. 
+    
 ## Actions
 
 If a site is identified as not meeting the ownership criteria for three consecutive months, one of the following actions is taken depending on what is configured:
