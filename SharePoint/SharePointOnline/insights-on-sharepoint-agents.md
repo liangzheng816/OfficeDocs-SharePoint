@@ -64,7 +64,7 @@ To check if a report is ready or when it was last updated, see the Status co
 
 When a report is ready, select it to view the data. You can view the top 100 records hosting the highest number of agents. You can search for sites or filter on the site template, and governance policies.  
 
-![Screenshot of view report](media/agent-insights/agent-report-lightbox.png)
+![Screenshot of view report](media/agent-insights/agent-report.png)
 
 ## Apply Content governance policies  
 
