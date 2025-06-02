@@ -46,7 +46,7 @@ Admins can manage the **Request files** feature via the SharePoint Online Manage
 
 To manage **Request files** for SharePoint:
 
-1. Ensure [**Anyone** links are enabled](/sharepoint/turn-external-sharing-on-or-off#change-the-organization-level-external-sharing-setting).
+1. Ensure [**Anyone** links are enabled at the organization level](/sharepoint/turn-external-sharing-on-or-off#change-the-organization-level-external-sharing-setting).
 2. Set folder permissions to **View, edit, and upload** or **View and upload**.
 3. Verify `CoreRequestFilesLinkEnabled` is **True** via the SharePoint Online Management Shell:
    - Run `Get-SPOTenant`.
