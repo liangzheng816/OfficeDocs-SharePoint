@@ -1,5 +1,5 @@
 ---
-ms.date: 05/22/2025
+ms.date: 06/02/2025
 title: "Get insights on SharePoint agents in SharePoint and OneDrive sites"
 ms.reviewer: pullabhk
 ms.author: ruihu
