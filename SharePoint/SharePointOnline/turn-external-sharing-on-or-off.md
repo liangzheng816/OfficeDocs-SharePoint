@@ -151,7 +151,7 @@ Choose the option you want to show by default when a user creates a sharing link
 
 **Link permissions** - You can restrict **Anyone** links so that they can only provide view permission for files or folders.
 
-If you are using file requests, the link permissions must be set for **View and edit** for files and **View, edit, and upload** for folders.
+If you would like to use the _Request Files_ feature, the link permissions must be set to **View, edit, and upload** or **View and Upload** for folders.
 
 ## Other settings
 
