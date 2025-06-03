@@ -1,6 +1,6 @@
 ---
 ms.date: 06/02/2025
-title: "Get SharePoint agent insights"
+title: "Get SharePoint agent Insights report"
 ms.reviewer: pullabhk
 ms.author: ruihu
 author: maggierui
@@ -24,7 +24,7 @@ description: "In this article, you learn about how to create and view insights o
 ---
 # Insights report on SharePoint agents
 
-Insights report on SharePoint Agents provides SharePoint Administrators with rich information on the recently created SharePoint agents across all SharePoint sites and OneDrive sites within their organization. This report provides admins with the ability to learn about the sites with the highest number of agents created. Using this report, admins can further govern and maintain the integrity of the content used by agents as grounding data.  
+Insights report on SharePoint Agents provides SharePoint Administrators with rich information on the recently created SharePoint agents across all SharePoint sites and OneDrive sites within their organization. This report provides admins with the ability to learn about the sites with the highest number of agents created. Using this report, SharePoint admins can further govern and maintain the integrity of the content used by agents as grounding data.  
 
 Insights report is a [SharePoint Advanced Management](/sharepoint/advanced-management) feature and available in organization with SharePoint Advanced Management add-on SKU or Microsoft 365 Copilot license. The insights report is based on the Microsoft audit data logged for SharePoint agents through the FileCreated and FileRenamed events.
 
@@ -144,6 +144,6 @@ c. SiteDistribution: Provides the summarized view of agents across all types of 
 
 ## Related articles
 
-- [Manage access to SharePoint agents](/sharepoint/manage-access-to-sharepoint-agents)
+- [Manage access to SharePoint agents](/sharepoint/manage-access-agents-in-sharepoint)
 - [Restrict SharePoint site access with Microsoft 365 groups and Microsoft Entra security groups](/SharePoint/restricted-access-control)
 - [Restrict discovery of SharePoint sites and content](/sharepoint/restricted-content-discovery)
