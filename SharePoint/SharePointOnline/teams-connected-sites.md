@@ -1,5 +1,5 @@
 ---
-ms.date: 05/31/2024
+ms.date: 05/29/2025
 title: Teams and SharePoint integration
 ms.reviewer: 
 ms.author: ruihu
@@ -29,13 +29,13 @@ In this article, learn about how Teams and SharePoint work together.
 
 Here are the basic parts of Teams and SharePoint and how they relate to each other:
 
-- **Teams** - Teams is a collaboration tool where you can chat with other people about a particular subject or task. Each team is connected to other tools that you can use to collaborate with others.
+- **[Teams](/microsoftteams/teams-overview)** - Teams is a collaboration tool where you can chat with other people about a particular subject or task. Each team is connected to other tools that you can use to collaborate with others.
 
-- **SharePoint** - SharePoint is a tool for creating web sites, publishing content, and storing files.
+- **[SharePoint](https://support.microsoft.com/office/get-started-with-sharepoint-909ec2f0-05c8-4e92-8ad3-3f8b0b6cf261)** - SharePoint is a tool for creating web sites, publishing content, and storing files.
 
-- **SharePoint site** - A SharePoint site is a web site in SharePoint where you can create web pages and store and collaborate on files. SharePoint sites can be used independently and are also used by Teams for file storage (called *Teams-connected sites*). A Teams-connected site is created automatically whenever you create a team.
+- **[SharePoint site](/sharepoint/guide-to-sharepoint-modern-experience)** - A SharePoint site is a web site in SharePoint where you can create web pages and store and collaborate on files. SharePoint sites can be used independently and can also be used by Teams for file storage (called *Teams-connected sites*). A Teams-connected site is created automatically whenever you create a team.
 
-- **Team** - A team is a place in Teams where you can invite others to collaborate. Each team is connected to one or more SharePoint sites. These sites are where the team's files are stored.
+- **[Team](/microsoftteams/teams-channels-overview)** - A team is a place in Teams where you can invite others to collaborate. Each team is connected to one or more SharePoint sites. These sites are where the team's files are stored.
 
 - **Public team** - A public team is a team that anyone in the organization can join. Public teams don't require a team owner to invite someone to the team.
 

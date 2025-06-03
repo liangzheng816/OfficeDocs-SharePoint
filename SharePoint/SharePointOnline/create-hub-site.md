@@ -1,5 +1,5 @@
 ---
-ms.date: 04/24/2024
+ms.date: 05/29/2025
 title: "Create a hub site in SharePoint"
 ms.reviewer: metorres
 ms.author: ruihu
@@ -23,15 +23,15 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 92bea781-15d8-4bda-805c-e441e2191ff3
-description: "In this article, you'll learn how to register a site as a hub site in the SharePoint admin center."
+description: "In this article, you learn how to register a site as a hub site in the SharePoint admin center."
 ---
 
 # Create a hub site in SharePoint
 
-If you're at least a [SharePoint Administrator](./sharepoint-admin-role.md) in Microsoft 365, you can convert any existing site to a hub site.
-  
+If you have the permissions of a [SharePoint Administrator](./sharepoint-admin-role.md) or higher in Microsoft 365, you can transform any existing site into a hub site.
+
 > [!NOTE]
->  We recommend selecting a communication site, or a team site that uses the new template. If you use a classic team site, the hub navigation will appear only on modern pages, and hub site settings will only appear on modern pages.<br>Sites that are already associated with another hub can't be converted to a hub site. <br>You can create up to 2,000 hub sites for an organization. This applies to hub-to-hub associations as well. Any site labeled as a hub site will count against this limit. There is no limit on the number of sites that can be associated with a hub site. <br>When users associate their sites with a hub, it doesn't impact the permissions of either the hub site or the associated sites. It's important to make sure all users you allow to associate sites to the hub have permission to the hub. 
+> We recommend selecting a communication site, or a team site that uses the new template. If you use a classic team site, the hub navigation appears only on modern pages, and hub site settings will only appear on modern pages.<br>Sites that are already associated with another hub can't be converted to a hub site. <br>You can create up to 2,000 hub sites for an organization. This applies to hub-to-hub associations as well. Any site labeled as a hub site counts against this limit. There's no limit on the number of sites that can be associated with a hub site. <br>When users associate their sites with a hub, it doesn't impact the permissions of either the hub site or the associated sites. It's important to make sure all users you allow to associate sites to the hub have permission to the hub. 
   
 ## Create a hub site in the new SharePoint admin center
 
@@ -57,7 +57,7 @@ If you're at least a [SharePoint Administrator](./sharepoint-admin-role.md) in M
 4. Select **Save**.
 
 
-## Related topics
+## Related articles
 
 - For info about using a site design that gets applied when sites join the hub, see [Set up a site design for your hub site](set-up-site-design-hub-site.md). For more info about site designs and site scripts, see [SharePoint site design and site script overview](/sharepoint/dev/declarative-customization/site-design-overview).
 

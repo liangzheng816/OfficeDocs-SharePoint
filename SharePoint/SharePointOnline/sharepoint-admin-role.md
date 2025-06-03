@@ -1,5 +1,5 @@
 ---
-ms.date: 05/17/2024
+ms.date: 05/29/2025
 title: "About the SharePoint Administrator role in Microsoft 365"
 ms.reviewer: 
 ms.author: ruihu
@@ -46,7 +46,7 @@ For info about assigning a user the SharePoint administrator role, see [Assign a
 
 #### Site management
 
-Global Administrators and SharePoint Administrators don't have automatic access to all sites and each user's OneDrive, but they can give themselves access to any site or OneDrive. They can also use Microsoft PowerShell to manage SharePoint and OneDrive. See more about this role's [Key tasks of the SharePoint admin](sharepoint-admin-role.md#BK_KeyTasks) below. 
+Global Administrators and SharePoint Administrators don't have automatic access to all sites and each user's OneDrive, but they can give themselves access to any site or OneDrive. They can also use Microsoft PowerShell to manage SharePoint and OneDrive. See more about this role's [Key tasks of the SharePoint admin](sharepoint-admin-role.md#BK_KeyTasks). 
 
 Site admins have permission to manage sites, but they don't need to have an admin role in Microsoft 365, and don't have access to the SharePoint admin center.
 
@@ -54,16 +54,16 @@ For info about adding or removing a site admin, see [Manage site admins](manage-
 
 #### Term store administration
 
-There is a separate role within SharePoint called the Term Store administrator. Users assigned to this role can add or change terms in the term store (a directory of common terms you want to use across your organization). To learn more, see [Assign roles and permissions to manage term sets](assign-roles-and-permissions-to-manage-term-sets.md).
+There's a separate role within SharePoint called the Term Store administrator. Users assigned to this role can add or change terms in the term store (a directory of common terms you want to use across your organization). To learn more, see [Assign roles and permissions to manage term sets](assign-roles-and-permissions-to-manage-term-sets.md).
 
 #### API access
 
-To manage API access in the SharePoint admin center, the [application administrator role](/entra/identity/role-based-access-control/permissions-reference#application-administrator) or above might be required. For more information, see [Manage access to Microsoft Entra ID-secured APIs](api-access.md).
+To manage API access in the SharePoint admin center, you need at least a [application administrator role](/entra/identity/role-based-access-control/permissions-reference#application-administrator). For more information, see [Manage access to Microsoft Entra ID-secured APIs](api-access.md).
 
 ## Key tasks of the SharePoint admin
 <a name="BK_KeyTasks"> </a>
 
-Here are some of the key tasks users can do when they are assigned to the SharePoint Administrator role: 
+Here are some of the key tasks users can do when they're assigned to the SharePoint Administrator role: 
   
 - [Create sites](create-site-collection.md)
     
@@ -77,7 +77,7 @@ Here are some of the key tasks users can do when they are assigned to the ShareP
 
     
   
-## Related topics
+## Related articles
 <a name="BK_KeyTasks"> </a>
 
 [About Microsoft 365 admin roles](/office365/admin/add-users/about-admin-roles)

@@ -31,7 +31,7 @@ In this article, you learn how to identify, monitor, and manage unlicensed OneDr
 > Enforcement began on January 27, 2025. The rollout has slowed to ensure a safe roll-out with sufficient time for admins to adjust. Admins should anticipate that it takes time for all unlicensed accounts to complete the enforcement process. The initial enforcement rollout will be complete by October 29, 2025.
 
 - Unlicensed OneDrive accounts subject to a retention policy, retention period, or legal hold will be automatically archived after 93 days of license removal. While these accounts remain visible to admins through administrative tools, neither admins nor end users have access to their content. Access stays restricted until administrators take specific actions. (Note these changes don't apply to EDU, GCC, or DoD customers.)
-- Unlicensed accounts not covered by any retention policy or legal hold will be moved to the recycle bin after 93 days of license removal.
+- Unlicensed accounts not covered by any retention policy or legal hold will be automatically archived after 93 days of license removal.  If billing for unlicensed OneDrive accounts has not been enabled, these accounts will also begin the deprovisioning process after 93 days of license removal, including being moved to the recycle bin.  The deprovisioning process honors the OneDrive retention period, but the account will be in the archive state by default throughout the retention period. 
 
 ### Timeline for accounts unlicensed before July 28, 2025
 
@@ -118,8 +118,7 @@ You can also encounter unlicensed OneDrive accounts when accounts are created, b
 You can identify unlicensed OneDrive accounts using the SharePoint admin center. The following steps show how to use the SharePoint admin center to generate a report of unlicensed OneDrive accounts:
 
 1. Sign in to the SharePoint admin center with your work or school account.
-2. Go to **Reports** and select **User reports**.
-3. Under **OneDrive usage**, select **Unlicensed users**.
+1. Go to **Reports** and select **OneDrive Accounts**.
 4. You can download the report as a CSV file.
 5. Starting January 2025, an interactive UI is available. You can select a username to view the details.
 
@@ -142,7 +141,9 @@ You can identify unlicensed OneDrive accounts using the SharePoint admin center.
 | Deletion blocked by | '*Retention period*' – The OneDrive account has been marked for deletion but is within the global OneDrive account retention period, as defined by the set-retention.md. Shortening the retention period helps reduce unlicensed OneDrive accounts being retained for this reason. |
 |  | '*Retention policy*' – A retention policy, a legal hold, or a compliance hold defined in Purview is stopping this account’s contents from being deleted. The retention policy might be applied to only a subset of the account’s contents, which would prevent the entire OneDrive account from being deleted. Modify your Purview retention or hold requirements to reduce OneDrive accounts held for this reason. |
 |  | '*Owner active in Entra ID*' – The OneDrive account’s owner is still active in Entra ID, causing the account to not be deleted. When unlicensed OneDrive account enforcement begins, these accounts will be deleted after the 93rd unlicensed day and will follow the usual deprovisioning flow including honoring the retention period and any Purview retention or hold requirements. |
-|  | '*Restored site*' – This account was restored from the site recycle bin by an IT administrator. Since the account was intentionally restored, it will no longer be deleted automatically. |
+|  | '*Restored from recycle bin*' – This account was restored from the site recycle bin by an IT administrator. Since the account was intentionally restored, it will no longer be deleted automatically. |
+|  | '*Active lock on account*' – This account has an active read-only or no-access lock applied by an IT administrator, which blocks the account from being automatically deleted.  IT administrators can use PowerShell to remove the lock state from the account or can delete this account directly. |
+|  | '*Previous lock or other state change*' – This account had a previous lock or other admin activity caused a state change which prevents the account from being automatically deleted.  IT administrators can directly delete this account via PowerShell or from the SharePoint admin center's [detailed OneDrive accounts report page](http://spo.ms/admin#/oneDriveAccounts/management). |
 
 
 ### View more details on unlicensed OneDrive accounts
@@ -218,9 +219,9 @@ For more information on deleting users, see [Delete a user from your organizatio
 
 **Answer:** No. They're independent. Unlicensed OneDrive accounts can't use unused SharePoint storage quota, even though there's Microsoft 365 Archive set up in the SharePoint tenant.
 
-**3. What is the outcome if an Unlicensed OneDrive account is restored from the Recycle Bin, 90 days after its license removal? Does the account get automatically archived?**
+**3. What is the outcome if an Unlicensed OneDrive account is restored from the Recycle Bin, 93 days after its license removal? Does the account get automatically archived?**
 
-**Answer:** Yes. If 93 days have past since the license removal, bringing back an unlicensed OneDrive account from the recycle bin can lead to automatic archival.
+**Answer:** Yes. If 93 days have passed since the license removal, bringing back an unlicensed OneDrive account from the recycle bin will lead to automatic archival.
 
 **4. When will an unlicensed account get archived?**
 
@@ -282,6 +283,7 @@ As an example, if the billing is put down to reactivate one particular unlicense
 **17. Will an account get enforced if the site 'owner' property (also known as the primary site collection admin) has been modified from the original user?**
 
 **Answer:** No. Modifying the 'owner' property of a OneDrive account to any user or group other than the user who the account was provisioned for results in an unsupported state of the OneDrive account. This can cause many issues for the account. However, the unlicensed enforcement effort doesn't utilize the 'owner' property to validate licensing. Therefore, modifying the 'owner' property, while generally not a supported change, won't directly cause an account to be considered unlicensed. 
+
 
 ## Related topics
 

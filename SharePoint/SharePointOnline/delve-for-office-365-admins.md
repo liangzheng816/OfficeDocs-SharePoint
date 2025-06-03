@@ -262,8 +262,7 @@ Any document that a user can view or edit in Microsoft 365, can also appear in D
  **Solution(s)**
   
 - Check the permission settings for the documents, sites and libraries and make sure that only the intended users have access to the content.
-    
-- If you want to prevent specific documents from appearing in Delve, follow the steps in [Hide documents from Delve](manage-search-schema.md#BKMK_HideFromDelveSteps). You can keep storing the documents in Microsoft 365, and people can still find them through search - they just won't show up in Delve.
+
   
 ### What is the effect of enabling or disabling Delve?
 <a name="BKMK_EffectOfficegraphOnOff"> </a>

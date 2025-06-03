@@ -32,7 +32,6 @@ Typography provides the visual framework for presenting text. It's an important 
 > - Custom fonts are set at the site or Viva Connections experience level.
 >- A font package applied to the Homesite backing the Viva Connections desktop experience also applies to the Viva Connections desktop experience.
 >- A font package applied to the Viva Connections desktop experience also applies to the attached/associated SharePoint homesite.
->- Font packages will not be pushed down to hub associated sites.
 > - Font packages cannot be deleted from the brand center app, they can be edited or made not visible to remove from selection experiences.
 
 You have the option to select from the standard font packages or a custom font package for your organization to modify the fonts of your SharePoint site or Viva Connections experience. The font packages that Microsoft offers are created to build on the Microsoft brand, while also enabling versatility to invigorate our partnerships without overpowering them. They show our shared goals and personality, and they represent our diversity and ability to optimize your experiences.

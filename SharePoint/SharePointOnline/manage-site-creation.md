@@ -1,5 +1,5 @@
 ---
-ms.date: 04/17/2024
+ms.date: 05/29/2025
 title: "Manage site creation in SharePoint"
 ms.reviewer: metorres
 ms.author: ruihu
@@ -26,7 +26,7 @@ search.appverid:
 - GSP150
 - MET150
 ms.assetid: e72844a3-0171-47c9-befb-e98b23e2dcf9
-description: "In this article, you'll learn how to allow or prevent users from creating their own sites in SharePoint."
+description: "In this article, you learn how to allow or prevent users from creating their own sites in SharePoint."
 ---
 
 # Manage site creation in SharePoint
@@ -34,7 +34,7 @@ description: "In this article, you'll learn how to allow or prevent users from c
 As a [SharePoint Administrator](/sharepoint/sharepoint-admin-role) and [above](/microsoft-365/admin/add-users/about-admin-roles) in Microsoft 365, you can let your users create and administer their own SharePoint sites, determine what kind of sites they can create, and specify the location of the sites. By default, users can create communication sites and [Microsoft 365 group-connected team sites](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
   
 > [!NOTE]
-> Disabling site creation for users does not remove their ability to create Microsoft 365 groups or resources, such as Microsoft Teams, which rely on a group. When a Microsoft 365 group is created, a SharePoint site is also created. To restrict creation of Microsoft 365 groups and the resources that rely on groups see [Manage who can create Microsoft 365 Groups](/office365/admin/create-groups/manage-creation-of-groups). 
+> Disabling site creation for users doesn't remove their ability to create Microsoft 365 groups or resources, such as Microsoft Teams, which rely on a group. When a Microsoft 365 group is created, a SharePoint site is also created. To restrict creation of Microsoft 365 groups and the resources that rely on groups see [Manage who can create Microsoft 365 Groups](/office365/admin/create-groups/manage-creation-of-groups). 
 
 ## Manage site creation in the new SharePoint admin center
 
@@ -71,15 +71,15 @@ Admins in the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="
 
    :::image type="content" alt-text="Screenshot of Site creation settings in the classic SharePoint admin center." source="media/classic-site-creation-settings.png" lightbox="media/classic-site-creation-settings.png":::
 
-   - If you choose **Disable subsite creation for all sites**, it will hide the subsite creation command (including classic) and disable users from being able to create new subsites through a URL or API. 
-   - If you choose **Enable subsite creation for classic sites only**, users will be able to create new subsites for classic sites. 
-   - If you choose **Enable subsite creation for all sites**, users will be able to create new subsites from any SharePoint site. 
+   - If you choose **Disable subsite creation for all sites**, it hides the subsite creation command (including classic) and disable users from being able to create new subsites through a URL or API. 
+   - If you choose **Enable subsite creation for classic sites only**, users are able to create new subsites for classic sites. 
+   - If you choose **Enable subsite creation for all sites**, users are able to create new subsites from any SharePoint site. 
 
 3. Select **OK** when you're done.
 
 > [!NOTE]
-> Creating a subsite in OneDrive is not supported. You will see an error, “New subsites are not available in this site. Create a new site instead.”
+> Creating a subsite in OneDrive isn't supported. You'll see an error, “New subsites aren't available in this site. Create a new site instead.”
 
 > [!TIP]
-> Instead of using subsites, we recommend that you use hub sites. [SharePoint hub sites](https://support.microsoft.com/office/what-is-a-sharepoint-hub-site-fe26ae84-14b7-45b6-a6d1-948b3966427f) allow you to group similar topics and content together using modern architecture design. Plan to [create hub sites.](create-hub-site.md)
+> Instead of using subsites, we recommend that you use hub sites. [SharePoint hub sites](https://support.microsoft.com/office/what-is-a-sharepoint-hub-site-fe26ae84-14b7-45b6-a6d1-948b3966427f) allow you to group similar articles and content together using modern architecture design. Plan to [create hub sites.](create-hub-site.md)
 
