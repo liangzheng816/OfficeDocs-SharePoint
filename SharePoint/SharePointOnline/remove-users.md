@@ -1,5 +1,5 @@
 ---
-ms.date: 05/02/2024
+ms.date: 05/29/2025
 title: Remove users from SharePoint
 ms.reviewer: jmcdowe
 ms.author: ruihu
@@ -59,7 +59,7 @@ For the steps to delete a user in the Microsoft 365 admin center, see [Delete a 
 
 1. Select the user, then select **Delete a user**.
 
-## Delete a Guest User Using Microsoft Graph PowerShell
+## Delete a guest user using Microsoft Graph PowerShell
 
 1. **Install Microsoft Graph PowerShell Module:**
    - Open PowerShell with elevated permissions (right-click on your Start menu or press Windows key + X).

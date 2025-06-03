@@ -79,6 +79,11 @@ See the following table to learn more about how the inactive site policy behaves
 |**Read-only access**|Site owners or site admins receive monthly notifications for three months. If the notification recipients don't mark the site as certified during this period, the site goes into read-only mode.|
 |**Archive sites after mandatory read-only period**|Site owners or site admins receive monthly notifications for three months. If the notification recipients don't mark the site as certified during this period, then the site goes into a read-only mode for the configured number of months. After the configured number of months, the site gets archived through Microsoft 365 Archive. Archival is subject to the tenant enabling Microsoft 365 Archive on the Microsoft Admin center.|
 
+> [!IMPORTANT]
+> Site lifecycle policies leverage Outlook Actionable Messages to enable site owners or site admins take necessary actions within email.
+> - For notifications to render properly, ensure **[Outlook version requirements](/outlook/actionable-messages/)** are met in your organization.
+> - To troubleshoot rendering issues, refer to **[frequently asked questionnaire](/outlook/actionable-messages/actionable-messages-faq)**.
+
 > [!TIP]
 > Before creating an inactive site policy, check for any site access restriction policies that could disrupt site attestation by the respective site owner.
 
@@ -127,6 +132,18 @@ Inactive site policies analyze activity across SharePoint and connected platform
 |**Viva Engage (formerly Yammer)**     |Posted messages, read conversations, liked messages         |
 |**Teams**     |Posted channel messages in a team across standard channels, posted messages in Teams and standard channels, replied to messages, mentioned in messages, reacted to messages, sent urgent messages, conducted meetings (recurring, ad hoc, one-time)          |
 |**Exchange**     | Received emails in the Exchange mailbox       |
+
+### Scope of app activities
+
+Inactive site policies do not consider app activity via app token. App activity via user token is considered only when a user agent involved and meets the following criteria.
+
+|Activity source| Condition when activity is considered|
+| -------- | -------- |
+|PnP PowerShell activity via user token|Is not considered|
+|SharePoint Online PowerShell activity via user token|Is considered only when UserAgent parameter value is passed       |
+|CSOM scripting activity via user token|Is considered when script explicitly sets UserAgent value|
+|Any other app activity via user token| Is considered when UserAgent exists, except in the following scenarios when<br> - UserAgent starts with "client-request=id"/"ACTIVEMONITORING"/SPORUNNERS" **OR**<br> - UserAgent ends with "MSDEMO"/"MSDPLATFORM"/"SystemUsage" **OR**<br> - UserAgent contains "GomezAgent"/"bingbot.htm"/"ms search 6.0 robot"/"http://www.monitis.com"/"ISV"|
+|App activity via app token| Is not considered     |
 
 ### In-scope site templates
 
