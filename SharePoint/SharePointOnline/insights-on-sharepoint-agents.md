@@ -1,6 +1,6 @@
 ---
 ms.date: 06/02/2025
-title: "Get insights on SharePoint agents in SharePoint and OneDrive sites"
+title: "Get SharePoint agent insights"
 ms.reviewer: pullabhk
 ms.author: ruihu
 author: maggierui
@@ -22,22 +22,21 @@ ms.custom:
 search.appverid: 
 description: "In this article, you learn about how to create and view insights on SharePoint agents in SharePoint and OneDrive sites."
 ---
-# SharePoint Agent Insights report in SharePoint Admin Center  
+# Insights report on SharePoint agents
+
 Insights report on SharePoint Agents provides SharePoint Administrators with rich information on the recently created SharePoint agents across all SharePoint sites and OneDrive sites within their organization. This report provides admins with the ability to learn about the sites with the highest number of agents created. Using this report, admins can further govern and maintain the integrity of the content used by agents as grounding data.  
 
-Insights report is a [SharePoint Advanced Management](/sharepoint/advanced-management) feature and available in organization with SharePoint Advanced Management add-on SKU or Microsoft 365 Copilot license. The insights report is based on the Microsoft audit data logged for SharePoint agents through the FileCreated and FileRenamed events. 
+Insights report is a [SharePoint Advanced Management](/sharepoint/advanced-management) feature and available in organization with SharePoint Advanced Management add-on SKU or Microsoft 365 Copilot license. The insights report is based on the Microsoft audit data logged for SharePoint agents through the FileCreated and FileRenamed events.
 
-You can generate and manage SharePoint Agent Insights report in SharePoint Admin Center.  
+You can generate and manage SharePoint agent Insights report in SharePoint Admin Center or with SharePoint Online Management Shell.  
 
-1. Sign in to the SharePoint admin center with your SharePoint admin credentials.
-2. Tto generate and view these reports, ensure the organization has the SharePoint Advanced Management add-on SKU or Microsoft 365 Copilot license.
-3. In the left pane, expand **Reports** and then select **Agent insights**.
-4. On the Agent insights page, select **SharePoint agents - View reports**.
+## Create and view SharePoint Agent Insights report in SharePoint Admin Center
 
-## Create reports
+You can create and view SharePoint agent Insights report after sign into SharePoint Admin Center with your SharePoint admin credentials.
 
- 
-1. As SharePoint Administrator, you can generate the report by clicking on Create a report.  
+### Create reports in SharePoint Admin Center
+
+1. As SharePoint Administrator, you can generate the report by selecting **Create a report**.  
 ![Screenshot of creating report in SharePoint Agent Insights](media/agent-insights/create-report.png)
 
 2. Provide the Report name and under Report duration, specify the time frame for the report.  
@@ -47,28 +46,24 @@ You can generate and manage SharePoint Agent Insights report in SharePoint Admin
 3. Select **Create and run**. 
  
 > [!NOTE]
-> - A report can be rerun only after 24 hours since the last report was generated.
-> - In large tenants, it might take up to 48 hours for the data to be available.
-> - There can only be one report for each value of the report range. This means you can see a maximum of four reports at a given point.
-> - The newly generated report replaces the previously created report with the same date range. To preserve the previously created report, download the report first before creating a new report for the same date range.
+> You can create a report for the past 1, 7, 14, or 28 days. 
 
-## View report status 
+### View report status in SharePoint Admin Center
 
- 
-To check if a report is ready or when it was last updated, see the Status column.  
+To check if a report is ready or when it was last updated, see the **Status** column.  
 
-  
 ![Screenshot of report status](media/agent-insights/reports-status.png)
 
-## View report  
+### View report in SharePoint Admin Center 
 
 When a report is ready, select it to view the data. You can view the top 100 records hosting the highest number of agents. You can search for sites or filter on the site template, and governance policies.  
 
 ![Screenshot of view report](media/agent-insights/agent-report.png)
 
-## Apply Content governance policies  
+### Apply Content governance policies in SharePoint Admin Center
 
-You can further select a site and apply [Restrict site access policy](/SharePoint/restricted-access-control) or [Restrict Content Discovery policy](/sharepoint/restricted-content-discovery) on the site for content governance. 
+You can apply content governance policies on the sites from the insights report. The policies available are [Restrict site access policy](/SharePoint/restricted-access-control) and [Restrict Content Discovery policy](/sharepoint/restricted-content-discovery).
+
 
  ![Screenshot of applying RCD](media/agent-insights/RCD-lightbox.png)
 
@@ -78,21 +73,19 @@ You can further select a site and apply [Restrict site access policy](/SharePoin
  
 ## SharePoint Agent Insights report in SharePoint PowerShell Module 
  
-You can generate and manage SharePoint Agent Insights report using SharePoint Online Management Shell. 
+You can generate and manage SharePoint agent Insights report using SharePoint Online Management Shell. 
 
-1. [Download](https://www.microsoft.com/download/details.aspx?id=35588) and install the latest version of SharePoint Online Management Shell.
+1. If you haven't, [download](https://www.microsoft.com/download/details.aspx?id=35588) and install the latest version of SharePoint Online Management Shell.
 2. Connect to SharePoint Online as at least a [SharePoint administrator](/sharepoint/sharepoint-admin-role) in Microsoft 365. For more information, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 3. To generate and view these reports, ensure the organization has the SharePoint Advanced Management add-on SKU or Microsoft 365 Copilot license.
 
-With permissions of at least a SharePoint administrator, you can generate and view the insights using the following commands:  
+With permissions of at least a SharePoint administrator, you can generate and view the insights report using the following commands:  
  
 1. To generate report for a one-day default report duration, run the command:  
  
 `Start-SPOCopilotAgentInsightsReport`  
 
-
-
-2. To generate a report for any other duration (1, 7, 14 or 28 days), run the command:  
+2. To generate a report for any other duration (7, 14 or 28 days), run the command:  
  
 `Start-SPOCopilotAgentInsightsReport -ReportPeriodInDays`  
  
@@ -117,7 +110,6 @@ For example, to generate report for the past 28 days, run the command:
 
 `Get-SPOCopilotAgentInsightsReport –ReportId -Action View` 
 
- 
 
 6. To view further detailed reports, the following options are available: 
  
@@ -138,8 +130,8 @@ c. SiteDistribution: Provides the summarized view of agents across all types of 
  
 `Get-SPOCopilotAgentInsightsReport –ReportId -Content SiteDistribution` 
 
-## Known Experiences
-  
+## Known Experiences for SharePoint Agent Insights report generated in SharePoint Admin Center and SharePoint Online Management Shell
+
 - A report can be rerun only after 24 hours since the last report generated.  
 
 - In large tenants, it might take up to 48 hours for the data to be available.  
@@ -148,4 +140,10 @@ c. SiteDistribution: Provides the summarized view of agents across all types of 
 
 - The newly generated report replaces the previously created report with the same date range. To preserve the previously created report, download the report first before creating a new report for the same date range.  
 
-- These reports are generated using Microsoft 365 unified audit data and might not cover all audit events. 
+- These reports are generated using Microsoft 365 unified audit data and might not cover all audit events.
+
+## Related articles
+
+- [Manage access to SharePoint agents](/sharepoint/manage-access-to-sharepoint-agents)
+- [Restrict SharePoint site access with Microsoft 365 groups and Microsoft Entra security groups](/SharePoint/restricted-access-control)
+- [Restrict discovery of SharePoint sites and content](/sharepoint/restricted-content-discovery)
