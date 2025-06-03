@@ -130,13 +130,15 @@ c. SiteDistribution: Provides the summarized view of agents across all types of 
  
 `Get-SPOCopilotAgentInsightsReport –ReportId -Content SiteDistribution` 
 
-## Known Experiences for SharePoint Agent Insights report generated in SharePoint Admin Center and SharePoint Online Management Shell
+## Known experiences with SharePoint Agent Insights reports
+
+The following are some known experiences with SharePoint Agent Insights reports generated in SharePoint Admin Center or using SharePoint Online Management Shell:
 
 - A report can be rerun only after 24 hours since the last report generated.  
 
 - In large tenants, it might take up to 48 hours for the data to be available.  
 
-- There can only be one report for each value of Report range. This means you can see a maximum of four reports at a given point.  
+- Only one report can exist for each report range value (1, 7, 14, or 28 days). This means you can see a maximum of four reports at a given point.  
 
 - The newly generated report replaces the previously created report with the same date range. To preserve the previously created report, download the report first before creating a new report for the same date range.  
 
