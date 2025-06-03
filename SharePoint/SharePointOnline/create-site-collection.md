@@ -1,5 +1,5 @@
 ---
-ms.date: 04/24/2024
+ms.date: 05/29/2025
 title: "Create a site"
 ms.reviewer: metorres
 ms.author: ruihu
@@ -31,12 +31,11 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: 3a3d7ab9-5d21-41f1-b4bd-5200071dd539
-description: "This article describes how global and SharePoint admins can create sites."
+description: "This article describes how users with at least SharePoint admin permissions can create sites in the SharePoint admin center."
 ---
 
 # Create a site
-
-This article describes how being at least a [SharePoint Administrator](./sharepoint-admin-role.md) in Microsoft 365 can create sites (previously called "site collections") in the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>. For info about creating sites and adding users and groups to them by using Microsoft PowerShell, see [Create SharePoint sites and add users with PowerShell](/microsoft-365/enterprise/create-sharepoint-sites-and-add-users-with-powershell).
+This article explains how users with at least [SharePoint Administrator](./sharepoint-admin-role.md) permissions in Microsoft 365 can create sites (formerly known as "site collections") in the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>. To learn about creating sites and managing users and groups using Microsoft PowerShell, see [Create SharePoint sites and add users with PowerShell](/microsoft-365/enterprise/create-sharepoint-sites-and-add-users-with-powershell).
   
 For info about creating site collections in SharePoint Server, see [Create a site collection in SharePoint Server](../SharePointServer/sites/create-a-site-collection.md).
 
@@ -63,7 +62,7 @@ For info about creating site collections in SharePoint Server, see [Create a sit
 1. Follow the steps to specify a site name, owner, language, and other settings. When you're done, select **Create site**.
  
     > [!NOTE]
-    > If you enter a site name and another site already exists at the default address for that name, the site address will automatically be changed to an available address. For example, if you enter "Marketing" as the site name, and you already have a site at /sites/marketing, you will receive a warning ***This site address is available with modification*** and will be offered a new URL automatically at /sites/marketing2. If you want to re-use the URL "marketing" for the new site, you need to [permanently delete the existing site](delete-site-collection.md#permanently-delete-a-site) or [delete the redirect at that address](manage-site-redirects.md).   
+    > If you enter a site name and another site already exists at the default address for that name, the site address is automatically changed to an available address. For example, if you enter "Marketing" as the site name, and you already have a site at /sites/marketing, you'll receive a warning ***This site address is available with modification*** and will be offered a new URL automatically at /sites/marketing2. If you want to reuse the URL "marketing" for the new site, you need to [permanently delete the existing site](delete-site-collection.md#permanently-delete-a-site) or [delete the redirect at that address](manage-site-redirects.md).   
  
 ## Create a classic site
 <a name="__toc323551189_1"> </a>
@@ -87,10 +86,10 @@ We recommend using the new site templates for all your new sites. However, if yo
     
     - In the **Web Site Address** drop-down lists, select a domain name and a URL path—either **/sites/** or **/teams/—and then type a URL name for the site. 
     
-    - In the **Template Selection** section, in the **Select a language** drop-down list, select a language for the site. You can enable the SharePoint multiple language interface on your sites, but the primary language for the site will remain the one you select here. 
+    - In the **Template Selection** section, in the **Select a language** drop-down list, select a language for the site. You can enable the SharePoint multiple language interface on your sites, but the primary language for the site remains the one you select here. 
     
       > [!NOTE]
-      > It's important to select the appropriate language for the site, because once it's set, it cannot be changed. After creating a site, verify the locale and regional settings are accurate. (For example, a site created for Chinese will have its locale set to China.) 
+      > It's important to select the appropriate language for the site, because once it's set, it can't be changed. After creating a site, verify the locale and regional settings are accurate. (For example, a site created for Chinese will have its locale set to China.) 
   
     - In the **Template Selection** section, under **Select a template**, select the template that most closely describes the purpose of your site. 
     
@@ -101,7 +100,7 @@ We recommend using the new site templates for all your new sites. However, if yo
       
     - In the **Administrator** box, enter the user name of the person you want to be the site administrator. You can also use the **Check Names** or **Browse** button to find a user to make site administrator. 
       
-    - In the **Storage Quota** box, enter the number of megabytes (MB) you want to allocate to this site. Do not exceed the available amount that is displayed next to the box. 
+    - In the **Storage Quota** box, enter the number of megabytes (MB) you want to allocate to this site. Don't exceed the available amount that is displayed next to the box. 
       
     - In the **Server Resource Quota** box, accept the resource quota default. This setting no longer affects the resource amounts available for the site. 
     

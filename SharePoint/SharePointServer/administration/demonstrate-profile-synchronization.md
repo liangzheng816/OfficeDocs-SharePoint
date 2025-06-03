@@ -41,5 +41,5 @@ This document contains instructions for the following:
 
 #### Other Resources
 
-[Test Lab Guides](https://go.microsoft.com/fwlink/p/?LinkId=202817)
+[Test Lab Guides](https://www.microsoft.com/download/details.aspx?id=6815&msockid=072c37e97a5e67a2086022817b0866c6)
 

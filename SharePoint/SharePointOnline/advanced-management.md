@@ -1,5 +1,5 @@
 ---
-ms.date: 05/01/2025
+ms.date: 05/30/2025
 title: "SharePoint Advanced Management overview"
 ms.reviewer: daminasy
 ms.author: mactra
@@ -52,6 +52,9 @@ SharePoint Advanced Management helps you identify, manage, and resolve common co
 The site lifecycle management feature from SharePoint Advanced Management lets you improve site governance by having automated policies configured in the SharePoint admin center.
 
 **[Site ownership policies](create-sharepoint-site-ownership-policy.md)** are a part of site lifecycle management and help effectively manage ownership of SharePoint sites in your organization.
+
+> [!NOTE]
+> Site Ownership Policy is available for [Copilot licensed organizations](/sharepoint/advanced-management) as of May 31st, 2025.
 
 ### AI Insights
 
@@ -178,10 +181,12 @@ The following SharePoint Advanced Management features are included in Microsoft 
   - SharePoint and OneDrive sites
   - Restricted Access Control Insights
 - **Site Lifecycle Policy**
+
   - Inactive SharePoint sites policy
     - Read-only sites
     - Archived sites
-  - Site Ownership Policy
+  - Site Ownership Policy (available for **[Copilot licensed organizations](/sharepoint/advanced-management)** as of May 31st, 2025)
+    
 - **Site Access Review**
 
 The following Copilot SKUs will include the SharePoint Advanced Management:

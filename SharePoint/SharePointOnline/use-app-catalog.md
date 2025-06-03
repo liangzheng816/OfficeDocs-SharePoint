@@ -1,5 +1,5 @@
 ---
-ms.date: 04/24/2024
+ms.date: 05/29/2025
 title: "Manage apps using the Apps site - SharePoint"
 ms.reviewer: yihan1
 ms.author: ruihu
