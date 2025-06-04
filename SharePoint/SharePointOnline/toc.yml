@@ -177,6 +177,8 @@ items:
           href: restricted-site-creation.md
         - name: Restrict SharePoint site access by security groups
           href: restricted-access-control.md
+        - name: Get SharePoint agent Insights reports
+          href: insights-on-SharePoint-agents.md
   - name: Performance
     items:
     - name: Performance
