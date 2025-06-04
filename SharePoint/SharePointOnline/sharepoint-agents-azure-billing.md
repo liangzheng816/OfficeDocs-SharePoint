@@ -131,7 +131,7 @@ Your organization receives an invoice for all Azure services used at the end of 
 
 ## Disconnect agents from pay-as-you-go billing
 
-To disconnect Agents from pay-as-you-go billing, follow these steps:
+To disconnect agents from pay-as-you-go billing, follow these steps:
 
 1. In the Microsoft 365 admin center, select **Copilot** > **Billing and usage**.
 1. On the **Pay-as-you-go services** page, select the SharePoint agent policy.
