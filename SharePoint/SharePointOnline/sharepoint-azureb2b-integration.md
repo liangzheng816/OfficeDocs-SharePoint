@@ -67,6 +67,8 @@ To enable SharePoint and OneDrive integration with Microsoft Entra B2B
    ```PowerShell
    Set-SPOTenant -EnableAzureADB2BIntegration $true
    ```
+> [!NOTE]
+> After enabling Microsoft Entra B2B integration, external users attempting to access previously shared links will encounter access issues. To restore access, the original sharer should resend the sharing invitation.
 
 ## Disabling the integration
 
