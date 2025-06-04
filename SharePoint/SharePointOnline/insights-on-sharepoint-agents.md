@@ -36,7 +36,8 @@ You can create and view SharePoint agent Insights report after sign into SharePo
 
 ### Create reports in SharePoint Admin Center
 
-1. As SharePoint Administrator, you can generate the report by selecting **Create a report**.  
+1. With permissions of a SharePoint Administrator, you can generate the report by selecting **Create a report**.  
+
 ![Screenshot of creating report in SharePoint Agent Insights](media/agent-insights/create-report.png)
 
 2. Provide the Report name and under Report duration, specify the time frame for the report.  
