@@ -47,7 +47,7 @@ Advantages of Microsoft Entra B2B include:
 ## Enabling the integration
 
  > [!NOTE]
- > When the integration is enabled, people outside the organization will be invited via the Azure B2B platform when sharing from SharePoint. They'll sign in based on the [Microsoft Entra B2B redemption policy](/azure/active-directory/external-identities/redemption-experience#invitation-redemption-flow).
+ > When the integration is enabled, people outside the organization are invited via the Azure B2B platform when sharing from SharePoint. They'll sign in based on the [Microsoft Entra B2B redemption policy](/azure/active-directory/external-identities/redemption-experience#invitation-redemption-flow).
 > When the integration isn't enabled, people outside the organization continue to use their existing accounts created when previously invited to the tenant. Any sharing to new people outside the organization may result in either Microsoft Entra ID-backed accounts or SharePoint-only email auth guests that use a SharePoint One Time Passcode experience to sign in.
 
  >[!NOTE]
