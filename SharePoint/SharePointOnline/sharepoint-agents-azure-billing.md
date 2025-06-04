@@ -1,5 +1,5 @@
 ---
-ms.date: 04/07/2025
+ms.date: 06/04/2025
 title: Set up SharePoint agents for pay-as-you-go billing
 ms.reviewer:
 ms.author: ruihu
