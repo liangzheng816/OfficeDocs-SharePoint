@@ -38,11 +38,11 @@ You can create and view SharePoint agent Insights report after sign into SharePo
 
 1. With permissions of a SharePoint Administrator, you can generate the report by selecting **Create a report**.  
 
-![Screenshot of creating report in SharePoint Agent Insights](media/agent-insights/create-report.png)
+    ![Screenshot of creating report in SharePoint Agent Insights.](media/agent-insights/create-report.png)
 
 2. Provide the Report name and under Report duration, specify the time frame for the report.  
 
-    ![Screenshot of specifying report time frame in SharePoint Agent Insights](media/agent-insights/create-report-time-frame.png)
+    ![Screenshot of specifying report time frame in SharePoint Agent Insights.](media/agent-insights/create-report-time-frame.png)
 
 3. Select **Create and run**. 
  
@@ -53,20 +53,20 @@ You can create and view SharePoint agent Insights report after sign into SharePo
 
 To check if a report is ready or when it was last updated, see the **Status** column.  
 
-![Screenshot of report status](media/agent-insights/reports-status.png)
+![Screenshot of report status.](media/agent-insights/reports-status.png)
 
 ### View report in SharePoint Admin Center 
 
 When a report is ready, select it to view the data. You can view the top 100 records hosting the highest number of agents. You can search for sites or filter on the site template, and governance policies.  
 
-![Screenshot of view report](media/agent-insights/agent-report.png)
+![Screenshot of view report.](media/agent-insights/agent-report.png)
 
 ### Apply Content governance policies in SharePoint Admin Center
 
 You can apply content governance policies on the sites from the insights report. The policies available are [Restrict site access policy](/SharePoint/restricted-access-control) and [Restrict Content Discovery policy](/sharepoint/restricted-content-discovery).
 
 
- ![Screenshot of applying RCD](media/agent-insights/RCD-lightbox.png)
+ ![Screenshot of applying RCD.](media/agent-insights/RCD-lightbox.png)
 
 > [!NOTE]
 > After a policy is applied to the site from the insights report, the policy status on the existing report won't be updated. To view the updated status of the policy on the site, select the policy to view the latest status or access the Active site panel and review the site settings.
@@ -94,13 +94,13 @@ For example, to generate report for the past 28 days, run the command:
  
 `Start-SPOCopilotAgentInsightsReport -ReportPeriodInDays <28>`
  
- ![Screenshot of powershell scripts to genearte report](media\agent-insights\powershell-spocopilotagent-generate.png)
+ ![Screenshot of powershell scripts to genearte report.](media\agent-insights\powershell-spocopilotagent-generate.png)
 
 3. To check the status of all active and available reports, run the command:  
  
 `Get-SPOCopilotAgentInsightsReport` 
  
- ![Screenshot of powershell script status](media\agent-insights\powershell-spocopilotagent-status.png)
+ ![Screenshot of powershell script status.](media\agent-insights\powershell-spocopilotagent-status.png)
 4. To check the status of a specific report, run the command: 
  
 `Get-SPOCopilotAgentInsightsReport –ReportId` 
