@@ -134,9 +134,9 @@ Your organization receives an invoice for all Azure services used at the end of 
 To disconnect Agents from pay-as-you-go billing, follow these steps:
 
 1. In the Microsoft 365 admin center, select **Copilot** > **Billing and usage**.
-1. On the **Pay-as-you-go services** page, select the Agent you would like to disconnect. (For example: M365 Copilot Chat or SharePoint Agents).
+1. On the **Pay-as-you-go services** page, select the SharePoint agent policy.
 1. The **Manage billing policy connections** panel opens up. All policies including the ones that are connected to agents are displayed.
-1. Select the checkbox next to the policy you would like to disconnect.
+1. Select the checkbox next to the SharePoint agent policy you would like to disconnect.
 1. View confirmation that your Azure Subscription has been disconnected.
 1. Pay-as-you-go services will discontinue for this Azure Subscription.
 1. If multiple services are connected to a single policy, each service can be disconnected by going through the above steps. 
