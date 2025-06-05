@@ -78,7 +78,7 @@ To view usage data for your site, select the settings gear and then select **Sit
 
 ### Use agent reports on SharePoint Advanced Management
 
-[Agent Insights report](insights-on-sharepoint-agents) offers SharePoint admins detailed visibility into newly created agents across all SharePoint and OneDrive sites within their organization. This report helps identify which sites have the highest number of agents, enabling admins to better oversee and manage the content used by these agents as grounding data, ensuring content integrity and governance. These reports can be generated from the SharePoint Admin Center or be used through PowerShell cmdlets.
+[Agent Insights report](/sharepoint/insights-on-sharepoint-agents) offers SharePoint admins detailed visibility into newly created agents across all SharePoint and OneDrive sites within their organization. This report helps identify which sites have the highest number of agents, enabling admins to better oversee and manage the content used by these agents as grounding data, ensuring content integrity and governance. These reports can be generated from the SharePoint Admin Center or be used through PowerShell cmdlets.
 
 ![SharePoint Agent Insight Report](media/agent-insights/agent-report.png)
 
