@@ -76,13 +76,15 @@ To view usage data for your site, select the settings gear and then select **Sit
 
 ## Monitor agent usage as SharePoint admins
 
-### Use SharePoint Online Management Shell to get an inventory of agents created across sites
+### Use agent reports on SharePoint Advanced Management
 
-Users with at least SharePoint admin permissions can get an inventory of the agents created across sites in a specified time period through the [Start-SPOCopilotAgentInsightsReport](/powershell/module/sharepoint-online/start-spocopilotagentinsightsreport) and [Get-SPOCopilotAgentInsightsReport](/powershell/module/sharepoint-online/get-spocopilotagentinsightsreport) cmdlets. This list includes agent files that the site owners and site admins might not have access to. Unless explicit roles are granted, regular site owners can't run these cmdlets.
+[Agent Insights report](insights-on-sharepoint-agents) offers SharePoint admins detailed visibility into newly created agents across all SharePoint and OneDrive sites within their organization. This report helps identify which sites have the highest number of agents, enabling admins to better oversee and manage the content used by these agents as grounding data, ensuring content integrity and governance. These reports can be generated from the SharePoint Admin Center or be used through PowerShell cmdlets.
 
-![Agent Inventory](media/agents-sharepoint/sample-powershell-agent-output.png)
+![SharePoint Agent Insight Report](media/agent-insights/agent-report.png)
 
-From the output, admins can navigate to the site, search for the agent file, and take actions as needed. They might have to grant access to themselves as needed.
+![SharePoint Agent Insight Cmdlet](media/agents-sharepoint/sample-powershell-agent-output.png)
+
+Unless explicit roles are granted, regular site owners can't run these reports. The output report may includes agent files that the site owners and site admins might not have access to. From the list, admins can navigate to the site, search for the agent file, and take actions as needed. They might have to grant access to themselves as needed.
 
 ### Use Microsoft Purview audit log to monitor agent creation and usage details
 
@@ -99,9 +101,4 @@ SharePoint admins can use [Microsoft Cost Management](/sharepoint/sharepoint-age
 1. Going to [Microsoft Cost Management](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/%7E/overview/openedBy/AzurePortal).
 1. If needed, changing the scope to select the subscription that is being used for agents in SharePoint.
 
-### Use SharePoint Advanced Management to obtain detailed insights across sites
-
-A new agent report is coming soon on the SharePoint admin center. This report provides detailed insights on agent usage across sites. The report lists the number of agents created, along with details on policies such as Restricted Content Discovery and Restricted Access Control associated with a particular site. The report can also be downloaded for further analysis. Similar to the PowerShell cmdlets, regular site owners wouldn't be able to access these reports unless explicit roles are granted.
-
-![SharePoint Advanced Management](media/agents-sharepoint/sharepoint-advanced-management.png)
 
