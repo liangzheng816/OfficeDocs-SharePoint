@@ -72,7 +72,7 @@ You can apply content governance policies on the sites from the insights report.
 > After a policy is applied to the site from the insights report, the policy status on the existing report won't be updated. To view the updated status of the policy on the site, select the policy to view the latest status or access the Active site panel and review the site settings.
 
  
-## SharePoint Agent Insights report in SharePoint PowerShell Module 
+## SharePoint Agent Insights report in SharePoint Online Management Shell 
  
 You can generate and manage SharePoint agent Insights report using SharePoint Online Management Shell. 
 
@@ -84,32 +84,47 @@ With permissions of at least a SharePoint administrator, you can generate and vi
  
 1. To generate report for a one-day default report duration, run the command:  
  
-`Start-SPOCopilotAgentInsightsReport`  
+```powershell
+Start-SPOCopilotAgentInsightsReport
+```  
 
 2. To generate a report for any other duration (7, 14 or 28 days), run the command:  
  
-`Start-SPOCopilotAgentInsightsReport -ReportPeriodInDays`  
+```powershell
+Start-SPOCopilotAgentInsightsReport -ReportPeriodInDays
+```  
  
 For example, to generate report for the past 28 days, run the command:  
  
-`Start-SPOCopilotAgentInsightsReport -ReportPeriodInDays <28>`
+```powershell
+Start-SPOCopilotAgentInsightsReport -ReportPeriodInDays <28>
+```
  
  ![Screenshot of powershell scripts to genearte report.](media\agent-insights\powershell-spocopilotagent-generate.png)
 
 3. To check the status of all active and available reports, run the command:  
  
-`Get-SPOCopilotAgentInsightsReport` 
+```powershell
+Get-SPOCopilotAgentInsightsReport
+``` 
  
  ![Screenshot of powershell script status.](media\agent-insights\powershell-spocopilotagent-status.png)
+
 4. To check the status of a specific report, run the command: 
  
-`Get-SPOCopilotAgentInsightsReport –ReportId` 
+```powershell
+Get-SPOCopilotAgentInsightsReport –ReportId
+``` 
 
 5. To download and view the report, run the command: 
  
-`Get-SPOCopilotAgentInsightsReport –ReportId -Action Download` 
+```powershell
+Get-SPOCopilotAgentInsightsReport –ReportId -Action Download
+``` 
 
-`Get-SPOCopilotAgentInsightsReport –ReportId -Action View` 
+```powershell
+Get-SPOCopilotAgentInsightsReport –ReportId -Action View
+``` 
 
 
 6. To view further detailed reports, the following options are available: 
@@ -121,15 +136,51 @@ a. CopilotAgentsOnSites: Provides the name of all the agents currently available
 > [!NOTE]
 > The default value for the `-Content` parameter is `CopilotAgentsOnSites`. 
  
-`Get-SPOCopilotAgentInsightsReport –ReportId -Content CopilotAgentsOnSites`  
+```powershell
+Get-SPOCopilotAgentInsightsReport –ReportId -Content CopilotAgentsOnSites
+```  
 
 b. TopSites: Provides a list of 100 sites with the number of agents available on each site.  
- 
-`Get-SPOCopilotAgentInsightsReport –ReportId -Content TopSites`
+
+```powershell
+Get-SPOCopilotAgentInsightsReport –ReportId -Content TopSites
+```
 
 c. SiteDistribution: Provides the summarized view of agents across all types of sites like Communication sites, Microsoft 365 group connected sites, OneDrive site, etc.  
- 
-`Get-SPOCopilotAgentInsightsReport –ReportId -Content SiteDistribution` 
+
+```powershell
+Get-SPOCopilotAgentInsightsReport –ReportId -Content SiteDistribution
+```
+
+### Data collection for insights report  
+
+> [!IMPORTANT]
+> If you don't have a Microsoft SharePoint Premium - SharePoint Advanced Management license, you'll be asked to enable data collection, so that the product starts to collect the relevant audit data to build this report. Once enabled, the reports can be generated 24 hours later and contain data from the point of collection. Data is stored for 28 days. If no reports are generated even once in three months, data collection is paused and should be enabled again.
+
+#### Enabling data collection
+
+This PowerShell command starts collecting audit data for reports on activities from the last 28 days. 
+
+```powershell
+Start-SPOAuditDataCollectionForActivityInsights  
+```
+
+#### Disabling data collection
+
+This PowerShell command stops collecting audit data for reports on activities from the last 28 days. 
+
+```powershell
+
+Stop-SPOAuditDataCollectionForActivityInsights  
+```
+
+#### Checking the data collection status 
+
+Once data collection is enabled, the reports can be generated after 24 hours. To check whether reports can be generated, use the PowerShell command Get-SPOAuditDataCollectionStatusForActivityInsights. The command returns the current data collection status which can be "NotInitiated","InProgress", "Paused". Reports can be generated when the status is "InProgress". 
+
+```powershell
+Get-SPOAuditDataCollectionStatusForActivityInsights 
+```
 
 ## Known experiences with SharePoint Agent Insights reports
 
