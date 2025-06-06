@@ -40,7 +40,7 @@ The following outlines the tools and techniques available for monitoring SharePo
     - **SharePoint Online Management Shell**: SharePoint admins can get an inventory of the agents created across sites at the organization level in a specified time period using SharePoint Online Management Shell.
     - **Microsoft Purview audit log**: SharePoint admins with Compliance admin permissions can use the [Microsoft Purview audit log](/microsoft-365/compliance/audit-log-search) to monitor agent creation and usage details across the organization.
     - **Microsoft Cost Management**: SharePoint admins can use [Microsoft Cost Management](/azure/cost-management-billing/cost-management-billing-overview) to monitor the cost of agent usage at the organization level.
-    - **SharePoint Advanced Management**: Coming soon, SharePoint admins can use [SharePoint Advanced Management](/sharepoint/advanced-management) to obtain detailed insights on agent usage across sites. The report will list the number of agents that are created, along with details on policies such as Restricted Content Discovery and Restricted Access Control associated with a particular site.
+    - **SharePoint Advanced Management**: Coming soon, SharePoint admins can use [SharePoint Advanced Management](/sharepoint/advanced-management) to obtain detailed insights on agent usage across sites. The report lists the number of agents that are created, along with details on policies such as Restricted Content Discovery and Restricted Access Control associated with a particular site.
 
 These tools align with user roles and permissions, enabling monitoring and management of SharePoint agent activities.
 The following provides additional details on how each tool functions and can be used effectively.
@@ -84,7 +84,7 @@ To view usage data for your site, select the settings gear and then select **Sit
 
 ![SharePoint Agent Insight Cmdlet](media/agents-sharepoint/sample-powershell-agent-output.png)
 
-Unless explicit roles are granted, regular site owners can't run these reports. The output report may includes agent files that the site owners and site admins might not have access to. From the list, admins can navigate to the site, search for the agent file, and take actions as needed. They might have to grant access to themselves as needed.
+Unless explicit roles are granted, regular site owners can't run these reports. The output report might include agent files that the site owners and site admins might not have access to. From the list, admins can navigate to the site, search for the agent file, and take actions as needed. They might have to grant access to themselves as needed.
 
 ### Use Microsoft Purview audit log to monitor agent creation and usage details
 
