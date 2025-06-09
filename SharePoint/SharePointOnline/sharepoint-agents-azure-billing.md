@@ -17,6 +17,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 - Tier2
+description: In this article, you learn how to set up SharePoint agents for pay-as-you-go billing.
 ---
 # Use agents with pay-as-you-go billing
 
@@ -26,14 +27,15 @@ To use pay-as-you-go billing, you need to first set up SharePoint agents as a re
 
 ### Prerequisites to set up SharePoint agents as a resource in Azure
 
-- Have at least a SharePoint administrator role
-- Have Owner or Contributor Azure roles to a pay-as-you-go Azure subscription
-- Have Owner or Contributor Azure roles to an Azure resource group linked to the same Azure subscription
+To set up SharePoint agents as a resource in Azure, you need to have at least the following permissions as:
+
+- A SharePoint administrator
+- [Owner or Contributor Azure roles](/azure/role-based-access-control/built-in-roles#privileged) to a pay-as-you-go Azure subscription
+- [Owner or Contributor Azure roles](/azure/role-based-access-control/built-in-roles#privileged) to an Azure resource group linked to the same Azure subscription
 
 > [!NOTE]
-> - The Owner or Contributor Azure roles are only needed in the time windows where you set up billing.
-> -	To grant an owner or Contributor Azure role, follow the instructions [here](/azure/role-based-access-control/role-assignments-portal). 
-
+> - You only need the Owner or Contributor Azure roles during the billing setup process.
+> - To assign an Owner or Contributor Azure role, see [Assign Azure roles using the portal](/azure/role-based-access-control/role-assignments-portal).
 
 To set up SharePoint agents as an Azure resource, you need to do the following if you haven't already:
 
