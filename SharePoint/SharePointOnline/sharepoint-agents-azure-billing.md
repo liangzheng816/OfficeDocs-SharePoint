@@ -44,15 +44,41 @@ To set up SharePoint agents as an Azure resource, you need to do the following i
 
 ## Set up pay-as-you-go billing for SharePoint agents
 
-After setting up an Azure resource group for SharePoint agents, you can set up pay-as-you-go billing for SharePoint agents in the Microsoft 365 admin center. Here's how:
+After setting up an Azure resource group for SharePoint agents, you can set up pay-as-you-go billing for SharePoint agents in the Microsoft 365 admin center. Here are the steps:
 
-1. Go to the Microsoft 365 admin center, select **Settings** then **Org settings** then select **pay-as-you-go** services (formerly Microsoft Syntex).
-    Alternatively, you can select **Setup**, and then in the **Billing and licenses** section, select **Activate pay-as-you-go services**. On the **Activate pay-as-you-go services** page, select **Get started**.
-1. On the **Pay-as-you-go services** page, under **Billing**, select **agents in SharePoint**.
-1. On the **Set up billing and turn on services** panel, in the **Set up billing** section, under **Azure subscription**, select the dropdown, and then follow the steps to select the Azure subscription, resource group, and region. (The region determines where your tenant ID and usage information such as site names are stored.)
-1. Read and accept the pay-as-you-go billing terms of service.
-1. Select **Save**.
+*Step 1: Set up a pay-as-you-go billing policy*
+To set up a pay-as-you-go billing policy for SharePoint agents, go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home) and follow the steps outlined [here](/microsoft-365/services/pay-as-you-go-setup). 
 
+*Step 2: Connect the billing policy to the SharePoint agent service*
+
+- After creating the billing policy, select **Connect a service** for the policy, on the **Billing & usage** page. The **Pay-as-you-go services** tab opens.
+- Choose **SharePoint agents** from the list of apps and services. The **Manage billing policy connections** pane appears.
+- Select the billing policy to connect it to the SharePoint agent service.
+- Select **Save**, then **Done**. Your billing policy is now connected to the SharePoint agent service.
+
+### Migrate from previous pay-as-you-go policies
+
+If you currently have a pay-as-you-go policy in place for SharePoint agents set up under Org settings and would like to take advantage of the new billing policy updates, you will need to first disconnect your existing policy before attempting to link SharePoint agent to a new policy. By doing so, you will be able to benefit from the updated pay-as-you-go billing policies:
+
+- You can assign one policy per security group and monitor cost for each group separately.
+- Only users in the security group assigned to the billing policy have access to SharePoint agents.
+
+> [!NOTE]
+>
+> - Each billing policy can currently have one security group. Support for multiple security groups will be available soon.
+> - You can create up to 10 policies, with each policy assigned a security group.
+
+To disconnect your existing SharePoint agents pay-as-you-go billing policy:
+
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home), select **Org settings** > **Pay-as-you-go services**.
+1. Select SharePoint agents. The **Manage billing for SharePoint agents** page appears with a notification message at the top: 
+“We’ve updated how pay-as-you-go billing works with SharePoint agents. With the new billing policies, you can divide charges across multiple Azure subscriptions. Learn about using SharePoint agents with pay-as-you-go billing.
+To manage pay-as-you-go billing for SharePoint agents, go to _Copilot Billing & usage._" 
+3. Select **Copilot Billing & usage** to open the **Billing & usage** page.
+4. Select **SharePoint agents** under **Pay-as-you-go services**.
+5. Select **Disconnect previous billing**.
+
+Your previous billing is now disconnected. You can now set up a new billing policy and connect it to SharePoint agents.
 
 ### Billing rates
 
@@ -107,11 +133,12 @@ Your organization receives an invoice for all Azure services used at the end of 
 
 ## Disconnect agents from pay-as-you-go billing
 
-To disconnect Agents from pay-as-you-go billing, follow these steps:
+To disconnect agents from pay-as-you-go billing, follow these steps:
 
-1. In the Microsoft 365 admin center, select **Settings** > **Org Settings**.
-1. On the **Pay-as-you-go services** page, on the **Billing** tab, select **Agents in SharePoint**.
-1. On the **Manage billing** panel, under the Azure Subscription, select **Edit billing information**.
-1. Select **Disconnect Azure subscription** under **Manage Billing**.
-1. Select **Disconnect** within the **Disconnect Subscription** pop-up window.
-1. View confirmation that your Azure Subscription has been disconnected Under **set up billing and turn on services**. 
+1. In the Microsoft 365 admin center, select **Copilot** > **Billing and usage**.
+1. On the **Pay-as-you-go services** page, select the SharePoint agent policy.
+1. The **Manage billing policy connections** panel opens up. All policies including the ones that are connected to agents are displayed.
+1. Select the checkbox next to the SharePoint agent policy you would like to disconnect.
+1. View confirmation that your Azure Subscription has been disconnected.
+1. Pay-as-you-go services will discontinue for this Azure Subscription.
+1. If multiple services are connected to a single policy, each service can be disconnected by going through the above steps. 
