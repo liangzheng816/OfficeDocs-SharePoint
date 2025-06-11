@@ -27,7 +27,7 @@ This article describes how to enable Microsoft SharePoint and Microsoft OneDrive
 
 Microsoft Entra B2B provides authentication and management of guests. Authentication happens via one-time passcode when they don't already have a work or school account or a Microsoft account.
 
-With SharePoint and OneDrive integrated with Azure B2B Invitation Manager, you can share files, folders, list items, document libraries, and sites with external people. This feature provides an upgraded experience from the existing secure external sharing recipient experience. Additionally, Azure B2B Invitation Manager one-time passcode feature allows users who don't have existing Work or School accounts or Microsoft Accounts to not have to create accounts to authenticate, but can instead use the one time passcode to verify their identity.
+With SharePoint and OneDrive integrated with Azure B2B Invitation Manager, you can share files, folders, list items, document libraries, and sites with external people. This feature provides an upgraded experience from the existing secure external sharing recipient experience. Additionally, Azure B2B Invitation Manager offers a one-time passcode feature. This allows users without Work, School, or Microsoft accounts to authenticate using a code, instead of creating a new account.
 
 Enabling this integration doesn't change your sharing settings. For example, if you have site collections where external sharing is turned off, it remains off.
 
@@ -36,7 +36,7 @@ SharePoint and OneDrive integration with the Microsoft Entra B2B one-time passco
 Advantages of Microsoft Entra B2B include:
 - Invited people outside your organization are each given an account in the directory and are subject to Microsoft Entra ID access policies such as multifactor authentication.
 - Invitations to a SharePoint site use Microsoft Entra B2B and no longer require users to have or create a Microsoft account.
-- If you've configured Google federation in Microsoft Entra ID, federated users can now access SharePoint and OneDrive resources that you've shared with them.
+- If you have Google federation in Microsoft Entra ID, federated users can now access SharePoint and OneDrive resources that you shared with them.
 - SharePoint and OneDrive sharing is subject to the Microsoft Entra organizational relationships settings, such as **Members can invite** and **Guests can invite**. As with Microsoft 365 Groups and Teams, if a Microsoft Entra organizational relationship setting is more restrictive than a SharePoint or OneDrive setting, the Microsoft Entra setting prevails.
 
 > [!NOTE]
