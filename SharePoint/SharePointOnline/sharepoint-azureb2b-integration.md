@@ -71,7 +71,7 @@ To enable SharePoint and OneDrive integration with Microsoft Entra B2B
 
 ## Disabling the integration
 
-You can disable the integration by running '[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant) -EnableAzureADB2BIntegration $false'. 
+You can disable the integration by running [`Set-SPOTenant`](/powershell/module/sharepoint-online/Set-SPOTenant) `-EnableAzureADB2BIntegration $false`.
 
 > [!Important]
 > Once disabled, previously shared users remain Microsoft Entra Guest Users for future shares. To convert a user from a Microsoft Entra Guest User back to a SharePoint OTP user, you need to [delete the guest](/sharepoint/remove-users#delete-a-guest-from-the-microsoft-365-admin-center) in Microsoft Entra ID and remove all SPUser objects in your organization that reference that guest user.  
