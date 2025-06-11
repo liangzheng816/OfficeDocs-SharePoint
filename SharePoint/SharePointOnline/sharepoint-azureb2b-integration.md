@@ -27,7 +27,7 @@ This article describes how to enable Microsoft SharePoint and Microsoft OneDrive
 
 Microsoft Entra B2B provides authentication and management of guests. Authentication happens via one-time passcode when they don't already have a work or school account or a Microsoft account.
 
-With SharePoint and OneDrive integrated with Azure B2B Invitation Manager, you can share files, folders, list items, document libraries, and sites with external people. This feature provides an upgraded experience from the existing secure external sharing recipient experience. Additionally, Azure B2B Invitation Manager offers a one-time passcode feature. This allows users without Work, School, or Microsoft accounts to authenticate using a code, instead of creating a new account.
+With SharePoint and OneDrive integrated with Azure B2B Invitation Manager, you can share files, folders, list items, document libraries, and sites with external people. This feature provides an upgraded experience from the existing secure external sharing recipient experience. Additionally, Azure B2B Invitation Manager offers a one-time passcode feature. This feature allows users without Work, School, or Microsoft accounts to authenticate using a code, instead of creating a new account.
 
 Enabling this integration doesn't change your sharing settings. For example, if you have site collections where external sharing is turned off, it remains off.
 
@@ -40,7 +40,7 @@ Advantages of Microsoft Entra B2B include:
 - SharePoint and OneDrive sharing is subject to the Microsoft Entra organizational relationships settings, such as **Members can invite** and **Guests can invite**. As with Microsoft 365 Groups and Teams, if a Microsoft Entra organizational relationship setting is more restrictive than a SharePoint or OneDrive setting, the Microsoft Entra setting prevails.
 
 > [!NOTE]
-> After enabling Microsoft Entra B2B integration, external users attempting to access previously shared links (One Time Passcode) will encounter access issues. They will receive error 'This organization has updated its guest access settings'. To restore access, your users need to reshare files/folders/sites to external users.
+> After enabling Microsoft Entra B2B integration, external users attempting to access previously shared links (One Time Passcode) will encounter access issues. They receive error 'This organization has updated its guest access settings'. To restore access, your users need to reshare files/folders/sites to external users.
 
 > [!NOTE]
 > Microsoft Entra B2B doesn’t support Microsoft accounts in Microsoft 365 operated by 21Vianet.
@@ -74,7 +74,7 @@ To enable SharePoint and OneDrive integration with Microsoft Entra B2B
 You can disable the integration by running '[Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant) -EnableAzureADB2BIntegration $false'. 
 
 > [!Important]
-> Once disabled, users who were shared to while the integration was enabled will always be a Microsoft Entra Guest User for future shares. To convert a user from a Microsoft Entra Guest User back to a SharePoint OTP user, you need to [delete the guest](/sharepoint/remove-users#delete-a-guest-from-the-microsoft-365-admin-center) in Microsoft Entra ID and remove all SPUser objects in your organization that reference that guest user.  
+> Once disabled, previously shared users remain Microsoft Entra Guest Users for future shares. To convert a user from a Microsoft Entra Guest User back to a SharePoint OTP user, you need to [delete the guest](/sharepoint/remove-users#delete-a-guest-from-the-microsoft-365-admin-center) in Microsoft Entra ID and remove all SPUser objects in your organization that reference that guest user.  
 
 ## See also
 
