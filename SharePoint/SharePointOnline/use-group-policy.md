@@ -56,18 +56,18 @@ This article describes the OneDrive Group Policy objects (GPOs) that administrat
 
 7. Use security filtering to narrow the scope of a setting. By default, a setting is applied to all user and computer objects within the container to which it's linked, but you can use security filtering to narrow the scope of the policy's application to a subset of users or computers. For more information, see [Filtering the scope of a GPO](/previous-versions/windows/desktop/Policy/filtering-the-scope-of-a-gpo).
 
-The OneDrive GPOs work by setting registry keys on the computers in your domain.
+  The OneDrive GPOs work by setting registry keys on the computers in your domain.
+    
+  - When you enable or disable a setting, the corresponding registry key is updated on computers in your domain. If you later change the setting back to **Not configured**, the corresponding registry key isn't modified, and the change doesn't take effect. After you configure a setting, set it to **Enabled** or **Disabled**, going forward.
   
-- When you enable or disable a setting, the corresponding registry key is updated on computers in your domain. If you later change the setting back to **Not configured**, the corresponding registry key isn't modified, and the change doesn't take effect. After you configure a setting, set it to **Enabled** or **Disabled**, going forward.
-
-- The location where registry keys are written has been updated. When you use the latest files, you might delete registry keys that you set previously.
+  - The location where registry keys are written has been updated. When you use the latest files, you might delete registry keys that you set previously.
 
 > [!NOTE]
 > For information about storage, see [OneDrive Files On-Demand and Storage Sense for Windows 10](https://support.office.com/article/de5faa9a-6108-4be1-87a6-d90688d08a48) and [Policy CSP - Storage](/windows/client-management/mdm/policy-csp-storage).
 
 ## List of policies by string ID
 
-- (AddedFolderHardDeleteOnUnmount) [Hard-deletes the contents of an added folder when unmounted](#hard-delete-the-contents-of-an-added-folder-when-unmounted)
+- (AddedFolderHardDeleteOnUnmount)[Hard-deletes the contents of an added folder when unmounted](#hard-delete-the-contents-of-an-added-folder-when-unmounted)
 
 - (AddedFolderUnmountOnPermissionsLoss) [Hard-deletes contents of an added folder when user loses permissions to the folder](#hard-delete-the-contents-of-an-added-folder-when-user-loses-permissions-to-the-folder)
 
