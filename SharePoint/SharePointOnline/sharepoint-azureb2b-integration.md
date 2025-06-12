@@ -72,30 +72,34 @@ You can disable the integration by running [`Set-SPOTenant`](/powershell/module/
 > [!Important]
 > Once disabled, previously shared users remain Microsoft Entra Guest Users for future shares. To convert a user from a Microsoft Entra Guest User back to a SharePoint OTP user, you need to [delete the guest](/sharepoint/remove-users#delete-a-guest-from-the-microsoft-365-admin-center) in Microsoft Entra ID and remove all SPUser objects in your organization that reference that guest user.
 
-## Frequently Asked Questions: SharePoint and OneDrive Integration with Microsoft Entra B2B
-The following questions pertain to a change that requires resharing content with external users after enabling Microsoft SharePoint integration with Microsoft Entra B2B.
+## Frequently Asked Questions: 
 
-**1. Will previously shared One-Time Passcode (OTP) links be affected if Entra B2B integration is not enabled?**
+The following questions address a change that requires resharing content with external users after enabling Microsoft SharePoint integration with Entra B2B.
 
-**Answer:** YYou can verify this using the SharePoint Online Management Shell. Run the following PowerShell cmdlet: Get-SPOTenant. In the output, look for the EnableAzureB2BIntegration property. If it is set to True, Entra B2B integration is enabled. If it is False, the integration is not enabled.
+**1. How can I check if my tenant has enabled SharePoint and OneDrive integration with Entra B2B?**
 
-**2. Is there an impact of previously shared links (One Time Passcode) on tenants which do not have Entra B2B integration enabled?**
+**Answer:** You can verify this using the SharePoint Online Management Shell. Run the following PowerShell cmdlet: Get-SPOTenant. In the output, look for the EnableAzureB2BIntegration property. If it is set to True, Entra B2B integration is enabled. If it is False, the integration is not enabled.
+
+**2. Is there an impact of previously shared links on tenants which do not have Entra B2B integration enabled?**
 
 **Answer:** No, there is no impact on tenants that have not enabled Entra B2B integration. This change only affects tenants that have already enabled or will enable the integration in the future.
 
-**3. What happens to previously shared OTP links if a tenant has enabled or plans to enable Entra B2B integration?**
+**3. What happens to previously shared links if a tenant has enabled or plans to enable Entra B2B integration?**
 
 **Answer:** For tenants that have enabled or will enable SharePoint integration with Entra B2B, users will need to reshare files, folders, and sites with external collaborators starting July 1, 2025. Tenants provisioned after June 2023 have Entra B2B integration enabled by default and are not impacted by this change.
 
-**4. Is there a way to report which previously shared OTP links and external users are affected?**
+**4. Is there a way to report which previously shared links and external users are affected?**
 
-**Answer:** AYes. You can use audit logs to assess the impact. Refer to the documentation on [Use sharing auditing in the audit log](https://learn.microsoft.com/purview/audit-log-sharing?tabs=microsoft-purview-portal). Additionally, site sharing reports available through Microsoft Graph Data Connect can help identify affected content and users. See the [Microsoft Graph Data Connect for SharePoint Blog](https://techcommunity.microsoft.com/blog/microsoft_graph_data_connect_for_sharepo/mgdc-for-sharepoint-faq-what-is-in-the-permissions-dataset/4075447) for more details. 
+**Answer:** Yes. You can use audit logs to assess the impact. Refer to the documentation on [Use sharing auditing in the audit log](https://learn.microsoft.com/purview/audit-log-sharing?tabs=microsoft-purview-portal). Additionally, site sharing reports available through Microsoft Graph Data Connect can help identify affected content and users. See the [Microsoft Graph Data Connect for SharePoint Blog](https://techcommunity.microsoft.com/blog/microsoft_graph_data_connect_for_sharepo/mgdc-for-sharepoint-faq-what-is-in-the-permissions-dataset/4075447) for more details. 
 
-**5. Can exceptions be made to this change?**
+**5. Can we proactively invite existing One-Time Passcode (OTP) users to join via Entra B2B before this change takes effect?**
+**Answer** Yes. You can add guests in advance using Microsoft Entra B2B; however, resharing is still required. For guidance, see [Add and manage B2B collaboration users](https://learn.microsoft.com/en-us/entra/external-id/add-users-administrator)
+
+**6. Can exceptions be made to this change?**
 
 **Answer:** No. This update is part of Microsoft’s ongoing efforts to enhance security and applies universally.
 
-**6. Can this change be applied at the site level?**
+**7. Can this change be applied at the site level?**
 
 **Answer:** No. The change applies at the tenant level and cannot be scoped to individual sites.
 
