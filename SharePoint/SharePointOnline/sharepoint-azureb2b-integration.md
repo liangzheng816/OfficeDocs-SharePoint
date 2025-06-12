@@ -97,7 +97,7 @@ The following questions address a change that requires resharing content with ex
 
 **6. Can exceptions be made to this change?**
 
-**Answer:** No. This update is part of Microsoft’s ongoing efforts to enhance security and applies universally.
+**Answer:** No. This update is part of Microsoft’s ongoing efforts to enhance security.
 
 **7. Can this change be applied at the site level?**
 
