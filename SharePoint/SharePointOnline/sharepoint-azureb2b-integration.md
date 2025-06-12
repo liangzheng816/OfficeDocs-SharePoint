@@ -90,10 +90,10 @@ The following questions address a change that requires resharing content with ex
 
 **4. Is there a way to report which previously shared links and external users are affected?**
 
-**Answer:** Yes. You can use audit logs to assess the impact. Refer to the documentation on [Use sharing auditing in the audit log](https://learn.microsoft.com/purview/audit-log-sharing?tabs=microsoft-purview-portal). Additionally, site sharing reports available through Microsoft Graph Data Connect can help identify affected content and users. See the [Microsoft Graph Data Connect for SharePoint Blog](https://techcommunity.microsoft.com/blog/microsoft_graph_data_connect_for_sharepo/mgdc-for-sharepoint-faq-what-is-in-the-permissions-dataset/4075447) for more details. 
+**Answer:** Yes. You can use audit logs to assess the impact. Refer to the documentation on [Use sharing auditing in the audit log](https://learn.microsoft.com/purview/audit-log-sharing?tabs=microsoft-purview-portal). Additionally, site sharing reports available through Microsoft Graph Data Connect can help identify affected content and users. Details are provided in the [Microsoft Graph Data Connect for SharePoint Blog](https://techcommunity.microsoft.com/blog/microsoft_graph_data_connect_for_sharepo/mgdc-for-sharepoint-faq-what-is-in-the-permissions-dataset/4075447). 
 
-**5. Can we proactively invite existing One-Time Passcode (OTP) users to join via Entra B2B before this change takes effect?**
-**Answer** Yes. You can add guests in advance using Microsoft Entra B2B; however, resharing is still required. For guidance, see [Add and manage B2B collaboration users](https://learn.microsoft.com/en-us/entra/external-id/add-users-administrator)
+**5. Can we proactively invite existing users to join via Entra B2B before this change takes effect?**
+**Answer** Yes. You can add guests in advance using Microsoft Entra B2B; however, resharing is still required. Guidance is available in the [Add and manage B2B collaboration users](https://learn.microsoft.com/entra/external-id/add-users-administrator).
 
 **6. Can exceptions be made to this change?**
 
