@@ -45,7 +45,7 @@ This article describes the OneDrive Group Policy objects (GPOs) that administrat
 1. Browse to `%localappdata%\Microsoft\OneDrive\\*BuildNumber*\adm\` (for [per-machine sync app](per-machine-installation.md) browse to `%ProgramFiles(x86)%\Microsoft OneDrive\BuildNumber\adm\` or `%ProgramFiles%\Microsoft OneDrive\BuildNumber\adm\` (depending on the OS architecture)) to the subfolder for your language, as necessary (where *BuildNumber* is the number displayed in sync app settings under the **About** tab).
 
     ![The ADM folder in the OneDrive installation directory](media/85e0fe3f-84eb-4a29-877f-c706dda4d075.png)
-
+   
 3. Copy the .adml and .admx files.
 
 4. Paste the .admx file in your domain's Central Store, `\\\\*domain*\sysvol\domain\Policies\PolicyDefinitions` (where *domain* is your domain name, such as corp.contoso.com), and the .adml file in the appropriate language subfolder, such as en-us. If the PolicyDefinitions folder doesn't exist, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://support.microsoft.com/help/3087759), or use your local policy store under `%windir%\policydefinitions`.
@@ -56,18 +56,18 @@ This article describes the OneDrive Group Policy objects (GPOs) that administrat
 
 7. Use security filtering to narrow the scope of a setting. By default, a setting is applied to all user and computer objects within the container to which it's linked, but you can use security filtering to narrow the scope of the policy's application to a subset of users or computers. For more information, see [Filtering the scope of a GPO](/previous-versions/windows/desktop/Policy/filtering-the-scope-of-a-gpo).
 
-The OneDrive GPOs work by setting registry keys on the computers in your domain.
+  The OneDrive GPOs work by setting registry keys on the computers in your domain.
+    
+  - When you enable or disable a setting, the corresponding registry key is updated on computers in your domain. If you later change the setting back to **Not configured**, the corresponding registry key isn't modified, and the change doesn't take effect. After you configure a setting, set it to **Enabled** or **Disabled**, going forward.
   
-- When you enable or disable a setting, the corresponding registry key is updated on computers in your domain. If you later change the setting back to **Not configured**, the corresponding registry key isn't modified, and the change doesn't take effect. After you configure a setting, set it to **Enabled** or **Disabled**, going forward.
-
-- The location where registry keys are written has been updated. When you use the latest files, you might delete registry keys that you set previously.
+  - The location where registry keys are written has been updated. When you use the latest files, you might delete registry keys that you set previously.
 
 > [!NOTE]
 > For information about storage, see [OneDrive Files On-Demand and Storage Sense for Windows 10](https://support.office.com/article/de5faa9a-6108-4be1-87a6-d90688d08a48) and [Policy CSP - Storage](/windows/client-management/mdm/policy-csp-storage).
 
 ## List of policies by string ID
 
-- (AddedFolderHardDeleteOnUnmount) [Hard-deletes the contents of an added folder when unmounted](#hard-delete-the-contents-of-an-added-folder-when-unmounted)
+- (AddedFolderHardDeleteOnUnmount)[Hard-deletes the contents of an added folder when unmounted](#hard-delete-the-contents-of-an-added-folder-when-unmounted)
 
 - (AddedFolderUnmountOnPermissionsLoss) [Hard-deletes contents of an added folder when user loses permissions to the folder](#hard-delete-the-contents-of-an-added-folder-when-user-loses-permissions-to-the-folder)
 
@@ -830,6 +830,9 @@ If you enable this setting, users are prevented from setting up a sync relations
 Enabling this policy sets the following registry key value to 1:
   
 `[HKCU\SOFTWARE\Policies\Microsoft\OneDrive]"DisablePersonalSync"=dword:00000001`
+
+> [!NOTE]
+> Mac operating system (MacOS) clients should either sign out and restart OneDrive or restart the client machine to apply this setting.
 
 ### Receive OneDrive sync app updates on the Deferred ring
 
