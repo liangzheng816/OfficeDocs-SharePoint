@@ -160,16 +160,17 @@ In addition to the previous considerations, you might have to consider more oper
   ```  
   Failure to do so may result in the follow events on the SQL Server when the Health Analyzer rules are triggered:
 
-> Log Name:      Application
-> Source:        Microsoft-SharePoint Products-SharePoint Foundation
-> Event ID:      5214
-> Task Category: Database
-> Level:         Critical
-> Description:
-> Insufficient SQL database permissions for user 'Name: DOMAIN\SPFARM <sid> ImpersonationLevel: Impersonation' in database '<Content Database>' on SQL Server instance 'SQLSERVER'. Additional error information from SQL Server is included below.
-> 
-> The EXECUTE permission was denied on the object 'proc_UpdateDatabaseDefaultOptions', database '<Content Database>', schema 'dbo'.
+```
+Log Name:      Application
+Source:        Microsoft-SharePoint Products-SharePoint Foundation
+Event ID:      5214
+Task Category: Database
+Level:         Critical
+Description:
+Insufficient SQL database permissions for user 'Name: DOMAIN\SPFARM <sid> ImpersonationLevel: Impersonation' in database '<Content Database>' on SQL Server instance 'SQLSERVER'. Additional error information from SQL Server is included below.
 
+The EXECUTE permission was denied on the object 'proc_UpdateDatabaseDefaultOptions', database '<Content Database>', schema 'dbo'.
+```
 - **Synchronization account** - For SharePoint Server, this account is used to connect to the directory service. We recommend that you don't limit the default permissions granted to the account under which this service runs and that you never disable this account. Instead, use a secure user account, for which the password isn't widely known, and leave the service running. This account also requires Replicate Directory Changes permission on AD DS, which enables the account to read AD DS objects and to discover AD DS objects that were changed in the domain. The Grant Replicate Directory Changes permission doesn't enable an account to create, change or delete AD DS objects. 
     
 - **My Site host application pool account** - This is the account under which the My Site application pool runs. To configure this account, you must be a member of the Farm Administrators group. You can limit privileges to this account. 
