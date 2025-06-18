@@ -117,7 +117,7 @@ Select Alert conditions to set up the budget alert conditions. You can set up al
 
 You can also create a budget in Microsoft Cost Management with [Bicep](/azure/cost-management-billing/costs/quick-create-budget-bicep) and [ARM template](/azure/cost-management-billing/costs/quick-create-budget-template).
 
-Budget helps you inform others about their spending to proactively manage costs and monitor how spending progresses over time. When You can also set up various types of cost alerts to monitor the consumption.
+Budget helps you inform others about their spending to proactively manage costs and monitor how spending progresses over time. When you can also set up various types of cost alerts to monitor the consumption.
 
 You can view your invoices under **Billing** > **Invoices**. Use text search to filter for the invoices you want. You can also filter by **Status** and **Timespan**. You can also download the invoice in CSV format.
 
