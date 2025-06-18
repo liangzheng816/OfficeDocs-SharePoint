@@ -47,7 +47,7 @@ To set up SharePoint agents as an Azure resource, you need to do the following i
 After setting up an Azure resource group for SharePoint agents, you can set up pay-as-you-go billing for SharePoint agents in the Microsoft 365 admin center. Here are the steps:
 
 *Step 1: Set up a pay-as-you-go billing policy*
-To set up a pay-as-you-go billing policy for SharePoint agents, go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home) and follow the steps outlined [here](/microsoft-365/services/pay-as-you-go-setup). 
+To set up a pay-as-you-go billing policy for SharePoint agents, go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home) and follow the steps outlined [here](/microsoft-365/services/pay-as-you-go-setup-copilot). 
 
 *Step 2: Connect the billing policy to the SharePoint agent service*
 
@@ -117,7 +117,7 @@ Select Alert conditions to set up the budget alert conditions. You can set up al
 
 You can also create a budget in Microsoft Cost Management with [Bicep](/azure/cost-management-billing/costs/quick-create-budget-bicep) and [ARM template](/azure/cost-management-billing/costs/quick-create-budget-template).
 
-Budget helps you inform others about their spending to proactively manage costs and monitor how spending progresses over time. When You can also set up various types of cost alerts to monitor the consumption.
+Budget helps you inform others about their spending to proactively manage costs and monitor how spending progresses over time. When you can also set up various types of cost alerts to monitor the consumption.
 
 You can view your invoices under **Billing** > **Invoices**. Use text search to filter for the invoices you want. You can also filter by **Status** and **Timespan**. You can also download the invoice in CSV format.
 
