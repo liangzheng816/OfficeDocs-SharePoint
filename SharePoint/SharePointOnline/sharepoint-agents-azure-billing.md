@@ -47,7 +47,7 @@ To set up SharePoint agents as an Azure resource, you need to do the following i
 After setting up an Azure resource group for SharePoint agents, you can set up pay-as-you-go billing for SharePoint agents in the Microsoft 365 admin center. Here are the steps:
 
 *Step 1: Set up a pay-as-you-go billing policy*
-To set up a pay-as-you-go billing policy for SharePoint agents, go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home) and follow the steps outlined [here](/microsoft-365/services/pay-as-you-go-setup). 
+To set up a pay-as-you-go billing policy for SharePoint agents, go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home) and follow the steps outlined [here](/microsoft-365/services/pay-as-you-go-setup-copilot). 
 
 *Step 2: Connect the billing policy to the SharePoint agent service*
 
