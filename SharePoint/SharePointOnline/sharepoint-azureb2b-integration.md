@@ -90,9 +90,10 @@ The following questions address a change that requires resharing content with ex
 
 **4. Is there a way to report which previously shared links and external users are affected?**
 
-**Answer:** Yes. You can use audit logs to assess the impact. Refer to the documentation on [Use sharing auditing in the audit log](/purview/audit-log-sharing?tabs=microsoft-purview-portal). Additionally, site sharing reports available through Microsoft Graph Data Connect can help identify affected content and users. Details are provided in the [Microsoft Graph Data Connect for SharePoint Blog](https://techcommunity.microsoft.com/blog/microsoft_graph_data_connect_for_sharepo/mgdc-for-sharepoint-faq-what-is-in-the-permissions-dataset/4075447). 
+**Answer:** Yes. You can use audit logs to assess the impact. Refer to the documentation on [Use sharing auditing in the audit log](/purview/audit-log-sharing?tabs=microsoft-purview-portal). Additionally, site sharing reports available through Microsoft Graph Data Connect can help identify affected content and users. Details are provided in the [Microsoft Graph Data Connect for SharePoint Blog](https://techcommunity.microsoft.com/blog/microsoft_graph_data_connect_for_sharepo/mgdc-for-sharepoint-faq-what-is-in-the-permissions-dataset/4075447). You could also report on file and folder sharing in a SharePoint site using [this sharing report](/sharepoint/sharing-reports?WT.mc_id=M365-MVP-9501).
 
 **5. Can we proactively invite existing users to join via Entra B2B before this change takes effect?**
+
 **Answer** Yes. You can add guests in advance using Microsoft Entra B2B; however, resharing is still required. Guidance is available in the [Add and manage B2B collaboration users](/entra/external-id/add-users-administrator).
 
 **6. Can exceptions be made to this change?**
