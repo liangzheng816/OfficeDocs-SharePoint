@@ -122,6 +122,7 @@ Get-SPOCopilotAgentInsightsReport –ReportId -Action Download
 ``` 
 > [!NOTE]
 > PowerShell displays up to 100 records, but downloaded reports can contain up to 1 million records.
+
 ```powershell
 Get-SPOCopilotAgentInsightsReport –ReportId -Action View
 ``` 

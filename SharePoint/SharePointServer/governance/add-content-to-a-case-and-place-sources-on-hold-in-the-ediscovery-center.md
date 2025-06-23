@@ -1,6 +1,6 @@
 ---
 title: "Add content to a case and place sources on hold in the eDiscovery Center"
-description: "Content that is part of an eDiscovery case - such as potential evidence for litigation, audits and investigations -can be managed in an eDiscovery Set. Each case can have multiple eDiscovery Sets. You can also filter the source content you include, such as by author or sender, by a date range, or by search keywords."
+description: "Content that is part of an eDiscovery case - such as potential evidence for litigation, audits, and investigations -can be managed in an eDiscovery Set. Each case can have multiple eDiscovery Sets. You can also filter the source content you include, such as by author or sender, by a date range, or by search keywords."
 ms.reviewer: 
 ms.author: robmazz
 author: robmazz
@@ -23,14 +23,14 @@ ms.collection:
 
 [!INCLUDE[appliesto-2013-2016-2019-SUB-xxx-md](../includes/appliesto-2013-2016-2019-SUB-xxx-md.md)]
 
-Content that is part of an eDiscovery case - such as potential evidence for litigation, audits and investigations -can be managed in an eDiscovery Set. Each case can have multiple eDiscovery Sets. You can also filter the source content you include, such as by author or sender, by a date range, or by search keywords. 
+Content that is part of an eDiscovery case - such as potential evidence for litigation, audits, and investigations -can be managed in an eDiscovery Set. Each case can have multiple eDiscovery Sets. You can also filter the source content you include, such as by author or sender, by a date range, or by search keywords. 
   
-When a content source is part of a case, you can place it on hold so that a copy is preserved. This includes SharePoint sites, documents, or pages . In SharePoint Server, you can also hold content on searchable file shares. When items are placed on hold, people can continue to work on them without disruption. Content that is being managed by policies will not expire when it is placed on hold. 
+When a content source is part of a case, you can place it on hold so that a copy is preserved. This includes SharePoint sites, documents, or pages. In SharePoint Server, you can also hold content on searchable file shares. When items are placed on hold, people can continue to work on them without disruption. Content that is being managed by policies won't expire when it's placed on hold. 
   
 After you have defined content sources, you can run queries and export the content to provide to authorities. The exported content includes a load file based on the Electronic Discovery Reference Model standard. 
   
 > [!NOTE]
->  Once you add content sources or queries to an eDiscovery case, changing the regional settings for the site is not supported. 
+>  Once you add content sources or queries to an eDiscovery case, changing the regional settings for the site isn't supported. 
   
 ## Create an eDiscovery Set to manage content sources
 
@@ -41,17 +41,17 @@ This procedure creates an eDiscovery Set and adds content sources to it. To also
 > [!NOTE]
 >  To include sources in a case, they must first be indexed by the SharePoint search service. For more information, see the person that manages the sites and mailboxes you want to include. 
   
-1. If your case is not already open, in an eDiscovery Center, click **Cases**, and then click the case that you want to add content sources to.
+1. If your case isn't already open, in an eDiscovery Center, select **Cases**, and then select the case that you want to add content sources to.
     
-2. Under **eDiscovery Sets**, click **New Item**.
+2. Under **eDiscovery Sets**, select **New Item**.
     
 3. Type a name for the eDiscovery Set, such as Executive Correspondence.
     
-4. Next to **Sources**, click **Add &amp; Manage Sources**.
+4. Next to **Sources**, select **Add &amp; Manage Sources**.
     
 5. Under **Locations**, type the URL for the content you want to use as the source. In SharePoint Server, you can also type a file share address. Any content you include must be indexed by search. 
     
-6. Click **Save**.
+6. Select **Save**.
     
 7. In the box under **Filter**, type any keywords you want to use to narrow down the source.
     
@@ -59,71 +59,71 @@ This procedure creates an eDiscovery Set and adds content sources to it. To also
     
 9. To limit results to the author of a document or list item, or to a specific sender of e-mail messages, type the names or e-mail addresses in the **Author/Sender** box. 
     
-10. Click the **Apply Filter** button. 
+10. Select the **Apply Filter** button. 
     
-11. To verify that you've selected the right content, click **Preview Results**.
+11. To verify that you've selected the right content, select **Preview Results**.
     
-12. Click **Save**.
+12. Select **Save**.
     
 > [!NOTE]
->  You can add and remove content sources after you create an eDiscovery Set. To see a list of content sources in an eDiscovery Set, click **Sources**. 
+>  You can add and remove content sources after you create an eDiscovery Set. To see a list of content sources in an eDiscovery Set, select **Sources**. 
   
 ## Place content sources on hold
 
 > [!NOTE]
 >  To include sources in a case, they must first be indexed by the SharePoint search service. For more information, see the person that manages the sites and mailboxes you want to include. 
   
-1. If your case is not already open, in an eDiscovery Center, click **Cases**, and then click the case in which you want to place on hold.
+1. If your case isn't already open, in an eDiscovery Center, select **Cases**, and then select the case in which you want to place on hold.
     
-2. Under **eDiscovery Sets**, click **New Item**.
+2. Under **eDiscovery Sets**, select **New Item**.
     
 3. Type a name for the eDiscovery Set, such as Executive Correspondence.
     
-4. Next to **Sources**, click **Add &amp; Manage Sources**.
+4. Next to **Sources**, select **Add &amp; Manage Sources**.
     
 5. Under **Locations**, type the URL for the content you want to use as the source. In SharePoint Server, you can also type a file share address. Any content you include must be indexed by search. 
     
-6. Click **Save**.
+6. Select **Save**.
     
 7. In the box under **Filter**, type any keywords you want to use to narrow down the source.
     
 8. To narrow down content by a date range, enter the **Start Date** and **End Date**.
     
-9. To limit results to the author of a document or list item, or to a specific sender of e-mail messages, types the names or e-mail addresses in the **Author/Sender** box. 
+9. To limit results to the author of a document or list item, or to a specific sender of e-mail messages, type the names or e-mail addresses in the **Author/Sender** box. 
     
-10. Click the **Apply Filter** button. 
+10. Select the **Apply Filter** button. 
     
-11. Click **Enable In-Place** hold. 
+11. Select **Enable In-Place** hold. 
     
-12. To verify that you've selected the right content, click **Preview Results**.
+12. To verify that you've selected the right content, select **Preview Results**.
     
-13. Click **Save**.
+13. Select **Save**.
     
 > [!NOTE]
->  After you've placed content on hold, if you want to see a list of content sources for a case, click **Sources**. 
+>  After you've placed content on hold, if you want to see a list of content sources for a case, select **Sources**. 
   
 ## Remove a hold from content sources
 
-1. If your case is not already open, in an eDiscovery Center, click **Cases**, and then click the case in which you want to remove a hold.
+1. If your case isn't already open, in an eDiscovery Center, select **Cases**, and then select the case in which you want to remove a hold.
     
-2. Click **eDiscovery Sets**.
+2. Select **eDiscovery Sets**.
     
-3. Under **Sources**, click the name of the source whose hold you want to remove. 
+3. Under **Sources**, select the name of the source whose hold you want to remove. 
     
-4. Click **Disable In-Place Hold**.
+4. Select **Disable In-Place Hold**.
 
   
 ## Remove an eDiscovery Set from a case
 
-1. If your case is not already open, in an eDiscovery Center, click **Cases**, and then click the case in which you want to remove an eDiscovery Set.
+1. If your case isn't already open, in an eDiscovery Center, select **Cases**, and then select the case in which you want to remove an eDiscovery Set.
     
-2. Click to the left of the eDiscovery Set to select it, so that a check mark appears besides its name.
+2. Select to the left of the eDiscovery Set to select it, so that a check mark appears besides its name.
     
-3. Click the three dots **...** to display the **Open Menu**.
+3. Select the three dots **...** to display the **Open Menu**.
     
-4. Click **Delete Item**.
+4. Select **Delete Item**.
     
-5. When prompted whether to send the item to the Recycle Bin, click **OK**.
+5. When prompted whether to send the item to the Recycle Bin, select **OK**.
 
   
 ## Learn more about holds
@@ -144,13 +144,13 @@ This procedure creates an eDiscovery Set and adds content sources to it. To also
     
   - **On hold with filter** Indicates that items that meet the search criteria that's specified in the box under **Filter** in the content source is on hold, and In-Place Hold is enabled for the sources in the eDiscovery set. The result is that content that meets the search criteria in the specified source is placed on hold. 
     
-  - **Not on hold** Indicates that the content source is not on hold. 
+  - **Not on hold** Indicates that the content source isn't on hold. 
     
   - **Cannot hold** Indicates that the content source can't be put on hold. 
     
   - **Failed** Indicates that the request to place the content source on hold failed. 
     
-  - **Processing** Indicates that the hold request is in progress. This status is displayed after you click **Enable In-Place Hold** and then click **Save** in an eDiscovery set. After a few moments, refresh the eDiscovery set page and this value is replaced with one of the previous values. 
+  - **Processing** Indicates that the hold request is in progress. This status is displayed after you select **Enable In-Place Hold** and then select **Save** in an eDiscovery set. After a few moments, refresh the eDiscovery set page, and this value is replaced with one of the previous values. 
     
 - When a hold is placed on a SharePoint site, you can't remove an app from the site. 
     
@@ -158,11 +158,11 @@ This procedure creates an eDiscovery Set and adds content sources to it. To also
     
 - If a user attempts to change or delete content in a site that is on hold, SharePoint first checks whether the content was changed since the hold was applied. If this is the first modification since the hold was applied, SharePoint copies the content to the preservation hold library, and then allows the user to change or delete the original content.
     
-- A user will receive an error if they try to delete a library, list, or site collection that's on hold. Users will also receive an error if they try to delete a folder that contains a file that's on hold. If users want to delete a folder that contains one or more files that are on hold, they have to delete those files before they can delete the folder.
+- A user receives an error if they try to delete a library, list, or site collection that's on hold. Users will also receive an error if they try to delete a folder that contains a file that's on hold. If users want to delete a folder that contains one or more files that are on hold, they have to delete those files before they can delete the folder.
     
-- To store all versions of content in a site, you have to enable document versioning for the document libraries in the site. If a document is deleted from a site that's on hold and document versioning is enabled, all versions of the deleted document will be preserved. If document versioning isn't enabled, the version of content that is current at the time that the hold was applied is the only version that is preserved. If the content is changed multiple times after the hold is applied, intermediate versions of the content are not preserved, so that storage space is used more efficiently. Most content in a site typically does not change, and content that is not changed is not copied to the preservation hold library.
+- To store all versions of content in a site, you have to enable document versioning for the document libraries in the site. If a document is deleted from a site that's on hold and document versioning is enabled, all versions of the deleted document will be preserved. If document versioning isn't enabled, the version of content that is current at the time that the hold was applied is the only version that is preserved. If the content is changed multiple times after the hold is applied, intermediate versions of the content aren't preserved, so that storage space is used more efficiently. Most content in a site typically doesn't change, and content that isn't changed isn't copied to the preservation hold library.
     
-- If you remove a hold from a site, all files in the preservation hold library will be deleted (moved to the first-stage Recycle Bin) within 7 seven days of removing the hold. That's because a timer job for the preservation hold library runs once every 7 days and identifies items to delete. Files will be deleted the next time the timer job runs after the hold is removed from the site.
+- If you remove a hold from a site, all files in the preservation hold library will be deleted (moved to the first-stage Recycle Bin) within seven days of removing the hold. That's because a timer job for the preservation hold library runs once every 7 days and identifies items to delete. Files will be deleted the next time the timer job runs after the hold is removed from the site.
     
 ## Find more information about eDiscovery
 
