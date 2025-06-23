@@ -84,75 +84,73 @@ With permissions of at least a SharePoint administrator, you can generate and vi
  
 1. To generate report for a one-day default report duration, run the command:  
  
-```powershell
-Start-SPOCopilotAgentInsightsReport
-```  
+    ```powershell
+    Start-SPOCopilotAgentInsightsReport
+    ```  
 
 2. To generate a report for any other duration (7, 14 or 28 days), run the command:  
  
-```powershell
-Start-SPOCopilotAgentInsightsReport -ReportPeriodInDays
-```  
+    ```powershell
+    Start-SPOCopilotAgentInsightsReport -ReportPeriodInDays
+    ```  
  
-For example, to generate report for the past 28 days, run the command:  
+    For example, to generate report for the past 28 days, run the command:  
  
-```powershell
-Start-SPOCopilotAgentInsightsReport -ReportPeriodInDays <28>
-```
+    ```powershell
+    Start-SPOCopilotAgentInsightsReport -ReportPeriodInDays <28>
+    ```
  
- ![Screenshot of powershell scripts to genearte report.](media\agent-insights\powershell-spocopilotagent-generate.png)
+     ![Screenshot of powershell scripts to genearte report.](media\agent-insights\powershell-spocopilotagent-generate.png)
 
 3. To check the status of all active and available reports, run the command:  
  
-```powershell
-Get-SPOCopilotAgentInsightsReport
-``` 
+    ```powershell
+    Get-SPOCopilotAgentInsightsReport
+    ``` 
  
- ![Screenshot of powershell script status.](media\agent-insights\powershell-spocopilotagent-status.png)
+     ![Screenshot of powershell script status.](media\agent-insights\powershell-spocopilotagent-status.png)
 
 4. To check the status of a specific report, run the command: 
  
-```powershell
-Get-SPOCopilotAgentInsightsReport –ReportId
-``` 
+    ```powershell
+    Get-SPOCopilotAgentInsightsReport –ReportId
+    ``` 
 
 5. To download and view the report, run the command: 
  
-```powershell
-Get-SPOCopilotAgentInsightsReport –ReportId -Action Download
-``` 
-> [!NOTE]
-> PowerShell displays up to 100 records, but downloaded reports can contain up to 1 million records.
-
-```powershell
-Get-SPOCopilotAgentInsightsReport –ReportId -Action View
-``` 
-
+    ```powershell
+    Get-SPOCopilotAgentInsightsReport –ReportId -Action Download
+    ``` 
+    > [!NOTE]
+    > PowerShell displays up to 100 records, but downloaded reports can contain up to 1 million records.
+    
+    ```powershell
+    Get-SPOCopilotAgentInsightsReport –ReportId -Action View
+    ``` 
 
 6. To view further detailed reports, the following options are available: 
  
 
-a. CopilotAgentsOnSites: Provides the name of all the agents currently available on all sites. This report contains up to 1,000,000 records.  
+    a. CopilotAgentsOnSites: Provides the name of all the agents currently available on all sites. This report contains up to 1,000,000 records.  
 
+    > [!NOTE]
+    > The default value for the `-Content` parameter is `CopilotAgentsOnSites`. 
+     
+    ```powershell
+    Get-SPOCopilotAgentInsightsReport –ReportId -Content CopilotAgentsOnSites
+    ```  
 
-> [!NOTE]
-> The default value for the `-Content` parameter is `CopilotAgentsOnSites`. 
- 
-```powershell
-Get-SPOCopilotAgentInsightsReport –ReportId -Content CopilotAgentsOnSites
-```  
+    b. TopSites: Provides a list of 100 sites with the number of agents available on each site.  
 
-b. TopSites: Provides a list of 100 sites with the number of agents available on each site.  
+    ```powershell
+    Get-SPOCopilotAgentInsightsReport –ReportId -Content TopSites
+    ```
 
-```powershell
-Get-SPOCopilotAgentInsightsReport –ReportId -Content TopSites
-```
+    c. SiteDistribution: Provides the summarized view of agents across all types of sites like Communication sites, Microsoft 365 group connected sites, OneDrive site, etc.  
 
-c. SiteDistribution: Provides the summarized view of agents across all types of sites like Communication sites, Microsoft 365 group connected sites, OneDrive site, etc.  
-
-```powershell
-Get-SPOCopilotAgentInsightsReport –ReportId -Content SiteDistribution
-```
+    ```powershell
+    Get-SPOCopilotAgentInsightsReport –ReportId -Content SiteDistribution
+    ```
 
 ### Data collection for insights report  
 
