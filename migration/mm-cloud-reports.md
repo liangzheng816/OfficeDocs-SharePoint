@@ -340,6 +340,7 @@ Status codes provide the final status of the scan and migration tasks. Status co
 |410 |Failed      |Couldn't connect to Source name. Try reauthorizing. |
 |423 |Failed      |Source connector not found. Try again. |
 |430 |Failed      |Microsoft 365 authentication details have changed. Sign out and back in to the Microsoft Admin Center, then restart the task in Migration Manager.|
+|431 |Failed      |Ensure that the migration administrator has access to the destination SharePoint site and then retry the migration. Contact support if the issue persists.|
 |490 |Failed      |Ended by company name Admin. Try again. |
 |491 |Failed      |Microsoft migration reporting communication failure. Try again. |
 |500 |Failed      |Unknown, contact support. |

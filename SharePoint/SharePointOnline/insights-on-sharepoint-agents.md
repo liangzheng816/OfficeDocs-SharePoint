@@ -109,6 +109,7 @@ Get-SPOCopilotAgentInsightsReport
 ``` 
  
  ![Screenshot of powershell script status.](media\agent-insights\powershell-spocopilotagent-status.png)
+
 4. To check the status of a specific report, run the command: 
  
 ```powershell
