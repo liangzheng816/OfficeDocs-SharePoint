@@ -71,7 +71,7 @@ Identify inactive sites, then take action to reduce your governance footprint an
 - With less than five minutes you can set up and run an [Inactive Site policy ](/sharepoint/site-lifecycle-management#create-an-inactive-site-policy) in Simulation mode to identify sites that haven't been accessed for an extended (configurable) period of time.
 - Once the report is generated, select the Get AI insights button to [get AI insights](/sharepoint/advanced-management#ai-insights) generated for the report to help you identify issues with the sites and possible actions to address these issues.
 - After identifying inactive sites, set the policy to Active mode to notify the Site Owner to attest whether the site is still needed.
-- If the site owners confirm the sties aren't needed, you need to put the sites either in [read-only mode](/sharepoint/site-lifecycle-management#read-only-mode). These sites will be moved to [Microsoft 365 Archive](/microsoft-365/archive/archive-overview) after a configurable duration (3, 6, 9, or 12 months). 
+- If the site owners confirm the sites aren't needed, you need to put the sites either in [read-only mode](/sharepoint/site-lifecycle-management#read-only-mode). These sites will be moved to [Microsoft 365 Archive](/microsoft-365/archive/archive-overview) after a configurable duration (3, 6, 9, or 12 months). 
 
 > [!TIP]
 > Sites moved to Microsoft 365 Archive are no longer accessible by anyone in the organization outside of Microsoft Purview or admin search. This means Copilot won't include content from these sites when responding to user prompts.
