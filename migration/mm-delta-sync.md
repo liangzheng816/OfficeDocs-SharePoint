@@ -44,7 +44,7 @@ In this mode, all files in the source are migrated to the destination again, ove
 This process takes longer than the default mode.
 
 >[!NOTE]
-> Normally, when the source permissions are inherited, the migrated destination permissions are also inherited. However, in special cases where the destination permission is changed to explicit while the source remains inherited, the destination permissions are not overwritten in this mode.
+> Normally, when the source permissions are inherited, the migrated destination permissions are also inherited. However, in special cases where the destination permission is changed to explicit while the source remains inherited, the destination permissions aren't overwritten in this mode.
 
 ## Delta sync and permission update 
 
