@@ -43,6 +43,9 @@ In this mode, all files in the source are migrated to the destination again, ove
 
 This process takes longer than the default mode.
 
+>[!NOTE]
+> Normally, when the source permissions are inherited, the migrated destination permissions are also inherited. However, in special cases where the destination permission is changed to explicit while the source remains inherited, the destination permissions aren't overwritten in this mode.
+
 ## Delta sync and permission update 
 
 Permissions are migrated along with the files and are updated only when the corresponding files are migrated in the delta sync. A file's permissions can be updated but its last modified time remains unchanged. In this case, the permission update isn't migrated in the delta sync because the file itself isn't migrated by default.
