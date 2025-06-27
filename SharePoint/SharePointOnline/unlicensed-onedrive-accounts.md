@@ -225,7 +225,7 @@ For more information on deleting users, see [Delete a user from your organizatio
 
 **4. When will an unlicensed account get archived?**
 
-**Answer:** For newly unlicensed OneDrive accounts, it will be after 93 days of the license removal or user deletion. For example, a OneDrive account that became unlicensed on August 1, 2025, will be inaccessible to users as of November 2, 2025. For unlicensed OneDrive accounts with license removal before October 26, 2024, the accounts will be archived sometime between late January 2025 to late March 2025.
+**Answer:** For newly unlicensed OneDrive accounts, it will be after 93 days of the license removal or user deletion. For example, a OneDrive account that became unlicensed on August 1, 2026, will be inaccessible to users as of November 2, 2026. For unlicensed OneDrive accounts with license removal before July 28, 2025, the accounts will be archived sometime between late January 2025 to late October 2025.
 
 **5. How does it impact eDiscovery in Microsoft Purview?**
 
