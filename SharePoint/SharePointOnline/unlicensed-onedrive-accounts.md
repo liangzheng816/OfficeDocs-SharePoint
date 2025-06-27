@@ -126,24 +126,24 @@ You can identify unlicensed OneDrive accounts using the SharePoint admin center.
 
    The following table provides more information on data shown in the unlicensed OneDrive accounts report:
 
-| Column | Description |
-|---|---|
-| Unlicensed accounts | Total number of OneDrive accounts that aren't licensed as of the date the report is generated. |
-| Storage used | Total storage consumed by these unlicensed OneDrive accounts as of the report's date. |
-| Retention period | Unlicensed accounts with a set-retention.md during the process of license removal or user account deletion. The retention period is honored, and the content remains in an archived state until the period expires. |
-| Retention policy | Unlicensed accounts subject to a /purview/retention set up in Microsoft Purview. The retention policy is honored, and the content remains in an archived state until the policy expires. |
-| Active user with no license | Accounts where the user's license was removed, but the account wasn't deleted as part of the /microsoft-365/admin/add-users/delete-a-user. Starting in January 2025, users who aren't assigned a license, but are still considered active in the system, are archived on the 93rd unlicensed day. If unlicensed billing is enabled, then these archived accounts remain in the Archive state indefinitely, otherwise they're deleted. |
-| Duplicate account | Unlicensed accounts created when an employee transfers to a different country/region, or firm within the organization. If these duplicate accounts are unnecessary, we recommend using the downloadable CSV from the SharePoint admin center to identify and delete them. If no action is taken, the accounts are automatically archived starting in January 2025 and incurs archive charges. |
-| Unlicensed reason | '*No owner*' – There's no owner assigned to the OneDrive account, meaning that no license can be associated with this account. |
-|  | '*Owner deleted from Entra ID*' – The assigned owner was deleted, thus there's no license associated with this account. |
-|  | '*License removed by admin*' – The owner is present in Entra ID, but the owner’s license has been removed from the account. |
-|  | '*Duplicate account*' – The owner has multiple OneDrive accounts associated with their identity. The duplicate account isn't the primary OneDrive account associated with the owner’s identity. All nonprimary accounts associated with the owner are considered unlicensed. |
-| Deletion blocked by | '*Retention period*' – The OneDrive account has been marked for deletion but is within the global OneDrive account retention period, as defined by the set-retention.md. Shortening the retention period helps reduce unlicensed OneDrive accounts being retained for this reason. |
-|  | '*Retention policy*' – A retention policy, a legal hold, or a compliance hold defined in Purview is stopping this account’s contents from being deleted. The retention policy might be applied to only a subset of the account’s contents, which would prevent the entire OneDrive account from being deleted. Modify your Purview retention or hold requirements to reduce OneDrive accounts held for this reason. |
-|  | '*Owner active in Entra ID*' – The OneDrive account’s owner is still active in Entra ID, causing the account to not be deleted. When unlicensed OneDrive account enforcement begins, these accounts will be deleted after the 93rd unlicensed day and will follow the usual deprovisioning flow including honoring the retention period and any Purview retention or hold requirements. |
-|  | '*Restored from recycle bin*' – This account was restored from the site recycle bin by an IT administrator. Since the account was intentionally restored, it will no longer be deleted automatically. |
-|  | '*Active lock on account*' – This account has an active read-only or no-access lock applied by an IT administrator, which blocks the account from being automatically deleted.  IT administrators can use PowerShell to remove the lock state from the account or can delete this account directly. |
-|  | '*Previous lock or other state change*' – This account had a previous lock or other admin activity caused a state change which prevents the account from being automatically deleted.  IT administrators can directly delete this account via PowerShell or from the SharePoint admin center's [detailed OneDrive accounts report page](http://spo.ms/admin#/oneDriveAccounts/management). |
+    | Column | Description |
+    |---|---|
+    | Unlicensed accounts | Total number of OneDrive accounts that aren't licensed as of the date the report is generated. |
+    | Storage used | Total storage consumed by these unlicensed OneDrive accounts as of the report's date. |
+    | Retention period | Unlicensed accounts with a set-retention.md during the process of license removal or user account deletion. The retention period is honored, and the content remains in an archived state until the period expires. |
+    | Retention policy | Unlicensed accounts subject to a /purview/retention set up in Microsoft Purview. The retention policy is honored, and the content remains in an archived state until the policy expires. |
+    | Active user with no license | Accounts where the user's license was removed, but the account wasn't deleted as part of the /microsoft-365/admin/add-users/delete-a-user. Starting in January 2025, users who aren't assigned a license, but are still considered active in the system, are archived on the 93rd unlicensed day. If unlicensed billing is enabled, then these archived accounts remain in the Archive state indefinitely, otherwise they're deleted. |
+    | Duplicate account | Unlicensed accounts created when an employee transfers to a different country/region, or firm within the organization. If these duplicate accounts are unnecessary, we recommend using the downloadable CSV from the SharePoint admin center to identify and delete them. If no action is taken, the accounts are automatically archived starting in January 2025 and incurs archive charges. |
+    | Unlicensed reason | '*No owner*' – There's no owner assigned to the OneDrive account, meaning that no license can be associated with this account. |
+    |  | '*Owner deleted from Entra ID*' – The assigned owner was deleted, thus there's no license associated with this account. |
+    |  | '*License removed by admin*' – The owner is present in Entra ID, but the owner’s license has been removed from the account. |
+    |  | '*Duplicate account*' – The owner has multiple OneDrive accounts associated with their identity. The duplicate account isn't the primary OneDrive account associated with the owner’s identity. All nonprimary accounts associated with the owner are considered unlicensed. |
+    | Deletion blocked by | '*Retention period*' – The OneDrive account has been marked for deletion but is within the global OneDrive account retention period, as defined by the set-retention.md. Shortening the retention period helps reduce unlicensed OneDrive accounts being retained for this reason. |
+    |  | '*Retention policy*' – A retention policy, a legal hold, or a compliance hold defined in Purview is stopping this account’s contents from being deleted. The retention policy might be applied to only a subset of the account’s contents, which would prevent the entire OneDrive account from being deleted. Modify your Purview retention or hold requirements to reduce OneDrive accounts held for this reason. |
+    |  | '*Owner active in Entra ID*' – The OneDrive account’s owner is still active in Entra ID, causing the account to not be deleted. When unlicensed OneDrive account enforcement begins, these accounts will be deleted after the 93rd unlicensed day and will follow the usual deprovisioning flow including honoring the retention period and any Purview retention or hold requirements. |
+    |  | '*Restored from recycle bin*' – This account was restored from the site recycle bin by an IT administrator. Since the account was intentionally restored, it will no longer be deleted automatically. |
+    |  | '*Active lock on account*' – This account has an active read-only or no-access lock applied by an IT administrator, which blocks the account from being automatically deleted.  IT administrators can use PowerShell to remove the lock state from the account or can delete this account directly. |
+    |  | '*Previous lock or other state change*' – This account had a previous lock or other admin activity caused a state change which prevents the account from being automatically deleted.  IT administrators can directly delete this account via PowerShell or from the SharePoint admin center's [detailed OneDrive accounts report page](http://spo.ms/admin#/oneDriveAccounts/management). |
 
 
 ### View more details on unlicensed OneDrive accounts
@@ -225,7 +225,7 @@ For more information on deleting users, see [Delete a user from your organizatio
 
 **4. When will an unlicensed account get archived?**
 
-**Answer:** For newly unlicensed OneDrive accounts, it will be after 93 days of the license removal or user deletion. For example, a OneDrive account that became unlicensed on August 1, 2025, will be inaccessible to users as of November 2, 2025. For unlicensed OneDrive accounts with license removal before October 26, 2024, the accounts will be archived sometime between late January 2025 to late March 2025.
+**Answer:** For newly unlicensed OneDrive accounts, it will be after 93 days of the license removal or user deletion. For example, a OneDrive account that became unlicensed on August 1, 2026, will be inaccessible to users as of November 2, 2026. For unlicensed OneDrive accounts with license removal before July 28, 2025, the accounts will be archived sometime between late January 2025 to late October 2025.
 
 **5. How does it impact eDiscovery in Microsoft Purview?**
 
