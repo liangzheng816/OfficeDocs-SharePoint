@@ -1300,8 +1300,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "sharepoint/sharepointonline/manage-trial-agents-sharepoint-agents.md",
-      "redirect_url": "/sharepoint/sharepointonline/get-started-sharepoint-agents",
+      "source_path": "SharePoint/SharePointOnline/manage-trial-agents-sharepoint-agents.md",
+      "redirect_url": "/Sharepoint/SharePointOnline/get-started-sharepoint-agents",
       "redirect_document_id": false
     }
   ]
