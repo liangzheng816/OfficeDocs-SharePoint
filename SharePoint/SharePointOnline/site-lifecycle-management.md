@@ -79,7 +79,7 @@ To create an inactive site policy, expand **Policies** and select **Site lifecyc
       - Mark the inactive site as read-only.
       - Mark the inactive site as read-only for a configurable duration (3, 6, 9, or 12 months) followed by archiving using Microsoft 365 Archive. For more information about storage solutions for inactive SharePoint content, see [Overview of Microsoft 365 Archive](/microsoft-365/archive/archive-setup).
             
-:::image type="content" source="media/site-lifecycle-management/sonfiguration.png" alt-text="Screenshot of Configuration page." lightbox="media/site-lifecycle-management/sonfiguration.png":::
+:::image type="content" source="media/site-lifecycle-management/configuration.png" alt-text="Screenshot of Configuration page." lightbox="media/site-lifecycle-management/configuration.png":::
    
    
 6. Name the policy, add a description (optional), and select a policy mode. Select **Finish**. Your policy is now created and can be viewed and managed from the Site lifecycle management > Inactive site policy dashboard.
