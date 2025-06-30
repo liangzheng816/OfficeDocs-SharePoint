@@ -1,5 +1,5 @@
 ---
-ms.date: 01/20/2025
+ms.date: 06/27/2025
 title: Manage access to SharePoint agents
 ms.reviewer:
 ms.author: ruihu
@@ -34,7 +34,7 @@ SharePoint agents, powered by AI, help users quickly find information and insigh
 
 ### Use file permissions on the agent file
 
-As SharePoint agents are represented as [.agent files](https://support.microsoft.com/office/create-and-edit-an-agent-d16c6ca1-a8e3-4096-af49-67e1cfdddd42#where-agent-file), permissions on the *.agent* file govern who can access or edit the agent. Only users who are able to create or access files on a SharePoint site can create or access agents.
+As SharePoint agents are represented as [.agent files](https://support.microsoft.com/office/create-and-edit-an-agent-d16c6ca1-a8e3-4096-af49-67e1cfdddd42#where-agent-file), permissions on the *.agent* file governs who can access or edit the agent. Only users who are able to create or access files on a SharePoint site can create or access agents.
 
 >[!NOTE]
 > For users who can access and use a SharePoint agent, the agent's responses depend on permissions for each user to the agent's data sources. For instance, if a user has access to the agent but not to the site or document library it references, the agent's responses for this user won't include content from those restricted sources.
@@ -43,10 +43,11 @@ As SharePoint agents are represented as [.agent files](https://support.microsoft
 
 Currently, users with a [Microsoft 365 Copilot license](/copilot/microsoft-365/microsoft-365-copilot-licensing) can use the agents. You can use the [Microsoft 365 Copilot setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users) and [Microsoft 365 Copilot requirements](/copilot/microsoft-365/microsoft-365-copilot-requirements).
 
-Admins can choose to edit the service plans under the Copilot license to specifically allow or block users from using Copilot experiences on SharePoint. Under the [license details page for Microsoft 365 Copilot](https://admin.microsoft.com/Adminportal/Home?#/licensedetailpage/639dec6b-bb19-468b-871c-c5c441c4b0cb) on the Microsoft 365 admin center, admins can turn *'Microsoft 365 Copilot for SharePoint'* on or off on a per-user basis. For example, a user could be allowed to use Microsoft 365 Copilot on Teams but not use any agents on SharePoint alone. This will also disable Copilots on OneDrive and the SharePoint page authoring Copilot for that user. 
+Admins can choose to edit the service plans under the Copilot license to specifically allow or block users from using Copilot experiences on SharePoint. Under the [license details page for Microsoft 365 Copilot](https://admin.microsoft.com/Adminportal/Home?#/licensedetailpage/639dec6b-bb19-468b-871c-c5c441c4b0cb) on the Microsoft 365 admin center, admins can turn *'Microsoft 365 Copilot for SharePoint'* on or off on a per-user basis. For example, a user could be allowed to use Microsoft 365 Copilot on Teams but not use any agents on SharePoint alone. However, this change will also disable Copilots on OneDrive and the SharePoint page authoring Copilot for that user.
 
+<!-- commenting this note as we are archiving the trail access to sharepoint agents - Task 10219406
 > [!NOTE]
-> From January 6, 2025, to June 30, 2025, enterprise tenants with 50 or more Microsoft 365 Copilot licenses will receive 10,000 free SharePoint agents queries for unlicensed users every month as a trial. Users with a role of SharePoint administrator or higher can [check the trial promotion status](/powershell/module/sharepoint-online/get-spocopilotpromooptinstatus) and [set trial promotion](/powershell/module/sharepoint-online/set-spocopilotpromooptinstatus) using PowerShell cmdlets. See the terms of trial usage [here](/legal/microsoft-365/in-app-trials-terms-of-service). 
+> From January 6, 2025, to June 30, 2025, enterprise tenants with 50 or more Microsoft 365 Copilot licenses will receive 10,000 free SharePoint agents queries for unlicensed users every month as a trial. Users with a role of SharePoint administrator or higher can [check the trial promotion status](/powershell/module/sharepoint-online/get-spocopilotpromooptinstatus) and [set trial promotion](/powershell/module/sharepoint-online/set-spocopilotpromooptinstatus) using PowerShell cmdlets. See the terms of trial usage [here](/legal/microsoft-365/in-app-trials-terms-of-service). -->
 
 ## Manage what information a user can access through the agents
 
