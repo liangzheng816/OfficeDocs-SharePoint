@@ -44,7 +44,7 @@ To create an inactive site policy, expand **Policies** and select **Site lifecyc
 
 1. Select **+ Create policy** and then select **Next**.
    
-:::image type="content" source="media/site-lifecycle-management/overview.png" alt-text="Screenshot of Overview page." lightbox="media/site-lifecycle-management/overview.png":::
+   :::image type="content" source="media/site-lifecycle-management/overview.png" alt-text="Screenshot of Overview page." lightbox="media/site-lifecycle-management/overview.png":::
 
 3. Choose your policy scope option and select **Next**.
 
@@ -58,7 +58,7 @@ To create an inactive site policy, expand **Policies** and select **Site lifecyc
             
    - Inactivity period selection from the Scope page is shifted to the Configuration page in the create policy wizard as well as at the policy details panel.
      
-:::image type="content" source="media/site-lifecycle-management/scope-csv.png" alt-text="Screenshot of Scope page when selecting the option to upload a CSV file with a list of up to 10,000 URLs." lightbox="media/site-lifecycle-management/scope-csv.png":::
+   :::image type="content" source="media/site-lifecycle-management/scope-csv.png" alt-text="Screenshot of Scope page when selecting the option to upload a CSV file with a list of up to 10,000 URLs." lightbox="media/site-lifecycle-management/scope-csv.png":::
 
 
    **November 2024 policy scope update**
@@ -67,7 +67,7 @@ To create an inactive site policy, expand **Policies** and select **Site lifecyc
    - Before this update, inactive sites in read-only state or locked states were excluded from the scope of the policy. Now, all read-only sites and locked sites are automatically included in the scope of the policy.
    - Before this update, ownerless inactive sites were excluded from the scope of the policy. As of November 2024, all inactive ownerless sites are automatically included in the scope of the policy.
 
-:::image type="content" source="media/site-lifecycle-management/scope-scale.png" alt-text="Screenshot of Scope page when selecting the option of sites at scale." lightbox="media/site-lifecycle-management/scope-scale.png":::
+   :::image type="content" source="media/site-lifecycle-management/scope-scale.png" alt-text="Screenshot of Scope page when selecting the option of sites at scale." lightbox="media/site-lifecycle-management/scope-scale.png":::
 
       
 5. Define the configuration of the policy by selecting the inactivity period, the email recipients and the enforcement actions. Select **Next.**
@@ -79,12 +79,12 @@ To create an inactive site policy, expand **Policies** and select **Site lifecyc
       - Mark the inactive site as read-only.
       - Mark the inactive site as read-only for a configurable duration (3, 6, 9, or 12 months) followed by archiving using Microsoft 365 Archive. For more information about storage solutions for inactive SharePoint content, see [Overview of Microsoft 365 Archive](/microsoft-365/archive/archive-setup).
             
-:::image type="content" source="media/site-lifecycle-management/configuration.png" alt-text="Screenshot of Configuration page." lightbox="media/site-lifecycle-management/configuration.png":::
+   :::image type="content" source="media/site-lifecycle-management/configuration.png" alt-text="Screenshot of Configuration page." lightbox="media/site-lifecycle-management/configuration.png":::
    
    
 6. Name the policy, add a description (optional), and select a policy mode. Select **Finish**. Your policy is now created and can be viewed and managed from the Site lifecycle management > Inactive site policy dashboard.
 
-:::image type="content" source="media/site-lifecycle-management/finish.png" alt-text="Screenshot of Finish page." lightbox="media/site-lifecycle-management/finish.png":::
+   :::image type="content" source="media/site-lifecycle-management/finish.png" alt-text="Screenshot of Finish page." lightbox="media/site-lifecycle-management/finish.png":::
 
 
 
