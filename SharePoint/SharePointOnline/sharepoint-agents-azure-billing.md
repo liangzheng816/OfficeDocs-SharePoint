@@ -99,7 +99,7 @@ The following table illustrates the differences in the subscription models for t
 >
 > - SharePoint agents are grounded in the tenant graph, so each interaction with a SharePoint agent uses 12 messages (10 messages for tenant graph grounding, and 2 messages for generative answers) to respond to a single complex prompt from the user.
 > - Charges of SharePoint agent usage appear under the Copilot Studio meter in your invoice. However, in Microsoft cost management, you can see a detailed breakdown by feature, including SharePoint agents.
-> - If your organization have [trial access to SharePoint agents](/sharepoint/manage-trial-agents-sharepoint-powershell#what-is-the-trial-access-to-sharepoint-agents), and haven't exceeded the 10,000 free message limit for the month, you won't see any charges related to SharePoint agents. You can learn more on how to check your promo usage here: [Get-SPOCopilotPromoUsage](/powershell/module/sharepoint-online/get-spocopilotpromousage)
+<!-- comment archiving sp-agent-trial task 10219406> - If your organization have [trial access to SharePoint agents](/sharepoint/manage-trial-agents-sharepoint-powershell#what-is-the-trial-access-to-sharepoint-agents), and haven't exceeded the 10,000 free message limit for the month, you won't see any charges related to SharePoint agents. You can learn more on how to check your promo usage here: [Get-SPOCopilotPromoUsage](/powershell/module/sharepoint-online/get-spocopilotpromousage) -->
 
 ### Monitor consumption in Microsoft Cost Management
 
