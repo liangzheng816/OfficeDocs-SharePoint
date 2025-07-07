@@ -128,7 +128,7 @@ After you run a report, select the report to download the data. The report inclu
 ## Content shared with 'Everyone except external users' (EEEU) reports
 
 > [!IMPORTANT]
-> This report is only available if you have a SharePoint Premium - SharePoint Advanced Management license and the tenant is a non-government cloud environment. The report is currently unavailable for government cloud environments such as GCCH/GCC-Moderate/DoD/Gallatin, even if you have a SharePoint Premium - SharePoint Advanced Management license.
+> This report is only available if you have a SharePoint Premium - SharePoint Advanced Management license and the tenant is either a non-government cloud environment or available in GCC-Moderate gov cloud environment. The report is currently unavailable for government cloud environments such as GCCH/DoD/Gallatin, even if you have a SharePoint Premium - SharePoint Advanced Management license.
 
 Everyone except external users (EEEU) is part of a built-in group that represents the entire organization without any external guests. It's used in following scenarios where content needs to be visible to the entire organization:
 
@@ -255,7 +255,7 @@ This report thus lists all sites with 'too-many-users' accessing the content and
 ## Remedial actions from Data access governance reports
 
 > [!IMPORTANT]
-> Remedial actions from  Data access governance reports are only available for SharePoint Premium - SharePoint Advanced Management subscribers running non-government cloud environments. The feature is currently unavailable for government cloud environments such as GCCH/GCC-Moderate/DoD/Gallatin, even if you have a SharePoint Premium - SharePoint Advanced Management license.
+> Remedial actions from  Data access governance reports are only available for SharePoint Premium - SharePoint Advanced Management subscribers running non-government cloud environments or available in GCC-Moderate gov cloud environment. The feature is currently unavailable for government cloud environments such as GCCH/DoD/Gallatin, even if you have a SharePoint Premium - SharePoint Advanced Management license.
 
 Once you run the Data access governance reports to discover potential oversharing, the next step is to take actions to remediate such risks. We recommend considering factors like sensitivity of the content, amount of content exposed and disruption to existing status.
 
