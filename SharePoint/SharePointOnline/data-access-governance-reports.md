@@ -151,7 +151,7 @@ When creating a report, you can select various options like create focused repor
 - Report name: Provide a unique name for the report.
 - Template: Lists categories of SharePoint site templates (Classic sites, Communication sites, Team sites, others). You can choose multiple values or **All sites**.
 - Privacy: Applicable for Team sites in the scope. You can select **Private**, **Public** or **All**.
-- Site sensitivity: Lists all sensitivity labels. Select one or many labels if you want to report to run within the scope of labeled sites. For for example: 'Identify files within sites labeled as 'Confidential', that were shared with EEEU in the last 28 days.
+- Site sensitivity: Lists all sensitivity labels. Select one or many labels if you want to report to run within the scope of labeled sites. For example: 'Identify files within sites labeled as 'Confidential', that were shared with EEEU in the last 28 days.
 - Report type: To select the scenario as discussed earlier, whether you want a report for recent 'public sites' or for recent 'public items'.
 
 ### Run Everyone except external users reports
@@ -248,7 +248,7 @@ Access to the site and its content can be given at any scope.
 
 This number is calculated by expanding all groups and individuals across all scopes, removing duplicates and by counting the number of unique users.
 In other words, this represents the extent of current ‘data exposure.’ If you're adding users directly OR adding Microsoft Entra groups across any scope, then this number increases corresponding to the Microsoft Entra group size and/or number of individuals added.
-However, creating sharing links and sharing the site with ‘Everyone except external users’ doesn't automatically increase this number since no permissions are directly assigned. These increase the probability that the site/site content is now publicly visible, and more users can access. The number increases only when the users access the content. Hence you can view the number of sharing links or EEEU permission as ‘potential exposure’
+However, creating sharing links and sharing the site with ‘Everyone except external users’ doesn't automatically increase this number since no permissions are directly assigned. These increase the probability that the site/site content is now publicly visible, and more users can access. The number increases only when the users access the content. Hence you can view the number of sharing links or EEEU permission as ‘potential exposure’.
 
 This report thus lists all sites with 'too-many-users' accessing the content and hence more prone for Copilot exposure.
 
