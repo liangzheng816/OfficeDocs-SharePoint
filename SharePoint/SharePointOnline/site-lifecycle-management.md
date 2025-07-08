@@ -42,30 +42,51 @@ Site lifecycle management requires a [Microsoft SharePoint Premium - SharePoint 
 
 To create an inactive site policy, expand **Policies** and select **Site lifecycle management** in the [SharePoint admin center](https://go.microsoft.com/fwlink/?linkid=2185219):
 
-1. Select **+ Create policy** and then select **Next**. :::image type="content" source="media/site-lifecycle-management/2-inactive-site-policy-create-policy.png" alt-text="Screenshot of Site lifecycle management create policy." lightbox="media/site-lifecycle-management/2-inactive-site-policy-create-policy.png":::
+1. Select **+ Create policy** and then select **Next**.
+   
+   :::image type="content" source="media/site-lifecycle-management/overview.png" alt-text="Screenshot of Overview page." lightbox="media/site-lifecycle-management/overview.png":::
 
-2. Enter your policy scope parameters and select **Next**.
+3. Choose your policy scope option and select **Next**.
 
-    **November 2024 policy scope update**
+   **June 2025 policy scope update** 
+   
+   - A new option is now introduced to choose the custom set of sites you want the policy to execute on by uploading a CSV file with a list of upto 10,000 URLs. Sites with retention policies and retention holds are automatically included in this scope option.  
+   A few points to consider while uploading the CSV file: 
+      - Ensure the CSV file has no duplicate URLs and, that they are valid and complete. 
+      - The URLs listed in CSV file are belonging to your tenant’s domain. 
+      - The file uploaded should be of CSV format. 
+            
+   - Inactivity period selection from the Scope page is shifted to the Configuration page in the create policy wizard as well as at the policy details panel.
+     
+   :::image type="content" source="media/site-lifecycle-management/scope-csv.png" alt-text="Screenshot of Scope page when selecting the option to upload a CSV file with a list of up to 10,000 URLs." lightbox="media/site-lifecycle-management/scope-csv.png":::
 
-    - During the "Set policy scope" step, you can now select **Include sites with retention policies and retention holds**.
-    - Before this update, inactive sites in read-only state or locked states were excluded from the scope of the policy. Now, all read-only sites and locked sites are automatically included in the scope of the policy.
-    - Before this update, ownerless inactive sites were excluded from the scope of the policy. As of November 2024, all inactive ownerless sites are automatically included in the scope of the policy.
 
-    :::image type="content" source="media/site-lifecycle-management/3-inactive-site-policy-create-policy-set-scope.png" alt-text="Screenshot of Site lifecycle management set policy scope." lightbox="media/site-lifecycle-management/3-inactive-site-policy-create-policy-set-scope.png":::
+   **November 2024 policy scope update**
+   
+   - During the "Set policy scope" step, you can now select **Include sites with retention policies and retention holds**.
+   - Before this update, inactive sites in read-only state or locked states were excluded from the scope of the policy. Now, all read-only sites and locked sites are automatically included in the scope of the policy.
+   - Before this update, ownerless inactive sites were excluded from the scope of the policy. As of November 2024, all inactive ownerless sites are automatically included in the scope of the policy.
 
-3. Name the policy, add a description (optional), and select a policy mode. Select **Next**.
+   :::image type="content" source="media/site-lifecycle-management/scope-scale.png" alt-text="Screenshot of Scope page when selecting the option of sites at scale." lightbox="media/site-lifecycle-management/scope-scale.png":::
+
+      
+5. Define the configuration of the policy by selecting the inactivity period, the email recipients and the enforcement actions. Select **Next.**
 
     **November 2024 parameters update** - During this step, you can now:
+   
+   - Choose to send emails to site owners or site admins.
+   - Choose enforcement actions if there's no response from site owners or admins after three notifications:
+      - Mark the inactive site as read-only.
+      - Mark the inactive site as read-only for a configurable duration (3, 6, 9, or 12 months) followed by archiving using Microsoft 365 Archive. For more information about storage solutions for inactive SharePoint content, see [Overview of Microsoft 365 Archive](/microsoft-365/archive/archive-setup).
+            
+   :::image type="content" source="media/site-lifecycle-management/configuration.png" alt-text="Screenshot of Configuration page." lightbox="media/site-lifecycle-management/configuration.png":::
+   
+   
+6. Name the policy, add a description (optional), and select a policy mode. Select **Finish**. Your policy is now created and can be viewed and managed from the Site lifecycle management > Inactive site policy dashboard.
 
-    - Choose to send emails to site owners or site admins.
-    - Choose enforcement actions if there's no response from site owners or admins after three notifications:
-        - Mark the inactive site as read-only.
-        - Mark the inactive site as read-only for a configurable duration (3, 6, 9, or 12 months) followed by archiving using Microsoft 365 Archive. For more information about storage solutions for inactive SharePoint content, see [Overview of Microsoft 365 Archive](/microsoft-365/archive/archive-setup).
+   :::image type="content" source="media/site-lifecycle-management/finish.png" alt-text="Screenshot of Finish page." lightbox="media/site-lifecycle-management/finish.png":::
 
-    :::image type="content" source="media/site-lifecycle-management/4-inactive-site-policy-create-policy-enforcement-archive.png" alt-text="Screenshot of Site lifecycle management enforcement options." lightbox="media/site-lifecycle-management/4-inactive-site-policy-create-policy-enforcement-archive.png":::
 
-4. Select **Done**. Your policy is now created and can be viewed and managed from the Site lifecycle management dashboard. :::image type="content" source="media/site-lifecycle-management/5-inactive-site-policy-name-policy.png" alt-text="Screenshot of Site lifecycle management name policy." lightbox="media/site-lifecycle-management/5-inactive-site-policy-name-policy.png":::
 
 ## Inactive site notifications to site owners or site admins
 
@@ -78,6 +99,11 @@ See the following table to learn more about how the inactive site policy behaves
 |**Do nothing**|Site owners or site admins receive monthly notifications for three months. After this period, no notifications are sent for the next three months. If the site remains inactive after six months, monthly notifications resume. The policy execution report lists inactive sites as unactioned by the site owner. You can download this report and filter out sites marked as unactioned.|
 |**Read-only access**|Site owners or site admins receive monthly notifications for three months. If the notification recipients don't mark the site as certified during this period, the site goes into read-only mode.|
 |**Archive sites after mandatory read-only period**|Site owners or site admins receive monthly notifications for three months. If the notification recipients don't mark the site as certified during this period, then the site goes into a read-only mode for the configured number of months. After the configured number of months, the site gets archived through Microsoft 365 Archive. Archival is subject to the tenant enabling Microsoft 365 Archive on the Microsoft Admin center.|
+
+> [!IMPORTANT]
+> Site lifecycle policies leverage Outlook Actionable Messages to enable site owners or site admins take necessary actions within email.
+> - For notifications to render properly, ensure **[Outlook version requirements](/outlook/actionable-messages/)** are met in your organization.
+> - To troubleshoot rendering issues, refer to **[frequently asked questionnaire](/outlook/actionable-messages/actionable-messages-faq)**.
 
 > [!TIP]
 > Before creating an inactive site policy, check for any site access restriction policies that could disrupt site attestation by the respective site owner.
@@ -127,6 +153,18 @@ Inactive site policies analyze activity across SharePoint and connected platform
 |**Viva Engage (formerly Yammer)**     |Posted messages, read conversations, liked messages         |
 |**Teams**     |Posted channel messages in a team across standard channels, posted messages in Teams and standard channels, replied to messages, mentioned in messages, reacted to messages, sent urgent messages, conducted meetings (recurring, ad hoc, one-time)          |
 |**Exchange**     | Received emails in the Exchange mailbox       |
+
+### Scope of app activities
+
+Inactive site policies do not consider app activity via app token. App activity via user token is considered only when a user agent involved and meets the following criteria.
+
+|Activity source| Condition when activity is considered|
+| -------- | -------- |
+|PnP PowerShell activity via user token|Is not considered|
+|SharePoint Online PowerShell activity via user token|Is considered only when UserAgent parameter value is passed       |
+|CSOM scripting activity via user token|Is considered when script explicitly sets UserAgent value|
+|Any other app activity via user token| Is considered when UserAgent exists, except in the following scenarios when<br> - UserAgent starts with "client-request=id"/"ACTIVEMONITORING"/SPORUNNERS" **OR**<br> - UserAgent ends with "MSDEMO"/"MSDPLATFORM"/"SystemUsage" **OR**<br> - UserAgent contains "GomezAgent"/"bingbot.htm"/"ms search 6.0 robot"/"http://www.monitis.com"/"ISV"|
+|App activity via app token| Is not considered     |
 
 ### In-scope site templates
 
@@ -181,6 +219,10 @@ The following table describes the information included in the policy execution r
 ## Related articles
 
 - [Microsoft 365 group expiration policy](/microsoft-365/solutions/microsoft-365-groups-expiration-policy)
+
 - [Restore deleted sites](restore-deleted-site-collection.md)
+
 - [Overview of SharePoint Premium - SharePoint Advanced Management](advanced-management.md)
+
 - [Overview of Microsoft 365 Archive](/microsoft-365/archive/archive-setup)
+
