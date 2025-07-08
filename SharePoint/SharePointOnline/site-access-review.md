@@ -39,7 +39,7 @@ This review process is crucial because:
 Before initiating a site access review, ensure that you meet the following requirements:
 
 - A [Microsoft SharePoint Premium - SharePoint Advanced Management](advanced-management.md) subscription.
-- A nongovernment cloud tenant environment. Site access reviews aren't supported in government cloud environments (GCCH, GCC-Moderate, DoD, Gallatin).
+- A nongovernment cloud tenant environment or GCC-Moderate government cloud environment. Site access reviews aren't supported in government cloud environments (GCCH, DoD, Gallatin).
 - Site access review is supported only for SharePoint sites. It is currently not supported for OneDrive accounts.
 - Admin credentials for accessing the SharePoint admin center.
 - Site owners are available to respond to review requests, take necessary actions, and complete the review.
