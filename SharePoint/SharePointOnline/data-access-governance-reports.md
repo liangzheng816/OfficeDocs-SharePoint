@@ -128,7 +128,7 @@ After you run a report, select the report to download the data. The report inclu
 ## Content shared with 'Everyone except external users' (EEEU) reports
 
 > [!IMPORTANT]
-> This report is only available if you have a SharePoint Premium - SharePoint Advanced Management license and the tenant is a non-government cloud environment. The report is currently unavailable for government cloud environments such as GCCH/GCC-Moderate/DoD/Gallatin, even if you have a SharePoint Premium - SharePoint Advanced Management license.
+> This report is only available if you have a SharePoint Premium - SharePoint Advanced Management license and the tenant is either a non-government cloud environment or available in GCC-Moderate gov cloud environment. The report is currently unavailable for government cloud environments such as GCCH/DoD/Gallatin, even if you have a SharePoint Premium - SharePoint Advanced Management license.
 
 Everyone except external users (EEEU) is part of a built-in group that represents the entire organization without any external guests. It's used in following scenarios where content needs to be visible to the entire organization:
 
@@ -151,7 +151,7 @@ When creating a report, you can select various options like create focused repor
 - Report name: Provide a unique name for the report.
 - Template: Lists categories of SharePoint site templates (Classic sites, Communication sites, Team sites, others). You can choose multiple values or **All sites**.
 - Privacy: Applicable for Team sites in the scope. You can select **Private**, **Public** or **All**.
-- Site sensitivity: Lists all sensitivity labels. Select one or many labels if you want to report to run within the scope of labeled sites. For for example: 'Identify files within sites labeled as 'Confidential', that were shared with EEEU in the last 28 days.
+- Site sensitivity: Lists all sensitivity labels. Select one or many labels if you want to report to run within the scope of labeled sites. For example: 'Identify files within sites labeled as 'Confidential', that were shared with EEEU in the last 28 days.
 - Report type: To select the scenario as discussed earlier, whether you want a report for recent 'public sites' or for recent 'public items'.
 
 ### Run Everyone except external users reports
@@ -248,14 +248,14 @@ Access to the site and its content can be given at any scope.
 
 This number is calculated by expanding all groups and individuals across all scopes, removing duplicates and by counting the number of unique users.
 In other words, this represents the extent of current ‘data exposure.’ If you're adding users directly OR adding Microsoft Entra groups across any scope, then this number increases corresponding to the Microsoft Entra group size and/or number of individuals added.
-However, creating sharing links and sharing the site with ‘Everyone except external users’ doesn't automatically increase this number since no permissions are directly assigned. These increase the probability that the site/site content is now publicly visible, and more users can access. The number increases only when the users access the content. Hence you can view the number of sharing links or EEEU permission as ‘potential exposure’
+However, creating sharing links and sharing the site with ‘Everyone except external users’ doesn't automatically increase this number since no permissions are directly assigned. These increase the probability that the site/site content is now publicly visible, and more users can access. The number increases only when the users access the content. Hence you can view the number of sharing links or EEEU permission as ‘potential exposure’.
 
 This report thus lists all sites with 'too-many-users' accessing the content and hence more prone for Copilot exposure.
 
 ## Remedial actions from Data access governance reports
 
 > [!IMPORTANT]
-> Remedial actions from  Data access governance reports are only available for SharePoint Premium - SharePoint Advanced Management subscribers running non-government cloud environments. The feature is currently unavailable for government cloud environments such as GCCH/GCC-Moderate/DoD/Gallatin, even if you have a SharePoint Premium - SharePoint Advanced Management license.
+> Remedial actions from  Data access governance reports are only available for SharePoint Premium - SharePoint Advanced Management subscribers running non-government cloud environments or available in GCC-Moderate gov cloud environment. The feature is currently unavailable for government cloud environments such as GCCH/DoD/Gallatin, even if you have a SharePoint Premium - SharePoint Advanced Management license.
 
 Once you run the Data access governance reports to discover potential oversharing, the next step is to take actions to remediate such risks. We recommend considering factors like sensitivity of the content, amount of content exposed and disruption to existing status.
 
