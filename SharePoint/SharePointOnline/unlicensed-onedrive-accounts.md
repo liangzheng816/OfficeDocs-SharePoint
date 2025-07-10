@@ -179,7 +179,7 @@ If the billing is put down to reactivate one particular unlicensed account, the 
 For example, if an organization has 100 unlicensed OneDrive accounts, each consuming 1 TB for a total of 100 TB, and enforcement occurs between January and October 2025, the 100 unlicensed accounts are automatically archived. If the organization needs to reactivate a specific account in December 2025 and set up billing, they incur the following costs:
 
 - A one-time reactivation fee of $0.60/GB for 1TB, totaling $614.40.
-- A monthly storage fee of $0.05/GB for 100TB, amounting to $5,120/month starting from October 2025.
+- A monthly storage fee of $0.05/GB for 100TB, amounting to $5,120/month starting from December 2025.
 
 > [!NOTE]
 > Unlicensed OneDrive accounts can't utilize unused SharePoint storage quota, even if Microsoft 365 Archive is configured within the tenant. Archived unlicensed OneDrive accounts are billed for the full amount of consumed storage.
