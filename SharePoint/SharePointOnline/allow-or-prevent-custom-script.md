@@ -92,13 +92,15 @@ The column can be added to any view. A new **Custom script allowed sites** is al
 
 ### Change custom script settings
 
-In the **Active sites** page, upon selecting a site, under **settings**, a **Custom scripts** setting is available for administrators:
+In the **Active sites** page, select a site and under **Settings** > **Custom scripts**, you can edit whether custom scripts are allowed or blocked.
 
 :::image type="content" alt-text="Screenshot of the 'Custom scripts' setting." source="media/7a9c6b79-db8b-4577-9a8c-978f011196a9.png":::
 
-Administrators can control custom script settings for a specific site; deciding if they want to allow or block custom script on a specific site:
+You can control custom script settings for a specific site; deciding if they want to allow or block custom script on a specific site:
 
-:::image type="content" alt-text="Screenshot of 'Custom scripts' values." source="media/05b24a6e-7dec-4b50-80e8-f09fe18e7dd4.png" lightbox="media/05b24a6e-7dec-4b50-80e8-f09fe18e7dd4.png":::
+![User's image](media/allow-or-prevent-custom-script/image.png)
+
+
 
 By default, any changes to custom script settings for a specific site only last for a maximum of 24 hours. After that time, the setting resets to its original value for that specific site.
 
