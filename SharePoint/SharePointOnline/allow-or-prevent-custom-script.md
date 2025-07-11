@@ -98,7 +98,7 @@ In the **Active sites** page, select a site and under **Settings** > **Custom sc
 
 You can control custom script settings for a specific site; deciding if they want to allow or block custom script on a specific site:
 
-![User's image](media/allow-or-prevent-custom-script/image.png)
+![Screenshot that shows the custom script settings.](media/allow-or-prevent-custom-script/image.png)
 
 
 
