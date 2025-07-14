@@ -49,7 +49,7 @@ If you're either a **GCC High** or **DoD** customer, you need to make a change t
 2. Open the setup file and remain on the **Welcome** page.
 3. Open *C:\Users\<user>\AppData\Roaming\Microsoft\SPMigration\Bin\microsoft.sharepoint.migration.common.dll.config*.
 4. Open *C:\Users\<user>\AppData\Local\Temp\SPMigrationAgentSetup\SPMigrationAgentSetup\microsoft.sharepoint.migration.common.dll.config*.
-5. For GCC High, change the value of *SPOEnvironmentType* from 0 to 2. For DoD, change the value of *SPOEnvironmentType* from 0 to 3.
+1. For GCC High, change the value of *SPOEnvironmentType* from 0 to 2. For DoD, change the value of *SPOEnvironmentType* from 0 to 3.
 
     ![A screenshot showing the Change SPOEnvironmentType parameter.](media/gov-cloud-setting.png)
    
@@ -63,5 +63,5 @@ For the complete list of all required endpoints: [Prerequisites & Endpoints for 
 
 |Government endpoints                                                   |For                                       |
 |:----------------------------------------------------------------------|:-----------------------------------------|
-|https://\<spam\>\<spam\>*.blob.core.usgovcloudapi.\<spam\>\<spam\>net  |Migration API Azure Government requirement|
-|https://\<spam\>\<spam\>*.queue.core.usgovcloudapi.\<spam\>\<spam\>net |Migration API Azure Government requirement|
+|https://*.blob.core.usgovcloudapi.net  |Migration API Azure Government requirement|
+|https://*.queue.core.usgovcloudapi.net |Migration API Azure Government requirement|
