@@ -35,7 +35,7 @@ This article lists the prerequisites and endpoint information when using the <a 
 |RAM |16 GB |8 GB |
 |Local Storage |Solid-state disk: 150-GB free space |Solid-state disk: 150-GB free space |
 |Network card |1 Gbps |High-speed internet connection |
-|Operating system |Windows Server 2012 R2 or higher <br/>Windows 10 agent |Windows Server 2012 R2 or higher <br/>Windows 10 agent |
+|Operating system |Windows Server 2016 or higher <br/>Windows 10 client|Windows Server 2016 or higher <br/>Windows 10 client|
 |Anti-virus |Anti-virus software on your computer can slow down the migration speed. Evaluate and consider the risk of turning off your organization's antivirus software. | |
 |SMB 2.0 |For file share migration, the server hosting the source data must support SMB 2.0 or higher| |
 
@@ -58,9 +58,11 @@ Two endpoints, https://production.odyssey.ops.mover.io and https://production-wu
 |`https://*.login.microsoftonline.com`                  |Sign into the Migration Manager agent for SharePoint access|
 |`https://*.login.windows.net`                          |Sign into the Migration Manager agent for SharePoint access|
 |`https://*.msauth.net`                                 |Sign into the Migration Manager agent for SharePoint access|
-|`https://spmt.sharepointonline.com`                    |Migration Manager agent installation and autoupgrading link|
+|`https://spmt.sharepointonline.com`                    |Migration Manager agent installation and auto-upgrading link|
 |`https://api.mover.io`                                 |Scan feature for Migration Manager requirement.|
-|`https://production.odyssey.ops.mover.io`              |Migration Manager scan feature requirement.|
+|`https://odyssey.mmp.svc.cloud.microsoft`|Scan feature for Migration Manager requirement.|
+|`https://production.odyssey.ops.mover.io`|Migration Manager scan feature requirement.|
+|`https://odyssey.mmp.svc.cloud.microsoft`|Migration Manager scan feature requirement.|
 |`https://production-wus2-signalr.service.signalr.net`  |Migration Manager scan feature requirement. Used to communicate with the server.|
 |`https://api.prod.migrations.microsoft.com`            |Migration Manager Web UI requirement|
 |`https://odyssey.prod.migrations.microsoft.com`        |Scan feature for Migration Manager requirement.|
