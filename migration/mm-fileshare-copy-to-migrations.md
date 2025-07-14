@@ -27,6 +27,8 @@ description: "Learn how to copy to migrations for file share migration."
 
 After a file share is scanned and determined to be ready, add it to your migration list.
 
+## Add migrations
+
 1. Highlight one or rows from the scanned list. From the menu bar, select **Copy to migrations**.
 
     :::image type="content" alt-text="File share scan list." source="media/mm-fileshare-scan-list.png" lightbox="media/mm-fileshare-scan-list.png":::
@@ -54,7 +56,15 @@ After a file share is scanned and determined to be ready, add it to your migrati
 
 ## Incremental migration
 
-After a migration task is completed, you can rerun it at a later date, allowing you to copy only those new or updated files in the source location.
+After a migration task is completed, you can rerun it at a later date, allowing you to copy only those new or updated files in the source location. This process is known as incremental migration.
+
+There are two options for incremental migration. You can choose the one that best fits your scenario.
+
+1. **Delta sync** migrates only new or updated items since the last migration, skipping items migrated previously. 
+
+1. **Full incremental** migrates new or updated items by comparing all source items with the destination items.
+
+Delta sync is faster than full incremental, as it processes fewer files. Full incremental is recommended when files are added to the source with a last modified time earlier than the last migration time, which delta sync would miss.
 
 An incremental check of your SharePoint destination environment is performed. Files are evaluated as follows (regardless of an initial or incremental migration):
   
