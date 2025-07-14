@@ -59,9 +59,7 @@ Two endpoints, https://production.odyssey.ops.mover.io and https://production-wu
 |`https://*.login.windows.net`                          |Sign into the Migration Manager agent for SharePoint access|
 |`https://*.msauth.net`                                 |Sign into the Migration Manager agent for SharePoint access|
 |`https://spmt.sharepointonline.com`                    |Migration Manager agent installation and auto-upgrading link|
-|`https://api.mover.io`                                 |Scan feature for Migration Manager requirement.|
 |`https://odyssey.mmp.svc.cloud.microsoft`|Scan feature for Migration Manager requirement.|
-|`https://production.odyssey.ops.mover.io`|Migration Manager scan feature requirement.|
 |`https://odyssey.mmp.svc.cloud.microsoft`|Migration Manager scan feature requirement.|
 |`https://production-wus2-signalr.service.signalr.net`  |Migration Manager scan feature requirement. Used to communicate with the server.|
 |`https://api.prod.migrations.microsoft.com`            |Migration Manager Web UI requirement|
