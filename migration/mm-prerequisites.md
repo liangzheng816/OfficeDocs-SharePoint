@@ -47,22 +47,22 @@ Two endpoints, https://production.odyssey.ops.mover.io and https://production-wu
 
 |Required endpoints                                     |For |
 |:------------------------------------------------------|:---|
-|`https://secure.aadcdn.microsoftonline-p.com`          |Authentication|
+|`https://secure.aadcdn.microsoftonline-p.com`          |Authentication.|
 |`https://graph.windows.net`                            |Microsoft 365 APIs for content move and validation.|
-|`https://*.queue.core.windows.net`                     |Migration API Azure requirement|
-|`https://*.blob.core.windows.net`                      |Migration API Azure requirement|
-|`https://*.pipe.aria.microsoft.com`                    |Telemetry/update|
-|`https://*.sharepoint.com`                             |Destination for migration|
-|`https://*.blob.core.usgovcloudapi.net`                |Migration API Azure Government requirement|
-|`https://*.queue.core.usgovcloudapi.net`               |Migration API Azure Government requirement|
-|`https://*.login.microsoftonline.com`                  |Sign into the Migration Manager agent for SharePoint access|
-|`https://*.login.windows.net`                          |Sign into the Migration Manager agent for SharePoint access|
-|`https://*.msauth.net`                                 |Sign into the Migration Manager agent for SharePoint access|
-|`https://spmt.sharepointonline.com`                    |Migration Manager agent installation and auto-upgrading link|
-|`https://api.mmp.svc.cloud.microsoft`|Migration Manager scan feature requirement.|
-|`https://odyssey.mmp.svc.cloud.microsoft`|Migration Manager scan feature requirement.|
+|`https://*.queue.core.windows.net`                     |Migration API Azure requirement.|
+|`https://*.blob.core.windows.net`                      |Migration API Azure requirement.|
+|`https://*.pipe.aria.microsoft.com`                    |Telemetry/update.|
+|`https://*.sharepoint.com`                             |Destination for migration.|
+|`https://*.blob.core.usgovcloudapi.net`                |Migration API Azure Government requirement.|
+|`https://*.queue.core.usgovcloudapi.net`               |Migration API Azure Government requirement.|
+|`https://*.login.microsoftonline.com`                  |Sign into the Migration Manager agent for SharePoint access.|
+|`https://*.login.windows.net`                          |Sign into the Migration Manager agent for SharePoint access.|
+|`https://*.msauth.net`                                 |Sign into the Migration Manager agent for SharePoint access.|
+|`https://spmt.sharepointonline.com`                    |Migration Manager agent installation and auto-upgrading link.|
+|`https://api.mmp.svc.cloud.microsoft`                  |Migration Manager scan feature requirement.|
+|`https://odyssey.mmp.svc.cloud.microsoft`              |Migration Manager scan feature requirement.|
 |`https://production-wus2-signalr.service.signalr.net`  |Migration Manager scan feature requirement. Used to communicate with the server.|
-|`https://api.prod.migrations.microsoft.com`            |Migration Manager Web UI requirement|
+|`https://api.prod.migrations.microsoft.com`            |Migration Manager Web UI requirement.|
 |`https://odyssey.prod.migrations.microsoft.com`        |Scan feature for Migration Manager requirement.|
 |`https://odyssey-production-weu-1.service.signalr.net` |Migration Manager scan feature requirement.|
 |`https://odyssey-production-weu-2.service.signalr.net` |Migration Manager scan feature requirement.|
