@@ -29,7 +29,7 @@ Answer: For the latest updates, refer to [specialty environments support](mm-spe
 
 **Question: What gets transferred?**
 
-Answer: Only owned folders and the root files for each user are copied. If a user isn't the owner of data they can access, we don't copy it. 
+Answer: All accessible files and folders within a Dropbox user (Member folder or Team folder) are copied. Any items the user doesn't have permission to access are excluded from the migration.
 
 As to the permissions, when [identities are fully mapped](mm-dropbox-step5-map-identities.md), content will be automatically reshared after migration, ensuring that each user retains access to their content exactly as before.
 </br> </br>
