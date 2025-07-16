@@ -102,10 +102,10 @@ You can control custom script settings for a specific site; deciding if they wan
 
 
 
-By default, any changes to custom script settings for a specific site only last for a maximum of 24 hours. After that time, the setting resets to its original value for that specific site.
+By default, any changes to custom script settings for a specific site only last for a maximum of 24 hours. After that time, the setting resets to **Blocked** for that specific site.
 
 > [!IMPORTANT]
-If the site is locked, either because it is in *ReadOnly* or *NoAccess" state, changes to the Custom Script settings won't be reflected in SharePoint Tenant Administration. However, as soon as the state of the site goes back to *Unlock*, Custom Script setting immediately turns to "Not allowed" before any user can access to the site  
+> If the site is locked, either because it is in *ReadOnly* or *NoAccess" state, changes to the Custom Script settings won't be reflected in SharePoint Tenant Administration. However, as soon as the state of the site goes back to *Unlock*, Custom Script setting immediately turns to "Not allowed" before any user can access to the site  
 
 ## Features affected when custom script is blocked
 
