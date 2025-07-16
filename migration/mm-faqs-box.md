@@ -24,7 +24,7 @@ description: Migration Manager Box FAQs
 
 **Question: What gets transferred?**
 
-Answer: All accessible files and folders within a Box user are copied. Any items the user does not have permission to access will be excluded from the migration.
+Answer: All accessible files and folders within a Box user are copied. Any items the user doesn't have permission to access are excluded from the migration.
 
 **Question: What happens to Box Notes?**
 
