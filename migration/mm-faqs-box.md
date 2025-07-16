@@ -24,7 +24,7 @@ description: Migration Manager Box FAQs
 
 **Question: What gets transferred?**
 
-Answer: Only files and folders owned by each user are copied. For example, if "Folder B" is located in User A's account but owned by User B and shared with User A, it isn't scanned or migrated under User A. Instead, it's scanned and migrated under User B.
+Answer: All accessible files and folders within a Box user are copied. Any items the user doesn't have permission to access are excluded from the migration.
 
 **Question: What happens to Box Notes?**
 
