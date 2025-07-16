@@ -36,7 +36,7 @@ Answer: For the latest updates, refer to [specialty environments support](mm-spe
 
 Answer: All accessible files and folders within a Google user (Personal Drive or Shared Drive) are copied. Any items the user doesn't have permission to access are excluded from the migration.
 
-As to the permissions, when [identities are fully mapped](mm-google-step5-map-identities.md), content will be automatically reshared after migration, ensuring that each user retains access to their content exactly as before.
+As to the permissions, when [identities are fully mapped](mm-google-step5-map-identities.md), content is automatically reshared after migration, ensuring that each user retains access to their content exactly as before.
 </br> </br>
 
 **Question: Does Migration Manager sync files from Google after first migration?**
@@ -83,8 +83,8 @@ Answer:  Migration Manager allows you to customize email notifications to track 
 **Question: Does Migration Manager transfer permissions for shared drives?**
 
 Answer: Yes. To correctly migrate the Google Shared Drive permissions, we recommend you do the following before starting the Shared Drive migration:
-- Recreate a Microsoft 365 group that has the same memberships as the Google Drive group. You can either create a new group, or edit the group linked to the Team site which you designate as the migration destination of the Google Shared Drive.
-- In the [Map identites](mm-google-step5-map-identities.md) setting, map the original Google Drive group of the shared Drive to the Microsoft 365 group recreated above.
+- Recreate a Microsoft 365 group that has the same memberships as the Google Drive group. You can either create a new group, or edit the group linked to the Team site you designate as the migration destination of the Google Shared Drive.
+- In the [Map identites](mm-google-step5-map-identities.md) setting, map the original Google Drive group of the shared Drive to the Microsoft 365 group recreated in the previous step.
 </br> </br>
 
 **Question: What can't Migration Manager migrate from Google?**
@@ -125,7 +125,7 @@ Answer: If SharePoint or Teams sites in your tenant aren't visible in the UI whi
 - Sites that are recently created might take a couple of hours to sync and appear in the UI.
 - SharePoint site search in the UI might not work in some special cases (for example, when there are special characters in the destination path).
 
-If you cannot locate a destination in the "Edit destination" panel, please [upload the destination using a CSV file](/sharepointmigration/mm-google-step4-review-destinations#upload-destinations-using-a-csv-file).
+If you can't locate a destination in the "Edit destination" panel, [upload the destination using a CSV file](/sharepointmigration/mm-google-step4-review-destinations#upload-destinations-using-a-csv-file).
 </br> </br>
 
 
