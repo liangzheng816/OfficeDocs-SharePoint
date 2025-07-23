@@ -17,6 +17,7 @@ ms.collection:
 - Tier2
 - M365-sam
 - M365-collaboration
+- trust-pod
 ms.custom:
 - admindeeplinkSPO
 search.appverid: 

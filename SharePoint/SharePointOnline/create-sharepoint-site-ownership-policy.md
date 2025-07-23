@@ -1,10 +1,10 @@
 ---
-ms.date: 10/28/2024
+ms.date: 6/28/2025
 title: Create SharePoint site ownership policy
 ms.reviewer: anupam.francis
-ms.author: mactra
-author: MachelleTranMSFT
-manager: jtremper
+ms.author: ruihu
+author: maggierui
+manager: dansimp
 audience: Admin
 f1.keywords:
 - NOCSH
@@ -14,6 +14,7 @@ ms.localizationpriority: medium
 ms.collection: 
 - M365-collaboration
 - M365-sam
+- trust-pod
 ms.custom:
 search.appverid:
 ms.assetid: 0ecb2cf5-8882-42b3-a6e9-be6bda30899c

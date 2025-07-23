@@ -1,11 +1,11 @@
 ---
-ms.date: 06/04/2024
+ms.date: 06/04/2025
 title: "Create change history reports"
 ms.reviewer: daminasy
-manager: jtremper
 recommendations: true
-ms.author: mactra
-author: MachelleTranMSFT
+ms.author: ruihu
+author: maggierui
+manager: dansimp
 audience: Admin
 f1.keywords:
 - NOCSH
@@ -16,6 +16,7 @@ ms.collection:
 - M365-collaboration
 - Highpri
 - Tier2
+- trust-pod
 description: "Learn how to create and view SharePoint site change history reports in SharePoint admin center."
 ---
 

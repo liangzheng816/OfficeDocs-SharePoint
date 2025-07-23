@@ -1,10 +1,10 @@
 ---
-ms.date: 11/18/2024
+ms.date: 07/23/2025
 title: "Generate App insights reports"
 ms.reviewer: goagarwal
-ms.author: mactra
-author: MachelleTranMSFT
-manager: jtremper
+ms.author: ruihu
+author: maggierui
+manager: dansimp
 audience: Admin
 f1.keywords:
 - NOCSH
@@ -17,6 +17,7 @@ ms.collection:
 - M365-sam
 - M365-collaboration
 - SAM-FY25
+- trust-pod
 search.appverid:
 recommendations: false
 description: "Learn how to generate App insights reports to view how non-Microsoft applications registered on your Microsoft Entra admin center access your SharePoint content."

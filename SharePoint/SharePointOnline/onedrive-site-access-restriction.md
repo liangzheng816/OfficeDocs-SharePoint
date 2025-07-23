@@ -1,10 +1,9 @@
 ---
-ms.date: 01/30/2025
+ms.date: 07/23/2025
 title: Restrict access to a user's OneDrive content to people in a group
 ms.reviewer: nibandyo
-ms.author: mactra
-author: MachelleTranMSFT
-manager: jtremper
+ms.author: ruihu
+author: maggierui
 audience: Admin
 f1.keywords:
 - NOCSH
@@ -19,6 +18,7 @@ ms.collection:
 - M365-collaboration
 - essentials-compliance
 - essentials-security
+- trust-pod
 search.appverid:
 ms.assetid: 
 ms.custom:

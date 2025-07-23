@@ -1,10 +1,10 @@
 ---
-ms.date: 11/19/2024
+ms.date: 7/23/2025
 title: "Manage Data access governance reports using SharePoint Online PowerShell"
 ms.reviewer: pullabhk
-ms.author: mactra
-author: MachelleTranMSFT
-manager: jtremper
+ms.author: ruihu
+author: maggierui
+manager: dansimp
 recommendations: true
 audience: Admin
 f1.keywords: NOCSH
@@ -17,6 +17,7 @@ ms.collection:
 - Tier2
 - M365-sam
 - M365-collaboration
+- trust-pod
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO

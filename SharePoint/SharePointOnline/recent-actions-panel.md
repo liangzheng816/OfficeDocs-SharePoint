@@ -1,11 +1,11 @@
 ---
-ms.date: 03/26/2025
+ms.date: 07/23/2025
 title: "Review your recent changes to SharePoint site properties"
 ms.reviewer: daminasy
-manager: jtremper
+manager: dansimp
 recommendations: true
-ms.author: mactra
-author: MachelleTranMSFT
+ms.author: ruihu
+author: maggierui
 audience: admin
 f1.keywords:
 - NOCSH 
@@ -18,6 +18,7 @@ ms.collection:
 - M365-sam
 - Highpri
 - Tier2
+- trust-pod
 description: "Learn how to review your recent changes to SharePoint site properties."
 ---
 # Review your recent changes to SharePoint site properties

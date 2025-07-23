@@ -1,10 +1,10 @@
 ---
-ms.date: 11/14/2024
+ms.date: 7/14/2025
 title: Microsoft 365 Copilot - best practices with SharePoint
 ms.reviewer: 
 ms.author: ruihu
 author: maggierui
-manager: jtremper
+manager: dansimp
 recommendations: true
 audience: Admin
 ROBOTS: NOINDEX, NOFOLLOW
@@ -17,6 +17,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 - Tier2
+- trust-pod
 ms.localizationpriority: medium
 search.appverid:
 - MET150

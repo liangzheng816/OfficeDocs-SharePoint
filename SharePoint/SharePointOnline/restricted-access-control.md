@@ -2,10 +2,10 @@
 ms.date: 04/21/2025
 title: "Restrict SharePoint site access with Microsoft 365 groups and Microsoft Entra security groups"
 ms.reviewer: nibandyo
-manager: jtremper
 recommendations: true 
-ms.author: mactra
-author: MachelleTranMSFT
+ms.author: ruihu
+author: maggierui
+manager: dansimp
 audience: Admin
 f1.keywords: 
 - NOCSH 
@@ -20,6 +20,7 @@ ms.collection:
 - Highpri
 - Tier2
 - ContentEngagementFY24
+- trust-pod
 search.appverid:
 description: "Learn how to restrict access to SharePoint sites to members of a Microsoft 365 or Microsoft Entra security group."
 ---

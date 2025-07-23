@@ -1,10 +1,10 @@
 ---
-ms.date: 2/28/2025
+ms.date: 6/28/2025
 title: "Curate the allowed list for Restricted SharePoint Search"
 ms.reviewer: 
 ms.author: ruihu
 author: maggierui
-manager: jtremper
+manager: dansimp
 recommendations: true
 audience: administrator
 ms.topic: how-to
@@ -15,6 +15,7 @@ ms.collection:
 - M365-collaboration
 - m365copilot
 - magic-ai-copilot
+- trust-pod
 description: "Learn how to use SharePoint Admin Center active sites report and SharePoint Advanced Management Data Access Governance report to find the most active and shared sites for the Restricted SharePoint Search allowed list. "
 ---
 

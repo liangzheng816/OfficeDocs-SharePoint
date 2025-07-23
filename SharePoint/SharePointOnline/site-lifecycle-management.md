@@ -1,11 +1,11 @@
 ---
-ms.date: 11/05/2024
+ms.date: 7/23/2025
 title: "Manage inactive sites using Site lifecycle management"
 ms.reviewer: nvasudevan
-manager: jtremper
-recommendations: true 
-ms.author: mactra
-author: MachelleTranMSFT
+manager: dansimp
+recommendations: true
+ms.author: ruihu
+author: maggierui
 audience: Admin
 f1.keywords: 
 - NOCSH 
@@ -18,6 +18,7 @@ ms.collection:
 - M365-sam
 - M365-collaboration
 - essentials-manage
+- trust-pod
 search.appverid:
 description: "Learn how to manage inactive SharePoint sites using Site lifecycle management."
 ---
