@@ -1,10 +1,10 @@
 ---
-ms.date: 2/28/2025
+ms.date: 6/28/2025
 title: "Restricted SharePoint Search"
 ms.reviewer: 
 ms.author: ruihu
 author: maggierui
-manager: jtremper
+manager: dansimp
 recommendations: true
 audience: administrator
 ms.topic: concept-article
@@ -15,6 +15,7 @@ ms.collection:
 - M365-collaboration
 - m365copilot
 - magic-ai-copilot
+- trust-pod
 description: "Helps you prevent certain content on SharePoint sites from being shared too widely. This feature lets you as the administrator decide which SharePoint sites appear in the search across your organization and the initial Copilot experiences."
 ---
 # Restricted SharePoint Search

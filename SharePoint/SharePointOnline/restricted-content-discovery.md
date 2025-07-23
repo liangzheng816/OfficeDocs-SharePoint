@@ -1,11 +1,11 @@
 ---
-ms.date: 03/24/2025
+ms.date: 07/23/2025
 title: "Restrict discovery of SharePoint sites and content"
 ms.reviewer: nibandyo
-manager: jtremper
 recommendations: true 
-ms.author: mactra
-author: MachelleTranMSFT
+manager: dansimp
+ms.author: ruihu
+author: maggierui
 audience: Admin
 f1.keywords: 
 - NOCSH 
@@ -18,6 +18,7 @@ ms.collection:
 - M365-collaboration
 - M365-SAM
 - Tier2
+- trust-pod
 search.appverid:
 description: "Learn how to restrict the discovery of SharePoint sites from Microsoft 365 Copilot Business Chat and tenant-wide search."
 ---

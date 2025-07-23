@@ -1,10 +1,10 @@
 ---
-ms.date: 07/16/2024
+ms.date: 07/16/2025
 title: "Generate AI insights for Microsoft SharePoint Premium - SharePoint Advanced Management"
 ms.reviewer: daminasy
-ms.author: mactra
-author: MachelleTranMSFT
-manager: jtremper
+ms.author: ruihu
+author: maggierui
+manager: dansimp
 audience: Admin
 f1.keywords:
 - NOCSH
@@ -17,6 +17,7 @@ ms.collection:
 - M365-sam
 - M365-collaboration
 - ContentEnagagementFY24
+- trust-pod
 search.appverid:
 - MET150
 recommendations: false

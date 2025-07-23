@@ -1,10 +1,10 @@
 ---
-ms.date: 11/19/2024
+ms.date: 07/23/2025
 title: "Data access governance reports for SharePoint sites"
 ms.reviewer: pullabhk
-ms.author: mactra
-author: MachelleTranMSFT
-manager: jtremper
+ms.author: ruihu
+author: maggierui
+manager: dansimp
 recommendations: true
 audience: Admin
 f1.keywords: NOCSH
@@ -17,6 +17,7 @@ ms.collection:
 - Tier2
 - M365-sam
 - M365-collaboration
+- trust-pod
 ms.custom:
 - admindeeplinkSPO
 search.appverid: 

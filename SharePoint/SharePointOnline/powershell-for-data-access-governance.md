@@ -1,10 +1,10 @@
 ---
-ms.date: 11/19/2024
+ms.date: 7/23/2025
 title: "Manage Data access governance reports using SharePoint Online PowerShell"
 ms.reviewer: pullabhk
-ms.author: mactra
-author: MachelleTranMSFT
-manager: jtremper
+ms.author: ruihu
+author: maggierui
+manager: dansimp
 recommendations: true
 audience: Admin
 f1.keywords: NOCSH
@@ -17,6 +17,7 @@ ms.collection:
 - Tier2
 - M365-sam
 - M365-collaboration
+- trust-pod
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
@@ -60,14 +61,14 @@ These commands generate a list of all sites where atleast one user can access an
 > [!NOTE]
 > Since these reports are comprehensive and are likely to cover all data in your tenant, the maximum number of reports that are allowed are 2; one per workload. And once a report is run, the next run is allowed after 30 days.
 
-Once you understand the extent of oversharing in your tenant, you can track further deviations specifically from active sites in last 28 days. You can generate reports on sites which are very active in key factors of potential oversharing such as 'Sharing links' or content shared with 'Everyone except external users', in the last 28 days.
+Once you understand the extent of oversharing in your tenant, you can track further deviations specifically from active sites in last 28 days. You can generate reports on sites that are active in key factors of potential oversharing such as 'Sharing links' or content shared with 'Everyone except external users', in the last 28 days.
 
 ### Sharing link reports
 
-These reports are useful in identifying sites which are active in collaboration and hence needs quicker intervention to mitigate any potential oversharing risk. These 'RecentActivity' based reports identify sites which are generating the most number of sharing links in the last 28 days.
+These reports are useful in identifying sites that are active in collaboration and hence needs quicker intervention to mitigate any potential oversharing risk. These 'RecentActivity' based reports identify sites that are generating the most number of sharing links in the last 28 days.
 
 > [!IMPORTANT]
-> If you don't have a Microsoft SharePoint Premium - SharePoint Advanced Management license, you'll be asked to enable data collection for 'RecentActivity' based reports, so that the product starts to collect the relevant audit data to build this report. Once enabled, the data is collected and stored for 28 days. The reports can be generated 24 hours later and contains data from the point of collection. If no reports are generated even once in three months, data collection will be paused and should be enabled again. To enable data collection for these reports, refer to the [documentation below](#data-collection-for-recent-activity-based-reports).
+> If you don't have a Microsoft SharePoint Premium - SharePoint Advanced Management license, you'll be asked to enable data collection for 'RecentActivity' based reports, so that the product starts to collect the relevant audit data to build this report. Once enabled, the data is collected and stored for 28 days. The reports can be generated 24 hours later and contains data from the point of collection. If no reports are generated even once in three months, data collection will be paused and should be enabled again. To enable data collection for these reports, refer to [this section of the documentation](#data-collection-for-recent-activity-based-reports).
 
 #### Anyone sharing links created in last 28 days
 
@@ -95,7 +96,7 @@ Provide the workload value as 'OneDriveForBusiness' to get all OneDrive accounts
 
 ### Content shared with Everyone except external users in last 28 days
 
-While Sharing links are one possible contributor for potential oversharing, another key contributor is 'Everyone except external users' (EEEU) which makes content 'public' that is, visible to entire organization and makes it easy for others to discover content and get access. These reports identify sites which actively used EEEU at various scopes in last 28 days.
+While Sharing links are one possible contributor for potential oversharing, another key contributor is 'Everyone except external users' (EEEU) which makes content 'public' that is, visible to entire organization and makes it easy for others to discover content and get access. These reports identify sites that actively used EEEU at various scopes in last 28 days.
 
 > [!IMPORTANT]
 > If you don't have a Microsoft SharePoint Premium - SharePoint Advanced Management license, you'll be asked to enable data collection for 'RecentActivity' based reports, so that the product starts to collect the relevant audit data to build this report. Once enabled, the data is collected and stored for 28 days. The reports can be generated 24 hours later and contains data from the point of collection. If no reports are generated even once in three months, data collection is paused and should be enabled again. To enable data collection for these reports, refer to the [documentation in the section below](#data-collection-for-recent-activity-based-reports).
@@ -165,7 +166,7 @@ Stop-SPOAuditDataCollectionForActivityInsights -ReportEntity SharingLinks_Anyone
 
 ### Checking the data collection status
 
-Once data collection is enabled, the reports can be generated after 24 hours. To check whether reports can be generated, use the PowerShell command **Get-SPOAuditDataCollectionStatusForActivityInsights**. The command returns the current data collection status which can be "NotInitiated","InProgress", "Paused". Reports can be generated when the status is "InProgress".
+Once data collection is enabled, the reports can be generated after 24 hours. To check whether reports can be generated, use the PowerShell command **Get-SPOAuditDataCollectionStatusForActivityInsights**. The command returns the current data collection status that can be "NotInitiated,""InProgress," "Paused". Reports can be generated when the status is "InProgress".
 
 ```powershell
 Get-SPOAuditDataCollectionStatusForActivityInsights -ReportEntity SharingLinks_Anyone
@@ -174,7 +175,7 @@ Get-SPOAuditDataCollectionStatusForActivityInsights -ReportEntity SharingLinks_A
 ## Tracking reports using PowerShell
 
 > [!IMPORTANT]
-> All report creations result in a GUID as output which could be used to track the report status.
+> All report creations result in a GUID as output that could be used to track the report status.
 
 ```powershell
 Start-SPODataAccessGovernanceInsight -ReportEntity SensitivityLabelForFiles -Workload SharePoint -ReportType Snapshot -FileSensitivityLabelGUID "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1" -FileSensitivityLabelName Secret

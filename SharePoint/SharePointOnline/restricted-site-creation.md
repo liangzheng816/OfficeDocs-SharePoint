@@ -2,10 +2,10 @@
 ms.date: 12/10/2024
 title: "Restrict OneDrive and SharePoint site creation"
 ms.reviewer: vgaddam
-manager: jtremper
 recommendations: true 
-ms.author: mactra
-author: MachelleTranMSFT
+ms.author: ruihu
+author: maggierui
+manager: dansimp
 audience: Admin
 f1.keywords: 
 - NOCSH 
@@ -18,6 +18,7 @@ ms.collection:
 - M365-sam
 - M365-collaboration
 - essentials-manage
+- trust-pod
 search.appverid:
 description: "Learn how to restrict users from creating OneDrive and SharePoint sites using restricted site creation."
 ---
