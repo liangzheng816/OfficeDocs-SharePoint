@@ -1,10 +1,10 @@
 ---
-ms.date: 2/28/2025
+ms.date: 6/28/2025
 title: "Restricted SharePoint Search Admin PowerShell Scripts"
 ms.reviewer: 
 ms.author: ruihu
 author: maggierui
-manager: jtremper
+manager: dansimp
 recommendations: true
 audience: administrator
 ms.topic: how-to
@@ -15,6 +15,7 @@ ms.collection:
 - M365-collaboration
 - m365copilot
 - magic-ai-copilot
+- trust-pod
 description: "Learn how to use PowerShell scripts as a SharePoint Administrator or higher in Microsoft 365 to get current mode of Restricted SharePoint Search, enable/disable Restricted SharePoint search, add to or remove from the allowed list, and get the list of current sites in the allowed list."
 ---
 

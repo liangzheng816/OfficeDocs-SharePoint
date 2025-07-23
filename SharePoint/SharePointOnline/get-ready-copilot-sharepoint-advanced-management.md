@@ -1,10 +1,10 @@
 ---
-ms.date: 11/14/2024
+ms.date: 7/14/2025
 title: Get ready for Microsoft 365 Copilot with SharePoint Advanced Management
 ms.reviewer: 
 ms.author: ruihu
 author: maggierui
-manager: jtremper
+manager: dansimp
 recommendations: true
 audience: Admin
 f1.keywords:
@@ -16,7 +16,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 - Tier2
-
+- trust-pod
 ms.localizationpriority: medium
 search.appverid:
 - MET150

@@ -1,10 +1,10 @@
 ---
-ms.date: 05/29/2025
+ms.date: 07/23/2025
 title: Block download policy for SharePoint sites and OneDrive
 ms.reviewer: samust
-ms.author: mactra
-author: MachelleTranMSFT
-manager: jtremper
+ms.author: ruihu
+author: maggierui
+manager: dansimp
 recommendations: true
 audience: Admin
 f1.keywords: NOCSH
@@ -17,6 +17,7 @@ ms.collection:
 - Tier2
 - M365-sam
 - M365-collaboration
+- trust-pod
 search.appverid:
 - SPO160
 - MET150
