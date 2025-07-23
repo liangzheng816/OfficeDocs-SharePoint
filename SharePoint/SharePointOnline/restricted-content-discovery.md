@@ -3,6 +3,7 @@ ms.date: 07/23/2025
 title: "Restrict discovery of SharePoint sites and content"
 ms.reviewer: nibandyo
 recommendations: true 
+manager: dansimp
 ms.author: ruihu
 author: maggierui
 audience: Admin

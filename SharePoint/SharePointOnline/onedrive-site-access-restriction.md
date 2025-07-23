@@ -4,6 +4,7 @@ title: Restrict access to a user's OneDrive content to people in a group
 ms.reviewer: nibandyo
 ms.author: ruihu
 author: maggierui
+manager: dansimp
 audience: Admin
 f1.keywords:
 - NOCSH
