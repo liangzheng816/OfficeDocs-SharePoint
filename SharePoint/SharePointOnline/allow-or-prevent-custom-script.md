@@ -125,6 +125,8 @@ The following site settings are unavailable when users are prevented from runnin
 |Uploading files that potentially include script  |The following file types cannot open from a library  <br/> .asmx  <br/> .ascx  <br/> .aspx  <br/> .htc  <br/> .jar  <br/> .master  <br/> .swf  <br/> .xap  <br/> .xsf  |Existing files in the library are not impacted.  |
 |Uploading Documents to Content Types  |Access denied message when attempting to attach a document template to a Content Type. |We recommend using Document Library document templates. |
 |Publishing of SharePoint 2010 Workflows |Access denied message when attempting to publish a SharePoint 2010 Workflow. | |
+|Custom Actions |Access denied message when attempting to create new custom actions. |Existing custom actions are not impacted.| 
+|Design Manager |Access denied message when attempting to create new layout, master page or design package. |Users can still use design and look created before custom script was blocked. |
 
 Updating Site property bag is by default not allowed when users are prevented from running custom script. Tenant Administrators can change that behavior by running the following command
 
